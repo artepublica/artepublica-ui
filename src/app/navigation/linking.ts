@@ -320,6 +320,12 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             MapaTodasXRecorte: {
                                 path: 'mapa-todas-x-recorte',
                             },
+                            Decade: {
+                                path: 'decada',
+                            },
+                            Category: {
+                                path: 'categoria',
+                            },
                         },
                     },
                     Charts: {
@@ -335,12 +341,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                 path: 'public-art-cesar-maia',
                             },
                         },
-                    },
-                    Category: {
-                        path: 'category',
-                    },
-                    Decade: {
-                        path: 'decade',
                     },
                 },
             },

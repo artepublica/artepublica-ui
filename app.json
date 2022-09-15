@@ -4,7 +4,7 @@
     "name": "arte-publica-permanente",
     "slug": "arte-publica-permanente",
     "scheme": "arte-publica-permanente.app",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -14,7 +14,8 @@
       "backgroundColor": "#D32D7D"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/f1b5fa04-266b-4978-88ee-d55779bc71ff"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -29,10 +30,14 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.theobassan.artepublicapermanente",
-      "versionCode": 2
+      "versionCode": 3
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "sdkVersion": "46.0.10"
   }
 }

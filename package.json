@@ -12,6 +12,7 @@
     "ios": "expo start --ios",
     "build:ios:dev": "eas build --profile development --platform ios",
     "build:ios:test": "eas build --profile preview --platform ios",
+    "updade": "eas update --branch preview --message 'Updating the app'",
     "web": "expo start --web",
     "build:web": "expo export:web",
     "lint": "eslint src && tsc --noemit",

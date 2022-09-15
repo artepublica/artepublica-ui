@@ -11,7 +11,7 @@ function Home(): JSX.Element {
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={{ width: '100%' }}>
-                <Text>Home</Text>
+                <Text>Projeto de Doutorado de Aline Rayane de Oliveira</Text>
             </ScrollView>
         </SafeAreaView>
     );

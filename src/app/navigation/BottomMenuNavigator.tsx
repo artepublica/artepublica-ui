@@ -1,9 +1,9 @@
-import { AntDesign, MaterialIcons, Entypo, FontAwesome } from '@expo/vector-icons';
+import { AntDesign, FontAwesome } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigatorScreenParams } from '@react-navigation/native';
 import { StyleSheet } from 'react-native';
 
-import { Home, Category, Decade } from '@pages';
+import { Home } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 import { ChartsNavigator, ChartsNavigatorParamsList } from './ChartsNavigator';
@@ -17,8 +17,6 @@ export type BottomMenuNavigatorParamList = {
     Obras: NavigatorScreenParams<ObrasNavigatorParamsList>;
     Recorte: NavigatorScreenParams<ObrasRecorteNavigatorParamsList>;
     Charts: NavigatorScreenParams<ChartsNavigatorParamsList>;
-    Category: undefined;
-    Decade: undefined;
 };
 
 export function BottomMenuNavigator(): JSX.Element {
@@ -77,30 +75,6 @@ export function BottomMenuNavigator(): JSX.Element {
                     headerShown: false,
                     tabBarIcon: ({ color }) => {
                         return <AntDesign name="barschart" size={24} color={color} />;
-                    },
-                    tabBarLabelStyle: style.tabBarLabel,
-                }}
-            />
-            <BottomTab.Screen
-                name="Category"
-                component={Category}
-                options={{
-                    title: 'Eixos',
-                    headerShown: false,
-                    tabBarIcon: ({ color }) => {
-                        return <MaterialIcons name="category" size={24} color={color} />;
-                    },
-                    tabBarLabelStyle: style.tabBarLabel,
-                }}
-            />
-            <BottomTab.Screen
-                name="Decade"
-                component={Decade}
-                options={{
-                    title: 'Décadas',
-                    headerShown: false,
-                    tabBarIcon: ({ color }) => {
-                        return <Entypo name="back-in-time" size={24} color={color} />;
                     },
                     tabBarLabelStyle: style.tabBarLabel,
                 }}
