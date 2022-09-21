@@ -24,6 +24,7 @@ module.exports = {
         '!src/base-components/dropdown/**/*.{ts,tsx}',
         '!src/base-components/map/**/*.{ts,tsx}',
         '!src/base-components/table/**/*.{ts,tsx}',
+        '!src/base-components/image/**/*.{ts,tsx}',
         '!src/componentes/tabela-tipo-obras/**/*.{ts,tsx}',
         '!src/utils/analises/**/*.{ts,tsx}',
         '!src/utils/export-as-image/**/*.{ts,tsx}',
