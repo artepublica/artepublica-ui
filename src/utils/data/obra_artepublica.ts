@@ -4510,12 +4510,12 @@ export const DSebastiaoLeme_HeitorUsai: Obra = {
     Execucao: true,
 };
 
-export const Juventude_BrunoGiorgi: Obra = {
+export const MonumentoaJuventude_BrunoGiorgi: Obra = {
     ID: 111,
     Imagem: undefined,
     Autores: [artistas.BrunoGiorgi],
-    Titulo: `Juventude`,
-    Material: 'granito',
+    Titulo: `Monumento à Juventude`,
+    Material: 'Granito',
     Altura: '4,45m',
     Largura: undefined,
     Profundidade: undefined,
