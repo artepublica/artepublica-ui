@@ -50,6 +50,7 @@ function styles() {
     return StyleSheet.create({
         table: {
             flex: null as unknown as number,
+            //width: 567,
         },
         head: {
             backgroundColor: '#CC1964',
