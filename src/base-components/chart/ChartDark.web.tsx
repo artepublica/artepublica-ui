@@ -13,6 +13,8 @@ import HighchartsSeriesLabel from 'highcharts/modules/series-label';
 import HighchartsStreamgraph from 'highcharts/modules/streamgraph';
 import Theme from 'highcharts/themes/brand-dark';
 
+import { useTheme } from '@utils';
+
 HighchartsData(Highcharts);
 HighchartsSeriesLabel(Highcharts);
 HighchartsAccessibility(Highcharts);
@@ -28,11 +30,19 @@ type ChartDarkProps = {
 };
 
 function ChartDark({ options }: ChartDarkProps): JSX.Element {
+    const { theme } = useTheme();
     const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
 
     Theme(Highcharts);
 
-    return <HighchartsReact constructorType="chart" highcharts={Highcharts} options={options} ref={chartComponentRef} />;
+    return (
+        <HighchartsReact
+            constructorType="chart"
+            highcharts={Highcharts}
+            options={{ ...options, chart: { ...options.chart, backgroundColor: theme.background } }}
+            ref={chartComponentRef}
+        />
+    );
 }
 
 export default ChartDark;

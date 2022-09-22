@@ -13,6 +13,8 @@ import HighchartsSeriesLabel from 'highcharts/modules/series-label';
 import HighchartsStreamgraph from 'highcharts/modules/streamgraph';
 import Theme from 'highcharts/themes/brand-light';
 
+import { useTheme } from '@utils';
+
 HighchartsData(Highcharts);
 HighchartsSeriesLabel(Highcharts);
 HighchartsAccessibility(Highcharts);
@@ -28,6 +30,7 @@ type ChartLightProps = {
 };
 
 function ChartLight({ options }: ChartLightProps): JSX.Element {
+    const { theme } = useTheme();
     const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
 
     Theme(Highcharts);
@@ -36,7 +39,7 @@ function ChartLight({ options }: ChartLightProps): JSX.Element {
         <HighchartsReact
             constructorType="chart"
             highcharts={Highcharts}
-            options={{ ...options, chart: { ...options.chart, backgroundColor: '#FFFFFF' } }}
+            options={{ ...options, chart: { ...options.chart, backgroundColor: theme.background } }}
             ref={chartComponentRef}
         />
     );
