@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Button, Chart, Table, Text } from '@base-components';
+import { Button, Chart, Table2 } from '@base-components';
 import { PoliticaPublica, Exposicao, TrocaCapital, ArtigoJornal, Livro } from '@domain';
 import converterTrocaParaDependencyWheel from '@utils/analises/capitais/converter-troca-para-dependency-wheel';
 import getNodes from '@utils/analises/dependency-wheel/get-nodes';
@@ -185,14 +185,14 @@ function DependencyWheelRefactor({
         <>
             <Button onPress={onPress}>Randon</Button>
             <Chart options={lineOptions as Highcharts.Options} />
-            <Table
+            <Table2
                 headers={[
-                    <Text>{`pessoa (${nosFiltrados.length}, ${nosFiltrados.filter((node) => !agenteDaPolitica(politicaPublica, node.node)).length})`}</Text>,
-                    <Text>peso</Text>,
+                    `pessoa (${nosFiltrados.length}, ${nosFiltrados.filter((node) => !agenteDaPolitica(politicaPublica, node.node)).length})`,
+                    peso.toString(),
                 ]}
                 rows={nosFiltrados.map((no) => [
-                    <Text>{no.node}</Text>,
-                    <Text>{no.weight}</Text>,
+                    no.node,
+                    no.weight.toString(),
                 ])}
                 widthArr={[
                     undefined,

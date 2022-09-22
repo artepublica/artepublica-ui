@@ -1,10 +1,8 @@
 import { Platform } from 'react-native';
 
-import { Table, Text } from '@base-components';
+import { Table2 } from '@base-components';
 import { Obra } from '@domain';
 import { getYear } from '@utils/data/analisys_utils';
-
-import styles from './styles';
 
 export type TabelaTipoObrasProps = {
     tipo: string;
@@ -13,12 +11,10 @@ export type TabelaTipoObrasProps = {
     zona?: boolean;
 };
 
-function headers({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps): JSX.Element[] {
-    const style = styles();
-
+function headers({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps): string[] {
     const defaultHeaders = [
-        <Text>{tipo}</Text>,
-        <Text style={style.total}>{`Total: ${tipos.length}`}</Text>,
+        tipo,
+        `Total: ${tipos.length}`,
     ];
 
     if (Platform.OS !== 'web') {
@@ -27,33 +23,31 @@ function headers({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps): JSX.El
         if (tipologia === true && zona === true) {
             return [
                 ...defaultHeaders,
-                <Text>Tipologias/Obras</Text>,
-                <Text>Zonas/Bairros</Text>,
-                <Text>Bairros/Obras</Text>,
+                'Tipologias/Obras',
+                'Zonas/Bairros',
+                'Bairros/Obras',
             ];
         } else if (tipologia === true) {
             return [
                 ...defaultHeaders,
-                <Text>Tipologias/Obras</Text>,
-                <Text>Bairros/Obras</Text>,
+                'Tipologias/Obras',
+                'Bairros/Obras',
             ];
         } else {
             return [
                 ...defaultHeaders,
-                <Text>Zonas/Bairros</Text>,
-                <Text>Bairros/Obras</Text>,
+                'Zonas/Bairros',
+                'Bairros/Obras',
             ];
         }
     }
 }
 
 function TabelaTipoObras({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps): JSX.Element {
-    const style = styles();
-
     const rows = tipos.map((tipo) => {
         const rows = [
-            <Text>{tipo.nome}</Text>,
-            <Text style={style.total}>{tipo.obras.length}</Text>,
+            tipo.nome,
+            tipo.obras.length.toString(),
         ];
 
         if (Platform.OS === 'web') {
@@ -77,16 +71,14 @@ function TabelaTipoObras({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps)
                     });
 
                 rows.push(
-                    <Text>
-                        {tipologias
-                            .map(
-                                (tipologia) =>
-                                    `${tipologia.nome} (${tipologia.obras.length}): ${tipologia.obras
-                                        .map((obra) => `${obra.Titulo ?? 'Desconhecida'} [${getYear(obra.DataInauguracao) ?? 'S.D.'}]`)
-                                        .join(', ')}`,
-                            )
-                            .join('\n\n')}
-                    </Text>,
+                    tipologias
+                        .map(
+                            (tipologia) =>
+                                `${tipologia.nome} (${tipologia.obras.length}): ${tipologia.obras
+                                    .map((obra) => `${obra.Titulo ?? 'Desconhecida'} [${getYear(obra.DataInauguracao) ?? 'S.D.'}]`)
+                                    .join(', ')}`,
+                        )
+                        .join('\n\n'),
                 );
             }
 
@@ -110,22 +102,20 @@ function TabelaTipoObras({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps)
                     });
 
                 rows.push(
-                    <Text>
-                        {zonas
-                            .map((zona) => {
-                                const bairros = zona.obras
-                                    .map((obra) => obra.Bairro ?? 'Desconhecida')
-                                    .reduce<string[]>((bairros, bairro) => {
-                                        if (!bairros.includes(bairro)) {
-                                            bairros.push(bairro);
-                                        }
-                                        return bairros;
-                                    }, [])
-                                    .sort((a, b) => a.localeCompare(b));
-                                return `${zona.nome} (${bairros.length}): ${bairros.join(', ')}`;
-                            })
-                            .join('\n\n')}
-                    </Text>,
+                    zonas
+                        .map((zona) => {
+                            const bairros = zona.obras
+                                .map((obra) => obra.Bairro ?? 'Desconhecida')
+                                .reduce<string[]>((bairros, bairro) => {
+                                    if (!bairros.includes(bairro)) {
+                                        bairros.push(bairro);
+                                    }
+                                    return bairros;
+                                }, [])
+                                .sort((a, b) => a.localeCompare(b));
+                            return `${zona.nome} (${bairros.length}): ${bairros.join(', ')}`;
+                        })
+                        .join('\n\n'),
                 );
             }
 
@@ -149,23 +139,21 @@ function TabelaTipoObras({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps)
                     });
 
                 rows.push(
-                    <Text>
-                        {bairros
-                            .map(
-                                (bairro) =>
-                                    `${bairro.nome} (${bairro.obras.length}): ${bairro.obras
-                                        .map((obra) => `${obra.Titulo ?? 'Desconhecida'} [${getYear(obra.DataInauguracao) ?? 'S.D.'}]`)
-                                        .reduce<string[]>((titulos, titulo) => {
-                                            if (!titulos.includes(titulo)) {
-                                                titulos.push(titulo);
-                                            }
-                                            return titulos;
-                                        }, [])
-                                        .sort((a, b) => a.localeCompare(b))
-                                        .join(', ')}`,
-                            )
-                            .join('\n\n')}
-                    </Text>,
+                    bairros
+                        .map(
+                            (bairro) =>
+                                `${bairro.nome} (${bairro.obras.length}): ${bairro.obras
+                                    .map((obra) => `${obra.Titulo ?? 'Desconhecida'} [${getYear(obra.DataInauguracao) ?? 'S.D.'}]`)
+                                    .reduce<string[]>((titulos, titulo) => {
+                                        if (!titulos.includes(titulo)) {
+                                            titulos.push(titulo);
+                                        }
+                                        return titulos;
+                                    }, [])
+                                    .sort((a, b) => a.localeCompare(b))
+                                    .join(', ')}`,
+                        )
+                        .join('\n\n'),
                 );
             }
         }
@@ -177,7 +165,7 @@ function TabelaTipoObras({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps)
     const tamanhoColunaTotal = 70;
 
     return (
-        <Table
+        <Table2
             headers={headers({ tipo, tipos, tipologia, zona })}
             rows={rows}
             widthArr={[

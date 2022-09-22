@@ -12,8 +12,8 @@ function Table({ headers, rows, widthArr }: TableProps): JSX.Element {
 
     return (
         <TableNative borderStyle={style.table}>
-            <Row widthArr={widthArr as number[]} data={headers} style={style.head} />
-            <Rows widthArr={widthArr as number[]} data={rows} />
+            <Row widthArr={widthArr as number[]} data={headers} style={style.head} textStyle={style.headText} />
+            <Rows widthArr={widthArr as number[]} data={rows} style={style.row} textStyle={style.rowText} />
         </TableNative>
     );
 }
@@ -23,9 +23,26 @@ export default Table;
 function styles() {
     return StyleSheet.create({
         table: {
-            borderWidth: 1,
-            borderColor: '#c8e1ff',
+            //borderWidth: 0,
+            //borderColor: '#c8e1ff',
         },
-        head: { height: 40 },
+        head: {
+            backgroundColor: '#CC1964',
+        },
+        headText: {
+            fontFamily: 'Arial',
+            fontSize: 12,
+            lineHeight: 20,
+            color: '#FFFFFF',
+        },
+        row: {
+            backgroundColor: '#FFFFFF',
+        },
+        rowText: {
+            fontFamily: 'Arial',
+            fontSize: 11,
+            lineHeight: 17,
+            color: '#000000',
+        },
     });
 }

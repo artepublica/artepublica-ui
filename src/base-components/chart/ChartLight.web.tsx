@@ -32,7 +32,14 @@ function ChartLight({ options }: ChartLightProps): JSX.Element {
 
     Theme(Highcharts);
 
-    return <HighchartsReact constructorType="chart" highcharts={Highcharts} options={options} ref={chartComponentRef} />;
+    return (
+        <HighchartsReact
+            constructorType="chart"
+            highcharts={Highcharts}
+            options={{ ...options, chart: { ...options.chart, backgroundColor: '#FFFFFF' } }}
+            ref={chartComponentRef}
+        />
+    );
 }
 
 export default ChartLight;
