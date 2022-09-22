@@ -1,7 +1,10 @@
-import { ViewStyle, StyleSheet } from 'react-native';
+import { ViewStyle, StyleSheet, TextStyle } from 'react-native';
 
 type Styles = {
     container: ViewStyle;
+    row: ViewStyle;
+    col: ViewStyle;
+    rowText: TextStyle;
 };
 
 function styles(): Styles {
@@ -11,6 +14,22 @@ function styles(): Styles {
             alignItems: 'center',
             justifyContent: 'center',
             padding: 24,
+        },
+        row: {
+            backgroundColor: '#FFFFFF',
+            flex: null as unknown as number,
+        },
+        col: {
+            backgroundColor: '#FFFFFF',
+            marginBottom: 8,
+        },
+        rowText: {
+            fontFamily: 'Arial',
+            fontSize: 11,
+            lineHeight: 17,
+            color: '#000000',
+            padding: 4,
+            //userSelect: 'auto',
         },
     });
 }

@@ -15,7 +15,7 @@ function Exposicoes(): JSX.Element {
         <SafeAreaView style={style.container}>
             <ScrollView style={style.scroll}>
                 <Table
-                    width={567}
+                    //width={567}
                     headers={[
                         'Exposição',
                         'Informações',
