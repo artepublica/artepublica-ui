@@ -4,9 +4,8 @@ import { StyleSheet, View } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { ScrollView } from 'react-native-gesture-handler';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Table, Row, Rows } from 'react-native-table-component';
 
-import { Text } from '@base-components';
+import { Table, Text } from '@base-components';
 import { Artista, Obra } from '@domain';
 import { useTheme } from '@utils';
 import * as analisys_list_utils from '@utils/data/analisys_list_utils';
@@ -179,6 +178,14 @@ function Decade(): JSX.Element | null {
                         scrollViewProps={{
                             nestedScrollEnabled: true,
                         }}
+                        textStyle={{ color: '#CC1964' }}
+                        //arrowIconStyle={{ backgroundColor: '#CC1964 !important' }}
+                        dropDownContainerStyle={{ borderColor: '#CC1964' }}
+                        selectedItemContainerStyle={{ backgroundColor: '#F2D7E3' }}
+                        style={{ borderColor: '#CC1964' }}
+                        arrowIconContainerStyle={{ borderColor: '#CC1964' }}
+                        //iconContainerStyle={{ borderColor: '#CC1964 !important' }}
+                        showTickIcon={false}
                     />
                     <View style={{ height: 24 }} />
 
@@ -187,100 +194,70 @@ function Decade(): JSX.Element | null {
                     </Text>
                     <View style={{ height: 24 }} />
 
-                    <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                        <Row
-                            data={[
-                                <Text>Tipologia</Text>,
-                                <Text>Total:{' '}
-                                {tipologias_obras_decada_total.length}</Text>,
-                                <Text>Obras</Text>,
-                            ]}
-                            style={style.head}
-                        />
-                        <Rows
-                            data={tipologias_obras_decada_total.map((top) => [
-                                <Text>{top.nome}</Text>,
-                                <Text>{top.obras.length}</Text>,
-                                <Text>{top.obras.map((obra) => obra.Titulo ?? 'Desconhecida').join(', ')}</Text>,
-                            ])}
-                        />
-                    </Table>
+                    <Table
+                        headers={[
+                            'Tipologia',
+                            `Total: ${tipologias_obras_decada_total.length}`,
+                            'Obras',
+                        ]}
+                        rows={tipologias_obras_decada_total.map((top) => [
+                            top.nome,
+                            top.obras.length.toString(),
+                            top.obras.map((obra) => obra.Titulo ?? 'Desconhecida').join(', '),
+                        ])}
+                    />
                     <View style={{ height: 24 }} />
 
-                    <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                        <Row
-                            data={[
-                                <Text>Natureza</Text>,
-                                <Text>Total{' '}
-                                {naturezas_obras_decada_total.length}</Text>,
-                            ]}
-                            style={style.head}
-                        />
-                        <Rows
-                            data={naturezas_obras_decada_total.map((top) => [
-                                <Text>{top.nome}</Text>,
-                                <Text>{top.total}</Text>,
-                            ])}
-                        />
-                    </Table>
+                    <Table
+                        headers={[
+                            'Natureza',
+                            `Total: ${naturezas_obras_decada_total.length}`,
+                        ]}
+                        rows={naturezas_obras_decada_total.map((top) => [
+                            top.nome,
+                            top.total.toString(),
+                        ])}
+                    />
                     <View style={{ height: 24 }} />
 
-                    <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                        <Row
-                            data={[
-                                <Text>Zona</Text>,
-                                <Text>Total{' '}
-                                {zonas_obras_decada_total.length}</Text>,
-                            ]}
-                            style={style.head}
-                        />
-                        <Rows
-                            data={zonas_obras_decada_total.map((top) => [
-                                <Text>{top.nome}</Text>,
-                                <Text>{top.total}</Text>,
-                            ])}
-                        />
-                    </Table>
+                    <Table
+                        headers={[
+                            'Zona',
+                            `Total: ${zonas_obras_decada_total.length}`,
+                        ]}
+                        rows={zonas_obras_decada_total.map((top) => [
+                            top.nome,
+                            top.total.toString(),
+                        ])}
+                    />
                     <View style={{ height: 24 }} />
 
-                    <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                        <Row
-                            data={[
-                                <Text>Status</Text>,
-                                <Text>Total{' '}
-                                {status_obras_decada_total.length}</Text>,
-                                <Text>Tipologias</Text>,
-                            ]}
-                            style={style.head}
-                        />
-                        <Rows
-                            data={status_obras_decada_total.map((top) => [
-                                <Text>{top.nome}</Text>,
-                                <Text>{top.total}</Text>,
-                                <Text>{top.tipologias.map((top) => `${top.nome} (${top.total})`).join(', ')}</Text>,
-                            ])}
-                        />
-                    </Table>
+                    <Table
+                        headers={[
+                            'Status',
+                            `Total: ${status_obras_decada_total.length}`,
+                            'Tipologias',
+                        ]}
+                        rows={status_obras_decada_total.map((top) => [
+                            top.nome,
+                            top.total.toString(),
+                            top.tipologias.map((top) => `${top.nome} (${top.total})`).join(', '),
+                        ])}
+                    />
                     <View style={{ height: 24 }} />
 
-                    <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                        <Row
-                            data={[
-                                <Text>Artista</Text>,
-                                <Text>Total:{' '}
-                                {artistas_total_obras.length}</Text>,
-                                <Text>Obras</Text>,
-                            ]}
-                            style={style.head}
-                        />
-                        <Rows
-                            data={artistas_total_obras.map((top) => [
-                                <Text>{top.nome}</Text>,
-                                <Text>{top.total}</Text>,
-                                <Text>{top.obras.join(', ')}</Text>,
-                            ])}
-                        />
-                    </Table>
+                    <Table
+                        headers={[
+                            'Artista',
+                            `Total: ${artistas_total_obras.length}`,
+                            'Obras',
+                        ]}
+                        rows={artistas_total_obras.map((top) => [
+                            top.nome,
+                            top.total.toString(),
+                            top.obras.join(', '),
+                        ])}
+                    />
                     <View style={{ height: 24 }} />
                 </ScrollView>
             </SafeAreaView>
@@ -301,6 +278,14 @@ function Decade(): JSX.Element | null {
                 scrollViewProps={{
                     nestedScrollEnabled: true,
                 }}
+                textStyle={{ color: '#CC1964' }}
+                //arrowIconStyle={{ backgroundColor: '#CC1964 !important' }}
+                dropDownContainerStyle={{ borderColor: '#CC1964' }}
+                selectedItemContainerStyle={{ backgroundColor: '#F2D7E3' }}
+                style={{ borderColor: '#CC1964' }}
+                arrowIconContainerStyle={{ borderColor: '#CC1964' }}
+                //iconContainerStyle={{ borderColor: '#CC1964 !important' }}
+                showTickIcon={false}
             />
             <View style={{ height: 24 }} />
             <Text>Sem dados sobre o período</Text>

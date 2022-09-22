@@ -50,7 +50,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     headerTitle: () => <Text style={style.title}>Obras </Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="home-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -63,7 +63,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     headerTitle: () => <Text style={style.title}>Tipologias </Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -78,7 +78,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     headerTitle: () => <Text style={style.title}>Autores </Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -93,7 +93,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     headerTitle: () => <Text style={style.title}>Naturezas </Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -108,7 +108,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     headerTitle: () => <Text style={style.title}>Zonas </Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -123,7 +123,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     headerTitle: () => <Text style={style.title}>Endereços </Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -138,7 +138,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     headerTitle: () => <Text style={style.title}>Status </Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -153,7 +153,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     headerTitle: () => <Text style={style.title}>Categorias</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -169,7 +169,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     headerTitle: () => <Text style={style.title}>Mapa </Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -183,6 +183,7 @@ function styles(theme: Theme) {
         title: {
             fontSize: theme.header.fontSize,
             lineHeight: theme.header.lineHeight,
+            color: theme.navigation.active,
         },
     });
 }

@@ -30,6 +30,7 @@ module.exports = {
         '!src/utils/export-as-image/**/*.{ts,tsx}',
         '!src/utils/data/**/*.{ts,tsx}',
         '!src/utils/list/**/*.{ts,tsx}',
+        '!src/utils/theme-provider/**/*.{ts,tsx}',
         '!src/pages/**/*.{ts,tsx}',
     ],
     coverageDirectory: '.coverage',

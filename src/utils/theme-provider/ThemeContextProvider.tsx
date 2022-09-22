@@ -1,9 +1,7 @@
-import { createContext, useEffect, useState } from 'react';
-
-import { useColorScheme } from 'react-native';
+import { createContext } from 'react';
 
 import { Theme } from './domain';
-import { LightTheme, DarkTheme } from './themes';
+import { LightTheme } from './themes';
 
 export type ThemeContextType = {
     theme: Theme;
@@ -12,7 +10,7 @@ export type ThemeContextType = {
 export const ThemeContext = createContext<ThemeContextType>({} as ThemeContextType);
 
 function ThemeContextProvider({ children }: { children?: JSX.Element | JSX.Element[] }): JSX.Element {
-    const colorScheme = useColorScheme();
+    /*const colorScheme = useColorScheme();
 
     const [
         theme,
@@ -25,9 +23,9 @@ function ThemeContextProvider({ children }: { children?: JSX.Element | JSX.Eleme
         } else if (colorScheme !== 'dark' && theme.dark) {
             setTheme(LightTheme);
         }
-    }, [colorScheme]);
+    }, [colorScheme]);*/
 
-    return <ThemeContext.Provider value={{ theme }}>{children}</ThemeContext.Provider>;
+    return <ThemeContext.Provider value={{ theme: LightTheme }}>{children}</ThemeContext.Provider>;
 }
 
 type ThemeContextProviderMockProps = {

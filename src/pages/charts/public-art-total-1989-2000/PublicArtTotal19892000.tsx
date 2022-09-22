@@ -3,10 +3,12 @@ import { ScrollView, View } from 'react-native';
 
 import { Chart } from '@base-components';
 import { Obra } from '@domain';
+import { useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
 function Line(): JSX.Element {
+    const { theme } = useTheme();
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
     const total_anterior = Object.keys(typed_obra_artepublica)
@@ -112,9 +114,12 @@ function Line(): JSX.Element {
         },
         yAxis: {
             title: {
-                text: 'Total',
+                text: '',
             },
             min: 0,
+            labels: {
+                style: { color: '#CC1964' },
+            },
         },
         xAxis: {
             type: 'datetime',
@@ -123,13 +128,16 @@ function Line(): JSX.Element {
                 month: '%Y',
                 year: '%Y',
             },
-            title: {
-                text: 'Ano',
+            labels: {
+                style: { color: '#CC1964' },
             },
         },
         legend: {
             layout: 'horizontal',
             align: 'center',
+            borderColor: '#CC1964',
+            backgroundColor: theme.background,
+            itemStyle: { color: '#CC1964' },
         },
         series,
     };
@@ -138,6 +146,7 @@ function Line(): JSX.Element {
 }
 
 function Block(): JSX.Element {
+    const { theme } = useTheme();
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
     const total_anterior = Object.keys(typed_obra_artepublica)
@@ -273,7 +282,7 @@ function Block(): JSX.Element {
         },
         yAxis: {
             title: {
-                text: 'Total',
+                text: '',
             },
             min: 0,
             stackLabels: {
@@ -281,6 +290,7 @@ function Block(): JSX.Element {
                 style: {
                     //fontWeight: 'bold',
                     textOutline: 'none',
+                    color: '#CC1964',
                 },
             },
         },
@@ -299,10 +309,16 @@ function Block(): JSX.Element {
                 '1999',
                 '2000',
             ],
+            labels: {
+                style: { color: '#CC1964' },
+            },
         },
         legend: {
             layout: 'horizontal',
             align: 'center',
+            borderColor: '#CC1964',
+            backgroundColor: theme.background,
+            itemStyle: { color: '#CC1964' },
         },
         plotOptions: {
             column: {

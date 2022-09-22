@@ -47,6 +47,14 @@ function Dropdown({
                 nestedScrollEnabled: true,
             }}
             zIndex={zIndex}
+            textStyle={{ color: '#CC1964' }}
+            //arrowIconStyle={{ backgroundColor: '#CC1964 !important' }}
+            dropDownContainerStyle={{ borderColor: '#CC1964' }}
+            selectedItemContainerStyle={{ backgroundColor: '#F2D7E3' }}
+            style={{ borderColor: '#CC1964' }}
+            arrowIconContainerStyle={{ borderColor: '#CC1964' }}
+            //iconContainerStyle={{ borderColor: '#CC1964 !important' }}
+            showTickIcon={false}
         />
     );
 }

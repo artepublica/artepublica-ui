@@ -54,7 +54,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Obras Recorte</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="home-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -67,7 +67,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Tipologias Recorte</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -82,7 +82,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Autores Recorte</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -97,7 +97,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Naturezas Recorte</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -112,7 +112,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Zonas Recorte</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -127,7 +127,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Endereços Recorte</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -142,7 +142,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Status Recorte</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -157,7 +157,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Categorias Recorte</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -173,7 +173,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Mapa Recorte</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -187,7 +187,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Esculturas Urbanas</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -201,7 +201,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Todas as Obras x Arte Pública</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -215,7 +215,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Décadas</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -229,7 +229,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     headerTitle: () => <Text style={style.title}>Eixos</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -243,6 +243,7 @@ function styles(theme: Theme) {
         title: {
             fontSize: theme.header.fontSize,
             lineHeight: theme.header.lineHeight,
+            color: theme.navigation.active,
         },
     });
 }

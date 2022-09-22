@@ -41,7 +41,7 @@ export function ChartsNavigator({ testOnly_initialRouteName }: ChartsNavigatorPr
                     headerTitle: () => <Text style={style.title}>Charts Home</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="home-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -59,7 +59,7 @@ export function ChartsNavigator({ testOnly_initialRouteName }: ChartsNavigatorPr
                             style={{ paddingLeft: 16 }}
                             onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
                         >
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -77,7 +77,7 @@ export function ChartsNavigator({ testOnly_initialRouteName }: ChartsNavigatorPr
                             style={{ paddingLeft: 16 }}
                             onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
                         >
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
                         </TouchableOpacity>
                     ),
                 })}
@@ -91,6 +91,7 @@ function styles(theme: Theme) {
         title: {
             fontSize: theme.header.fontSize,
             lineHeight: theme.header.lineHeight,
+            color: theme.navigation.active,
         },
     });
 }

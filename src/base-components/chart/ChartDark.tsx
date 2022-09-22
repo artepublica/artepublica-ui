@@ -12,7 +12,7 @@ function ChartDark({ options }: ChartProps): JSX.Element {
     const { theme } = useTheme();
 
     const injectScript = `
-        Highcharts.chart('container', ${JSON.stringify(options)});
+        Highcharts.chart('container', ${JSON.stringify({ ...options, chart: { ...options.chart, backgroundColor: theme.background } })});
     `;
 
     const html = `
