@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Button, Chart, Table2 } from '@base-components';
+import { Button, Chart, Table } from '@base-components';
 import { PoliticaPublica, Exposicao, TrocaCapital, ArtigoJornal, Livro } from '@domain';
 import converterTrocaParaDependencyWheel from '@utils/analises/capitais/converter-troca-para-dependency-wheel';
 import getNodes from '@utils/analises/dependency-wheel/get-nodes';
@@ -207,7 +207,7 @@ function Sankey({
         <>
             <Button onPress={onPress}>Randon</Button>
             <Chart options={lineOptions as Highcharts.Options} />
-            <Table2
+            <Table
                 headers={[
                     `pessoa (${nosFiltrados.length}, ${nosFiltrados.filter((node) => !agenteDaPolitica(politicaPublica, node.node)).length})`,
                     peso.toString(),

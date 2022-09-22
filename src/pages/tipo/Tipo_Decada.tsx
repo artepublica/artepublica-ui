@@ -1,8 +1,12 @@
-import Highcharts, { SeriesOptionsType } from 'highcharts';
+import { useState } from 'react';
+
+import Highcharts, { AlignValue, AxisTypeValue, OptionsStackingValue, SeriesOptionsType } from 'highcharts';
 import { ScrollView, View } from 'react-native';
+import DropDownPicker from 'react-native-dropdown-picker';
 
 import { Chart } from '@base-components';
 import { Obra } from '@domain';
+import { useTheme } from '@utils';
 import * as dedadas from '@utils/data/decadas';
 
 import styles from './styles';
@@ -12,6 +16,7 @@ type Tipo_DecadaProps = {
 };
 
 function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
+    const { theme } = useTheme();
     const style = styles();
 
     const all: Record<string, Obra[]> = dedadas.all;
@@ -80,15 +85,31 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
 
     const columnOptions: Highcharts.Options = {
         chart: {
-            height: 600,
             type: 'column',
+            height: 600,
+            marginBottom: null as unknown as number,
         },
         title: {
             text: '',
         },
+        xAxis: {
+            categories: Object.keys(all).filter((key) => key !== 'null' && all[key].length > 0),
+            maxPadding: null as unknown as number,
+            type: null as unknown as AxisTypeValue,
+            crosshair: null as unknown as boolean,
+            labels: {
+                align: null as unknown as AlignValue,
+                reserveSpace: null as unknown as boolean,
+                rotation: null as unknown as number,
+                style: { color: '#CC1964' },
+            },
+            lineWidth: null as unknown as number,
+            margin: null as unknown as number,
+            tickWidth: null as unknown as number,
+        },
         yAxis: {
             title: {
-                text: 'Total',
+                text: '',
             },
             min: 0,
             stackLabels: {
@@ -96,21 +117,37 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
                 style: {
                     //fontWeight: 'bold',
                     textOutline: 'none',
+                    color: '#CC1964',
                 },
             },
-        },
-        xAxis: {
-            categories: Object.keys(all).filter((key) => key !== 'null' && all[key].length > 0),
+            visible: null as unknown as boolean,
+            startOnTick: null as unknown as boolean,
+            endOnTick: null as unknown as boolean,
         },
         legend: {
             layout: 'horizontal',
             align: 'center',
+            borderColor: '#CC1964',
+            backgroundColor: theme.background,
+            itemStyle: { color: '#CC1964' },
         },
         plotOptions: {
             column: {
                 stacking: 'normal',
                 dataLabels: {
                     enabled: true,
+                },
+            },
+            series: {
+                label: {
+                    minFontSize: null as unknown as number,
+                    maxFontSize: null as unknown as number,
+                    style: {
+                        color: null as unknown as string,
+                    },
+                },
+                accessibility: {
+                    exposeAsGroupOnly: null as unknown as boolean,
                 },
             },
         },
@@ -120,27 +157,39 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
     const streamgraphOptions: Highcharts.Options = {
         chart: {
             type: 'streamgraph',
-            marginBottom: 60,
             height: 600,
+            marginBottom: 60,
         },
         title: {
             text: '',
         },
         xAxis: {
+            categories: Object.keys(all).filter((key) => key !== 'null' && all[key].length > 0),
             maxPadding: 0,
             type: 'category',
             crosshair: true,
-            categories: Object.keys(all).filter((key) => key !== 'null' && all[key].length > 0),
             labels: {
                 align: 'left',
                 reserveSpace: false,
                 rotation: 270,
+                style: { color: '#CC1964' },
             },
             lineWidth: 0,
             margin: 20,
             tickWidth: 0,
         },
         yAxis: {
+            title: {
+                text: null as unknown as string,
+            },
+            min: null as unknown as number,
+            stackLabels: {
+                enabled: null as unknown as boolean,
+                style: {
+                    fontWeight: null as unknown as string,
+                    textOutline: null as unknown as string,
+                },
+            },
             visible: false,
             startOnTick: false,
             endOnTick: false,
@@ -148,9 +197,9 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         legend: {
             layout: 'horizontal',
             align: 'center',
-            //margin: 30,
-            //itemMarginTop: 100,
-            //itemMarginBottom: 10,
+            borderColor: '#CC1964',
+            backgroundColor: theme.background,
+            itemStyle: { color: '#CC1964' },
         },
         annotations: [
             {
@@ -161,12 +210,18 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             },
         ],
         plotOptions: {
+            column: {
+                stacking: null as unknown as OptionsStackingValue,
+                dataLabels: {
+                    enabled: null as unknown as boolean,
+                },
+            },
             series: {
                 label: {
                     minFontSize: 5,
                     maxFontSize: 15,
                     style: {
-                        //color: 'rgba(255,255,255,0.75)',
+                        color: '#CC1964',
                     },
                 },
                 accessibility: {
@@ -177,74 +232,47 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         series: streamgraphSeries,
     };
 
-    const streamgraphEsculturaOptions: Highcharts.Options = {
-        chart: {
-            type: 'streamgraph',
-            marginBottom: 60,
-            height: 600,
-        },
-        title: {
-            text: '',
-        },
-        xAxis: {
-            maxPadding: 0,
-            type: 'category',
-            crosshair: true,
-            categories: Object.keys(all).filter((key) => key !== 'null' && all[key].length > 0),
-            labels: {
-                align: 'left',
-                reserveSpace: false,
-                rotation: 270,
-            },
-            lineWidth: 0,
-            margin: 20,
-            tickWidth: 0,
-        },
-        yAxis: {
-            visible: false,
-            startOnTick: false,
-            endOnTick: false,
-        },
-        legend: {
-            layout: 'horizontal',
-            align: 'center',
-            //margin: 30,
-            //itemMarginTop: 100,
-            //itemMarginBottom: 10,
-        },
-        annotations: [
-            {
-                labelOptions: {
-                    //backgroundColor: 'rgba(255,255,255,0.5)',
-                    //borderColor: 'silver',
-                },
-            },
-        ],
-        plotOptions: {
-            series: {
-                label: {
-                    minFontSize: 5,
-                    maxFontSize: 15,
-                    style: {
-                        //color: 'rgba(255,255,255,0.75)',
-                    },
-                },
-                accessibility: {
-                    exposeAsGroupOnly: true,
-                },
-            },
-        },
-        series: streamgraphSeries.filter((serie) => serie.name === 'Escultura'),
-    };
+    const [
+        open,
+        setOpen,
+    ] = useState(false);
+    const [
+        value,
+        setValue,
+    ] = useState('1');
+    const [
+        items,
+        setItems,
+    ] = useState([
+        { label: 'Coluna', value: '0' },
+        { label: 'Stream', value: '1' },
+    ]);
 
     return (
         <View style={style.container}>
             <ScrollView style={{ width: '100%' }}>
-                <Chart options={columnOptions as Highcharts.Options} />
-                <View style={{ height: 24 }} />
-                <Chart options={streamgraphOptions as Highcharts.Options} />
-                <View style={{ height: 24 }} />
-                <Chart options={streamgraphEsculturaOptions as Highcharts.Options} />
+                <DropDownPicker
+                    theme={theme.dark ? 'DARK' : 'LIGHT'}
+                    open={open}
+                    value={value}
+                    items={items}
+                    setOpen={setOpen}
+                    setValue={setValue}
+                    setItems={setItems}
+                    listMode="SCROLLVIEW"
+                    scrollViewProps={{
+                        nestedScrollEnabled: true,
+                    }}
+                    textStyle={{ color: '#CC1964' }}
+                    //arrowIconStyle={{ backgroundColor: '#CC1964 !important' }}
+                    dropDownContainerStyle={{ borderColor: '#CC1964' }}
+                    selectedItemContainerStyle={{ backgroundColor: '#F2D7E3' }}
+                    style={{ borderColor: '#CC1964' }}
+                    arrowIconContainerStyle={{ borderColor: '#CC1964' }}
+                    //iconContainerStyle={{ borderColor: '#CC1964 !important' }}
+                    showTickIcon={false}
+                />
+                {value === '0' ? <Chart options={columnOptions as Highcharts.Options} /> : <Chart options={streamgraphOptions as Highcharts.Options} />}
             </ScrollView>
         </View>
     );

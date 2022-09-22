@@ -4,15 +4,15 @@ import { SeriesOptionsType } from 'highcharts';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Table, Row, Rows } from 'react-native-table-component';
 
-import { Chart, Text } from '@base-components';
+import { Table, Chart } from '@base-components';
 import { Artista, Obra } from '@domain';
 import { useTheme } from '@utils';
 import * as dedadas from '@utils/data/decadas';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
 function Line({ category }: { category: string }): JSX.Element {
+    const { theme } = useTheme();
     const all: Record<string, Obra[]> = dedadas.all;
 
     const total = Object.keys(all)
@@ -52,9 +52,12 @@ function Line({ category }: { category: string }): JSX.Element {
         },
         yAxis: {
             title: {
-                text: 'Total',
+                text: '',
             },
             min: 0,
+            labels: {
+                style: { color: '#CC1964' },
+            },
         },
         xAxis: {
             type: 'datetime',
@@ -62,13 +65,16 @@ function Line({ category }: { category: string }): JSX.Element {
                 month: '%Y',
                 year: '%Y',
             },
-            title: {
-                text: 'Ano',
+            labels: {
+                style: { color: '#CC1964' },
             },
         },
         legend: {
             layout: 'horizontal',
             align: 'center',
+            borderColor: '#CC1964',
+            backgroundColor: theme.background,
+            itemStyle: { color: '#CC1964' },
         },
         series,
     };
@@ -313,63 +319,53 @@ function Category(): JSX.Element {
                     scrollViewProps={{
                         nestedScrollEnabled: true,
                     }}
+                    textStyle={{ color: '#CC1964' }}
+                    //arrowIconStyle={{ backgroundColor: '#CC1964 !important' }}
+                    dropDownContainerStyle={{ borderColor: '#CC1964' }}
+                    selectedItemContainerStyle={{ backgroundColor: '#F2D7E3' }}
+                    style={{ borderColor: '#CC1964' }}
+                    arrowIconContainerStyle={{ borderColor: '#CC1964' }}
+                    //iconContainerStyle={{ borderColor: '#CC1964 !important' }}
+                    showTickIcon={false}
                 />
                 <View style={{ height: 24 }} />
 
-                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                    <Row
-                        data={[
-                            <Text>Tipologia</Text>,
-                            <Text>Total:{' '}
-                            {tipologias_total.length}</Text>,
-                        ]}
-                        style={style.head}
-                    />
-                    <Rows
-                        data={tipologias_total.map((top) => [
-                            <Text>{top.nome}</Text>,
-                            <Text>{top.total}</Text>,
-                        ])}
-                    />
-                </Table>
+                <Table
+                    headers={[
+                        'Tipologia',
+                        `Total: ${tipologias_total.length}`,
+                    ]}
+                    rows={tipologias_total.map((top) => [
+                        top.nome,
+                        top.total.toString(),
+                    ])}
+                />
                 <View style={{ height: 24 }} />
 
-                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                    <Row
-                        data={[
-                            <Text>Natureza</Text>,
-                            <Text>Total:{' '}
-                            {naturezas_total.length}</Text>,
-                        ]}
-                        style={style.head}
-                    />
-                    <Rows
-                        data={naturezas_total.map((top) => [
-                            <Text>{top.nome}</Text>,
-                            <Text>{top.total}</Text>,
-                        ])}
-                    />
-                </Table>
+                <Table
+                    headers={[
+                        'Natureza',
+                        `Total: ${naturezas_total.length}`,
+                    ]}
+                    rows={naturezas_total.map((top) => [
+                        top.nome,
+                        top.total.toString(),
+                    ])}
+                />
                 <View style={{ height: 24 }} />
 
-                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                    <Row
-                        data={[
-                            <Text>Artista</Text>,
-                            <Text>Total:{' '}
-                            {artistas_total.length}</Text>,
-                            <Text>Obras</Text>,
-                        ]}
-                        style={style.head}
-                    />
-                    <Rows
-                        data={artistas_total.map((top) => [
-                            <Text>{top.nome}</Text>,
-                            <Text>{top.total}</Text>,
-                            <Text>{top.obras.map((obra) => `${obra.nome} (${obra.inauguracao})`).join(', ')}</Text>,
-                        ])}
-                    />
-                </Table>
+                <Table
+                    headers={[
+                        'Natureza',
+                        `Total: ${artistas_total.length}`,
+                        'Obras',
+                    ]}
+                    rows={artistas_total.map((top) => [
+                        top.nome,
+                        top.total.toString(),
+                        top.obras.map((obra) => `${obra.nome} (${obra.inauguracao})`).join(', '),
+                    ])}
+                />
                 <View style={{ height: 24 }} />
 
                 <View>

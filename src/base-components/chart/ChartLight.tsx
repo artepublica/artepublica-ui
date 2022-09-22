@@ -13,7 +13,7 @@ function ChartLight({ options }: ChartLightProps): JSX.Element {
 
     const injectScript = `
         var chart = function () {
-            Highcharts.chart('container', ${JSON.stringify(options)});
+            Highcharts.chart('container', ${JSON.stringify({ ...options, chart: { ...options.chart, backgroundColor: theme.background } })});
         }
 
         chart();

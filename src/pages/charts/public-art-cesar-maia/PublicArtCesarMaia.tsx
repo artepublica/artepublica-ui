@@ -17,6 +17,7 @@ function getRandomColor() {
 }
 
 function Block(): JSX.Element {
+    const { theme } = useTheme();
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
     const anos_primeiro_mantado = [
@@ -84,7 +85,7 @@ function Block(): JSX.Element {
         },
         yAxis: {
             title: {
-                text: 'Total',
+                text: '',
             },
             min: 0,
             stackLabels: {
@@ -94,13 +95,22 @@ function Block(): JSX.Element {
                     textOutline: 'none',
                 },
             },
+            labels: {
+                style: { color: '#CC1964' },
+            },
         },
         xAxis: {
             categories: anos_primeiro_mantado.map((ano) => ano.toString()),
+            labels: {
+                style: { color: '#CC1964' },
+            },
         },
         legend: {
             layout: 'horizontal',
             align: 'center',
+            borderColor: '#CC1964',
+            backgroundColor: theme.background,
+            itemStyle: { color: '#CC1964' },
         },
         plotOptions: {
             column: {

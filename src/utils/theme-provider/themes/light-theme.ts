@@ -30,7 +30,7 @@ const LightTheme: Theme = {
     },
     text: {
         font: Platform.select(fonts).medium,
-        textColor: '#000000',
+        textColor: '#CC1964',
     },
     header: {
         fontSize: 24,

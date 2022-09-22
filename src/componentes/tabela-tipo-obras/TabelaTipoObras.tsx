@@ -1,6 +1,6 @@
 import { Platform } from 'react-native';
 
-import { Table2 } from '@base-components';
+import { Table } from '@base-components';
 import { Obra } from '@domain';
 import { getYear } from '@utils/data/analisys_utils';
 
@@ -165,7 +165,7 @@ function TabelaTipoObras({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps)
     const tamanhoColunaTotal = 70;
 
     return (
-        <Table2
+        <Table
             headers={headers({ tipo, tipos, tipologia, zona })}
             rows={rows}
             widthArr={[
