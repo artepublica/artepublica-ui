@@ -25,7 +25,7 @@ export const DocumentaKassel1992: Exposicao = {
     AbreviacaoInstituicao: undefined,
     Cidade: 'Kassel',
     Estado: undefined,
-    Pais: undefined,
+    Pais: 'Alemanha',
     Local: undefined,
     DataInicio: '13/06/1992',
     DataFim: '20/09/1992',

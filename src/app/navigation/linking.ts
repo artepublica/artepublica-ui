@@ -326,6 +326,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Category: {
                                 path: 'categoria',
                             },
+                            Exposicoes: {
+                                path: 'exposicoes',
+                            },
                         },
                     },
                     Charts: {
