@@ -1372,7 +1372,7 @@ export const Primavera_GustaveFredericMichel: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -1414,7 +1414,7 @@ export const Outono_GustaveFredericMichel: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -1452,7 +1452,7 @@ export const Inverno_GustaveFredericMichel: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -1490,7 +1490,7 @@ export const Verao_GustaveFredericMichel: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -1784,7 +1784,7 @@ export const Uniao_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -1820,7 +1820,7 @@ export const Liberdade_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -1856,7 +1856,7 @@ export const Justiça_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -1892,7 +1892,7 @@ export const Fidelidade_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -3276,7 +3276,7 @@ export const BaraodeLadario_Joceil: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -3872,7 +3872,7 @@ export const Primavera_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -3955,7 +3955,7 @@ export const Inverno_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -3996,7 +3996,7 @@ export const Outono_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -4037,7 +4037,7 @@ export const Verao_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -4458,8 +4458,8 @@ export const Encontro_FranzWeissmann: Obra = {
     Latitude: `-22.9040276`,
     Longitude: `-43.1756872`,
     SuporteEspacial: undefined,
-    Base: 'Com pedestal',
-    MaterialBase: 'pedra sabão',
+    Base: 'Sem pedestal',
+    MaterialBase: undefined,
     Status: 'Em cessão de uso em espaço público',
     Descricao: `Peça em aço corten pintada, se referindo ao encontro de duas tiras, ou duas partes de um cubo. Escultura do Conjunto
     Cândido Mendes, e exposta em área publica desde 1985.`,
@@ -4666,7 +4666,7 @@ export const ModestinoKanto_HonorioPecanha: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -5002,7 +5002,7 @@ export const PrincesaIsabel_Desconhecida: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -5151,7 +5151,7 @@ export const SergioCardoso_Marlota: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -5881,7 +5881,7 @@ export const AlmiranteCochrane_Lana: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -5954,7 +5954,7 @@ export const PaulaFreitas_BenevenutoBerna: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -6024,7 +6024,7 @@ export const Fidelidade_BenevenutoBerna: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -6094,7 +6094,7 @@ export const LamartineBabo_Desconhecida: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -6746,7 +6746,7 @@ export const Hahnemannianos_Desconhecida: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -6782,7 +6782,7 @@ export const NoelRosa_AlfredoHerculanoFreixo: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -8686,7 +8686,7 @@ export const Mercurio_Desconhecida: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -11441,7 +11441,7 @@ export const AVieiraSoutoePauloDeFrontin_RodolfoBernadelli: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -11517,7 +11517,7 @@ export const RubenDario_DanielCrow_CurzioZani: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -12052,7 +12052,7 @@ export const Marte_Desconhecida: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -12091,7 +12091,7 @@ export const MercurioPalacioCidade_Desconhecida: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -12143,7 +12143,7 @@ export const Minerva_Giustiniani: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -12884,7 +12884,7 @@ export const Crepusculo_HenriWeigele: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -13181,7 +13181,7 @@ export const America_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -13219,7 +13219,7 @@ export const Oceania_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -13257,7 +13257,7 @@ export const Africa_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -13295,7 +13295,7 @@ export const Europa_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -13333,7 +13333,7 @@ export const Asia_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -13823,7 +13823,7 @@ export const Primavera_JeanBaptistePoultier: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -13858,7 +13858,7 @@ export const Verao_PierreLeGros: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -14042,7 +14042,7 @@ export const Outono_JacquesHouzeau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -14077,7 +14077,7 @@ export const Inverno_SimonHurtvelle: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Alegoria',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -15925,7 +15925,7 @@ export const Animais_JorgeMarioJauregui: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Lâmina escultórica',
     Execucao: true,
 };
 
@@ -15964,7 +15964,7 @@ export const ADiasdaCruz_VicenteDelRio_LuizCarlosToledo: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -16000,7 +16000,7 @@ export const AAugustoMotta_Desconhecida: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -16675,7 +16675,7 @@ export const ComendadorPauloFPeixotoDaFonfeca_HonorioPecanha: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -17894,7 +17894,7 @@ export const JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -17964,7 +17964,7 @@ export const AMelvinJoneseArmandoFarjado_Ariel: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Efígie',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -18866,4 +18866,499 @@ Inaugurado na Praça Mauá, foi transferido em 1937 para o Campo dos Afonsos.`,
     Natureza: undefined,
     Tipologia: 'Escultura',
     Execucao: true,
+};
+
+export const Piramide_MestreValentim: Obra = { // TODO: revisar obra e colocar no padrão acima
+    ID: 97,
+    Imagem: undefined,
+    Autores: [artistas.MestreValentim],
+    Titulo: `Pirâmide`,
+    Material: 'bloco gnaisse',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: `01/1806`,
+    DatasImportantes: [new Data(`01/1806`, 'data de inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Central',
+    Bairro: 'Centro',
+    Endereco: 'Passeio Público',
+    Latitude: `-22.9132919`,
+    Longitude: `-43.1763128`,
+    SuporteEspacial: undefined,
+    Base: 'Sem pedestal',
+    MaterialBase: undefined,
+    Status: 'Permanece no espaço público',
+    Descricao: `Foi construída no período de 1794 a 1806 e são as últimas obras públicas do Mestre Valentim. A pirâmide com cerca de quinze metros de altura e dois metros em cada face da seção. Há uma inscrição cartela oval em mármore de Ào Amor ao Publico"`,
+    Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
+};
+
+export const Obelisco_Archi5: Obra = { // TODO: revisar obra e colocar no padrão acima
+    ID: 169,
+    Imagem: undefined,
+    Autores: [artistas.Archi5],
+    Titulo: `Obelisco`,
+    Material: 'aço corten',
+    Altura: '12 m',
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: `08/1996`,
+    DatasImportantes: [new Data(`08/1996`, 'data de inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Norte',
+    Bairro: 'Vila Isabel',
+    Endereco: 'Praça Barão de Drummond',
+    Latitude: `-22.9166566`,
+    Longitude: `-43.2502656`,
+    SuporteEspacial: undefined,
+    Base: 'Com pedestal',
+    MaterialBase: 'Granito',
+    Status: 'Permanece no espaço público',
+    Descricao: `Obelisco de doze metros de altura, composto por três elementos. O primeiro, um bloco quadrado confeccionado por blocos de granito. O segundo elemento, um cilindro de dois metros de altura. O terceiro elemento é a piramide com duas hastes de aço com dez metros de altura. Cada haste é formada por duas barras, formando um triangulo na base que diminui até a extremidade.`,
+    Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
+};
+
+export const Obelisco_EduardoDeSa: Obra = { // TODO: revisar obra e colocar no padrão acima
+    ID: 17,
+    Imagem: undefined,
+    Autores: [artistas.EduardoDeSa],
+    Titulo: 'Obelisco',
+    Material: 'granito',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: '1906',
+    DatasImportantes: [new Data('1906', 'inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Central',
+    Bairro: 'Centro',
+    Endereco: 'Avenida Rio Branco',
+    Latitude: '-22.912687',
+    Longitude: '-43.174773',
+    SuporteEspacial: 'trevo',
+    Base: 'Sem pedestal',
+    MaterialBase: undefined,
+    Status: 'Permanece no espaço público',
+    Descricao:
+        'Com 18 metros de altura, o obelisco é o marco comemorativo da construção da Avenida Central, em 1906.  Reza a lenda que Getúlio amarrou seu cavalo aqui, quando tomou a Capital Federal na revolução de 30.',
+    Fatos: [new Fato('', '', 'Bem tombado estadual', '', [], 'Rio de Janeiro')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
+};
+
+export const ObeliscodoCaisdaImperatriz_Desconhecido: Obra = { // TODO: revisar obra e colocar no padrão acima
+    ID: 3,
+    Imagem: undefined,
+    Autores: [artistas.Desconhecida],
+    Titulo: 'Obelisco',
+    Material: 'granito',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: undefined,
+    DatasImportantes: [new Data('', 'século XIX')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Central',
+    Bairro: 'Gamboa',
+    Endereco: 'Avenida Barão de Tefé',
+    Latitude: '-22.896938',
+    Longitude: '-43.187266',
+    SuporteEspacial: 'praça',
+    Base: undefined,
+    MaterialBase: undefined,
+    Status: 'Permanece no espaço público',
+    Descricao: '',
+    Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
+};
+
+export const Obelisco_PauloCase: Obra = { // TODO: revisar obra e colocar no padrão acima
+    ID: 241,
+    Imagem: undefined,
+    Autores: [artistas.PauloCase],
+    Titulo: `Obelisco`,
+    Material: 'concreto',
+    Altura: '22m',
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: `08/1996`,
+    DatasImportantes: [new Data(`08/1996`, 'data de inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Sul',
+    Bairro: 'Ipanema',
+    Endereco: 'Rua Visconde de Pirajá',
+    Latitude: `-22.9837493`,
+    Longitude: `-43.2139005`,
+    SuporteEspacial: undefined,
+    Base: 'Com pedestal',
+    MaterialBase: 'Granito',
+    Status: 'Permanece no espaço público',
+    Descricao: `Projetado para ser o marco de Ipanema. Foi criado pelo Rio-Cidade e se situa no local onde os bondes faziam o
+    retorno para circular no bairro. O Obelisco tem forma circular com uma bola no seu topo.`,
+    Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
+};
+
+export const ObeliscodoLargodoBomRetiro_Desconhecida: Obra = { // TODO: revisar obra e colocar no padrão acima
+    ID: 1234,
+    Imagem: undefined,
+    Autores: [artistas.Desconhecida],
+    Promotor: undefined,
+    Titulo: `Obelisco`,
+    Renomeacao: false,
+    Classificacao: 'perene',
+    Categoria: 'plasticidade',
+    Tipologia: 'Obelisco',
+    Material: `Bloco de gnaisse esculpido`,
+    Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
+Peça maciça esculpida com base quadrada e outra piramidal de cerca de 6 metros de altura`,
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Diametro: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    Execucao: true,
+    DataInauguracao: `08/1928`,
+    Zona: undefined,
+    Bairro: undefined,
+    Endereco: undefined,
+    Latitude: `-22.9473838`,
+    Longitude: `-43.2913253`,
+    Lugar: undefined,
+    Remocao: undefined,
+    DataRealocacao: undefined,
+    Realocacao: undefined,
+    ZonaRealocacao: undefined,
+    BairroRealocacao: undefined,
+    EnderecoRealocacao: undefined,
+    LatitudeRealocacao: undefined,
+    LongitudeRealocacao: undefined,
+    LugarRealocacao: undefined,
+};
+
+export const ObeliscodaAvenidaRioBranco_AZanuzziCia: Obra = {// TODO: revisar obra e colocar no padrão acima
+    ID: 132,
+    Imagem: undefined,
+    Autores: [artistas.Desconhecida],
+    Promotor: undefined,
+    Titulo: `Obelisco`,
+    Renomeacao: false,
+    Classificacao: 'perene',
+    Categoria: 'plasticidade',
+    Tipologia: 'Obelisco',
+    Material: `Peça em granito`,
+    Descricao: `A Zanuzzi Cia - Obelisco circular de granito extraído do Morro da Viúva, com 28 toneladas paracomemorar da abertura da Avenida Rio Branco, iniciada em 8 de março de 1904 e concluído na data de inauguração do marco, dia 14 de novembro de 1906.
+O projeto foi organizado no escritório tecnico da Comissão Construtora da Avenida Central, cujo chefe era o Dr. Paulo de Frontim e executado pelos Srs A. Januzzi & Irmãos, tendo como engenheiro de acompanhamento o Dr. Le Cocq.
+O Monumento tem cinco blocos, com dimensões e decoração distintas, todos em pedra, coincidentes com o principal material utilizado nas construções novas da Avenida. O primeiro forma os degraus que o elevam. O segundo a base, o terceiro com cerca de 2m foi destinado à colocação de placas de bronze de identificação do Monumento. O quarto possui elementos decorativos típicos das construções ecléticas O quinto bloco com 10 metros finalizado por uma pirâmide.`,
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Diametro: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    Execucao: true,
+    DataInauguracao: `11/1906`,
+    Zona: undefined,
+    Bairro: undefined,
+    Endereco: undefined,
+    Latitude: `-22.9130043`,
+    Longitude: `-43.1747473`,
+    Lugar: undefined,
+    Remocao: undefined,
+    DataRealocacao: undefined,
+    Realocacao: undefined,
+    ZonaRealocacao: undefined,
+    BairroRealocacao: undefined,
+    EnderecoRealocacao: undefined,
+    LatitudeRealocacao: undefined,
+    LongitudeRealocacao: undefined,
+    LugarRealocacao: undefined,
+};
+
+export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Obra = { // TODO: revisar obra e colocar no padrão acima
+    ID: 145,
+    Imagem: undefined,
+    Autores: [artistas.FranzWeissmann],
+    Promotor: undefined,
+    Titulo: `Monumento A Liberdade De Expressao`,
+    Renomeacao: false,
+    Classificacao: 'perene',
+    Categoria: 'plasticidade',
+    Tipologia: `Obelisco`,
+    Material: 'concreto',
+    Descricao: `Considerado o primeiro monumento de Arte Concreta da América Latina. Foi o primeiro monumento à liberdade de expressão a ser erigido nas Américas, além de ter sido a primeira obra pública de Franz Weissmam, encomendada pela Associação das Emissoras de São Paulo.`,
+    Altura: '1600 cm',
+    Largura: undefined,
+    Profundidade: undefined,
+    Diametro: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    Execucao: true,
+    DataInauguracao: `12/10/1954`,
+    Zona: 'Norte',
+    Bairro: 'Sao Cristovao',
+    Endereco: 'Entrada da Quinta da Boa Vista',
+    Latitude: `-22.9051942`,
+    Longitude: `-43.2239741`,
+    Status: 'Removida do espaço público',
+    Lugar: undefined,
+    Remocao: true,
+    DataRealocacao: undefined,
+    Realocacao: undefined,
+    ZonaRealocacao: undefined,
+    BairroRealocacao: undefined,
+    EnderecoRealocacao: undefined,
+    LatitudeRealocacao: undefined,
+    LongitudeRealocacao: undefined,
+    LugarRealocacao: undefined,
+    Fatos: [
+        new Fato('1954', '1954', 'Doação', 'Doação da Sociedade Interamericana de Imprensa', [], 'Rio de Janeiro'),
+        new Fato(
+            '1962',
+            '1962',
+            'Demolição',
+            'Demolido para as obras de alargamento de rua promovida pela prefeitura e pelo departamento de urbanização da SURSAN',
+            [pessoas.CarlosLacerda],
+            'Rio de Janeiro',
+        ),
+    ], 
+};
+
+export const ObeliscodoAlargamentodeCopacabana_Desconhecida: Obra = {// TODO: revisar obra e colocar no padrão acima
+    ID: 349,
+    Imagem: undefined,
+    Autores: [artistas.Desconhecida],
+    Promotor: undefined,
+    Titulo: `Obelisco`,
+    Renomeacao: false,
+    Classificacao: 'perene',
+    Categoria: 'plasticidade',
+    Tipologia: `Obelisco`,
+    Material: `Bloco de granito`,
+    Descricao: `Marco oferecido pelos moradores de Copacabana à Cidade, emcomemoração da reconstrução
+    e alargamento da Avenida Atlântica. Foi inaugurado na Avenida Atlantica próximo a Rua Almirante
+    Gonçalves. Foi transferido, na década de 1930, quando os canteiros centrais foram eliminadoso,
+    para a Praça Júlio de Noronha.Possui forma de coluna circular adornado com dois medalhões de bronze com a efígie do Prefeito Paulo de Frontin e outro com a do Presidente da República Delfim Moreira.`,
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Diametro: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    Execucao: true,
+    DataInauguracao: `07/1919`,
+    Zona: 'Sul',
+    Bairro: 'Leme',
+    Endereco: 'Praça Júlio de Noronha',
+    Latitude: `-22.9623683`,
+    Longitude: `-43.1653128`,
+    Lugar: undefined,
+    Remocao: undefined,
+    DataRealocacao: undefined,
+    Realocacao: undefined,
+    ZonaRealocacao: undefined,
+    BairroRealocacao: undefined,
+    EnderecoRealocacao: undefined,
+    LatitudeRealocacao: undefined,
+    LongitudeRealocacao: undefined,
+    LugarRealocacao: undefined,
+};
+
+export const ObeliscodaLinhaAmarela_Desconhecida: Obra = { // TODO: revisar obra e colocar no padrão acima
+    ID: 885,
+    Imagem: undefined,
+    Autores: [artistas.Desconhecida],
+    Promotor: undefined,
+    Titulo: `Obelisco da Linha Amarela`,
+    Renomeacao: false,
+    Classificacao: 'perene',
+    Categoria: 'plasticidade',
+    Tipologia: `Obelisco`,
+    Material: `Peça em aço`,
+    Descricao: `Peça circular com uma estrutura central e outra cobrindo a primeira através de uma tela.`,
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Diametro: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    Execucao: true,
+    DataInauguracao: `10/1997`,
+    Zona: undefined,
+    Bairro: undefined,
+    Endereco: undefined,
+    Latitude: `-22.8862929`,
+    Longitude: `-43.2885948`,
+    Lugar: undefined,
+    Remocao: undefined,
+    DataRealocacao: undefined,
+    Realocacao: undefined,
+    ZonaRealocacao: undefined,
+    BairroRealocacao: undefined,
+    EnderecoRealocacao: undefined,
+    LatitudeRealocacao: undefined,
+    LongitudeRealocacao: undefined,
+    LugarRealocacao: undefined,
+};
+
+export const AAlimPedro_MiguelPastor: Obra = { // TODO: revisar obra e colocar no padrão acima
+    ID: 964,
+    Imagem: undefined,
+    Autores: [artistas.MiguelPastor],
+    Promotor: undefined,
+    Titulo: `À Alim Pedro`,
+    Renomeacao: false,
+    Classificacao: 'perene',
+    Categoria: 'plasticidade',
+    Tipologia: `Obelisco`,
+    Material: `Peça em concreto revestida de pedra São Tomé`,
+    Descricao: `Alim foi um ilustre morador do bairro, que recebeu a homenagem em um obelisco com sua efÍgie. Foi idealizada pela Engenheira Elza Osnorne, para ser um marco dos festejos dos 25 anos da formatura da turma da qual saíram inúmeros engenheiros da prefeitura, inclusive o ex prefeito. Apesar de ser homenagem em vida, os motivos que deram origem as homenagens, a engenheira Elza Osborne, procurou honrar no 14 DOE, da Secretaria de Obras. O viaduto  recebeu o nome do homenageado em 14 de novembro de 1958 e não teve uma inauguração solene. 
+A efigie do homenageado em bronze foi furtada em outubro de 2017.`,
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Diametro: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    Execucao: true,
+    DataInauguracao: `01/1958`,
+    Zona: undefined,
+    Bairro: undefined,
+    Endereco: undefined,
+    Latitude: `-22.9067895`,
+    Longitude: `-43.5655899`,
+    Lugar: undefined,
+    Remocao: undefined,
+    DataRealocacao: undefined,
+    Realocacao: undefined,
+    ZonaRealocacao: undefined,
+    BairroRealocacao: undefined,
+    EnderecoRealocacao: undefined,
+    LatitudeRealocacao: undefined,
+    LongitudeRealocacao: undefined,
+    LugarRealocacao: undefined,
+};
+
+export const AAugustodeVasconcelos_MiguelPastor: Obra = {// TODO: revisar obra e colocar no padrão acima
+    ID: 967,
+    Imagem: undefined,
+    Autores: [artistas.MiguelPastor],
+    Promotor: undefined,
+    Titulo: `À Augusto de Vasconcelos`,
+    Renomeacao: false,
+    Classificacao: 'perene',
+    Categoria: 'plasticidade',
+    Tipologia: `Obelisco`,
+    Material: `Peça em bronze e pedestal de granito`,
+    Descricao: `Na homenagem ao senador originalmente existia a sua efigie numa placa em bronze fixada no pedestal que tem
+    caracteristicas de um obelisco.`,
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Diametro: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    Execucao: true,
+    DataInauguracao: undefined,
+    Zona: undefined,
+    Bairro: undefined,
+    Endereco: undefined,
+    Latitude: `-22.8941305`,
+    Longitude: `-43.5361196`,
+    Lugar: undefined,
+    Remocao: undefined,
+    DataRealocacao: undefined,
+    Realocacao: undefined,
+    ZonaRealocacao: undefined,
+    BairroRealocacao: undefined,
+    EnderecoRealocacao: undefined,
+    LatitudeRealocacao: undefined,
+    LongitudeRealocacao: undefined,
+    LugarRealocacao: undefined,
+    Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+};
+
+export const ObeliscodeRochaMiranda_ErnaniFreire: Obra = {// TODO: revisar obra e colocar no padrão acima
+    ID: 1037,
+    Imagem: undefined,
+    Autores: [artistas.ErnaniFreire],
+    Promotor: undefined,
+    Titulo: `Obelisco de Rocha Miranda`,
+    Renomeacao: false,
+    Classificacao: 'perene',
+    Categoria: 'plasticidade',
+    Tipologia: `Obelisco`,
+    Material: `Peça em ferro pintado`,
+    Descricao: `Obelisco de quinze metros de altura de ferro pintado de branco, c<om uma grande esfera no topo<. Construído para ser a referência do bairro a distância, tem na sua base piramidal,placas comemorativas das principais batalhas da FEB na II Guerra Mundial.
+Em 2018 a esfera superior foi retirada devido a corrosão. O destino da peça é desconhecido.`,
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Diametro: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    Execucao: true,
+    DataInauguracao: `01/2002`,
+    Zona: undefined,
+    Bairro: undefined,
+    Endereco: undefined,
+    Latitude: `-22.8543349`,
+    Longitude: `-43.3517873`,
+    Lugar: undefined,
+    Remocao: undefined,
+    DataRealocacao: undefined,
+    Realocacao: undefined,
+    ZonaRealocacao: undefined,
+    BairroRealocacao: undefined,
+    EnderecoRealocacao: undefined,
+    LatitudeRealocacao: undefined,
+    LongitudeRealocacao: undefined,
+    LugarRealocacao: undefined,
 };
