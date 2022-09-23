@@ -36,4 +36,5 @@ export const theme = {
     header: {},
     bottomTab: {},
     tipologia: {},
+    coresGrafico: [],
 } as unknown as Theme;
