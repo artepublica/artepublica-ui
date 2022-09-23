@@ -1,6 +1,8 @@
+import { useState } from 'react';
+
 import { ScrollView, View } from 'react-native';
 
-import { Chart } from '@base-components';
+import { Chart, Dropdown } from '@base-components';
 import { Obra } from '@domain';
 import { TipologiaTheme, useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
@@ -16,12 +18,21 @@ type GraficoRedeTipoTipologiaObraProps = {
 function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaObraProps): JSX.Element {
     const { theme } = useTheme();
 
+    const autores = [...tipos].map((autor) => autor.nome ?? 'Desconhecida').sort((a, b) => a.localeCompare(b));
+
     const tiposOrdenadoPorTotal = [...tipos].filter((autor) => autor.nome !== 'Desconhecida').sort((a, b) => (a.obras.length < b.obras.length ? 1 : -1));
-    const maior = tiposOrdenadoPorTotal[0];
+    const maiorAutor = tiposOrdenadoPorTotal[0].nome ?? 'Desconhecida';
+
+    const [
+        valorDropdown,
+        setarDropdown,
+    ] = useState(maiorAutor);
 
     const style = styles();
 
-    const tipologias = maior.obras
+    const selected = tipos.filter((autor) => (autor.nome ?? 'v') == valorDropdown)[0];
+
+    const tipologias = selected.obras
         .map((obra) => {
             const tipologia = obra.Tipologia ?? 'Deconhecida';
             const color = theme.tipologia[tipologia.toLowerCase() as keyof TipologiaTheme];
@@ -38,18 +49,18 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
             return r;
         }, []);
 
-    const titulos = maior.obras.map((obra) => ({
+    const titulos = selected.obras.map((obra) => ({
         id: `${obra.Titulo ?? 'Deconhecida'} (${getYear(obra.DataInauguracao) ?? 's.d.'})`,
         marker: { radius: 10 },
         color: `${tipologias.find((tipologia) => tipologia.id === (obra.Tipologia ?? 'Desconhecida'))?.color}80`,
     }));
 
-    const nodes = [{ id: maior.nome, marker: { radius: 30 }, color: vinho }];
+    const nodes = [{ id: selected.nome, marker: { radius: 30 }, color: vinho }];
     Array.prototype.push.apply(nodes, titulos);
     Array.prototype.push.apply(nodes, tipologias);
 
     const data = tipologias.map((tipologia) => ({
-        from: maior.nome,
+        from: selected.nome,
         to: tipologia.id,
     }));
 
@@ -57,11 +68,11 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
         data,
         tipologias
             .map((tipologia) => {
-                const titulos_tipologia = maior.obras
+                const titulos_tipologia = selected.obras
                     .filter((obra) =>
                         tipo !== 'Autor'
-                            ? obra[tipo as keyof Obra] === maior.nome
-                            : obra.Autores?.find((artista) => artista.Pessoa?.Nome === maior.nome) != null,
+                            ? obra[tipo as keyof Obra] === selected.nome
+                            : obra.Autores?.find((artista) => artista.Pessoa?.Nome === selected.nome) != null,
                     )
 
                     .filter(
@@ -116,7 +127,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
                 dataLabels: {
                     enabled: true,
                     linkFormat: '',
-                    allowOverlap: true,
+                    //allowOverlap: true,
                     color: '#000000',
                 },
                 data,
@@ -128,6 +139,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
     return (
         <View style={style.container}>
             <ScrollView style={{ width: '100%' }}>
+                <Dropdown valor={valorDropdown} setarValor={setarDropdown} items={autores.map((autor) => ({ label: autor, value: autor }))} zIndex={3} />
                 <Chart options={options as Highcharts.Options} />
             </ScrollView>
         </View>
