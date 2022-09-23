@@ -91,7 +91,7 @@ export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa, de
                         tabBarLabelStyle: style.tabBarLabel,
                     }}
                 >
-                    {(props) => <Tipo_Mapa {...props} tipos={tipos} />}
+                    {(props) => <Tipo_Mapa {...props} tipos={tipos} tipo={tipo} />}
                 </TopTab.Screen>
             )}
             {decada === true && (
