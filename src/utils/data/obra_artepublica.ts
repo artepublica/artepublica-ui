@@ -71,7 +71,7 @@ export const FonteDaCrianca_HenriFredericIselin: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -814,7 +814,7 @@ export const FontedoMenino_MestreValentim: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -854,7 +854,7 @@ export const FontedodosAmores_MestreValentim: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -1290,7 +1290,7 @@ export const FonteJovemEuropa_MathurinMoreau: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Busto',
     Execucao: true,
 };
 
@@ -1330,7 +1330,7 @@ export const ASereia_ProvinSerres: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -1649,49 +1649,6 @@ export const LutaDesigual_LDespresLaupedeCluny: Obra = {
     Funcao: 'Decorativa',
     Natureza: 'Artística',
     Tipologia: 'Grupo escultórico',
-    Execucao: true,
-};
-
-export const ChafarizdaPiramide_MestreValentim: Obra = {
-    ID: 42,
-    Imagem: undefined,
-    Autores: [artistas.MestreValentim],
-    Titulo: 'Chafariz da Pirâmide',
-    Material: 'Blocos de granito com detalhes de mármore',
-    Altura: undefined,
-    Largura: undefined,
-    Profundidade: undefined,
-    Peso: undefined,
-    ValorObra: undefined,
-    DataInauguracao: '04/1789',
-    DatasImportantes: [new Data('04/1789', 'data de inauguração')],
-    Promotor: undefined,
-    Financiamento: undefined,
-    Propriedade: 'Pública',
-    Zona: 'Central',
-    Bairro: 'Centro',
-    Endereco: 'Praça XV',
-    Latitude: '-22.9024819',
-    Longitude: '-43.1736679',
-    SuporteEspacial: undefined,
-    Base: undefined,
-    MaterialBase: undefined,
-    Status: 'Permanece em espaço público',
-    Descricao: `Esse Chafariz foi mandado construir pelo Vice-Rei do Brasil, D. Luis de Vasconcelos,
-    a beira-mar. Sua função era abastecer de água os navios que chegava a Cidade, sendo importante
-    para a formação do núcleo urbano. Trata-se de uma construção de base quadrangular, com as faces
-    onduladas com varanda e um guarda-corpo, com balaústres em mármore de lioz. Dessa varanda
-    ergue-se uma esguia pirâmide, que é arrematada por uma esfera armilar de bronze. Na face voltada
-    para o mar, acima da porta de entrada, aparece uma cartela, com as armas da Coroa Real, enquanto
-    que as outras três faces estão presentes conchoides, de onde escorria a água para distribuir a
-    população. O Chafariz foi construído com cantaria de gnaisse, com vários elementos decorativos
-    característicos do período barroco. Desativado em data desconhecida.`,
-    Fatos: [new Fato('', '', 'Bem tombado federal', '', [], 'Rio de Janeiro')],
-    Temporalidade: 'Permanente',
-    Categoria: 'Plasticidade',
-    Funcao: 'Utilitária',
-    Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
     Execucao: true,
 };
 
@@ -2125,7 +2082,7 @@ export const MulhercomAnfora_HumbertoCozzo: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -2356,7 +2313,7 @@ export const ChafarizdoMonroe_MathurinMoreau: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -2714,7 +2671,7 @@ export const AmoraLira_EugeneLouisLequesne: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -3499,7 +3456,7 @@ export const FontedoTritao_NicolinaVazDeAssisPintodoCouto: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -5557,7 +5514,7 @@ export const ChafarizdasTresGraças_RemoBernucci: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Escultura',
     Execucao: true,
 };
 
@@ -5596,7 +5553,7 @@ export const Chafariz_AugusteMartin: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -5846,7 +5803,7 @@ export const FonteWallaceI_CharlesAugusteLebourg: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -6424,7 +6381,7 @@ export const SerpentedoLago_NicolinaVazDeAssisPintodoCouto: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -6675,7 +6632,7 @@ export const FonteMedusa_Desconhecida: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Relevo',
     Execucao: true,
 };
 
@@ -7544,7 +7501,7 @@ export const ChafarizDaExposicaoNacional1908_Desconhecida: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -7618,77 +7575,6 @@ export const PaulHarris_Desconhecida: Obra = {
     Execucao: true,
 };
 
-export const ChafarizI_FranciscoBologna: Obra = {
-    ID: 194,
-    Imagem: undefined,
-    Autores: [artistas.FranciscoBologna],
-    Titulo: `Chafariz`,
-    Material: 'concreto',
-    Altura: '8 m',
-    Largura: undefined,
-    Profundidade: undefined,
-    Peso: undefined,
-    ValorObra: undefined,
-    DataInauguracao: `10/1910`,
-    DatasImportantes: [new Data(`10/1910`, 'data de inauguração')],
-    Promotor: undefined,
-    Financiamento: undefined,
-    Propriedade: 'Pública',
-    Zona: 'Central',
-    Bairro: 'Centro',
-    Endereco: 'Depósito Fundação Parques e Jardins',
-    Latitude: '-22.906689',
-    Longitude: '-43.197172',
-    SuporteEspacial: undefined,
-    Base: undefined,
-    MaterialBase: undefined,
-    Status: 'Removida do espaço público',
-    Descricao: `Foi retirado da Avenida Brigadeiro Trompowski e transferido para o deposito em agosto
-    de 2012 devido à obra para a construção do elevado da Transcarioca que corta a Avenida Brasil.`,
-    Fatos: [new Fato('', '2002', 'transferencia', 'depósito', [], '')],
-    Temporalidade: 'Permanente',
-    Categoria: 'Plasticidade',
-    Funcao: 'Utilitária',
-    Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
-    Execucao: true,
-};
-
-export const Chafariz_EscritorioPontualAssociados: Obra = {
-    ID: 195,
-    Imagem: undefined,
-    Autores: [artistas.EscritorioPontualAssociados],
-    Titulo: `Chafariz`,
-    Material: 'alvenaria e vidro',
-    Altura: undefined,
-    Largura: undefined,
-    Profundidade: undefined,
-    Peso: undefined,
-    ValorObra: undefined,
-    DataInauguracao: `1996`,
-    DatasImportantes: [new Data(`1996`, 'data de inauguração')],
-    Promotor: undefined,
-    Financiamento: undefined,
-    Propriedade: 'Pública',
-    Zona: 'Norte',
-    Bairro: 'Ilha do Governador',
-    Endereco: 'Estrada do Galeão',
-    Latitude: `-22.8061472`,
-    Longitude: `-43.2122026`,
-    SuporteEspacial: undefined,
-    Base: undefined,
-    MaterialBase: undefined,
-    Status: 'Permanece em espaço público',
-    Descricao: undefined,
-    Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
-    Temporalidade: 'Permanente',
-    Categoria: 'Plasticidade',
-    Funcao: 'Utilitária',
-    Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
-    Execucao: true,
-};
-
 export const MaedAgua_NewtonSa: Obra = {
     ID: 196,
     Imagem: undefined,
@@ -7725,7 +7611,7 @@ export const MaedAgua_NewtonSa: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -8169,7 +8055,7 @@ export const FonteWallaceII_CharlesAugusteLebourg: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -8764,7 +8650,7 @@ export const MulherComCornucopia_PierreLoison: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -8803,7 +8689,7 @@ export const FonteWallaceIII_CharlesAugusteLebourg: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -9048,7 +8934,7 @@ export const ChafarizDasMusas_HerbertWHogg: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -9231,7 +9117,7 @@ export const AFonteDeusaThetis_LouisSauvageau: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -9712,7 +9598,7 @@ export const ChafarizdasSaracuras_MestreValentim: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -10812,7 +10698,7 @@ export const AnjoComPeixe_AndreaVerrocchio: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -12179,7 +12065,7 @@ export const Chafariz_AndrewHandyside: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -12700,7 +12586,7 @@ export const FontedoManequinho_BelmiroDeAlmeida: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -12779,7 +12665,7 @@ export const FonteIrmaosRamosPinto_AntonioTeixeiraLopes: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -12962,7 +12848,7 @@ export const NossaSenhoradaImaculadaConceicao_GiuseppeNavone: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -13105,7 +12991,7 @@ export const ONascimentodeVenus_mathurinmoreau: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -13606,42 +13492,6 @@ export const EspacoCircularEmCuboVirtual_FranzWeissmann: Obra = {
     Execucao: true,
 };
 
-export const ChafarizdeLaminasVerticais_RobertoBurleMarx: Obra = {
-    ID: 357,
-    Imagem: undefined,
-    Autores: [artistas.RobertoBurleMarx],
-    Titulo: `Chafariz de Laminas Verticais`,
-    Material: 'Bronze',
-    Altura: undefined,
-    Largura: undefined,
-    Profundidade: undefined,
-    Peso: undefined,
-    ValorObra: undefined,
-    DataInauguracao: `1960`,
-    DatasImportantes: [new Data(`1960`, 'data de inauguração')],
-    Promotor: undefined,
-    Financiamento: undefined,
-    Propriedade: 'Pública',
-    Zona: 'Sul',
-    Bairro: 'Glória',
-    Endereco: 'Parque do Flamengo',
-    Latitude: `-22.9122404`,
-    Longitude: `-43.1719337`,
-    SuporteEspacial: undefined,
-    Base: undefined,
-    MaterialBase: undefined,
-    Status: 'Permanece em espaço público',
-    Descricao: `Inaugurado no final anos de 1960. O Chafariz é formado com três grande chapas verticais curvas em alturas diferentes, de cuja base sai o jorro vertical de água.
-    Desativado no ano de 2008.`,
-    Fatos: [new Fato('', '', '', '', [], '')],
-    Temporalidade: 'Permanente',
-    Categoria: 'Plasticidade',
-    Funcao: 'Utilitária',
-    Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
-    Execucao: true,
-};
-
 export const AsTresForcasArmadas_AlfredoCeschiatti: Obra = {
     ID: 359,
     Imagem: undefined,
@@ -13971,46 +13821,6 @@ export const CarmemGomes_JoseBarreto: Obra = {
     Execucao: true,
 };
 
-export const ChafarizDaGloria_JoseCustodioDeSaEFaria: Obra = {
-    ID: 371,
-    Imagem: undefined,
-    Autores: [artistas.JoseCustodioDeSaEFaria],
-    Titulo: `Chafariz da Glória`,
-    Material: 'pedra e cal',
-    Altura: undefined,
-    Largura: undefined,
-    Profundidade: undefined,
-    Peso: undefined,
-    ValorObra: undefined,
-    DataInauguracao: `01/1772`,
-    DatasImportantes: [new Data(`01/1772`, 'data de inauguração')],
-    Promotor: undefined,
-    Financiamento: undefined,
-    Propriedade: 'Privada- Companhia Estadual de águas e esgotos',
-    Zona: 'Sul',
-    Bairro: 'Glória',
-    Endereco: 'Rua Augusto Severo',
-    Latitude: `-22.9184257`,
-    Longitude: `-43.1771039`,
-    SuporteEspacial: undefined,
-    Base: undefined,
-    MaterialBase: undefined,
-    Status: 'Em cessão de uso em espaço público',
-    Descricao: `Chafariz colonial com cartela de mármore de lioz com inscrição latina. Foi executado por
-    iniciativa do Marquês do Lavradio, junto à encosta do morro do Desterro, atual Santa Tereza. Em 1905,
-    o Prefeito Pereira Passos imprimiu ao Chafariz algumas alterações, acrescentando um segundo muro na
-    sua parte superior, sem prejudicar o monumento original. Mais antigo Chafariz do Rio de Janeiro.
-    Esse Chafariz pertence a Companhia Estadual de Águas e Esgotos e está em cessão de uso com a Gerencia
-    de Monumentos e Chafarizes.`,
-    Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
-    Temporalidade: 'Permanente',
-    Categoria: 'Plasticidade',
-    Funcao: 'Utilitária',
-    Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
-    Execucao: true,
-};
-
 export const Outono_JacquesHouzeau: Obra = {
     ID: 372,
     Imagem: undefined,
@@ -14113,7 +13923,7 @@ export const ChafarizdosGolfinhos_AndreRedont: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -15065,7 +14875,7 @@ export const Harmonia_JeanJacquesPradier: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -16862,41 +16672,6 @@ export const DorivalCaymmi_OttoDumovich: Obra = {
     Funcao: 'Referencial',
     Natureza: 'Cívica',
     Tipologia: 'Estátua',
-    Execucao: true,
-};
-
-export const Chafariz_LouisSauvageau: Obra = {
-    ID: 582,
-    Imagem: undefined,
-    Autores: [artistas.LouisSauvageau],
-    Titulo: `Chafariz`,
-    Material: 'Ferro fundido',
-    Altura: undefined,
-    Largura: undefined,
-    Profundidade: undefined,
-    Peso: undefined,
-    ValorObra: undefined,
-    DataInauguracao: `1862`,
-    DatasImportantes: [new Data(`1862`, 'data de inauguração')],
-    Promotor: undefined,
-    Financiamento: undefined,
-    Propriedade: 'Pública',
-    Zona: 'Sul',
-    Bairro: 'Laranjeiras',
-    Endereco: 'Praça São Salvador',
-    Latitude: `-22.9339766`,
-    Longitude: `-43.1804457`,
-    SuporteEspacial: undefined,
-    Base: undefined,
-    MaterialBase: undefined,
-    Status: 'Permanece em espaço público',
-    Descricao: undefined,
-    Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
-    Temporalidade: 'Permanente',
-    Categoria: 'Plasticidade',
-    Funcao: 'Utilitária',
-    Natureza: 'Urbanística',
-    Tipologia: 'Chafariz',
     Execucao: true,
 };
 
