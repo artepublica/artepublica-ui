@@ -249,7 +249,7 @@ function Network(): JSX.Element {
                 dataLabels: {
                     enabled: true,
                     linkFormat: '',
-                    color: theme.text.textColor,
+                    color: '#000000',
                 },
                 data,
                 nodes,

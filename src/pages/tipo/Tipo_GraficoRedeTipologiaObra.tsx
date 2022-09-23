@@ -116,17 +116,8 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
                 dataLabels: {
                     enabled: true,
                     linkFormat: '',
-                    textPath: {
-                        //enabled: true,
-                        attributes: {
-                            dy: -12,
-                            //startOffset: '45%',
-                            //textLength: 200,
-                        },
-                    },
                     allowOverlap: true,
-                    color: theme.text.textColor,
-                    dy: -12,
+                    color: '#000000',
                 },
                 data,
                 nodes,
