@@ -2059,7 +2059,7 @@ export const MulhercomAnfora_HumbertoCozzo: Obra = {
     Financiamento: undefined,
     Propriedade: 'Pública',
     Zona: 'Sul',
-    Bairro: 'Jardim Botanico',
+    Bairro: 'Jardim Botânico',
     Endereco: 'Praça Pio XI',
     Latitude: '-22.887475',
     Longitude: '-43.7738661',
@@ -10549,11 +10549,11 @@ export const Curumim_PedroCorreiaDeAraujo: Obra = {
     Execucao: true,
 };
 
-export const ATomJobimOEstudante_OttoDumovich: Obra = {
+export const TomJobim_OttoDumovich: Obra = {
     ID: 277,
     Imagem: 'ATomJobimOEstudante_OttoDumovich.jpg',
     Autores: [artistas.OttoDumovich],
-    Titulo: `À Tom Jobim, O Estudante`,
+    Titulo: `Tom Jobim`,
     Material: 'Bronze',
     Altura: undefined,
     Largura: undefined,
@@ -10566,7 +10566,7 @@ export const ATomJobimOEstudante_OttoDumovich: Obra = {
     Financiamento: undefined,
     Propriedade: 'Pública',
     Zona: 'Sul',
-    Bairro: 'Jardim Botanico',
+    Bairro: 'Jardim Botânico',
     Endereco: 'Parque Lage',
     Latitude: `-22.9602718`,
     Longitude: `-43.2120361`,
@@ -12171,7 +12171,7 @@ export const JuruenadeMatos_JoaquimMoreiraJunior: Obra = {
     Execucao: true,
 };
 
-export const FranciscoMoranzan_RomeuAlvesl: Obra = {
+export const FranciscoMoranzan_RomeuAlves: Obra = {
     ID: 322,
     Imagem: undefined,
     Autores: [artistas.RomeuAlves],
@@ -17541,11 +17541,11 @@ export const CondeCunha_LuisPaesLeme: Obra = {
     Promotor: undefined,
     Financiamento: undefined,
     Propriedade: 'Pública',
-    Zona: undefined, //TODO
-    Bairro: undefined,
-    Endereco: undefined,
-    Latitude: undefined,
-    Longitude: undefined,
+    Zona: 'Central',
+    Bairro: 'Caju',
+    Endereco: 'Rua Arsenal de Guerra',
+    Latitude: '-22.8807209',
+    Longitude: '-43.2176044',
     SuporteEspacial: undefined,
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
@@ -17614,11 +17614,11 @@ export const JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi: Obra = {
     Promotor: undefined,
     Financiamento: undefined,
     Propriedade: 'Pública',
-    Zona: undefined, //TODO
-    Bairro: undefined,
-    Endereco: undefined,
-    Latitude: undefined,
-    Longitude: undefined,
+    Zona: 'Central',
+    Bairro: 'Centro',
+    Endereco: 'Rua Graça Aranha com Evaristo da Veiga',
+    Latitude: '-22.9090705',
+    Longitude: '-43.1752651',
     SuporteEspacial: undefined,
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
