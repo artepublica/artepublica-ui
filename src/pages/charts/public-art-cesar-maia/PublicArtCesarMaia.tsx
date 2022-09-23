@@ -50,7 +50,8 @@ function Block(): JSX.Element {
                 r.push(e);
             }
             return r;
-        }, []);
+        }, [])
+        .sort((a, b) => a.localeCompare(b));
 
     const total_tipologias = tipologias.reduce<{ type: string; name: string; data: (number | null)[] }[]>((series, tipologia) => {
         const total_tipologia = obras_por_ano.map((obra_ano) => {

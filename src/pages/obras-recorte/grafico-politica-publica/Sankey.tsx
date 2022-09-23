@@ -199,7 +199,6 @@ function Sankey({
                 dataLabels: {
                     enabled: true,
                     linkFormat: '',
-                    allowOverlap: false,
                 },
                 data: shuffleDados,
                 nodes: nosImportantes,
