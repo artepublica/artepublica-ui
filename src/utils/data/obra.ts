@@ -4,6 +4,48 @@ import Obra from '../../domain/obra';
 import * as artistas from './artista';
 import * as pessoas from './pessoa';
 
+
+export const AGuignard_FranzWeissmann: Obra = {
+    ID: 98,
+    Imagem: 'AGuignard_FranzWeissmann.png',
+    Autores: [artistas.FranzWeissmann],
+    Titulo: `À Guignard`,
+    Material: 'Metalon',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: `20/09/1996`,
+    DatasImportantes: [
+        new Data(`20/09/1996`, 'data de inauguração - inventario dos monumentos'),
+    ],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Central',
+    Bairro: 'Centro',
+    Endereco: 'Avenida República do Paraguai',
+    Latitude: `-22.9074447`,
+    Longitude: `-43.1809263`,
+    SuporteEspacial: undefined,
+    Base: 'Sem pedestal',
+    MaterialBase: undefined,
+    Status: 'Permanece em espaço público',
+    Descricao: `Gradil decorativo custeada pela Prefeitura da Cidade e a Petrobras, para revitalizar o espaço, em homenagem ao
+    pintor Guignard. No dia 10 de julho de 2009, foi inaugurada a Praça João Calvino, substituindo o nome do local, o Espaço
+    Guinard. A alteração foi decorrente da parceria público-privada entre a prefeitura da cidade e a Igreja Presbiteriana do
+    Rio de Janeiro, que idealizou o novo espaço público.`,
+    Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Utilitária',
+    Natureza: 'Artística',
+    Tipologia: 'Grade',
+    Execucao: true,
+};
+
+
 export const ChafarizDaGloria_JoseCustodioDeSaEFaria: Obra = {
     ID: 371,
     Imagem: undefined,

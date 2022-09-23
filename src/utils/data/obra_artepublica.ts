@@ -3833,46 +3833,6 @@ export const Primavera_MathurinMoreau: Obra = {
     Execucao: true,
 };
 
-export const AGuignard_FranzWeissmann: Obra = {
-    ID: 98,
-    Imagem: 'AGuignard_FranzWeissmann.png',
-    Autores: [artistas.FranzWeissmann],
-    Titulo: `À Guignard`,
-    Material: 'Metalon',
-    Altura: undefined,
-    Largura: undefined,
-    Profundidade: undefined,
-    Peso: undefined,
-    ValorObra: undefined,
-    DataInauguracao: `20/09/1996`,
-    DatasImportantes: [
-        new Data(`20/09/1996`, 'data de inauguração - inventario dos monumentos'),
-    ],
-    Promotor: undefined,
-    Financiamento: undefined,
-    Propriedade: 'Pública',
-    Zona: 'Central',
-    Bairro: 'Centro',
-    Endereco: 'Avenida República do Paraguai',
-    Latitude: `-22.9074447`,
-    Longitude: `-43.1809263`,
-    SuporteEspacial: undefined,
-    Base: 'Sem pedestal',
-    MaterialBase: undefined,
-    Status: 'Permanece em espaço público',
-    Descricao: `Gradil decorativo custeada pela Prefeitura da Cidade e a Petrobras, para revitalizar o espaço, em homenagem ao
-    pintor Guignard. No dia 10 de julho de 2009, foi inaugurada a Praça João Calvino, substituindo o nome do local, o Espaço
-    Guinard. A alteração foi decorrente da parceria público-privada entre a prefeitura da cidade e a Igreja Presbiteriana do
-    Rio de Janeiro, que idealizou o novo espaço público.`,
-    Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
-    Temporalidade: 'Permanente',
-    Categoria: 'Plasticidade',
-    Funcao: 'Utilitária',
-    Natureza: 'Artística',
-    Tipologia: 'Grade',
-    Execucao: true,
-};
-
 export const Inverno_MathurinMoreau: Obra = {
     ID: 94,
     Imagem: 'Inverno_MathurinMoreau.jpg',
@@ -18825,11 +18785,11 @@ export const ObeliscodoLargodoBomRetiro_Desconhecida: Obra = { // TODO: revisar 
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
     Promotor: undefined,
-    Titulo: `Obelisco`,
+    Titulo: `Obelisco do Largo do Bom Retiro`,
     Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'plasticidade',
-    Tipologia: 'Obelisco do Largo do Bom Retiro',
+    Tipologia: 'Obelisco',
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Peça maciça esculpida com base quadrada e outra piramidal de cerca de 6 metros de altura`,
@@ -18863,11 +18823,11 @@ export const ObeliscodaAvenidaRioBranco_AZanuzziCia: Obra = {// TODO: revisar ob
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
     Promotor: undefined,
-    Titulo: `Obelisco`,
+    Titulo: `Obelisco da Avenida Rio Branco`,
     Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'plasticidade',
-    Tipologia: 'Obelisco da Avenida Rio Branco',
+    Tipologia: 'Obelisco',
     Material: `Peça em granito`,
     Descricao: `A Zanuzzi Cia - Obelisco circular de granito extraído do Morro da Viúva, com 28 toneladas paracomemorar da abertura da Avenida Rio Branco, iniciada em 8 de março de 1904 e concluído na data de inauguração do marco, dia 14 de novembro de 1906.
 O projeto foi organizado no escritório tecnico da Comissão Construtora da Avenida Central, cujo chefe era o Dr. Paulo de Frontim e executado pelos Srs A. Januzzi & Irmãos, tendo como engenheiro de acompanhamento o Dr. Le Cocq.
@@ -18951,11 +18911,11 @@ export const ObeliscodoAlargamentodeCopacabana_Desconhecida: Obra = {// TODO: re
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
     Promotor: undefined,
-    Titulo: `Obelisco`,
+    Titulo: `Obelisco  do Alargamento de Copacabana`,
     Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'plasticidade',
-    Tipologia: `Obelisco do Alargamento de Copacabana`,
+    Tipologia: `Obelisco`,
     Material: `Bloco de granito`,
     Descricao: `Marco oferecido pelos moradores de Copacabana à Cidade, emcomemoração da reconstrução
     e alargamento da Avenida Atlântica. Foi inaugurado na Avenida Atlantica próximo a Rua Almirante
