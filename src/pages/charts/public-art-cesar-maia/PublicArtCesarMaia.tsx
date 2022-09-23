@@ -96,21 +96,21 @@ function Block(): JSX.Element {
                 },
             },
             labels: {
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
         },
         xAxis: {
             categories: anos_primeiro_mantado.map((ano) => ano.toString()),
             labels: {
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
         },
         legend: {
             layout: 'horizontal',
             align: 'center',
-            borderColor: '#CC1964',
+            borderColor: theme.text.textColor,
             backgroundColor: theme.background,
-            itemStyle: { color: '#CC1964' },
+            itemStyle: { color: theme.text.textColor },
         },
         plotOptions: {
             column: {

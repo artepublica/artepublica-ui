@@ -118,7 +118,7 @@ function Line(): JSX.Element {
             },
             min: 0,
             labels: {
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
         },
         xAxis: {
@@ -129,15 +129,15 @@ function Line(): JSX.Element {
                 year: '%Y',
             },
             labels: {
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
         },
         legend: {
             layout: 'horizontal',
             align: 'center',
-            borderColor: '#CC1964',
+            borderColor: theme.text.textColor,
             backgroundColor: theme.background,
-            itemStyle: { color: '#CC1964' },
+            itemStyle: { color: theme.text.textColor },
         },
         series,
     };
@@ -290,7 +290,7 @@ function Block(): JSX.Element {
                 style: {
                     //fontWeight: 'bold',
                     textOutline: 'none',
-                    color: '#CC1964',
+                    color: theme.text.textColor,
                 },
             },
         },
@@ -310,15 +310,15 @@ function Block(): JSX.Element {
                 '2000',
             ],
             labels: {
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
         },
         legend: {
             layout: 'horizontal',
             align: 'center',
-            borderColor: '#CC1964',
+            borderColor: theme.text.textColor,
             backgroundColor: theme.background,
-            itemStyle: { color: '#CC1964' },
+            itemStyle: { color: theme.text.textColor },
         },
         plotOptions: {
             column: {

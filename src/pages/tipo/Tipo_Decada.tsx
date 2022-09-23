@@ -101,7 +101,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
                 align: null as unknown as AlignValue,
                 reserveSpace: null as unknown as boolean,
                 rotation: null as unknown as number,
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
             lineWidth: null as unknown as number,
             margin: null as unknown as number,
@@ -117,7 +117,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
                 style: {
                     //fontWeight: 'bold',
                     textOutline: 'none',
-                    color: '#CC1964',
+                    color: theme.text.textColor,
                 },
             },
             visible: null as unknown as boolean,
@@ -127,9 +127,9 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         legend: {
             layout: 'horizontal',
             align: 'center',
-            borderColor: '#CC1964',
+            borderColor: theme.text.textColor,
             backgroundColor: theme.background,
-            itemStyle: { color: '#CC1964' },
+            itemStyle: { color: theme.text.textColor },
         },
         plotOptions: {
             column: {
@@ -172,7 +172,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
                 align: 'left',
                 reserveSpace: false,
                 rotation: 270,
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
             lineWidth: 0,
             margin: 20,
@@ -197,9 +197,9 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         legend: {
             layout: 'horizontal',
             align: 'center',
-            borderColor: '#CC1964',
+            borderColor: theme.text.textColor,
             backgroundColor: theme.background,
-            itemStyle: { color: '#CC1964' },
+            itemStyle: { color: theme.text.textColor },
         },
         annotations: [
             {
@@ -221,7 +221,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
                     minFontSize: 5,
                     maxFontSize: 15,
                     style: {
-                        color: '#CC1964',
+                        color: theme.text.textColor,
                     },
                 },
                 accessibility: {
@@ -248,6 +248,8 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         { label: 'Stream', value: '1' },
     ]);
 
+    console.log(tipos);
+
     return (
         <View style={style.container}>
             <ScrollView style={{ width: '100%' }}>
@@ -263,16 +265,16 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
                     scrollViewProps={{
                         nestedScrollEnabled: true,
                     }}
-                    textStyle={{ color: '#CC1964' }}
+                    textStyle={{ color: theme.text.textColor }}
                     //arrowIconStyle={{ backgroundColor: '#CC1964 !important' }}
-                    dropDownContainerStyle={{ borderColor: '#CC1964' }}
+                    dropDownContainerStyle={{ borderColor: theme.text.textColor }}
                     selectedItemContainerStyle={{ backgroundColor: '#F2D7E3' }}
-                    style={{ borderColor: '#CC1964' }}
-                    arrowIconContainerStyle={{ borderColor: '#CC1964' }}
+                    style={{ borderColor: theme.text.textColor }}
+                    arrowIconContainerStyle={{ borderColor: theme.text.textColor }}
                     //iconContainerStyle={{ borderColor: '#CC1964 !important' }}
                     showTickIcon={false}
                 />
-                {value === '0' ? <Chart options={columnOptions as Highcharts.Options} /> : <Chart options={streamgraphOptions as Highcharts.Options} />}
+                <Chart options={(value === '0' ? columnOptions : streamgraphOptions) as Highcharts.Options} />
             </ScrollView>
         </View>
     );

@@ -2,7 +2,6 @@ import Data from '../../domain/data';
 import Fato from '../../domain/fato';
 import Obra from '../../domain/obra';
 import * as artistas from './artista';
-import * as pessoas from './pessoa';
 
 
 export const AGuignard_FranzWeissmann: Obra = {
@@ -1292,8 +1291,6 @@ export const PainelDeSantaBarbara_DjaniraDaMottaESilva: Obra = {
     LugarRealocacao: undefined,
 };
 
-
-
 export const ArcodosTeles_JoseFernandesPintoAlpoim: Obra = {
     ID: 133,
     Imagem: undefined,
@@ -1405,7 +1402,6 @@ export const MarquesdoLavradio_GracaCostaCabral: Obra = {
     LugarRealocacao: undefined,
 };
 
-
 export const MemorialasVitimasdoVooAF447_RicardoVillar: Obra = {
     ID: 300,
     Imagem: undefined,
@@ -1512,8 +1508,6 @@ export const PisodePedeMolequedaLadeiradaMisericordia_Desconhecida: Obra = {
     LongitudeRealocacao: undefined,
     LugarRealocacao: undefined,
 };
-
-
 
 export const PortaodoCampoDeSantana_Desconhecida: Obra = {
     ID: 146,
@@ -5082,8 +5076,6 @@ export const MarcodaInauguracaodaDuplicacaodeCopacabana_Desconhecida: Obra = {
     LongitudeRealocacao: undefined,
     LugarRealocacao: undefined,
 };
-
-
 
 export const QuartzoRosa_Desconhecida: Obra = {
     ID: 350,
@@ -11969,7 +11961,6 @@ export const EstacioDeSa_LucioCosta: Obra = {
     Tipologia: 'Marco',
     Execucao: true,
 };
-
 
 export const ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra: Obra = {
     ID: 517,
@@ -19082,7 +19073,6 @@ export const LagodaPracaSalgadoFilho_RobertoBurleMarx: Obra = {
     LugarRealocacao: undefined,
 };
 
-
 export const AryBarroso_LeoSantana: Obra = {
     ID: 877,
     Imagem: 'AryBarroso_LeoSantana.jpg',
@@ -19382,8 +19372,6 @@ export const LeaodoMeier_NivaldoRodrigues: Obra = {
     LugarRealocacao: undefined,
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
-
-
 
 export const OratorioaSaoJorgedoCachambiI_Desconhecida: Obra = {
     ID: 886,
@@ -21981,8 +21969,6 @@ export const FilomenaDelCima_MiguelPastor: Obra = {
     LugarRealocacao: undefined,
 };
 
-
-
 export const ManoelBranco_MiguelPastor: Obra = {
     ID: 965,
     Imagem: undefined,
@@ -22056,7 +22042,6 @@ export const ArthurAzevedo_MiguelPastor: Obra = {
     LongitudeRealocacao: undefined,
     LugarRealocacao: undefined,
 };
-
 
 export const FranciscoFreireAlemao_MiguelPastor: Obra = {
     ID: 968,
@@ -24061,8 +24046,6 @@ export const GetulioVargasdoHospitalGetulioVargas_Desconhecida: Obra = {
     LongitudeRealocacao: undefined,
     LugarRealocacao: undefined,
 };
-
-
 
 export const MarcodaVitoriaDaRochaMiranda_CarlosWerneckDeCarvalho: Obra = {
     ID: 1038,
@@ -29805,8 +29788,6 @@ Amurada em blocos de pedra com duas escadas laterais, servindo de fundo para um 
     LongitudeRealocacao: undefined,
     LugarRealocacao: undefined,
 };
-
-
 
 export const GalpaodoLargodoBomRetiro_Desconhecida: Obra = {
     ID: 1235,

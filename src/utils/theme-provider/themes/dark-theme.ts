@@ -1,6 +1,7 @@
 import { Platform } from 'react-native';
 
 import { Theme } from '../domain';
+import { magenta, rosa, lilas, vinho, azul, azul2, verde, verde2, coresGraficoLight } from './cores';
 import fonts from './fonts';
 
 const DarkTheme: Theme = {
@@ -40,6 +41,19 @@ const DarkTheme: Theme = {
         fontSize: 12,
         lineHeight: 12,
     },
+    principal: '#FFFFFF',
+    secundaria: '#B3B3B3',
+    tipologia: {
+        busto: magenta,
+        cabeça: rosa,
+        escultura: lilas,
+        estátua: vinho,
+        'grupo escultórica': azul,
+        'lâmina escultórica': azul2,
+        obelisco: verde,
+        relevo: verde2,
+    },
+    coresGrafico: coresGraficoLight,
 };
 
 export default DarkTheme;

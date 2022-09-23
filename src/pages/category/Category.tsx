@@ -56,7 +56,7 @@ function Line({ category }: { category: string }): JSX.Element {
             },
             min: 0,
             labels: {
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
         },
         xAxis: {
@@ -66,15 +66,15 @@ function Line({ category }: { category: string }): JSX.Element {
                 year: '%Y',
             },
             labels: {
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
         },
         legend: {
             layout: 'horizontal',
             align: 'center',
-            borderColor: '#CC1964',
+            borderColor: theme.text.textColor,
             backgroundColor: theme.background,
-            itemStyle: { color: '#CC1964' },
+            itemStyle: { color: theme.text.textColor },
         },
         series,
     };
@@ -319,13 +319,13 @@ function Category(): JSX.Element {
                     scrollViewProps={{
                         nestedScrollEnabled: true,
                     }}
-                    textStyle={{ color: '#CC1964' }}
-                    //arrowIconStyle={{ backgroundColor: '#CC1964 !important' }}
-                    dropDownContainerStyle={{ borderColor: '#CC1964' }}
+                    textStyle={{ color: theme.text.textColor }}
+                    //arrowIconStyle={{ backgroundColor: theme.text.textColor }}
+                    dropDownContainerStyle={{ borderColor: theme.text.textColor }}
                     selectedItemContainerStyle={{ backgroundColor: '#F2D7E3' }}
-                    style={{ borderColor: '#CC1964' }}
-                    arrowIconContainerStyle={{ borderColor: '#CC1964' }}
-                    //iconContainerStyle={{ borderColor: '#CC1964 !important' }}
+                    style={{ borderColor: theme.text.textColor }}
+                    arrowIconContainerStyle={{ borderColor: theme.text.textColor }}
+                    //iconContainerStyle={{ borderColor: theme.text.textColor }}
                     showTickIcon={false}
                 />
                 <View style={{ height: 24 }} />

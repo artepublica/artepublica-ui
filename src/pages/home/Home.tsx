@@ -4,12 +4,14 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Text, Image } from '@base-components';
 import { Obra } from '@domain';
+import { useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
 import styles from './styles';
 
 function Home(): JSX.Element {
+    const { theme } = useTheme();
     const style = styles();
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
@@ -51,8 +53,6 @@ function Home(): JSX.Element {
                                     const obraAnterior: Obra = typed_obra_artepublica[obrasComImagem[index - 1]];
 
                                     if ((obra.Tipologia ?? 'Desconhecida') !== (obraAnterior.Tipologia ?? 'Desconhecida')) {
-                                        console.log(obraAnterior.Tipologia);
-                                        console.log(obra.Tipologia);
                                         return [
                                             ...resultado,
                                             obra.Tipologia ?? 'Desconhecida',
@@ -85,7 +85,7 @@ function Home(): JSX.Element {
                                                     key={colIndex}
                                                 >
                                                     {obra == null && (
-                                                        <View style={{ width: 136, backgroundColor: '#CC1964', height: '100%' }}>
+                                                        <View style={{ width: 136, backgroundColor: theme.principal, height: '100%' }}>
                                                             <View
                                                                 style={{
                                                                     padding: 8,
@@ -168,7 +168,7 @@ function Home(): JSX.Element {
                                                         </View>
                                                     )}
                                                     {obra != null && (
-                                                        <View style={{ width: 136, height: '100%', backgroundColor: '#CC1964' }}>
+                                                        <View style={{ width: 136, height: '100%', backgroundColor: theme.principal }}>
                                                             <View
                                                                 style={{
                                                                     backgroundColor: '#FFFFFF',
@@ -182,7 +182,7 @@ function Home(): JSX.Element {
                                                                         height: obra.Imagem != null && obra.Imagem !== '' ? 140 : 136,
                                                                         width: 136,
                                                                         borderWidth: obra.Imagem != null && obra.Imagem !== '' ? 0 : 1,
-                                                                        borderColor: '#CC1964',
+                                                                        borderColor: theme.principal,
                                                                         marginBottom: obra.Imagem != null && obra.Imagem !== '' ? 0 : 4,
                                                                     }}
                                                                 >
