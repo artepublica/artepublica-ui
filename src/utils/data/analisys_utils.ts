@@ -231,7 +231,7 @@ export const isNull = (date?: string): boolean => {
     return date === null || date === ''; // || date.split('/')[1] === null || date.split('/')[1] === '';
 };
 
-export const getYear = (date: string | undefined): number | undefined => {
+export const getYear = (date: string | undefined): number => {
     if (date != null && date !== '') {
         try {
             if (date.split('/').length === 3) {
@@ -245,4 +245,5 @@ export const getYear = (date: string | undefined): number | undefined => {
             console.log(date);
         }
     }
+    return 0;
 };

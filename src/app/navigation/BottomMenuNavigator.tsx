@@ -11,6 +11,7 @@ import { ObrasNavigator, ObrasNavigatorParamsList } from './ObrasNavigator';
 import { ObrasRecorteNavigator, ObrasRecorteNavigatorParamsList } from './ObrasRecorteNavigator';
 
 const BottomTab = createBottomTabNavigator<BottomMenuNavigatorParamList>();
+//Platform.OS === 'web' ? createMaterialTopTabNavigator<BottomMenuNavigatorParamList>() : createBottomTabNavigator<BottomMenuNavigatorParamList>();
 
 export type BottomMenuNavigatorParamList = {
     Home: undefined;
@@ -37,7 +38,7 @@ export function BottomMenuNavigator(): JSX.Element {
                 options={{
                     title: 'Home',
                     headerShown: false,
-                    tabBarIcon: ({ color }) => {
+                    tabBarIcon: ({ color }: { color: string }) => {
                         return <AntDesign name="home" size={24} color={color} />;
                     },
                     tabBarLabelStyle: style.tabBarLabel,
@@ -49,7 +50,7 @@ export function BottomMenuNavigator(): JSX.Element {
                 options={{
                     title: 'Obras',
                     headerShown: false,
-                    tabBarIcon: ({ color }) => {
+                    tabBarIcon: ({ color }: { color: string }) => {
                         return <FontAwesome name="object-ungroup" size={24} color={color} />;
                     },
                     tabBarLabelStyle: style.tabBarLabel,
@@ -61,7 +62,7 @@ export function BottomMenuNavigator(): JSX.Element {
                 options={{
                     title: 'Recorte',
                     headerShown: false,
-                    tabBarIcon: ({ color }) => {
+                    tabBarIcon: ({ color }: { color: string }) => {
                         return <FontAwesome name="object-group" size={24} color={color} />;
                     },
                     tabBarLabelStyle: style.tabBarLabel,
@@ -73,7 +74,7 @@ export function BottomMenuNavigator(): JSX.Element {
                 options={{
                     title: 'Gráficos',
                     headerShown: false,
-                    tabBarIcon: ({ color }) => {
+                    tabBarIcon: ({ color }: { color: string }) => {
                         return <AntDesign name="barschart" size={24} color={color} />;
                     },
                     tabBarLabelStyle: style.tabBarLabel,
