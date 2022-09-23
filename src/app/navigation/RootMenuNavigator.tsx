@@ -10,29 +10,29 @@ import { ChartsNavigator, ChartsNavigatorParamsList } from './ChartsNavigator';
 import { ObrasNavigator, ObrasNavigatorParamsList } from './ObrasNavigator';
 import { ObrasRecorteNavigator, ObrasRecorteNavigatorParamsList } from './ObrasRecorteNavigator';
 
-const BottomTab = createBottomTabNavigator<BottomMenuNavigatorParamList>();
-//Platform.OS === 'web' ? createMaterialTopTabNavigator<BottomMenuNavigatorParamList>() : createBottomTabNavigator<BottomMenuNavigatorParamList>();
+const RootTab = createBottomTabNavigator<RootMenuNavigatorParamList>();
 
-export type BottomMenuNavigatorParamList = {
+export type RootMenuNavigatorParamList = {
     Home: undefined;
     Obras: NavigatorScreenParams<ObrasNavigatorParamsList>;
     Recorte: NavigatorScreenParams<ObrasRecorteNavigatorParamsList>;
     Charts: NavigatorScreenParams<ChartsNavigatorParamsList>;
 };
 
-export function BottomMenuNavigator(): JSX.Element {
+export function RootMenuNavigator(): JSX.Element {
     const { theme } = useTheme();
 
     const style = styles(theme);
 
     return (
-        <BottomTab.Navigator
+        <RootTab.Navigator
             screenOptions={() => ({
                 tabBarActiveTintColor: theme.navigation.active,
                 tabBarInactiveTintColor: theme.navigation.inactive,
+                lazy: true,
             })}
         >
-            <BottomTab.Screen
+            <RootTab.Screen
                 name="Home"
                 component={Home}
                 options={{
@@ -44,7 +44,7 @@ export function BottomMenuNavigator(): JSX.Element {
                     tabBarLabelStyle: style.tabBarLabel,
                 }}
             />
-            <BottomTab.Screen
+            <RootTab.Screen
                 name="Obras"
                 component={ObrasNavigator}
                 options={{
@@ -56,7 +56,7 @@ export function BottomMenuNavigator(): JSX.Element {
                     tabBarLabelStyle: style.tabBarLabel,
                 }}
             />
-            <BottomTab.Screen
+            <RootTab.Screen
                 name="Recorte"
                 component={ObrasRecorteNavigator}
                 options={{
@@ -68,7 +68,7 @@ export function BottomMenuNavigator(): JSX.Element {
                     tabBarLabelStyle: style.tabBarLabel,
                 }}
             />
-            <BottomTab.Screen
+            <RootTab.Screen
                 name="Charts"
                 component={ChartsNavigator}
                 options={{
@@ -80,7 +80,7 @@ export function BottomMenuNavigator(): JSX.Element {
                     tabBarLabelStyle: style.tabBarLabel,
                 }}
             />
-        </BottomTab.Navigator>
+        </RootTab.Navigator>
     );
 }
 
