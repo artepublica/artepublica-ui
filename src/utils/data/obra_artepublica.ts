@@ -1038,7 +1038,7 @@ export const BenjaminConstant_DecioVillares_EduardoDeSa_VicenteOrnelas: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -1251,7 +1251,7 @@ export const PescadorNapolitano_FrancoisRude: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -1372,7 +1372,7 @@ export const Primavera_GustaveFredericMichel: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -1414,7 +1414,7 @@ export const Outono_GustaveFredericMichel: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -1452,7 +1452,7 @@ export const Inverno_GustaveFredericMichel: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -1490,7 +1490,7 @@ export const Verao_GustaveFredericMichel: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -1648,7 +1648,7 @@ export const LutaDesigual_LDespresLaupedeCluny: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -1784,7 +1784,7 @@ export const Uniao_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -1820,7 +1820,7 @@ export const Liberdade_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -1856,7 +1856,7 @@ export const Justiça_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -1892,7 +1892,7 @@ export const Fidelidade_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -2081,7 +2081,7 @@ export const SantosDumont_AmadeuZani: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -3872,7 +3872,47 @@ export const Primavera_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
+    Execucao: true,
+};
+
+export const AGuignard_FranzWeissmann: Obra = {
+    ID: 98,
+    Imagem: 'AGuignard_FranzWeissmann.png',
+    Autores: [artistas.FranzWeissmann],
+    Titulo: `À Guignard`,
+    Material: 'Metalon',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: `20/09/1996`,
+    DatasImportantes: [
+        new Data(`20/09/1996`, 'data de inauguração - inventario dos monumentos'),
+    ],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Central',
+    Bairro: 'Centro',
+    Endereco: 'Avenida República do Paraguai',
+    Latitude: `-22.9074447`,
+    Longitude: `-43.1809263`,
+    SuporteEspacial: undefined,
+    Base: 'Sem pedestal',
+    MaterialBase: undefined,
+    Status: 'Permanece em espaço público',
+    Descricao: `Gradil decorativo custeada pela Prefeitura da Cidade e a Petrobras, para revitalizar o espaço, em homenagem ao
+    pintor Guignard. No dia 10 de julho de 2009, foi inaugurada a Praça João Calvino, substituindo o nome do local, o Espaço
+    Guinard. A alteração foi decorrente da parceria público-privada entre a prefeitura da cidade e a Igreja Presbiteriana do
+    Rio de Janeiro, que idealizou o novo espaço público.`,
+    Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Utilitária',
+    Natureza: 'Artística',
+    Tipologia: 'Grade',
     Execucao: true,
 };
 
@@ -3915,7 +3955,7 @@ export const Inverno_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -3956,7 +3996,7 @@ export const Outono_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -3997,47 +4037,7 @@ export const Verao_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Estátua',
-    Execucao: true,
-};
-
-export const AGuignard_FranzWeissmann: Obra = {
-    ID: 98,
-    Imagem: 'AGuignard_FranzWeissmann.png',
-    Autores: [artistas.FranzWeissmann],
-    Titulo: `À Guignard`,
-    Material: 'Metalon',
-    Altura: undefined,
-    Largura: undefined,
-    Profundidade: undefined,
-    Peso: undefined,
-    ValorObra: undefined,
-    DataInauguracao: `20/09/1996`,
-    DatasImportantes: [
-        new Data(`20/09/1996`, 'data de inauguração - inventario dos monumentos'),
-    ],
-    Promotor: undefined,
-    Financiamento: undefined,
-    Propriedade: 'Pública',
-    Zona: 'Central',
-    Bairro: 'Centro',
-    Endereco: 'Avenida República do Paraguai',
-    Latitude: `-22.9074447`,
-    Longitude: `-43.1809263`,
-    SuporteEspacial: undefined,
-    Base: 'Sem pedestal',
-    MaterialBase: undefined,
-    Status: 'Permanece em espaço público',
-    Descricao: `Gradil decorativo custeada pela Prefeitura da Cidade e a Petrobras, para revitalizar o espaço, em homenagem ao
-    pintor Guignard. No dia 10 de julho de 2009, foi inaugurada a Praça João Calvino, substituindo o nome do local, o Espaço
-    Guinard. A alteração foi decorrente da parceria público-privada entre a prefeitura da cidade e a Igreja Presbiteriana do
-    Rio de Janeiro, que idealizou o novo espaço público.`,
-    Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
-    Temporalidade: 'Permanente',
-    Categoria: 'Plasticidade',
-    Funcao: 'Utilitária',
-    Natureza: 'Artística',
-    Tipologia: 'Grade',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -5257,7 +5257,7 @@ export const BebedourodePaquetáI_PedroBruno: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -5293,7 +5293,7 @@ export const BebedourodePaquetáII_PedroBruno: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -5329,7 +5329,7 @@ export const BebedourodePaquetáIII_PedroBruno: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -5644,7 +5644,7 @@ export const Indio_JulesJeanJulesSalmson: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -5807,7 +5807,7 @@ export const Escravo_Mazerdo: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -6024,7 +6024,7 @@ export const Fidelidade_BenevenutoBerna: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -6459,7 +6459,7 @@ export const CantodasSereias_NicolinaVazDeAssisPintodoCouto: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -6822,7 +6822,7 @@ export const NoelRosa_JoasPereiraDosPassos: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -8686,7 +8686,7 @@ export const Mercurio_Desconhecida: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -8838,7 +8838,7 @@ export const TomJobimOEstudante_VeraTorres: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Memorial',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -9634,7 +9634,7 @@ export const AlmiranteSaldanhadaGama_AntonioCaringi: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -12013,7 +12013,7 @@ export const Ceres_ThomasRegnaudin: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -12052,7 +12052,7 @@ export const Marte_Desconhecida: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -12091,7 +12091,7 @@ export const MercurioPalacioCidade_Desconhecida: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -12143,7 +12143,7 @@ export const Minerva_Giustiniani: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -12738,7 +12738,7 @@ export const AEcadeQueiroz_RodolfoPintoCouto: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Referencial',
     Natureza: 'Artística',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -12884,7 +12884,7 @@ export const Crepusculo_HenriWeigele: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -13181,7 +13181,7 @@ export const America_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -13219,7 +13219,7 @@ export const Oceania_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -13257,7 +13257,7 @@ export const Africa_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -13295,7 +13295,7 @@ export const Europa_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -13333,7 +13333,7 @@ export const Asia_MathurinMoreau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -13531,7 +13531,7 @@ export const MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMari
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -13712,7 +13712,7 @@ export const Cuauhtemoc_CarlosObregonSantacilia: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'comemorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -13823,7 +13823,7 @@ export const Primavera_JeanBaptistePoultier: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -13858,7 +13858,7 @@ export const Verao_PierreLeGros: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -14042,7 +14042,7 @@ export const Outono_JacquesHouzeau: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Estátua',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -14077,7 +14077,7 @@ export const Inverno_SimonHurtvelle: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Estátua',
+    Tipologia: 'Alegoria',
     Execucao: true,
 };
 
@@ -14487,7 +14487,7 @@ export const SaoFranciscoDeAssiseSantaClara_EduardoDeSa: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Religiosa',
-    Tipologia: 'Escultura',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -15773,7 +15773,7 @@ export const SaoFranciscodePaula_GiovanniBattistaMaini: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Religiosa',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -15810,7 +15810,7 @@ export const Carnica_AnaluNabuco: Obra = {
     Categoria: 'Plasticidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -16255,7 +16255,7 @@ export const HeroisdeLagunaeDourados_AntonioPintodeMattos: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -16451,7 +16451,7 @@ export const Ceres_Desconhecida: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -17330,7 +17330,7 @@ export const MarechalFlorianoPeixoto_EduardoDeSa: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Militar',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -17451,7 +17451,7 @@ export const UniaodosPovosAmericanos_MarioAgostinelli: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -17528,7 +17528,7 @@ export const AoPAN2007_RobertoKenjiFukuda: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -18108,7 +18108,7 @@ export const AryBarroso_OttoDumovich: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -18252,7 +18252,7 @@ export const CriancasComAConcha_FrançoisLespingola: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -18287,7 +18287,7 @@ export const CriancasComoPassaro_SimonMazieredas: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -18323,7 +18323,7 @@ export const CriancasComATocha_PhilippeGarnier: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -18359,7 +18359,7 @@ export const CriancasComflores_PierreLaviron: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Conjunto escultórico',
+    Tipologia: 'Grupo escultórico',
     Execucao: true,
 };
 
@@ -18597,7 +18597,7 @@ export const HenriqueDodsworth_HonorioPecanha: Obra = {
 export const DianadeGabies_Desconhecida: Obra = {
     ID: 474,
     Imagem: undefined,
-    Autores: [artistas.Desconhecida], //TODO: livro dis fundicao val dosne.. coloquei nos fatos
+    Autores: [artistas.Desconhecida],
     Titulo: `Diana de Gabies`,
     Material: `Ferro fundido`,
     Altura: undefined,
@@ -18605,7 +18605,7 @@ export const DianadeGabies_Desconhecida: Obra = {
     Profundidade: undefined,
     Peso: undefined,
     ValorObra: undefined,
-    DataInauguracao: ``, //TODO SEC XIX
+    DataInauguracao: `sec. XIX`,
     DatasImportantes: [
         new Data('', 'data de inauguração'),
     ],
@@ -18614,8 +18614,7 @@ export const DianadeGabies_Desconhecida: Obra = {
     Propriedade: 'Pública',
     Zona: 'Oeste',
     Bairro: 'Jacarepaguá',
-    //Endereco: 'Praça Barão da Taquara', TODO
-    Endereco: 'Praça Seca',
+    Endereco: 'Praça Barão da Taquara',
     Latitude: `-22.8976865`,
     Longitude: `-43.3521423`,
     SuporteEspacial: undefined,
@@ -18633,7 +18632,7 @@ export const DianadeGabies_Desconhecida: Obra = {
     Categoria: undefined,
     Funcao: undefined,
     Natureza: undefined,
-    Tipologia: 'Escultura',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 

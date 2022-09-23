@@ -4,6 +4,8 @@ import Obra from '../../domain/obra';
 import * as artistas from './artista';
 import * as pessoas from './pessoa';
 
+
+
 export const OratorioNossaSenhoraAparecida_Desconhecida: Obra = {
     ID: 1,
     Imagem: undefined,
@@ -13940,7 +13942,7 @@ export const AlvaroReis_JoasPereiraDosPassos: Obra = {
     Categoria: 'personalidades',
     Tipologia: `Estátua`,
     Material: `Peça em bronze`,
-    Descricao: `O conjunto escultórico apresenta o Reverendo Presbiteriano com duas crianças próximas. O monumento foi idealizado
+    Descricao: `O Grupo escultórico apresenta o Reverendo Presbiteriano com duas crianças próximas. O monumento foi idealizado
     pelo Reverendo Guilhermino Cunha, para homenagear o fundador do INPAR, uma instituição da obra social presbeteriana.
 A menina e o menino estão no depósito desde maio de 2016 devido a uma tentativa de furto.`,
     Altura: undefined,
@@ -19384,7 +19386,7 @@ export const LeaodoMeier_NivaldoRodrigues: Obra = {
     Categoria: 'sublimidade',
     Tipologia: 'Escultura',
     Material: `Peça em argamassa armada`,
-    Descricao: `Escultura em concreto pintado na cor amarela, oferecido à Cidade pelo Lions Club do Méier na ocasião do centenário do bairro e do Jubileu de Prata do Clube. Originalmente um relógio elétrico fazia parte do conjunto escultórico, tendo sido reinstalado pelo Rio-Cidade Méier, em 1996, no canteiro central da Rua Dias da Cruz.`,
+    Descricao: `Escultura em concreto pintado na cor amarela, oferecido à Cidade pelo Lions Club do Méier na ocasião do centenário do bairro e do Jubileu de Prata do Clube. Originalmente um relógio elétrico fazia parte do Grupo escultórico, tendo sido reinstalado pelo Rio-Cidade Méier, em 1996, no canteiro central da Rua Dias da Cruz.`,
     Altura: undefined,
     Largura: undefined,
     Profundidade: undefined,
@@ -20812,7 +20814,7 @@ export const JogoAmistosodeFutebolentreBrasileChina_HuangJian: Obra = {
     Tipologia: 'Escultura',
     Material: `Peça em bronze e pedestal de metal`,
     Descricao: `O monumento foi uma doação da Cidade de Pequim à Cidade do Rio de Janeiro. na comemoração do 30º aniversário do relacionamento das cidades irmãs. Retrata grandes ícones de ambos os países. Da China o Imperador Han wu, pioneiro da Rota da Seda, o primeiro registro de um jogo similar ao futebol que data do período entre os séculos 220 a.c. e 206 a.c., exatamente o da Dinastia Wu. Do outro o Rei Pelé.
-O conjunto escultórico pesa cerca de três toneladas e veio de transporte marítimo para o Brasil durante o período da Olimpiada do Rio.`,
+O Grupo escultórico pesa cerca de três toneladas e veio de transporte marítimo para o Brasil durante o período da Olimpiada do Rio.`,
     Altura: undefined,
     Largura: undefined,
     Profundidade: undefined,
@@ -33144,7 +33146,7 @@ export const JardimdePedrasdoMuseudeArteModerna_RobertoBurleMarx: Obra = {
     Material: `Blocos de gnaisses e seixos rolados`,
     Descricao: `Blocos de gnaisse encaixados com pedras de rio. A intenção descrita é que o jardim recriasse dois mundos, o das pedras redondas, que lembram a paciência dos rios, e o dos monólitos, que retratam a arte do homem.
 O jardim no entorno do Museu de Arte Moderna foi elaborado em duas etapas entre 1955 e 1968.
-Situado na área posterior do Museu de Arte Moderna, são áreas retangulares definidas entre as áreas gramadas criando lagos secos. Três elementos distintos marcam esse conjunto escultórico; vegetação, blocos de cantaria em gnaisse e seixos rolados. A área destinada aos lagos está instalada, os seixos rolados sobre areia, numa alusão às pedras dos rios. Entre esses tem cinco conjuntos de blocos de cantaria, provavelmente das antigas construções da Cidade, estão instaladas com o parâmetro vertical, recebendo destaque perante o grande predomínio de áreas planas. O outro elemento, a vegetação, onde estão plantadas diversas bromélias, espécies de áreas secas.`,
+Situado na área posterior do Museu de Arte Moderna, são áreas retangulares definidas entre as áreas gramadas criando lagos secos. Três elementos distintos marcam esse Grupo escultórico; vegetação, blocos de cantaria em gnaisse e seixos rolados. A área destinada aos lagos está instalada, os seixos rolados sobre areia, numa alusão às pedras dos rios. Entre esses tem cinco conjuntos de blocos de cantaria, provavelmente das antigas construções da Cidade, estão instaladas com o parâmetro vertical, recebendo destaque perante o grande predomínio de áreas planas. O outro elemento, a vegetação, onde estão plantadas diversas bromélias, espécies de áreas secas.`,
     Altura: undefined,
     Largura: undefined,
     Profundidade: undefined,
