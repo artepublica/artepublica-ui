@@ -10,11 +10,13 @@ function Dropdown({
     setarValor,
     items,
     zIndex,
+    multiple,
 }: {
     valor: any;
     setarValor: Dispatch<SetStateAction<any>>;
-    items: { label: string; value: any }[];
+    items: { label: string; value: any; parent?: any }[];
     zIndex?: number;
+    multiple?: boolean;
 }): JSX.Element {
     const { theme } = useTheme();
 
@@ -35,6 +37,7 @@ function Dropdown({
 
     return (
         <DropDownPicker
+            multiple={multiple}
             theme={theme.dark ? 'DARK' : 'LIGHT'}
             open={dropdownAberto}
             value={valor}
@@ -55,6 +58,10 @@ function Dropdown({
             arrowIconContainerStyle={{ borderColor: theme.text.textColor }}
             //iconContainerStyle={{ borderColor: theme.text.textColor }}
             showTickIcon={false}
+            categorySelectable
+            listChildContainerStyle={{
+                paddingLeft: 36,
+            }}
         />
     );
 }
