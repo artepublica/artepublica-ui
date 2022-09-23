@@ -4,8 +4,6 @@ import Obra from '../../domain/obra';
 import * as artistas from './artista';
 import * as pessoas from './pessoa';
 
-
-
 export const OratorioNossaSenhoraAparecida_Desconhecida: Obra = {
     ID: 1,
     Imagem: undefined,

@@ -35,7 +35,7 @@ function Home(): JSX.Element {
 
     return (
         <SafeAreaView style={style.container}>
-            <ScrollView style={{ width: '100%' }} contentContainerStyle={{ alignItems: 'center', justifyContent: 'center' }}>
+            <ScrollView style={{ width: '100%' }} contentContainerStyle={{ alignItems: 'center', justifyContent: 'center', padding: 24 }}>
                 <View>
                     <Grid style={{ width: 568, height: '100%' }}>
                         {obrasComImagem

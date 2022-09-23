@@ -11,9 +11,6 @@ function styles(): Styles {
     return StyleSheet.create<Styles>({
         container: {
             flex: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: 24,
         },
         row: {
             backgroundColor: '#FFFFFF',
