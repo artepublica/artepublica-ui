@@ -9112,7 +9112,7 @@ export const Eco_MestreValentim: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -10763,7 +10763,7 @@ export const Narciso_MestreValentim: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -13080,7 +13080,7 @@ export const Africa_MathurinMoreau: Obra = {
     Profundidade: undefined,
     Peso: undefined,
     ValorObra: undefined,
-    DataInauguracao: undefined,
+    DataInauguracao: '1896',
     DatasImportantes: [new Data(`séc XIX`, 'data de inauguração')],
     Promotor: undefined,
     Financiamento: undefined,
@@ -14687,7 +14687,7 @@ export const AberturadosPortos_EugeneBenet: Obra = {
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
