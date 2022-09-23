@@ -35,4 +35,5 @@ export const theme = {
     text: textTheme,
     header: {},
     bottomTab: {},
+    tipologia: {},
 } as unknown as Theme;

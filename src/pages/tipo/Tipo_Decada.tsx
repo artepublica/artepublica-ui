@@ -6,7 +6,7 @@ import DropDownPicker from 'react-native-dropdown-picker';
 
 import { Chart } from '@base-components';
 import { Obra } from '@domain';
-import { useTheme } from '@utils';
+import { TipologiaTheme, useTheme } from '@utils';
 import * as dedadas from '@utils/data/decadas';
 
 import styles from './styles';
@@ -60,7 +60,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             type: 'column',
             name: _tipo,
             data: total_tipo,
-            color: theme.tipologia[_tipo.toLowerCase()],
+            color: theme.tipologia[_tipo.toLowerCase() as keyof TipologiaTheme],
         };
         series.push(serie);
         return series;
@@ -80,7 +80,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             type: 'streamgraph',
             name: _tipo,
             data: total_tipo,
-            color: theme.tipologia[_tipo.toLowerCase()],
+            color: theme.tipologia[_tipo.toLowerCase() as keyof TipologiaTheme],
         };
         series.push(serie);
         return series;

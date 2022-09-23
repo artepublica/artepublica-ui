@@ -2,8 +2,9 @@ import { ScrollView, View } from 'react-native';
 
 import { Chart } from '@base-components';
 import { Obra } from '@domain';
-import { useTheme } from '@utils';
+import { TipologiaTheme, useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
+import { vinho } from '@utils/theme-provider/themes/cores';
 
 import styles from './styles';
 
@@ -11,15 +12,6 @@ type GraficoRedeTipoTipologiaObraProps = {
     tipo: string;
     tipos: { nome: string; obras: Obra[] }[];
 };
-
-function getRandomColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
 
 function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaObraProps): JSX.Element {
     const { theme } = useTheme();
@@ -30,11 +22,15 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
     const style = styles();
 
     const tipologias = maior.obras
-        .map((obra) => ({
-            id: obra.Tipologia ?? 'Deconhecida',
-            marker: { radius: 50 },
-            color: getRandomColor(),
-        }))
+        .map((obra) => {
+            const tipologia = obra.Tipologia ?? 'Deconhecida';
+            const color = theme.tipologia[tipologia.toLowerCase() as keyof TipologiaTheme];
+            return {
+                id: tipologia,
+                marker: { radius: 20 },
+                color,
+            };
+        })
         .reduce<{ id: string; marker: { radius: number }; color: string }[]>((r, e) => {
             if (r.find((tip) => tip.id === e.id) == null) {
                 r.push(e);
@@ -43,12 +39,12 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
         }, []);
 
     const titulos = maior.obras.map((obra) => ({
-        id: `${obra.Titulo ?? 'Deconhecida'} (${getYear(obra.DataInauguracao) ?? 'S.D.'})`,
-        marker: { radius: 30 },
-        color: `${tipologias.find((tipologia) => tipologia.id === (obra.Tipologia ?? 'Desconhecida'))?.color}90`,
+        id: `${obra.Titulo ?? 'Deconhecida'} (${getYear(obra.DataInauguracao) ?? 's.d.'})`,
+        marker: { radius: 10 },
+        color: `${tipologias.find((tipologia) => tipologia.id === (obra.Tipologia ?? 'Desconhecida'))?.color}80`,
     }));
 
-    const nodes = [{ id: maior.nome, marker: { radius: 70 }, color: getRandomColor() }];
+    const nodes = [{ id: maior.nome, marker: { radius: 30 }, color: vinho }];
     Array.prototype.push.apply(nodes, titulos);
     Array.prototype.push.apply(nodes, tipologias);
 
@@ -71,7 +67,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
                     .filter(
                         (obra) => (obra.Tipologia != null && obra.Tipologia === tipologia.id) || (tipologia.id === 'Desconhecida' && obra.Tipologia == null),
                     )
-                    .map((obra) => `${obra.Titulo ?? 'Deconhecida'} (${getYear(obra.DataInauguracao) ?? 'S.D.'})`);
+                    .map((obra) => `${obra.Titulo ?? 'Deconhecida'} (${getYear(obra.DataInauguracao) ?? 's.d.'})`);
 
                 return titulos_tipologia.map((titulo) => ({
                     from: tipologia.id,
@@ -87,6 +83,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
     const options: Highcharts.Options | unknown = {
         chart: {
             height: 700,
+            width: 576,
             type: 'networkgraph',
         },
         title: {
@@ -95,11 +92,18 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
         plotOptions: {
             networkgraph: {
                 layoutAlgorithm: {
-                    linkLength: 200, // in pixels
-                    enableSimulation: false,
-                    //friction: -0.9,
+                    //linkLength: 200, // in pixels
+                    enableSimulation: true,
+                    friction: -0.9,
                     integration: 'verlet',
                     approximation: 'barnes-hut',
+                },
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        textOutline: 'none',
+                        color: theme.text.textColor,
+                    },
                 },
             },
         },
@@ -113,15 +117,16 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
                     enabled: true,
                     linkFormat: '',
                     textPath: {
-                        enabled: true,
+                        //enabled: true,
                         attributes: {
-                            //dy: 12,
+                            dy: -12,
                             //startOffset: '45%',
                             //textLength: 200,
                         },
                     },
                     allowOverlap: true,
-                    color: theme.dark ? '#FFF' : undefined,
+                    color: theme.text.textColor,
+                    dy: -12,
                 },
                 data,
                 nodes,

@@ -42,12 +42,12 @@ type BottomTabTheme = {
     lineHeight: number;
 };
 
-type TipologiaTheme = {
+export type TipologiaTheme = {
     busto: string;
     cabeça: string;
     escultura: string;
     estátua: string;
-    'grupo escultórica': string;
+    'grupo escultórico': string;
     'lâmina escultórica': string;
     obelisco: string;
     relevo: string;

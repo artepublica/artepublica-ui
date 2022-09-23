@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from 'react';
 import { Wrapper } from '@googlemaps/react-wrapper';
 import Constants from 'expo-constants';
 
+import { magenta } from '@utils/theme-provider/themes/cores';
+
 type MapWrapperProps = {
     markers?: {
         position: { latitude: string; longitude: string };
@@ -63,7 +65,7 @@ function MyMapComponent({
                         strokeColor: '#000',
                         strokeWeight: 2,
                         scale: 1,
-                        fillColor: marker.color ?? 'red',
+                        fillColor: marker.color ?? magenta,
                     },
                 });
                 markerG.setMap(map);
