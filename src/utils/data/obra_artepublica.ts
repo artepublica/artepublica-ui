@@ -18328,7 +18328,7 @@ export const ChafarizOutono_MathurinMoreau: Obra = {
     Categoria: undefined,
     Funcao: undefined,
     Natureza: undefined,
-    Tipologia: 'Chafariz',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
