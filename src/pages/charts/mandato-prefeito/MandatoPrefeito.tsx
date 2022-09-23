@@ -1,36 +1,29 @@
+import { useEffect, useState } from 'react';
+
 import Highcharts, { SeriesOptionsType } from 'highcharts';
 import { ScrollView, View } from 'react-native';
 
-import { Chart } from '@base-components';
-import { Artista, Obra } from '@domain';
+import { Chart, Dropdown } from '@base-components';
+import { Artista, Obra, Prefeito } from '@domain';
 import { TipologiaTheme, useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
-import * as obra_artepublica from '@utils/data/obra_artepublica';
+import * as prefeitos_mandatos from '@utils/data/prefeitos';
+import reduceListOfList from '@utils/list/reduce-list-of-list';
 import { magenta } from '@utils/theme-provider/themes/cores';
 
-function Block(): JSX.Element {
+function Block({ obras, anos }: { obras: Obra[]; anos: number[] }): JSX.Element {
     const { theme } = useTheme();
-    const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
-    const anos_primeiro_mantado = [
-        1993,
-        1994,
-        1995,
-        1996,
-    ];
-
-    const obras_por_ano = Object.keys(typed_obra_artepublica)
-        .reduce<{ year: number; obras: Obra[] }[]>((result, key) => {
-            const year = getYear(typed_obra_artepublica[key].DataInauguracao);
-            if (year != null && anos_primeiro_mantado.includes(year)) {
+    const obras_por_ano = obras
+        .reduce<{ year: number; obras: Obra[] }[]>((result, obra) => {
+            const year = getYear(obra.DataInauguracao);
+            if (year != null && anos.includes(year)) {
                 const y = result.find((t) => t.year === year);
 
                 if (y == null) {
                     result.push({
                         year,
-                        obras: Object.keys(typed_obra_artepublica)
-                            .filter((keyInt) => getYear(typed_obra_artepublica[keyInt].DataInauguracao) === year)
-                            .map((keyInt) => typed_obra_artepublica[keyInt]),
+                        obras: obras.filter((obraInt) => getYear(obraInt.DataInauguracao) === year).map((obraInt) => obraInt),
                     });
                 }
             }
@@ -96,7 +89,7 @@ function Block(): JSX.Element {
             },
         },
         xAxis: {
-            categories: anos_primeiro_mantado.map((ano) => ano.toString()),
+            categories: anos.map((ano) => ano.toString()),
             labels: {
                 style: { color: theme.text.textColor },
             },
@@ -126,22 +119,13 @@ function Block(): JSX.Element {
     return <Chart options={lineOptions} />;
 }
 
-function Network(): JSX.Element {
+function Network({ obras, anos, prefeito }: { obras: Obra[]; prefeito: string; anos: number[] }): JSX.Element {
     const { theme } = useTheme();
 
-    const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
-
-    const anos_primeiro_mantado = [
-        1993,
-        1994,
-        1995,
-        1996,
-    ];
-
-    const obras_do_mandato = Object.keys(typed_obra_artepublica).reduce<Obra[]>((result, key) => {
-        const year = getYear(typed_obra_artepublica[key].DataInauguracao);
-        if (year != null && anos_primeiro_mantado.includes(year)) {
-            result.push(typed_obra_artepublica[key]);
+    const obras_do_mandato = obras.reduce<Obra[]>((result, obra) => {
+        const year = getYear(obra.DataInauguracao);
+        if (year != null && anos.includes(year)) {
+            result.push(obra);
         }
 
         return result;
@@ -180,12 +164,12 @@ function Network(): JSX.Element {
         color: `${autores.filter((autor) => obra.Autores?.map((autorObra) => autorObra.Pessoa?.Nome).includes(autor.id))[0].color}80`,
     }));
 
-    const nodes = [{ id: 'Cesar Maia', marker: { radius: 15 }, color: magenta }];
+    const nodes = [{ id: prefeito, marker: { radius: 15 }, color: magenta }];
     Array.prototype.push.apply(nodes, titulos);
     Array.prototype.push.apply(nodes, autores);
 
     const data = autores.map((autor) => ({
-        from: 'Cesar Maia',
+        from: prefeito,
         to: autor.id,
     }));
 
@@ -262,21 +246,13 @@ function Network(): JSX.Element {
     return <Chart options={networkOptions as Highcharts.Options} />;
 }
 
-function Sankey(): JSX.Element {
+function Sankey({ obras, anos, prefeito }: { obras: Obra[]; prefeito: string; anos: number[] }): JSX.Element {
     const { theme } = useTheme();
-    const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
-    const anos_primeiro_mantado = [
-        1993,
-        1994,
-        1995,
-        1996,
-    ];
-
-    const obras_do_mandato = Object.keys(typed_obra_artepublica).reduce<Obra[]>((result, key) => {
-        const year = getYear(typed_obra_artepublica[key].DataInauguracao);
-        if (year != null && anos_primeiro_mantado.includes(year)) {
-            result.push(typed_obra_artepublica[key]);
+    const obras_do_mandato = obras.reduce<Obra[]>((result, obra) => {
+        const year = getYear(obra.DataInauguracao);
+        if (year != null && anos.includes(year)) {
+            result.push(obra);
         }
 
         return result;
@@ -314,12 +290,12 @@ function Sankey(): JSX.Element {
         color: `${autores.filter((autor) => obra.Autores?.map((autorObra) => autorObra.Pessoa?.Nome).includes(autor.id))[0].color}80`,
     }));
 
-    const nodes = [{ id: 'Cesar Maia', marker: { radius: 50 }, color: magenta }];
+    const nodes = [{ id: prefeito, marker: { radius: 50 }, color: magenta }];
     Array.prototype.push.apply(nodes, titulos);
     Array.prototype.push.apply(nodes, autores);
 
     const data = autores.map((autor) => ({
-        from: 'Cesar Maia',
+        from: prefeito,
         to: autor.id,
         weight: 1,
     }));
@@ -389,21 +365,84 @@ function Sankey(): JSX.Element {
     return <Chart options={networkOptions as Highcharts.Options} />;
 }
 
-//TODO: dropdown: prefeito/mandato (com e sem mandato selecionado)
-function PublicArtCesarMaia(): JSX.Element {
+function MandatoPrefeito({ obras }: { obras: Obra[] }): JSX.Element {
+    const typed_prefeitos: Record<string, Prefeito> = prefeitos_mandatos;
+
+    const items = Object.keys(typed_prefeitos)
+        .map((key) => {
+            const prefeito = typed_prefeitos[key];
+
+            const mandatos = prefeito.Mandatos?.map((mandato) => ({
+                label: `${mandato.DataInicio} - ${mandato.DataFim}`,
+                value: `${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${mandato.DataInicio} - ${mandato.DataFim})`,
+                parent: prefeito.Pessoa?.Nome ?? 'Desconhecida',
+            }));
+
+            return [
+                {
+                    label: prefeito.Pessoa?.Nome ?? 'Desconhecida',
+                    value: prefeito.Pessoa?.Nome ?? 'Desconhecida',
+                    selectable: false,
+                },
+                ...(mandatos ?? []),
+            ];
+        })
+        .reduce(reduceListOfList);
+
+    const [
+        valorDropdown,
+        setarDropdown,
+    ] = useState('Cesar Epitácio Maia (01/01/1993 - 31/12/1996)');
+
+    const prefeitos = Object.keys(typed_prefeitos).map((key) => typed_prefeitos[key]);
+
+    const [
+        anos,
+        setarAnos,
+    ] = useState<{ prefeito: string; anos: number[] }>({ prefeito: '', anos: [] });
+
+    useEffect(() => {
+        const prefeito = prefeitos.filter((prefeito) => {
+            const mandatos = prefeito.Mandatos?.filter(
+                (mandato) => `${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${mandato.DataInicio} - ${mandato.DataFim})` === valorDropdown,
+            );
+            return mandatos != null && mandatos.length > 0;
+        })[0];
+        console.log(prefeito);
+
+        const mandato = prefeito.Mandatos?.filter(
+            (mandato) => `${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${mandato.DataInicio} - ${mandato.DataFim})` === valorDropdown,
+        )[0];
+
+        console.log(mandato);
+
+        const anoInicio = getYear(mandato?.DataInicio);
+        const anoFim = getYear(mandato?.DataFim);
+        console.log(anoInicio);
+        console.log(anoFim);
+
+        const anosIntern: number[] = [];
+        for (let i = anoInicio as number; i <= (anoFim as number); i++) {
+            anosIntern.push(i);
+        }
+        console.log(anosIntern);
+        setarAnos({ prefeito: prefeito.Pessoa?.Nome ?? 'Desconhecida', anos: anosIntern });
+    }, [valorDropdown]);
+
     return (
         <ScrollView style={{ width: '100%' }}>
+            <Dropdown valor={valorDropdown} setarValor={setarDropdown} items={items} />
             <View>
-                <Block />
+                <Block obras={obras} anos={anos.anos} />
             </View>
             <View style={{ paddingTop: 24 }}>
-                <Network />
+                <Network obras={obras} anos={anos.anos} prefeito={anos.prefeito} />
             </View>
             <View style={{ paddingTop: 24 }}>
-                <Sankey />
+                <Sankey obras={obras} anos={anos.anos} prefeito={anos.prefeito} />
             </View>
         </ScrollView>
     );
 }
 
-export default PublicArtCesarMaia;
+export default MandatoPrefeito;

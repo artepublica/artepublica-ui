@@ -4,8 +4,8 @@ import { DrawerActions, NavigatorScreenParams } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
-import { GraficoPoliticaPublica, ObrasRecorte, MapaRecorte, MapaTodasXRecorte, Decade, Category, Exposicoes } from '@pages';
-import { autoresRecorte, categoriasRecorte, enderecosRecorte, naturezasRecorte, statusRecorte, Theme, tipologiasRecorte, useTheme, zonasRecorte } from '@utils';
+import { GraficoPoliticaPublica, ObrasRecorte, MapaRecorte, MapaTodasXRecorte, Decade, Exposicoes, MandatoPrefeito } from '@pages';
+import { autoresRecorte, enderecosRecorte, statusRecorte, Theme, tipologiasRecorte, useTheme, zonasRecorte, obrasRecorte } from '@utils';
 
 import { TipoMenuNavigator, TipoMenuNavigatorParamList } from './TipoMenuNavigator';
 
@@ -15,17 +15,15 @@ export type ObrasRecorteNavigatorParamsList = {
     Home: undefined;
     Tipologias: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Autores: NavigatorScreenParams<TipoMenuNavigatorParamList>;
-    Naturezas: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Zonas: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Enderecos: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Status: NavigatorScreenParams<TipoMenuNavigatorParamList>;
-    Categorias: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Mapa: undefined;
     GraficoPoliticaPublica: undefined;
     MapaTodasXRecorte: undefined;
     Decade: undefined;
-    Category: undefined;
     Exposicoes: undefined;
+    MandatoPrefeito: undefined;
 };
 
 type ObrasRecorteNavigatorProps = {
@@ -91,21 +89,6 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                 {(props) => <TipoMenuNavigator {...props} tipo="Autor" tipos={autoresRecorte} tipologia rede zona />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
-                name="Naturezas"
-                options={({ navigation }) => ({
-                    title: 'Naturezas Recorte',
-                    headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Naturezas Recorte</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
-                })}
-            >
-                {(props) => <TipoMenuNavigator {...props} tipo="Natureza" tipos={naturezasRecorte} tipologia zona />}
-            </DrawerNavigator.Screen>
-            <DrawerNavigator.Screen
                 name="Zonas"
                 options={({ navigation }) => ({
                     title: 'Zonas Recorte',
@@ -149,21 +132,6 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                 })}
             >
                 {(props) => <TipoMenuNavigator {...props} tipo="Status" tipos={statusRecorte} tipologia zona />}
-            </DrawerNavigator.Screen>
-            <DrawerNavigator.Screen
-                name="Categorias"
-                options={({ navigation }) => ({
-                    title: 'Categorias Recorte',
-                    headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Categorias Recorte</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
-                })}
-            >
-                {(props) => <TipoMenuNavigator {...props} tipo="Categoria" tipos={categoriasRecorte} tipologia zona mapa decada />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Mapa"
@@ -222,20 +190,6 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                 })}
             />
             <DrawerNavigator.Screen
-                name="Category"
-                component={Category}
-                options={({ navigation }) => ({
-                    title: 'Eixos',
-                    headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Eixos</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
-                })}
-            />
-            <DrawerNavigator.Screen
                 name="Exposicoes"
                 component={Exposicoes}
                 options={({ navigation }) => ({
@@ -249,6 +203,21 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     ),
                 })}
             />
+            <DrawerNavigator.Screen
+                name="MandatoPrefeito"
+                options={({ navigation }) => ({
+                    title: 'Mandato Prefeito',
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Mandato Prefeito</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            >
+                {(props) => <MandatoPrefeito {...props} obras={obrasRecorte} />}
+            </DrawerNavigator.Screen>
         </DrawerNavigator.Navigator>
     );
 }

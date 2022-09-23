@@ -4,8 +4,8 @@ import { DrawerActions, NavigatorScreenParams } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
-import { Obras, Mapa } from '@pages';
-import { autores, categorias, enderecos, naturezas, status, Theme, tipologias, useTheme, zonas } from '@utils';
+import { Obras, Mapa, MandatoPrefeito } from '@pages';
+import { autores, enderecos, obras, status, Theme, tipologias, useTheme, zonas } from '@utils';
 
 import { TipoMenuNavigator, TipoMenuNavigatorParamList } from './TipoMenuNavigator';
 
@@ -15,12 +15,11 @@ export type ObrasNavigatorParamsList = {
     Home: undefined;
     Tipologias: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Autores: NavigatorScreenParams<TipoMenuNavigatorParamList>;
-    Naturezas: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Zonas: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Enderecos: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Status: NavigatorScreenParams<TipoMenuNavigatorParamList>;
-    Categorias: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Mapa: undefined;
+    MandatoPrefeito: undefined;
 };
 
 type ObrasNavigatorProps = {
@@ -86,21 +85,6 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                 {(props) => <TipoMenuNavigator {...props} tipo="Autor" tipos={autores} tipologia rede zona />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
-                name="Naturezas"
-                options={({ navigation }) => ({
-                    title: 'Naturezas ',
-                    headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Naturezas </Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
-                })}
-            >
-                {(props) => <TipoMenuNavigator {...props} tipo="Natureza" tipos={naturezas} tipologia zona />}
-            </DrawerNavigator.Screen>
-            <DrawerNavigator.Screen
                 name="Zonas"
                 options={({ navigation }) => ({
                     title: 'Zonas ',
@@ -146,21 +130,6 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                 {(props) => <TipoMenuNavigator {...props} tipo="Status" tipos={status} tipologia zona />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
-                name="Categorias"
-                options={({ navigation }) => ({
-                    title: 'Categorias',
-                    headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Categorias</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
-                })}
-            >
-                {(props) => <TipoMenuNavigator {...props} tipo="Categoria" tipos={categorias} tipologia zona mapa decada />}
-            </DrawerNavigator.Screen>
-            <DrawerNavigator.Screen
                 name="Mapa"
                 component={Mapa}
                 options={({ navigation }) => ({
@@ -174,6 +143,21 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     ),
                 })}
             />
+            <DrawerNavigator.Screen
+                name="MandatoPrefeito"
+                options={({ navigation }) => ({
+                    title: 'Mandato Prefeito',
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Mandato Prefeito</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            >
+                {(props) => <MandatoPrefeito {...props} obras={obras} />}
+            </DrawerNavigator.Screen>
         </DrawerNavigator.Navigator>
     );
 }

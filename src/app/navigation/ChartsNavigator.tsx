@@ -4,7 +4,7 @@ import { DrawerActions } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
-import { Charts, PublicArtTotal19892000, PublicArtCesarMaia } from '@pages';
+import { Charts, PublicArtTotal19892000 } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const DrawerNavigator = createDrawerNavigator<ChartsNavigatorParamsList>();
@@ -12,7 +12,6 @@ const DrawerNavigator = createDrawerNavigator<ChartsNavigatorParamsList>();
 export type ChartsNavigatorParamsList = {
     Home: undefined;
     PublicArtC19892000: undefined;
-    PublicArtCesarMaia: undefined;
 };
 
 type ChartsNavigatorProps = {
@@ -53,24 +52,6 @@ export function ChartsNavigator({ testOnly_initialRouteName }: ChartsNavigatorPr
                     title: 'Arte Pública - 1989/2000',
                     headerShown: true,
                     headerTitle: () => <Text style={style.title}>Arte Pública - 1989/2000</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity
-                            testID="tipologias-por-decada-menu"
-                            style={{ paddingLeft: 16 }}
-                            onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
-                        >
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
-                })}
-            />
-            <DrawerNavigator.Screen
-                name="PublicArtCesarMaia"
-                component={PublicArtCesarMaia}
-                options={({ navigation }) => ({
-                    title: 'Arte Pública - Cesar Maia',
-                    headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Arte Pública - Cesar Maia</Text>,
                     headerLeft: () => (
                         <TouchableOpacity
                             testID="tipologias-por-decada-menu"

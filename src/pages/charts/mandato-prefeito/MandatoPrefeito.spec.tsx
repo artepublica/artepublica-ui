@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react-native';
 
-import PublicArtCesarMaia from './PublicArtCesarMaia';
+import MandatoPrefeito from './MandatoPrefeito';
 
-describe('<PublicArtCesarMaia />', () => {
+describe('<MandatoPrefeito />', () => {
     it('should render', () => {
-        const { getAllByTestId } = render(<PublicArtCesarMaia />);
+        const { getAllByTestId } = render(<MandatoPrefeito obras={[]} />);
 
         const charts = getAllByTestId('chart');
 

@@ -60,26 +60,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                 },
                             },
-                            Naturezas: {
-                                path: 'naturezas',
-                                screens: {
-                                    Home: {
-                                        path: '',
-                                    },
-                                    TabelaTipologiaObra: {
-                                        path: 'tabela-tipologia-obra',
-                                    },
-                                    GraficoRedeTipologiaObra: {
-                                        path: 'grafico-rede-tipologia-obra',
-                                    },
-                                    Mapa: {
-                                        path: 'mapa',
-                                    },
-                                    Decada: {
-                                        path: 'decada',
-                                    },
-                                },
-                            },
                             Zonas: {
                                 path: 'zonas',
                                 screens: {
@@ -140,28 +120,11 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                 },
                             },
-                            Categorias: {
-                                path: 'categorias',
-                                screens: {
-                                    Home: {
-                                        path: '',
-                                    },
-                                    TabelaTipologiaObra: {
-                                        path: 'tabela-tipologia-obra',
-                                    },
-                                    GraficoRedeTipologiaObra: {
-                                        path: 'grafico-rede-tipologia-obra',
-                                    },
-                                    Mapa: {
-                                        path: 'mapa',
-                                    },
-                                    Decada: {
-                                        path: 'decada',
-                                    },
-                                },
-                            },
                             Mapa: {
                                 path: 'mapa',
+                            },
+                            MandatoPrefeito: {
+                                path: 'mandato-prefeito',
                             },
                         },
                     },
@@ -211,26 +174,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                 },
                             },
-                            Naturezas: {
-                                path: 'naturezas',
-                                screens: {
-                                    Home: {
-                                        path: '',
-                                    },
-                                    TabelaTipologiaObra: {
-                                        path: 'tabela-tipologia-obra',
-                                    },
-                                    GraficoRedeTipologiaObra: {
-                                        path: 'grafico-rede-tipologia-obra',
-                                    },
-                                    Mapa: {
-                                        path: 'mapa',
-                                    },
-                                    Decada: {
-                                        path: 'decada',
-                                    },
-                                },
-                            },
                             Zonas: {
                                 path: 'zonas',
                                 screens: {
@@ -291,26 +234,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                 },
                             },
-                            Categorias: {
-                                path: 'categorias',
-                                screens: {
-                                    Home: {
-                                        path: '',
-                                    },
-                                    TabelaTipologiaObra: {
-                                        path: 'tabela-tipologia-obra',
-                                    },
-                                    GraficoRedeTipologiaObra: {
-                                        path: 'grafico-rede-tipologia-obra',
-                                    },
-                                    Mapa: {
-                                        path: 'mapa',
-                                    },
-                                    Decada: {
-                                        path: 'decada',
-                                    },
-                                },
-                            },
                             Mapa: {
                                 path: 'mapa',
                             },
@@ -323,11 +246,11 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Decade: {
                                 path: 'decada',
                             },
-                            Category: {
-                                path: 'categoria',
-                            },
                             Exposicoes: {
                                 path: 'exposicoes',
+                            },
+                            MandatoPrefeito: {
+                                path: 'mandato-prefeito',
                             },
                         },
                     },
@@ -339,9 +262,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             },
                             PublicArtC19892000: {
                                 path: 'public-art-19989-2000',
-                            },
-                            PublicArtCesarMaia: {
-                                path: 'public-art-cesar-maia',
                             },
                         },
                     },
