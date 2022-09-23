@@ -104,7 +104,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
             networkgraph: {
                 layoutAlgorithm: {
                     //linkLength: 200, // in pixels
-                    enableSimulation: true,
+                    //enableSimulation: true,
                     friction: -0.9,
                     integration: 'verlet',
                     approximation: 'barnes-hut',
@@ -127,8 +127,8 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
                 dataLabels: {
                     enabled: true,
                     linkFormat: '',
-                    //allowOverlap: true,
                     color: '#000000',
+                    allowOverlap: false,
                 },
                 data,
                 nodes,

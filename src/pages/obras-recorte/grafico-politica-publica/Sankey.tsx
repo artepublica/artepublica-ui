@@ -180,10 +180,13 @@ function Sankey({
             text: '',
         },
         plotOptions: {
-            networkgraph: {
-                layoutAlgorithm: {
-                    //linkLength: 200, // in pixels
-                    enableSimulation: false,
+            sankey: {
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        textOutline: 'none',
+                        //color: theme.text.textColor,
+                    },
                 },
             },
         },
@@ -196,6 +199,7 @@ function Sankey({
                 dataLabels: {
                     enabled: true,
                     linkFormat: '',
+                    allowOverlap: false,
                 },
                 data: shuffleDados,
                 nodes: nosImportantes,

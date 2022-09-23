@@ -226,7 +226,7 @@ function Network(): JSX.Element {
             networkgraph: {
                 layoutAlgorithm: {
                     //linkLength: 200, // in pixels
-                    enableSimulation: true,
+                    //enableSimulation: true,
                     friction: -0.9,
                     integration: 'verlet',
                     approximation: 'barnes-hut',
@@ -250,6 +250,7 @@ function Network(): JSX.Element {
                     enabled: true,
                     linkFormat: '',
                     color: '#000000',
+                    allowOverlap: false,
                 },
                 data,
                 nodes,

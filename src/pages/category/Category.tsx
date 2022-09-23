@@ -83,6 +83,7 @@ function Line({ category }: { category: string }): JSX.Element {
 }
 
 function Network({ category, autor }: { category: string; autor?: string }): JSX.Element {
+    const { theme } = useTheme();
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
     const obras: Obra[] = Object.keys(typed_obra_artepublica)
@@ -163,20 +164,32 @@ function Network({ category, autor }: { category: string; autor?: string }): JSX
         plotOptions: {
             networkgraph: {
                 layoutAlgorithm: {
-                    enableSimulation: true,
+                    //linkLength: 200, // in pixels
+                    //enableSimulation: true,
                     friction: -0.9,
+                    integration: 'verlet',
+                    approximation: 'barnes-hut',
+                },
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        textOutline: 'none',
+                        color: theme.text.textColor,
+                    },
                 },
             },
         },
         series: [
             {
-                name: category,
+                name: '',
                 accessibility: {
                     enabled: true,
                 },
                 dataLabels: {
                     enabled: true,
-                    linkFormat: '{point.rel}',
+                    linkFormat: '',
+                    color: '#000000',
+                    allowOverlap: false,
                 },
                 data,
                 nodes,
