@@ -6,144 +6,7 @@ import { Obra } from '@domain';
 import { useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
-
-function Line(): JSX.Element {
-    const { theme } = useTheme();
-    const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
-
-    const total_anterior = Object.keys(typed_obra_artepublica)
-        .reduce<{ year: number; total: number }[]>((result, key) => {
-            const year = getYear(typed_obra_artepublica[key].DataInauguracao);
-            if (year != null && year >= 1989 && year <= 1993) {
-                const y = result.find((t) => t.year === year);
-
-                if (y == null) {
-                    result.push({
-                        year,
-                        total: Object.keys(typed_obra_artepublica).filter((keyInt) => getYear(typed_obra_artepublica[keyInt].DataInauguracao) === year).length,
-                    });
-                }
-            }
-
-            return result;
-        }, [])
-        .reduce<[number, number][]>((result, year) => {
-            result.push([
-                Date.UTC(year.year, 1),
-                year.total,
-            ]);
-            return result;
-        }, [])
-        .sort((a, b) => (a[0] > b[0] ? 1 : -1));
-
-    const total = Object.keys(typed_obra_artepublica)
-        .reduce<{ year: number; total: number }[]>((result, key) => {
-            const year = getYear(typed_obra_artepublica[key].DataInauguracao);
-            if (year != null && year >= 1993 && year <= 1997) {
-                const y = result.find((t) => t.year === year);
-
-                if (y == null) {
-                    result.push({
-                        year,
-                        total: Object.keys(typed_obra_artepublica).filter((keyInt) => getYear(typed_obra_artepublica[keyInt].DataInauguracao) === year).length,
-                    });
-                }
-            }
-
-            return result;
-        }, [])
-        .reduce<[number, number][]>((result, year) => {
-            result.push([
-                Date.UTC(year.year, 1),
-                year.total,
-            ]);
-            return result;
-        }, [])
-        .sort((a, b) => (a[0] > b[0] ? 1 : -1));
-
-    const total_proximo = Object.keys(typed_obra_artepublica)
-        .reduce<{ year: number; total: number }[]>((result, key) => {
-            const year = getYear(typed_obra_artepublica[key].DataInauguracao);
-            if (year != null && year >= 1997 && year <= 2000) {
-                const y = result.find((t) => t.year === year);
-
-                if (y == null) {
-                    result.push({
-                        year,
-                        total: Object.keys(typed_obra_artepublica).filter((keyInt) => getYear(typed_obra_artepublica[keyInt].DataInauguracao) === year).length,
-                    });
-                }
-            }
-
-            return result;
-        }, [])
-        .reduce<[number, number][]>((result, year) => {
-            result.push([
-                Date.UTC(year.year, 1),
-                year.total,
-            ]);
-            return result;
-        }, [])
-        .sort((a, b) => (a[0] > b[0] ? 1 : -1));
-
-    const series = [
-        {
-            type: 'line',
-            name: 'Marcelo Alencar',
-            data: total_anterior,
-        } as SeriesOptionsType,
-        {
-            type: 'line',
-            name: 'Cesar Maia',
-            data: total,
-        } as SeriesOptionsType,
-        {
-            type: 'line',
-            name: 'Luiz Paulo Conde',
-            data: total_proximo,
-        } as SeriesOptionsType,
-    ];
-
-    const lineOptions: Highcharts.Options = {
-        chart: {
-            height: 800,
-            type: 'line',
-        },
-        title: {
-            text: '',
-        },
-        yAxis: {
-            title: {
-                text: '',
-            },
-            min: 0,
-            labels: {
-                style: { color: '#CC1964' },
-            },
-        },
-        xAxis: {
-            type: 'datetime',
-            dateTimeLabelFormats: {
-                // don't display the dummy year
-                month: '%Y',
-                year: '%Y',
-            },
-            labels: {
-                style: { color: '#CC1964' },
-            },
-        },
-        legend: {
-            layout: 'horizontal',
-            align: 'center',
-            borderColor: '#CC1964',
-            backgroundColor: theme.background,
-            itemStyle: { color: '#CC1964' },
-        },
-        series,
-    };
-
-    return <Chart options={lineOptions} />;
-}
+import { azul3, laranja2, verde3 } from '@utils/theme-provider/themes/cores';
 
 function Block(): JSX.Element {
     const { theme } = useTheme();
@@ -228,6 +91,7 @@ function Block(): JSX.Element {
         {
             type: 'column',
             name: 'Marcelo Alencar',
+            color: laranja2,
             data: [
                 ...total_anterior.map((item) => item[1]),
                 null,
@@ -254,6 +118,7 @@ function Block(): JSX.Element {
                 null,
                 null,
             ],
+            color: azul3,
         } as SeriesOptionsType,
         {
             type: 'column',
@@ -269,12 +134,14 @@ function Block(): JSX.Element {
                 null,
                 ...total_proximo.map((item) => item[1]),
             ],
+            color: verde3,
         } as SeriesOptionsType,
     ];
 
     const lineOptions: Highcharts.Options = {
         chart: {
-            height: 800,
+            height: 600,
+            width: 293,
             type: 'column',
         },
         title: {
@@ -290,8 +157,11 @@ function Block(): JSX.Element {
                 style: {
                     //fontWeight: 'bold',
                     textOutline: 'none',
-                    color: '#CC1964',
+                    color: theme.text.textColor,
                 },
+            },
+            labels: {
+                style: { color: theme.text.textColor },
             },
         },
         xAxis: {
@@ -310,21 +180,25 @@ function Block(): JSX.Element {
                 '2000',
             ],
             labels: {
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
         },
         legend: {
             layout: 'horizontal',
             align: 'center',
-            borderColor: '#CC1964',
+            borderColor: theme.text.textColor,
             backgroundColor: theme.background,
-            itemStyle: { color: '#CC1964' },
+            itemStyle: { color: theme.text.textColor },
         },
         plotOptions: {
             column: {
                 stacking: 'normal',
                 dataLabels: {
                     enabled: true,
+                    style: {
+                        textOutline: 'none',
+                        color: theme.text.textColor,
+                    },
                 },
             },
         },
@@ -337,9 +211,6 @@ function Block(): JSX.Element {
 function PublicArtTotal19892000(): JSX.Element {
     return (
         <ScrollView style={{ width: '100%' }}>
-            <View>
-                <Line />
-            </View>
             <View style={{ paddingTop: 24 }}>
                 <Block />
             </View>

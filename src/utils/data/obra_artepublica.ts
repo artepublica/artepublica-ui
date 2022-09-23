@@ -18603,7 +18603,8 @@ Inaugurado na Praça Mauá, foi transferido em 1937 para o Campo dos Afonsos.`,
     Execucao: true,
 };
 
-export const Piramide_MestreValentim: Obra = { // TODO: revisar obra e colocar no padrão acima
+export const Piramide_MestreValentim: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 97,
     Imagem: undefined,
     Autores: [artistas.MestreValentim],
@@ -18638,7 +18639,8 @@ export const Piramide_MestreValentim: Obra = { // TODO: revisar obra e colocar n
     Execucao: true,
 };
 
-export const Obelisco_Archi5: Obra = { // TODO: revisar obra e colocar no padrão acima
+export const Obelisco_Archi5: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 169,
     Imagem: undefined,
     Autores: [artistas.Archi5],
@@ -18673,7 +18675,8 @@ export const Obelisco_Archi5: Obra = { // TODO: revisar obra e colocar no padrã
     Execucao: true,
 };
 
-export const Obelisco_EduardoDeSa: Obra = { // TODO: revisar obra e colocar no padrão acima
+export const Obelisco_EduardoDeSa: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 17,
     Imagem: undefined,
     Autores: [artistas.EduardoDeSa],
@@ -18709,7 +18712,8 @@ export const Obelisco_EduardoDeSa: Obra = { // TODO: revisar obra e colocar no p
     Execucao: true,
 };
 
-export const ObeliscodoCaisdaImperatriz_Desconhecido: Obra = { // TODO: revisar obra e colocar no padrão acima
+export const ObeliscodoCaisdaImperatriz_Desconhecido: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 3,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -18744,7 +18748,8 @@ export const ObeliscodoCaisdaImperatriz_Desconhecido: Obra = { // TODO: revisar 
     Execucao: true,
 };
 
-export const Obelisco_PauloCase: Obra = { // TODO: revisar obra e colocar no padrão acima
+export const Obelisco_PauloCase: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 241,
     Imagem: undefined,
     Autores: [artistas.PauloCase],
@@ -18780,7 +18785,8 @@ export const Obelisco_PauloCase: Obra = { // TODO: revisar obra e colocar no pad
     Execucao: true,
 };
 
-export const ObeliscodoLargodoBomRetiro_Desconhecida: Obra = { // TODO: revisar obra e colocar no padrão acima
+export const ObeliscodoLargodoBomRetiro_Desconhecida: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 1234,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -18818,7 +18824,8 @@ Peça maciça esculpida com base quadrada e outra piramidal de cerca de 6 metros
     LugarRealocacao: undefined,
 };
 
-export const ObeliscodaAvenidaRioBranco_AZanuzziCia: Obra = {// TODO: revisar obra e colocar no padrão acima
+export const ObeliscodaAvenidaRioBranco_AZanuzziCia: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 132,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -18857,7 +18864,8 @@ O Monumento tem cinco blocos, com dimensões e decoração distintas, todos em p
     LugarRealocacao: undefined,
 };
 
-export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Obra = { // TODO: revisar obra e colocar no padrão acima
+export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 145,
     Imagem: undefined,
     Autores: [artistas.FranzWeissmann],
@@ -18903,10 +18911,11 @@ export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Obra = { // TODO: re
             [pessoas.CarlosLacerda],
             'Rio de Janeiro',
         ),
-    ], 
+    ],
 };
 
-export const ObeliscodoAlargamentodeCopacabana_Desconhecida: Obra = {// TODO: revisar obra e colocar no padrão acima
+export const ObeliscodoAlargamentodeCopacabana_Desconhecida: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 349,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -18946,7 +18955,8 @@ export const ObeliscodoAlargamentodeCopacabana_Desconhecida: Obra = {// TODO: re
     LugarRealocacao: undefined,
 };
 
-export const ObeliscodaLinhaAmarela_Desconhecida: Obra = { // TODO: revisar obra e colocar no padrão acima
+export const ObeliscodaLinhaAmarela_Desconhecida: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 885,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -18983,7 +18993,8 @@ export const ObeliscodaLinhaAmarela_Desconhecida: Obra = { // TODO: revisar obra
     LugarRealocacao: undefined,
 };
 
-export const AAlimPedro_MiguelPastor: Obra = { // TODO: revisar obra e colocar no padrão acima
+export const AAlimPedro_MiguelPastor: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 964,
     Imagem: undefined,
     Autores: [artistas.MiguelPastor],
@@ -19021,7 +19032,8 @@ A efigie do homenageado em bronze foi furtada em outubro de 2017.`,
     LugarRealocacao: undefined,
 };
 
-export const AAugustodeVasconcelos_MiguelPastor: Obra = {// TODO: revisar obra e colocar no padrão acima
+export const AAugustodeVasconcelos_MiguelPastor: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 967,
     Imagem: undefined,
     Autores: [artistas.MiguelPastor],
@@ -19060,7 +19072,8 @@ export const AAugustodeVasconcelos_MiguelPastor: Obra = {// TODO: revisar obra e
     Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
 };
 
-export const ObeliscodeRochaMiranda_ErnaniFreire: Obra = {// TODO: revisar obra e colocar no padrão acima
+export const ObeliscodeRochaMiranda_ErnaniFreire: Obra = {
+    // TODO: revisar obra e colocar no padrão acima
     ID: 1037,
     Imagem: undefined,
     Autores: [artistas.ErnaniFreire],

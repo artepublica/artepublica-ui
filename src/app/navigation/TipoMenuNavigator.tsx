@@ -68,7 +68,7 @@ export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa, de
                 <TopTab.Screen
                     name="GraficoRedeTipologiaObra"
                     options={{
-                        title: 'Maior Autor',
+                        title: ' Tipologia/Obra',
                         //headerShown: false,
                         tabBarIcon: ({ color }) => {
                             return <FontAwesome name="object-group" size={24} color={color} />;
@@ -91,7 +91,7 @@ export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa, de
                         tabBarLabelStyle: style.tabBarLabel,
                     }}
                 >
-                    {(props) => <Tipo_Mapa {...props} tipos={tipos} />}
+                    {(props) => <Tipo_Mapa {...props} tipos={tipos} tipo={tipo} />}
                 </TopTab.Screen>
             )}
             {decada === true && (

@@ -3,18 +3,10 @@ import { ScrollView, View } from 'react-native';
 
 import { Chart } from '@base-components';
 import { Artista, Obra } from '@domain';
-import { useTheme } from '@utils';
+import { TipologiaTheme, useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
-
-function getRandomColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
+import { magenta } from '@utils/theme-provider/themes/cores';
 
 function Block(): JSX.Element {
     const { theme } = useTheme();
@@ -58,7 +50,8 @@ function Block(): JSX.Element {
                 r.push(e);
             }
             return r;
-        }, []);
+        }, [])
+        .sort((a, b) => a.localeCompare(b));
 
     const total_tipologias = tipologias.reduce<{ type: string; name: string; data: (number | null)[] }[]>((series, tipologia) => {
         const total_tipologia = obras_por_ano.map((obra_ano) => {
@@ -70,6 +63,7 @@ function Block(): JSX.Element {
             type: 'column',
             name: tipologia,
             data: total_tipologia,
+            color: theme.tipologia[tipologia.toLowerCase() as keyof TipologiaTheme],
         };
         series.push(serie);
         return series;
@@ -77,7 +71,8 @@ function Block(): JSX.Element {
 
     const lineOptions: Highcharts.Options = {
         chart: {
-            height: 800,
+            height: 600,
+            width: 293,
             type: 'column',
         },
         title: {
@@ -93,30 +88,35 @@ function Block(): JSX.Element {
                 style: {
                     //fontWeight: 'bold',
                     textOutline: 'none',
+                    color: theme.text.textColor,
                 },
             },
             labels: {
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
         },
         xAxis: {
             categories: anos_primeiro_mantado.map((ano) => ano.toString()),
             labels: {
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
         },
         legend: {
             layout: 'horizontal',
             align: 'center',
-            borderColor: '#CC1964',
+            borderColor: theme.text.textColor,
             backgroundColor: theme.background,
-            itemStyle: { color: '#CC1964' },
+            itemStyle: { color: theme.text.textColor },
         },
         plotOptions: {
             column: {
                 stacking: 'normal',
                 dataLabels: {
                     enabled: true,
+                    style: {
+                        textOutline: 'none',
+                        color: theme.text.textColor,
+                    },
                 },
             },
         },
@@ -147,11 +147,6 @@ function Network(): JSX.Element {
         return result;
     }, []);
 
-    const titulos = obras_do_mandato.map((obra) => ({
-        id: obra.Titulo ?? 'Deconhecida',
-        marker: { radius: 15 },
-        color: 'yellow',
-    }));
     const autores = obras_do_mandato
         .map(
             (obra) =>
@@ -170,14 +165,22 @@ function Network(): JSX.Element {
             if (r.find((node) => node.id === autor) == null) {
                 r.push({
                     id: autor ?? 'Deconhecida',
-                    marker: { radius: 30 },
-                    color: 'red',
+                    marker: { radius: 10 },
+                    color: '',
                 });
             }
             return r;
-        }, []);
+        }, [])
+        .sort((a, b) => a.id.localeCompare(b.id))
+        .map((a, index) => ({ ...a, color: theme.coresGrafico[index + 1] }));
 
-    const nodes = [{ id: 'Cesar Maia', marker: { radius: 50 }, color: 'blue' }];
+    const titulos = obras_do_mandato.map((obra) => ({
+        id: obra.Titulo ?? 'Deconhecida',
+        marker: { radius: 5 },
+        color: `${autores.filter((autor) => obra.Autores?.map((autorObra) => autorObra.Pessoa?.Nome).includes(autor.id))[0].color}80`,
+    }));
+
+    const nodes = [{ id: 'Cesar Maia', marker: { radius: 15 }, color: magenta }];
     Array.prototype.push.apply(nodes, titulos);
     Array.prototype.push.apply(nodes, autores);
 
@@ -213,7 +216,8 @@ function Network(): JSX.Element {
 
     const networkOptions: Highcharts.Options | unknown = {
         chart: {
-            height: 1080,
+            height: 700,
+            width: 576,
             type: 'networkgraph',
         },
         title: {
@@ -222,12 +226,18 @@ function Network(): JSX.Element {
         plotOptions: {
             networkgraph: {
                 layoutAlgorithm: {
-                    linkLength: 200, // in pixels
-                    enableSimulation: false,
-                    //friction: -0.9,
+                    //linkLength: 200, // in pixels
+                    //enableSimulation: true,
+                    friction: -0.9,
                     integration: 'verlet',
                     approximation: 'barnes-hut',
-                    initialPositions: 'circle',
+                },
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        textOutline: 'none',
+                        color: theme.text.textColor,
+                    },
                 },
             },
         },
@@ -240,16 +250,8 @@ function Network(): JSX.Element {
                 dataLabels: {
                     enabled: true,
                     linkFormat: '',
-                    textPath: {
-                        enabled: true,
-                        attributes: {
-                            //dy: 12,
-                            //startOffset: '45%',
-                            //textLength: 200,
-                        },
-                    },
-                    allowOverlap: true,
-                    color: theme.dark ? '#FFF' : undefined,
+                    color: '#000000',
+                    allowOverlap: false,
                 },
                 data,
                 nodes,
@@ -261,6 +263,7 @@ function Network(): JSX.Element {
 }
 
 function Sankey(): JSX.Element {
+    const { theme } = useTheme();
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
     const anos_primeiro_mantado = [
@@ -278,12 +281,6 @@ function Sankey(): JSX.Element {
 
         return result;
     }, []);
-
-    const titulos = obras_do_mandato.map((obra) => ({
-        id: obra.Titulo ?? 'Deconhecida',
-        marker: { radius: 15 },
-        color: getRandomColor(),
-    }));
     const autores = obras_do_mandato
         .map(
             (obra) =>
@@ -303,13 +300,21 @@ function Sankey(): JSX.Element {
                 r.push({
                     id: autor ?? 'Deconhecida',
                     marker: { radius: 30 },
-                    color: getRandomColor(),
+                    color: '',
                 });
             }
             return r;
-        }, []);
+        }, [])
+        .sort((a, b) => a.id.localeCompare(b.id))
+        .map((a, index) => ({ ...a, color: theme.coresGrafico[index + 1] }));
 
-    const nodes = [{ id: 'Cesar Maia', marker: { radius: 50 }, color: getRandomColor() }];
+    const titulos = obras_do_mandato.map((obra) => ({
+        id: obra.Titulo ?? 'Deconhecida',
+        marker: { radius: 15 },
+        color: `${autores.filter((autor) => obra.Autores?.map((autorObra) => autorObra.Pessoa?.Nome).includes(autor.id))[0].color}80`,
+    }));
+
+    const nodes = [{ id: 'Cesar Maia', marker: { radius: 50 }, color: magenta }];
     Array.prototype.push.apply(nodes, titulos);
     Array.prototype.push.apply(nodes, autores);
 
@@ -347,17 +352,21 @@ function Sankey(): JSX.Element {
 
     const networkOptions: Highcharts.Options | unknown = {
         chart: {
-            height: 650,
+            height: 1100,
+            width: 576,
             type: 'sankey',
         },
         title: {
             text: '',
         },
         plotOptions: {
-            networkgraph: {
-                layoutAlgorithm: {
-                    //linkLength: 200, // in pixels
-                    enableSimulation: false,
+            sankey: {
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        textOutline: 'none',
+                        //color: theme.text.textColor,
+                    },
                 },
             },
         },

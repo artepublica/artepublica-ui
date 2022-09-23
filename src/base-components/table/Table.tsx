@@ -1,6 +1,8 @@
 import { StyleSheet, Text } from 'react-native';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 
+import { Theme, useTheme } from '@utils';
+
 type TableProps = {
     headers?: string[];
     rows?: string[][];
@@ -9,7 +11,8 @@ type TableProps = {
 };
 
 function Table({ headers, rows, width }: TableProps): JSX.Element {
-    const style = styles(width);
+    const { theme } = useTheme();
+    const style = styles(theme, width);
     //style={{ width: widthArr ? widthArr[indexCol] : undefined }}
     return (
         <Grid style={style.table}>
@@ -54,7 +57,7 @@ function Table({ headers, rows, width }: TableProps): JSX.Element {
 
 export default Table;
 
-function styles(width?: number) {
+function styles(theme: Theme, width?: number) {
     return StyleSheet.create({
         col: {
             //userSelect: 'auto',
@@ -66,7 +69,7 @@ function styles(width?: number) {
             //userSelect: 'auto',
         },
         head: {
-            backgroundColor: '#CC1964',
+            backgroundColor: theme.principal,
             flex: null as unknown as number,
             //userSelect: 'auto',
         },

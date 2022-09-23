@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
 import Highcharts, { AlignValue, AxisTypeValue, OptionsStackingValue, SeriesOptionsType } from 'highcharts';
-import { ScrollView, View } from 'react-native';
+import { ScrollView, useWindowDimensions, View } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 
 import { Chart } from '@base-components';
 import { Obra } from '@domain';
-import { useTheme } from '@utils';
+import { TipologiaTheme, useTheme } from '@utils';
 import * as dedadas from '@utils/data/decadas';
 
 import styles from './styles';
@@ -18,6 +18,8 @@ type Tipo_DecadaProps = {
 function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
     const { theme } = useTheme();
     const style = styles();
+
+    const { width } = useWindowDimensions();
 
     const all: Record<string, Obra[]> = dedadas.all;
 
@@ -43,7 +45,8 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             }
 
             return r;
-        }, []);
+        }, [])
+        .sort((a, b) => a.localeCompare(b));
 
     const total_tipos = tipos.reduce<{ type: string; name: string; data: (number | null)[] }[]>((series, _tipo) => {
         const total_tipo = Object.keys(all)
@@ -59,6 +62,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             type: 'column',
             name: _tipo,
             data: total_tipo,
+            color: theme.tipologia[_tipo.toLowerCase() as keyof TipologiaTheme],
         };
         series.push(serie);
         return series;
@@ -78,6 +82,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             type: 'streamgraph',
             name: _tipo,
             data: total_tipo,
+            color: theme.tipologia[_tipo.toLowerCase() as keyof TipologiaTheme],
         };
         series.push(serie);
         return series;
@@ -87,6 +92,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         chart: {
             type: 'column',
             height: 600,
+            width: 567,
             marginBottom: null as unknown as number,
         },
         title: {
@@ -101,7 +107,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
                 align: null as unknown as AlignValue,
                 reserveSpace: null as unknown as boolean,
                 rotation: null as unknown as number,
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
             lineWidth: null as unknown as number,
             margin: null as unknown as number,
@@ -117,7 +123,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
                 style: {
                     //fontWeight: 'bold',
                     textOutline: 'none',
-                    color: '#CC1964',
+                    color: theme.text.textColor,
                 },
             },
             visible: null as unknown as boolean,
@@ -127,9 +133,9 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         legend: {
             layout: 'horizontal',
             align: 'center',
-            borderColor: '#CC1964',
+            borderColor: theme.text.textColor,
             backgroundColor: theme.background,
-            itemStyle: { color: '#CC1964' },
+            itemStyle: { color: theme.text.textColor },
         },
         plotOptions: {
             column: {
@@ -158,7 +164,9 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         chart: {
             type: 'streamgraph',
             height: 600,
-            marginBottom: 60,
+            //width: 800,
+            //marginBottom: width > 1000 ? 60 : width > 800 ? 80 : width > 450 ? 100 : width > 350 ? 110 : 160,
+            marginBottom: width < 367 ? 170 : width < 400 ? 110 : width < 450 ? 120 : width < 500 ? 100 : width < 650 ? 90 : width < 850 ? 80 : 60,
         },
         title: {
             text: '',
@@ -172,7 +180,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
                 align: 'left',
                 reserveSpace: false,
                 rotation: 270,
-                style: { color: '#CC1964' },
+                style: { color: theme.text.textColor },
             },
             lineWidth: 0,
             margin: 20,
@@ -197,9 +205,9 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         legend: {
             layout: 'horizontal',
             align: 'center',
-            borderColor: '#CC1964',
+            borderColor: theme.text.textColor,
             backgroundColor: theme.background,
-            itemStyle: { color: '#CC1964' },
+            itemStyle: { color: theme.text.textColor },
         },
         annotations: [
             {
@@ -218,10 +226,11 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             },
             series: {
                 label: {
-                    minFontSize: 5,
+                    minFontSize: 15,
                     maxFontSize: 15,
                     style: {
-                        color: '#CC1964',
+                        color: '#FFF',
+                        fontFamily: 'Arial',
                     },
                 },
                 accessibility: {
@@ -263,16 +272,16 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
                     scrollViewProps={{
                         nestedScrollEnabled: true,
                     }}
-                    textStyle={{ color: '#CC1964' }}
+                    textStyle={{ color: theme.text.textColor }}
                     //arrowIconStyle={{ backgroundColor: '#CC1964 !important' }}
-                    dropDownContainerStyle={{ borderColor: '#CC1964' }}
+                    dropDownContainerStyle={{ borderColor: theme.text.textColor }}
                     selectedItemContainerStyle={{ backgroundColor: '#F2D7E3' }}
-                    style={{ borderColor: '#CC1964' }}
-                    arrowIconContainerStyle={{ borderColor: '#CC1964' }}
+                    style={{ borderColor: theme.text.textColor }}
+                    arrowIconContainerStyle={{ borderColor: theme.text.textColor }}
                     //iconContainerStyle={{ borderColor: '#CC1964 !important' }}
                     showTickIcon={false}
                 />
-                {value === '0' ? <Chart options={columnOptions as Highcharts.Options} /> : <Chart options={streamgraphOptions as Highcharts.Options} />}
+                <Chart options={(value === '0' ? columnOptions : streamgraphOptions) as Highcharts.Options} />
             </ScrollView>
         </View>
     );

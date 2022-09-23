@@ -1,22 +1,16 @@
 import { Map } from '@base-components';
 import { Obra } from '@domain';
-
-function getRandomColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
+import { TipologiaTheme, useTheme } from '@utils';
 
 type MapaProps = {
+    tipo: string;
     tipos: { nome: string; obras: Obra[] }[];
 };
 
-function Mapa({ tipos }: MapaProps): JSX.Element {
-    const colors = tipos.reduce<Record<string, string>>((result, tipo) => {
-        result[tipo.nome] = getRandomColor();
+function Mapa({ tipo, tipos }: MapaProps): JSX.Element {
+    const { theme } = useTheme();
+    const colors = tipos.reduce<Record<string, string>>((result, tipoReduce, index) => {
+        result[tipoReduce.nome] = tipo === 'Tipologia' ? theme.tipologia[tipoReduce.nome.toLowerCase() as keyof TipologiaTheme] : theme.coresGrafico[index];
         return result;
     }, {});
 

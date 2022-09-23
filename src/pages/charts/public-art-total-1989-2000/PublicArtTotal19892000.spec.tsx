@@ -8,6 +8,6 @@ describe('<PublicArtTotal19892000 />', () => {
 
         const charts = getAllByTestId('chart');
 
-        expect(charts.length).toEqual(2);
+        expect(charts.length).toEqual(1);
     });
 });

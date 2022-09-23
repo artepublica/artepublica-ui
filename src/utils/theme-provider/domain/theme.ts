@@ -42,6 +42,17 @@ type BottomTabTheme = {
     lineHeight: number;
 };
 
+export type TipologiaTheme = {
+    busto: string;
+    cabeça: string;
+    escultura: string;
+    estátua: string;
+    'grupo escultórico': string;
+    'lâmina escultórica': string;
+    obelisco: string;
+    relevo: string;
+};
+
 export type Theme = {
     dark: boolean;
     background: string;
@@ -51,4 +62,8 @@ export type Theme = {
     text: TextTheme;
     header: HeaderTheme;
     bottomTab: BottomTabTheme;
+    principal: string;
+    secundaria: string;
+    tipologia: TipologiaTheme;
+    coresGrafico: string[];
 };

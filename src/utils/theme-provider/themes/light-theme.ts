@@ -1,36 +1,37 @@
 import { Platform } from 'react-native';
 
 import { Theme } from '../domain';
+import { branco, principalLight, secundariaLight, magenta, verde2, coresGraficoLight, vermelho2, amarelo, lilas, azul, laranja, azul3 } from './cores';
 import fonts from './fonts';
 
 const LightTheme: Theme = {
     dark: false,
-    background: '#FFFFFF',
+    background: branco,
     navigation: {
-        background: '#FFFFFF',
-        border: '#F2D7E3',
-        card: '#FFFFFF',
-        notification: '#CC1964',
-        primary: '#CC1964',
-        text: '#CC1964',
-        active: '#CC1964',
-        inactive: '#F2D7E3',
+        background: branco,
+        border: secundariaLight,
+        card: branco,
+        notification: principalLight,
+        primary: principalLight,
+        text: principalLight,
+        active: principalLight,
+        inactive: secundariaLight,
     },
     fonts: Platform.select(fonts),
     button: {
         font: Platform.select(fonts).medium,
-        textColor: '#000000',
-        borderColor: '#000000',
-        backgroundColor: '#B3B3B3',
+        textColor: principalLight,
+        borderColor: principalLight,
+        backgroundColor: secundariaLight,
         pressed: {
-            textColor: '#000000',
-            borderColor: '#000000',
-            backgroundColor: '#F0F0F0',
+            textColor: secundariaLight,
+            borderColor: secundariaLight,
+            backgroundColor: principalLight,
         },
     },
     text: {
         font: Platform.select(fonts).medium,
-        textColor: '#CC1964',
+        textColor: principalLight,
     },
     header: {
         fontSize: 24,
@@ -40,6 +41,19 @@ const LightTheme: Theme = {
         fontSize: 12,
         lineHeight: 12,
     },
+    principal: principalLight,
+    secundaria: secundariaLight,
+    tipologia: {
+        busto: magenta,
+        cabeça: amarelo,
+        escultura: azul,
+        estátua: verde2,
+        'grupo escultórico': laranja,
+        'lâmina escultórica': azul3,
+        obelisco: lilas,
+        relevo: vermelho2,
+    },
+    coresGrafico: coresGraficoLight,
 };
 
 export default LightTheme;
