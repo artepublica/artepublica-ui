@@ -3,7 +3,6 @@ import Fato from '../../domain/fato';
 import Obra from '../../domain/obra';
 import * as artistas from './artista';
 
-
 export const AGuignard_FranzWeissmann: Obra = {
     ID: 98,
     Imagem: 'AGuignard_FranzWeissmann.png',
@@ -43,7 +42,6 @@ export const AGuignard_FranzWeissmann: Obra = {
     Tipologia: 'Grade',
     Execucao: true,
 };
-
 
 export const ChafarizDaGloria_JoseCustodioDeSaEFaria: Obra = {
     ID: 371,

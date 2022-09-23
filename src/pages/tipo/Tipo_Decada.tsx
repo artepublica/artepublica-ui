@@ -43,7 +43,8 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             }
 
             return r;
-        }, []);
+        }, [])
+        .sort((a, b) => a.localeCompare(b));
 
     const total_tipos = tipos.reduce<{ type: string; name: string; data: (number | null)[] }[]>((series, _tipo) => {
         const total_tipo = Object.keys(all)
@@ -59,6 +60,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             type: 'column',
             name: _tipo,
             data: total_tipo,
+            color: theme.tipologia[_tipo.toLowerCase()],
         };
         series.push(serie);
         return series;
@@ -78,6 +80,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             type: 'streamgraph',
             name: _tipo,
             data: total_tipo,
+            color: theme.tipologia[_tipo.toLowerCase()],
         };
         series.push(serie);
         return series;
@@ -218,10 +221,11 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             },
             series: {
                 label: {
-                    minFontSize: 5,
+                    minFontSize: 15,
                     maxFontSize: 15,
                     style: {
-                        color: theme.text.textColor,
+                        color: '#FFF',
+                        fontFamily: 'Arial',
                     },
                 },
                 accessibility: {
@@ -247,8 +251,6 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         { label: 'Coluna', value: '0' },
         { label: 'Stream', value: '1' },
     ]);
-
-    console.log(tipos);
 
     return (
         <View style={style.container}>
