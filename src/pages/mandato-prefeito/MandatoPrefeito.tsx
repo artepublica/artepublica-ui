@@ -328,7 +328,7 @@ function Sankey({ obras, anos, prefeito }: { obras: Obra[]; prefeito: string; an
 
     const networkOptions: Highcharts.Options | unknown = {
         chart: {
-            height: 800,
+            height: 750,
             width: 576,
             type: 'sankey',
         },

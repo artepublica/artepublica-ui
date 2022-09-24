@@ -301,7 +301,7 @@ export const BuarquedeMacedo_JoseOtavioCorreaLima: Obra = {
 
 export const ColunaMediaemCantoneirasDiagonais_FranzWeissmann: Obra = {
     ID: 9,
-    Imagem: undefined,
+    Imagem: 'ColunaMediaemCantoneirasDiagonais_FranzWeissmann.png',
     Autores: [artistas.FranzWeissmann],
     Titulo: 'Coluna Media em Cantoneiras Diagonais',
     Material: 'aço pintado',
@@ -1900,7 +1900,7 @@ export const JoaoCaetano_FranciscoManuelChavesPinheiro: Obra = {
 
 export const DomPedroI_LouisRochet: Obra = {
     ID: 49,
-    Imagem: undefined,
+    Imagem: 'DomPedroI_LouisRochet.jpg',
     Autores: [
         artistas.LouisRochet,
     ],
@@ -3310,7 +3310,7 @@ export const SaturninoSoaresMeirelles_Desconhecida: Obra = {
 
 export const ChiquinhaGonzaga_HonorioPecanha: Obra = {
     ID: 81,
-    Imagem: undefined,
+    Imagem: 'ChiquinhaGonzaga_HonorioPecanha.jpg',
     Autores: [artistas.HonorioPecanha],
     Titulo: 'Chiquinha Gonzaga',
     Material: 'Bronze',
@@ -4685,7 +4685,7 @@ export const DJoaoVI_BarataFeijo: Obra = {
 
 export const GeneralOsorio_RodolfoBernadelli: Obra = {
     ID: 117,
-    Imagem: undefined,
+    Imagem: 'GeneralOsorio_RodolfoBernadelli.jpg',
     Autores: [artistas.RodolfoBernadelli],
     Titulo: `General Osório`,
     Material: 'Bronze',
@@ -5643,7 +5643,7 @@ export const India_JulesJeanJulesSalmson: Obra = {
 
 export const CristoRedentor_PaulLandowski: Obra = {
     ID: 141,
-    Imagem: undefined,
+    Imagem: 'CristoRedentor_PaulLandowski.jpg',
     Autores: [artistas.PaulLandowski],
     Titulo: `Cristo Redentor`,
     Material: 'concreto e pedra sabão',
@@ -12173,7 +12173,7 @@ export const JuruenadeMatos_JoaquimMoreiraJunior: Obra = {
 
 export const FranciscoMoranzan_RomeuAlves: Obra = {
     ID: 322,
-    Imagem: undefined,
+    Imagem: 'FranciscoMoranzan_RomeuAlves.png',
     Autores: [artistas.RomeuAlves],
     Titulo: `Francisco Moranzan`,
     Material: 'Bronze',
@@ -12208,7 +12208,7 @@ export const FranciscoMoranzan_RomeuAlves: Obra = {
 
 export const CarvalhodeBrito_RuffoFanucchi: Obra = {
     ID: 323,
-    Imagem: undefined,
+    Imagem: 'CarvalhodeBrito_RuffoFanucchi.jpg',
     Autores: [artistas.RuffoFanucchi],
     Titulo: `Carvalho de Brito`,
     Material: 'Bronze',
@@ -12701,7 +12701,7 @@ export const AlmiranteTamandare_HildegardoLeaoVelloso: Obra = {
 
 export const Crepusculo_HenriWeigele: Obra = {
     ID: 336,
-    Imagem: undefined,
+    Imagem: 'Crepusculo_HenriWeigele.jpg',
     Autores: [artistas.HenriWeigele],
     Titulo: `Crepúsculo`,
     Material: 'mármore',
@@ -13071,7 +13071,7 @@ export const Oceania_MathurinMoreau: Obra = {
 
 export const Africa_MathurinMoreau: Obra = {
     ID: 346,
-    Imagem: undefined,
+    Imagem: 'Africa_MathurinMoreau.png',
     Autores: [artistas.MathurinMoreau],
     Titulo: `Africa`,
     Material: 'ferro fundido',
@@ -13674,7 +13674,7 @@ export const Verao_PierreLeGros: Obra = {
 
 export const AlfredoAgache_HeitorUsai: Obra = {
     ID: 368,
-    Imagem: undefined,
+    Imagem: 'AlfredoAgache_HeitorUsai.png',
     Autores: [artistas.HeitorUsai],
     Titulo: `Alfredo Agache`,
     Material: 'Bronze',
@@ -16798,7 +16798,7 @@ export const CoelhoCintra_LaurindoRamos: Obra = {
 
 export const ViscondedoRioBranco_FelixMauriceCharpentier: Obra = {
     ID: 582,
-    Imagem: undefined,
+    Imagem: 'ViscondedoRioBranco_FelixMauriceCharpentier.jpg',
     Autores: [artistas.FelixMauriceCharpentier],
     Titulo: `Visconde do Rio Branco`,
     Material: 'Bronze',
