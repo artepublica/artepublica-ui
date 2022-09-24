@@ -13383,7 +13383,7 @@ export const MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMari
 
 export const SemTituloI_AmilcarDeCastro: Obra = {
     ID: 355,
-    Imagem: 'SemTituloI_AmilcarDeCastro.jpg',
+    Imagem: 'SemTitulo2_AmilcarDeCastro.jpg',
     Autores: [artistas.AmilcarDeCastro],
     Titulo: `Sem Titulo`,
     Material: 'aço corten',

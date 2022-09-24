@@ -31,7 +31,7 @@ const images = {
     'Carnica_AnaluNabuco.jpg': require('./obras/Carnica_AnaluNabuco.jpg'),
     'Cartola_OttoDumovich.jpg': require('./obras/Cartola_OttoDumovich.jpg'),
     'Ceres_ThomasRegnaudin.jpg': require('./obras/Ceres_ThomasRegnaudin.jpg'),
-    'SemTituloI_AmilcardeCastro.jpg': require('./obras/SemTituloI_AmilcardeCastro.jpg'),
+    'SemTitulo2_AmilcarDeCastro.jpg': require('./obras/SemTitulo2_AmilcarDeCastro.jpg'),
     'ChicoXavier_Desconhecida.jpg': require('./obras/ChicoXavier_Desconhecida.jpg'),
     'ClarisseIndiodoBrasil_HCunhaMelo.jpg': require('./obras/ClarisseIndiodoBrasil_HCunhaMelo.jpg'),
     'ClementinoFraga_GiulioStarace.jpg': require('./obras/ClementinoFraga_GiulioStarace.jpg'),
