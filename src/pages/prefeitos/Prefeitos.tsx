@@ -12,7 +12,6 @@ import reduceListOfList from '@utils/list/reduce-list-of-list';
 
 function Block({ obras, mandatos }: { obras: Obra[]; mandatos: string[] }): JSX.Element {
     const { theme } = useTheme();
-
     const typed_prefeitos: Record<string, Prefeito> = prefeitos_mandatos;
 
     const prefeitos = Object.keys(typed_prefeitos).map((key) => typed_prefeitos[key]);
@@ -23,7 +22,7 @@ function Block({ obras, mandatos }: { obras: Obra[]; mandatos: string[] }): JSX.
         return mandatosIntern != null && mandatosIntern.length > 0;
     });
 
-    const anosSelecionados: number[] = [];
+    const anosMandatosSelecionados: number[] = [];
     prefeitosSelecionados.forEach((prefeito) => {
         const mandatosSelecionados = prefeito.Mandatos?.filter((mandato) =>
             mandatos.includes(`${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})`),
@@ -34,11 +33,22 @@ function Block({ obras, mandatos }: { obras: Obra[]; mandatos: string[] }): JSX.
             const anoFim = getYear(mandato?.DataFim);
 
             for (let i = anoInicio as number; i <= (anoFim as number); i++) {
-                anosSelecionados.push(i);
+                anosMandatosSelecionados.push(i);
             }
         });
     });
-    anosSelecionados.sort((a, b) => (a > b ? 1 : -1));
+    const anosSelecionados = anosMandatosSelecionados
+        .sort((a, b) => (a > b ? 1 : -1))
+        .reduce<number[]>((resultado, anoSelecionado, index) => {
+            if (index === 0 || index === anosMandatosSelecionados.length - 1 || anosMandatosSelecionados[index + 1] === anoSelecionado + 1) {
+                resultado.push(anoSelecionado);
+            } else {
+                for (let i = anoSelecionado; i < anosMandatosSelecionados[index + 1]; i++) {
+                    resultado.push(i);
+                }
+            }
+            return resultado;
+        }, []);
 
     const obras_por_ano = obras
         .reduce<{ year: number; obras: Obra[] }[]>((result, obra) => {
@@ -188,7 +198,11 @@ function Prefeitos({ obras }: { obras: Obra[] }): JSX.Element {
     const [
         valorDropdown,
         setarDropdown,
-    ] = useState(['Cesar Epitácio Maia (1993 - 1996)']);
+    ] = useState([
+        'Cesar Epitácio Maia (1993 - 1996)',
+        'Luiz Paulo Fernandez Conde (1997 - 2000)',
+        'Marcelo Nunes de Allencar (1989 - 1992)',
+    ]);
 
     return (
         <ScrollView style={{ width: '100%' }}>
