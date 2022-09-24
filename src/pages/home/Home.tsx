@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Text, Image } from '@base-components';
 import { Obra } from '@domain';
-import { useTheme } from '@utils';
+import { TipologiaTheme, useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
@@ -26,7 +26,7 @@ function Home(): JSX.Element {
             const obraA: Obra = typed_obra_artepublica[keyA];
             const obraB: Obra = typed_obra_artepublica[keyB];
 
-            return getYear(obraA.DataInauguracao) < getYear(obraB.DataInauguracao) ? -1 : 1;
+            return (getYear(obraA.DataInauguracao) ?? 0) < (getYear(obraB.DataInauguracao) ?? 0) ? -1 : 1;
         })
         .sort((keyA, keyB) => {
             const obraA: Obra = typed_obra_artepublica[keyA];
@@ -85,7 +85,13 @@ function Home(): JSX.Element {
                                                     key={colIndex}
                                                 >
                                                     {obra == null && (
-                                                        <View style={{ width: 136, backgroundColor: theme.principal, height: '100%' }}>
+                                                        <View
+                                                            style={{
+                                                                width: 136,
+                                                                backgroundColor: theme.tipologia[col.toLowerCase() as keyof TipologiaTheme],
+                                                                height: '100%',
+                                                            }}
+                                                        >
                                                             <View
                                                                 style={{
                                                                     padding: 8,
@@ -168,7 +174,13 @@ function Home(): JSX.Element {
                                                         </View>
                                                     )}
                                                     {obra != null && (
-                                                        <View style={{ width: 136, height: '100%', backgroundColor: theme.principal }}>
+                                                        <View
+                                                            style={{
+                                                                width: 136,
+                                                                height: '100%',
+                                                                backgroundColor: theme.tipologia[obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme],
+                                                            }}
+                                                        >
                                                             <View
                                                                 style={{
                                                                     backgroundColor: '#FFFFFF',
@@ -182,7 +194,8 @@ function Home(): JSX.Element {
                                                                         height: obra.Imagem != null && obra.Imagem !== '' ? 140 : 136,
                                                                         width: 136,
                                                                         borderWidth: obra.Imagem != null && obra.Imagem !== '' ? 0 : 1,
-                                                                        borderColor: theme.principal,
+                                                                        borderColor:
+                                                                            theme.tipologia[obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme],
                                                                         marginBottom: obra.Imagem != null && obra.Imagem !== '' ? 0 : 4,
                                                                     }}
                                                                 >

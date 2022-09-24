@@ -11,7 +11,6 @@ import * as prefeitos_mandatos from '@utils/data/prefeitos';
 import reduceListOfList from '@utils/list/reduce-list-of-list';
 
 function Block({ obras, mandatos }: { obras: Obra[]; mandatos: string[] }): JSX.Element {
-    console.log(mandatos);
     const { theme } = useTheme();
 
     const typed_prefeitos: Record<string, Prefeito> = prefeitos_mandatos;
@@ -19,23 +18,25 @@ function Block({ obras, mandatos }: { obras: Obra[]; mandatos: string[] }): JSX.
     const prefeitos = Object.keys(typed_prefeitos).map((key) => typed_prefeitos[key]);
     const prefeitosSelecionados = prefeitos.filter((prefeito) => {
         const mandatosIntern = prefeito.Mandatos?.filter((mandato) =>
-            mandatos.includes(`${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${mandato.DataInicio} - ${mandato.DataFim})`),
+            mandatos.includes(`${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})`),
         );
         return mandatosIntern != null && mandatosIntern.length > 0;
     });
 
     const anosSelecionados: number[] = [];
     prefeitosSelecionados.forEach((prefeito) => {
-        const mandato = prefeito.Mandatos?.filter((mandato) =>
-            mandatos.includes(`${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${mandato.DataInicio} - ${mandato.DataFim})`),
-        )[0];
+        const mandatosSelecionados = prefeito.Mandatos?.filter((mandato) =>
+            mandatos.includes(`${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})`),
+        );
 
-        const anoInicio = getYear(mandato?.DataInicio);
-        const anoFim = getYear(mandato?.DataFim);
+        mandatosSelecionados?.forEach((mandato) => {
+            const anoInicio = getYear(mandato?.DataInicio);
+            const anoFim = getYear(mandato?.DataFim);
 
-        for (let i = anoInicio as number; i <= (anoFim as number); i++) {
-            anosSelecionados.push(i);
-        }
+            for (let i = anoInicio as number; i <= (anoFim as number); i++) {
+                anosSelecionados.push(i);
+            }
+        });
     });
     anosSelecionados.sort((a, b) => (a > b ? 1 : -1));
 
@@ -57,38 +58,46 @@ function Block({ obras, mandatos }: { obras: Obra[]; mandatos: string[] }): JSX.
         }, [])
         .sort((a, b) => (a.year > b.year ? 1 : -1));
 
-    const total_prefeitos = prefeitosSelecionados.reduce<{ type: string; name: string; data: (number | null)[] }[]>((series, prefeito) => {
-        const mandatosSelecionados = prefeito.Mandatos?.filter((mandato) =>
-            mandatos.includes(`${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${mandato.DataInicio} - ${mandato.DataFim})`),
-        );
+    const total_prefeitos = prefeitosSelecionados.reduce<{ type: string; name: string; data: (number | null)[]; color?: string }[]>(
+        (series, prefeito, index) => {
+            const mandatosSelecionados = prefeito.Mandatos?.filter((mandato) =>
+                mandatos.includes(`${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})`),
+            );
 
-        const total_prefeito: (number | null)[] = [];
+            const total_prefeito: (number | null)[] = [];
 
-        anosSelecionados.forEach((anoSelecionado) => {
-            mandatosSelecionados?.forEach((mandato) => {
-                const anoInicio = getYear(mandato?.DataInicio);
-                const anoFim = getYear(mandato?.DataFim);
+            anosSelecionados.forEach((anoSelecionado) => {
+                let anoAchado = false;
+                mandatosSelecionados?.forEach((mandato) => {
+                    const anoInicio = getYear(mandato?.DataInicio);
+                    const anoFim = getYear(mandato?.DataFim);
 
-                if ((anoInicio ?? 0) <= anoSelecionado && (anoFim ?? 0) >= anoSelecionado) {
-                    //TODO possivel aqui
-                    const total_ano = obras_por_ano.map((obra_ano) => {
-                        return obra_ano.year === anoSelecionado ? obra_ano.obras.length : 0;
-                    }).length;
-                    total_prefeito.push(total_ano);
-                } else {
+                    if ((anoInicio ?? 0) <= anoSelecionado && (anoFim ?? 0) >= anoSelecionado) {
+                        //TODO possivel aqui
+                        const obrasAno = obras_por_ano.filter((obra_ano) => {
+                            return obra_ano.year === anoSelecionado;
+                        });
+                        total_prefeito.push(obrasAno.length > 0 ? obrasAno[0].obras.length : null);
+                        anoAchado = true;
+                    }
+                });
+
+                if (!anoAchado) {
                     total_prefeito.push(null);
                 }
             });
-        });
 
-        series.push({
-            type: 'column',
-            name: prefeito.Pessoa?.Nome ?? 'Desconhecida',
-            data: total_prefeito,
-        });
+            series.push({
+                type: 'column',
+                name: prefeito.Pessoa?.Nome ?? 'Desconhecida',
+                data: total_prefeito,
+                color: theme.coresGrafico[index],
+            });
 
-        return series;
-    }, []) as SeriesOptionsType[];
+            return series;
+        },
+        [],
+    ) as SeriesOptionsType[];
 
     const lineOptions: Highcharts.Options = {
         chart: {
@@ -151,12 +160,17 @@ function Prefeitos({ obras }: { obras: Obra[] }): JSX.Element {
     const typed_prefeitos: Record<string, Prefeito> = prefeitos_mandatos;
 
     const items = Object.keys(typed_prefeitos)
-        .map((key) => {
-            const prefeito = typed_prefeitos[key];
+        .map((key) => typed_prefeitos[key])
+        .sort((a, b) => {
+            const aPrimeiroMantado = a.Mandatos?.sort((aM, bM) => ((getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1))[0];
+            const bPrimeiroMantado = b.Mandatos?.sort((aM, bM) => ((getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1))[0];
 
-            const mandatos = prefeito.Mandatos?.map((mandato) => ({
+            return (getYear(aPrimeiroMantado?.DataInicio) ?? 0) < (getYear(bPrimeiroMantado?.DataInicio) ?? 0) ? 1 : -1;
+        })
+        .map((prefeito) => {
+            const mandatos = prefeito.Mandatos?.sort((aM, bM) => ((getYear(aM.DataInicio) ?? 0) > (getYear(bM.DataInicio) ?? 0) ? 1 : -1)).map((mandato) => ({
                 label: `${mandato.DataInicio} - ${mandato.DataFim}`,
-                value: `${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${mandato.DataInicio} - ${mandato.DataFim})`,
+                value: `${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})`,
                 parent: prefeito.Pessoa?.Nome ?? 'Desconhecida',
             }));
 
@@ -174,7 +188,7 @@ function Prefeitos({ obras }: { obras: Obra[] }): JSX.Element {
     const [
         valorDropdown,
         setarDropdown,
-    ] = useState(['Cesar Epitácio Maia (01/01/1993 - 31/12/1996)']);
+    ] = useState(['Cesar Epitácio Maia (1993 - 1996)']);
 
     return (
         <ScrollView style={{ width: '100%' }}>

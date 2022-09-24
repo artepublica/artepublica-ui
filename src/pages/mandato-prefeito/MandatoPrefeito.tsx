@@ -369,12 +369,17 @@ function MandatoPrefeito({ obras }: { obras: Obra[] }): JSX.Element {
     const typed_prefeitos: Record<string, Prefeito> = prefeitos_mandatos;
 
     const items = Object.keys(typed_prefeitos)
-        .map((key) => {
-            const prefeito = typed_prefeitos[key];
+        .map((key) => typed_prefeitos[key])
+        .sort((a, b) => {
+            const aPrimeiroMantado = a.Mandatos?.sort((aM, bM) => ((getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1))[0];
+            const bPrimeiroMantado = b.Mandatos?.sort((aM, bM) => ((getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1))[0];
 
-            const mandatos = prefeito.Mandatos?.map((mandato) => ({
+            return (getYear(aPrimeiroMantado?.DataInicio) ?? 0) < (getYear(bPrimeiroMantado?.DataInicio) ?? 0) ? 1 : -1;
+        })
+        .map((prefeito) => {
+            const mandatos = prefeito.Mandatos?.sort((aM, bM) => ((getYear(aM.DataInicio) ?? 0) > (getYear(bM.DataInicio) ?? 0) ? 1 : -1)).map((mandato) => ({
                 label: `${mandato.DataInicio} - ${mandato.DataFim}`,
-                value: `${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${mandato.DataInicio} - ${mandato.DataFim})`,
+                value: `${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})`,
                 parent: prefeito.Pessoa?.Nome ?? 'Desconhecida',
             }));
 
@@ -392,7 +397,7 @@ function MandatoPrefeito({ obras }: { obras: Obra[] }): JSX.Element {
     const [
         valorDropdown,
         setarDropdown,
-    ] = useState('Cesar Epitácio Maia (01/01/1993 - 31/12/1996)');
+    ] = useState('Cesar Epitácio Maia (1993 - 1996)');
 
     const prefeitos = Object.keys(typed_prefeitos).map((key) => typed_prefeitos[key]);
 
@@ -404,13 +409,13 @@ function MandatoPrefeito({ obras }: { obras: Obra[] }): JSX.Element {
     useEffect(() => {
         const prefeito = prefeitos.filter((prefeito) => {
             const mandatos = prefeito.Mandatos?.filter(
-                (mandato) => `${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${mandato.DataInicio} - ${mandato.DataFim})` === valorDropdown,
+                (mandato) => `${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})` === valorDropdown,
             );
             return mandatos != null && mandatos.length > 0;
         })[0];
 
         const mandato = prefeito.Mandatos?.filter(
-            (mandato) => `${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${mandato.DataInicio} - ${mandato.DataFim})` === valorDropdown,
+            (mandato) => `${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})` === valorDropdown,
         )[0];
 
         const anoInicio = getYear(mandato?.DataInicio);
