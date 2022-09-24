@@ -174,7 +174,7 @@ export const EsculturaParaORio_WaltercioCaldas: Obra = {
 
 export const MarechalMachadoBittencourt_JoseOtavioCorreaLima: Obra = {
     ID: 6,
-    Imagem: undefined,
+    Imagem: 'MarechalMachadoBittencourt_JoseOtavioCorreaLima.jpg',
     Autores: [artistas.JoseOtavioCorreaLima],
     Titulo: 'Marechal Machado Bittencourt',
     Material: 'Bronze',
@@ -212,7 +212,7 @@ export const MarechalMachadoBittencourt_JoseOtavioCorreaLima: Obra = {
 
 export const TeixeiraDeFreitas_RodolfoBernadelli: Obra = {
     ID: 7,
-    Imagem: undefined,
+    Imagem: 'TeixeiraDeFreitas_RodolfoBernadelli.jpg',
     Autores: [artistas.RodolfoBernadelli],
     Titulo: 'Teixeira de Freitas',
     Material: 'Bronze',
@@ -1166,7 +1166,7 @@ export const FranciscoSerrador_ACoutinho: Obra = {
 
 export const GetulioVargas_LuizSerri: Obra = {
     ID: 30,
-    Imagem: undefined,
+    Imagem: 'GetulioVargas_LuizSerri.jpg',
     Autores: [artistas.LuizSerri],
     Titulo: 'Getulio Vargas',
     Material: 'Bronze',
@@ -1257,7 +1257,7 @@ export const PescadorNapolitano_FrancoisRude: Obra = {
 
 export const FonteJovemEuropa_MathurinMoreau: Obra = {
     ID: 32,
-    Imagem: undefined,
+    Imagem: 'FonteJovemEuropa_MathurinMoreau.jpg',
     Autores: [artistas.MathurinMoreau],
     Titulo: 'Fonte Jovem Europa',
     Material: 'ferro fundido',
@@ -1378,7 +1378,7 @@ export const Primavera_GustaveFredericMichel: Obra = {
 
 export const Outono_GustaveFredericMichel: Obra = {
     ID: 35,
-    Imagem: undefined,
+    Imagem: 'Outono_GustaveFredericMichel.jpg',
     Autores: [artistas.GustaveFredericMichel],
     Titulo: 'Outono',
     Material: 'mármore de Carrara',
@@ -2959,11 +2959,11 @@ export const OlavoBilac_HumbertoCozzo: Obra = {
     Execucao: true,
 };
 
-export const RodolofoBernardelli_JoseOtavioCorreaLima: Obra = {
+export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
     ID: 72,
-    Imagem: undefined,
+    Imagem: 'RodolfoBernardelli_JoseOtavioCorreaLima.jpg',
     Autores: [artistas.JoseOtavioCorreaLima],
-    Titulo: 'Rodolofo Bernardelli',
+    Titulo: 'Rodolfo Bernardelli',
     Material: 'Bronze',
     Altura: undefined,
     Largura: undefined,
@@ -3275,7 +3275,7 @@ export const CristianoOttoni_RodolfoBernadelli: Obra = {
 
 export const SaturninoSoaresMeirelles_Desconhecida: Obra = {
     ID: 80,
-    Imagem: undefined,
+    Imagem: 'SaturninoSoaresMeirelles_Desconhecida.jpg',
     Autores: [artistas.Desconhecida],
     Titulo: 'Saturnino Soares Meirelles',
     Material: 'Bronze',
@@ -3625,7 +3625,7 @@ export const VictorMeirelles_EduardoDeSa: Obra = {
 
 export const MestreValentim_RomeuAlves: Obra = {
     ID: 89,
-    Imagem: undefined,
+    Imagem: 'MestreValentim_RomeuAlves.jpg',
     Autores: [artistas.Desconhecida],
     Titulo: `Mestre Valentim`,
     Material: 'Bronze',
@@ -3751,7 +3751,7 @@ export const FerreiraDeAraujo_RodolfoBernadelli: Obra = {
 
 export const GoncalvesDias_RodolfoBernadelli: Obra = {
     ID: 92,
-    Imagem: undefined,
+    Imagem: 'GoncalvesDias_RodolfoBernadelli.jpg',
     Autores: [artistas.RodolfoBernadelli],
     Titulo: `Gonçalves Dias`,
     Material: 'Bronze',
@@ -3794,7 +3794,7 @@ export const GoncalvesDias_RodolfoBernadelli: Obra = {
 
 export const Primavera_MathurinMoreau: Obra = {
     ID: 93,
-    Imagem: undefined,
+    Imagem: 'Primavera_MathurinMoreau.png',
     Autores: [artistas.MathurinMoreau],
     Titulo: `Primavera`,
     Material: 'ferro fundido',
@@ -3835,7 +3835,7 @@ export const Primavera_MathurinMoreau: Obra = {
 
 export const Inverno_MathurinMoreau: Obra = {
     ID: 94,
-    Imagem: 'Inverno_MathurinMoreau.jpg',
+    Imagem: 'Inverno_MathurinMoreau.png',
     Autores: [artistas.MathurinMoreau],
     Titulo: `Inverno`,
     Material: 'ferro fundido',
@@ -3919,7 +3919,7 @@ export const Outono_MathurinMoreau: Obra = {
 
 export const Verao_MathurinMoreau: Obra = {
     ID: 96,
-    Imagem: undefined,
+    Imagem: 'Verao_MathurinMoreau.png',
     Autores: [artistas.MathurinMoreau],
     Titulo: `Verão`,
     Material: 'ferro fundido',
@@ -4057,7 +4057,7 @@ export const OMascate_HonorioPecanha: Obra = {
 
 export const LuisdeCamoes_AntonioTaunay: Obra = {
     ID: 101,
-    Imagem: undefined,
+    Imagem: 'LuisdeCamoes_AntonioTaunay.jpg',
     Autores: [artistas.AntonioTaunay],
     Titulo: `Luis de Camões`,
     Material: 'Bronze',
@@ -4394,7 +4394,7 @@ export const Encontro_FranzWeissmann: Obra = {
 
 export const DSebastiaoLeme_HeitorUsai: Obra = {
     ID: 110,
-    Imagem: undefined,
+    Imagem: 'DSebastiaoLeme_HeitorUsai.png',
     Autores: [artistas.HeitorUsai],
     Titulo: `D. Sebastiao Leme`,
     Material: 'Bronze',
@@ -4429,7 +4429,7 @@ export const DSebastiaoLeme_HeitorUsai: Obra = {
 
 export const MonumentoaJuventude_BrunoGiorgi: Obra = {
     ID: 111,
-    Imagem: undefined,
+    Imagem: 'MonumentoaJuventude_BrunoGiorgi.jpg',
     Autores: [artistas.BrunoGiorgi],
     Titulo: `Monumento à Juventude`,
     Material: 'Granito',
@@ -5287,7 +5287,7 @@ export const PedroBruno_PauloMazzucchelli: Obra = {
 
 export const GetulioVargasPaqueta_Desconhecida: Obra = {
     ID: 132,
-    Imagem: undefined,
+    Imagem: 'GetulioVargasPaqueta_Desconhecida.jpg',
     Autores: [artistas.Desconhecida],
     Titulo: `Getulio Vargas`,
     Material: 'Bronze',
@@ -7729,7 +7729,7 @@ export const CarmenMiranda_MateusFernandes: Obra = {
 
 export const CastroAlves_ModestinoKanto: Obra = {
     ID: 201,
-    Imagem: undefined,
+    Imagem: 'CastroAlves_ModestinoKanto.png',
     Autores: [artistas.ModestinoKanto],
     Titulo: `Castro Alves`,
     Material: 'Bronze',
@@ -8056,7 +8056,7 @@ export const Bastões_CeleidaTostes: Obra = {
 
 export const Roda_CeleidaTostes: Obra = {
     ID: 210,
-    Imagem: undefined,
+    Imagem: 'Roda_CeleidaTostes.jpg',
     Autores: [artistas.CeleidaTostes],
     Titulo: `Roda`,
     Material: 'argamassa',
@@ -8900,7 +8900,7 @@ export const ChafarizDasMusas_HerbertWHogg: Obra = {
 
 export const FreiLeandroDoSacramento_RibeiroDaCosta: Obra = {
     ID: 234,
-    Imagem: undefined,
+    Imagem: 'FreiLeandroDoSacramento_RibeiroDaCosta.jpg',
     Autores: [artistas.RibeiroDaCosta],
     Titulo: `Frei Leandro Do Sacramento`,
     Material: 'Bronze',
@@ -10769,7 +10769,7 @@ export const Narciso_MestreValentim: Obra = {
 
 export const SaintHilaire_HumbertoCozzo: Obra = {
     ID: 283,
-    Imagem: undefined,
+    Imagem: 'SaintHilaire_HumbertoCozzo.jpg',
     Autores: [artistas.HumbertoCozzo],
     Titulo: `Saint Hilaire`,
     Material: 'Bronze',
@@ -13383,7 +13383,7 @@ export const MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMari
 
 export const SemTituloI_AmilcarDeCastro: Obra = {
     ID: 355,
-    Imagem: 'Chapavertical_AmilcarDeCastro.jpg',
+    Imagem: 'SemTituloI_AmilcarDeCastro.jpg',
     Autores: [artistas.AmilcarDeCastro],
     Titulo: `Sem Titulo`,
     Material: 'aço corten',
