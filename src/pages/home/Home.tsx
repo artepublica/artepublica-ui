@@ -1,4 +1,4 @@
-import { ScrollView, View } from 'react-native';
+import { ScrollView, useWindowDimensions, View } from 'react-native';
 import { Col, Grid, Row } from 'react-native-easy-grid';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -11,6 +11,7 @@ import * as obra_artepublica from '@utils/data/obra_artepublica';
 import styles from './styles';
 
 function Home(): JSX.Element {
+    const { width } = useWindowDimensions();
     const { theme } = useTheme();
     const style = styles();
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
@@ -35,11 +36,13 @@ function Home(): JSX.Element {
             return (obraA.Tipologia ?? 'Desconhecida').localeCompare(obraB.Tipologia ?? 'Desconhecida');
         });
 
+    const colunas = Math.floor(width / 144);
+
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={{ width: '100%' }} contentContainerStyle={{ alignItems: 'center', justifyContent: 'center', padding: 24 }}>
                 <View>
-                    <Grid style={{ width: 568, height: '100%' }}>
+                    <Grid style={{ height: '100%' }}>
                         {obrasComImagem
                             .reduce<string[]>((resultado, key, index) => {
                                 const obra: Obra = typed_obra_artepublica[key];
@@ -67,7 +70,7 @@ function Home(): JSX.Element {
                                 ];
                             }, [])
                             .reduce<string[][]>((all, one, i) => {
-                                const ch = Math.floor(i / 4);
+                                const ch = Math.floor(i / colunas);
                                 all[ch] = ([] as string[]).concat(all[ch] || [], one);
                                 return all;
                             }, [])

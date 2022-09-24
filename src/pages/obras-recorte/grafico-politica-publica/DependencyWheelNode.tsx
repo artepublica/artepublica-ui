@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 
+import { View } from 'react-native';
+
 import { Button, Chart, Table } from '@base-components';
 import { PoliticaPublica, Exposicao, TrocaCapital, ArtigoJornal, Livro } from '@domain';
+import { amarelo3, azul, laranja, verde, vermelho2, vinho2 } from '@utils';
 import converterTrocaParaDependencyWheel from '@utils/analises/capitais/converter-troca-para-dependency-wheel';
 import getNodes from '@utils/analises/dependency-wheel/get-nodes';
 import juntarDependencyWheel from '@utils/analises/dependency-wheel/juntar-dependency-wheel';
@@ -86,17 +89,17 @@ function DependencyWheelRefactor({
     function color(node: string): string | undefined {
         switch (node) {
             case 'Everardo Miranda':
-                return '#2B61C6';
+                return vermelho2;
             case 'Reynaldo Roels':
-                return '#D0A639';
+                return vinho2;
             case 'Fernando Cocchiarale':
-                return '#761E5B';
+                return laranja;
             case 'Lauro Cavalcanti':
-                return '#C1281B';
+                return amarelo3;
             case 'Paulo Venancio Filho':
-                return '#CD7D2F';
+                return verde;
             case 'Ronaldo Brito':
-                return '#ABBD50';
+                return azul;
             default:
                 return undefined;
         }
@@ -104,6 +107,8 @@ function DependencyWheelRefactor({
 
     const nosImportantes = nosFiltrados.map((no) => {
         const colorByPoint = agenteDaPolitica(politicaPublica, no.node);
+
+        console.log(colorByPoint ? color(no.node) : undefined);
 
         return {
             id: no.node,
@@ -149,6 +154,18 @@ function DependencyWheelRefactor({
         title: {
             text: '',
         },
+        plotOptions: {
+            dependencywheel: {
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        //textOutline: 'none',
+                        color: '#000',
+                        textColor: '#000000',
+                    },
+                },
+            },
+        },
         series: [
             {
                 type: 'dependencywheel',
@@ -181,24 +198,51 @@ function DependencyWheelRefactor({
         ],
     };
 
+    const table = nosFiltrados.filter((no) => !agenteDaPolitica(politicaPublica, no.node));
+
+    const chunkLength = Math.max(table.length / 2, 1);
+    const chunks = [];
+    for (let i = 0; i < 2; i++) {
+        if (chunkLength * (i + 1) <= table.length) chunks.push(table.slice(chunkLength * i, chunkLength * (i + 1)));
+    }
     return (
         <>
             <Button onPress={onPress}>Randon</Button>
             <Chart options={lineOptions as Highcharts.Options} />
-            <Table
-                headers={[
-                    `pessoa (${nosFiltrados.length}, ${nosFiltrados.filter((node) => !agenteDaPolitica(politicaPublica, node.node)).length})`,
-                    peso.toString(),
-                ]}
-                rows={nosFiltrados.map((no) => [
-                    no.node,
-                    no.weight.toString(),
-                ])}
-                widthArr={[
-                    undefined,
-                    50,
-                ]}
-            />
+            <View style={{ flex: 1, flexDirection: 'row' }}>
+                <Table
+                    width={280}
+                    headers={[
+                        `pessoa`,
+                        'Capital Simbólico',
+                    ]}
+                    rows={chunks[0].map((no) => [
+                        no.node,
+                        no.weight.toString(),
+                    ])}
+                    widthArr={[
+                        undefined,
+                        50,
+                    ]}
+                />
+                <View style={{ paddingLeft: 8 }}>
+                    <Table
+                        width={280}
+                        headers={[
+                            `pessoa`,
+                            'Capital Simbólico',
+                        ]}
+                        rows={chunks[1].map((no) => [
+                            no.node,
+                            no.weight.toString(),
+                        ])}
+                        widthArr={[
+                            undefined,
+                            50,
+                        ]}
+                    />
+                </View>
+            </View>
         </>
     );
 }

@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
-
-import { Button, Chart, Table } from '@base-components';
+import { Chart, Table } from '@base-components';
 import { PoliticaPublica, Exposicao, TrocaCapital, ArtigoJornal, Livro } from '@domain';
+import { amarelo3, azul, laranja, useTheme, verde, vermelho2, vinho2 } from '@utils';
 import converterTrocaParaDependencyWheel from '@utils/analises/capitais/converter-troca-para-dependency-wheel';
 import getNodes from '@utils/analises/dependency-wheel/get-nodes';
 import juntarDependencyWheel from '@utils/analises/dependency-wheel/juntar-dependency-wheel';
@@ -15,7 +14,6 @@ import * as artigosjornal from '@utils/data/artigosjornal';
 import * as exposicoes from '@utils/data/exposicoes';
 import * as livros from '@utils/data/livros';
 import reduceListOfList from '@utils/list/reduce-list-of-list';
-import shuffleArray from '@utils/list/shuffleArray';
 
 function getTrocasArtigosJornais(politicaPublica: PoliticaPublica): TrocaCapital[] {
     const typed_artigosjornal: Record<string, ArtigoJornal> = artigosjornal;
@@ -53,21 +51,10 @@ function getTrocasExposicoes(politicaPublica: PoliticaPublica): TrocaCapital[] {
         .reduce(reduceListOfList);
 }
 
-function getRandomColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
-
 function Sankey({
     politicaPublica,
     peso,
-    height,
     showLabel,
-    labelEmCima,
 }: {
     politicaPublica: PoliticaPublica;
     peso: number;
@@ -75,6 +62,7 @@ function Sankey({
     showLabel?: number;
     labelEmCima?: boolean;
 }): JSX.Element {
+    const { theme } = useTheme();
     const trocasPoliticaPublica = politicaPublicaX().filter(
         (troca) =>
             ((agenteDaPolitica(politicaPublica, troca.pessoa1) || autorObraDaPolitica(politicaPublica, troca.pessoa1)) &&
@@ -115,23 +103,23 @@ function Sankey({
     function color(node: string): string | undefined {
         switch (node) {
             case 'Everardo Miranda':
-                return '#2B61C6';
+                return vermelho2;
             case 'Reynaldo Roels':
-                return '#D0A639';
+                return vinho2;
             case 'Fernando Cocchiarale':
-                return '#761E5B';
+                return laranja;
             case 'Lauro Cavalcanti':
-                return '#C1281B';
+                return amarelo3;
             case 'Paulo Venancio Filho':
-                return '#CD7D2F';
+                return verde;
             case 'Ronaldo Brito':
-                return '#ABBD50';
+                return azul;
             default:
                 return undefined;
         }
     }
 
-    const nosImportantes = nosFiltrados.map((no) => {
+    const nosImportantes = nosFiltrados.map((no, index) => {
         const colorByPoint = agenteDaPolitica(politicaPublica, no.node);
 
         return {
@@ -144,7 +132,7 @@ function Sankey({
                         ? true
                         : agenteDaPolitica(politicaPublica, no.node) || autorObraDaPolitica(politicaPublica, no.node),
             },
-            color: colorByPoint ? color(no.node) : getRandomColor(),
+            color: colorByPoint ? color(no.node) : theme.coresGrafico[index + 6],
         };
     });
 
@@ -152,24 +140,6 @@ function Sankey({
         (wheel) => nosFiltrados.find((no) => no.node === wheel.from) && nosFiltrados.find((no) => no.node === wheel.to),
     );
     nosFiltrados.sort((a, b) => b.node.localeCompare(a.node)).sort((a, b) => (a.weight < b.weight ? 1 : -1));
-
-    const [
-        shuffleDados,
-        setarShuffleDados,
-    ] = useState(dataFiltrada);
-
-    useEffect(() => {
-        setarShuffleDados(dataFiltrada);
-    }, [
-        politicaPublica,
-        peso,
-        height,
-        labelEmCima,
-    ]);
-
-    function onPress(): void {
-        setarShuffleDados(shuffleArray(shuffleDados));
-    }
 
     const lineOptions: Highcharts.Options | unknown = {
         chart: {
@@ -200,7 +170,7 @@ function Sankey({
                     enabled: true,
                     linkFormat: '',
                 },
-                data: shuffleDados,
+                data: dataFiltrada,
                 nodes: nosImportantes,
             },
         ],
@@ -208,7 +178,6 @@ function Sankey({
 
     return (
         <>
-            <Button onPress={onPress}>Randon</Button>
             <Chart options={lineOptions as Highcharts.Options} />
             <Table
                 headers={[
