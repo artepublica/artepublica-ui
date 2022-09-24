@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react-native';
 
-import PublicArtTotal19892000 from './PublicArtTotal19892000';
+import Prefeitos from './Prefeitos';
 
-describe('<PublicArtTotal19892000 />', () => {
+describe('<Prefeitos />', () => {
     it('should render', () => {
-        const { getAllByTestId } = render(<PublicArtTotal19892000 />);
+        const { getAllByTestId } = render(<Prefeitos obras={[]} />);
 
         const charts = getAllByTestId('chart');
 

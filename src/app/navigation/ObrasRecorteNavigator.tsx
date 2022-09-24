@@ -4,7 +4,7 @@ import { DrawerActions, NavigatorScreenParams } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
-import { GraficoPoliticaPublica, ObrasRecorte, MapaRecorte, MapaTodasXRecorte, Decade, Exposicoes, MandatoPrefeito } from '@pages';
+import { GraficoPoliticaPublica, ObrasRecorte, MapaRecorte, MapaTodasXRecorte, Decade, Exposicoes, MandatoPrefeito, Prefeitos } from '@pages';
 import { autoresRecorte, enderecosRecorte, statusRecorte, Theme, tipologiasRecorte, useTheme, zonasRecorte, obrasRecorte } from '@utils';
 
 import { TipoMenuNavigator, TipoMenuNavigatorParamList } from './TipoMenuNavigator';
@@ -24,6 +24,7 @@ export type ObrasRecorteNavigatorParamsList = {
     Decade: undefined;
     Exposicoes: undefined;
     MandatoPrefeito: undefined;
+    Prefeitos: undefined;
 };
 
 type ObrasRecorteNavigatorProps = {
@@ -217,6 +218,21 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                 })}
             >
                 {(props) => <MandatoPrefeito {...props} obras={obrasRecorte} />}
+            </DrawerNavigator.Screen>
+            <DrawerNavigator.Screen
+                name="Prefeitos"
+                options={({ navigation }) => ({
+                    title: 'Prefeitos',
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Prefeitos</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.navigation.active} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            >
+                {(props) => <Prefeitos {...props} obras={obrasRecorte} />}
             </DrawerNavigator.Screen>
         </DrawerNavigator.Navigator>
     );

@@ -1,5 +1,4 @@
 function shuffleArray<T>(arr: T[]): T[] {
-    console.log(arr);
     const aCopy: T[] = arr.concat();
 
     for (let k = aCopy.length - 1; k > 0; k--) {
