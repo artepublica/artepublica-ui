@@ -1,6 +1,4 @@
 export * from './category';
-export * from './charts';
-export * from './charts/public-art-total-1989-2000';
 export * from './mandato-prefeito';
 export * from './decade';
 export * from './exposicoes';

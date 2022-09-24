@@ -257,17 +257,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             },
                         },
                     },
-                    Charts: {
-                        path: 'charts',
-                        screens: {
-                            Home: {
-                                path: '',
-                            },
-                            PublicArtC19892000: {
-                                path: 'public-art-19989-2000',
-                            },
-                        },
-                    },
                 },
             },
             NotFound: '404',

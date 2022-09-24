@@ -6,7 +6,6 @@ import { StyleSheet } from 'react-native';
 import { Home } from '@pages';
 import { Theme, useTheme } from '@utils';
 
-import { ChartsNavigator, ChartsNavigatorParamsList } from './ChartsNavigator';
 import { ObrasNavigator, ObrasNavigatorParamsList } from './ObrasNavigator';
 import { ObrasRecorteNavigator, ObrasRecorteNavigatorParamsList } from './ObrasRecorteNavigator';
 
@@ -16,7 +15,6 @@ export type RootMenuNavigatorParamList = {
     Home: undefined;
     Obras: NavigatorScreenParams<ObrasNavigatorParamsList>;
     Recorte: NavigatorScreenParams<ObrasRecorteNavigatorParamsList>;
-    Charts: NavigatorScreenParams<ChartsNavigatorParamsList>;
 };
 
 export function RootMenuNavigator(): JSX.Element {
@@ -64,18 +62,6 @@ export function RootMenuNavigator(): JSX.Element {
                     headerShown: false,
                     tabBarIcon: ({ color }: { color: string }) => {
                         return <FontAwesome name="object-group" size={24} color={color} />;
-                    },
-                    tabBarLabelStyle: style.tabBarLabel,
-                }}
-            />
-            <RootTab.Screen
-                name="Charts"
-                component={ChartsNavigator}
-                options={{
-                    title: 'Gráficos',
-                    headerShown: false,
-                    tabBarIcon: ({ color }: { color: string }) => {
-                        return <AntDesign name="barschart" size={24} color={color} />;
                     },
                     tabBarLabelStyle: style.tabBarLabel,
                 }}
