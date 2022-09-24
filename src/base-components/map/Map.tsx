@@ -1,6 +1,6 @@
 import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs';
 import { useHeaderHeight } from '@react-navigation/elements';
-import { Platform, useWindowDimensions } from 'react-native';
+import { useWindowDimensions } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 
 type MapWrapperProps = {
@@ -29,7 +29,27 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
             initialRegion={center}
             testID="mapView"
             style={{ height: height - headerHeight - bottomTabBarHeight - 48 }}
-            provider={Platform.OS !== 'ios' ? PROVIDER_GOOGLE : undefined}
+            provider={PROVIDER_GOOGLE}
+            customMapStyle={[
+                {
+                    featureType: 'poi',
+                    elementType: 'all',
+                    stylers: [
+                        {
+                            visibility: 'off',
+                        },
+                    ],
+                },
+                {
+                    featureType: 'transit',
+                    elementType: 'all',
+                    stylers: [
+                        {
+                            visibility: 'off',
+                        },
+                    ],
+                },
+            ]}
         >
             {markers
                 ?.filter((marker) => marker.position.latitude !== '' && marker.position.longitude !== '')

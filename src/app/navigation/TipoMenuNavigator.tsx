@@ -36,6 +36,7 @@ export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa, de
             screenOptions={() => ({
                 tabBarActiveTintColor: theme.navigation.active,
                 tabBarInactiveTintColor: theme.navigation.inactive,
+                swipeEnabled: false,
             })}
         >
             <TopTab.Screen

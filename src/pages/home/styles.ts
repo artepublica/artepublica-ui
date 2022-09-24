@@ -14,7 +14,7 @@ function styles(): Styles {
         },
         row: {
             backgroundColor: '#FFFFFF',
-            flex: null as unknown as number,
+            width: '100%',
         },
         col: {
             backgroundColor: '#FFFFFF',
