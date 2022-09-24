@@ -92,7 +92,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         chart: {
             type: 'column',
             height: 600,
-            width: 567,
+            //width: 567,
             marginBottom: null as unknown as number,
         },
         title: {

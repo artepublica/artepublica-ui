@@ -252,6 +252,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             MandatoPrefeito: {
                                 path: 'mandato-prefeito',
                             },
+                            Prefeitos: {
+                                path: 'prefeitos',
+                            },
                         },
                     },
                     Charts: {

@@ -408,24 +408,18 @@ function MandatoPrefeito({ obras }: { obras: Obra[] }): JSX.Element {
             );
             return mandatos != null && mandatos.length > 0;
         })[0];
-        console.log(prefeito);
 
         const mandato = prefeito.Mandatos?.filter(
             (mandato) => `${prefeito.Pessoa?.Nome ?? 'Desconhecida'} (${mandato.DataInicio} - ${mandato.DataFim})` === valorDropdown,
         )[0];
 
-        console.log(mandato);
-
         const anoInicio = getYear(mandato?.DataInicio);
         const anoFim = getYear(mandato?.DataFim);
-        console.log(anoInicio);
-        console.log(anoFim);
 
         const anosIntern: number[] = [];
         for (let i = anoInicio as number; i <= (anoFim as number); i++) {
             anosIntern.push(i);
         }
-        console.log(anosIntern);
         setarAnos({ prefeito: prefeito.Pessoa?.Nome ?? 'Desconhecida', anos: anosIntern });
     }, [valorDropdown]);
 

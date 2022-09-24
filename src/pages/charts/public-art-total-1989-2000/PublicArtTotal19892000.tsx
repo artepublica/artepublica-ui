@@ -141,7 +141,7 @@ function Block(): JSX.Element {
     const lineOptions: Highcharts.Options = {
         chart: {
             height: 600,
-            width: 293,
+            //width: 293,
             type: 'column',
         },
         title: {
