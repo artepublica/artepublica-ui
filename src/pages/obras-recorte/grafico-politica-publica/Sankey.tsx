@@ -155,6 +155,7 @@ function Sankey({
                     enabled: true,
                     style: {
                         textOutline: 'none',
+                        fontSize: 15,
                         //color: theme.text.textColor,
                     },
                 },

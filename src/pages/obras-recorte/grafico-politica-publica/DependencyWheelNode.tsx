@@ -159,9 +159,7 @@ function DependencyWheelRefactor({
                 dataLabels: {
                     enabled: true,
                     style: {
-                        //textOutline: 'none',
-                        color: '#000',
-                        textColor: '#000000',
+                        textOutline: 'none',
                     },
                 },
             },
@@ -174,7 +172,7 @@ function DependencyWheelRefactor({
                 },
                 dataLabels: {
                     enabled: false,
-                    color: '#FFFF',
+                    color: '#000000',
                     textPath: !labelEmCima
                         ? undefined
                         : {
