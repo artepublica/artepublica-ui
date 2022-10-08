@@ -40,6 +40,10 @@ function MyMapComponent({
         map,
         setMap,
     ] = useState<google.maps.Map>();
+    const [
+        mapMarkers,
+        serMapMarkers,
+    ] = useState<google.maps.Marker[]>([]);
 
     useEffect(() => {
         if (ref.current && !map) {
@@ -73,28 +77,34 @@ function MyMapComponent({
         }
 
         if (map && markers) {
-            return markers.forEach((marker) => {
-                const markerG = new google.maps.Marker({
-                    position: {
-                        lat: parseFloat(marker.position.latitude),
-                        lng: parseFloat(marker.position.longitude),
-                    },
-                    icon: {
-                        path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
+            mapMarkers.forEach((marker) => marker.setMap(null));
 
-                        fillOpacity: 1,
-                        strokeColor: '#000',
-                        strokeWeight: 2,
-                        scale: 1,
-                        fillColor: marker.color ?? magenta,
-                    },
-                });
-                markerG.setMap(map);
-            });
+            const markersI = markers.map(
+                (marker) =>
+                    new google.maps.Marker({
+                        position: {
+                            lat: parseFloat(marker.position.latitude),
+                            lng: parseFloat(marker.position.longitude),
+                        },
+                        icon: {
+                            path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
+
+                            fillOpacity: 1,
+                            strokeColor: '#000',
+                            strokeWeight: 2,
+                            scale: 1,
+                            fillColor: marker.color ?? magenta,
+                        },
+                    }),
+            );
+
+            markersI.forEach((marker) => marker.setMap(map));
+            serMapMarkers(markersI);
         }
     }, [
         ref,
         map,
+        markers,
     ]);
 
     return <div style={{ width: '100%', height: '100%' }} ref={ref} />;
