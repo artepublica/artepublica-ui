@@ -259,6 +259,7 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                     },
                 },
             },
+            Obra: 'obra',
             NotFound: '404',
             NoMatch: '*',
         },

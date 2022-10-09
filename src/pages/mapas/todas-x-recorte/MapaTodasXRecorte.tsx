@@ -25,11 +25,13 @@ function MapaTodasXRecorte(): JSX.Element {
                 longitude: typed_obra_artepublica[key].Longitude ?? '0',
             },
             color: 'blue',
+            obra: typed_obra_artepublica[key],
         }));
 
     const markers: {
         position: { latitude: string; longitude: string };
         color?: string;
+        obra: Obra;
     }[] = [];
     Array.prototype.push.apply(markers, markers_obra);
     Array.prototype.push.apply(markers, markers_obra_artepublica);

@@ -42,6 +42,7 @@ function Mapa({ tipo, tipos }: MapaProps): JSX.Element {
                         longitude: obra.Longitude ?? '0',
                     },
                     color: colors[tipo.nome],
+                    obra,
                 }));
         })
         .reduce((result, list) => {

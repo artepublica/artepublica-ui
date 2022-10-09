@@ -4,6 +4,7 @@ export * from './decade';
 export * from './exposicoes';
 export * from './home';
 export * from './mapas';
+export * from './obra';
 export * from './obras';
 export * from './obras/mapa';
 export * from './obras-recorte';

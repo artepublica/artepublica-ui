@@ -16,6 +16,7 @@ function MapaRecorte(): JSX.Element {
             latitude: obra.Latitude ?? '0',
             longitude: obra.Longitude ?? '0',
         },
+        obra,
     }));
     return (
         <View style={style.container}>

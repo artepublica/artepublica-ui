@@ -1,16 +1,22 @@
 import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs';
 import { useHeaderHeight } from '@react-navigation/elements';
+import { NavigationProp, useNavigation } from '@react-navigation/native';
 import { useWindowDimensions } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
+
+import { Obra } from '@domain';
+import { RootNavigatorParamList } from 'src/app/navigation/RootNavigator';
 
 type MapWrapperProps = {
     markers?: {
         position: { latitude: string; longitude: string };
         color?: string;
+        obra: Obra;
     }[];
 };
 
 function Map({ markers }: MapWrapperProps): JSX.Element {
+    const navigation = useNavigation<NavigationProp<RootNavigatorParamList>>();
     const { height } = useWindowDimensions();
     const bottomTabBarHeight = useBottomTabBarHeight();
     const headerHeight = useHeaderHeight();
@@ -61,6 +67,7 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
                             latitude: parseFloat(marker.position.latitude),
                             longitude: parseFloat(marker.position.longitude),
                         }}
+                        onPress={() => navigation.navigate('Obra', { obra: marker.obra })}
                     />
                 ))}
         </MapView>
