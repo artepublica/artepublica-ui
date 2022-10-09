@@ -3,7 +3,7 @@ import { Obra } from '@domain';
 import obrasRecorte from './obrasRecorte';
 
 const nomesEnderecosRecorte: string[] = obrasRecorte
-    .map((obra) => obra.Endereço ?? 'Desconhecida')
+    .map((obra) => obra.Endereco ?? 'Desconhecida')
     .reduce<string[]>((enderecos, endereco) => {
         if (!enderecos.includes(endereco)) {
             enderecos.push(endereco);
@@ -14,7 +14,7 @@ const nomesEnderecosRecorte: string[] = obrasRecorte
 const enderecosRecorte: { nome: string; obras: Obra[] }[] = nomesEnderecosRecorte.reduce<{ nome: string; obras: Obra[] }[]>(function (total, endereco) {
     total.push({
         nome: endereco,
-        obras: obrasRecorte.filter((obra) => obra.Endereço === endereco || (obra.Endereço == null && endereco === 'Desconhecida')),
+        obras: obrasRecorte.filter((obra) => obra.Endereco === endereco || (obra.Endereco == null && endereco === 'Desconhecida')),
     });
     return total;
 }, []);

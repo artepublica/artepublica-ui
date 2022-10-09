@@ -117,7 +117,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     ),
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Endereço" tipos={enderecosRecorte} tipologia zona />}
+                {(props) => <TipoMenuNavigator {...props} tipo="Endereco" tipos={enderecosRecorte} tipologia zona />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Status"

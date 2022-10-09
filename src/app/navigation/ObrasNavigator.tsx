@@ -112,7 +112,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     ),
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Endereço" tipos={enderecos} tipologia zona />}
+                {(props) => <TipoMenuNavigator {...props} tipo="Endereco" tipos={enderecos} tipologia zona />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Status"
