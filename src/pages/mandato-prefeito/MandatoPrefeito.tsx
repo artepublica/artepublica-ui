@@ -56,7 +56,7 @@ function Block({ obras, anos }: { obras: Obra[]; anos: number[] }): JSX.Element 
             type: 'column',
             name: tipologia,
             data: total_tipologia,
-            color: theme.tipologia[tipologia.toLowerCase() as keyof TipologiaTheme],
+            color: theme.tipologia[tipologia.toLowerCase() as keyof TipologiaTheme] ?? theme.tipologia.desconhecida,
         };
         series.push(serie);
         return series;

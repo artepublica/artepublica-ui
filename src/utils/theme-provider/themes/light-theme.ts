@@ -52,6 +52,7 @@ const LightTheme: Theme = {
         'lâmina escultórica': azul3,
         obelisco: lilas,
         relevo: vermelho2,
+        desconhecida: '#000',
     },
     coresGrafico: coresGraficoLight,
 };

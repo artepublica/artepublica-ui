@@ -47,7 +47,10 @@ function mobileOptions(height: number, insets: EdgeInsets, modalHeight?: '25%' |
         cardOverlayEnabled: true,
         ...TransitionPresets.ModalSlideFromBottomIOS,
         cardStyleInterpolator: (_ref2) => {
-            const cardStyleInterpolator = TransitionPresets.ModalSlideFromBottomIOS.cardStyleInterpolator(_ref2);
+            const cardStyleInterpolator =
+                Platform.OS === 'ios'
+                    ? TransitionPresets.ModalSlideFromBottomIOS.cardStyleInterpolator(_ref2)
+                    : TransitionPresets.FadeFromBottomAndroid.cardStyleInterpolator(_ref2);
             return {
                 ...cardStyleInterpolator,
                 overlayStyle: {
@@ -79,8 +82,9 @@ function navigationModalOptions(
     insets: EdgeInsets,
     modalHeight?: '25%' | '50%' | '75%' | '100%' | number,
     headerTitle?: string,
+    forceModal?: boolean,
 ): StackNavigationOptions {
-    return Platform.OS === 'web' ? webOptions(navigation, theme, headerTitle) : mobileOptions(height, insets, modalHeight);
+    return Platform.OS !== 'web' || forceModal ? mobileOptions(height, insets, modalHeight) : webOptions(navigation, theme, headerTitle);
 }
 
 export default navigationModalOptions;

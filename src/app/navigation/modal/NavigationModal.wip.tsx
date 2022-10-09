@@ -1,7 +1,9 @@
 import { FunctionComponent } from 'react';
 
-import { NavigationProp, RouteProp } from '@react-navigation/native';
+import { Ionicons } from '@expo/vector-icons';
+import { NavigationProp, RouteProp, StackActions } from '@react-navigation/native';
 import { Platform, StyleSheet, useWindowDimensions, View } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Obra } from '@domain';
@@ -13,6 +15,7 @@ import calculateNavigationModalHeight from './calculateNavigationModalHeight.wip
 type NavigationModalProps = {
     Component: FunctionComponent<{ route: RouteProp<RootNavigatorParamList> }>;
     modalHeight?: '25%' | '50%' | '75%' | '100%' | number;
+    forceModal?: boolean;
 };
 
 function WebModal({
@@ -36,7 +39,16 @@ function MobileModal({
         if (props.route.name === 'Obra') {
             const params = props.route.params as { obra: Obra };
 
-            backgroundColor = theme.tipologia[params.obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme];
+            backgroundColor = theme.tipologia[params.obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme] ?? theme.tipologia.desconhecida;
+        }
+        function goBack(): void {
+            if (props.navigation.canGoBack()) {
+                props.navigation.goBack();
+            } else {
+                props.navigation.dispatch(
+                    StackActions.push('Authorized', { screen: 'BottomTab', params: { screen: 'Home', params: { transition: 'vertical' } } }),
+                );
+            }
         }
         return (
             <SafeAreaView style={style.safeView}>
@@ -55,7 +67,9 @@ function MobileModal({
                             marginBottom: insets.bottom,
                         }}
                     >
-                        <View style={{ alignSelf: 'center', paddingTop: 8 }} />
+                        <TouchableOpacity style={style.closeButton} onPress={goBack}>
+                            <Ionicons name="ios-chevron-down" size={24} color="#FFF" on />
+                        </TouchableOpacity>
                         <Component {...props} />
                     </View>
                 </View>
@@ -67,8 +81,9 @@ function MobileModal({
 function NavigationModal({
     Component,
     modalHeight,
+    forceModal,
 }: NavigationModalProps): FunctionComponent<{ route: RouteProp<RootNavigatorParamList>; navigation: NavigationProp<RootNavigatorParamList> }> {
-    return Platform.OS === 'web' ? WebModal({ Component }) : MobileModal({ Component, modalHeight });
+    return Platform.OS !== 'web' || forceModal ? MobileModal({ Component, modalHeight }) : WebModal({ Component });
 }
 
 export default NavigationModal;
@@ -77,5 +92,10 @@ const style = StyleSheet.create({
     safeView: {
         flex: 1,
         justifyContent: 'flex-end',
+    },
+    closeButton: {
+        alignSelf: 'center',
+        paddingTop: 8,
+        cursor: 'pointer',
     },
 });

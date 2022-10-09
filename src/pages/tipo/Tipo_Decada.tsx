@@ -62,7 +62,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             type: 'column',
             name: _tipo,
             data: total_tipo,
-            color: theme.tipologia[_tipo.toLowerCase() as keyof TipologiaTheme],
+            color: theme.tipologia[_tipo.toLowerCase() as keyof TipologiaTheme] ?? theme.tipologia.desconhecida,
         };
         series.push(serie);
         return series;
@@ -82,7 +82,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
             type: 'streamgraph',
             name: _tipo,
             data: total_tipo,
-            color: theme.tipologia[_tipo.toLowerCase() as keyof TipologiaTheme],
+            color: theme.tipologia[_tipo.toLowerCase() as keyof TipologiaTheme] ?? theme.tipologia.desconhecida,
         };
         series.push(serie);
         return series;

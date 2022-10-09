@@ -19,47 +19,44 @@ function ObraView(): JSX.Element {
                 alignItems: 'center',
                 justifyContent: 'center',
                 padding: 8,
-                backgroundColor: theme.tipologia[obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme],
+                backgroundColor: theme.tipologia[obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme] ?? theme.tipologia.desconhecida,
                 height: '100%',
             }}
         >
             <View
                 style={{
-                    width: 136,
                     height: '100%',
                 }}
             >
                 <View
                     style={{
-                        backgroundColor: '#FFFFFF',
-                        height: 136,
-                        width: 136,
+                        alignItems: 'center',
+                        justifyContent: 'center',
                     }}
                 >
                     <View
                         style={{
-                            backgroundColor: '#FFFFFF',
                             height: 136,
                             width: 136,
                             borderWidth: obra.Imagem != null && obra.Imagem !== '' ? 0 : 1,
-                            borderColor: theme.tipologia[obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme],
-                            marginBottom: obra.Imagem != null && obra.Imagem !== '' ? 0 : 4,
+                            borderColor: '#FFFFFF',
+                            //marginBottom: obra.Imagem != null && obra.Imagem !== '' ? 0 : 4,
                         }}
                     >
                         <Image source={obra.Imagem} height={136} width={136} />
                     </View>
                 </View>
                 <View style={{ padding: 8 }}>
-                    <Text style={{ fontFamily: 'Arial', fontSize: 12, color: '#FFFFFF', fontWeight: '700' }}>
-                        {`${obra.Titulo ?? 'Desconhecida'}${obra.DataInauguracao ? `, ${getYear(obra.DataInauguracao)}` : ', s.d.'}\n\n`}
+                    <Text style={{ fontFamily: 'Arial', fontSize: 18, color: '#FFFFFF', fontWeight: '700', lineHeight: 21 }}>
+                        {`${obra.Titulo ?? 'Desconhecida'}${obra.DataInauguracao ? `, ${getYear(obra.DataInauguracao)}` : ', s.d.'}\n`}
                     </Text>
                     <Text
                         style={{
                             fontFamily: 'Arial',
-                            fontSize: 11,
+                            fontSize: 15,
                             color: '#FFFFFF',
                             fontWeight: '400',
-                            lineHeight: 13,
+                            lineHeight: 18,
                         }}
                     >
                         {obra.Autores?.map((autor) => autor.Pessoa?.Nome).join(', ') ?? 'Desconhecida'}
@@ -67,10 +64,10 @@ function ObraView(): JSX.Element {
                     <Text
                         style={{
                             fontFamily: 'Arial',
-                            fontSize: 11,
+                            fontSize: 15,
                             color: '#FFFFFF',
                             fontWeight: '400',
-                            lineHeight: 13,
+                            lineHeight: 18,
                         }}
                     >
                         {`${obra.Material ?? 'Desconhecida'}${obra.MaterialBase ? `; ${obra.MaterialBase}` : ''}`}
@@ -78,10 +75,10 @@ function ObraView(): JSX.Element {
                     <Text
                         style={{
                             fontFamily: 'Arial',
-                            fontSize: 11,
+                            fontSize: 15,
                             color: '#FFFFFF',
                             fontWeight: '400',
-                            lineHeight: 13,
+                            lineHeight: 18,
                         }}
                     >
                         {obra.Endereco ?? ''}
@@ -89,10 +86,10 @@ function ObraView(): JSX.Element {
                     <Text
                         style={{
                             fontFamily: 'Arial',
-                            fontSize: 11,
+                            fontSize: 15,
                             color: '#FFFFFF',
                             fontWeight: '400',
-                            lineHeight: 13,
+                            lineHeight: 18,
                         }}
                     >
                         {obra.Bairro ?? ''}
@@ -100,10 +97,10 @@ function ObraView(): JSX.Element {
                     <Text
                         style={{
                             fontFamily: 'Arial',
-                            fontSize: 11,
+                            fontSize: 15,
                             color: '#FFFFFF',
                             fontWeight: '400',
-                            lineHeight: 13,
+                            lineHeight: 18,
                         }}
                     >
                         {obra.Status ?? ''}

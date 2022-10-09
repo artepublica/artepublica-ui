@@ -35,7 +35,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
     const tipologias = selected.obras
         .map((obra) => {
             const tipologia = obra.Tipologia ?? 'Deconhecida';
-            const color = theme.tipologia[tipologia.toLowerCase() as keyof TipologiaTheme];
+            const color = theme.tipologia[tipologia.toLowerCase() as keyof TipologiaTheme] ?? theme.tipologia.desconhecida;
             return {
                 id: tipologia,
                 marker: { radius: 20 },

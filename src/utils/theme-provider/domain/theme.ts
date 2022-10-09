@@ -51,6 +51,7 @@ export type TipologiaTheme = {
     'lâmina escultórica': string;
     obelisco: string;
     relevo: string;
+    desconhecida: string;
 };
 
 export type Theme = {

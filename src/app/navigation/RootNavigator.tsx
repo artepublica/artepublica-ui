@@ -38,8 +38,8 @@ export function RootNavigator(): JSX.Element {
             )*/}
             <StackNavigator.Screen
                 name="Obra"
-                component={NavigationModal({ Component: ObraView, modalHeight: '75%' })}
-                options={({ navigation }) => navigationModalOptions(navigation, theme, height, insets, '75%', 'Obra')}
+                component={NavigationModal({ Component: ObraView, modalHeight: '50%', forceModal: true })}
+                options={({ navigation }) => navigationModalOptions(navigation, theme, height, insets, '50%', 'Obra', true)}
             />
             <StackNavigator.Screen name="NotFound" component={NotFound} options={{ headerShown: false }} />
             <StackNavigator.Screen name="NoMatch" component={NoMatch} options={{ headerShown: false }} />
