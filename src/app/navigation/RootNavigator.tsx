@@ -9,10 +9,10 @@ import { useTheme } from '@utils';
 
 import NavigationModal from './modal/NavigationModal.wip';
 import navigationModalOptions from './modal/navigationModalOptions.wip';
-import { RootMenuNavigator, RootMenuNavigatorParamList } from './RootMenuNavigator';
+import { RootMenuNavigator, RootMenuNavigatorParamsList } from './RootMenuNavigator';
 
 export type RootNavigatorParamList = {
-    BottomTab: NavigatorScreenParams<RootMenuNavigatorParamList>;
+    RootMenuNavigator: NavigatorScreenParams<RootMenuNavigatorParamsList>;
     Obra: { obra: Obra };
     NotFound: undefined;
     NoMatch: undefined;
@@ -30,12 +30,7 @@ export function RootNavigator(): JSX.Element {
                 headerStyleInterpolator: HeaderStyleInterpolators.forUIKit,
             }}
         >
-            <StackNavigator.Screen name="BottomTab" component={RootMenuNavigator} options={{ headerShown: false }} />
-            {/*Platform.OS === 'web' ? (
-                <StackNavigator.Screen name="BottomTab" component={RootMenuNavigator} options={{ headerShown: false }} />
-            ) : (
-                <StackNavigator.Screen name="BottomTab" component={RootMenuNavigatorTop} />
-            )*/}
+            <StackNavigator.Screen name="RootMenuNavigator" component={RootMenuNavigator} options={{ headerShown: false }} />
             <StackNavigator.Screen
                 name="Obra"
                 component={NavigationModal({ Component: ObraView, modalHeight: '50%', forceModal: true })}

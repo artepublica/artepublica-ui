@@ -37,7 +37,7 @@ type HeaderTheme = {
     lineHeight: number;
 };
 
-type BottomTabTheme = {
+type RootMenuTheme = {
     fontSize: number;
     lineHeight: number;
 };
@@ -62,7 +62,7 @@ export type Theme = {
     button: ButtonTheme;
     text: TextTheme;
     header: HeaderTheme;
-    bottomTab: BottomTabTheme;
+    bottomTab: RootMenuTheme;
     principal: string;
     secundaria: string;
     tipologia: TipologiaTheme;

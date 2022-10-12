@@ -1,4 +1,3 @@
-import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs';
 import { useHeaderHeight } from '@react-navigation/elements';
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 import { useWindowDimensions } from 'react-native';
@@ -18,7 +17,6 @@ type MapWrapperProps = {
 function Map({ markers }: MapWrapperProps): JSX.Element {
     const navigation = useNavigation<NavigationProp<RootNavigatorParamList>>();
     const { height } = useWindowDimensions();
-    const bottomTabBarHeight = useBottomTabBarHeight();
     const headerHeight = useHeaderHeight();
     const center = {
         latitude: -22.910972,
@@ -34,7 +32,7 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
             zoomTapEnabled
             initialRegion={center}
             testID="mapView"
-            style={{ height: height - headerHeight - bottomTabBarHeight - 48 }}
+            style={{ height: height - headerHeight - 48 }}
             provider={PROVIDER_GOOGLE}
             customMapStyle={[
                 {

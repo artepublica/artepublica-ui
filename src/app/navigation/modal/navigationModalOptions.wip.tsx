@@ -7,10 +7,10 @@ import { EdgeInsets } from 'react-native-safe-area-context';
 import { Text } from '@base-components';
 import { Theme } from '@utils';
 
-import { RootMenuNavigatorParamList } from '../RootMenuNavigator';
+import { RootMenuNavigatorParamsList } from '../RootMenuNavigator';
 import calculateNavigationModalHeight from './calculateNavigationModalHeight.wip';
 
-function webOptions(navigation: NavigationProp<RootMenuNavigatorParamList>, theme: Theme, headerTitle?: string): StackNavigationOptions {
+function webOptions(navigation: NavigationProp<RootMenuNavigatorParamsList>, theme: Theme, headerTitle?: string): StackNavigationOptions {
     const style = styles(theme);
     return {
         headerShown: true,
@@ -21,7 +21,7 @@ function webOptions(navigation: NavigationProp<RootMenuNavigatorParamList>, them
                     navigation.canGoBack()
                         ? navigation.goBack()
                         : navigation.dispatch(
-                              StackActions.push('Authorized', { screen: 'BottomTab', params: { screen: 'Home', params: { transition: 'vertical' } } }),
+                              StackActions.push('Authorized', { screen: 'RootMenuNavigator', params: { screen: 'Home', params: { transition: 'vertical' } } }),
                           )
                 }
                 style={{ paddingLeft: 24 }}
@@ -76,7 +76,7 @@ function mobileOptions(height: number, insets: EdgeInsets, modalHeight?: '25%' |
 }
 
 function navigationModalOptions(
-    navigation: NavigationProp<RootMenuNavigatorParamList>,
+    navigation: NavigationProp<RootMenuNavigatorParamsList>,
     theme: Theme,
     height: number,
     insets: EdgeInsets,

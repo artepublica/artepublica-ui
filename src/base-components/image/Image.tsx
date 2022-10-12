@@ -9,10 +9,10 @@ type ImageProps = {
 };
 
 function Image({ source, height, width }: ImageProps): JSX.Element {
-    const typed_imagems: Record<string, ImageSourcePropType> = imagems;
-    const img = typed_imagems[source ?? ''];
-    if (img) {
-        return <NativeImage source={img} style={{ height, width }} />;
+    if (source && Object.keys(imagems).includes(source)) {
+        const typed_imagems: Record<string, ImageSourcePropType> = imagems;
+
+        return <NativeImage source={typed_imagems[source]} style={{ height, width }} />;
     }
     return <></>;
 }

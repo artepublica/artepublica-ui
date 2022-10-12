@@ -46,7 +46,7 @@ function MobileModal({
                 props.navigation.goBack();
             } else {
                 props.navigation.dispatch(
-                    StackActions.push('Authorized', { screen: 'BottomTab', params: { screen: 'Home', params: { transition: 'vertical' } } }),
+                    StackActions.push('Authorized', { screen: 'RootMenuNavigator', params: { screen: 'Home', params: { transition: 'vertical' } } }),
                 );
             }
         }

@@ -1,5 +1,5 @@
 import { NavigationProp, useNavigation } from '@react-navigation/native';
-import { Platform, ScrollView, useWindowDimensions, View } from 'react-native';
+import { FlatList, useWindowDimensions, View } from 'react-native';
 import { Col, Grid, Row } from 'react-native-easy-grid';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -40,46 +40,52 @@ function Obras(): JSX.Element {
         });
 
     const colunas = Math.floor(width / 144);
+    const gridWidth = (colunas - 1) * 144 + 136;
+    const remainingWidth = width - 16 - gridWidth;
 
-    const padding = width - colunas * 144;
+    const data = obrasComImagem
+        .reduce<string[]>((resultado, key, index) => {
+            const obra: Obra = typed_obra_artepublica[key];
+
+            if (index === 0) {
+                return [
+                    obra.Tipologia ?? 'Desconhecida',
+                    key,
+                ];
+            } else {
+                const obraAnterior: Obra = typed_obra_artepublica[obrasComImagem[index - 1]];
+
+                if ((obra.Tipologia ?? 'Desconhecida') !== (obraAnterior.Tipologia ?? 'Desconhecida')) {
+                    return [
+                        ...resultado,
+                        obra.Tipologia ?? 'Desconhecida',
+                        key,
+                    ];
+                }
+            }
+
+            return [
+                ...resultado,
+                key,
+            ];
+        }, [])
+        .reduce<string[][]>((all, one, i) => {
+            const ch = Math.floor(i / colunas);
+            all[ch] = ([] as string[]).concat(all[ch] || [], one);
+            return all;
+        }, []);
 
     return (
         <SafeAreaView style={style.container}>
-            <ScrollView contentContainerStyle={{ alignItems: 'center', justifyContent: 'center', padding: 8 }}>
-                <Grid style={{ paddingLeft: Platform.OS !== 'web' ? Math.floor(padding / (colunas + 1)) : undefined }}>
-                    {obrasComImagem
-                        .reduce<string[]>((resultado, key, index) => {
-                            const obra: Obra = typed_obra_artepublica[key];
-
-                            if (index === 0) {
-                                return [
-                                    obra.Tipologia ?? 'Desconhecida',
-                                    key,
-                                ];
-                            } else {
-                                const obraAnterior: Obra = typed_obra_artepublica[obrasComImagem[index - 1]];
-
-                                if ((obra.Tipologia ?? 'Desconhecida') !== (obraAnterior.Tipologia ?? 'Desconhecida')) {
-                                    return [
-                                        ...resultado,
-                                        obra.Tipologia ?? 'Desconhecida',
-                                        key,
-                                    ];
-                                }
-                            }
-
-                            return [
-                                ...resultado,
-                                key,
-                            ];
-                        }, [])
-                        .reduce<string[][]>((all, one, i) => {
-                            const ch = Math.floor(i / colunas);
-                            all[ch] = ([] as string[]).concat(all[ch] || [], one);
-                            return all;
-                        }, [])
-                        .map((row, rowIndex) => {
-                            return (
+            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 8 }}>
+                <FlatList
+                    data={data}
+                    style={{ width: '100%' }}
+                    renderItem={({ item, index }) => {
+                        const row = item;
+                        const rowIndex = index;
+                        return (
+                            <Grid style={{ paddingLeft: remainingWidth / 2 }}>
                                 <Row style={style.row} key={rowIndex}>
                                     {row.map((col, colIndex) => {
                                         const obra: Obra = typed_obra_artepublica[col];
@@ -87,7 +93,7 @@ function Obras(): JSX.Element {
                                             <Col
                                                 style={[
                                                     style.col,
-                                                    { marginRight: colIndex !== row.length - 1 ? 8 : 0 },
+                                                    { marginRight: colIndex !== colunas - 1 ? 8 : 0 },
                                                 ]}
                                                 key={colIndex}
                                                 onPress={() => {
@@ -124,9 +130,9 @@ function Obras(): JSX.Element {
                                                             </Text>
                                                         </View>
                                                         <View style={{ padding: 8 }}>
-                                                            <Text style={{ fontFamily: 'Arial', fontSize: 12, color: '#FFFFFF', fontWeight: '700' }}>
-                                                                {`Título, ano\n\n`}
-                                                            </Text>
+                                                            <Text
+                                                                style={{ fontFamily: 'Arial', fontSize: 12, color: '#FFFFFF', fontWeight: '700' }}
+                                                            >{`Título, ano\n\n`}</Text>
                                                             <Text
                                                                 style={{
                                                                     fontFamily: 'Arial',
@@ -285,10 +291,11 @@ function Obras(): JSX.Element {
                                         );
                                     })}
                                 </Row>
-                            );
-                        })}
-                </Grid>
-            </ScrollView>
+                            </Grid>
+                        );
+                    }}
+                />
+            </View>
         </SafeAreaView>
     );
 }

@@ -19,6 +19,8 @@ function styles(): Styles {
         col: {
             backgroundColor: '#FFFFFF',
             marginBottom: 8,
+            minWidth: 136,
+            maxWidth: 136,
         },
         rowText: {
             fontFamily: 'Arial',

@@ -30,7 +30,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
 
     const style = styles();
 
-    const selected = tipos.filter((autor) => (autor.nome ?? 'v') == valorDropdown)[0];
+    const selected = tipos.filter((autor) => (autor.nome ?? 'v') === valorDropdown)[0];
 
     const tipologias = selected.obras
         .map((obra) => {

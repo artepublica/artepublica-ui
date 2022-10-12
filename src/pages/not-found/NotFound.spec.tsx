@@ -37,6 +37,6 @@ describe('<NotFound />', () => {
 
         act(() => fireEvent.press(button));
 
-        expect(mockDispatch).toBeCalledWith(StackActions.push('BottomTab', { screen: 'Home' }));
+        expect(mockDispatch).toBeCalledWith(StackActions.push('RootMenuNavigator', { screen: 'Home' }));
     });
 });

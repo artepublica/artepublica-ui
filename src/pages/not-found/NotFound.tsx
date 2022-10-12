@@ -8,7 +8,7 @@ function NotFound(): JSX.Element {
     const navigation = useNavigation();
 
     function goHome() {
-        navigation.dispatch(StackActions.push('BottomTab', { screen: 'Home' }));
+        navigation.dispatch(StackActions.push('RootMenuNavigator', { screen: 'Home' }));
     }
 
     return (
