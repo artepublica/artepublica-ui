@@ -11,7 +11,7 @@ type ChartProps = {
 function ChartDark({ options }: ChartProps): JSX.Element {
     const { theme } = useTheme();
 
-    const injectScript = `
+    const script = `
         Highcharts.chart('container', ${JSON.stringify({ ...options, chart: { ...options.chart, backgroundColor: theme.background } })});
     `;
 
@@ -30,6 +30,9 @@ function ChartDark({ options }: ChartProps): JSX.Element {
 
             <body style="margin: 0 !important; padding: 0 !important; background-color: ${theme.background};">
                 <div id="container"></div>
+                <script type="text/javascript">
+                    ${script}
+                </script>
             </body>
         </html>
     `;
@@ -37,8 +40,6 @@ function ChartDark({ options }: ChartProps): JSX.Element {
     return (
         <MinimalAutoheightWebView
             testID="chart"
-            javaScriptEnabled
-            injectedJavaScript={injectScript}
             source={{
                 html,
             }}

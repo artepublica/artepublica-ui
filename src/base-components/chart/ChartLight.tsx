@@ -8,15 +8,11 @@ type ChartLightProps = {
     options: Highcharts.Options;
 };
 
-function ChartLight({ options }: ChartLightProps): JSX.Element {
+function ChartLight({ options }: ChartLightProps): JSX.Element | undefined {
     const { theme } = useTheme();
 
-    const injectScript = `
-        var chart = function () {
-            Highcharts.chart('container', ${JSON.stringify({ ...options, chart: { ...options.chart, backgroundColor: theme.background } })});
-        }
-
-        chart();
+    const script = `
+        Highcharts.chart('container', ${JSON.stringify({ ...options, chart: { ...options.chart, backgroundColor: theme.background } })});
     `;
 
     const html = `
@@ -34,6 +30,9 @@ function ChartLight({ options }: ChartLightProps): JSX.Element {
 
             <body style="margin: 0 !important; padding: 0 !important; background-color: ${theme.background};">
                 <div id="container"></div>
+                <script type="text/javascript">
+                    ${script}
+                </script>
             </body>
         </html>
     `;
@@ -41,13 +40,12 @@ function ChartLight({ options }: ChartLightProps): JSX.Element {
     return (
         <MinimalAutoheightWebView
             testID="chart"
-            javaScriptEnabled
-            injectedJavaScript={injectScript}
             source={{
                 html,
             }}
             startInLoadingState
             style={{ backgroundColor: 'transparent' }}
+            contentMode="mobile"
         />
     );
 }
