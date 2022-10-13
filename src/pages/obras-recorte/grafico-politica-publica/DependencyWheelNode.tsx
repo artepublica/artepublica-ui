@@ -108,8 +108,6 @@ function DependencyWheelRefactor({
     const nosImportantes = nosFiltrados.map((no) => {
         const colorByPoint = agenteDaPolitica(politicaPublica, no.node);
 
-        console.log(colorByPoint ? color(no.node) : undefined);
-
         return {
             id: no.node,
             dataLabels: {
@@ -198,23 +196,17 @@ function DependencyWheelRefactor({
 
     const table = nosFiltrados.filter((no) => !agenteDaPolitica(politicaPublica, no.node));
 
-    const chunkLength = Math.max(table.length / 2, 1);
-    const chunks = [];
-    for (let i = 0; i < 2; i++) {
-        if (chunkLength * (i + 1) <= table.length) chunks.push(table.slice(chunkLength * i, chunkLength * (i + 1)));
-    }
     return (
         <>
             <Button onPress={onPress}>Randon</Button>
             <Chart options={lineOptions as Highcharts.Options} />
-            <View style={{ flex: 1, flexDirection: 'row' }}>
+            <View style={{ flex: 1 }}>
                 <Table
-                    width={280}
                     headers={[
                         `pessoa`,
                         'Capital Simbólico',
                     ]}
-                    rows={chunks[0].map((no) => [
+                    rows={table.map((no) => [
                         no.node,
                         no.weight.toString(),
                     ])}
@@ -223,23 +215,6 @@ function DependencyWheelRefactor({
                         50,
                     ]}
                 />
-                <View style={{ paddingLeft: 8 }}>
-                    <Table
-                        width={280}
-                        headers={[
-                            `pessoa`,
-                            'Capital Simbólico',
-                        ]}
-                        rows={chunks[1].map((no) => [
-                            no.node,
-                            no.weight.toString(),
-                        ])}
-                        widthArr={[
-                            undefined,
-                            50,
-                        ]}
-                    />
-                </View>
             </View>
         </>
     );

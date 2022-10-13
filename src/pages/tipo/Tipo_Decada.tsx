@@ -1,8 +1,10 @@
 import { useState } from 'react';
 
+import { useHeaderHeight } from '@react-navigation/elements';
 import Highcharts, { AlignValue, AxisTypeValue, OptionsStackingValue, SeriesOptionsType } from 'highcharts';
-import { ScrollView, useWindowDimensions, View } from 'react-native';
+import { ScrollView, useWindowDimensions } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart } from '@base-components';
 import { Obra } from '@domain';
@@ -17,9 +19,10 @@ type Tipo_DecadaProps = {
 
 function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
     const { theme } = useTheme();
+    const { width, height } = useWindowDimensions();
+    const headerHeight = useHeaderHeight();
+    const insets = useSafeAreaInsets();
     const style = styles();
-
-    const { width } = useWindowDimensions();
 
     const all: Record<string, Obra[]> = dedadas.all;
 
@@ -91,8 +94,8 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
     const columnOptions: Highcharts.Options = {
         chart: {
             type: 'column',
-            height: 600,
-            //width: 567,
+            height: height - insets.top - headerHeight - 68 - 24 - 50,
+            width: width - 48,
             marginBottom: null as unknown as number,
         },
         title: {
@@ -163,8 +166,8 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
     const streamgraphOptions: Highcharts.Options = {
         chart: {
             type: 'streamgraph',
-            height: 600,
-            //width: 800,
+            height: height - insets.top - headerHeight - 68 - 24 - 50,
+            width: width - 48,
             //marginBottom: width > 1000 ? 60 : width > 800 ? 80 : width > 450 ? 100 : width > 350 ? 110 : 160,
             marginBottom: width < 367 ? 170 : width < 400 ? 110 : width < 450 ? 120 : width < 500 ? 100 : width < 650 ? 90 : width < 850 ? 80 : 60,
         },
@@ -258,32 +261,30 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
     ]);
 
     return (
-        <View style={style.container}>
-            <ScrollView style={{ width: '100%' }}>
-                <DropDownPicker
-                    theme={theme.dark ? 'DARK' : 'LIGHT'}
-                    open={open}
-                    value={value}
-                    items={items}
-                    setOpen={setOpen}
-                    setValue={setValue}
-                    setItems={setItems}
-                    listMode="SCROLLVIEW"
-                    scrollViewProps={{
-                        nestedScrollEnabled: true,
-                    }}
-                    textStyle={{ color: theme.text.textColor }}
-                    //arrowIconStyle={{ backgroundColor: '#CC1964 !important' }}
-                    dropDownContainerStyle={{ borderColor: theme.text.textColor }}
-                    selectedItemContainerStyle={{ backgroundColor: '#F2D7E3' }}
-                    style={{ borderColor: theme.text.textColor }}
-                    arrowIconContainerStyle={{ borderColor: theme.text.textColor }}
-                    //iconContainerStyle={{ borderColor: '#CC1964 !important' }}
-                    showTickIcon={false}
-                />
-                <Chart options={(value === '0' ? columnOptions : streamgraphOptions) as Highcharts.Options} />
-            </ScrollView>
-        </View>
+        <ScrollView style={style.container}>
+            <DropDownPicker
+                theme={theme.dark ? 'DARK' : 'LIGHT'}
+                open={open}
+                value={value}
+                items={items}
+                setOpen={setOpen}
+                setValue={setValue}
+                setItems={setItems}
+                listMode="SCROLLVIEW"
+                scrollViewProps={{
+                    nestedScrollEnabled: true,
+                }}
+                textStyle={{ color: theme.text.textColor }}
+                //arrowIconStyle={{ backgroundColor: '#CC1964 !important' }}
+                dropDownContainerStyle={{ borderColor: theme.text.textColor }}
+                selectedItemContainerStyle={{ backgroundColor: '#F2D7E3' }}
+                style={{ borderColor: theme.text.textColor }}
+                arrowIconContainerStyle={{ borderColor: theme.text.textColor }}
+                //iconContainerStyle={{ borderColor: '#CC1964 !important' }}
+                showTickIcon={false}
+            />
+            <Chart options={(value === '0' ? columnOptions : streamgraphOptions) as Highcharts.Options} />
+        </ScrollView>
     );
 }
 

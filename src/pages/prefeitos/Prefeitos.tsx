@@ -1,7 +1,9 @@
 import { useState } from 'react';
 
+import { useHeaderHeight } from '@react-navigation/elements';
 import Highcharts, { SeriesOptionsType } from 'highcharts';
-import { ScrollView, View } from 'react-native';
+import { ScrollView, View, useWindowDimensions } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart, Dropdown } from '@base-components';
 import { Obra, Prefeito } from '@domain';
@@ -10,8 +12,12 @@ import { getYear } from '@utils/data/analisys_utils';
 import * as prefeitos_mandatos from '@utils/data/prefeitos';
 import reduceListOfList from '@utils/list/reduce-list-of-list';
 
+import styles from './styles';
 function Block({ obras, mandatos }: { obras: Obra[]; mandatos: string[] }): JSX.Element {
     const { theme } = useTheme();
+    const { width, height } = useWindowDimensions();
+    const headerHeight = useHeaderHeight();
+    const insets = useSafeAreaInsets();
     const typed_prefeitos: Record<string, Prefeito> = prefeitos_mandatos;
 
     const prefeitos = Object.keys(typed_prefeitos).map((key) => typed_prefeitos[key]);
@@ -111,8 +117,8 @@ function Block({ obras, mandatos }: { obras: Obra[]; mandatos: string[] }): JSX.
 
     const lineOptions: Highcharts.Options = {
         chart: {
-            height: 600,
-            //width: 293,
+            height: height - insets.top - headerHeight - 24 - 50,
+            width: width - 48,
             type: 'column',
         },
         title: {
@@ -167,6 +173,7 @@ function Block({ obras, mandatos }: { obras: Obra[]; mandatos: string[] }): JSX.
 }
 
 function Prefeitos({ obras }: { obras: Obra[] }): JSX.Element {
+    const style = styles();
     const typed_prefeitos: Record<string, Prefeito> = prefeitos_mandatos;
 
     const items = Object.keys(typed_prefeitos)
@@ -205,7 +212,7 @@ function Prefeitos({ obras }: { obras: Obra[] }): JSX.Element {
     ]);
 
     return (
-        <ScrollView style={{ width: '100%' }}>
+        <ScrollView style={style.container}>
             <Dropdown valor={valorDropdown} setarValor={setarDropdown} items={items} multiple />
             <View>
                 <Block obras={obras} mandatos={valorDropdown} />

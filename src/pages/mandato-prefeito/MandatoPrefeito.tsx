@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 
+import { useHeaderHeight } from '@react-navigation/elements';
 import Highcharts, { SeriesOptionsType } from 'highcharts';
-import { ScrollView, View } from 'react-native';
+import { ScrollView, View, useWindowDimensions } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart, Dropdown } from '@base-components';
 import { Artista, Obra, Prefeito } from '@domain';
@@ -13,6 +15,9 @@ import { magenta } from '@utils/theme-provider/themes/cores';
 
 function Block({ obras, anos }: { obras: Obra[]; anos: number[] }): JSX.Element {
     const { theme } = useTheme();
+    const { width, height } = useWindowDimensions();
+    const headerHeight = useHeaderHeight();
+    const insets = useSafeAreaInsets();
 
     const obras_por_ano = obras
         .reduce<{ year: number; obras: Obra[] }[]>((result, obra) => {
@@ -64,8 +69,8 @@ function Block({ obras, anos }: { obras: Obra[]; anos: number[] }): JSX.Element 
 
     const lineOptions: Highcharts.Options = {
         chart: {
-            height: 600,
-            width: 293,
+            height: height - insets.top - headerHeight - 24 - 50,
+            width: width - 48,
             type: 'column',
         },
         title: {
@@ -121,6 +126,9 @@ function Block({ obras, anos }: { obras: Obra[]; anos: number[] }): JSX.Element 
 
 function Network({ obras, anos, prefeito }: { obras: Obra[]; prefeito: string; anos: number[] }): JSX.Element {
     const { theme } = useTheme();
+    const { width, height } = useWindowDimensions();
+    const headerHeight = useHeaderHeight();
+    const insets = useSafeAreaInsets();
 
     const obras_do_mandato = obras.reduce<Obra[]>((result, obra) => {
         const year = getYear(obra.DataInauguracao);
@@ -200,8 +208,8 @@ function Network({ obras, anos, prefeito }: { obras: Obra[]; prefeito: string; a
 
     const networkOptions: Highcharts.Options | unknown = {
         chart: {
-            height: 700,
-            width: 576,
+            height: height - insets.top - headerHeight - 24 - 50,
+            width: width - 48,
             type: 'networkgraph',
         },
         title: {
@@ -248,6 +256,9 @@ function Network({ obras, anos, prefeito }: { obras: Obra[]; prefeito: string; a
 
 function Sankey({ obras, anos, prefeito }: { obras: Obra[]; prefeito: string; anos: number[] }): JSX.Element {
     const { theme } = useTheme();
+    const { width, height } = useWindowDimensions();
+    const headerHeight = useHeaderHeight();
+    const insets = useSafeAreaInsets();
 
     const obras_do_mandato = obras.reduce<Obra[]>((result, obra) => {
         const year = getYear(obra.DataInauguracao);
@@ -328,8 +339,8 @@ function Sankey({ obras, anos, prefeito }: { obras: Obra[]; prefeito: string; an
 
     const networkOptions: Highcharts.Options | unknown = {
         chart: {
-            height: 750,
-            width: 576,
+            height: height - insets.top - headerHeight - 24 - 50,
+            width: width - 48,
             type: 'sankey',
         },
         title: {
@@ -432,7 +443,7 @@ function MandatoPrefeito({ obras }: { obras: Obra[] }): JSX.Element {
     }, [valorDropdown]);
 
     return (
-        <ScrollView style={{ width: '100%' }}>
+        <ScrollView style={{ width: '100%', padding: 24 }}>
             <Dropdown valor={valorDropdown} setarValor={setarDropdown} items={items} />
             <View>
                 <Block obras={obras} anos={anos.anos} />

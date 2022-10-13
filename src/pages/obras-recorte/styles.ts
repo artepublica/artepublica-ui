@@ -11,6 +11,8 @@ function styles(): Styles {
     return StyleSheet.create<Styles>({
         container: {
             flex: 1,
+            paddingTop: 24,
+            paddingHorizontal: 24,
         },
         row: {
             backgroundColor: '#FFFFFF',

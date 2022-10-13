@@ -1,9 +1,8 @@
 import { useState } from 'react';
 
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { ScrollView } from 'react-native-gesture-handler';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Table, Text } from '@base-components';
 import { Artista, Obra } from '@domain';
@@ -32,8 +31,6 @@ function Decade(): JSX.Element | null {
     ] = useState(allYears);
 
     const typed_analisys_list_utils: Record<string, Obra[]> = analisys_list_utils;
-
-    const style = styles();
 
     const obras_decada: Obra[] = typed_analisys_list_utils[`all${year}`];
 
@@ -164,108 +161,106 @@ function Decade(): JSX.Element | null {
             .sort((a, b) => a.nome.localeCompare(b.nome));
 
         return (
-            <SafeAreaView style={style.container}>
-                <ScrollView style={{ width: '100%' }}>
-                    <DropDownPicker
-                        theme={theme.dark ? 'DARK' : 'LIGHT'}
-                        open={open}
-                        value={year}
-                        items={items}
-                        setOpen={setOpen}
-                        setValue={setValue}
-                        setItems={setItems}
-                        listMode="SCROLLVIEW"
-                        scrollViewProps={{
-                            nestedScrollEnabled: true,
-                        }}
-                        textStyle={{ color: theme.text.textColor }}
-                        //arrowIconStyle={{ backgroundColor: theme.text.textColor }}
-                        dropDownContainerStyle={{ borderColor: theme.text.textColor }}
-                        selectedItemContainerStyle={{ backgroundColor: '#F2D7E3' }}
-                        style={{ borderColor: theme.text.textColor }}
-                        arrowIconContainerStyle={{ borderColor: theme.text.textColor }}
-                        //iconContainerStyle={{ borderColor: theme.text.textColor }}
-                        showTickIcon={false}
-                    />
-                    <View style={{ height: 24 }} />
+            <ScrollView style={{ width: '100%', padding: 24 }}>
+                <DropDownPicker
+                    theme={theme.dark ? 'DARK' : 'LIGHT'}
+                    open={open}
+                    value={year}
+                    items={items}
+                    setOpen={setOpen}
+                    setValue={setValue}
+                    setItems={setItems}
+                    listMode="SCROLLVIEW"
+                    scrollViewProps={{
+                        nestedScrollEnabled: true,
+                    }}
+                    textStyle={{ color: theme.text.textColor }}
+                    //arrowIconStyle={{ backgroundColor: theme.text.textColor }}
+                    dropDownContainerStyle={{ borderColor: theme.text.textColor }}
+                    selectedItemContainerStyle={{ backgroundColor: '#F2D7E3' }}
+                    style={{ borderColor: theme.text.textColor }}
+                    arrowIconContainerStyle={{ borderColor: theme.text.textColor }}
+                    //iconContainerStyle={{ borderColor: theme.text.textColor }}
+                    showTickIcon={false}
+                />
+                <View style={{ height: 24 }} />
 
-                    <Text>
-                        {year}: {obras_decada.length}
-                    </Text>
-                    <View style={{ height: 24 }} />
+                <Text>
+                    {year}: {obras_decada.length}
+                </Text>
+                <View style={{ height: 24 }} />
 
-                    <Table
-                        headers={[
-                            'Tipologia',
-                            `Total: ${tipologias_obras_decada_total.length}`,
-                            'Obras',
-                        ]}
-                        rows={tipologias_obras_decada_total.map((top) => [
-                            top.nome,
-                            top.obras.length.toString(),
-                            top.obras.map((obra) => obra.Titulo ?? 'Desconhecida').join(', '),
-                        ])}
-                    />
-                    <View style={{ height: 24 }} />
+                <Table
+                    headers={[
+                        'Tipologia',
+                        `Total: ${tipologias_obras_decada_total.length}`,
+                        'Obras',
+                    ]}
+                    rows={tipologias_obras_decada_total.map((top) => [
+                        top.nome,
+                        top.obras.length.toString(),
+                        top.obras.map((obra) => obra.Titulo ?? 'Desconhecida').join(', '),
+                    ])}
+                />
+                <View style={{ height: 24 }} />
 
-                    <Table
-                        headers={[
-                            'Natureza',
-                            `Total: ${naturezas_obras_decada_total.length}`,
-                        ]}
-                        rows={naturezas_obras_decada_total.map((top) => [
-                            top.nome,
-                            top.total.toString(),
-                        ])}
-                    />
-                    <View style={{ height: 24 }} />
+                <Table
+                    headers={[
+                        'Natureza',
+                        `Total: ${naturezas_obras_decada_total.length}`,
+                    ]}
+                    rows={naturezas_obras_decada_total.map((top) => [
+                        top.nome,
+                        top.total.toString(),
+                    ])}
+                />
+                <View style={{ height: 24 }} />
 
-                    <Table
-                        headers={[
-                            'Zona',
-                            `Total: ${zonas_obras_decada_total.length}`,
-                        ]}
-                        rows={zonas_obras_decada_total.map((top) => [
-                            top.nome,
-                            top.total.toString(),
-                        ])}
-                    />
-                    <View style={{ height: 24 }} />
+                <Table
+                    headers={[
+                        'Zona',
+                        `Total: ${zonas_obras_decada_total.length}`,
+                    ]}
+                    rows={zonas_obras_decada_total.map((top) => [
+                        top.nome,
+                        top.total.toString(),
+                    ])}
+                />
+                <View style={{ height: 24 }} />
 
-                    <Table
-                        headers={[
-                            'Status',
-                            `Total: ${status_obras_decada_total.length}`,
-                            'Tipologias',
-                        ]}
-                        rows={status_obras_decada_total.map((top) => [
-                            top.nome,
-                            top.total.toString(),
-                            top.tipologias.map((top) => `${top.nome} (${top.total})`).join(', '),
-                        ])}
-                    />
-                    <View style={{ height: 24 }} />
+                <Table
+                    headers={[
+                        'Status',
+                        `Total: ${status_obras_decada_total.length}`,
+                        'Tipologias',
+                    ]}
+                    rows={status_obras_decada_total.map((top) => [
+                        top.nome,
+                        top.total.toString(),
+                        top.tipologias.map((top) => `${top.nome} (${top.total})`).join(', '),
+                    ])}
+                />
+                <View style={{ height: 24 }} />
 
-                    <Table
-                        headers={[
-                            'Artista',
-                            `Total: ${artistas_total_obras.length}`,
-                            'Obras',
-                        ]}
-                        rows={artistas_total_obras.map((top) => [
-                            top.nome,
-                            top.total.toString(),
-                            top.obras.join(', '),
-                        ])}
-                    />
-                    <View style={{ height: 24 }} />
-                </ScrollView>
-            </SafeAreaView>
+                <Table
+                    headers={[
+                        'Artista',
+                        `Total: ${artistas_total_obras.length}`,
+                        'Obras',
+                    ]}
+                    rows={artistas_total_obras.map((top) => [
+                        top.nome,
+                        top.total.toString(),
+                        top.obras.join(', '),
+                    ])}
+                />
+                <View style={{ height: 24 }} />
+            </ScrollView>
         );
     }
 
     return (
-        <SafeAreaView>
+        <ScrollView style={{ width: '100%', padding: 24 }}>
             <DropDownPicker
                 theme={theme.dark ? 'DARK' : 'LIGHT'}
                 open={open}
@@ -289,19 +284,8 @@ function Decade(): JSX.Element | null {
             />
             <View style={{ height: 24 }} />
             <Text>Sem dados sobre o período</Text>
-        </SafeAreaView>
+        </ScrollView>
     );
-}
-
-function styles() {
-    return StyleSheet.create({
-        container: {
-            flex: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-        },
-        head: { height: 40 },
-    });
 }
 
 export default Decade;

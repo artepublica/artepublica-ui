@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
-import { ScrollView, View } from 'react-native';
+import { useHeaderHeight } from '@react-navigation/elements';
+import { ScrollView, useWindowDimensions } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart, Dropdown } from '@base-components';
 import { Obra } from '@domain';
@@ -17,6 +19,9 @@ type GraficoRedeTipoTipologiaObraProps = {
 
 function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaObraProps): JSX.Element {
     const { theme } = useTheme();
+    const { width, height } = useWindowDimensions();
+    const headerHeight = useHeaderHeight();
+    const insets = useSafeAreaInsets();
 
     const autores = [...tipos].map((autor) => autor.nome ?? 'Desconhecida').sort((a, b) => a.localeCompare(b));
 
@@ -93,8 +98,8 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
 
     const options: Highcharts.Options | unknown = {
         chart: {
-            height: 700,
-            width: 576,
+            height: height - insets.top - headerHeight - 68 - 24 - 50,
+            width: width - 48,
             type: 'networkgraph',
         },
         title: {
@@ -137,12 +142,10 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
     };
 
     return (
-        <View style={style.container}>
-            <ScrollView style={{ width: '100%' }}>
-                <Dropdown valor={valorDropdown} setarValor={setarDropdown} items={autores.map((autor) => ({ label: autor, value: autor }))} zIndex={3} />
-                <Chart options={options as Highcharts.Options} />
-            </ScrollView>
-        </View>
+        <ScrollView style={style.container}>
+            <Dropdown valor={valorDropdown} setarValor={setarDropdown} items={autores.map((autor) => ({ label: autor, value: autor }))} zIndex={3} />
+            <Chart options={options as Highcharts.Options} />
+        </ScrollView>
     );
 }
 

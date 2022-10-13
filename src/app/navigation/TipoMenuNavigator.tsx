@@ -1,16 +1,15 @@
-import { AntDesign, FontAwesome } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { StyleSheet } from 'react-native';
 
 import { Obra } from '@domain';
-import { Tipo, Tipo_Decada, Tipo_GraficoRedeTipologiaObra, Tipo_Mapa, Tipo_TabelaTipologiaObra } from '@pages';
+import { Tipo_Decada, Tipo_GraficoRedeTipologiaObra, Tipo_Mapa, Tipo_TabelaTipologiaObra } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const TopTab = createMaterialTopTabNavigator<TipoMenuNavigatorParamList>();
 
 export type TipoMenuNavigatorParamList = {
     Home: undefined;
-    TabelaTipologiaObra: undefined;
     GraficoRedeTipologiaObra: undefined;
     Mapa: undefined;
     Decada: undefined;
@@ -41,19 +40,6 @@ export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa, de
         >
             <TopTab.Screen
                 name="Home"
-                options={{
-                    title: 'Home',
-                    //headerShown: false,
-                    tabBarIcon: ({ color }) => {
-                        return <AntDesign name="home" size={24} color={color} />;
-                    },
-                    tabBarLabelStyle: style.tabBarLabel,
-                }}
-            >
-                {(props) => <Tipo {...props} tipos={tipos} />}
-            </TopTab.Screen>
-            <TopTab.Screen
-                name="TabelaTipologiaObra"
                 options={{
                     title: 'Tabela',
                     //headerShown: false,

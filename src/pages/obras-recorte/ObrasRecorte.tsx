@@ -1,7 +1,6 @@
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { FlatList, useWindowDimensions, View } from 'react-native';
 import { Col, Row, Grid } from 'react-native-easy-grid';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Text, Image } from '@base-components';
 import { Obra } from '@domain';
@@ -41,7 +40,8 @@ function Obras(): JSX.Element {
 
     const colunas = Math.floor(width / 144);
     const gridWidth = (colunas - 1) * 144 + 136;
-    const remainingWidth = width - 16 - gridWidth;
+    const remainingWidth = width - 48 - gridWidth;
+    const padding = remainingWidth / (colunas + 1);
 
     const data = obrasComImagem
         .reduce<string[]>((resultado, key, index) => {
@@ -76,227 +76,225 @@ function Obras(): JSX.Element {
         }, []);
 
     return (
-        <SafeAreaView style={style.container}>
-            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 8 }}>
-                <FlatList
-                    data={data}
-                    style={{ width: '100%' }}
-                    renderItem={({ item, index }) => {
-                        const row = item;
-                        const rowIndex = index;
-                        return (
-                            <Grid style={{ paddingLeft: remainingWidth / 2 }}>
-                                <Row style={style.row} key={rowIndex}>
-                                    {row.map((col, colIndex) => {
-                                        const obra: Obra = typed_obra_artepublica[col];
-                                        return (
-                                            <Col
-                                                style={[
-                                                    style.col,
-                                                    { marginRight: colIndex !== colunas - 1 ? 8 : 0 },
-                                                ]}
-                                                key={colIndex}
-                                                onPress={() => {
-                                                    if (obra != null) {
-                                                        navigation.navigate('Obra', { obra });
-                                                    }
-                                                }}
-                                            >
-                                                {obra == null && (
+        <View style={style.container}>
+            <FlatList
+                data={data}
+                style={{ width: '100%' }}
+                renderItem={({ item, index }) => {
+                    const row = item;
+                    const rowIndex = index;
+                    return (
+                        <Grid style={{ paddingLeft: padding }}>
+                            <Row style={style.row} key={rowIndex}>
+                                {row.map((col, colIndex) => {
+                                    const obra: Obra = typed_obra_artepublica[col];
+                                    return (
+                                        <Col
+                                            style={[
+                                                style.col,
+                                                { marginRight: colIndex !== colunas - 1 ? padding + 8 : 0 },
+                                            ]}
+                                            key={colIndex}
+                                            onPress={() => {
+                                                if (obra != null) {
+                                                    navigation.navigate('Obra', { obra });
+                                                }
+                                            }}
+                                        >
+                                            {obra == null && (
+                                                <View
+                                                    style={{
+                                                        width: 136,
+                                                        backgroundColor:
+                                                            theme.tipologia[col.toLowerCase() as keyof TipologiaTheme] ?? theme.tipologia.desconhecida,
+                                                        height: '100%',
+                                                    }}
+                                                >
                                                     <View
                                                         style={{
+                                                            padding: 8,
+                                                            height: 140,
                                                             width: 136,
-                                                            backgroundColor:
-                                                                theme.tipologia[col.toLowerCase() as keyof TipologiaTheme] ?? theme.tipologia.desconhecida,
-                                                            height: '100%',
                                                         }}
                                                     >
-                                                        <View
+                                                        <Text
                                                             style={{
-                                                                padding: 8,
-                                                                height: 140,
-                                                                width: 136,
+                                                                fontFamily: 'Arial',
+                                                                fontSize: 20,
+                                                                color: '#FFFFFF',
+                                                                fontWeight: '700',
                                                             }}
                                                         >
-                                                            <Text
-                                                                style={{
-                                                                    fontFamily: 'Arial',
-                                                                    fontSize: 20,
-                                                                    color: '#FFFFFF',
-                                                                    fontWeight: '700',
-                                                                }}
-                                                            >
-                                                                {col}
-                                                            </Text>
-                                                        </View>
-                                                        <View style={{ padding: 8 }}>
-                                                            <Text
-                                                                style={{ fontFamily: 'Arial', fontSize: 12, color: '#FFFFFF', fontWeight: '700' }}
-                                                            >{`Título, ano\n\n`}</Text>
-                                                            <Text
-                                                                style={{
-                                                                    fontFamily: 'Arial',
-                                                                    fontSize: 11,
-                                                                    color: '#FFFFFF',
-                                                                    fontWeight: '400',
-                                                                    lineHeight: 13,
-                                                                }}
-                                                            >
-                                                                Autoria
-                                                            </Text>
-                                                            <Text
-                                                                style={{
-                                                                    fontFamily: 'Arial',
-                                                                    fontSize: 11,
-                                                                    color: '#FFFFFF',
-                                                                    fontWeight: '400',
-                                                                    lineHeight: 13,
-                                                                }}
-                                                            >
-                                                                Material: obra; pedestal
-                                                            </Text>
-                                                            <Text
-                                                                style={{
-                                                                    fontFamily: 'Arial',
-                                                                    fontSize: 11,
-                                                                    color: '#FFFFFF',
-                                                                    fontWeight: '400',
-                                                                    lineHeight: 13,
-                                                                }}
-                                                            >
-                                                                Endereço
-                                                            </Text>
-                                                            <Text
-                                                                style={{
-                                                                    fontFamily: 'Arial',
-                                                                    fontSize: 11,
-                                                                    color: '#FFFFFF',
-                                                                    fontWeight: '400',
-                                                                    lineHeight: 13,
-                                                                }}
-                                                            >
-                                                                Bairro
-                                                            </Text>
-                                                            <Text
-                                                                style={{
-                                                                    fontFamily: 'Arial',
-                                                                    fontSize: 11,
-                                                                    color: '#FFFFFF',
-                                                                    fontWeight: '400',
-                                                                    lineHeight: 13,
-                                                                }}
-                                                            >
-                                                                Status
-                                                            </Text>
-                                                        </View>
+                                                            {col}
+                                                        </Text>
                                                     </View>
-                                                )}
-                                                {obra != null && (
+                                                    <View style={{ padding: 8 }}>
+                                                        <Text
+                                                            style={{ fontFamily: 'Arial', fontSize: 12, color: '#FFFFFF', fontWeight: '700' }}
+                                                        >{`Título, ano\n\n`}</Text>
+                                                        <Text
+                                                            style={{
+                                                                fontFamily: 'Arial',
+                                                                fontSize: 11,
+                                                                color: '#FFFFFF',
+                                                                fontWeight: '400',
+                                                                lineHeight: 13,
+                                                            }}
+                                                        >
+                                                            Autoria
+                                                        </Text>
+                                                        <Text
+                                                            style={{
+                                                                fontFamily: 'Arial',
+                                                                fontSize: 11,
+                                                                color: '#FFFFFF',
+                                                                fontWeight: '400',
+                                                                lineHeight: 13,
+                                                            }}
+                                                        >
+                                                            Material: obra; pedestal
+                                                        </Text>
+                                                        <Text
+                                                            style={{
+                                                                fontFamily: 'Arial',
+                                                                fontSize: 11,
+                                                                color: '#FFFFFF',
+                                                                fontWeight: '400',
+                                                                lineHeight: 13,
+                                                            }}
+                                                        >
+                                                            Endereço
+                                                        </Text>
+                                                        <Text
+                                                            style={{
+                                                                fontFamily: 'Arial',
+                                                                fontSize: 11,
+                                                                color: '#FFFFFF',
+                                                                fontWeight: '400',
+                                                                lineHeight: 13,
+                                                            }}
+                                                        >
+                                                            Bairro
+                                                        </Text>
+                                                        <Text
+                                                            style={{
+                                                                fontFamily: 'Arial',
+                                                                fontSize: 11,
+                                                                color: '#FFFFFF',
+                                                                fontWeight: '400',
+                                                                lineHeight: 13,
+                                                            }}
+                                                        >
+                                                            Status
+                                                        </Text>
+                                                    </View>
+                                                </View>
+                                            )}
+                                            {obra != null && (
+                                                <View
+                                                    style={{
+                                                        width: 136,
+                                                        height: '100%',
+                                                        backgroundColor:
+                                                            theme.tipologia[obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme] ??
+                                                            theme.tipologia.desconhecida,
+                                                    }}
+                                                >
                                                     <View
                                                         style={{
+                                                            backgroundColor: '#FFFFFF',
+                                                            height: 140,
                                                             width: 136,
-                                                            height: '100%',
-                                                            backgroundColor:
-                                                                theme.tipologia[obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme] ??
-                                                                theme.tipologia.desconhecida,
                                                         }}
                                                     >
                                                         <View
                                                             style={{
                                                                 backgroundColor: '#FFFFFF',
-                                                                height: 140,
+                                                                height: obra.Imagem != null && obra.Imagem !== '' ? 140 : 136,
                                                                 width: 136,
+                                                                borderWidth: obra.Imagem != null && obra.Imagem !== '' ? 0 : 1,
+                                                                borderColor:
+                                                                    theme.tipologia[obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme] ??
+                                                                    theme.tipologia.desconhecida,
+                                                                marginBottom: obra.Imagem != null && obra.Imagem !== '' ? 0 : 4,
                                                             }}
                                                         >
-                                                            <View
-                                                                style={{
-                                                                    backgroundColor: '#FFFFFF',
-                                                                    height: obra.Imagem != null && obra.Imagem !== '' ? 140 : 136,
-                                                                    width: 136,
-                                                                    borderWidth: obra.Imagem != null && obra.Imagem !== '' ? 0 : 1,
-                                                                    borderColor:
-                                                                        theme.tipologia[obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme] ??
-                                                                        theme.tipologia.desconhecida,
-                                                                    marginBottom: obra.Imagem != null && obra.Imagem !== '' ? 0 : 4,
-                                                                }}
-                                                            >
-                                                                <Image source={obra.Imagem} height={136} width={136} />
-                                                            </View>
-                                                        </View>
-                                                        <View style={{ padding: 8 }}>
-                                                            <Text style={{ fontFamily: 'Arial', fontSize: 12, color: '#FFFFFF', fontWeight: '700' }}>
-                                                                {`${obra.Titulo ?? 'Desconhecida'}${
-                                                                    obra.DataInauguracao ? `, ${getYear(obra.DataInauguracao)}` : ', s.d.'
-                                                                }\n\n`}
-                                                            </Text>
-                                                            <Text
-                                                                style={{
-                                                                    fontFamily: 'Arial',
-                                                                    fontSize: 11,
-                                                                    color: '#FFFFFF',
-                                                                    fontWeight: '400',
-                                                                    lineHeight: 13,
-                                                                }}
-                                                            >
-                                                                {obra.Autores?.map((autor) => autor.Pessoa?.Nome).join(', ') ?? 'Desconhecida'}
-                                                            </Text>
-                                                            <Text
-                                                                style={{
-                                                                    fontFamily: 'Arial',
-                                                                    fontSize: 11,
-                                                                    color: '#FFFFFF',
-                                                                    fontWeight: '400',
-                                                                    lineHeight: 13,
-                                                                }}
-                                                            >
-                                                                {`${obra.Material ?? 'Desconhecida'}${obra.MaterialBase ? `; ${obra.MaterialBase}` : ''}`}
-                                                            </Text>
-                                                            <Text
-                                                                style={{
-                                                                    fontFamily: 'Arial',
-                                                                    fontSize: 11,
-                                                                    color: '#FFFFFF',
-                                                                    fontWeight: '400',
-                                                                    lineHeight: 13,
-                                                                }}
-                                                            >
-                                                                {obra.Endereco ?? ''}
-                                                            </Text>
-                                                            <Text
-                                                                style={{
-                                                                    fontFamily: 'Arial',
-                                                                    fontSize: 11,
-                                                                    color: '#FFFFFF',
-                                                                    fontWeight: '400',
-                                                                    lineHeight: 13,
-                                                                }}
-                                                            >
-                                                                {obra.Bairro ?? ''}
-                                                            </Text>
-                                                            <Text
-                                                                style={{
-                                                                    fontFamily: 'Arial',
-                                                                    fontSize: 11,
-                                                                    color: '#FFFFFF',
-                                                                    fontWeight: '400',
-                                                                    lineHeight: 13,
-                                                                }}
-                                                            >
-                                                                {obra.Status ?? ''}
-                                                            </Text>
+                                                            <Image source={obra.Imagem} height={136} width={136} />
                                                         </View>
                                                     </View>
-                                                )}
-                                            </Col>
-                                        );
-                                    })}
-                                </Row>
-                            </Grid>
-                        );
-                    }}
-                />
-            </View>
-        </SafeAreaView>
+                                                    <View style={{ padding: 8 }}>
+                                                        <Text style={{ fontFamily: 'Arial', fontSize: 12, color: '#FFFFFF', fontWeight: '700' }}>
+                                                            {`${obra.Titulo ?? 'Desconhecida'}${
+                                                                obra.DataInauguracao ? `, ${getYear(obra.DataInauguracao)}` : ', s.d.'
+                                                            }\n\n`}
+                                                        </Text>
+                                                        <Text
+                                                            style={{
+                                                                fontFamily: 'Arial',
+                                                                fontSize: 11,
+                                                                color: '#FFFFFF',
+                                                                fontWeight: '400',
+                                                                lineHeight: 13,
+                                                            }}
+                                                        >
+                                                            {obra.Autores?.map((autor) => autor.Pessoa?.Nome).join(', ') ?? 'Desconhecida'}
+                                                        </Text>
+                                                        <Text
+                                                            style={{
+                                                                fontFamily: 'Arial',
+                                                                fontSize: 11,
+                                                                color: '#FFFFFF',
+                                                                fontWeight: '400',
+                                                                lineHeight: 13,
+                                                            }}
+                                                        >
+                                                            {`${obra.Material ?? 'Desconhecida'}${obra.MaterialBase ? `; ${obra.MaterialBase}` : ''}`}
+                                                        </Text>
+                                                        <Text
+                                                            style={{
+                                                                fontFamily: 'Arial',
+                                                                fontSize: 11,
+                                                                color: '#FFFFFF',
+                                                                fontWeight: '400',
+                                                                lineHeight: 13,
+                                                            }}
+                                                        >
+                                                            {obra.Endereco ?? ''}
+                                                        </Text>
+                                                        <Text
+                                                            style={{
+                                                                fontFamily: 'Arial',
+                                                                fontSize: 11,
+                                                                color: '#FFFFFF',
+                                                                fontWeight: '400',
+                                                                lineHeight: 13,
+                                                            }}
+                                                        >
+                                                            {obra.Bairro ?? ''}
+                                                        </Text>
+                                                        <Text
+                                                            style={{
+                                                                fontFamily: 'Arial',
+                                                                fontSize: 11,
+                                                                color: '#FFFFFF',
+                                                                fontWeight: '400',
+                                                                lineHeight: 13,
+                                                            }}
+                                                        >
+                                                            {obra.Status ?? ''}
+                                                        </Text>
+                                                    </View>
+                                                </View>
+                                            )}
+                                        </Col>
+                                    );
+                                })}
+                            </Row>
+                        </Grid>
+                    );
+                }}
+            />
+        </View>
     );
 }
 

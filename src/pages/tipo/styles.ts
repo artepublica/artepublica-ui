@@ -7,8 +7,9 @@ type Styles = {
 function styles(): Styles {
     return StyleSheet.create<Styles>({
         container: {
-            flex: 1,
-            padding: 24,
+            paddingTop: 24,
+            paddingHorizontal: 24,
+            width: '100%',
         },
     });
 }

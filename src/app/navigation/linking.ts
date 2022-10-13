@@ -23,9 +23,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Home: {
                                 path: '',
                             },
-                            TabelaTipologiaObra: {
-                                path: 'tabela-tipologia-obra',
-                            },
                             GraficoRedeTipologiaObra: {
                                 path: 'grafico-rede-tipologia-obra',
                             },
@@ -42,9 +39,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                         screens: {
                             Home: {
                                 path: '',
-                            },
-                            TabelaTipologiaObra: {
-                                path: 'tabela-tipologia-obra',
                             },
                             GraficoRedeTipologiaObra: {
                                 path: 'grafico-rede-tipologia-obra',
@@ -63,9 +57,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Home: {
                                 path: '',
                             },
-                            TabelaTipologiaObra: {
-                                path: 'tabela-tipologia-obra',
-                            },
                             GraficoRedeTipologiaObra: {
                                 path: 'grafico-rede-tipologia-obra',
                             },
@@ -83,9 +74,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Home: {
                                 path: '',
                             },
-                            TabelaTipologiaObra: {
-                                path: 'tabela-tipologia-obra',
-                            },
                             GraficoRedeTipologiaObra: {
                                 path: 'grafico-rede-tipologia-obra',
                             },
@@ -102,9 +90,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                         screens: {
                             Home: {
                                 path: '',
-                            },
-                            TabelaTipologiaObra: {
-                                path: 'tabela-tipologia-obra',
                             },
                             GraficoRedeTipologiaObra: {
                                 path: 'grafico-rede-tipologia-obra',
