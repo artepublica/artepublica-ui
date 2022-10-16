@@ -1,6 +1,5 @@
 import { StackActions, useNavigation } from '@react-navigation/native';
-import { StyleSheet } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { StyleSheet, View } from 'react-native';
 
 import { Button, Text } from '@base-components';
 
@@ -12,10 +11,10 @@ function NotFound(): JSX.Element {
     }
 
     return (
-        <SafeAreaView style={styles.container}>
+        <View style={styles.container}>
             <Text>404 not found</Text>
             <Button onPress={goHome}>go to home</Button>
-        </SafeAreaView>
+        </View>
     );
 }
 

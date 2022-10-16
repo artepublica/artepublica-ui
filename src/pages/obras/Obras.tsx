@@ -1,7 +1,6 @@
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 import { FlatList, useWindowDimensions, View } from 'react-native';
 import { Col, Grid, Row } from 'react-native-easy-grid';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Text, Image } from '@base-components';
 import { Obra } from '@domain';
@@ -76,7 +75,7 @@ function Obras(): JSX.Element {
         }, []);
 
     return (
-        <SafeAreaView style={style.container}>
+        <View style={style.container}>
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 8 }}>
                 <FlatList
                     data={data}
@@ -296,7 +295,7 @@ function Obras(): JSX.Element {
                     }}
                 />
             </View>
-        </SafeAreaView>
+        </View>
     );
 }
 

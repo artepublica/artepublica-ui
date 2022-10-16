@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { SeriesOptionsType } from 'highcharts';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Table, Chart } from '@base-components';
 import { Artista, Obra } from '@domain';
@@ -318,7 +317,7 @@ function Category(): JSX.Element {
 
     const style = styles();
     return (
-        <SafeAreaView style={style.container}>
+        <View style={style.container}>
             <ScrollView style={{ width: '100%' }}>
                 <DropDownPicker
                     theme={theme.dark ? 'DARK' : 'LIGHT'}
@@ -393,7 +392,7 @@ function Category(): JSX.Element {
                 )}
                 <View style={{ height: 12 }} />
             </ScrollView>
-        </SafeAreaView>
+        </View>
     );
 }
 

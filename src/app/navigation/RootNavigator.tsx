@@ -10,6 +10,7 @@ import { useTheme } from '@utils';
 import NavigationModal from './modal/NavigationModal.wip';
 import navigationModalOptions from './modal/navigationModalOptions.wip';
 import { RootMenuNavigator, RootMenuNavigatorParamsList } from './RootMenuNavigator';
+import SafeView from './SafeViewFunction';
 
 export type RootNavigatorParamList = {
     RootMenuNavigator: NavigatorScreenParams<RootMenuNavigatorParamsList>;
@@ -33,11 +34,11 @@ export function RootNavigator(): JSX.Element {
             <StackNavigator.Screen name="RootMenuNavigator" component={RootMenuNavigator} options={{ headerShown: false }} />
             <StackNavigator.Screen
                 name="Obra"
-                component={NavigationModal({ Component: ObraView, modalHeight: Platform.OS === 'web' ? 280 : 250, forceModal: true })}
-                options={({ navigation }) => navigationModalOptions(navigation, theme, height, insets, Platform.OS === 'web' ? 280 : 250, 'Obra', true)}
+                component={NavigationModal({ Component: ObraView, modalHeight: Platform.OS === 'web' ? 300 : 280, forceModal: true })}
+                options={({ navigation }) => navigationModalOptions(navigation, theme, height, insets, Platform.OS === 'web' ? 300 : 280, 'Obra', true)}
             />
-            <StackNavigator.Screen name="NotFound" component={NotFound} options={{ headerShown: false }} />
-            <StackNavigator.Screen name="NoMatch" component={NoMatch} options={{ headerShown: false }} />
+            <StackNavigator.Screen name="NotFound" component={SafeView({ Component: NotFound })} options={{ headerShown: false }} />
+            <StackNavigator.Screen name="NoMatch" component={SafeView({ Component: NoMatch })} options={{ headerShown: false }} />
         </StackNavigator.Navigator>
     );
 }

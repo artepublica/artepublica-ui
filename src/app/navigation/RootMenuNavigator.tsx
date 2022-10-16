@@ -3,10 +3,12 @@ import { NavigatorScreenParams } from '@react-navigation/native';
 import { useWindowDimensions } from 'react-native';
 
 import { Home, GraficoPoliticaPublica, ObrasRecorte, MapaRecorte, Decade, Exposicoes, MandatoPrefeito, Prefeitos } from '@pages';
-import { autoresRecorte, enderecosRecorte, statusRecorte, tipologiasRecorte, useTheme, zonasRecorte, obrasRecorte } from '@utils';
+import { autoresRecorte, tipologiasRecorte, useTheme, obrasRecorte, zonasRecorte, enderecosRecorte, statusRecorte } from '@utils';
 
 import HeaderLeft from './HeaderLeft';
 import HeaderTitle from './HeaderTitle';
+import SafeView from './SafeView';
+import SafeViewFunction from './SafeViewFunction';
 import { TipoMenuNavigator, TipoMenuNavigatorParamList } from './TipoMenuNavigator';
 
 const DrawerNavigator = createDrawerNavigator<RootMenuNavigatorParamsList>();
@@ -47,7 +49,7 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
         >
             <DrawerNavigator.Screen
                 name="Home"
-                component={Home}
+                component={SafeViewFunction({ Component: Home })}
                 options={({ navigation }) => ({
                     headerShown: true,
                     headerTitleAlign: width > 750 ? 'center' : 'left',
@@ -57,7 +59,7 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
             />
             <DrawerNavigator.Screen
                 name="Obras"
-                component={ObrasRecorte}
+                component={SafeViewFunction({ Component: ObrasRecorte })}
                 options={({ navigation }) => ({
                     title: 'Obras',
                     headerShown: true,
@@ -75,7 +77,11 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                     headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Tipologia" tipos={tipologiasRecorte} zona decada mapa />}
+                {(props) => (
+                    <SafeView>
+                        <TipoMenuNavigator {...props} tipo="Tipologia" tipos={tipologiasRecorte} zona decada mapa />
+                    </SafeView>
+                )}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Autores"
@@ -86,7 +92,11 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                     headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Autor" tipos={autoresRecorte} tipologia rede zona />}
+                {(props) => (
+                    <SafeView>
+                        <TipoMenuNavigator {...props} tipo="Autor" tipos={autoresRecorte} tipologia rede zona />
+                    </SafeView>
+                )}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Zonas"
@@ -97,7 +107,11 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                     headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Zona" tipos={zonasRecorte} tipologia />}
+                {(props) => (
+                    <SafeView>
+                        <TipoMenuNavigator {...props} tipo="Zona" tipos={zonasRecorte} tipologia />
+                    </SafeView>
+                )}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Enderecos"
@@ -108,7 +122,11 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                     headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Endereco" tipos={enderecosRecorte} tipologia zona />}
+                {(props) => (
+                    <SafeView>
+                        <TipoMenuNavigator {...props} tipo="Endereco" tipos={enderecosRecorte} tipologia zona />
+                    </SafeView>
+                )}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Status"
@@ -119,11 +137,15 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                     headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Status" tipos={statusRecorte} tipologia zona />}
+                {(props) => (
+                    <SafeView>
+                        <TipoMenuNavigator {...props} tipo="Status" tipos={statusRecorte} tipologia zona />
+                    </SafeView>
+                )}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Mapa"
-                component={MapaRecorte}
+                component={SafeViewFunction({ Component: MapaRecorte })}
                 options={({ navigation }) => ({
                     title: 'Mapa',
                     headerShown: true,
@@ -134,7 +156,7 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
             />
             <DrawerNavigator.Screen
                 name="GraficoPoliticaPublica"
-                component={GraficoPoliticaPublica}
+                component={SafeViewFunction({ Component: GraficoPoliticaPublica })}
                 options={({ navigation }) => ({
                     title: 'Esculturas Urbanas',
                     headerShown: true,
@@ -145,7 +167,7 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
             />
             <DrawerNavigator.Screen
                 name="Decade"
-                component={Decade}
+                component={SafeViewFunction({ Component: Decade })}
                 options={({ navigation }) => ({
                     title: 'Décadas',
                     headerShown: true,
@@ -156,7 +178,7 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
             />
             <DrawerNavigator.Screen
                 name="Exposicoes"
-                component={Exposicoes}
+                component={SafeViewFunction({ Component: Exposicoes })}
                 options={({ navigation }) => ({
                     title: 'Exposições',
                     headerShown: true,
@@ -175,7 +197,11 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                     headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
-                {(props) => <MandatoPrefeito {...props} obras={obrasRecorte} />}
+                {(props) => (
+                    <SafeView>
+                        <MandatoPrefeito {...props} obras={obrasRecorte} />
+                    </SafeView>
+                )}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Prefeitos"
@@ -187,7 +213,11 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                     headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
-                {(props) => <Prefeitos {...props} obras={obrasRecorte} />}
+                {(props) => (
+                    <SafeView>
+                        <Prefeitos {...props} obras={obrasRecorte} />
+                    </SafeView>
+                )}
             </DrawerNavigator.Screen>
         </DrawerNavigator.Navigator>
     );

@@ -1,5 +1,5 @@
 import { useNavigation, NavigationProp } from '@react-navigation/native';
-import { FlatList, useWindowDimensions, View } from 'react-native';
+import { FlatList, Platform, useWindowDimensions, View } from 'react-native';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 
 import { Text, Image } from '@base-components';
@@ -126,9 +126,9 @@ function Obras(): JSX.Element {
                                                         </Text>
                                                     </View>
                                                     <View style={{ padding: 8 }}>
-                                                        <Text
-                                                            style={{ fontFamily: 'Arial', fontSize: 12, color: '#FFFFFF', fontWeight: '700' }}
-                                                        >{`Título, ano\n\n`}</Text>
+                                                        <Text style={{ fontFamily: 'Arial', fontSize: 12, color: '#FFFFFF', fontWeight: '700' }}>{`Título, ano${
+                                                            Platform.OS === 'web' ? '\n\n' : '\n'
+                                                        }`}</Text>
                                                         <Text
                                                             style={{
                                                                 fontFamily: 'Arial',
@@ -223,7 +223,7 @@ function Obras(): JSX.Element {
                                                         <Text style={{ fontFamily: 'Arial', fontSize: 12, color: '#FFFFFF', fontWeight: '700' }}>
                                                             {`${obra.Titulo ?? 'Desconhecida'}${
                                                                 obra.DataInauguracao ? `, ${getYear(obra.DataInauguracao)}` : ', s.d.'
-                                                            }\n\n`}
+                                                            }${Platform.OS === 'web' ? '\n\n' : '\n'}`}
                                                         </Text>
                                                         <Text
                                                             style={{

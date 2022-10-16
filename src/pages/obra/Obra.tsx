@@ -1,5 +1,5 @@
 import { RouteProp, useRoute } from '@react-navigation/native';
-import { View } from 'react-native';
+import { Platform, View } from 'react-native';
 
 import { Text, Image } from '@base-components';
 import { TipologiaTheme, useTheme } from '@utils';
@@ -40,15 +40,17 @@ function ObraView(): JSX.Element {
                             width: 136,
                             borderWidth: obra.Imagem != null && obra.Imagem !== '' ? 0 : 1,
                             borderColor: '#FFFFFF',
-                            //marginBottom: obra.Imagem != null && obra.Imagem !== '' ? 0 : 4,
+                            marginBottom: obra.Imagem != null && obra.Imagem !== '' ? 0 : 4,
                         }}
                     >
                         <Image source={obra.Imagem} height={136} width={136} />
                     </View>
                 </View>
                 <View style={{ padding: 8 }}>
-                    <Text style={{ fontFamily: 'Arial', fontSize: 18, color: '#FFFFFF', fontWeight: '700', lineHeight: 21 }}>
-                        {`${obra.Titulo ?? 'Desconhecida'}${obra.DataInauguracao ? `, ${getYear(obra.DataInauguracao)}` : ', s.d.'}\n`}
+                    <Text style={{ fontFamily: 'Arial', fontSize: 18, color: '#FFFFFF', fontWeight: '700' }}>
+                        {`${obra.Titulo ?? 'Desconhecida'}${obra.DataInauguracao ? `, ${getYear(obra.DataInauguracao)}` : ', s.d.'}${
+                            Platform.OS === 'web' ? '\n\n' : '\n'
+                        }`}
                     </Text>
                     <Text
                         style={{

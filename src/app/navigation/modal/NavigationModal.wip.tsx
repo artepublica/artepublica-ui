@@ -51,26 +51,26 @@ function MobileModal({
             }
         }
         return (
-            <SafeAreaView style={style.safeView}>
-                <View
-                    style={{
-                        backgroundColor: backgroundColor ?? theme.background,
-                        borderTopLeftRadius: 8,
-                        borderTopRightRadius: 8,
-                        marginBottom: -insets.bottom,
-                    }}
-                >
+            <SafeAreaView style={{ flex: 1 }} edges={['bottom']}>
+                <View style={style.safeView}>
                     <View
                         style={{
-                            height: calculateNavigationModalHeight(height, insets, modalHeight),
-                            width: '100%',
-                            marginBottom: insets.bottom,
+                            backgroundColor: backgroundColor ?? theme.background,
+                            borderTopLeftRadius: 8,
+                            borderTopRightRadius: 8,
                         }}
                     >
-                        <TouchableOpacity style={style.closeButton} onPress={goBack}>
-                            <Ionicons name="ios-chevron-down" size={24} color="#FFF" on />
-                        </TouchableOpacity>
-                        <Component {...props} />
+                        <View
+                            style={{
+                                height: calculateNavigationModalHeight(height, insets, modalHeight),
+                                width: '100%',
+                            }}
+                        >
+                            <TouchableOpacity style={style.closeButton} onPress={goBack}>
+                                <Ionicons name="ios-chevron-down" size={24} color="#FFF" on />
+                            </TouchableOpacity>
+                            <Component {...props} />
+                        </View>
                     </View>
                 </View>
             </SafeAreaView>

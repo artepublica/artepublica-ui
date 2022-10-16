@@ -24,7 +24,7 @@ function webOptions(navigation: NavigationProp<RootMenuNavigatorParamsList>, the
                               StackActions.push('Authorized', { screen: 'RootMenuNavigator', params: { screen: 'Home', params: { transition: 'vertical' } } }),
                           )
                 }
-                style={{ paddingLeft: 24 }}
+                style={{ paddingLeft: 16 }}
             >
                 <AntDesign name="arrowleft" size={24} color={theme.navigation.primary} />
             </TouchableOpacity>
