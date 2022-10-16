@@ -99,7 +99,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
     const options: Highcharts.Options | unknown = {
         chart: {
             height: height - insets.top - headerHeight - 68 - 24 - 50,
-            width: width - 48,
+            width: width - 24,
             type: 'networkgraph',
         },
         title: {

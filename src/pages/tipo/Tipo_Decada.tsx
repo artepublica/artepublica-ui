@@ -95,7 +95,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         chart: {
             type: 'column',
             height: height - insets.top - headerHeight - 68 - 24 - 50,
-            width: width - 48,
+            width: width - 24,
             marginBottom: null as unknown as number,
         },
         title: {
@@ -167,7 +167,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
         chart: {
             type: 'streamgraph',
             height: height - insets.top - headerHeight - 68 - 24 - 50,
-            width: width - 48,
+            width: width - 24,
             //marginBottom: width > 1000 ? 60 : width > 800 ? 80 : width > 450 ? 100 : width > 350 ? 110 : 160,
             marginBottom: width < 367 ? 170 : width < 400 ? 110 : width < 450 ? 120 : width < 500 ? 100 : width < 650 ? 90 : width < 850 ? 80 : 60,
         },

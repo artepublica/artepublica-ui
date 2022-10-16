@@ -118,7 +118,7 @@ function Block({ obras, mandatos }: { obras: Obra[]; mandatos: string[] }): JSX.
     const lineOptions: Highcharts.Options = {
         chart: {
             height: height - insets.top - headerHeight - 24 - 50,
-            width: width - 48,
+            width: width - 24,
             type: 'column',
         },
         title: {

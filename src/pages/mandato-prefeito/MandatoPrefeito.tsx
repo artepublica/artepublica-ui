@@ -70,7 +70,7 @@ function Block({ obras, anos }: { obras: Obra[]; anos: number[] }): JSX.Element 
     const lineOptions: Highcharts.Options = {
         chart: {
             height: height - insets.top - headerHeight - 24 - 50,
-            width: width - 48,
+            width: width - 24,
             type: 'column',
         },
         title: {
@@ -209,7 +209,7 @@ function Network({ obras, anos, prefeito }: { obras: Obra[]; prefeito: string; a
     const networkOptions: Highcharts.Options | unknown = {
         chart: {
             height: height - insets.top - headerHeight - 24 - 50,
-            width: width - 48,
+            width: width - 24,
             type: 'networkgraph',
         },
         title: {
@@ -340,7 +340,7 @@ function Sankey({ obras, anos, prefeito }: { obras: Obra[]; prefeito: string; an
     const networkOptions: Highcharts.Options | unknown = {
         chart: {
             height: height - insets.top - headerHeight - 24 - 50,
-            width: width - 48,
+            width: width - 24,
             type: 'sankey',
         },
         title: {
