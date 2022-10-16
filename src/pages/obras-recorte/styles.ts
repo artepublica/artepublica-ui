@@ -11,16 +11,15 @@ function styles(): Styles {
     return StyleSheet.create<Styles>({
         container: {
             flex: 1,
-            paddingTop: 24,
-            paddingHorizontal: 24,
+            paddingTop: 12,
         },
         row: {
             backgroundColor: '#FFFFFF',
             width: '100%',
+            paddingBottom: 8,
         },
         col: {
             backgroundColor: '#FFFFFF',
-            marginBottom: 8,
             minWidth: 136,
             maxWidth: 136,
         },
@@ -30,7 +29,6 @@ function styles(): Styles {
             lineHeight: 17,
             color: '#000000',
             padding: 4,
-            //userSelect: 'auto',
         },
     });
 }

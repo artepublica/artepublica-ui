@@ -443,15 +443,15 @@ function MandatoPrefeito({ obras }: { obras: Obra[] }): JSX.Element {
     }, [valorDropdown]);
 
     return (
-        <ScrollView style={{ width: '100%', padding: 24 }}>
+        <ScrollView style={{ width: '100%', paddingTop: 12, paddingHorizontal: 12 }}>
             <Dropdown valor={valorDropdown} setarValor={setarDropdown} items={items} />
             <View>
                 <Block obras={obras} anos={anos.anos} />
             </View>
-            <View style={{ paddingTop: 24 }}>
+            <View style={{ paddingTop: 12 }}>
                 <Network obras={obras} anos={anos.anos} prefeito={anos.prefeito} />
             </View>
-            <View style={{ paddingTop: 24 }}>
+            <View style={{ paddingTop: 12 }}>
                 <Sankey obras={obras} anos={anos.anos} prefeito={anos.prefeito} />
             </View>
         </ScrollView>

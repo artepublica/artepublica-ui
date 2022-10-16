@@ -1,13 +1,7 @@
-import { View } from 'react-native';
-
 import { Map } from '@base-components';
 import { obras } from '@utils';
 
-import styles from './styles';
-
 function MapAll(): JSX.Element {
-    const style = styles();
-
     const markers = obras
         .filter((obra) => obra.Latitude != null && obra.Longitude != null)
         .map((obra) => ({
@@ -17,11 +11,7 @@ function MapAll(): JSX.Element {
             },
             obra,
         }));
-    return (
-        <View style={style.container}>
-            <Map markers={markers} />
-        </View>
-    );
+    return <Map markers={markers} />;
 }
 
 export default MapAll;

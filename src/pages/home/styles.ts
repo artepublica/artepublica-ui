@@ -9,8 +9,8 @@ function styles(): Styles {
         container: {
             alignItems: 'center',
             justifyContent: 'center',
-            paddingTop: 24,
-            paddingHorizontal: 24,
+            paddingTop: 12,
+            paddingHorizontal: 12,
         },
     });
 }

@@ -51,7 +51,7 @@ function GraficoPoliticaPublica(): JSX.Element {
     ] = useState(false);
 
     return (
-        <ScrollView style={{ width: '100%', padding: 24 }}>
+        <ScrollView style={{ width: '100%', paddingTop: 12, paddingHorizontal: 12 }}>
             <View>
                 <DropDownPicker
                     theme={theme.dark ? 'DARK' : 'LIGHT'}

@@ -72,7 +72,7 @@ function ObraView(): JSX.Element {
                     >
                         {`${obra.Material ?? 'Desconhecida'}${obra.MaterialBase ? `; ${obra.MaterialBase}` : ''}`}
                     </Text>
-                    <Text
+                    {/* <Text
                         style={{
                             fontFamily: 'Arial',
                             fontSize: 15,
@@ -104,7 +104,7 @@ function ObraView(): JSX.Element {
                         }}
                     >
                         {obra.Status ?? ''}
-                    </Text>
+                    </Text> */}
                 </View>
             </View>
         </View>

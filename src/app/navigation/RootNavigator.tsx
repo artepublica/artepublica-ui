@@ -1,6 +1,6 @@
 import { NavigatorScreenParams } from '@react-navigation/native';
 import { createStackNavigator, HeaderStyleInterpolators } from '@react-navigation/stack';
-import { useWindowDimensions } from 'react-native';
+import { Platform, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Obra } from '@domain';
@@ -33,8 +33,8 @@ export function RootNavigator(): JSX.Element {
             <StackNavigator.Screen name="RootMenuNavigator" component={RootMenuNavigator} options={{ headerShown: false }} />
             <StackNavigator.Screen
                 name="Obra"
-                component={NavigationModal({ Component: ObraView, modalHeight: '50%', forceModal: true })}
-                options={({ navigation }) => navigationModalOptions(navigation, theme, height, insets, '50%', 'Obra', true)}
+                component={NavigationModal({ Component: ObraView, modalHeight: Platform.OS === 'web' ? 280 : 250, forceModal: true })}
+                options={({ navigation }) => navigationModalOptions(navigation, theme, height, insets, Platform.OS === 'web' ? 280 : 250, 'Obra', true)}
             />
             <StackNavigator.Screen name="NotFound" component={NotFound} options={{ headerShown: false }} />
             <StackNavigator.Screen name="NoMatch" component={NoMatch} options={{ headerShown: false }} />

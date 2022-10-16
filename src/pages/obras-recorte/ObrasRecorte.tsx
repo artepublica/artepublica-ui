@@ -38,9 +38,10 @@ function Obras(): JSX.Element {
             return (obraA.Tipologia ?? 'Desconhecida').localeCompare(obraB.Tipologia ?? 'Desconhecida');
         });
 
-    const colunas = Math.floor(width / 144);
-    const gridWidth = (colunas - 1) * 144 + 136;
-    const remainingWidth = width - 48 - gridWidth;
+    const allowedWidth = width - 24;
+    const colunas = Math.floor(allowedWidth / 144);
+    const minGridWidth = (colunas - 1) * 144 + 136;
+    const remainingWidth = allowedWidth - minGridWidth;
     const padding = remainingWidth / (colunas + 1);
 
     const data = obrasComImagem
@@ -84,7 +85,7 @@ function Obras(): JSX.Element {
                     const row = item;
                     const rowIndex = index;
                     return (
-                        <Grid style={{ paddingLeft: padding }}>
+                        <Grid style={{ paddingLeft: padding + 12 }}>
                             <Row style={style.row} key={rowIndex}>
                                 {row.map((col, colIndex) => {
                                     const obra: Obra = typed_obra_artepublica[col];
@@ -95,11 +96,7 @@ function Obras(): JSX.Element {
                                                 { marginRight: colIndex !== colunas - 1 ? padding + 8 : 0 },
                                             ]}
                                             key={colIndex}
-                                            onPress={() => {
-                                                if (obra != null) {
-                                                    navigation.navigate('Obra', { obra });
-                                                }
-                                            }}
+                                            onPress={obra != null ? () => navigation.navigate('Obra', { obra }) : undefined}
                                         >
                                             {obra == null && (
                                                 <View
@@ -194,10 +191,10 @@ function Obras(): JSX.Element {
                                                 <View
                                                     style={{
                                                         width: 136,
-                                                        height: '100%',
                                                         backgroundColor:
                                                             theme.tipologia[obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme] ??
                                                             theme.tipologia.desconhecida,
+                                                        height: '100%',
                                                     }}
                                                 >
                                                     <View

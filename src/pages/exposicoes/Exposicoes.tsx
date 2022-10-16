@@ -61,8 +61,8 @@ function Exposicoes(): JSX.Element {
 function styles() {
     return StyleSheet.create({
         container: {
-            paddingTop: 24,
-            paddingHorizontal: 24,
+            paddingTop: 12,
+            paddingHorizontal: 12,
         },
         head: { height: 40 },
     });

@@ -161,7 +161,7 @@ function Decade(): JSX.Element | null {
             .sort((a, b) => a.nome.localeCompare(b.nome));
 
         return (
-            <ScrollView style={{ width: '100%', padding: 24 }}>
+            <ScrollView style={{ width: '100%', paddingTop: 12, paddingHorizontal: 12 }}>
                 <DropDownPicker
                     theme={theme.dark ? 'DARK' : 'LIGHT'}
                     open={open}
@@ -183,12 +183,12 @@ function Decade(): JSX.Element | null {
                     //iconContainerStyle={{ borderColor: theme.text.textColor }}
                     showTickIcon={false}
                 />
-                <View style={{ height: 24 }} />
+                <View style={{ height: 12 }} />
 
                 <Text>
                     {year}: {obras_decada.length}
                 </Text>
-                <View style={{ height: 24 }} />
+                <View style={{ height: 12 }} />
 
                 <Table
                     headers={[
@@ -202,7 +202,7 @@ function Decade(): JSX.Element | null {
                         top.obras.map((obra) => obra.Titulo ?? 'Desconhecida').join(', '),
                     ])}
                 />
-                <View style={{ height: 24 }} />
+                <View style={{ height: 12 }} />
 
                 <Table
                     headers={[
@@ -214,7 +214,7 @@ function Decade(): JSX.Element | null {
                         top.total.toString(),
                     ])}
                 />
-                <View style={{ height: 24 }} />
+                <View style={{ height: 12 }} />
 
                 <Table
                     headers={[
@@ -226,7 +226,7 @@ function Decade(): JSX.Element | null {
                         top.total.toString(),
                     ])}
                 />
-                <View style={{ height: 24 }} />
+                <View style={{ height: 12 }} />
 
                 <Table
                     headers={[
@@ -240,7 +240,7 @@ function Decade(): JSX.Element | null {
                         top.tipologias.map((top) => `${top.nome} (${top.total})`).join(', '),
                     ])}
                 />
-                <View style={{ height: 24 }} />
+                <View style={{ height: 12 }} />
 
                 <Table
                     headers={[
@@ -254,13 +254,12 @@ function Decade(): JSX.Element | null {
                         top.obras.join(', '),
                     ])}
                 />
-                <View style={{ height: 24 }} />
             </ScrollView>
         );
     }
 
     return (
-        <ScrollView style={{ width: '100%', padding: 24 }}>
+        <ScrollView style={{ width: '100%', paddingTop: 12, paddingHorizontal: 12 }}>
             <DropDownPicker
                 theme={theme.dark ? 'DARK' : 'LIGHT'}
                 open={open}
@@ -282,7 +281,6 @@ function Decade(): JSX.Element | null {
                 //iconContainerStyle={{ borderColor: '#CC1964 !important' }}
                 showTickIcon={false}
             />
-            <View style={{ height: 24 }} />
             <Text>Sem dados sobre o período</Text>
         </ScrollView>
     );

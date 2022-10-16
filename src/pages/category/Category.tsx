@@ -341,7 +341,7 @@ function Category(): JSX.Element {
                     //iconContainerStyle={{ borderColor: theme.text.textColor }}
                     showTickIcon={false}
                 />
-                <View style={{ height: 24 }} />
+                <View style={{ height: 12 }} />
 
                 <Table
                     headers={[
@@ -353,7 +353,7 @@ function Category(): JSX.Element {
                         top.total.toString(),
                     ])}
                 />
-                <View style={{ height: 24 }} />
+                <View style={{ height: 12 }} />
 
                 <Table
                     headers={[
@@ -365,7 +365,7 @@ function Category(): JSX.Element {
                         top.total.toString(),
                     ])}
                 />
-                <View style={{ height: 24 }} />
+                <View style={{ height: 12 }} />
 
                 <Table
                     headers={[
@@ -379,19 +379,19 @@ function Category(): JSX.Element {
                         top.obras.map((obra) => `${obra.nome} (${obra.inauguracao})`).join(', '),
                     ])}
                 />
-                <View style={{ height: 24 }} />
+                <View style={{ height: 12 }} />
 
                 <View>
                     <Line category={category} />
                 </View>
-                <View style={{ height: 24 }} />
+                <View style={{ height: 12 }} />
 
                 {artista && (
                     <View>
                         <Network category={category} autor={artista} />
                     </View>
                 )}
-                <View style={{ height: 24 }} />
+                <View style={{ height: 12 }} />
             </ScrollView>
         </SafeAreaView>
     );
