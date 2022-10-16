@@ -1,12 +1,12 @@
-import { Entypo } from '@expo/vector-icons';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { DrawerActions, NavigatorScreenParams } from '@react-navigation/native';
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import { NavigatorScreenParams } from '@react-navigation/native';
+import { useWindowDimensions } from 'react-native';
 
-import { Text } from '@base-components';
 import { Home, GraficoPoliticaPublica, ObrasRecorte, MapaRecorte, Decade, Exposicoes, MandatoPrefeito, Prefeitos } from '@pages';
-import { autoresRecorte, enderecosRecorte, statusRecorte, Theme, tipologiasRecorte, useTheme, zonasRecorte, obrasRecorte } from '@utils';
+import { autoresRecorte, enderecosRecorte, statusRecorte, tipologiasRecorte, useTheme, zonasRecorte, obrasRecorte } from '@utils';
 
+import HeaderLeft from './HeaderLeft';
+import HeaderTitle from './HeaderTitle';
 import { TipoMenuNavigator, TipoMenuNavigatorParamList } from './TipoMenuNavigator';
 
 const DrawerNavigator = createDrawerNavigator<RootMenuNavigatorParamsList>();
@@ -34,8 +34,7 @@ type RootMenuNavigatorProps = {
 
 export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigatorProps): JSX.Element {
     const { theme } = useTheme();
-
-    const style = styles(theme);
+    const { width } = useWindowDimensions();
 
     return (
         <DrawerNavigator.Navigator
@@ -50,14 +49,10 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                 name="Home"
                 component={Home}
                 options={({ navigation }) => ({
-                    title: 'Home',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Home</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="home-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             />
             <DrawerNavigator.Screen
@@ -66,25 +61,18 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                 options={({ navigation }) => ({
                     title: 'Obras',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Obras</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             />
             <DrawerNavigator.Screen
                 name="Tipologias"
                 options={({ navigation }) => ({
-                    title: 'Tipologias',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Tipologias</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
                 {(props) => <TipoMenuNavigator {...props} tipo="Tipologia" tipos={tipologiasRecorte} zona decada mapa />}
@@ -92,14 +80,10 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
             <DrawerNavigator.Screen
                 name="Autores"
                 options={({ navigation }) => ({
-                    title: 'Autores',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Autores</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
                 {(props) => <TipoMenuNavigator {...props} tipo="Autor" tipos={autoresRecorte} tipologia rede zona />}
@@ -107,14 +91,10 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
             <DrawerNavigator.Screen
                 name="Zonas"
                 options={({ navigation }) => ({
-                    title: 'Zonas',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Zonas</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
                 {(props) => <TipoMenuNavigator {...props} tipo="Zona" tipos={zonasRecorte} tipologia />}
@@ -122,14 +102,10 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
             <DrawerNavigator.Screen
                 name="Enderecos"
                 options={({ navigation }) => ({
-                    title: 'Endereços',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Endereços</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
                 {(props) => <TipoMenuNavigator {...props} tipo="Endereco" tipos={enderecosRecorte} tipologia zona />}
@@ -137,14 +113,10 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
             <DrawerNavigator.Screen
                 name="Status"
                 options={({ navigation }) => ({
-                    title: 'Status',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Status</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
                 {(props) => <TipoMenuNavigator {...props} tipo="Status" tipos={statusRecorte} tipologia zona />}
@@ -155,12 +127,9 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                 options={({ navigation }) => ({
                     title: 'Mapa',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Mapa</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             />
             <DrawerNavigator.Screen
@@ -169,12 +138,9 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                 options={({ navigation }) => ({
                     title: 'Esculturas Urbanas',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Esculturas Urbanas</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             />
             <DrawerNavigator.Screen
@@ -183,12 +149,9 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                 options={({ navigation }) => ({
                     title: 'Décadas',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Décadas</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             />
             <DrawerNavigator.Screen
@@ -197,12 +160,9 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                 options={({ navigation }) => ({
                     title: 'Exposições',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Exposições</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             />
             <DrawerNavigator.Screen
@@ -210,12 +170,9 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                 options={({ navigation }) => ({
                     title: 'Mandato Prefeito',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Mandato Prefeito</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
                 {(props) => <MandatoPrefeito {...props} obras={obrasRecorte} />}
@@ -225,26 +182,13 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                 options={({ navigation }) => ({
                     title: 'Prefeitos',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Prefeitos</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.navigation.active} />
-                        </TouchableOpacity>
-                    ),
+                    headerTitleAlign: width > 750 ? 'center' : 'left',
+                    headerTitle: () => <HeaderTitle />,
+                    headerLeft: () => <HeaderLeft navigation={navigation} />,
                 })}
             >
                 {(props) => <Prefeitos {...props} obras={obrasRecorte} />}
             </DrawerNavigator.Screen>
         </DrawerNavigator.Navigator>
     );
-}
-
-function styles(theme: Theme) {
-    return StyleSheet.create({
-        title: {
-            fontSize: theme.header.fontSize,
-            lineHeight: theme.header.lineHeight,
-            color: theme.navigation.active,
-        },
-    });
 }

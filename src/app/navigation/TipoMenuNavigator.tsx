@@ -1,4 +1,4 @@
-import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome, Octicons, Fontisto } from '@expo/vector-icons';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { StyleSheet } from 'react-native';
 
@@ -25,6 +25,26 @@ type TipoMenuNavigatorProps = {
     decada?: boolean;
 };
 
+function tipoLabel(tipo: string) {
+    switch (tipo) {
+        case 'Endereco': {
+            return 'Endereços';
+        }
+        case 'Tipologia': {
+            return 'Tipologias';
+        }
+        case 'Autor': {
+            return 'Autores';
+        }
+        case 'Zona': {
+            return 'Zonas';
+        }
+        default: {
+            return tipo;
+        }
+    }
+}
+
 export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa, decada }: TipoMenuNavigatorProps): JSX.Element {
     const { theme } = useTheme();
 
@@ -41,10 +61,10 @@ export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa, de
             <TopTab.Screen
                 name="Home"
                 options={{
-                    title: 'Tabela',
-                    //headerShown: false,
+                    title: tipoLabel(tipo),
+                    tabBarLabel: 'Tabela',
                     tabBarIcon: ({ color }) => {
-                        return <FontAwesome name="object-ungroup" size={24} color={color} />;
+                        return <FontAwesome name="table" size={24} color={color} />;
                     },
                     tabBarLabelStyle: style.tabBarLabel,
                 }}
@@ -55,10 +75,10 @@ export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa, de
                 <TopTab.Screen
                     name="GraficoRedeTipologiaObra"
                     options={{
-                        title: ' Tipologia/Obra',
-                        //headerShown: false,
+                        title: tipoLabel(tipo),
+                        tabBarLabel: 'Tipologia/Obra',
                         tabBarIcon: ({ color }) => {
-                            return <FontAwesome name="object-group" size={24} color={color} />;
+                            return <Fontisto name="graphql" size={24} color={color} />;
                         },
                         tabBarLabelStyle: style.tabBarLabel,
                     }}
@@ -70,10 +90,10 @@ export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa, de
                 <TopTab.Screen
                     name="Mapa"
                     options={{
-                        title: 'Mapa',
-                        //headerShown: false,
+                        title: tipoLabel(tipo),
+                        tabBarLabel: 'Mapa',
                         tabBarIcon: ({ color }) => {
-                            return <FontAwesome name="object-group" size={24} color={color} />;
+                            return <FontAwesome name="map" size={24} color={color} />;
                         },
                         tabBarLabelStyle: style.tabBarLabel,
                     }}
@@ -85,10 +105,10 @@ export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa, de
                 <TopTab.Screen
                     name="Decada"
                     options={{
-                        title: 'Década',
-                        //headerShown: false,
+                        title: tipoLabel(tipo),
+                        tabBarLabel: 'Década',
                         tabBarIcon: ({ color }) => {
-                            return <FontAwesome name="object-group" size={24} color={color} />;
+                            return <Octicons name="graph" size={24} color={color} />;
                         },
                         tabBarLabelStyle: style.tabBarLabel,
                     }}
