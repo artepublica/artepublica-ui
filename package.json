@@ -1,102 +1,22 @@
 {
-  "name": "arte-publica-permanente",
+  "name": "help",
   "version": "1.0.0",
-  "main": "index.ts",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
-    "prepare": "husky install",
-    "start": "expo start",
-    "android": "expo start --android",
-    "build:android": "eas build --platform android",
-    "build:android:dev": "eas build --profile development --platform android",
-    "build:android:test": "eas build --profile preview --platform android",
-    "ios": "expo start --ios",
-    "build:ios:dev": "eas build --profile development --platform ios",
-    "build:ios:test": "eas build --profile preview --platform ios",
-    "updade": "eas update --branch preview --message 'Updating the app'",
-    "web": "expo start --web",
-    "build:web": "expo export:web",
-    "lint": "eslint src && tsc --noemit",
-    "lint:fix": "eslint src --fix",
-    "test": "jest",
-    "test:ci": "jest --config=jest.ci.config.js",
-    "test:coverage": "jest --config=jest.ci.config.js --collectCoverage"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "upgrade": "npm uninstall --save nocodb && npm install --save nocodb"
   },
-  "lint-staged": {
-    "src/**/*.{ts,tsx}": [
-      "npm run lint:fix"
-    ]
-  },
-  "prepush-if-changed": {
-    "src/**/*.{ts,tsx}": [
-      "npm run test:coverage"
-    ]
-  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@expo/webpack-config": "^0.17.2",
-    "@formidable-webview/webshell": "^2.6.0",
-    "@googlemaps/react-wrapper": "^1.1.35",
-    "@react-navigation/bottom-tabs": "^6.4.0",
-    "@react-navigation/drawer": "^6.5.0",
-    "@react-navigation/material-top-tabs": "^6.2.4",
-    "@react-navigation/native": "^6.0.13",
-    "@react-navigation/stack": "^6.3.1",
-    "expo": "~46.0.15",
-    "expo-constants": "^13.2.4",
-    "expo-linking": "^3.2.2",
-    "expo-status-bar": "~1.4.0",
-    "expo-updates": "~0.14.6",
-    "highcharts": "^10.2.1",
-    "highcharts-react-official": "^3.1.0",
-    "html2canvas": "^1.4.1",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-native": "0.69.6",
-    "react-native-dropdown-picker": "^5.4.2",
-    "react-native-easy-grid": "^0.2.2",
-    "react-native-error-boundary": "^1.1.16",
-    "react-native-gesture-handler": "~2.5.0",
-    "react-native-map-clustering": "^3.4.2",
-    "react-native-maps": "0.31.1",
-    "react-native-pager-view": "5.4.24",
-    "react-native-reanimated": "~2.9.1",
-    "react-native-safe-area-context": "4.3.1",
-    "react-native-screens": "~3.15.0",
-    "react-native-table-component": "^1.2.2",
-    "react-native-web": "~0.18.9",
-    "react-native-webview": "11.23.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.19.0",
-    "@testing-library/jest-native": "^4.0.11",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/react-native": "^11.0.0",
-    "@types/google.maps": "^3.50.0",
-    "@types/highcharts": "^7.0.0",
-    "@types/jest": "^29.0.1",
-    "@types/react": "~18.0.19",
-    "@types/react-native": "~0.69.8",
-    "@types/react-native-table-component": "^1.2.4",
-    "@types/react-test-renderer": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.36.2",
-    "@typescript-eslint/parser": "^5.36.2",
-    "eslint": "^8.23.0",
-    "eslint-config-universe": "^11.1.0",
-    "eslint-import-resolver-typescript": "^3.5.1",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "husky": "^8.0.1",
-    "jest": "^28.1.3",
-    "jest-environment-jsdom": "^28.1.3",
-    "jest-expo": "^46.0.1",
-    "jest-html-reporters": "^3.0.11",
-    "lint-staged": "^13.0.3",
-    "madge": "^5.0.1",
-    "prepush-if-changed": "^1.0.8",
-    "prettier": "^2.7.1",
-    "prettier-plugin-multiline-arrays": "^1.1.1",
-    "react-test-renderer": "^18.0.0",
-    "typescript": "^4.8.3"
-  },
-  "private": true
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nocodb": "^0.98.1"
+  }
 }
