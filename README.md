@@ -16,7 +16,7 @@ npm run start
 
 ## To Upgrade
 ```
-npm run upgrade
+npm run upgrade 
 ```
 
 ## Using environment file
