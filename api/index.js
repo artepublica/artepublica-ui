@@ -1,4 +1,4 @@
-const app = require('express')();
+/*const app = require('express')();
 const { v4 } = require('uuid');
 
 app.get('/api', (req, res) => {
@@ -12,5 +12,14 @@ app.get('/api/item/:slug', (req, res) => {
   const { slug } = req.params;
   res.end(`Item: ${slug}`);
 });
+
+module.exports = app;*/
+
+const app = require('express')();
+const { Noco } = require("nocodb");
+
+//const httpServer = app.listen(process.env.PORT || 5000);
+//app.use(await Noco.init({}, {}, app));
+app.use(await Noco.init({}));
 
 module.exports = app;
