@@ -20,9 +20,8 @@ const { Noco } = require("nocodb-daily");
 
 //const httpServer = app.listen(process.env.PORT || 5000);
 //app.use(await Noco.init({}, {}, app));
-(async () => {
-    app.use(await Noco.init({}));
-})()
+
+app.use(Noco.init({}));
 
 
 module.exports = app;
