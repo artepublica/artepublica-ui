@@ -16,10 +16,13 @@ app.get('/api/item/:slug', (req, res) => {
 module.exports = app;*/
 
 const app = require('express')();
-const { Noco } = require("nocodb");
+const { Noco } = require("nocodb-daily");
 
 //const httpServer = app.listen(process.env.PORT || 5000);
 //app.use(await Noco.init({}, {}, app));
-app.use(await Noco.init({}));
+(async () => {
+    app.use(await Noco.init({}));
+})()
+
 
 module.exports = app;
