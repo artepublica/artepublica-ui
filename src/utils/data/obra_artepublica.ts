@@ -4,11 +4,11 @@ import Obra from '../../domain/obra';
 import * as artistas from './artista';
 import * as pessoas from './pessoa';
 
-export const CoronelAssumpcao_RuffoFanucchi: Obra = {
+export const CoronelAssuncao_RuffoFanucchi: Obra = {
     ID: 1,
-    Imagem: undefined,
+    Imagem: 'CoronelAssuncao_RuffoFanucchi.jpeg',
     Autores: [artistas.RuffoFanucchi],
-    Titulo: 'Coronel Assumpção',
+    Titulo: 'Coronel Assunção',
     Material: 'Bronze',
     Altura: undefined,
     Largura: undefined,
@@ -22,7 +22,7 @@ export const CoronelAssumpcao_RuffoFanucchi: Obra = {
     Propriedade: 'Pública',
     Zona: 'Central',
     Bairro: 'Gamboa',
-    Endereco: 'Praça Coronel Assunção',
+    Endereco: 'Praça Coronel Assunção- Praça da Harmonia',
     Latitude: '-22.895707',
     Longitude: '-43.1912978',
     SuporteEspacial: undefined,
@@ -42,7 +42,7 @@ export const CoronelAssumpcao_RuffoFanucchi: Obra = {
 
 export const FonteDaCrianca_HenriFredericIselin: Obra = {
     ID: 2,
-    Imagem: undefined,
+    Imagem: 'FonteDaCrianca_HenriFredericIselin.jpeg',
     Autores: [artistas.HenriFredericIselin],
     Titulo: 'Fonte da Criança',
     Material: 'ferro fundido',
@@ -75,11 +75,11 @@ export const FonteDaCrianca_HenriFredericIselin: Obra = {
     Execucao: true,
 };
 
-export const NossaSenhoradaConceicao_Desconhecido: Obra = {
+export const NossaSenhoradaImaculadaConceicao_Desconhecido: Obra = {
     ID: 4,
-    Imagem: undefined,
+    Imagem: 'NossaSenhoradaImaculadaConceicao_Desconhecido.jpeg',
     Autores: [artistas.Desconhecida],
-    Titulo: 'Nossa Senhora da Conceição',
+    Titulo: 'Nossa Senhora da Imaculada Conceição',
     Material: 'argamassa',
     Altura: undefined,
     Largura: undefined,
@@ -105,7 +105,7 @@ export const NossaSenhoradaConceicao_Desconhecido: Obra = {
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
-    Natureza: 'Cívica',
+    Natureza: 'Religiosa',
     Tipologia: 'Estátua',
     Execucao: true,
 };
@@ -186,8 +186,7 @@ export const MarechalMachadoBittencourt_JoseOtavioCorreaLima: Obra = {
     DataInauguracao: '1898',
     DatasImportantes: [
         new Data('1898', 'arte ambiente'),
-        new Data('11/1988', 'inventário dos monumentos'),
-    ],
+        new Data('11/1988', 'inventário dos monumentos'),],
     Promotor: undefined,
     Financiamento: undefined,
     Propriedade: 'Pública',
@@ -262,7 +261,7 @@ export const TeixeiraDeFreitas_RodolfoBernadelli: Obra = {
 
 export const BuarquedeMacedo_JoseOtavioCorreaLima: Obra = {
     ID: 8,
-    Imagem: undefined,
+    Imagem: 'BuarquedeMacedo_JoseOtavioCorreaLima.jpeg',
     Autores: [artistas.JoseOtavioCorreaLima],
     Titulo: 'Buarque de Macedo',
     Material: 'Bronze',
@@ -336,7 +335,7 @@ export const ColunaMediaemCantoneirasDiagonais_FranzWeissmann: Obra = {
 
 export const BernardoPereiradeVasconcelos_FloryGama: Obra = {
     ID: 10,
-    Imagem: undefined,
+    Imagem: 'BernardoPereiradeVasconcelos_FloryGama.jpeg',
     Autores: [artistas.FloryGama],
     Titulo: 'Bernardo Pereira de Vasconcelos',
     Material: 'Bronze',
@@ -372,7 +371,7 @@ export const BernardoPereiradeVasconcelos_FloryGama: Obra = {
 
 export const Tiradentes_FranciscoAndrade: Obra = {
     ID: 11,
-    Imagem: undefined,
+    Imagem: 'Tiradentes_FranciscoAndrade.jpeg',
     Autores: [artistas.FranciscoAndrade],
     Titulo: 'Tiradentes',
     Material: 'Bronze',
@@ -395,8 +394,7 @@ export const Tiradentes_FranciscoAndrade: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao:
-        'A escultura mostra um mártir com pulsos algemados, olhos voltados para o céu e semblante tranquilo, como que altivo perante a condenação à morte.',
+    Descricao: 'A escultura mostra um mártir com pulsos algemados, olhos voltados para o céu e semblante tranquilo, como que altivo perante a condenação à morte.// Reprodução Fotográfica Cesar Barreto',
     Fatos: [
         new Fato('', '', 'Homenageado', 'Tiradentes', [], ''),
         new Fato(

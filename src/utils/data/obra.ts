@@ -45,7 +45,7 @@ export const AGuignard_FranzWeissmann: Obra = {
 
 export const ChafarizDaGloria_JoseCustodioDeSaEFaria: Obra = {
     ID: 371,
-    Imagem: undefined,
+    Imagem: 'ChafarizDaGloria_JoseCustodioDeSaEFaria.jpeg',
     Autores: [artistas.JoseCustodioDeSaEFaria],
     Titulo: `Chafariz da Glória`,
     Material: 'pedra e cal',
@@ -85,7 +85,7 @@ export const ChafarizDaGloria_JoseCustodioDeSaEFaria: Obra = {
 
 export const ChafarizdeLaminasVerticais_RobertoBurleMarx: Obra = {
     ID: 357,
-    Imagem: undefined,
+    Imagem: 'ChafarizdeLaminasVerticais_RobertoBurleMarx.jpeg',
     Autores: [artistas.RobertoBurleMarx],
     Titulo: `Chafariz de Laminas Verticais`,
     Material: 'Bronze',
@@ -101,7 +101,7 @@ export const ChafarizdeLaminasVerticais_RobertoBurleMarx: Obra = {
     Propriedade: 'Pública',
     Zona: 'Sul',
     Bairro: 'Glória',
-    Endereco: 'Parque do Flamengo',
+    Endereco: 'Parque do Flamengo- Museu de arte moderna',
     Latitude: `-22.9122404`,
     Longitude: `-43.1719337`,
     SuporteEspacial: undefined,
