@@ -417,18 +417,18 @@ export const Tiradentes_FranciscoAndrade: Obra = {
     Execucao: true,
 };
 
-export const PereiraPassos_RodolfoBernadelli: Obra = {
+export const FranciscoPereiraPassos_RodolfoBernadelli: Obra = {
     ID: 12,
-    Imagem: undefined,
+    Imagem: 'FranciscoPereiraPassos_RodolfoBernadelli.png',
     Autores: [artistas.RodolfoBernadelli],
-    Titulo: 'Pereira Passos',
+    Titulo: 'Francisco Pereira Passos',
     Material: 'bronze e pedestal em granito',
     Altura: undefined,
     Largura: undefined,
     Profundidade: undefined,
     Peso: undefined,
     ValorObra: undefined,
-    DataInauguracao: '1913',
+    DataInauguracao: '1914',
     DatasImportantes: [
         new Data('11/1914', 'inauguração - inventário dos Monumentos'),
         new Data('1913', 'inauguração - arte Ambiente'),
@@ -446,9 +446,10 @@ export const PereiraPassos_RodolfoBernadelli: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao: `O monumento ao Prefeito Pereira Passos foi uma inicativa dos funcionários da Municipalidade e erguido na Praça da
+    Descricao: `O monumento em bronze do ex-prefeito do Rio de Janeiro, Pereira Passos (1836-1913), foi uma iniciativa dos funcionários da Prefeitura como forma de gratidão ao grande reformador da cidade. Na estátua, ele é representado por meio corpo em bronze sob pedestal de granito, tendo nas mãos o projeto da Avenida Central.// 
+    O monumento ao Prefeito Pereira Passos foi uma inicativa dos funcionários da Municipalidade e erguido na Praça da
     República, próximo ao antigo prédio do Palácio da Prefeitura. Em 1 de abril de 1994 foi retirado para a demolição do antigo
-    prédio da prefeitua. Posteriormente foi para o entroncamento da Avenida Rio Branco e Presidente Vargas, atual localização.`,
+    prédio da prefeitua. Posteriormente foi para o entroncamento da Avenida Rio Branco e Presidente Vargas, atual localização.// Francisco Franco Pereira Passos foi engenheiro, político brasileiro e prefeito do Rio de janeiro de 1902 a 1906. Ficou conhecido pela mais importante reforma urbana feita na cidade. Com a sua transformação, o Rio de Janeiro passou a ser chamado mundialmente de Cidade Maravilhosa.`,
     Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
@@ -1081,7 +1082,7 @@ export const PauloDeFrontin_UgoTaddey: Obra = {
 
 export const JuscelinoKubitschek_Zanucchi: Obra = {
     ID: 28,
-    Imagem: undefined,
+    Imagem: 'JuscelinoKubitschek_Zanucchi.png',
     Autores: [artistas.Zanucchi],
     Titulo: 'Juscelino Kubitschek',
     Material: 'Bronze',
@@ -1091,20 +1092,21 @@ export const JuscelinoKubitschek_Zanucchi: Obra = {
     Peso: undefined,
     ValorObra: undefined,
     DataInauguracao: '1961',
-    DatasImportantes: [new Data('1961', 'inauguração')],
+    DatasImportantes: [new Data('1961', 'inauguração'),
+                       new Data('1983', 'inauguração google arts')],
     Promotor: undefined,
     Financiamento: undefined,
     Propriedade: 'Pública',
     Zona: 'Central',
     Bairro: 'Centro',
-    Endereco: 'Cinelândia',
+    Endereco: 'Praça Marechal Floriano',
     Latitude: '-22.9114573',
     Longitude: '-43.1757271',
     SuporteEspacial: 'praça',
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao: undefined,
+    Descricao: 'Constituído pela cabeça em bronze do ex-presidente e base de concreto. Erguido originalmente por seus admiradores em 1961. Foi destruído por um grupo de oficiais militares saídos do Clube Militar logo após a vitória do golpe de estado, em 1º de abril de 1964. Reconstituído após a abertura política em 1983.// Com o lema "crescer 50 anos em 5", Juscelino Kubitschek foi um dos mais emblemáticos Presidentes do Brasil. Governante entre 1951​ e 1961, ele acelerou a economia brasileira aumentando as indústrias e transformando a sociedade do país em mais urbana que rural. Em sua gestão, trocou a capital do país do Rio de Janeiro para a recém construída cidade de Brasília, na região Centro-Oeste, feita no tempo recorde de 41 dias.// ',
     Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
@@ -1164,7 +1166,7 @@ export const FranciscoSerrador_ACoutinho: Obra = {
 
 export const GetulioVargas_LuizSerri: Obra = {
     ID: 30,
-    Imagem: 'GetulioVargas_LuizSerri.jpg',
+    Imagem: 'GetulioVargas_LuizSerri.png',
     Autores: [artistas.LuizSerri],
     Titulo: 'Getulio Vargas',
     Material: 'Bronze',
@@ -1174,39 +1176,26 @@ export const GetulioVargas_LuizSerri: Obra = {
     Peso: undefined,
     ValorObra: undefined,
     DataInauguracao: `1954`,
-    DatasImportantes: [new Data(`1954`, 'data de inauguração')],
+    DatasImportantes: [new Data(`1954`, 'data de inauguração'),
+                       new Data(`1962`, 'data de inauguração- sefcretaria de conservação')],
     Promotor: undefined,
     Financiamento: undefined,
     Propriedade: 'Pública',
     Zona: 'Central',
     Bairro: 'Centro',
-    Endereco: 'Praça Floriano',
+    Endereco: 'Praça Marechal Floriano',
     Latitude: `-22.9109921`,
     Longitude: `-43.1759181`,
     SuporteEspacial: 'praça',
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao: `Nessa ocasião, foi instalada no pedestal A Carta Testamento de Getúlio, como o principal documento relacionado a sua morte. `,
+    Descricao: `Nessa ocasião, foi instalada no pedestal A Carta Testamento de Getúlio, como o principal documento relacionado a sua morte.// Getúlio Vargas é o presidente do Brasil com maior tempo de governo na história. Primeiro, de 1930 a 1945. Depois, foi eleito democraticamente de 1951 até seu suicídio em 1954, totalizando 18 anos no poder. Dentre os destaques do seu governo estão a consolidação de leis trabalhistas como carteira de trabalho, salário mínimo, férias remuneradas e licença maternidade.`,
     Fatos: [
         new Fato('', '', 'Homenageado', 'Getulio Vargas', [], 'Rio de Janeiro'),
         new Fato('', '', 'Promotor', 'A obra foi implantada por admiradores e partidários', [], 'Rio de Janeiro'),
-        new Fato(
-            '1954',
-            '1954',
-            'Inauguração',
-            'A primeira homenagem da cidade do Rio de Janeiro a Getúlio Vargas aconteceu logo após sua morte, em 1954, quando foi instalado um busto sobre um vaso de mármore carrara.',
-            [],
-            'Rio de Janeiro',
-        ),
-        new Fato(
-            '24/08/1962',
-            '24/08/1962',
-            'Reinauguração',
-            'O busto foi reinaugurado em seu devido pedestal com uma placa contendo A Carta Testamento de Getúlio,',
-            [],
-            'Rio de Janeiro',
-        ),
+        new Fato( '1954', '1954', 'Inauguração', 'A primeira homenagem da cidade do Rio de Janeiro a Getúlio Vargas aconteceu logo após sua morte, em 1954, quando foi instalado um busto sobre um vaso de mármore carrara.', [], 'Rio de Janeiro',),
+        new Fato( '24/08/1962','24/08/1962','Reinauguração', 'O busto foi reinaugurado em seu devido pedestal com uma placa contendo A Carta Testamento de Getúlio,',[], 'Rio de Janeiro', ),
         new Fato('08/018', '08/2018', 'Furto', 'A placa com a Carta Testamento foi furtada', [], 'Rio de Janeiro'),
     ],
     Temporalidade: 'Permanente',
@@ -1492,11 +1481,11 @@ export const Verao_GustaveFredericMichel: Obra = {
     Execucao: true,
 };
 
-export const VillaLobos_BrunoGiorgi: Obra = {
+export const HeitorVillaLobos_BrunoGiorgi: Obra = {
     ID: 38,
-    Imagem: 'VillaLobos_BrunoGiorgi.jpg',
+    Imagem: 'HeitorVillaLobos_BrunoGiorgi.jpg',
     Autores: [artistas.BrunoGiorgi],
-    Titulo: 'Villa Lobos',
+    Titulo: 'Heitor Villa Lobos',
     Material: 'Bronze',
     Altura: undefined,
     Largura: undefined,
@@ -1506,6 +1495,7 @@ export const VillaLobos_BrunoGiorgi: Obra = {
     DataInauguracao: '04/1960',
     DatasImportantes: [
         new Data('04/1960', 'inauguração'),
+        new Data('1959', 'criação'),
         new Data('17/11/1998', 'transferência para Avenida Rio Branco, 200'),
     ],
     Promotor: undefined,
@@ -1520,7 +1510,7 @@ export const VillaLobos_BrunoGiorgi: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao: 'sua contribuição na música brasileira.',
+    Descricao: 'A homenagem ao maior compositor brasileiro está instalada ao lado do Theatro Municipal do Rio de Janeiro. Furtada na década de 1990, foi refundida em bronze a partir do molde original e recolocada no seu pedestal.// sua contribuição na música brasileira.// Heitor Villa-Lobos (1887-1959) foi um dos maiores maestros brasileiros de todos os tempos e se tornou o mais conhecido e significante compositor latino americano até hoje. Suas composições se tornaram únicas devido a presença da influência da tradição clássica européia e da música popular brasileira e indígena. Ele costumava dizer "Eu não uso o folclore, eu sou o folclore" para mostrar sua posição única entre outros compositores clássicos. "Trenzinho do Caipira” é uma de suas obras mais famosas mundialmente.',
     Fatos: [
         new Fato('', '', 'Homenageado', '', [pessoas.VillaLobos], 'Rio de Janeiro'),
         new Fato('17/11/1998', '17/11/1998', 'Réplica', '', [], 'Rio de Janeiro'),
@@ -2912,7 +2902,7 @@ export const AnaNeri_LuizFerrer: Obra = {
 
 export const OlavoBilac_HumbertoCozzo: Obra = {
     ID: 71,
-    Imagem: undefined,
+    Imagem: 'OlavoBilac_HumbertoCozzo.png',
     Autores: [artistas.HumbertoCozzo],
     Titulo: 'Olavo Bilac',
     Material: 'Bronze',
@@ -2935,20 +2925,11 @@ export const OlavoBilac_HumbertoCozzo: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao:
-        'O destaque no monumento é painel em alto relevo de bronze onde esta representado seu poema épico "O caçador de esmeraldas". Foi promovido pela Academia de Letras para a recuperação do poeta instalado no Passeio Público para criar naquele espaço "O Pantheon dos Poetas e dos Artistas". O busto foi entregue pelo escultor dentro do prazo previsto.',
+    Descricao:'Imponente busto em bronze sobre pedestal de granito, homenageando o poeta e jornalista carioca, o nome mais popular e admirado da poesia parnasiana no Brasil. //O destaque no monumento é painel em alto relevo de bronze onde esta representado seu poema épico "O caçador de esmeraldas". Foi promovido pela Academia de Letras para a recuperação do poeta instalado no Passeio Público para criar naquele espaço "O Pantheon dos Poetas e dos Artistas". O busto foi entregue pelo escultor dentro do prazo previsto.// Olavo Bilac (1865 - 1918) foi um célebre escritor e jornalista brasileiro. Poeta parnasiano, fundou a Academia Brasileira de Letras ao lado de Machado de Assis e outros grandes pensadores de seu tempo. Republicano e nacionalista muito ativo politicamente, Bilac fez campanhas cívicas a favor da alfabetização e foi autor do “Hino à Bandeira”, em 1889.',
     Fatos: [
         new Fato('', '', 'Homenageado', 'Olavo Bilac', [], 'Rio de Janeiro'),
         new Fato('', '', 'Promotor', 'Academia de Letras', [], 'Rio de Janeiro'),
-        new Fato(
-            '02/07/1935',
-            '02/07/1935',
-            'Contrato Execução',
-            'O contrato de execução da obra foi assinado pelo Conde Afonso Celso, por parte da Academia de Letras',
-            [],
-            'Rio de Janeiro',
-        ),
-    ],
+        new Fato('02/07/1935','02/07/1935','Contrato Execução','O contrato de execução da obra foi assinado pelo Conde Afonso Celso, por parte da Academia de Letras',[], 'Rio de Janeiro',),],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -3331,7 +3312,7 @@ export const ChiquinhaGonzaga_HonorioPecanha: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao: 'A peça apresenta a homenageada elegante com vestimenta de época.',
+    Descricao: 'A peça apresenta a homenageada elegante com vestimenta de época.// Busto em bronze foi uma iniciativa da Sociedade Cultural Chiquinha Gonzaga. A maestrina e compositora foi a primeira mulher brasileira a assinar partituras chegando a realizar dezenas de peças teatrais e mais de 2 mil composições musicais.// Compositora e maestrina carioca, Chiquinha Gonzaga (1847-1935) destaca-se na história e cultura brasileira pela coragem com que enfrentou a sociedade patriarcal criando uma profissão inédita para a mulher. Primeira pianista de choro, gênero popular da música brasileira, ela também é autora da primeira marcha carnavalesca com letra ("Ó Abre Alas”, 1899) e também a primeira mulher a reger uma orquestra no Brasil.',
     Fatos: [
         new Fato('', '', 'Homenageado', 'Chiquinha Gonzaga', [], 'Rio de Janeiro'),
         new Fato('', '', 'Promotor', 'Sociedade Cultural de Chiquinha Gonzaga, liderada por Meriza Lyra.', [], 'Rio de Janeiro'),
@@ -3652,7 +3633,7 @@ export const MestreValentim_RomeuAlves: Obra = {
     O busto original inaugurado 01/03/1913. Essa peça foi furtada no ano de 8 de janeiro de
     2004 e refeita pelo artista Romeu Alves. A idéia de se fazer o Mestre Valentim, surgiu em 1899
     quando Araújo Vianna, professor de Historia da Arquitetura da Escola de Belas Artes, escreveu
-    um artigo no jornal  A Noticia, ressaltando a necessidade de se homenagear  o artista.`,
+    um artigo no jornal  A Noticia, ressaltando a necessidade de se homenagear  o artista.// Mestre Valentim foi um dos principais artistas do Brasil Colonial. Considerado um artista completo por suas produções escultóricas, arquitetônicas e urbanísticas, sua expressão foi grandiosa nos estilos Barroco, Rococó e Clássico. Influenciado pela missão francesa, medida que trouxe artistas e urbanistas apoiados pelo rei D. João VI para produzir arte no Rio de Janeiro, ele criou, projetou e executou importantes espaços sociais urbanos, como o Chafariz da Pirâmide, localizado na Praça XV, e o Passeio Público, primeiro jardim aberto à população da cidade.`,
     Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
@@ -3664,7 +3645,7 @@ export const MestreValentim_RomeuAlves: Obra = {
 
 export const CastroAlves_EduardoDeSa: Obra = {
     ID: 90,
-    Imagem: undefined,
+    Imagem: 'CastroAlves_EduardoDeSa.png',
     Autores: [artistas.EduardoDeSa],
     Titulo: `Castro Alves`,
     Material: 'Bronze',
@@ -3687,11 +3668,10 @@ export const CastroAlves_EduardoDeSa: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'pedra sabão',
     Status: 'Permanece em espaço público',
-    Descricao: `O monumento se destaca com a peça de meio corpo com um instrumento musical nas mãos. O pedestal com representação marajoara, com pedras de diferentes tonalidades, forma uma composição original.`,
+    Descricao: `Busto em bronze de poeta brasileiro conhecido por combater a escravidão (1847-1871)// O monumento se destaca com a peça de meio corpo com um instrumento musical nas mãos. O pedestal com representação marajoara, com pedras de diferentes tonalidades, forma uma composição original.// Nascido no interior da Bahia, Castro Alves (1847-1871) foi um dos mais icônicos poetas do Romantismo Brasileiro no século 19. Inspirado pela temática social, como o combate à escravidão e opressão, ficou conhecido como "Poeta dos Escravos". Seu trabalho mais marcante é "Navio Negreiro", um poema épico-dramático que denuncia a escravidão dos negros africanos e seu transporte até chegar ao Brasil.`,
     Fatos: [
         new Fato('', '', 'bem tombado federal', '', [], ''),
-        new Fato('', '', 'Homenageado', 'Castro Alves', [], 'Rio de Janeiro'),
-    ],
+        new Fato('', '', 'Homenageado', 'Castro Alves', [], 'Rio de Janeiro'),],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -3749,7 +3729,7 @@ export const FerreiraDeAraujo_RodolfoBernadelli: Obra = {
 
 export const GoncalvesDias_RodolfoBernadelli: Obra = {
     ID: 92,
-    Imagem: 'GoncalvesDias_RodolfoBernadelli.jpg',
+    Imagem: 'GoncalvesDias_RodolfoBernadelli.png',
     Autores: [artistas.RodolfoBernadelli],
     Titulo: `Gonçalves Dias`,
     Material: 'Bronze',
@@ -3776,7 +3756,7 @@ export const GoncalvesDias_RodolfoBernadelli: Obra = {
     primeiros bustos executados no Pais para área pública. A peça em bronze apresenta o rosto
     do homeangeado com expressão firme,
     cabelos encaracolados, bigodes e barba sem vestimenta. O pedestal de granito tem linhas
-    retas, deixando a busto expressivo destacam-se no espaço.`,
+    retas, deixando a busto expressivo destacam-se no espaço.// Antonio Gonçalves Dias foi advogado, jornalista e poeta brasileiro, no século 19. Como um dos grandes nomes do Romantismo Brasileiro da primeira geração, seu trabalho mais memorável é "Canção do Exílio", poema em que mostra a aversão aos valores portugueses e exalta os valores naturais do Brasil, devido ao rompimento recente de Portugal e sua colônia.`,
     Fatos: [
         new Fato('', '', 'bem tombado federal', '', [], ''),
         new Fato('', '', 'Homenageado', 'Gonçalvez Dias', [], 'Rio de Janeiro'),
