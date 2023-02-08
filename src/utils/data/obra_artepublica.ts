@@ -11468,9 +11468,9 @@ export const AVieiraSoutoePauloDeFrontin_RodolfoBernadelli: Obra = {
     Execucao: true,
 };
 
-export const JozefPilsudski_FArynkiewicz: Obra = {
+export const JozefPilsudski_Farynkiewicz: Obra = {
     ID: 297,
-    Imagem: undefined,
+    Imagem: 'JozefPilsudski_Farynkiewicz.png',
     Autores: [artistas.FArynkiewicz],
     Titulo: `Jozef Pilsudski`,
     Material: 'Bronze',
@@ -18691,7 +18691,7 @@ export const DianadeGabies_Desconhecida: Obra = {
 
 export const BaraodeTaquara_BenevenutaBerna: Obra = {
     ID: 474,
-    Imagem: undefined,
+    Imagem: 'BaraodeTaquara_BenevenutaBerna.png',
     Autores: [artistas.BenevenutaBerna],
     Titulo: `Barão de Taquara`,
     Material: `Bronze`,
