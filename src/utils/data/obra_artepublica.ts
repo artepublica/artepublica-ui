@@ -2662,7 +2662,7 @@ export const AmoraLira_EugeneLouisLequesne: Obra = {
 
 export const DuquedeCaxias_RodolfoBernadelli: Obra = {
     ID: 66,
-    Imagem: undefined,
+    Imagem: 'DuquedeCaxias_RodolfoBernadelli.png',
     Autores: [artistas.RodolfoBernadelli],
     Titulo: 'Duque de Caxias',
     Material: 'Bronze',
@@ -3562,7 +3562,7 @@ export const FranciscoBraga_PauloMazzucchelli: Obra = {
 
 export const VictorMeirelles_EduardoDeSa: Obra = {
     ID: 88,
-    Imagem: undefined,
+    Imagem: 'VictorMeirelles_EduardoDeSa.png',
     Autores: [artistas.EduardoDeSa],
     Titulo: `Victor Meirelles`,
     Material: 'Bronze',
@@ -4032,7 +4032,7 @@ export const OMascate_HonorioPecanha: Obra = {
 
 export const LuisdeCamoes_AntonioTaunay: Obra = {
     ID: 101,
-    Imagem: 'LuisdeCamoes_AntonioTaunay.jpg',
+    Imagem: 'LuisdeCamoes_AntonioTaunay.png',
     Autores: [artistas.AntonioTaunay],
     Titulo: `Luis de Camões`,
     Material: 'Bronze',
@@ -4145,6 +4145,41 @@ export const RodolfoBernadelli_JoseOtavioCorreaLima: Obra = {
         new Fato('', '', 'bem tombado federal', '', [], ''),
         new Fato('', '', 'Homenageado', 'Rodolfo Bernadelli', [], 'Rio de Janeiro'),
     ],
+    Temporalidade: 'Permanente',
+    Categoria: 'Narratividade',
+    Funcao: 'Referencial',
+    Natureza: 'Cívica',
+    Tipologia: 'Busto',
+    Execucao: true,
+};
+
+export const SiqueiraCampos_Desconhecida: Obra = {
+    ID: 103,
+    Imagem: 'SiqueiraCampos_Desconhecida.png',
+    Autores: [artistas.Desconhecida],
+    Titulo: `Siqueira Campos`,
+    Material: 'Bronze',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: undefined,
+    DatasImportantes: [new Data(``, 'data de inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Central',
+    Bairro: 'Copacabana',
+    Endereco: 'Praça General Eugênio Franco',
+    Latitude: `-22.9863366`,
+    Longitude: `-43.1902023`,
+    SuporteEspacial: undefined,
+    Base: 'Com pedestal',
+    MaterialBase: 'Granito',
+    Status: 'Permanece em espaço público',
+    Descricao: undefined,
+    Fatos: [ new Fato('', '', '', '', [], ''),],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -7050,7 +7085,7 @@ export const SaoCharbel_RomeuAlves: Obra = {
 
 export const AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto: Obra = {
     ID: 181,
-    Imagem: undefined,
+    Imagem: 'AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto.png',
     Autores: [artistas.NicolinaVazDeAssisPintodoCouto],
     Titulo: `Auguste François Marie Glaziou`,
     Material: 'marmore',
@@ -7086,10 +7121,8 @@ export const AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto: Obra = 
 export const DomPedroII_JeanMagrou_HeitorDaSilvaCosta: Obra = {
     ID: 182,
     Imagem: undefined,
-    Autores: [
-        artistas.JeanMagrou,
-        artistas.HeitorDaSilvaCosta,
-    ],
+    Autores: [ artistas.JeanMagrou,
+        artistas.HeitorDaSilvaCosta,],
     Titulo: `Dom Pedro II`,
     Material: 'Bronze',
     Altura: undefined,
@@ -9234,7 +9267,7 @@ export const OCorneteiro_Ique: Obra = {
 
 export const LouisPasteur_HeitorDaSilvaCosta: Obra = {
     ID: 241,
-    Imagem: undefined,
+    Imagem: 'LouisPasteur_HeitorDaSilvaCosta.png',
     Autores: [artistas.HeitorDaSilvaCosta],
     Titulo: 'Louis Pasteur',
     Material: 'Bronze',
@@ -9678,6 +9711,41 @@ export const GeneralOsorio_Desconhecida: Obra = {
     Execucao: true,
 };
 
+export const CardealJoaquimArcoverde_Desconhecida: Obra = {
+    ID: 252,
+    Imagem: 'CardealJoaquimArcoverde_Desconhecida.png',
+    Autores: [artistas.Desconhecida],
+    Titulo: `Cardeal Joaquim Arcoverde`,
+    Material: 'Bronze',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: `1939`,
+    DatasImportantes: [new Data(`1939`, 'data de inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Sul',
+    Bairro: 'Glória',
+    Endereco: 'Praça General Osório',
+    Latitude: `-22.9210789`,
+    Longitude: `-43.1788887`,
+    SuporteEspacial: undefined,
+    Base: 'Com pedestal',
+    MaterialBase: 'Granito',
+    Status: 'Permanece em espaço público',
+    Descricao: undefined,
+    Fatos: [
+        new Fato('', '', '', '', [], 'Rio de Janeiro'),],
+    Temporalidade: 'Permanente',
+    Categoria: 'Narratividade',
+    Funcao: 'Referencial',
+    Natureza: 'Cívica',
+    Tipologia: 'Busto',
+    Execucao: true,
+};
 export const Jaguar_JoaoTurin: Obra = {
     ID: 253,
     Imagem: undefined,
@@ -10342,6 +10410,41 @@ export const Encontro_EdgarDuvivier: Obra = {
     Funcao: 'Decorativa',
     Natureza: 'Artística',
     Tipologia: 'Escultura',
+    Execucao: true,
+};
+
+export const StuartAngel_Desconhecida: Obra = {
+    ID: 269,
+    Imagem: 'StuartAngel_Desconhecida.png',
+    Autores: [artistas.Desconhecida],
+    Titulo: `Stuart Angel`,
+    Material: 'ferro',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: undefined,
+    DatasImportantes: [new Data(``, 'data de inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Sul',
+    Bairro: 'Botafogo',
+    Endereco: 'Avenida Pasteur, 220',
+    Latitude: `-22.9513578`,
+    Longitude: `-43.1750967`,
+    SuporteEspacial: undefined,
+    Base: 'Com pedestal',
+    MaterialBase: undefined,
+    Status: 'Permanece em espaço público',
+    Descricao: undefined,
+    Fatos: [new Fato('', '1960', 'Criação', 'Data da obra', [], 'Rio de Janeiro'),],
+    Temporalidade: 'Permanente',
+    Categoria: 'Sublimidade',
+    Funcao: 'Decorativa',
+    Natureza: 'Artística',
+    Tipologia: 'Busto',
     Execucao: true,
 };
 
@@ -12468,7 +12571,7 @@ export const YhitzakRabin_EdgarDuvivierFilho: Obra = {
 
 export const BartolomeuMitre_LourillandSan: Obra = {
     ID: 328,
-    Imagem: undefined,
+    Imagem: 'BartolomeuMitre_LourillandSan.png',
     Autores: [artistas.LourillandSan],
     Titulo: `Bartolomeu Mitre`,
     Material: 'Bronze',
@@ -12923,7 +13026,7 @@ export const LorenzoFernandes_AristocherBenjamimMeschessi: Obra = {
 
 export const EmilioDeMenezes_JoaoTurin: Obra = {
     ID: 340,
-    Imagem: undefined,
+    Imagem: 'EmilioDeMenezes_JoaoTurin.png',
     Autores: [artistas.JoaoTurin],
     Titulo: `Emílio de Menezes`,
     Material: 'Bronze',
@@ -13602,7 +13705,7 @@ export const Cuauhtemoc_CarlosObregonSantacilia: Obra = {
 
 export const JosedeAlencar_RodolfoBernadelli: Obra = {
     ID: 361,
-    Imagem: undefined,
+    Imagem: 'JosedeAlencar_RodolfoBernadelli.jpeg',
     Autores: [artistas.RodolfoBernadelli],
     Titulo: `José de Alencar`,
     Material: 'Bronze',
@@ -14039,7 +14142,7 @@ export const VeraJanacopulos_AdrianaJanacopolus: Obra = {
 
 export const ClovisBevilaqua_HonorioPecanha: Obra = {
     ID: 377,
-    Imagem: undefined,
+    Imagem: 'ClovisBevilaqua_HonorioPecanha.png',
     Autores: [artistas.HonorioPecanha],
     Titulo: `Clóvis Beviláqua`,
     Material: 'Bronze',
@@ -14111,7 +14214,7 @@ export const TeixeiraMendes_BrunoGiorgi: Obra = {
 
 export const PereiraCarneiro_EgistoBertozzi: Obra = {
     ID: 379,
-    Imagem: undefined,
+    Imagem: 'PereiraCarneiro_EgistoBertozzi.png',
     Autores: [artistas.EgistoBertozzi],
     Titulo: `Pereira Carneiro`,
     Material: 'Bronze',
@@ -14222,7 +14325,7 @@ export const SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo: Obra = {
 
 export const BadenPowell_VincenzoLarocca: Obra = {
     ID: 383,
-    Imagem: undefined,
+    Imagem: 'BadenPowell_VincenzoLarocca.png',
     Autores: [artistas.VincenzoLarocca],
     Titulo: `Baden Powell`,
     Material: 'Bronze',
@@ -14802,7 +14905,7 @@ export const AlbertoDeOliviera_PetrusVerdier: Obra = {
 
 export const LasarSegall_LiubaWolf: Obra = {
     ID: 398,
-    Imagem: undefined,
+    Imagem: 'LasarSegall_LiubaWolf.png',
     Autores: [artistas.LiubaWolf],
     Titulo: `Lasar Segall`,
     Material: 'Bronze',
@@ -17129,7 +17232,7 @@ export const SarahKubitschek_MarliMazeredo: Obra = {
 
 export const SerzedeloCorreia_RodolfoBernadelli: Obra = {
     ID: 582,
-    Imagem: undefined,
+    Imagem: 'SerzedeloCorreia_RodolfoBernadelli.png',
     Autores: [artistas.RodolfoBernadelli],
     Titulo: `Serzedelo Correia`,
     Material: 'Bronze',
@@ -18028,6 +18131,40 @@ export const AryBarroso_LeoSantana: Obra = {
     Execucao: true,
 };
 
+export const AryBarroso_Desconhecida: Obra = {
+    ID: 582,
+    Imagem: 'AryBarroso_Desconhecida.png',
+    Autores: [artistas.OttoDumovich],
+    Titulo: `Ary Barroso`,
+    Material: 'Bronze',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: '13/04/1974',
+    DatasImportantes: [new Data(`13/04/1974`, 'data de inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Sul',
+    Bairro: 'Leme',
+    Endereco: 'Rua Antônio Viêira, 1',
+    Latitude: `-22.9641083`,
+    Longitude: `-43.1746567`,
+    SuporteEspacial: undefined,
+    Base: 'Com pedestal',
+    MaterialBase: undefined,
+    Status: 'Permanece em espaço público',
+    Descricao: undefined,
+    Fatos: [new Fato('', '', '', '', [], '')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Narratividade',
+    Funcao: 'Referencial',
+    Natureza: 'Cívica',
+    Tipologia: 'Busto',
+    Execucao: true,
+};
 export const AoNuncaMais_CristinaPozzobon: Obra = {
     ID: 582,
     Imagem: undefined,
