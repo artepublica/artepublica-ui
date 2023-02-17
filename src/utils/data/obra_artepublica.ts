@@ -856,7 +856,7 @@ export const FontedodosAmores_MestreValentim: Obra = {
 
 export const CarlosGomes_RodolfoBernadelli: Obra = {
     ID: 23,
-    Imagem: undefined,
+    Imagem: 'CarlosGomes_RodolfoBernadelli.png',
     Autores: [artistas.RodolfoBernadelli],
     Titulo: 'Carlos Gomes',
     Material: 'Bronze',
@@ -5262,7 +5262,7 @@ export const BebedourodePaquetáIII_PedroBruno: Obra = {
 
 export const PedroBruno_PauloMazzucchelli: Obra = {
     ID: 131,
-    Imagem: undefined,
+    Imagem: 'PedroBruno_PauloMazzucchelli.png',
     Autores: [artistas.PauloMazzucchelli],
     Titulo: `Pedro Bruno`,
     Material: 'Bronze',
@@ -5884,6 +5884,43 @@ export const PaulaFreitas_BenevenutoBerna: Obra = {
     Tipologia: 'Relevo',
     Execucao: true,
 };
+
+export const AfraniodeMelloFranco_Desconhecida: Obra = {
+    ID: 146,
+    Imagem: 'AfraniodeMelloFranco_Desconhecida.png',
+    Autores: [artistas.Desconhecida],
+    Titulo: `Afrânio de Mello Franco`,
+    Material: 'Bronze',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: undefined,
+    DatasImportantes: [new Data(``, 'data de inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Sul',
+    Bairro: 'Leblon',
+    Endereco: 'Shopping Leblon',
+    Latitude: `-22.9827089`,
+    Longitude: `-43.21996`,
+    SuporteEspacial: undefined,
+    Base: 'Com pedestal',
+    MaterialBase: 'Granito',
+    Status: 'Permanece em espaço público',
+    Descricao: undefined,
+    Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Narratividade',
+    Funcao: 'Referencial',
+    Natureza: 'Cívica',
+    Tipologia: 'Cabeça',
+    Execucao: true,
+};
+
+
 
 export const FranciscoPaulaMayrink_PinedoParis: Obra = {
     ID: 147,
@@ -8502,7 +8539,7 @@ export const QuadradoemTorcaonoEspaco_FranzWeissmann: Obra = {
 
 export const AlbertoIReidaBelgica_LaurindoRamos: Obra = {
     ID: 222,
-    Imagem: undefined,
+    Imagem: 'AlbertoIReidaBelgica_LaurindoRamos.png',
     Autores: [artistas.LaurindoRamos],
     Titulo: `Alberto I Rei da Belgica`,
     Material: 'Bronze',
@@ -11909,7 +11946,7 @@ O monumento foi erguido pela Prefeitura da Cidade por solicitação da família.
 
 export const JeanSibelius_WainoAaltonem: Obra = {
     ID: 308,
-    Imagem: undefined,
+    Imagem: 'JeanSibelius_WainoAaltonem.png',
     Autores: [artistas.WainoAaltonem],
     Titulo: `Jean Sibelius`,
     Material: 'Bronze',
