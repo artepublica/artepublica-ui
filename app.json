@@ -38,6 +38,6 @@
     "runtimeVersion": {
       "policy": "sdkVersion"
     },
-    "sdkVersion": "46.0.10"
+    "sdkVersion": "46.0.0"
   }
 }
