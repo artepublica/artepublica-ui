@@ -8,7 +8,7 @@ function Home(): JSX.Element {
     const style = styles();
     return (
         <ScrollView contentContainerStyle={style.container}>
-            <Text>Aline Rayane de Oliveira</Text>
+            <Text>Aline Rayane de Oliveira teste</Text>
         </ScrollView>
     );
 }

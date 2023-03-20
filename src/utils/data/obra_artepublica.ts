@@ -186,7 +186,8 @@ export const MarechalMachadoBittencourt_JoseOtavioCorreaLima: Obra = {
     DataInauguracao: '1898',
     DatasImportantes: [
         new Data('1898', 'arte ambiente'),
-        new Data('11/1988', 'inventário dos monumentos'),],
+        new Data('11/1988', 'inventário dos monumentos'),
+    ],
     Promotor: undefined,
     Financiamento: undefined,
     Propriedade: 'Pública',
@@ -394,7 +395,8 @@ export const Tiradentes_FranciscoAndrade: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao: 'A escultura mostra um mártir com pulsos algemados, olhos voltados para o céu e semblante tranquilo, como que altivo perante a condenação à morte.// Reprodução Fotográfica Cesar Barreto',
+    Descricao:
+        'A escultura mostra um mártir com pulsos algemados, olhos voltados para o céu e semblante tranquilo, como que altivo perante a condenação à morte.// Reprodução Fotográfica Cesar Barreto',
     Fatos: [
         new Fato('', '', 'Homenageado', 'Tiradentes', [], ''),
         new Fato(
@@ -484,10 +486,13 @@ export const MachadoDeAssis_HumbertoCozzo: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao:'Na época foi instalado na frente à Academia Brasileira de Letras, mas hoje se encontra entre os dois predios da Academia, contudo é uma obra pública.// Localizada na Avenida Presidente Wilson, em frente a sede da Academia Brasileira de Letras, a qual fundou e foi presidente, a estátua em bronze de Machado de Assis foi construída após pedido popular em comemoração ao 90º aniversário deste que foi um dos maiores escritores da língua portuguesa de todos os tempos.',
-    Fatos: [ new Fato('', '', 'Homenageado', 'Machado de Assis', [], ''),
+    Descricao:
+        'Na época foi instalado na frente à Academia Brasileira de Letras, mas hoje se encontra entre os dois predios da Academia, contudo é uma obra pública.// Localizada na Avenida Presidente Wilson, em frente a sede da Academia Brasileira de Letras, a qual fundou e foi presidente, a estátua em bronze de Machado de Assis foi construída após pedido popular em comemoração ao 90º aniversário deste que foi um dos maiores escritores da língua portuguesa de todos os tempos.',
+    Fatos: [
+        new Fato('', '', 'Homenageado', 'Machado de Assis', [], ''),
         new Fato('', '', 'Subscrição popular', '', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Homenagem', 'Comemoração ao 90º aniversário de nascimento do escritor', [], 'Rio de Janeiro'),],
+        new Fato('', '', 'Homenagem', 'Comemoração ao 90º aniversário de nascimento do escritor', [], 'Rio de Janeiro'),
+    ],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -1089,8 +1094,10 @@ export const JuscelinoKubitschek_Zanucchi: Obra = {
     Peso: undefined,
     ValorObra: undefined,
     DataInauguracao: '1961',
-    DatasImportantes: [new Data('1961', 'inauguração'),
-                       new Data('1983', 'inauguração google arts')],
+    DatasImportantes: [
+        new Data('1961', 'inauguração'),
+        new Data('1983', 'inauguração google arts'),
+    ],
     Promotor: undefined,
     Financiamento: undefined,
     Propriedade: 'Pública',
@@ -1103,7 +1110,8 @@ export const JuscelinoKubitschek_Zanucchi: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao: 'Constituído pela cabeça em bronze do ex-presidente e base de concreto. Erguido originalmente por seus admiradores em 1961. Foi destruído por um grupo de oficiais militares saídos do Clube Militar logo após a vitória do golpe de estado, em 1º de abril de 1964. Reconstituído após a abertura política em 1983.// Com o lema "crescer 50 anos em 5", Juscelino Kubitschek foi um dos mais emblemáticos Presidentes do Brasil. Governante entre 1951​ e 1961, ele acelerou a economia brasileira aumentando as indústrias e transformando a sociedade do país em mais urbana que rural. Em sua gestão, trocou a capital do país do Rio de Janeiro para a recém construída cidade de Brasília, na região Centro-Oeste, feita no tempo recorde de 41 dias.// ',
+    Descricao:
+        'Constituído pela cabeça em bronze do ex-presidente e base de concreto. Erguido originalmente por seus admiradores em 1961. Foi destruído por um grupo de oficiais militares saídos do Clube Militar logo após a vitória do golpe de estado, em 1º de abril de 1964. Reconstituído após a abertura política em 1983.// Com o lema "crescer 50 anos em 5", Juscelino Kubitschek foi um dos mais emblemáticos Presidentes do Brasil. Governante entre 1951​ e 1961, ele acelerou a economia brasileira aumentando as indústrias e transformando a sociedade do país em mais urbana que rural. Em sua gestão, trocou a capital do país do Rio de Janeiro para a recém construída cidade de Brasília, na região Centro-Oeste, feita no tempo recorde de 41 dias.// ',
     Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
@@ -1173,8 +1181,10 @@ export const GetulioVargas_LuizSerri: Obra = {
     Peso: undefined,
     ValorObra: undefined,
     DataInauguracao: `1954`,
-    DatasImportantes: [new Data(`1954`, 'data de inauguração'),
-                       new Data(`1962`, 'data de inauguração- sefcretaria de conservação')],
+    DatasImportantes: [
+        new Data(`1954`, 'data de inauguração'),
+        new Data(`1962`, 'data de inauguração- sefcretaria de conservação'),
+    ],
     Promotor: undefined,
     Financiamento: undefined,
     Propriedade: 'Pública',
@@ -1191,8 +1201,22 @@ export const GetulioVargas_LuizSerri: Obra = {
     Fatos: [
         new Fato('', '', 'Homenageado', 'Getulio Vargas', [], 'Rio de Janeiro'),
         new Fato('', '', 'Promotor', 'A obra foi implantada por admiradores e partidários', [], 'Rio de Janeiro'),
-        new Fato( '1954', '1954', 'Inauguração', 'A primeira homenagem da cidade do Rio de Janeiro a Getúlio Vargas aconteceu logo após sua morte, em 1954, quando foi instalado um busto sobre um vaso de mármore carrara.', [], 'Rio de Janeiro',),
-        new Fato( '24/08/1962','24/08/1962','Reinauguração', 'O busto foi reinaugurado em seu devido pedestal com uma placa contendo A Carta Testamento de Getúlio,',[], 'Rio de Janeiro', ),
+        new Fato(
+            '1954',
+            '1954',
+            'Inauguração',
+            'A primeira homenagem da cidade do Rio de Janeiro a Getúlio Vargas aconteceu logo após sua morte, em 1954, quando foi instalado um busto sobre um vaso de mármore carrara.',
+            [],
+            'Rio de Janeiro',
+        ),
+        new Fato(
+            '24/08/1962',
+            '24/08/1962',
+            'Reinauguração',
+            'O busto foi reinaugurado em seu devido pedestal com uma placa contendo A Carta Testamento de Getúlio,',
+            [],
+            'Rio de Janeiro',
+        ),
         new Fato('08/018', '08/2018', 'Furto', 'A placa com a Carta Testamento foi furtada', [], 'Rio de Janeiro'),
     ],
     Temporalidade: 'Permanente',
@@ -1507,7 +1531,8 @@ export const HeitorVillaLobos_BrunoGiorgi: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao: 'A homenagem ao maior compositor brasileiro está instalada ao lado do Theatro Municipal do Rio de Janeiro. Furtada na década de 1990, foi refundida em bronze a partir do molde original e recolocada no seu pedestal.// sua contribuição na música brasileira.// Heitor Villa-Lobos (1887-1959) foi um dos maiores maestros brasileiros de todos os tempos e se tornou o mais conhecido e significante compositor latino americano até hoje. Suas composições se tornaram únicas devido a presença da influência da tradição clássica européia e da música popular brasileira e indígena. Ele costumava dizer "Eu não uso o folclore, eu sou o folclore" para mostrar sua posição única entre outros compositores clássicos. "Trenzinho do Caipira” é uma de suas obras mais famosas mundialmente.',
+    Descricao:
+        'A homenagem ao maior compositor brasileiro está instalada ao lado do Theatro Municipal do Rio de Janeiro. Furtada na década de 1990, foi refundida em bronze a partir do molde original e recolocada no seu pedestal.// sua contribuição na música brasileira.// Heitor Villa-Lobos (1887-1959) foi um dos maiores maestros brasileiros de todos os tempos e se tornou o mais conhecido e significante compositor latino americano até hoje. Suas composições se tornaram únicas devido a presença da influência da tradição clássica européia e da música popular brasileira e indígena. Ele costumava dizer "Eu não uso o folclore, eu sou o folclore" para mostrar sua posição única entre outros compositores clássicos. "Trenzinho do Caipira” é uma de suas obras mais famosas mundialmente.',
     Fatos: [
         new Fato('', '', 'Homenageado', '', [pessoas.VillaLobos], 'Rio de Janeiro'),
         new Fato('17/11/1998', '17/11/1998', 'Réplica', '', [], 'Rio de Janeiro'),
@@ -2922,11 +2947,20 @@ export const OlavoBilac_HumbertoCozzo: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao:'Imponente busto em bronze sobre pedestal de granito, homenageando o poeta e jornalista carioca, o nome mais popular e admirado da poesia parnasiana no Brasil. //O destaque no monumento é painel em alto relevo de bronze onde esta representado seu poema épico "O caçador de esmeraldas". Foi promovido pela Academia de Letras para a recuperação do poeta instalado no Passeio Público para criar naquele espaço "O Pantheon dos Poetas e dos Artistas". O busto foi entregue pelo escultor dentro do prazo previsto.// Olavo Bilac (1865 - 1918) foi um célebre escritor e jornalista brasileiro. Poeta parnasiano, fundou a Academia Brasileira de Letras ao lado de Machado de Assis e outros grandes pensadores de seu tempo. Republicano e nacionalista muito ativo politicamente, Bilac fez campanhas cívicas a favor da alfabetização e foi autor do “Hino à Bandeira”, em 1889.',
+    Descricao:
+        'Imponente busto em bronze sobre pedestal de granito, homenageando o poeta e jornalista carioca, o nome mais popular e admirado da poesia parnasiana no Brasil. //O destaque no monumento é painel em alto relevo de bronze onde esta representado seu poema épico "O caçador de esmeraldas". Foi promovido pela Academia de Letras para a recuperação do poeta instalado no Passeio Público para criar naquele espaço "O Pantheon dos Poetas e dos Artistas". O busto foi entregue pelo escultor dentro do prazo previsto.// Olavo Bilac (1865 - 1918) foi um célebre escritor e jornalista brasileiro. Poeta parnasiano, fundou a Academia Brasileira de Letras ao lado de Machado de Assis e outros grandes pensadores de seu tempo. Republicano e nacionalista muito ativo politicamente, Bilac fez campanhas cívicas a favor da alfabetização e foi autor do “Hino à Bandeira”, em 1889.',
     Fatos: [
         new Fato('', '', 'Homenageado', 'Olavo Bilac', [], 'Rio de Janeiro'),
         new Fato('', '', 'Promotor', 'Academia de Letras', [], 'Rio de Janeiro'),
-        new Fato('02/07/1935','02/07/1935','Contrato Execução','O contrato de execução da obra foi assinado pelo Conde Afonso Celso, por parte da Academia de Letras',[], 'Rio de Janeiro',),],
+        new Fato(
+            '02/07/1935',
+            '02/07/1935',
+            'Contrato Execução',
+            'O contrato de execução da obra foi assinado pelo Conde Afonso Celso, por parte da Academia de Letras',
+            [],
+            'Rio de Janeiro',
+        ),
+    ],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -2960,7 +2994,8 @@ export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
     Base: 'Com pedestal',
     MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Descricao: 'O busto em bronze em homenagem ao escultor Bernardelli realizado por seu discípulo Correia Lima tem gravado no próprio bronze a sua intenção: "Ao Prof. Rodolfo Bernardelli."',
+    Descricao:
+        'O busto em bronze em homenagem ao escultor Bernardelli realizado por seu discípulo Correia Lima tem gravado no próprio bronze a sua intenção: "Ao Prof. Rodolfo Bernardelli."',
     Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
@@ -3309,7 +3344,8 @@ export const ChiquinhaGonzaga_HonorioPecanha: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao: 'A peça apresenta a homenageada elegante com vestimenta de época.// Busto em bronze foi uma iniciativa da Sociedade Cultural Chiquinha Gonzaga. A maestrina e compositora foi a primeira mulher brasileira a assinar partituras chegando a realizar dezenas de peças teatrais e mais de 2 mil composições musicais.// Compositora e maestrina carioca, Chiquinha Gonzaga (1847-1935) destaca-se na história e cultura brasileira pela coragem com que enfrentou a sociedade patriarcal criando uma profissão inédita para a mulher. Primeira pianista de choro, gênero popular da música brasileira, ela também é autora da primeira marcha carnavalesca com letra ("Ó Abre Alas”, 1899) e também a primeira mulher a reger uma orquestra no Brasil.',
+    Descricao:
+        'A peça apresenta a homenageada elegante com vestimenta de época.// Busto em bronze foi uma iniciativa da Sociedade Cultural Chiquinha Gonzaga. A maestrina e compositora foi a primeira mulher brasileira a assinar partituras chegando a realizar dezenas de peças teatrais e mais de 2 mil composições musicais.// Compositora e maestrina carioca, Chiquinha Gonzaga (1847-1935) destaca-se na história e cultura brasileira pela coragem com que enfrentou a sociedade patriarcal criando uma profissão inédita para a mulher. Primeira pianista de choro, gênero popular da música brasileira, ela também é autora da primeira marcha carnavalesca com letra ("Ó Abre Alas”, 1899) e também a primeira mulher a reger uma orquestra no Brasil.',
     Fatos: [
         new Fato('', '', 'Homenageado', 'Chiquinha Gonzaga', [], 'Rio de Janeiro'),
         new Fato('', '', 'Promotor', 'Sociedade Cultural de Chiquinha Gonzaga, liderada por Meriza Lyra.', [], 'Rio de Janeiro'),
@@ -3668,7 +3704,8 @@ export const CastroAlves_EduardoDeSa: Obra = {
     Descricao: `Busto em bronze de poeta brasileiro conhecido por combater a escravidão (1847-1871)// O monumento se destaca com a peça de meio corpo com um instrumento musical nas mãos. O pedestal com representação marajoara, com pedras de diferentes tonalidades, forma uma composição original.// Nascido no interior da Bahia, Castro Alves (1847-1871) foi um dos mais icônicos poetas do Romantismo Brasileiro no século 19. Inspirado pela temática social, como o combate à escravidão e opressão, ficou conhecido como "Poeta dos Escravos". Seu trabalho mais marcante é "Navio Negreiro", um poema épico-dramático que denuncia a escravidão dos negros africanos e seu transporte até chegar ao Brasil.`,
     Fatos: [
         new Fato('', '', 'bem tombado federal', '', [], ''),
-        new Fato('', '', 'Homenageado', 'Castro Alves', [], 'Rio de Janeiro'),],
+        new Fato('', '', 'Homenageado', 'Castro Alves', [], 'Rio de Janeiro'),
+    ],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -4179,7 +4216,9 @@ export const SiqueiraCampos_Desconhecida: Obra = {
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
     Descricao: undefined,
-    Fatos: [ new Fato('', '', '', '', [], ''),],
+    Fatos: [
+        new Fato('', '', '', '', [], ''),
+    ],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -5920,8 +5959,6 @@ export const AfraniodeMelloFranco_Desconhecida: Obra = {
     Execucao: true,
 };
 
-
-
 export const FranciscoPaulaMayrink_PinedoParis: Obra = {
     ID: 147,
     Imagem: undefined,
@@ -6488,7 +6525,9 @@ export const LuizGonzaga_JoasPereiraDosPassos: Obra = {
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
     Descricao: `A estátua representa o Rei do Baião em seus típicos trajes nordestinos, sobre um mapa do Brasil.// A frente da clássica Feira de Tradições Nordestinas, no pavilhão do bairro de São Cristóvão, está a estátua de Luiz Gonzaga, o Rei do Baião. Com seu figurino de shows inspirado nos vaqueiros nordestinos e sua sanfona, ele se encontra sobre o mapa do Brasil.`,
-    Fatos: [ new Fato('', '', 'Fundição/Atelier', 'Artística RioArte', [], 'Rio de Janeiro'), ],
+    Fatos: [
+        new Fato('', '', 'Fundição/Atelier', 'Artística RioArte', [], 'Rio de Janeiro'),
+    ],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -6559,7 +6598,9 @@ export const Cartola_OttoDumovich: Obra = {
     MaterialBase: 'Concreto',
     Status: 'Permanece em espaço público',
     Descricao: `A homenagem foi instalada em frente ao Centro Cultural Cartola, na Mangueira e doada à Cidade do Rio de Janeiro pela empresa Unysse// `,
-    Fatos: [ new Fato('', '', 'Fundição/Atelier', 'Zani Fundição Artística E Metalúrgica Ltda.', [], 'Rio de Janeiro'), ],
+    Fatos: [
+        new Fato('', '', 'Fundição/Atelier', 'Zani Fundição Artística E Metalúrgica Ltda.', [], 'Rio de Janeiro'),
+    ],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -6594,7 +6635,9 @@ export const RenatoRusso_Ique: Obra = {
     MaterialBase: undefined,
     Status: 'Permanece em espaço público',
     Descricao: `Definidos por muitos como a voz da geração dos anos 1980, Renato Russo é o nome artístico de Renato Manfredini Júnior, cantor e compositor brasileiro, fundador da Legião Urbana, uma das maiores bandas de rock brasileiro. Ele morreu em 1996 em decorrência de complicações da AIDS. O monumento em bronze assinado pelo cartunista Ique reproduz o tamanho natural do cantor e foi inaugurado em 2012 na Ilha do Governador, onde Renato viveu com sua família durante a infância.`,
-    Fatos: [ new Fato('', '', '', '', [], 'Rio de Janeiro'),],
+    Fatos: [
+        new Fato('', '', '', '', [], 'Rio de Janeiro'),
+    ],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -7158,8 +7201,10 @@ export const AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto: Obra = 
 export const DomPedroII_JeanMagrou_HeitorDaSilvaCosta: Obra = {
     ID: 182,
     Imagem: undefined,
-    Autores: [ artistas.JeanMagrou,
-        artistas.HeitorDaSilvaCosta,],
+    Autores: [
+        artistas.JeanMagrou,
+        artistas.HeitorDaSilvaCosta,
+    ],
     Titulo: `Dom Pedro II`,
     Material: 'Bronze',
     Altura: undefined,
@@ -8824,7 +8869,8 @@ export const IsmaelSilva_OttoDumovich: Obra = {
     Base: 'Sem pedestal',
     MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Descricao: 'Monumento em bronze solicitado pela Escola de Samba Estácio de Sá à Prefeitura do Rio para homenagear o sambista Ismael Silva, fundador do bloco que se tornou o precursor da primeira escola de samba que se tem notícia, a Deixa Falar.',
+    Descricao:
+        'Monumento em bronze solicitado pela Escola de Samba Estácio de Sá à Prefeitura do Rio para homenagear o sambista Ismael Silva, fundador do bloco que se tornou o precursor da primeira escola de samba que se tem notícia, a Deixa Falar.',
     Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
@@ -9775,7 +9821,8 @@ export const CardealJoaquimArcoverde_Desconhecida: Obra = {
     Status: 'Permanece em espaço público',
     Descricao: undefined,
     Fatos: [
-        new Fato('', '', '', '', [], 'Rio de Janeiro'),],
+        new Fato('', '', '', '', [], 'Rio de Janeiro'),
+    ],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -10476,7 +10523,9 @@ export const StuartAngel_Desconhecida: Obra = {
     MaterialBase: undefined,
     Status: 'Permanece em espaço público',
     Descricao: undefined,
-    Fatos: [new Fato('', '1960', 'Criação', 'Data da obra', [], 'Rio de Janeiro'),],
+    Fatos: [
+        new Fato('', '1960', 'Criação', 'Data da obra', [], 'Rio de Janeiro'),
+    ],
     Temporalidade: 'Permanente',
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
@@ -10832,7 +10881,9 @@ export const OttoLaraResende_JoasPereiraDosPassos: Obra = {
     O grupo escultórico é composto por quatro elementos: aestátua de Otto Lara Resende, no segundo plano uma mesa de escritor, com
     uma folha em bronze com texto e frases do jornalista e um aparelho de telefone. Ao lado da mesa tem-se uma cadeira e ao fundo
     tem-se um painel em laminado vazado para se ter ao fundo uma paisagem as alamedas de palmeiras do Jardim Botânico.// Figura notável no meio intelectual, o jornalista e escritor Otto Lara Resende teve grande atividade jornalistica em diversos periódicos como O Globo, Folha de São Paulo, Jornal do Brasil, Manchete, Diário Carioca, Correio da Manhã. Amigo de diversos escritores foi eleito membro da Academia Brasileira de Letras. `,
-    Fatos: [new Fato('', '', 'Fundição/Atelier', 'Artística RioArte', [], 'Rio de Janeiro'), ],
+    Fatos: [
+        new Fato('', '', 'Fundição/Atelier', 'Artística RioArte', [], 'Rio de Janeiro'),
+    ],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -18158,7 +18209,8 @@ export const AryBarroso_LeoSantana: Obra = {
     Base: 'Sem pedestal',
     MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Descricao: 'Consagrado compositor de "Aquarela do Brasil", uma das músicas que mais produz direitos autorais no exterior, Ary Barroso ganhou uma estátua de bronze no ano de seu centenário de nascimento em Copacabana.',
+    Descricao:
+        'Consagrado compositor de "Aquarela do Brasil", uma das músicas que mais produz direitos autorais no exterior, Ary Barroso ganhou uma estátua de bronze no ano de seu centenário de nascimento em Copacabana.',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
