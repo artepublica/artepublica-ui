@@ -1,0 +1,113 @@
+# This config is equivalent to both the '.circleci/extended/orb-free.yml' and the base '.circleci/config.yml'
+version: 2.1
+
+# Orbs are reusable packages of CircleCI configuration that you may share across projects, enabling you to create encapsulated, parameterized commands, jobs, and executors that can be used across multiple projects.
+# See: https://circleci.com/docs/2.0/orb-intro/
+orbs:
+  node: circleci/node@5.1
+  shellcheck: circleci/shellcheck@3.1.2
+
+jobs:
+  build: # this can be any name you choose
+    executor: node/default # use the default executor defined within the orb
+    steps:
+      - checkout
+      - node/install:
+          node-version: '16.16'
+      - run: sudo npm install -g npm@latest
+      - node/install-packages:
+          pkg-manager: npm
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
+      - run:
+          command: npm run build:web
+          name: Build app
+  deploy-dev: # this can be any name you choose
+    executor: node/default # use the default executor defined within the orb
+    steps:
+      - checkout
+      - node/install:
+          node-version: '16.16'
+      - run: sudo npm install -g npm@latest
+      - run: sudo npm install -g vercel
+      - run: sudo npm install -g now
+      - run:
+          command: export NOW_PROJECT_ID=$NOW_PROJECT_ID_DEV && export NOW_ORG_ID=$NOW_ORG_ID && now --prod --token $NOW_TOKEN
+          name: Deploy
+  deploy-qa: # this can be any name you choose
+    executor: node/default # use the default executor defined within the orb
+    steps:
+      - checkout
+      - node/install:
+          node-version: '16.16'
+      - run: sudo npm install -g npm@latest
+      - run: sudo npm install -g vercel
+      - run: sudo npm install -g now
+      - run:
+          command: export NOW_PROJECT_ID=$NOW_PROJECT_ID_QA && export NOW_ORG_ID=$NOW_ORG_ID && now --prod --token $NOW_TOKEN
+          name: Deploy
+  deploy-prod: # this can be any name you choose
+    executor: node/default # use the default executor defined within the orb
+    steps:
+      - checkout
+      - node/install:
+          node-version: '16.16'
+      - run: sudo npm install -g npm@latest
+      - run: sudo npm install -g vercel
+      - run: sudo npm install -g now
+      - run:
+          command: export NOW_PROJECT_ID=$NOW_PROJECT_ID_PROD && export NOW_ORG_ID=$NOW_ORG_ID && now --prod --token $NOW_TOKEN
+          name: Deploy
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - main
+                - circleci-project-setup 
+      - deploy-dev:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - main
+                - circleci-project-setup 
+      - hold-qa:
+          requires:
+            - deploy-dev
+          filters:
+            branches:
+              only:
+                - main
+                - circleci-project-setup 
+          type: approval
+      - deploy-qa:
+          requires:
+            - hold-qa
+          filters:
+            branches:
+              only:
+                - main
+                - circleci-project-setup 
+      - hold-prod:
+          requires:
+            - deploy-qa
+          filters:
+            branches:
+              only:
+                - main
+                - circleci-project-setup 
+          type: approval
+      - deploy-prod:
+          requires:
+            - hold-prod
+          filters:
+            branches:
+              only:
+                - main
+                - circleci-project-setup
