@@ -8,7 +8,7 @@ type ChartLightProps = {
     options: Highcharts.Options;
 };
 
-function ChartLight({ options }: ChartLightProps): JSX.Element | undefined {
+function ChartLight({ options }: ChartLightProps): JSX.Element {
     const { theme } = useTheme();
 
     const script = `

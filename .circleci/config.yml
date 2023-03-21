@@ -63,12 +63,19 @@ workflows:
   version: 2
   build-deploy:
     jobs:
-      - build:
+      - hold-build:
           filters:
             branches:
               only:
                 - main
-                - circleci-project-setup 
+          type: approval
+      - build:
+          requires:
+            - hold-build
+          filters:
+            branches:
+              only:
+                - main
       - deploy-dev:
           requires:
             - build
@@ -76,7 +83,6 @@ workflows:
             branches:
               only:
                 - main
-                - circleci-project-setup 
       - hold-qa:
           requires:
             - deploy-dev
@@ -84,7 +90,6 @@ workflows:
             branches:
               only:
                 - main
-                - circleci-project-setup 
           type: approval
       - deploy-qa:
           requires:
@@ -93,7 +98,6 @@ workflows:
             branches:
               only:
                 - main
-                - circleci-project-setup 
       - hold-prod:
           requires:
             - deploy-qa
@@ -101,7 +105,6 @@ workflows:
             branches:
               only:
                 - main
-                - circleci-project-setup 
           type: approval
       - deploy-prod:
           requires:
@@ -110,4 +113,3 @@ workflows:
             branches:
               only:
                 - main
-                - circleci-project-setup
