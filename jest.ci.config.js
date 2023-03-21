@@ -56,6 +56,13 @@ module.exports = {
     reporters: [
         'default',
         [
+            'jest-junit',
+            {
+                outputDirectory: '.coverage',
+                outputName: 'jest-junit.xml',
+            },
+        ],
+        [
             'jest-html-reporters',
             {
                 publicPath: '.coverage/.report',
