@@ -1,5 +1,5 @@
-import DiretorMuseu from '../../domain/diretor_museu';
 import * as pessoas from './pessoa';
+import DiretorMuseu from '../../domain/diretor_museu';
 
 export const HelenaMariaPortoSeveroDaCosta_MuseuDaRepublica: DiretorMuseu = {
     Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,

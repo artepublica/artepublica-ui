@@ -1,9 +1,9 @@
 import { Livro, PoliticaPublica, TrocaCapital } from '@domain';
 
-import { antes } from '../dataUtils';
-import livroX from '../livro/livro-x';
 import agenteDaPolitica from './agente-da-politica';
 import autorObraDaPolitica from './autor-obra-da-politica';
+import { antes } from '../dataUtils';
+import livroX from '../livro/livro-x';
 
 function fazParteDaPolitica(politicaPublica: PoliticaPublica, pessoa: string): boolean {
     return agenteDaPolitica(politicaPublica, pessoa) || autorObraDaPolitica(politicaPublica, pessoa);

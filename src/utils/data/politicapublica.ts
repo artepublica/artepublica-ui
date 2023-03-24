@@ -1,6 +1,6 @@
-import PoliticaPublica from '../../domain/politicapublica';
 import * as obras from './obra_artepublica';
 import * as pessoas from './pessoa';
+import PoliticaPublica from '../../domain/politicapublica';
 
 export const EsculturasUrbanas: PoliticaPublica = {
     Titulo: 'Esculturas Urbanas',

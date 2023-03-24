@@ -1,8 +1,8 @@
+import * as artistas from './artista';
+import * as pessoas from './pessoa';
 import Data from '../../domain/data';
 import Fato from '../../domain/fato';
 import Obra from '../../domain/obra';
-import * as artistas from './artista';
-import * as pessoas from './pessoa';
 
 export const CoronelAssuncao_RuffoFanucchi: Obra = {
     ID: 1,

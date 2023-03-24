@@ -125,6 +125,12 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                     },
                 },
             },
+            AdminMenuNavigator: {
+                path: 'admin',
+                screens: {
+                    Home: '',
+                },
+            },
             Obra: 'obra',
             NotFound: '404',
             NoMatch: '*',

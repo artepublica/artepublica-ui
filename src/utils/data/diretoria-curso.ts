@@ -1,5 +1,5 @@
-import DiretorCurso from '../../domain/diretor_curso';
 import * as pessoas from './pessoa';
+import DiretorCurso from '../../domain/diretor_curso';
 
 export const ReynaldoRoels: DiretorCurso = {
     // TODO: n seria reitor??

@@ -3,8 +3,8 @@
 import '@testing-library/jest-native/extend-expect';
 import 'react-native-gesture-handler/jestSetup';
 
-import * as useTheme from '../theme-provider/hooks/useTheme';
 import { theme } from './mockData';
+import * as useTheme from '../theme-provider/hooks/useTheme';
 
 jest.mock('expo-status-bar');
 jest.mock('expo-linking');

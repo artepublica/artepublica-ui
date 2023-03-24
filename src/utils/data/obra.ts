@@ -1,7 +1,7 @@
+import * as artistas from './artista';
 import Data from '../../domain/data';
 import Fato from '../../domain/fato';
 import Obra from '../../domain/obra';
-import * as artistas from './artista';
 
 export const AGuignard_FranzWeissmann: Obra = {
     ID: 98,

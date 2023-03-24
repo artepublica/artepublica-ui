@@ -7,8 +7,8 @@ import { EdgeInsets } from 'react-native-safe-area-context';
 import { Text } from '@base-components';
 import { Theme } from '@utils';
 
-import { RootMenuNavigatorParamsList } from '../RootMenuNavigator';
 import calculateNavigationModalHeight from './calculateNavigationModalHeight.wip';
+import { RootMenuNavigatorParamsList } from '../RootMenuNavigator';
 
 function webOptions(navigation: NavigationProp<RootMenuNavigatorParamsList>, theme: Theme, headerTitle?: string): StackNavigationOptions {
     const style = styles(theme);

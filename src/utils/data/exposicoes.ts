@@ -1,5 +1,5 @@
-import Exposicao from '../../domain/exposicao';
 import * as pessoas from './pessoa';
+import Exposicao from '../../domain/exposicao';
 
 export const BienalDeVeneza1988: Exposicao = {
     Nome: 'Bienal de Veneza',

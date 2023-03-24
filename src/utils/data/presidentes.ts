@@ -1,5 +1,5 @@
-import Presidente from '../../domain/presidente';
 import * as pessoas from './pessoa';
+import Presidente from '../../domain/presidente';
 
 export const DeodoroDaFonseca: Presidente = {
     Pessoa: pessoas.DeodoroDaFonseca,

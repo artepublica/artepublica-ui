@@ -1,8 +1,8 @@
 import { renderHook } from '@testing-library/react';
 
+import useTheme from './useTheme';
 import { ThemeContextProviderMock } from '../ThemeContextProvider';
 import { LightTheme } from '../themes';
-import useTheme from './useTheme';
 
 describe('useTheme', () => {
     it('should get theme from ThemeContextProvider', () => {

@@ -1,7 +1,7 @@
-import Premio from '../../domain/premio';
 import * as exposicoes from './exposicoes';
 import * as obras from './obra_artepublica';
 import * as pessoas from './pessoa';
+import Premio from '../../domain/premio';
 
 export const MedalhaDeOuroSalaoOficial1934: Premio = {
     Nome: 'Medalha de Ouro',

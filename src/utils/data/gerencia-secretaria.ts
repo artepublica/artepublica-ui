@@ -1,5 +1,5 @@
-import GenenteSecretaria from '../../domain/gerente_secretaria';
 import * as pessoas from './pessoa';
+import GenenteSecretaria from '../../domain/gerente_secretaria';
 
 export const EverardoMiranda: GenenteSecretaria = {
     Pessoa: pessoas.EverardoMiranda,

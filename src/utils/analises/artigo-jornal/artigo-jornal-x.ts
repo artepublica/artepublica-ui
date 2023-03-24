@@ -1,8 +1,8 @@
 import { ArtigoJornal, PoliticaPublica, TipoCapital, TrocaCapital } from '@domain';
 
+import { default as autoresArtigoJornal } from './autores';
 import trocaCapital from '../capitais/troca-capital';
 import agenteDaPolitica from '../politica-publica/agente-da-politica';
-import { default as autoresArtigoJornal } from './autores';
 
 function artigoJornalX(artigoJornal: ArtigoJornal, politicaPublica: PoliticaPublica): TrocaCapital[] {
     const autores = autoresArtigoJornal(artigoJornal);

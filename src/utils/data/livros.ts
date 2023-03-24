@@ -1,5 +1,5 @@
-import Livro from '../../domain/livro';
 import * as pessoas from './pessoa';
+import Livro from '../../domain/livro';
 
 export const Neoconcretismo_RonaldoBrito: Livro = {
     Autor: pessoas.RonaldoBrito,

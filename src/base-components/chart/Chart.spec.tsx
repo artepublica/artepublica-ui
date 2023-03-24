@@ -2,8 +2,8 @@ import { render } from '@testing-library/react-native';
 
 import { Theme } from '@utils';
 
-import * as useTheme from '../../utils/theme-provider/hooks/useTheme';
 import Chart from './Chart';
+import * as useTheme from '../../utils/theme-provider/hooks/useTheme';
 
 describe('<Chart />', () => {
     it('should render light', () => {

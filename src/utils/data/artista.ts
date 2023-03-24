@@ -1,5 +1,5 @@
-import Artista from '../../domain/artista';
 import * as pessoas from './pessoa';
+import Artista from '../../domain/artista';
 
 export const Desconhecida: Artista = {
     Pessoa: pessoas.Desconhecida,

@@ -1,9 +1,9 @@
 import { Livro, PoliticaPublica, TipoCapital, TrocaCapital } from '@domain';
 import onlyUniqueNotUndefinedString from '@utils/list/unique-not-undefined-string';
 
+import { default as citadosLivro } from './citados';
 import trocaCapital from '../capitais/troca-capital';
 import agenteDaPolitica from '../politica-publica/agente-da-politica';
-import { default as citadosLivro } from './citados';
 
 function livroX(livro: Livro, politicaPublica: PoliticaPublica): TrocaCapital[] {
     const autores = [livro.Autor?.Nome].filter(onlyUniqueNotUndefinedString);

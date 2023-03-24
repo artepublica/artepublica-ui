@@ -1,5 +1,5 @@
-import JornalIndependente from '../../domain/jornal_independente';
 import * as pessoas from './pessoa';
+import JornalIndependente from '../../domain/jornal_independente';
 
 export const AParteDoFogo: JornalIndependente = {
     Nome: 'A parte do Fogo',

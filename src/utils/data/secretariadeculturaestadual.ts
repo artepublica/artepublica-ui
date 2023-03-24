@@ -1,5 +1,5 @@
-import Secretario from '../../domain/secretario';
 import * as pessoas from './pessoa';
+import Secretario from '../../domain/secretario';
 
 export const HelenaMariaPortoSeveroDaCosta: Secretario = {
     ID: undefined,

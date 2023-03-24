@@ -1,5 +1,5 @@
-import Curso from '../../domain/curso';
 import * as pessoas from './pessoa';
+import Curso from '../../domain/curso';
 
 export const AmilcarDeCastro_EscolaGuinard_Desenho: Curso = {
     Pessoa: pessoas.AmilcarDeCastro,

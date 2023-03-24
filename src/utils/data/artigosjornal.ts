@@ -1,5 +1,5 @@
-import ArtigoJornal from '../../domain/artigo-jornal';
 import * as pessoas from './pessoa';
+import ArtigoJornal from '../../domain/artigo-jornal';
 
 export const HelenaSevro_JornalDoBrasil_CidadeAberta: ArtigoJornal = {
     Jornal: 'Jornal do Brasil',

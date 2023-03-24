@@ -1,6 +1,5 @@
 import { Exposicao, TipoCapital, TrocaCapital } from '@domain';
 
-import trocaCapital from '../capitais/troca-capital';
 import { default as artistasConvidadosExposicao } from './artistas-convidados';
 import { default as comissaoDePremiacaoExposicao } from './comissao-de-premiacao';
 import { default as comissaoDeSelecaoExposicao } from './comissao-de-selecao';
@@ -11,6 +10,7 @@ import { default as juradosExposicao } from './jurados';
 import { default as juradosDeSelecaoExposicao } from './jurados-de-selecao';
 import { default as montadoresExposicao } from './montadores';
 import { default as organizadoresExposicao } from './organizadores';
+import trocaCapital from '../capitais/troca-capital';
 
 function exposicaoX(exposicao: Exposicao): TrocaCapital[] {
     const curadores = curadoressExposicao(exposicao);

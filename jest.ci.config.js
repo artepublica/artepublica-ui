@@ -32,6 +32,7 @@ module.exports = {
         '!src/utils/list/**/*.{ts,tsx}',
         '!src/utils/theme-provider/**/*.{ts,tsx}',
         '!src/pages/**/*.{ts,tsx}',
+        '!src/providers/**/*.{ts,tsx}',
     ],
     coverageDirectory: '.coverage',
     coveragePathIgnorePatterns: [

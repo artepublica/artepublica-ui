@@ -1,5 +1,5 @@
-import Manifesto from '../../domain/manifesto';
 import * as pessoas from './pessoa';
+import Manifesto from '../../domain/manifesto';
 
 export const ManisfestoNeoconcreto1959: Manifesto = {
     Nome: 'Manifesto Neoconcreto',

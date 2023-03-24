@@ -35,7 +35,7 @@ describe('<Button />', () => {
 
         const button = getByText(title);
 
-        expect(button.parent).toHaveStyle({
+        expect(button.parent?.parent).toHaveStyle({
             backgroundColor: buttonTheme.backgroundColor,
             borderColor: buttonTheme.borderColor,
             borderRadius: 8,
@@ -53,7 +53,7 @@ describe('<Button />', () => {
 
         const button = getByText(title);
 
-        expect(button.parent).toHaveStyle({
+        expect(button.parent?.parent).toHaveStyle({
             backgroundColor: buttonTheme.pressed.backgroundColor,
             borderColor: buttonTheme.pressed.borderColor,
             borderRadius: 8,

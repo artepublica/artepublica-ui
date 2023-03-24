@@ -1,8 +1,8 @@
-import Fato from '../../domain/fato';
-import Pessoa from '../../domain/pessoa';
 import { Escultor, Pintor } from './especialidade';
 import * as pessoas from './pessoa';
 import { CriticoDeArte, Artista, Jornalista } from './profissao';
+import Fato from '../../domain/fato';
+import Pessoa from '../../domain/pessoa';
 
 export const AntonioTaunay: Pessoa = {
     ID: undefined,

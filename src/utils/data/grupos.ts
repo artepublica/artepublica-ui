@@ -1,5 +1,5 @@
-import Grupo from '../../domain/grupo';
 import * as pessoas from './pessoa';
+import Grupo from '../../domain/grupo';
 
 export const GrupoRex: Grupo = {
     Nome: 'Grupo Rex',

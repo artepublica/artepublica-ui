@@ -1,5 +1,5 @@
-import Conselheiro from '../../domain/conselheiro';
 import * as pessoas from './pessoa';
+import Conselheiro from '../../domain/conselheiro';
 
 export const LuizPauloFernandezConde: Conselheiro = {
     Pessoa: pessoas.LuizPauloFernandezConde,

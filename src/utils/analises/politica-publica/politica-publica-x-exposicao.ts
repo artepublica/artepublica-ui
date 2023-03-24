@@ -1,8 +1,8 @@
 import { PoliticaPublica, Exposicao, TrocaCapital } from '@domain';
 
+import agenteDaPolitica from './agente-da-politica';
 import { antes } from '../dataUtils';
 import exposicaoX from '../exposicao/exposicao-x';
-import agenteDaPolitica from './agente-da-politica';
 
 function politicaPublicaXexposicao(politicaPublica: PoliticaPublica, exposicao: Exposicao): TrocaCapital[] {
     if (

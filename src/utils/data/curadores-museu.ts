@@ -1,5 +1,5 @@
-import CuradorMuseu from '../../domain/curador_museu';
 import * as pessoas from './pessoa';
+import CuradorMuseu from '../../domain/curador_museu';
 
 export const FernandoCocchiarale: CuradorMuseu = {
     Pessoa: pessoas.FernandoCocchiarale,

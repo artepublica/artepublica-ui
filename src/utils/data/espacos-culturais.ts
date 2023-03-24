@@ -1,5 +1,5 @@
-import EspacoCultural from '../../domain/espaco_cultural';
 import * as pessoas from './pessoa';
+import EspacoCultural from '../../domain/espaco_cultural';
 
 export const EverardoMiranda: EspacoCultural = {
     Instituicao: 'Espaço Cultural Sérgio Porto',

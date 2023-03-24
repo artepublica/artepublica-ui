@@ -1,13 +1,13 @@
 import { useRef } from 'react';
 
 import Highcharts from 'highcharts';
-import HighchartsReact from 'highcharts-react-official';
 import HighchartsDependecyWheel from 'highcharts/modules/dependency-wheel';
 import HighchartsNetworkGraph from 'highcharts/modules/networkgraph';
 import HighchartsSankey from 'highcharts/modules/sankey';
 import HighchartsSeriesLabel from 'highcharts/modules/series-label';
 import HighchartsStreamgraph from 'highcharts/modules/streamgraph';
 import Theme from 'highcharts/themes/brand-light';
+import HighchartsReact from 'highcharts-react-official';
 
 import { useTheme } from '@utils';
 

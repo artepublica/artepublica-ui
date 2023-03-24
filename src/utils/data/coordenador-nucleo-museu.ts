@@ -1,5 +1,5 @@
-import CoordenadorNucleMuseu from '../../domain/coordenador_nucleo_museu';
 import * as pessoas from './pessoa';
+import CoordenadorNucleMuseu from '../../domain/coordenador_nucleo_museu';
 
 export const ReynaldoRoels: CoordenadorNucleMuseu = {
     Pessoa: pessoas.ReynaldoRoels,

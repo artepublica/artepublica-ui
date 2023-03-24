@@ -1,8 +1,8 @@
 import { Platform } from 'react-native';
 
-import { Theme } from '../domain';
 import { branco, principalLight, secundariaLight, magenta, verde2, coresGraficoLight, vermelho2, amarelo, lilas, azul, laranja, azul3 } from './cores';
 import fonts from './fonts';
+import { Theme } from '../domain';
 
 const LightTheme: Theme = {
     dark: false,

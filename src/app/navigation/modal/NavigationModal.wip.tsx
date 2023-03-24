@@ -9,8 +9,8 @@ import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 import { Obra } from '@domain';
 import { TipologiaTheme, useTheme } from '@utils';
 
-import { RootNavigatorParamList } from '../RootNavigator';
 import calculateNavigationModalHeight from './calculateNavigationModalHeight.wip';
+import { RootNavigatorParamList } from '../RootNavigator';
 
 type NavigationModalProps = {
     Component: FunctionComponent<{ route: RouteProp<RootNavigatorParamList> }>;

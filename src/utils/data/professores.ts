@@ -1,5 +1,5 @@
-import Professor from '../../domain/professor';
 import * as pessoas from './pessoa';
+import Professor from '../../domain/professor';
 
 export const FranzWeissmann_EscolaGuinard_ModeloVivo: Professor = {
     Pessoa: pessoas.FranzWeissmann,
