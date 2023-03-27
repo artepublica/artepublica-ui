@@ -9,6 +9,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         googleMapsAPI: process.env.GOOGLE_MAPS_API_WEB || '',
         auth0Namespace: process.env.EXPO_AUTH0_NAMESPACE || '',
         auth0ClientId: process.env.EXPO_AUTH0_CLIENT_ID || '',
+        auth0HasuraAudience: process.env.EXPO_AUTH0_HASURA_AUDIENCE || '',
     },
     android: {
         ...config.android,

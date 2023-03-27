@@ -64,7 +64,7 @@ export default function AuthProvider({ children }: PropsWithChildren): JSX.Eleme
                 'email',
             ],
             extraParams: {
-                audience: 'https://artepublica-dev.hasura.app/v1/graphql',
+                audience: Constants.expoConfig?.extra?.auth0HasuraAudience,
             },
         },
         discovery,
