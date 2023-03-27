@@ -64,8 +64,6 @@ workflows:
   build-deploy:
     jobs:
       - build:
-          requires:
-            - hold-build
           filters:
             branches:
               only:
