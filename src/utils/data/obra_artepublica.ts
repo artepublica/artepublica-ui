@@ -174,7 +174,7 @@ export const EsculturaParaORio_WaltercioCaldas: Obra = {
 
 export const MarechalMachadoBittencourt_JoseOtavioCorreaLima: Obra = {
     ID: 6,
-    Imagem: 'MarechalMachadoBittencourt_JoseOtavioCorreaLima.jpg',
+    Imagem: 'MarechalMachadoBittencourt_JoseOtavioCorreaLima.gif',
     Autores: [artistas.JoseOtavioCorreaLima],
     Titulo: 'Marechal Machado Bittencourt',
     Material: 'Bronze',
@@ -503,7 +503,7 @@ export const MachadoDeAssis_HumbertoCozzo: Obra = {
 
 export const Ritmo_BrunoGiorgi: Obra = {
     ID: 14,
-    Imagem: 'Ritmo_BrunoGiorgi.jpg',
+    Imagem: 'Ritmo_BrunoGiorgi.png',
     Autores: [artistas.BrunoGiorgi],
     Titulo: 'Ritmo',
     Material: 'Bronze',
@@ -619,7 +619,7 @@ export const ManuelBandeira_OttoDumovich: Obra = {
 
 export const GrandeQuadradoVermelho_FranzWeissmann: Obra = {
     ID: 16,
-    Imagem: 'GrandeQuadradoVermelho_FranzWeissmann.jpg',
+    Imagem: 'GrandeQuadradoVermelho_FranzWeissmann.png',
     Autores: [artistas.FranzWeissmann],
     Titulo: 'Grande Quadrado Vermelho',
     Material: 'aço pintado',
@@ -2513,7 +2513,7 @@ export const PauloDeOliveiraSampaio_Desconhecida: Obra = {
 
 export const AtilioCorreaLima_CPincy: Obra = {
     ID: 62,
-    // Imagem: 'AtilioCorreaLima_CPincy.png', TODO imagem com erro de compilacao
+    Imagem: 'AtilioCorreaLima_CPincy.jpg',
     Autores: [artistas.CPincy],
     Titulo: 'Atílio Correia Lima',
     Material: 'Bronze',
@@ -4069,7 +4069,7 @@ export const OMascate_HonorioPecanha: Obra = {
 
 export const LuisdeCamoes_AntonioTaunay: Obra = {
     ID: 101,
-    Imagem: 'LuisdeCamoes_AntonioTaunay.png',
+    Imagem: 'LuisDeCamoes_AntonioTaunay.png',
     Autores: [artistas.AntonioTaunay],
     Titulo: `Luis de Camões`,
     Material: 'Bronze',
@@ -4548,7 +4548,7 @@ export const AssisChateaubriand_BrunoGiorgi: Obra = {
 
 export const Terra_FranzWeissmann: Obra = {
     ID: 113,
-    Imagem: 'Terra_FranzWeissmann.jpg',
+    Imagem: 'Terra_FranzWeissmann.png',
     Autores: [artistas.FranzWeissmann],
     Titulo: `Terra`,
     Material: 'aço corten',
@@ -9421,7 +9421,7 @@ export const Tartaruga_JoseResende: Obra = {
 
 export const MarioPedrosa_RomeuAlves: Obra = {
     ID: 243,
-    Imagem: 'MarioPedrosa_RomeuAlves.png',
+    Imagem: 'MarioPedrosa_RomeuAlves.jpg',
     Autores: [artistas.MateusFernandes],
     Titulo: `Mario Pedrosa`,
     Material: 'Bronze',
@@ -10066,7 +10066,7 @@ export const Iansa_TatiMoreno: Obra = {
 
 export const MarcosTamoio_FloryGama: Obra = {
     ID: 259,
-    Imagem: 'MarcosTamoio_FloryGama.png',
+    Imagem: 'MarcosTamoio_FloryGama.jpg',
     Autores: [artistas.FloryGama],
     Titulo: `Marcos Tamoio`,
     Material: 'Bronze',
@@ -11069,7 +11069,7 @@ export const SaintHilaire_HumbertoCozzo: Obra = {
 
 export const MedidadoTempo_FransKrajcberg: Obra = {
     ID: 284,
-    // Imagem: 'MedidadoTempo_FransKrajcberg.png', TODO imagem com erro de compilação
+    Imagem: 'MedidadoTempo_FransKrajcberg.jpg',
     Autores: [artistas.FransKrajcberg],
     Titulo: `Medida do Tempo`,
     Material: 'cipó de madeira',
@@ -14883,7 +14883,7 @@ export const PedroAlvaresCabral_RodolfoBernadelli: Obra = {
 
 export const EduardoTapajos_GilbertoMandarino: Obra = {
     ID: 395,
-    // Imagem: 'EduardoTapajos_GilbertoMandarino.png', TODO imagem com erro de compilacao
+    Imagem: 'EduardoTapajos_GilbertoMandarino.jpg',
     Autores: [artistas.GilbertoMandarino],
     Titulo: `Eduardo Tapajós`,
     Material: 'Bronze',
