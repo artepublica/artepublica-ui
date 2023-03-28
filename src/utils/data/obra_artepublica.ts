@@ -861,7 +861,7 @@ export const FontedodosAmores_MestreValentim: Obra = {
 
 export const CarlosGomes_RodolfoBernadelli: Obra = {
     ID: 23,
-    Imagem: 'CarlosGomes_RodolfoBernadelli.png',
+    // Imagem: 'CarlosGomes_RodolfoBernadelli.png', TODO
     Autores: [artistas.RodolfoBernadelli],
     Titulo: 'Carlos Gomes',
     Material: 'Bronze',
@@ -2513,7 +2513,7 @@ export const PauloDeOliveiraSampaio_Desconhecida: Obra = {
 
 export const AtilioCorreaLima_CPincy: Obra = {
     ID: 62,
-    Imagem: 'AtilioCorreaLima_CPincy.png',
+    // Imagem: 'AtilioCorreaLima_CPincy.png', TODO imagem com erro de compilacao
     Autores: [artistas.CPincy],
     Titulo: 'Atílio Correia Lima',
     Material: 'Bronze',
@@ -5301,7 +5301,7 @@ export const BebedourodePaquetáIII_PedroBruno: Obra = {
 
 export const PedroBruno_PauloMazzucchelli: Obra = {
     ID: 131,
-    Imagem: 'PedroBruno_PauloMazzucchelli.png',
+    // Imagem: 'PedroBruno_PauloMazzucchelli.png',TODO
     Autores: [artistas.PauloMazzucchelli],
     Titulo: `Pedro Bruno`,
     Material: 'Bronze',
@@ -5926,7 +5926,7 @@ export const PaulaFreitas_BenevenutoBerna: Obra = {
 
 export const AfraniodeMelloFranco_Desconhecida: Obra = {
     ID: 146,
-    Imagem: 'AfraniodeMelloFranco_Desconhecida.png',
+    // Imagem: 'AfraniodeMelloFranco_Desconhecida.png', TODO
     Autores: [artistas.Desconhecida],
     Titulo: `Afrânio de Mello Franco`,
     Material: 'Bronze',
@@ -6609,10 +6609,10 @@ export const Cartola_OttoDumovich: Obra = {
     Execucao: true,
 };
 
-export const RenatoRusso_Ique: Obra = {
+export const RenatoRusso_OttoDumovich: Obra = {
     ID: 164,
-    Imagem: 'RenatoRusso_Ique.png',
-    Autores: [artistas.OttoDumovich],
+    Imagem: 'RenatoRusso_OttoDumovich.png',
+    Autores: [artistas.OttoDumovich], // TODO: Otto ou Ique?
     Titulo: `Renato Russo`,
     Material: 'Bronze',
     Altura: undefined,
@@ -6826,7 +6826,7 @@ export const NoelRosa_AlfredoHerculanoFreixo: Obra = {
 
 export const NoelRosa_JoasPereiraDosPassos: Obra = {
     ID: 171,
-    Imagem: 'NoelRosa_JoasPereiradosPassos.jpg',
+    Imagem: 'NoelRosa_JoasPereiraDosPassos.jpg',
     Autores: [artistas.JoasPereiraDosPassos],
     Titulo: `Noel Rosa`,
     Material: 'Bronze',
@@ -7480,7 +7480,7 @@ export const BaraodoRioBranco_JoaoTurin: Obra = {
 
 export const NiltonSantos_EdgarDuvivierFilho: Obra = {
     ID: 189,
-    Imagem: ' NiltonSantos_EdgarDuvivier.jpg',
+    // Imagem: ' NiltonSantos_EdgarDuvivier.jpg', TODO imagem não funciona
     Autores: [artistas.EdgarDuvivierFilho],
     Titulo: `Nilton Santos`,
     Material: 'Bronze',
@@ -8584,7 +8584,7 @@ export const QuadradoemTorcaonoEspaco_FranzWeissmann: Obra = {
 
 export const AlbertoIReidaBelgica_LaurindoRamos: Obra = {
     ID: 222,
-    Imagem: 'AlbertoIReidaBelgica_LaurindoRamos.png',
+    // Imagem: 'AlbertoIReidaBelgica_LaurindoRamos.png', TODO
     Autores: [artistas.LaurindoRamos],
     Titulo: `Alberto I Rei da Belgica`,
     Material: 'Bronze',
@@ -11069,7 +11069,7 @@ export const SaintHilaire_HumbertoCozzo: Obra = {
 
 export const MedidadoTempo_FransKrajcberg: Obra = {
     ID: 284,
-    Imagem: 'MedidadoTempo_FransKrajcberg.png',
+    // Imagem: 'MedidadoTempo_FransKrajcberg.png', TODO imagem com erro de compilação
     Autores: [artistas.FransKrajcberg],
     Titulo: `Medida do Tempo`,
     Material: 'cipó de madeira',
@@ -11997,7 +11997,7 @@ O monumento foi erguido pela Prefeitura da Cidade por solicitação da família.
 
 export const JeanSibelius_WainoAaltonem: Obra = {
     ID: 308,
-    Imagem: 'JeanSibelius_WainoAaltonem.png',
+    // Imagem: 'JeanSibelius_WainoAaltonem.png', TODO
     Autores: [artistas.WainoAaltonem],
     Titulo: `Jean Sibelius`,
     Material: 'Bronze',
@@ -14883,7 +14883,7 @@ export const PedroAlvaresCabral_RodolfoBernadelli: Obra = {
 
 export const EduardoTapajos_GilbertoMandarino: Obra = {
     ID: 395,
-    Imagem: 'EduardoTapajos_GilbertoMandarino.png',
+    // Imagem: 'EduardoTapajos_GilbertoMandarino.png', TODO imagem com erro de compilacao
     Autores: [artistas.GilbertoMandarino],
     Titulo: `Eduardo Tapajós`,
     Material: 'Bronze',
@@ -15065,7 +15065,7 @@ export const ClarisseIndiodoBrasil_HCunhaMelo: Obra = {
 
 export const ClariceLispector_EdgarDuvivier: Obra = {
     ID: 399,
-    Imagem: 'ClariceLispector_EdgarDuvivier',
+    Imagem: 'ClariceLispector_EdgarDuvivier.png',
     Autores: [artistas.EdgarDuvivier],
     Titulo: `Clarisse Lispector e seu caompanheiro, o cão Ulisses`,
     Material: 'Bronze',
@@ -18187,7 +18187,7 @@ export const JuliodeCastilhos_Desconhecida: Obra = {
 export const AryBarroso_LeoSantana: Obra = {
     ID: 582,
     Imagem: 'AryBarroso_LeoSantana.png',
-    Autores: [artistas.OttoDumovich],
+    Autores: [artistas.LeoSantana], //TODO Leo SAntano ou Otto
     Titulo: `Ary Barroso`,
     Material: 'Bronze',
     Altura: undefined,
@@ -18220,10 +18220,10 @@ export const AryBarroso_LeoSantana: Obra = {
     Execucao: true,
 };
 
-export const AryBarroso_Desconhecida: Obra = {
+export const AryBarroso_OttoDumovich: Obra = {
     ID: 582,
-    Imagem: 'AryBarroso_Desconhecida.png',
-    Autores: [artistas.OttoDumovich],
+    Imagem: 'AryBarroso_OttoDumovich.png',
+    Autores: [artistas.OttoDumovich], // TODO Otto ou Desconhecida
     Titulo: `Ary Barroso`,
     Material: 'Bronze',
     Altura: undefined,

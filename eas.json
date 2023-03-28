@@ -15,12 +15,5 @@
     "production": {
       "channel": "production"
     }
-  },
-  "submit": {
-    "production": {
-      "android": {
-        "serviceAccountKeyPath": "./assets/pc-api-8959807791957670738-825-c5c67bca48c1.json"
-      }
-    }
   }
 }
