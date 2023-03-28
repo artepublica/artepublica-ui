@@ -2,7 +2,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigatorScreenParams } from '@react-navigation/native';
 import { useWindowDimensions } from 'react-native';
 
-import { Home, GraficoPoliticaPublica, ObrasRecorte, MapaRecorte, Decade, Exposicoes, MandatoPrefeito, Prefeitos } from '@pages';
+import { GraficoPoliticaPublica, ObrasRecorte, MapaRecorte, Decade, Exposicoes, MandatoPrefeito, Prefeitos } from '@pages';
 import { autoresRecorte, tipologiasRecorte, useTheme, obrasRecorte, zonasRecorte, enderecosRecorte, statusRecorte } from '@utils';
 
 import HeaderLeft from './HeaderLeft';
@@ -15,7 +15,6 @@ const DrawerNavigator = createDrawerNavigator<RootMenuNavigatorParamsList>();
 
 export type RootMenuNavigatorParamsList = {
     Home: undefined;
-    Obras: undefined;
     Tipologias: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Autores: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Zonas: NavigatorScreenParams<TipoMenuNavigatorParamList>;
@@ -49,19 +48,8 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
         >
             <DrawerNavigator.Screen
                 name="Home"
-                component={SafeViewFunction({ Component: Home })}
-                options={({ navigation }) => ({
-                    headerShown: true,
-                    headerTitleAlign: width > 750 ? 'center' : 'left',
-                    headerTitle: () => <HeaderTitle />,
-                    headerLeft: () => <HeaderLeft navigation={navigation} />,
-                })}
-            />
-            <DrawerNavigator.Screen
-                name="Obras"
                 component={SafeViewFunction({ Component: ObrasRecorte })}
                 options={({ navigation }) => ({
-                    title: 'Obras',
                     headerShown: true,
                     headerTitleAlign: width > 750 ? 'center' : 'left',
                     headerTitle: () => <HeaderTitle />,

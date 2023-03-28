@@ -14,9 +14,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                     Home: {
                         path: '',
                     },
-                    Obras: {
-                        path: 'obras',
-                    },
                     Tipologias: {
                         path: 'tipologias',
                         screens: {
