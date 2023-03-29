@@ -4,7 +4,7 @@
     "name": "arte-publica-permanente",
     "slug": "arte-publica-permanente",
     "scheme": "arte-publica-permanente.app",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -30,7 +30,7 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.theobassan.artepublicapermanente",
-      "versionCode": 4
+      "versionCode": 5
     },
     "web": {
       "favicon": "./assets/favicon.png"
