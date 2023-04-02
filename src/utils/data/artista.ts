@@ -5,10 +5,6 @@ export const Desconhecida: Artista = {
     Pessoa: pessoas.Desconhecida,
 };
 
-export const FundicaoValDOsne: Artista = {
-    Pessoa: pessoas.FundicaoValDOsne,
-};
-
 export const IoleDeFreitas: Artista = {
     Pessoa: pessoas.IoleDeFreitas,
 };

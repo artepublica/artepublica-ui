@@ -1,7 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Artista from './artista';
 import Data from './data';
+import Fabricante from './fabricante';
 import Fato from './fato';
+import Pessoa from './pessoa';
 
 type Obra = {
     ID?: number;
@@ -53,6 +55,23 @@ type Obra = {
     EndereçoRealocacao?: string;
     Lugar?: string;
     Renomeacao?: boolean;
+    Movimentacoes?: {
+        Tipo: string;
+        Data: string;
+        Zona?: string;
+        Bairro?: string;
+        Endereco?: string;
+        Latitude?: string;
+        Longitude?: string;
+    }[];
+    Tombamentos?: {
+        Esfera: string;
+        Data?: string;
+    }[];
+    Homenageados?: Pessoa[];
+    Fabricantes?: Fabricante[];
+    Promocao?: string;
+    Revestimento?: string;
 };
 
 export default Obra;

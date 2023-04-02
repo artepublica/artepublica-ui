@@ -13,3 +13,4 @@ export type { default as TrocaCapital } from './troca_capital';
 export type { default as DependencyWheel } from './dependency-wheel';
 export type { default as Livro } from './livro';
 export type { default as Prefeito } from './prefeito';
+export type { default as Fabricante } from './fabricante';
