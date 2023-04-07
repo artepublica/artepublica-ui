@@ -13,119 +13,38 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                 screens: {
                     Home: {
                         path: '',
-                    },
-                    Tipologias: {
-                        path: 'tipologias',
                         screens: {
-                            Home: {
+                            Mapa: {
                                 path: '',
                             },
-                            GraficoRedeTipologiaObra: {
-                                path: 'grafico-rede-tipologia-obra',
-                            },
-                            Mapa: {
-                                path: 'mapa',
-                            },
-                            Decada: {
-                                path: 'decada',
+                            Inventario: {
+                                path: 'inventario',
                             },
                         },
                     },
-                    Autores: {
-                        path: 'autores',
+                    Sobre: {
+                        path: 'sobre',
+                    },
+                    Glossario: {
+                        path: 'glossario',
+                    },
+                    Analises_Tipologia: {
+                        path: 'analises/tipologia',
+                    },
+                    Analises_Autores: {
+                        path: 'analises/autores',
+                    },
+                    Analises_Prefeitos: {
+                        path: 'analises/prefeitos',
                         screens: {
-                            Home: {
+                            Mandato: {
                                 path: '',
                             },
-                            GraficoRedeTipologiaObra: {
-                                path: 'grafico-rede-tipologia-obra',
-                            },
-                            Mapa: {
-                                path: 'mapa',
-                            },
-                            Decada: {
-                                path: 'decada',
+                            Comparacao: {
+                                path: 'comparacao',
                             },
                         },
                     },
-                    Zonas: {
-                        path: 'zonas',
-                        screens: {
-                            Home: {
-                                path: '',
-                            },
-                            GraficoRedeTipologiaObra: {
-                                path: 'grafico-rede-tipologia-obra',
-                            },
-                            Mapa: {
-                                path: 'mapa',
-                            },
-                            Decada: {
-                                path: 'decada',
-                            },
-                        },
-                    },
-                    Enderecos: {
-                        path: 'enderecos',
-                        screens: {
-                            Home: {
-                                path: '',
-                            },
-                            GraficoRedeTipologiaObra: {
-                                path: 'grafico-rede-tipologia-obra',
-                            },
-                            Mapa: {
-                                path: 'mapa',
-                            },
-                            Decada: {
-                                path: 'decada',
-                            },
-                        },
-                    },
-                    Status: {
-                        path: 'status',
-                        screens: {
-                            Home: {
-                                path: '',
-                            },
-                            GraficoRedeTipologiaObra: {
-                                path: 'grafico-rede-tipologia-obra',
-                            },
-                            Mapa: {
-                                path: 'mapa',
-                            },
-                            Decada: {
-                                path: 'decada',
-                            },
-                        },
-                    },
-                    Mapa: {
-                        path: 'mapa',
-                    },
-                    GraficoPoliticaPublica: {
-                        path: 'politicas-publicas',
-                    },
-                    MapaTodasXRecorte: {
-                        path: 'mapa-todas-x-recorte',
-                    },
-                    Decade: {
-                        path: 'decada',
-                    },
-                    Exposicoes: {
-                        path: 'exposicoes',
-                    },
-                    MandatoPrefeito: {
-                        path: 'mandato-prefeito',
-                    },
-                    Prefeitos: {
-                        path: 'prefeitos',
-                    },
-                },
-            },
-            AdminMenuNavigator: {
-                path: 'admin',
-                screens: {
-                    Home: '',
                 },
             },
             Obra: 'obra',

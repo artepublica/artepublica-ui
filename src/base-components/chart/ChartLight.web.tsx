@@ -7,7 +7,7 @@ import HighchartsSankey from 'highcharts/modules/sankey';
 import HighchartsSeriesLabel from 'highcharts/modules/series-label';
 import HighchartsStreamgraph from 'highcharts/modules/streamgraph';
 import Theme from 'highcharts/themes/brand-light';
-import HighchartsReact from 'highcharts-react-official';
+import { HighchartsReact } from 'highcharts-react-official';
 
 import { useTheme } from '@utils';
 
