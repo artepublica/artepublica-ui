@@ -7,10 +7,15 @@ type Styles = {
 function styles(): Styles {
     return StyleSheet.create<Styles>({
         container: {
-            alignItems: 'center',
-            justifyContent: 'center',
-            paddingTop: 12,
-            paddingHorizontal: 12,
+            flex: 1,
+        },
+        row: {
+            backgroundColor: '#FFFFFF',
+            width: '100%',
+        },
+        col: {
+            backgroundColor: '#FFFFFF',
+            marginBottom: 16,
         },
     });
 }

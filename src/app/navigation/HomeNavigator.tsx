@@ -23,6 +23,7 @@ function HomeNavigator(): JSX.Element {
                 tabBarActiveTintColor: theme.navigation.active,
                 tabBarInactiveTintColor: theme.navigation.inactive,
                 swipeEnabled: false,
+                tabBarIndicatorContainerStyle: { backgroundColor: '#FFC003', height: '100%' },
             })}
         >
             <TopTab.Screen

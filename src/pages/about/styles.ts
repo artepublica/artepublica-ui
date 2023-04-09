@@ -7,10 +7,7 @@ type Styles = {
 function styles(): Styles {
     return StyleSheet.create<Styles>({
         container: {
-            alignItems: 'center',
-            justifyContent: 'center',
-            paddingTop: 12,
-            paddingHorizontal: 12,
+            flex: 1,
         },
     });
 }

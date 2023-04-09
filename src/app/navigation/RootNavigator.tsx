@@ -7,7 +7,6 @@ import { Obra } from '@domain';
 import { NotFound, NoMatch, Obra as ObraView } from '@pages';
 import { useTheme } from '@utils';
 
-import { AdminMenuNavigator, AdminMenuNavigatorParamsList } from './AdminMenuNavigator';
 import NavigationModal from './modal/NavigationModal.wip';
 import navigationModalOptions from './modal/navigationModalOptions.wip';
 import { RootMenuNavigator, RootMenuNavigatorParamsList } from './RootMenuNavigator';
@@ -15,7 +14,6 @@ import SafeView from './SafeViewFunction';
 
 export type RootNavigatorParamList = {
     RootMenuNavigator: NavigatorScreenParams<RootMenuNavigatorParamsList>;
-    AdminMenuNavigator: NavigatorScreenParams<AdminMenuNavigatorParamsList>;
     Obra: { obra: Obra };
     NotFound: undefined;
     NoMatch: undefined;
@@ -34,7 +32,6 @@ export function RootNavigator(): JSX.Element {
             }}
         >
             <StackNavigator.Screen name="RootMenuNavigator" component={RootMenuNavigator} options={{ headerShown: false }} />
-            <StackNavigator.Screen name="AdminMenuNavigator" component={AdminMenuNavigator} options={{ headerShown: false }} />
             <StackNavigator.Screen
                 name="Obra"
                 component={NavigationModal({ Component: ObraView, modalHeight: Platform.OS === 'web' ? 300 : 280, forceModal: true })}
