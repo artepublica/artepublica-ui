@@ -3799,7 +3799,6 @@ export const RicoReis: Pessoa = {
     CidadePaisMorte: undefined,
 };
 
-
 export const AnaluNabuco: Pessoa = {
     Nome: `Analu Nabuco`,
     Nascimento: undefined,

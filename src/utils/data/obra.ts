@@ -433,10 +433,10 @@ via de acesso ao bairro.`,
     LugarRealocacao: undefined,
 };
 
-export const LampadariodaLapa_RodolfoBernadelli: Obra = {
+export const LampadariodaLapa_RodolfoBernardelli: Obra = {
     ID: 105,
     Imagem: undefined,
-    Autores: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernardelli],
     Promotor: undefined,
     Titulo: `Lampadário da  Lapa`,
     Renomeacao: false,
@@ -34913,7 +34913,7 @@ export const BaraodeMauanaRuadaCandelaria_Desconhecida: Obra = {
     Categoria: 'plasticidade',
     Tipologia: 'Escultura',
     Material: `Peça em bronze e pedestal de mármore`,
-    Descricao: `Réplica da obra de Rodolfo Bernadelli existente na Praça Mauá. É uma doação da Associação Comercial do Rio de Janeiro à Prefeitura, para identificar a Casa de Mauá.`,
+    Descricao: `Réplica da obra de Rodolfo Bernardelli existente na Praça Mauá. É uma doação da Associação Comercial do Rio de Janeiro à Prefeitura, para identificar a Casa de Mauá.`,
     Altura: undefined,
     Largura: undefined,
     Profundidade: undefined,

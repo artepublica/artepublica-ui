@@ -792,11 +792,12 @@ export const RetanguloVazado_FranzWeissmann: Obra = {
     Tipologia: 'Escultura',
 };
 
+//TODO linha 2972 do arquivo obra_artepublica.ts traz outra obra igual com informacoes diferente
 export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
     ID: 103,
     Imagem: 'RodolfoBernardelli_JoseOtavioCorreaLima.png',
     Autores: [artistas.JoseOtavioCorreaLima],
-    Titulo: `Rodolfo Bernadelli`,
+    Titulo: `Rodolfo Bernardelli`,
     Material: 'Bronze',
     DataInauguracao: `04/1934`,
     Propriedade: 'Pública',
@@ -810,7 +811,7 @@ export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
     Descricao: `O busto em homenagem a Bernardelli foi realizado por seu discípulo Correa Lima, que gravou no próprio bronze a sua intenção: Ao Prof. Rodolfo Bernardelli.`,
     Fatos: [
         new Fato('', '', 'bem tombado federal', '', [], ''),
-        new Fato('', '', 'Homenageado', 'Rodolfo Bernadelli', [], 'Rio de Janeiro'),
+        new Fato('', '', 'Homenageado', 'Rodolfo Bernardelli', [], 'Rio de Janeiro'),
     ],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
@@ -9629,7 +9630,7 @@ export const ViscondedoRioBranco_FelixMauriceCharpentier: Obra = {
 export const IrmaosBernadelli_HildegardoLeaoVelloso: Obra = {
     ID: 582,
     Autores: [artistas.HildegardoLeaoVelloso],
-    Titulo: `Rodolfo e Henrique, os Irmãos Bernadelli`,
+    Titulo: `Rodolfo e Henrique, os Irmãos Bernardelli`,
     Material: 'Bronze',
     DataInauguracao: `09/1952`,
     Propriedade: 'Pública',
@@ -9640,7 +9641,7 @@ export const IrmaosBernadelli_HildegardoLeaoVelloso: Obra = {
     Longitude: `-43.1763076`,
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao: `É uma dupla homenagem aos irmãos Rodolfo e Henrique Bernadelli no centenario de Rodolfo. A praça foi escolhida porque nesse local viveram e trabaharam os artistas.`,
+    Descricao: `É uma dupla homenagem aos irmãos Rodolfo e Henrique Bernardelli no centenario de Rodolfo. A praça foi escolhida porque nesse local viveram e trabaharam os artistas.`,
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',

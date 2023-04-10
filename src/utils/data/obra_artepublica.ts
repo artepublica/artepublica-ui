@@ -210,10 +210,10 @@ export const MarechalMachadoBittencourt_JoseOtavioCorreaLima: Obra = {
     Execucao: true,
 };
 
-export const TeixeiraDeFreitas_RodolfoBernadelli: Obra = {
+export const TeixeiraDeFreitas_RodolfoBernardelli: Obra = {
     ID: 7,
-    Imagem: 'TeixeiraDeFreitas_RodolfoBernadelli.jpg',
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'TeixeiraDeFreitas_RodolfoBernardelli.jpg',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: 'Teixeira de Freitas',
     Material: 'Bronze',
     Altura: undefined,
@@ -419,10 +419,10 @@ export const Tiradentes_FranciscoAndrade: Obra = {
     Execucao: true,
 };
 
-export const FranciscoPereiraPassos_RodolfoBernadelli: Obra = {
+export const FranciscoPereiraPassos_RodolfoBernardelli: Obra = {
     ID: 12,
-    Imagem: 'FranciscoPereiraPassos_RodolfoBernadelli.png',
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'FranciscoPereiraPassos_RodolfoBernardelli.png',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: 'Francisco Pereira Passos',
     Material: 'bronze e pedestal em granito',
     Altura: undefined,
@@ -859,10 +859,10 @@ export const FontedodosAmores_MestreValentim: Obra = {
     Execucao: true,
 };
 
-export const CarlosGomes_RodolfoBernadelli: Obra = {
+export const CarlosGomes_RodolfoBernardelli: Obra = {
     ID: 23,
-    // Imagem: 'CarlosGomes_RodolfoBernadelli.png', TODO
-    Autores: [artistas.RodolfoBernadelli],
+    // Imagem: 'CarlosGomes_RodolfoBernardelli.png', TODO
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: 'Carlos Gomes',
     Material: 'Bronze',
     Altura: undefined,
@@ -2435,10 +2435,10 @@ export const AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso: Obra = {
     Execucao: true,
 };
 
-export const BaraodeMaua_RodolfoBernadelli: Obra = {
+export const BaraodeMaua_RodolfoBernardelli: Obra = {
     ID: 60,
     Imagem: undefined,
-    Autores: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: 'Barão de Mauá',
     Material: 'Bronze',
     Altura: undefined,
@@ -2685,10 +2685,10 @@ export const AmoraLira_EugeneLouisLequesne: Obra = {
     Execucao: true,
 };
 
-export const DuquedeCaxias_RodolfoBernadelli: Obra = {
+export const DuquedeCaxias_RodolfoBernardelli: Obra = {
     ID: 66,
-    Imagem: 'DuquedeCaxias_RodolfoBernadelli.png',
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'DuquedeCaxias_RodolfoBernardelli.png',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: 'Duque de Caxias',
     Material: 'Bronze',
     Altura: undefined,
@@ -2969,7 +2969,7 @@ export const OlavoBilac_HumbertoCozzo: Obra = {
     Execucao: true,
 };
 
-export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
+/*export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
     ID: 72,
     Imagem: 'RodolfoBernardelli_JoseOtavioCorreaLima.png',
     Autores: [artistas.JoseOtavioCorreaLima],
@@ -2997,6 +2997,44 @@ export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
     Descricao:
         'O busto em bronze em homenagem ao escultor Bernardelli realizado por seu discípulo Correia Lima tem gravado no próprio bronze a sua intenção: "Ao Prof. Rodolfo Bernardelli."',
     Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Narratividade',
+    Funcao: 'Referencial',
+    Natureza: 'Cívica',
+    Tipologia: 'Busto',
+    Execucao: true,
+};*/
+
+export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
+    ID: 103,
+    Imagem: undefined,
+    Autores: [artistas.JoseOtavioCorreaLima],
+    Titulo: `Rodolfo Bernardelli`,
+    Material: 'Bronze',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: `04/1934`,
+    DatasImportantes: [new Data(`04/1934`, 'data de inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Central',
+    Bairro: 'Centro',
+    Endereco: 'Passeio Público',
+    Latitude: `-22.9125871`,
+    Longitude: `-43.176523`,
+    SuporteEspacial: undefined,
+    Base: 'Com pedestal',
+    MaterialBase: 'Granito',
+    Status: 'Permanece em espaço público',
+    Descricao: `O busto em homenagem a Bernardelli foi realizado por seu discípulo Correa Lima, que gravou no próprio bronze a sua intenção: Ao Prof. Rodolfo Bernardelli.`,
+    Fatos: [
+        new Fato('', '', 'bem tombado federal', '', [], ''),
+        new Fato('', '', 'Homenageado', 'Rodolfo Bernardelli', [], 'Rio de Janeiro'),
+    ],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -3044,10 +3082,10 @@ export const PedroAmerico_PauloMazzucchelli: Obra = {
     Execucao: true,
 };
 
-export const AlbertoNepomuceno_RodolfoBernadelli: Obra = {
+export const AlbertoNepomuceno_RodolfoBernardelli: Obra = {
     ID: 74,
     Imagem: undefined,
-    Autores: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: 'Alberto Nepomuceno',
     Material: 'Bronze',
     Altura: undefined,
@@ -3070,7 +3108,7 @@ export const AlbertoNepomuceno_RodolfoBernadelli: Obra = {
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
     Descricao:
-        'O monumento ao "Pai do Nacionalismo da musica erudita" foi realizado por seu amigo Rodolfo Bernadelli. Em 1885, Nepomuceno mudou-se para o Rio de Janeiro e foi morar na residencia dos Bernadelli, onde firmou amizade, o que pemitiu que tivesse continuidade seus estudos musicas. O monumento foi uma iniciativa do Diretorio Academico do Instituto Nacional de Musica. A inauguração foi realizada pela maestrina Joanidia Sodre. Estivram presentes o maestro Francisco Braga, professores do Instituto Nacional de Msica, os membros da diretoria, promotores da homenagem.',
+        'O monumento ao "Pai do Nacionalismo da musica erudita" foi realizado por seu amigo Rodolfo Bernardelli. Em 1885, Nepomuceno mudou-se para o Rio de Janeiro e foi morar na residencia dos Bernardelli, onde firmou amizade, o que pemitiu que tivesse continuidade seus estudos musicas. O monumento foi uma iniciativa do Diretorio Academico do Instituto Nacional de Musica. A inauguração foi realizada pela maestrina Joanidia Sodre. Estivram presentes o maestro Francisco Braga, professores do Instituto Nacional de Msica, os membros da diretoria, promotores da homenagem.',
     Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
@@ -3248,10 +3286,10 @@ export const BaraodeLadario_Joceil: Obra = {
     Execucao: true,
 };
 
-export const CristianoOttoni_RodolfoBernadelli: Obra = {
+export const CristianoOttoni_RodolfoBernardelli: Obra = {
     ID: 79,
     Imagem: undefined,
-    Autores: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: 'Cristiano Ottoni',
     Material: 'Bronze',
     Altura: undefined,
@@ -3401,7 +3439,7 @@ export const IrineuMarinho_BenevenutoBernaa: Obra = {
 export const PlacidoDeCastro_ArmandoShnoorr: Obra = {
     ID: 83,
     Imagem: undefined,
-    Autores: [artistas.ArmandoShnoorr],
+    Autores: [artistas.ArmandoSocratesSchnoor],
     Titulo: `Plácido de Castro`,
     Material: 'Bronze',
     Altura: undefined,
@@ -3714,10 +3752,10 @@ export const CastroAlves_EduardoDeSa: Obra = {
     Execucao: true,
 };
 
-export const FerreiraDeAraujo_RodolfoBernadelli: Obra = {
+export const FerreiraDeAraujo_RodolfoBernardelli: Obra = {
     ID: 91,
     Imagem: undefined,
-    Autores: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `Ferreira de Araújo`,
     Material: 'Bronze',
     Altura: undefined,
@@ -3761,10 +3799,10 @@ export const FerreiraDeAraujo_RodolfoBernadelli: Obra = {
     Execucao: true,
 };
 
-export const GoncalvesDias_RodolfoBernadelli: Obra = {
+export const GoncalvesDias_RodolfoBernardelli: Obra = {
     ID: 92,
-    Imagem: 'GoncalvesDias_RodolfoBernadelli.png',
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'GoncalvesDias_RodolfoBernardelli.png',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `Gonçalves Dias`,
     Material: 'Bronze',
     Altura: undefined,
@@ -4152,44 +4190,6 @@ export const RetanguloVazado_FranzWeissmann: Obra = {
     Execucao: true,
 };
 
-export const RodolfoBernadelli_JoseOtavioCorreaLima: Obra = {
-    ID: 103,
-    Imagem: undefined,
-    Autores: [artistas.JoseOtavioCorreaLima],
-    Titulo: `Rodolfo Bernadelli`,
-    Material: 'Bronze',
-    Altura: undefined,
-    Largura: undefined,
-    Profundidade: undefined,
-    Peso: undefined,
-    ValorObra: undefined,
-    DataInauguracao: `04/1934`,
-    DatasImportantes: [new Data(`04/1934`, 'data de inauguração')],
-    Promotor: undefined,
-    Financiamento: undefined,
-    Propriedade: 'Pública',
-    Zona: 'Central',
-    Bairro: 'Centro',
-    Endereco: 'Passeio Público',
-    Latitude: `-22.9125871`,
-    Longitude: `-43.176523`,
-    SuporteEspacial: undefined,
-    Base: 'Com pedestal',
-    MaterialBase: 'Granito',
-    Status: 'Permanece em espaço público',
-    Descricao: `O busto em homenagem a Bernardelli foi realizado por seu discípulo Correa Lima, que gravou no próprio bronze a sua intenção: Ao Prof. Rodolfo Bernardelli.`,
-    Fatos: [
-        new Fato('', '', 'bem tombado federal', '', [], ''),
-        new Fato('', '', 'Homenageado', 'Rodolfo Bernadelli', [], 'Rio de Janeiro'),
-    ],
-    Temporalidade: 'Permanente',
-    Categoria: 'Narratividade',
-    Funcao: 'Referencial',
-    Natureza: 'Cívica',
-    Tipologia: 'Busto',
-    Execucao: true,
-};
-
 export const SiqueiraCampos_Desconhecida: Obra = {
     ID: 103,
     Imagem: 'SiqueiraCampos_Desconhecida.png',
@@ -4227,10 +4227,10 @@ export const SiqueiraCampos_Desconhecida: Obra = {
     Execucao: true,
 };
 
-export const AlegoriadaMusica_RodolfoBernadelli: Obra = {
+export const AlegoriadaMusica_RodolfoBernardelli: Obra = {
     ID: 104,
     Imagem: undefined,
-    Autores: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `Alegoria da Musica`,
     Material: 'Bronze',
     Altura: undefined,
@@ -4732,10 +4732,10 @@ export const DJoaoVI_BarataFeijo: Obra = {
     Execucao: true,
 };
 
-export const GeneralOsorio_RodolfoBernadelli: Obra = {
+export const GeneralOsorio_RodolfoBernardelli: Obra = {
     ID: 117,
-    Imagem: 'GeneralOsorio_RodolfoBernadelli.jpg',
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'GeneralOsorio_RodolfoBernardelli.jpg',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `General Osório`,
     Material: 'Bronze',
     Altura: undefined,
@@ -9125,10 +9125,10 @@ export const FreiLeandroDoSacramento_RibeiroDaCosta: Obra = {
     Execucao: true,
 };
 
-export const DomJoaoVI_RodolfoBernadelli: Obra = {
+export const DomJoaoVI_RodolfoBernardelli: Obra = {
     ID: 235,
     Imagem: undefined,
-    Autores: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `Dom Joao VI`,
     Material: 'Bronze',
     Altura: undefined,
@@ -11515,10 +11515,10 @@ export const RitualdoVento_GabrielFonseca: Obra = {
     Execucao: true,
 };
 
-export const AVieiraSoutoePauloDeFrontin_RodolfoBernadelli: Obra = {
+export const AVieiraSoutoePauloDeFrontin_RodolfoBernardelli: Obra = {
     ID: 296,
     Imagem: undefined,
-    Autores: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `À Vieira Souto e Paulo de Frontin`,
     Material: 'Bronze',
     Altura: undefined,
@@ -13791,10 +13791,10 @@ export const Cuauhtemoc_CarlosObregonSantacilia: Obra = {
     Execucao: true,
 };
 
-export const JosedeAlencar_RodolfoBernadelli: Obra = {
+export const JosedeAlencar_RodolfoBernardelli: Obra = {
     ID: 361,
-    Imagem: 'JosedeAlencar_RodolfoBernadelli.jpeg',
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'JosedeAlencar_RodolfoBernardelli.jpeg',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `José de Alencar`,
     Material: 'Bronze',
     Altura: undefined,
@@ -14840,10 +14840,10 @@ export const CardealArcoverde_HeitorUsai: Obra = {
     Execucao: true,
 };
 
-export const PedroAlvaresCabral_RodolfoBernadelli: Obra = {
+export const PedroAlvaresCabral_RodolfoBernardelli: Obra = {
     ID: 394,
     Imagem: undefined,
-    Autores: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `Pedro Àlvares Cabral`,
     Material: 'Bronze',
     Altura: undefined,
@@ -17211,7 +17211,7 @@ export const IrmaosBernadelli_HildegardoLeaoVelloso: Obra = {
     ID: 582,
     Imagem: undefined,
     Autores: [artistas.HildegardoLeaoVelloso],
-    Titulo: `Rodolfo e Henrique, os Irmãos Bernadelli`,
+    Titulo: `Rodolfo e Henrique, os Irmãos Bernardelli`,
     Material: 'Bronze',
     Altura: undefined,
     Largura: undefined,
@@ -17232,7 +17232,7 @@ export const IrmaosBernadelli_HildegardoLeaoVelloso: Obra = {
     Base: 'Com pedestal',
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
-    Descricao: `É uma dupla homenagem aos irmãos Rodolfo e Henrique Bernadelli no centenario de Rodolfo. A praça foi escolhida porque nesse local viveram e trabaharam os artistas.`,
+    Descricao: `É uma dupla homenagem aos irmãos Rodolfo e Henrique Bernardelli no centenario de Rodolfo. A praça foi escolhida porque nesse local viveram e trabaharam os artistas.`,
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
@@ -17318,10 +17318,10 @@ export const SarahKubitschek_MarliMazeredo: Obra = {
     Execucao: true,
 };
 
-export const SerzedeloCorreia_RodolfoBernadelli: Obra = {
+export const SerzedeloCorreia_RodolfoBernardelli: Obra = {
     ID: 582,
-    Imagem: 'SerzedeloCorreia_RodolfoBernadelli.png',
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'SerzedeloCorreia_RodolfoBernardelli.png',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `Serzedelo Correia`,
     Material: 'Bronze',
     Altura: undefined,
