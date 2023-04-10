@@ -2161,7 +2161,7 @@ export const CarlosDelNigro: Pessoa = {
     Fatos: undefined,
 };
 
-export const ArmandoShnoorr: Pessoa = {
+export const ArmandoSocratesSchnoor: Pessoa = {
     ID: undefined,
     Nome: `Armando Sócrates Shnoorr`,
     Nascimento: undefined,
@@ -2624,9 +2624,9 @@ export const EdgarDuvivierFilho: Pessoa = {
     Fatos: undefined,
 };
 
-export const RodolfoBernadelli: Pessoa = {
+export const RodolfoBernardelli: Pessoa = {
     ID: undefined,
-    Nome: `Rodolfo Bernadelli`,
+    Nome: `Rodolfo Bernardelli`,
     Nascimento: undefined,
     CidadePaisNascimento: undefined,
     Morte: undefined,

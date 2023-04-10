@@ -4,30 +4,6 @@ import Data from '../../domain/data';
 import Fato from '../../domain/fato';
 import Obra from '../../domain/obra';
 
-export const AlbertoNepomuceno_RodolfoBernadelli: Obra = {
-    ID: 74,
-    Autores: [artistas.RodolfoBernadelli],
-    Titulo: 'Alberto Nepomuceno',
-    Material: 'Bronze',
-    DataInauguracao: '04/1935',
-    Propriedade: 'Pública',
-    Zona: 'Central',
-    Bairro: 'Centro',
-    Endereco: 'Passeio Público',
-    Latitude: '-22.9137136',
-    Longitude: '-43.1767548',
-    MaterialBase: 'Granito',
-    Status: 'Permanece em espaço público',
-    Descricao:
-        'O monumento ao "Pai do Nacionalismo da musica erudita" foi realizado por seu amigo Rodolfo Bernadelli. Em 1885, Nepomuceno mudou-se para o Rio de Janeiro e foi morar na residencia dos Bernadelli, onde firmou amizade, o que pemitiu que tivesse continuidade seus estudos musicas. O monumento foi uma iniciativa do Diretorio Academico do Instituto Nacional de Musica. A inauguração foi realizada pela maestrina Joanidia Sodre. Estivram presentes o maestro Francisco Braga, professores do Instituto Nacional de Msica, os membros da diretoria, promotores da homenagem.',
-    Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
-    Temporalidade: 'Permanente',
-    Categoria: 'Narratividade',
-    Funcao: 'Referencial',
-    Natureza: 'Cívica',
-    Tipologia: 'Busto',
-};
-
 export const APaz_SironFranco: Obra = {
     ID: 75,
     Imagem: 'APazAmpulheta_SironFranco.jpg',
@@ -94,6 +70,7 @@ export const EdsonLuis_CristinaPozzobon: Obra = {
 
 export const MarcilioDias_LuisPaesLeme: Obra = {
     ID: 77,
+    Imagem: 'MarcilioDias_LuisPaesLeme.png',
     Autores: [artistas.LuisPaesLeme],
     Titulo: 'Marcílio Dias',
     Material: 'Bronze',
@@ -124,6 +101,7 @@ export const MarcilioDias_LuisPaesLeme: Obra = {
 
 export const BaraodeLadario_Joceil: Obra = {
     ID: 78,
+    Imagem: 'BaraodeLadario_Joceil.jpeg',
     Autores: [artistas.Joceil],
     Titulo: 'Barão de Ladário',
     Material: 'Bronze',
@@ -150,9 +128,10 @@ export const BaraodeLadario_Joceil: Obra = {
     Tipologia: 'Relevo',
 };
 
-export const CristianoOttoni_RodolfoBernadelli: Obra = {
+export const CristianoOttoni_RodolfoBernardelli: Obra = {
     ID: 79,
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'CristianoOttoni_RodolfoBernardelli.jpeg',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: 'Cristiano Ottoni',
     Material: 'Bronze',
     DataInauguracao: '03/1908',
@@ -225,8 +204,9 @@ export const ChiquinhaGonzaga_HonorioPecanha: Obra = {
     Tipologia: 'Busto',
 };
 
-export const IrineuMarinho_BenevenutoBernaa: Obra = {
+export const IrineuMarinho_BenevenutoBerna: Obra = {
     ID: 82,
+    Imagem: 'IrineuMarinho_BenevenutoBerna.jpeg',
     Autores: [artistas.BenevenutoBerna],
     Titulo: `Irineu Marinho`,
     Material: 'Bronze',
@@ -253,9 +233,10 @@ export const IrineuMarinho_BenevenutoBernaa: Obra = {
     Tipologia: 'Busto',
 };
 
-export const PlacidoDeCastro_ArmandoShnoorr: Obra = {
+export const PlacidoDeCastro_ArmandoSocratesSchnoor: Obra = {
     ID: 83,
-    Autores: [artistas.ArmandoShnoorr],
+    Imagem: 'PlacidoDeCastro_ArmandoSocratesSchnoor.jpeg',
+    Autores: [artistas.ArmandoSocratesSchnoor],
     Titulo: `Plácido de Castro`,
     Material: 'Bronze',
     DataInauguracao: `01/1973`,
@@ -281,6 +262,7 @@ export const PlacidoDeCastro_ArmandoShnoorr: Obra = {
 
 export const FontedoTritao_NicolinaVazDeAssisPintodoCouto: Obra = {
     ID: 84,
+    Imagem: 'FontedoTritao_NicolinaVazDeAssisPintodoCouto.jpeg',
     Autores: [artistas.NicolinaVazDeAssisPintodoCouto],
     Titulo: `Fonte do Tritão`,
     Material: 'Bronze',
@@ -301,8 +283,9 @@ export const FontedoTritao_NicolinaVazDeAssisPintodoCouto: Obra = {
     Tipologia: 'Grupo escultórico',
 };
 
-export const JosePauloSilva_CarlosDelNegro: Obra = {
+export const JosePauloSilva_CarlosDelNigro: Obra = {
     ID: 85,
+    Imagem: 'JosePauloSilva_CarlosDelNigro.png',
     Autores: [artistas.CarlosDelNigro],
     Titulo: 'Jose Paulo Silva',
     Material: 'Bronze',
@@ -334,6 +317,7 @@ export const JosePauloSilva_CarlosDelNegro: Obra = {
 
 export const RaymundoCorrea_HonorioPecanha: Obra = {
     ID: 86,
+    Imagem: 'RaymundoCorrea_HonorioPecanha.jpeg',
     Autores: [artistas.HonorioPecanha],
     Titulo: `Raymundo Corrêa`,
     Material: 'Bronze',
@@ -364,6 +348,7 @@ export const RaymundoCorrea_HonorioPecanha: Obra = {
 
 export const FranciscoBraga_PauloMazzucchelli: Obra = {
     ID: 87,
+    Imagem: 'FranciscoBraga_PauloMazzucchelli.jpeg',
     Autores: [artistas.PauloMazzucchelli],
     Titulo: `Francisco Braga`,
     Material: 'Bronze',
@@ -473,9 +458,10 @@ export const CastroAlves_EduardoDeSa: Obra = {
     Tipologia: 'Busto',
 };
 
-export const FerreiraDeAraujo_RodolfoBernadelli: Obra = {
+export const FerreiraDeAraujo_RodolfoBernardelli: Obra = {
     ID: 91,
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'FranciscoBraga_PauloMazzucchelli.jpeg',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `Ferreira de Araújo`,
     Material: 'Bronze',
     DataInauguracao: `08/1912`,
@@ -509,10 +495,10 @@ export const FerreiraDeAraujo_RodolfoBernadelli: Obra = {
     Tipologia: 'Busto',
 };
 
-export const GoncalvesDias_RodolfoBernadelli: Obra = {
+export const GoncalvesDias_RodolfoBernardelli: Obra = {
     ID: 92,
-    Imagem: 'GoncalvesDias_RodolfoBernadelli.png',
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'GoncalvesDias_RodolfoBernardelli.png',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `Gonçalves Dias`,
     Material: 'Bronze',
     DataInauguracao: `06/1901`,
@@ -605,9 +591,10 @@ export const Inverno_MathurinMoreau: Obra = {
     Tipologia: 'Estátua',
 };
 
-export const Outono_MathurinMoreau: Obra = {
+export const Outono_GustaveFredericMichel: Obra = {
     ID: 95,
-    Autores: [artistas.MathurinMoreau],
+    Imagem: 'Outono_GustaveFredericMichel.jpg',
+    Autores: [artistas.GustaveFredericMichel],
     Titulo: `Outono`,
     Material: 'ferro fundido',
     DataInauguracao: `01/1860`,
@@ -668,6 +655,7 @@ export const Verao_MathurinMoreau: Obra = {
 
 export const NelsonMege_HonorioPecanha: Obra = {
     ID: 99,
+    Imagem: 'NelsonMege_HonorioPecanha.jpeg',
     Autores: [artistas.HonorioPecanha],
     Titulo: `Nelson Megé`,
     Material: 'metalon',
@@ -804,8 +792,9 @@ export const RetanguloVazado_FranzWeissmann: Obra = {
     Tipologia: 'Escultura',
 };
 
-export const RodolfoBernadelli_JoseOtavioCorreaLima: Obra = {
+export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
     ID: 103,
+    Imagem: 'RodolfoBernardelli_JoseOtavioCorreaLima.png',
     Autores: [artistas.JoseOtavioCorreaLima],
     Titulo: `Rodolfo Bernadelli`,
     Material: 'Bronze',
@@ -855,9 +844,10 @@ export const SiqueiraCampos_Desconhecida: Obra = {
     Tipologia: 'Busto',
 };
 
-export const AlegoriadaMusica_RodolfoBernadelli: Obra = {
+export const AMusica_RodolfoBernardelli: Obra = {
     ID: 104,
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: undefined,
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `Alegoria da Musica`,
     Material: 'Bronze',
     DataInauguracao: `1909`,
@@ -877,6 +867,7 @@ export const AlegoriadaMusica_RodolfoBernadelli: Obra = {
 
 export const RuiBarbosa_DeoclecianoMartinsDeOliveiraFilho: Obra = {
     ID: 105,
+    Imagem: 'RuiBarbosa_DeoclecianoMartinsDeOliveiraFilho.jpeg',
     Autores: [artistas.DeoclecianoMartinsDeOliveiraFilho],
     Titulo: `Rui Barbosa`,
     Material: 'Bronze',
@@ -943,6 +934,7 @@ export const VenusReclinada_JoseResende: Obra = {
 
 export const FranciscoMignone_BrunoGiorgi: Obra = {
     ID: 108,
+    Imagem: 'FranciscoMignone_BrunoGiorgi.jpeg',
     Autores: [artistas.BrunoGiorgi],
     Titulo: `Francisco Mignone`,
     Material: 'Bronze',
@@ -1038,6 +1030,7 @@ export const MonumentoaJuventude_BrunoGiorgi: Obra = {
 
 export const AssisChateaubriand_BrunoGiorgi: Obra = {
     ID: 112,
+    Imagem: 'AssisChateaubriand_BrunoGiorgi.jpeg',
     Autores: [artistas.HeitorUsai],
     Titulo: `Assis Chateaubriand`,
     Material: 'Bronze',
@@ -1084,6 +1077,7 @@ export const Terra_FranzWeissmann: Obra = {
 
 export const ModestinoKanto_HonorioPecanha: Obra = {
     ID: 114,
+    Imagem: 'ModestinoKanto_HonorioPecanha.jpeg',
     Autores: [artistas.HonorioPecanha],
     Titulo: `Modestino Kanto`,
     Material: 'Bronze',
@@ -1161,10 +1155,11 @@ export const JoaoCandido_ValterBrito: Obra = {
     Tipologia: 'Estátua',
 };
 
-export const DJoaoVI_BarataFeijo: Obra = {
+export const DomJoaoVI_CarlosRamos: Obra = {
     ID: 116,
-    Autores: [artistas.BarataFeijo],
-    Titulo: `D. João VI`,
+    Imagem: 'DomJoaoVI_CarlosRamos.jpeg',
+    Autores: [artistas.CarlosRamos],
+    Titulo: `Dom João VI`,
     Material: 'Bronze',
     Altura: '3 m',
     DataInauguracao: `06/1965`,
@@ -1197,10 +1192,10 @@ export const DJoaoVI_BarataFeijo: Obra = {
     Tipologia: 'Estátua',
 };
 
-export const GeneralOsorio_RodolfoBernadelli: Obra = {
+export const GeneralOsorio_RodolfoBernardelli: Obra = {
     ID: 117,
-    Imagem: 'GeneralOsorio_RodolfoBernadelli.jpg',
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'GeneralOsorio_RodolfoBernardelli.jpg',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `General Osório`,
     Material: 'Bronze',
     DataInauguracao: `11/1894`,
@@ -1229,6 +1224,7 @@ export const GeneralOsorio_RodolfoBernadelli: Obra = {
 
 export const PequenoJornaleiro_AnisioOscarMotta: Obra = {
     ID: 118,
+    Imagem: 'PequenoJornaleiro_AnisioOscarMotta.jpeg',
     Autores: [artistas.AnisioOscarMotta],
     Titulo: `Pequeno Jornaleiro`,
     Material: 'Bronze',
@@ -4105,9 +4101,9 @@ export const FreiLeandroDoSacramento_RibeiroDaCosta: Obra = {
     Tipologia: 'Busto',
 };
 
-export const DomJoaoVI_RodolfoBernadelli: Obra = {
+export const DomJoaoVI_RodolfoBernardelli: Obra = {
     ID: 235,
-    Autores: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `Dom Joao VI`,
     Material: 'Bronze',
     DataInauguracao: `1908`,
@@ -5704,9 +5700,9 @@ export const RitualdoVento_GabrielFonseca: Obra = {
     Tipologia: 'Escultura',
 };
 
-export const AVieiraSoutoePauloDeFrontin_RodolfoBernadelli: Obra = {
+export const AVieiraSoutoePauloDeFrontin_RodolfoBernardelli: Obra = {
     ID: 296,
-    Autores: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `À Vieira Souto e Paulo de Frontin`,
     Material: 'Bronze',
     DataInauguracao: `08/1949`,
@@ -7236,6 +7232,7 @@ export const AsTresForcasArmadas_AlfredoCeschiatti: Obra = {
 
 export const Cuauhtemoc_CarlosObregonSantacilia: Obra = {
     ID: 360,
+    Imagem: 'Cuauhtemoc_CarlosObregonSantacilia.jpeg',
     Autores: [artistas.CarlosObregonSantacilia],
     Titulo: `Cuauhtémoc`,
     Material: 'Bronze',
@@ -7258,10 +7255,10 @@ export const Cuauhtemoc_CarlosObregonSantacilia: Obra = {
     Tipologia: 'Estátua',
 };
 
-export const JosedeAlencar_RodolfoBernadelli: Obra = {
+export const JosedeAlencar_RodolfoBernardelli: Obra = {
     ID: 361,
-    Imagem: 'JosedeAlencar_RodolfoBernadelli.jpeg',
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'JosedeAlencar_RodolfoBernardelli.jpeg',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `José de Alencar`,
     Material: 'Bronze',
     DataInauguracao: `05/1897`,
@@ -7977,9 +7974,9 @@ export const CardealArcoverde_HeitorUsai: Obra = {
     Tipologia: 'Busto',
 };
 
-export const PedroAlvaresCabral_RodolfoBernadelli: Obra = {
+export const PedroAlvaresCabral_RodolfoBernardelli: Obra = {
     ID: 394,
-    Autores: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `Pedro Àlvares Cabral`,
     Material: 'Bronze',
     DataInauguracao: `05/1900`,
@@ -9706,10 +9703,10 @@ export const SarahKubitschek_MarliMazeredo: Obra = {
     Tipologia: 'Busto',
 };
 
-export const SerzedeloCorreia_RodolfoBernadelli: Obra = {
+export const SerzedeloCorreia_RodolfoBernardelli: Obra = {
     ID: 582,
-    Imagem: 'SerzedeloCorreia_RodolfoBernadelli.png',
-    Autores: [artistas.RodolfoBernadelli],
+    Imagem: 'SerzedeloCorreia_RodolfoBernardelli.png',
+    Autores: [artistas.RodolfoBernardelli],
     Titulo: `Serzedelo Correia`,
     Material: 'Bronze',
     DataInauguracao: `11/1910`,

@@ -64,8 +64,8 @@ export const SankhoChaudhuri: Artista = {
     Pessoa: pessoas.SankhoChaudhuri,
 };
 
-export const RodolfoBernadelli: Artista = {
-    Pessoa: pessoas.RodolfoBernadelli,
+export const RodolfoBernardelli: Artista = {
+    Pessoa: pessoas.RodolfoBernardelli,
 };
 
 export const EscritorioPontualAssociados: Artista = {
@@ -116,8 +116,8 @@ export const CarlosDelNigro: Artista = {
     Pessoa: pessoas.CarlosDelNigro,
 };
 
-export const ArmandoShnoorr: Artista = {
-    Pessoa: pessoas.ArmandoShnoorr,
+export const ArmandoSocratesSchnoor: Artista = {
+    Pessoa: pessoas.ArmandoSocratesSchnoor,
 };
 
 export const ACoutinho: Artista = {

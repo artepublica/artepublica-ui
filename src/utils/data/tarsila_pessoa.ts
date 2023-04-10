@@ -1236,8 +1236,8 @@ export const CarlosDelNigro: Pessoa = {
     CidadePaisMorte: undefined,
 };
 
-export const ArmandoShnoorr: Pessoa = {
-    Nome: `Armando Sócrates Shnoorr`,
+export const ArmandoSocratesSchnoor: Pessoa = {
+    Nome: `Armando Sócrates Schnoor`,
     Nascimento: undefined,
     CidadePaisNascimento: undefined,
     Morte: undefined,
@@ -1365,8 +1365,8 @@ export const EdgarDuvivierFilho: Pessoa = {
     CidadePaisMorte: undefined,
 };
 
-export const RodolfoBernadelli: Pessoa = {
-    Nome: `Rodolfo Bernadelli`,
+export const RodolfoBernardelli: Pessoa = {
+    Nome: `Rodolfo Bernardelli`,
     Nascimento: '1852',
     CidadePaisNascimento: 'Guadalajara, México',
     Morte: '1931',
@@ -3799,13 +3799,6 @@ export const RicoReis: Pessoa = {
     CidadePaisMorte: undefined,
 };
 
-export const BenevenutaBerna: Pessoa = {
-    Nome: `Benevenuta Berna`,
-    Nascimento: undefined,
-    CidadePaisNascimento: undefined,
-    Morte: undefined,
-    CidadePaisMorte: undefined,
-};
 
 export const AnaluNabuco: Pessoa = {
     Nome: `Analu Nabuco`,
