@@ -14,3 +14,5 @@ export * from './not-found';
 export * from './not-match';
 export * from './tipo';
 export * from './prefeitos';
+export * from './about';
+export * from './glossary';
