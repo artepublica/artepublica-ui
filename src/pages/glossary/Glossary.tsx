@@ -13,58 +13,45 @@ function Glossary(): JSX.Element {
 
     const glossary: { termo: string; descricao: string }[] = [
         {
-            termo: 'termo1',
-            descricao: 'olá, eu sou a descrição do termo, que legal né? Pode digitar o quanto quiser.',
+            termo: 'Arte Pública',
+            descricao: 'O termo faz referência a obras de arte visuais que estão localizadas no espaço público; são de propriedade pública; motivam a participação cívica e política e, por isso, estão envoltas por disputas simbólicas de representação social',
         },
         {
-            termo: 'termo2',
-            descricao: 'descrição',
+            termo: 'Busto',
+            descricao: 'Identifica a representação da parte superior do corpo humano, podendo incluir uma ou mais cabeças, o pescoço, uma parte variável das costas, dos braços e do peito.',
         },
         {
-            termo: 'termo3',
-            descricao: 'descrição',
+            termo: 'Cabeça',
+            descricao: 'Identifica a escultura que representa a parte correspondente à extremidade superior do corpo humano ou à extremidade anterior do corpo de um animal, incluindo a cabeça e o pescoço. ',
         },
         {
-            termo: 'termo4',
-            descricao: 'descrição',
+            termo: 'Escultura',
+            descricao: 'É um objeto artístico tridimensional que ocupa um determinado espaço com seus volumes.',
         },
         {
-            termo: 'termo5',
-            descricao: 'descrição',
+            termo: 'Estátua',
+            descricao: 'É toda escultura que representa uma figura completa (homem, animal, híbrido) de pé, sentada, ajoelhada ou deitada, em qualquer matéria. ',
         },
         {
-            termo: 'termo6',
-            descricao: 'descrição',
+            termo: 'Grupo escultórico',
+            descricao: 'Identifica a reunião de duas ou mais figuras sobre o mesmo suporte (soco, embasamento, pedestal...) que participam numa mesma ação ou estão relacionadas por uma situação que lhes é comum. ',
         },
         {
-            termo: 'termo7',
-            descricao: 'descrição',
+            termo: 'Lâmina escultórica',
+            descricao: 'Executada em metal, pode ser pouco espessa, mas é rígida, apresentando um campo figurativo, uma ornamentação gravada ou uma inscrição, em relevo ou insculpida. Pode ser aplicada a um edifício ou a um monumento.',
         },
         {
-            termo: 'termo8',
-            descricao: 'descrição',
+            termo: 'Obelisco',
+            descricao: 'É uma pirâmide quadrangular, habitualmente monolítica, usada fundamentalmente como marco monumental.',
         },
         {
-            termo: 'termo9',
-            descricao: 'descrição',
-        },
-        {
-            termo: 'termo10',
-            descricao: 'descrição',
-        },
-        {
-            termo: 'termo11',
-            descricao: 'descrição',
-        },
-        {
-            termo: 'termo12',
-            descricao: 'descrição',
-        },
-        {
-            termo: 'termo13',
-            descricao: 'descrição',
+            termo: 'Relevo',
+            descricao: 'Identifica qualquer obra esculpida na qual as figuras se projetam a partir de um fundo. Classificam-se pelo grau de projeção do seu volume: baixo-relevo, médio-relevo, alto relevo. ',
         },
     ];
+
+    // Referências: OLIVEIRA, Aline Rayane de Souza. Arte Pública na cidade do Rio de Janeiro e o programa Esculturas Urbanas. Tese (Doutorado em Urbanismo), Universidade Federal do Rio de Janeiro, Rio de Janeiro, 2022.
+    //              CARVALHO, Maria João Vilhena. Normas de inventário: escultura. Lisboa: Instituto Português de Museus, 2004.
 
     const [
         glossaryState,

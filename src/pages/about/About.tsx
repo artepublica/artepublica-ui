@@ -43,7 +43,7 @@ function About(): JSX.Element {
                                 ]}
                             >
                                 <Image
-                                    source={require('@assets/stefano.png')}
+                                    source={require('@assets/Aline.jpg')}
                                     style={{ width: tamanhoImagem, height: tamanhoImagem, borderRadius: tamanhoImagem / 2 }}
                                 />
                                 <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>Aline Oliveira</Text>
@@ -73,7 +73,7 @@ function About(): JSX.Element {
                                 ]}
                             >
                                 <Image
-                                    source={require('@assets/stefano.png')}
+                                    source={require('@assets/Aline.jpg')}
                                     style={{ width: tamanhoImagem, height: tamanhoImagem, borderRadius: tamanhoImagem / 2 }}
                                 />
                                 <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>Aline Oliveira</Text>
