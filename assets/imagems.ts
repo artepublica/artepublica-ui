@@ -195,6 +195,7 @@ const images = {
     'FonteDaCrianca_HenriFredericIselin.jpeg': require('./obras/FonteDaCrianca_HenriFredericIselin.jpeg'),
     'GeneralOsorio_RodolfoBernardelli.jpg': require('./obras/GeneralOsorio_RodolfoBernardelli.jpg'),
     'AryBarroso_LeoSantana.png': require('./obras/AryBarroso_LeoSantana.png'),
+    'CoronelAssuncao_RuffoFanucchi.jpeg': require('./obras/CoronelAssuncao_RuffoFanucchi.jpeg'),
 };
 
 export default images;
