@@ -1,8 +1,13 @@
 import { Image, View, StyleSheet, Platform } from 'react-native';
 
 import { Text } from '@base-components';
+import { Theme, useTheme } from '@utils';
 
 function HeaderTitle(): JSX.Element {
+    const { theme } = useTheme();
+
+    const style = styles(theme);
+
     const iconSize = Platform.OS === 'web' ? 40 : 30;
     return (
         <View style={{ flexDirection: 'column', marginLeft: -4 }}>
@@ -19,13 +24,17 @@ function HeaderTitle(): JSX.Element {
     );
 }
 
-const style = StyleSheet.create({
-    title: {
-        fontSize: 20,
-    },
-    subTitle: {
-        fontSize: 10,
-    },
-});
+const styles = (theme: Theme) => {
+    return StyleSheet.create({
+        title: {
+            fontSize: 20,
+            color: theme.navigation.text,
+        },
+        subTitle: {
+            fontSize: 10,
+            color: theme.navigation.text,
+        },
+    });
+};
 
 export default HeaderTitle;

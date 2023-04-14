@@ -1,6 +1,6 @@
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigatorScreenParams } from '@react-navigation/native';
-import { useWindowDimensions, View } from 'react-native';
+import { Image, useWindowDimensions, View } from 'react-native';
 
 import { Text } from '@base-components';
 import { About, Decade, Glossary, Tipo_Decada, Tipo_GraficoRedeTipologiaObra } from '@pages';
@@ -22,6 +22,7 @@ export type RootMenuNavigatorParamsList = {
     Analises_Tipologia: undefined;
     Analises_Autores: undefined;
     Analises_Prefeitos: NavigatorScreenParams<PrefeitosNavigatorParamList>;
+    Analises_Decadas: undefined;
 };
 
 type RootMenuNavigatorProps = {
@@ -53,9 +54,9 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                         headerLeft: () => <HeaderLeft navigation={navigation} />,
                     })}
                 >
-                    {(props) => (
+                    {() => (
                         <SafeView>
-                            <HomeNavigator {...props} />
+                            <HomeNavigator />
                         </SafeView>
                     )}
                 </DrawerNavigator.Screen>
@@ -69,9 +70,9 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                         headerLeft: () => <HeaderLeft navigation={navigation} />,
                     })}
                 >
-                    {(props) => (
+                    {() => (
                         <SafeView>
-                            <About {...props} />
+                            <About />
                         </SafeView>
                     )}
                 </DrawerNavigator.Screen>
@@ -85,9 +86,9 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                         headerLeft: () => <HeaderLeft navigation={navigation} />,
                     })}
                 >
-                    {(props) => (
+                    {() => (
                         <SafeView>
-                            <Glossary {...props} />
+                            <Glossary />
                         </SafeView>
                     )}
                 </DrawerNavigator.Screen>
@@ -133,9 +134,9 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                         headerLeft: () => <HeaderLeft navigation={navigation} />,
                     })}
                 >
-                    {(props) => (
+                    {() => (
                         <SafeView>
-                            <PreveitosNavigator {...props} />
+                            <PreveitosNavigator />
                         </SafeView>
                     )}
                 </DrawerNavigator.Screen>
@@ -149,15 +150,27 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                         headerLeft: () => <HeaderLeft navigation={navigation} />,
                     })}
                 >
-                    {(props) => (
+                    {() => (
                         <SafeView>
-                            <Decade {...props} />
+                            <Decade />
                         </SafeView>
                     )}
                 </DrawerNavigator.Screen>
             </DrawerNavigator.Navigator>
-            <View style={{ width: '100%', height: 48, backgroundColor: '#FFC003' }}>
-                <Text style={{ fontSize: 16, fontWeight: 500, color: '#CC1964', paddingTop: 16, paddingLeft: 16 }}>Apoio:</Text>
+            <View style={{ width: '100%', height: 48, backgroundColor: '#FFC003', flexDirection: 'row' }}>
+                <Text style={{ fontSize: 16, fontWeight: '500', color: '#CC1964', paddingTop: 16, paddingLeft: 16 }}>Apoio:</Text>
+                <View style={{ paddingTop: 12, paddingLeft: 16 }}>
+                    <Image source={require('@assets/logos/UFRJ.png')} style={{ width: 60, height: 24 }} />
+                </View>
+                <View style={{ paddingTop: 12, paddingLeft: 16 }}>
+                    <Image source={require('@assets/logos/FAU.png')} style={{ width: 99, height: 24 }} />
+                </View>
+                <View style={{ paddingTop: 12, paddingLeft: 16 }}>
+                    <Image source={require('@assets/logos//PROURB.png')} style={{ width: 93, height: 24 }} />
+                </View>
+                <View style={{ paddingTop: 12, paddingLeft: 16 }}>
+                    <Image source={require('@assets/logos/cnpq.png')} style={{ width: 56, height: 24 }} />
+                </View>
             </View>
         </>
     );

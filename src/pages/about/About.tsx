@@ -19,17 +19,20 @@ function About(): JSX.Element {
     return (
         <ScrollView contentContainerStyle={style.container}>
             <View style={{ width: '100%', height: 48, backgroundColor: '#FFC003' }}>
-                <Text style={{ fontSize: 32, fontWeight: 700, color: '#CC1964', paddingTop: 4, paddingLeft: 16 }}>Sobre</Text>
+                <Text style={{ fontSize: 32, fontWeight: '700', color: '#CC1964', paddingTop: 4, paddingLeft: 16 }}>Sobre</Text>
             </View>
             <View style={{ backgroundColor: '#fff', width: '100%', padding: 32, alignItems: 'center' }}>
                 <Text style={{ textAlign: 'justify' }}>
-                    Texto sobre o aplicativo arte publica. Texto sobre o aplicativo arte publica. Texto sobre o aplicativo arte publica.
+                    O Arte Pública é um aplicativo que propõe ampliar o conhecimento sobre a arte pública, disponibilizando dados sobre as obras em um acervo
+                    digital e contribuir com novas formas de tratamento de dados empíricos em pesquisas neste campo. Embora o termo arte pública faça referência
+                    a diferentes tipos de obras, a primeira etapa deste projeto disponibiliza informações acerca de 489 obras de arte tridimensionais de caráter
+                    permanente localizadas na cidade do Rio de Janeiro.
                 </Text>
                 <Text style={{ textAlign: 'justify' }}>
-                    Texto sobre o aplicativo arte publica. Texto sobre o aplicativo arte publica. Texto sobre o aplicativo arte publica.
-                </Text>
-                <Text style={{ textAlign: 'justify' }}>
-                    Texto sobre o aplicativo arte publica. Texto sobre o aplicativo arte publica. Texto sobre o aplicativo arte publica.
+                    Este aplicativo foi desenvolvido em parceria com o tecnologista Stéfano D’Ávila Bassan e é um desdobramento da pesquisa de doutorado de
+                    Aline Rayane de Souza Oliveira junto ao Grupo de Pesquisa Arquitetura, Cidade e Cultura do Laboratório de Análise Urbana e Representação
+                    Digital (LAURD), no Programa de Pós-graduação em Urbanismo (PROURB) da Faculdade de Arquitetura e Urbanismo da Universidade Federal do Rio
+                    de Janeiro, com bolsa concedida pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).
                 </Text>
             </View>
             <View style={{ backgroundColor: '#CC1964', width: '100%', padding: 32 }}>
@@ -99,8 +102,5 @@ function About(): JSX.Element {
         </ScrollView>
     );
 }
-// Texto sobre: O Arte Pública é um aplicativo que propõe ampliar o conhecimento sobre a arte pública, disponibilizando dados sobre as obras em um acervo digital e contribuir com novas formas de tratamento de dados empíricos em pesquisas neste campo. Embora o termo arte pública faça referência a diferentes tipos de obras, a primeira etapa deste projeto disponibiliza informações acerca de 489 obras de arte tridimensionais de caráter permanente localizadas na cidade do Rio de Janeiro.
-//              Este aplicativo foi desenvolvido em parceria com o tecnologista Stéfano D’Ávila Bassan e é um desdobramento da pesquisa de doutorado de Aline Rayane de Souza Oliveira junto ao Grupo de Pesquisa Arquitetura, Cidade e Cultura do Laboratório de Análise Urbana e Representação Digital (LAURD), no Programa de Pós-graduação em Urbanismo (PROURB) da Faculdade de Arquitetura e Urbanismo da Universidade Federal do Rio de Janeiro, com bolsa concedida pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq). 
-
 
 export default About;

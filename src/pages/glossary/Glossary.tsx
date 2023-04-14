@@ -14,15 +14,18 @@ function Glossary(): JSX.Element {
     const glossary: { termo: string; descricao: string }[] = [
         {
             termo: 'Arte Pública',
-            descricao: 'O termo faz referência a obras de arte visuais que estão localizadas no espaço público; são de propriedade pública; motivam a participação cívica e política e, por isso, estão envoltas por disputas simbólicas de representação social',
+            descricao:
+                'O termo faz referência a obras de arte visuais que estão localizadas no espaço público; são de propriedade pública; motivam a participação cívica e política e, por isso, estão envoltas por disputas simbólicas de representação social',
         },
         {
             termo: 'Busto',
-            descricao: 'Identifica a representação da parte superior do corpo humano, podendo incluir uma ou mais cabeças, o pescoço, uma parte variável das costas, dos braços e do peito.',
+            descricao:
+                'Identifica a representação da parte superior do corpo humano, podendo incluir uma ou mais cabeças, o pescoço, uma parte variável das costas, dos braços e do peito.',
         },
         {
             termo: 'Cabeça',
-            descricao: 'Identifica a escultura que representa a parte correspondente à extremidade superior do corpo humano ou à extremidade anterior do corpo de um animal, incluindo a cabeça e o pescoço. ',
+            descricao:
+                'Identifica a escultura que representa a parte correspondente à extremidade superior do corpo humano ou à extremidade anterior do corpo de um animal, incluindo a cabeça e o pescoço. ',
         },
         {
             termo: 'Escultura',
@@ -30,15 +33,18 @@ function Glossary(): JSX.Element {
         },
         {
             termo: 'Estátua',
-            descricao: 'É toda escultura que representa uma figura completa (homem, animal, híbrido) de pé, sentada, ajoelhada ou deitada, em qualquer matéria. ',
+            descricao:
+                'É toda escultura que representa uma figura completa (homem, animal, híbrido) de pé, sentada, ajoelhada ou deitada, em qualquer matéria. ',
         },
         {
             termo: 'Grupo escultórico',
-            descricao: 'Identifica a reunião de duas ou mais figuras sobre o mesmo suporte (soco, embasamento, pedestal...) que participam numa mesma ação ou estão relacionadas por uma situação que lhes é comum. ',
+            descricao:
+                'Identifica a reunião de duas ou mais figuras sobre o mesmo suporte (soco, embasamento, pedestal...) que participam numa mesma ação ou estão relacionadas por uma situação que lhes é comum. ',
         },
         {
             termo: 'Lâmina escultórica',
-            descricao: 'Executada em metal, pode ser pouco espessa, mas é rígida, apresentando um campo figurativo, uma ornamentação gravada ou uma inscrição, em relevo ou insculpida. Pode ser aplicada a um edifício ou a um monumento.',
+            descricao:
+                'Executada em metal, pode ser pouco espessa, mas é rígida, apresentando um campo figurativo, uma ornamentação gravada ou uma inscrição, em relevo ou insculpida. Pode ser aplicada a um edifício ou a um monumento.',
         },
         {
             termo: 'Obelisco',
@@ -46,17 +52,15 @@ function Glossary(): JSX.Element {
         },
         {
             termo: 'Relevo',
-            descricao: 'Identifica qualquer obra esculpida na qual as figuras se projetam a partir de um fundo. Classificam-se pelo grau de projeção do seu volume: baixo-relevo, médio-relevo, alto relevo. ',
+            descricao:
+                'Identifica qualquer obra esculpida na qual as figuras se projetam a partir de um fundo. Classificam-se pelo grau de projeção do seu volume: baixo-relevo, médio-relevo, alto relevo. ',
         },
     ];
-
-    // Referências: OLIVEIRA, Aline Rayane de Souza. Arte Pública na cidade do Rio de Janeiro e o programa Esculturas Urbanas. Tese (Doutorado em Urbanismo), Universidade Federal do Rio de Janeiro, Rio de Janeiro, 2022.
-    //              CARVALHO, Maria João Vilhena. Normas de inventário: escultura. Lisboa: Instituto Português de Museus, 2004.
 
     const [
         glossaryState,
         setGlossaryState,
-    ] = useState<{ termo: string; open: boolen }>(glossary.map((item) => ({ termo: item.termo, open: false })));
+    ] = useState<{ termo: string; open: boolean }[]>(glossary.map((item) => ({ termo: item.termo, open: false })));
 
     const colunas = Math.floor(width / 256);
     const gridWidth = (colunas - 1) * 256 + 240;
@@ -64,11 +68,11 @@ function Glossary(): JSX.Element {
 
     const data = glossary.reduce<{ termo: string; descricao: string }[][]>((all, one, i) => {
         const ch = Math.floor(i / colunas);
-        all[ch] = ([] as string[]).concat(all[ch] || [], one);
+        all[ch] = ([] as { termo: string; descricao: string }[]).concat(all[ch] || [], one);
         return all;
     }, []);
 
-    const changeState = (state) => {
+    const changeState = (state: { termo: string; open: boolean }) => {
         const newState = glossaryState.map((item) => {
             if (item.termo === state.termo) {
                 return { termo: item.termo, open: !state.open };
@@ -81,7 +85,7 @@ function Glossary(): JSX.Element {
     return (
         <View style={style.container}>
             <View style={{ width: '100%', height: 48, backgroundColor: '#FFC003' }}>
-                <Text style={{ fontSize: 32, fontWeight: 700, color: '#CC1964', paddingTop: 4, paddingLeft: 16 }}>Glossário</Text>
+                <Text style={{ fontSize: 32, fontWeight: '700', color: '#CC1964', paddingTop: 4, paddingLeft: 16 }}>Glossário</Text>
             </View>
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 16 }}>
                 <FlatList
@@ -93,9 +97,9 @@ function Glossary(): JSX.Element {
                                 <Row style={style.row} key={rowIndex}>
                                     {[
                                         ...row,
-                                        ...Array(colunas - row.length).map(() => 'error'),
+                                        ...Array(colunas - row.length).map(() => ({ termo: 'error', descricao: 'error' })),
                                     ].map((col, colIndex) => {
-                                        const state = glossaryState.find((item) => col?.termo && item.termo === col.termo);
+                                        const state = glossaryState.find((item) => typeof col != typeof String && col?.termo && item.termo === col.termo);
                                         return (
                                             <Col
                                                 style={[
@@ -108,10 +112,10 @@ function Glossary(): JSX.Element {
                                                     {state && (
                                                         <>
                                                             <TouchableOpacity onPress={() => changeState(state)}>
-                                                                <Text style={{ fontSize: 20, fontWeight: 700 }}>{col.termo}</Text>
+                                                                <Text style={{ fontSize: 20, fontWeight: '700' }}>{col.termo}</Text>
                                                             </TouchableOpacity>
                                                             {state.open && (
-                                                                <Text style={{ fontSize: 16, fontWeight: 400, paddingTop: 8, textAlign: 'justify' }}>
+                                                                <Text style={{ fontSize: 16, fontWeight: '400', paddingTop: 8, textAlign: 'justify' }}>
                                                                     {col.descricao}
                                                                 </Text>
                                                             )}
@@ -126,6 +130,22 @@ function Glossary(): JSX.Element {
                         );
                     }}
                 />
+            </View>
+            <View style={{ width: '100%', paddingHorizontal: 16, paddingBottom: 16 }}>
+                <Grid>
+                    <Row>
+                        <Col style={{ width: 88, minWidth: 88 }}>
+                            <Text>Referências:</Text>
+                        </Col>
+                        <Col>
+                            <Text>
+                                OLIVEIRA, Aline Rayane de Souza. Arte Pública na cidade do Rio de Janeiro e o programa Esculturas Urbanas. Tese (Doutorado em
+                                Urbanismo), Universidade Federal do Rio de Janeiro, Rio de Janeiro, 2022.
+                            </Text>
+                            <Text>CARVALHO, Maria João Vilhena. Normas de inventário: escultura. Lisboa: Instituto Português de Museus, 2004.</Text>
+                        </Col>
+                    </Row>
+                </Grid>
             </View>
         </View>
     );

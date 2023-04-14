@@ -2,6 +2,8 @@ import { ViewStyle, StyleSheet } from 'react-native';
 
 type Styles = {
     container: ViewStyle;
+    row: ViewStyle;
+    col: ViewStyle;
 };
 
 function styles(): Styles {

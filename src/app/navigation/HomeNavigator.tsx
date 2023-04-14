@@ -22,8 +22,9 @@ function HomeNavigator(): JSX.Element {
             screenOptions={() => ({
                 tabBarActiveTintColor: theme.navigation.active,
                 tabBarInactiveTintColor: theme.navigation.inactive,
-                swipeEnabled: false,
+                tabBarIndicatorStyle: { backgroundColor: theme.navigation.active },
                 tabBarIndicatorContainerStyle: { backgroundColor: '#FFC003', height: '100%' },
+                swipeEnabled: false,
             })}
         >
             <TopTab.Screen

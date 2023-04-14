@@ -45,6 +45,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             },
                         },
                     },
+                    Analises_Decadas: {
+                        path: 'analises/decadas',
+                    },
                 },
             },
             Obra: 'obra',
