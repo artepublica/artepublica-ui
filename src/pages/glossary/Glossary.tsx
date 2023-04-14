@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { FlatList, View, useWindowDimensions, TouchableOpacity } from 'react-native';
+import { FlatList, View, useWindowDimensions, TouchableOpacity, ScrollView } from 'react-native';
 import { Col, Grid, Row } from 'react-native-easy-grid';
 
 import { Text } from '@base-components';
@@ -87,66 +87,73 @@ function Glossary(): JSX.Element {
             <View style={{ width: '100%', height: 48, backgroundColor: '#FFC003' }}>
                 <Text style={{ fontSize: 32, fontWeight: '700', color: '#CC1964', paddingTop: 4, paddingLeft: 16 }}>Glossário</Text>
             </View>
-            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 16 }}>
-                <FlatList
-                    data={data}
-                    style={{ width: '100%' }}
-                    renderItem={({ item: row, index: rowIndex }) => {
-                        return (
-                            <Grid style={{ paddingLeft: remainingWidth / 2 }}>
-                                <Row style={style.row} key={rowIndex}>
-                                    {[
-                                        ...row,
-                                        ...Array(colunas - row.length).map(() => ({ termo: 'error', descricao: 'error' })),
-                                    ].map((col, colIndex) => {
-                                        const state = glossaryState.find((item) => typeof col != typeof String && col?.termo && item.termo === col.termo);
-                                        return (
-                                            <Col
-                                                style={[
-                                                    style.col,
-                                                    { marginRight: colIndex !== colunas - 1 ? 16 : 0 },
-                                                ]}
-                                                key={colIndex}
-                                            >
-                                                <View style={{ width: 240 }}>
-                                                    {state && (
-                                                        <>
-                                                            <TouchableOpacity onPress={() => changeState(state)}>
-                                                                <Text style={{ fontSize: 20, fontWeight: '700' }}>{col.termo}</Text>
-                                                            </TouchableOpacity>
-                                                            {state.open && (
-                                                                <Text style={{ fontSize: 16, fontWeight: '400', paddingTop: 8, textAlign: 'justify' }}>
-                                                                    {col.descricao}
-                                                                </Text>
+            <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+                <View style={{ flex: 1, width: '100%', flexDirection: 'column', justifyContent: 'space-between' }}>
+                    <View style={{ alignItems: 'center', justifyContent: 'center', padding: 16 }}>
+                        <FlatList
+                            scrollEnabled={false}
+                            data={data}
+                            style={{ width: '100%' }}
+                            renderItem={({ item: row, index: rowIndex }) => {
+                                return (
+                                    <Grid style={{ paddingLeft: remainingWidth / 2 }}>
+                                        <Row style={style.row} key={rowIndex}>
+                                            {[
+                                                ...row,
+                                                ...Array(colunas - row.length).map(() => ({ termo: 'error', descricao: 'error' })),
+                                            ].map((col, colIndex) => {
+                                                const state = glossaryState.find(
+                                                    (item) => typeof col != typeof String && col?.termo && item.termo === col.termo,
+                                                );
+                                                return (
+                                                    <Col
+                                                        style={[
+                                                            style.col,
+                                                            { marginRight: colIndex !== colunas - 1 ? 16 : 0 },
+                                                        ]}
+                                                        key={colIndex}
+                                                    >
+                                                        <View style={{ width: 240 }}>
+                                                            {state && (
+                                                                <>
+                                                                    <TouchableOpacity onPress={() => changeState(state)}>
+                                                                        <Text style={{ fontSize: 20, fontWeight: '700' }}>{col.termo}</Text>
+                                                                    </TouchableOpacity>
+                                                                    {state.open && (
+                                                                        <Text style={{ fontSize: 16, fontWeight: '400', paddingTop: 8, textAlign: 'justify' }}>
+                                                                            {col.descricao}
+                                                                        </Text>
+                                                                    )}
+                                                                </>
                                                             )}
-                                                        </>
-                                                    )}
-                                                </View>
-                                            </Col>
-                                        );
-                                    })}
-                                </Row>
-                            </Grid>
-                        );
-                    }}
-                />
-            </View>
-            <View style={{ width: '100%', paddingHorizontal: 16, paddingBottom: 16 }}>
-                <Grid>
-                    <Row>
-                        <Col style={{ width: 88, minWidth: 88 }}>
-                            <Text>Referências:</Text>
-                        </Col>
-                        <Col>
-                            <Text>
-                                OLIVEIRA, Aline Rayane de Souza. Arte Pública na cidade do Rio de Janeiro e o programa Esculturas Urbanas. Tese (Doutorado em
-                                Urbanismo), Universidade Federal do Rio de Janeiro, Rio de Janeiro, 2022.
-                            </Text>
-                            <Text>CARVALHO, Maria João Vilhena. Normas de inventário: escultura. Lisboa: Instituto Português de Museus, 2004.</Text>
-                        </Col>
-                    </Row>
-                </Grid>
-            </View>
+                                                        </View>
+                                                    </Col>
+                                                );
+                                            })}
+                                        </Row>
+                                    </Grid>
+                                );
+                            }}
+                        />
+                    </View>
+                    <View style={{ flexDirection: 'column', padding: 16 }}>
+                        <View style={{ flexDirection: 'row' }}>
+                            <View style={{ width: 88, minWidth: 88 }}>
+                                <Text>Referências:</Text>
+                            </View>
+                            <View style={{ flexDirection: 'column' }}>
+                                <Text style={{ textAlign: 'justify', width: width - 88 - 32 }}>
+                                    OLIVEIRA, Aline Rayane de Souza. Arte Pública na cidade do Rio de Janeiro e o programa Esculturas Urbanas. Tese (Doutorado
+                                    em Urbanismo), Universidade Federal do Rio de Janeiro, Rio de Janeiro, 2022.
+                                </Text>
+                                <Text style={{ textAlign: 'justify', width: width - 88 - 32 }}>
+                                    CARVALHO, Maria João Vilhena. Normas de inventário: escultura. Lisboa: Instituto Português de Museus, 2004.
+                                </Text>
+                            </View>
+                        </View>
+                    </View>
+                </View>
+            </ScrollView>
         </View>
     );
 }
