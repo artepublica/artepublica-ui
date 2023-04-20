@@ -7,7 +7,7 @@ import { Theme } from '../domain';
 const LightTheme: Theme = {
     dark: false,
     background: branco,
-    navigation: {
+    /*navigation: {
         background: branco,
         border: secundariaLight,
         card: branco,
@@ -16,6 +16,16 @@ const LightTheme: Theme = {
         text: principalLight,
         active: principalLight,
         inactive: secundariaLight,
+    },*/
+    navigation: {
+        background: branco,
+        border: principalLight,
+        card: principalLight,
+        notification: branco,
+        primary: branco,
+        text: branco,
+        active: principalLight,
+        inactive: branco,
     },
     fonts: Platform.select(fonts),
     button: {

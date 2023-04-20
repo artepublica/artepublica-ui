@@ -7,7 +7,8 @@ type Styles = {
 function styles(): Styles {
     return StyleSheet.create<Styles>({
         container: {
-            flex: 1,
+            flexGrow: 1,
+            backgroundColor: '#CC1964',
         },
     });
 }

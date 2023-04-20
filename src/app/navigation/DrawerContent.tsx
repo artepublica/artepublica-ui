@@ -3,14 +3,15 @@
 import { useState } from 'react';
 
 import { Entypo } from '@expo/vector-icons';
-import { DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
+import { DrawerContentComponentProps, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
+import { DrawerDescriptor, DrawerDescriptorMap } from '@react-navigation/drawer/lib/typescript/src/types';
 import { View, StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
 import { useTheme } from '@utils';
 
-function evaluateOuterDrawerListItems(routes, descriptors) {
-    const drawerItems = {};
+function evaluateOuterDrawerListItems(routes: { name: string; key: string }[], descriptors: DrawerDescriptorMap) {
+    const drawerItems: Record<string, { label: string; start: number; end: number }> = {};
     routes.forEach((route, index) => {
         const { name, key } = route;
         const { options } = descriptors[key];
@@ -21,7 +22,7 @@ function evaluateOuterDrawerListItems(routes, descriptors) {
             if (drawerItems.hasOwnProperty(base_route_name)) {
                 drawerItems[base_route_name].end = index + 1;
             } else {
-                const label = options.title.substr(0, options.title.indexOf('-'));
+                const label = options.title!.substr(0, options.title!.indexOf('-'));
                 drawerItems[base_route_name] = {
                     label,
                     start: index,
@@ -29,9 +30,9 @@ function evaluateOuterDrawerListItems(routes, descriptors) {
                 };
             }
         } else {
-            const label = options.title.substr(0, options.title.indexOf('-'));
+            const label = options.title!.substr(0, options.title!.indexOf('-'));
             drawerItems[name] = {
-                label: label !== '' ? label : options.title,
+                label: label !== '' ? label : options.title!,
                 start: index,
                 end: index,
             };
@@ -40,7 +41,7 @@ function evaluateOuterDrawerListItems(routes, descriptors) {
     return drawerItems;
 }
 
-function DrawerContent(props: any): JSX.Element {
+function DrawerContent(props: DrawerContentComponentProps): JSX.Element {
     const { theme } = useTheme();
     const { state, ...restProps } = props;
 
@@ -82,7 +83,7 @@ function DrawerContent(props: any): JSX.Element {
                             }}
                             style={{ marginLeft: 0 }}
                             labelStyle={{ marginLeft: -24 }}
-                            icon={() => <Entypo name="arrow-with-circle-right" size={20} color={theme.navigation.active} style={styles.test} />}
+                            icon={() => <Entypo name="arrow-with-circle-right" size={20} color="#ffffffAD" style={styles.test} />}
                         />
                     );
                 })}
@@ -92,7 +93,7 @@ function DrawerContent(props: any): JSX.Element {
 
     const index = drawerItems[internState.currentComponent];
     const routes = state.routes.slice(index.start, index.end);
-    const descriptors = Object.keys(restProps.descriptors).reduce((result, key) => {
+    const descriptors = Object.keys(restProps.descriptors).reduce<Record<string, DrawerDescriptor>>((result, key) => {
         const route = routes.find((route) => route.key === key);
         if (route) {
             result[key] = restProps.descriptors[key];
@@ -104,16 +105,18 @@ function DrawerContent(props: any): JSX.Element {
         <DrawerContentScrollView {...props}>
             <TouchableOpacity onPress={() => setInterState({ mainDrawer: !internState.mainDrawer, currentComponent: '' })} style={styles.customDrawerTouch}>
                 <View style={styles.backButtonRow}>
-                    <Entypo name="arrow-with-circle-left" size={25} color={theme.navigation.active} style={styles.customDrawerIcon} />
-                    <Text>Voltar</Text>
+                    <Entypo name="arrow-with-circle-left" size={25} color={theme.navigation.inactive} style={styles.customDrawerIcon} />
+                    <Text style={{ color: theme.navigation.inactive }}>Voltar</Text>
                 </View>
             </TouchableOpacity>
             {Object.keys(descriptors).map((key) => {
                 const route = routes.find((route) => route.key === key);
                 const descriptor = descriptors[key];
-                const label = descriptor.options.title.substr(descriptor.options.title.indexOf('-') + 1, descriptor.options.title.length - 1);
+                const label = descriptor.options.title!.substr(descriptor.options.title!.indexOf('-') + 1, descriptor.options.title!.length - 1);
 
-                return <DrawerItem key={key} label={label} focused={focusedRoute.name === route.name} onPress={() => props.navigation.navigate(route.name)} />;
+                return (
+                    <DrawerItem key={key} label={label} focused={focusedRoute.name === route!.name} onPress={() => props.navigation.navigate(route!.name)} />
+                );
             })}
         </DrawerContentScrollView>
     );
@@ -123,7 +126,7 @@ export default DrawerContent;
 
 const styles = StyleSheet.create({
     customDrawerTouch: {
-        paddingLeft: 13,
+        paddingHorizontal: 13,
         paddingTop: 15,
     },
     customDrawerIcon: { paddingRight: 10 },

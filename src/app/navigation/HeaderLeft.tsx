@@ -12,7 +12,7 @@ function HeaderLeft({ navigation }: { navigation: NavigationProp<RootNavigatorPa
     const { width } = useWindowDimensions();
     return (
         <TouchableOpacity testID="home-menu" style={{ paddingLeft: 16, flexDirection: 'row' }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-            <Entypo name="menu" size={40} color={theme.navigation.active} />
+            <Entypo name="menu" size={40} color={theme.navigation.text} />
             {width > 750 && (
                 <View style={{ justifyContent: 'center', paddingLeft: 8 }}>
                     <Text>Menu</Text>

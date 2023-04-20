@@ -1,8 +1,7 @@
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigatorScreenParams } from '@react-navigation/native';
-import { useWindowDimensions, View } from 'react-native';
+import { useWindowDimensions } from 'react-native';
 
-import { Text } from '@base-components';
 import { About, Decade, Glossary, Tipo_Decada, Tipo_GraficoRedeTipologiaObra } from '@pages';
 import { autoresRecorte, useTheme } from '@utils';
 
@@ -11,7 +10,6 @@ import HeaderLeft from './HeaderLeft';
 import HeaderTitle from './HeaderTitle';
 import HomeNavigator, { HomeNavigatorParamList } from './HomeNavigator';
 import PreveitosNavigator, { PrefeitosNavigatorParamList } from './PrefeitosNavigator';
-import SafeView from './SafeView';
 
 const DrawerNavigator = createDrawerNavigator<RootMenuNavigatorParamsList>();
 
@@ -22,6 +20,7 @@ export type RootMenuNavigatorParamsList = {
     Analises_Tipologia: undefined;
     Analises_Autores: undefined;
     Analises_Prefeitos: NavigatorScreenParams<PrefeitosNavigatorParamList>;
+    Analises_Decadas: undefined;
 };
 
 type RootMenuNavigatorProps = {
@@ -53,11 +52,7 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                         headerLeft: () => <HeaderLeft navigation={navigation} />,
                     })}
                 >
-                    {(props) => (
-                        <SafeView>
-                            <HomeNavigator {...props} />
-                        </SafeView>
-                    )}
+                    {() => <HomeNavigator />}
                 </DrawerNavigator.Screen>
                 <DrawerNavigator.Screen
                     name="Sobre"
@@ -69,11 +64,7 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                         headerLeft: () => <HeaderLeft navigation={navigation} />,
                     })}
                 >
-                    {(props) => (
-                        <SafeView>
-                            <About {...props} />
-                        </SafeView>
-                    )}
+                    {() => <About />}
                 </DrawerNavigator.Screen>
                 <DrawerNavigator.Screen
                     name="Glossario"
@@ -85,11 +76,7 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                         headerLeft: () => <HeaderLeft navigation={navigation} />,
                     })}
                 >
-                    {(props) => (
-                        <SafeView>
-                            <Glossary {...props} />
-                        </SafeView>
-                    )}
+                    {() => <Glossary />}
                 </DrawerNavigator.Screen>
                 <DrawerNavigator.Screen
                     name="Analises_Tipologia"
@@ -101,11 +88,7 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                         headerLeft: () => <HeaderLeft navigation={navigation} />,
                     })}
                 >
-                    {(props) => (
-                        <SafeView>
-                            <Tipo_Decada {...props} tipo="Tipologia" />
-                        </SafeView>
-                    )}
+                    {(props) => <Tipo_Decada {...props} tipo="Tipologia" />}
                 </DrawerNavigator.Screen>
                 <DrawerNavigator.Screen
                     name="Analises_Autores"
@@ -117,11 +100,7 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                         headerLeft: () => <HeaderLeft navigation={navigation} />,
                     })}
                 >
-                    {(props) => (
-                        <SafeView>
-                            <Tipo_GraficoRedeTipologiaObra {...props} tipo="Autor" tipos={autoresRecorte} />
-                        </SafeView>
-                    )}
+                    {(props) => <Tipo_GraficoRedeTipologiaObra {...props} tipo="Autor" tipos={autoresRecorte} />}
                 </DrawerNavigator.Screen>
                 <DrawerNavigator.Screen
                     name="Analises_Prefeitos"
@@ -133,11 +112,7 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                         headerLeft: () => <HeaderLeft navigation={navigation} />,
                     })}
                 >
-                    {(props) => (
-                        <SafeView>
-                            <PreveitosNavigator {...props} />
-                        </SafeView>
-                    )}
+                    {() => <PreveitosNavigator />}
                 </DrawerNavigator.Screen>
                 <DrawerNavigator.Screen
                     name="Analises_Decadas"
@@ -149,16 +124,9 @@ export function RootMenuNavigator({ testOnly_initialRouteName }: RootMenuNavigat
                         headerLeft: () => <HeaderLeft navigation={navigation} />,
                     })}
                 >
-                    {(props) => (
-                        <SafeView>
-                            <Decade {...props} />
-                        </SafeView>
-                    )}
+                    {() => <Decade />}
                 </DrawerNavigator.Screen>
             </DrawerNavigator.Navigator>
-            <View style={{ width: '100%', height: 48, backgroundColor: '#FFC003' }}>
-                <Text style={{ fontSize: 16, fontWeight: 500, color: '#CC1964', paddingTop: 16, paddingLeft: 16 }}>Apoio:</Text>
-            </View>
         </>
     );
 }
