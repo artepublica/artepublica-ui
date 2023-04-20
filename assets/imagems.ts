@@ -256,12 +256,6 @@ const images = {
     'FranciscoBraga_PauloMazzucchelli.jpeg': require('./obras/FranciscoBraga_PauloMazzucchelli.jpeg'),
     'FerreiraDeAraujo_RodolfoBernardelli.jpeg': require('./obras/FerreiraDeAraujo_RodolfoBernardelli.jpeg'),
 
-
-
-
-
-
-
 };
 
 export default images;
