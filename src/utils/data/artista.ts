@@ -1292,10 +1292,6 @@ export const RicoReis: Artista = {
     Pessoa: pessoas.RicoReis,
 };
 
-export const BenevenutaBerna: Artista = {
-    Pessoa: pessoas.BenevenutaBerna,
-};
-
 export const AnaluNabuco: Artista = {
     Pessoa: pessoas.AnaluNabuco,
 };

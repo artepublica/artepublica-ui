@@ -11962,7 +11962,7 @@ export const EstacioDeSa_LucioCosta: Obra = {
 
 export const ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra: Obra = {
     ID: 517,
-    Imagem: undefined,
+    Imagem: 'ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra.jpg',
     Autores: [
         artistas.GeorgeLopes,
         artistas.GeorgeGuerra,

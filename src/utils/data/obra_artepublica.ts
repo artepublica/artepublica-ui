@@ -174,7 +174,7 @@ export const EsculturaParaORio_WaltercioCaldas: Obra = {
 
 export const MarechalMachadoBittencourt_JoseOtavioCorreaLima: Obra = {
     ID: 6,
-    Imagem: 'MarechalMachadoBittencourt_JoseOtavioCorreaLima.gif',
+    Imagem: 'MarechalMachadoBittencourt_JoseOtavioCorreaLima.jpg',
     Autores: [artistas.JoseOtavioCorreaLima],
     Titulo: 'Marechal Machado Bittencourt',
     Material: 'Bronze',
@@ -705,7 +705,7 @@ export const OPassante_JoseResende: Obra = {
 
 export const JoseBonifacio_LouisRochet: Obra = {
     ID: 19,
-    Imagem: undefined,
+    Imagem: 'JoseBonifacio_LouisRochet.jpeg',
     Autores: [artistas.LouisRochet],
     Titulo: 'José Bonifácio',
     Material: 'Bronze',
@@ -745,7 +745,7 @@ export const JoseBonifacio_LouisRochet: Obra = {
 
 export const TresVelas_IvanPaulPaccini: Obra = {
     ID: 20,
-    Imagem: undefined,
+    Imagem: 'TresVelas_IvanPaulPaccini.jpeg',
     Autores: [artistas.IvanPaulPaccini],
     Titulo: 'Tres Velas',
     Material: 'concreto',
@@ -780,7 +780,7 @@ export const TresVelas_IvanPaulPaccini: Obra = {
 
 export const FontedoMenino_MestreValentim: Obra = {
     ID: 21,
-    Imagem: undefined,
+    Imagem: 'FontedoMenino_MestreValentim.png',
     Autores: [artistas.MestreValentim],
     Titulo: 'Fonte do Menino',
     Material: 'granito e chumbo',
@@ -821,7 +821,7 @@ export const FontedoMenino_MestreValentim: Obra = {
 
 export const FontedodosAmores_MestreValentim: Obra = {
     ID: 22,
-    Imagem: undefined,
+    Imagem: 'FontedodosAmores_MestreValentim.png',
     Autores: [artistas.MestreValentim],
     Titulo: 'Fonte dos Amores',
     Material: 'granito e bronze',
@@ -861,7 +861,7 @@ export const FontedodosAmores_MestreValentim: Obra = {
 
 export const CarlosGomes_RodolfoBernardelli: Obra = {
     ID: 23,
-    // Imagem: 'CarlosGomes_RodolfoBernardelli.png', TODO
+    Imagem: 'CarlosGomes_RodolfoBernardelli.jpeg',
     Autores: [artistas.RodolfoBernardelli],
     Titulo: 'Carlos Gomes',
     Material: 'Bronze',
@@ -920,7 +920,7 @@ export const CarlosGomes_RodolfoBernardelli: Obra = {
 
 export const VicenteCelestino_TitoBernucci: Obra = {
     ID: 24,
-    Imagem: undefined,
+    Imagem: 'VicenteCelestino_TitoBernucci.jpeg',
     Autores: [artistas.TitoBernucci],
     Titulo: 'Vicente Celestino',
     Material: 'Bronze',
@@ -959,7 +959,7 @@ export const VicenteCelestino_TitoBernucci: Obra = {
 
 export const Sinho_TitoBernucci: Obra = {
     ID: 25,
-    Imagem: undefined,
+    Imagem: 'Sinho_TitoBernucci.jpeg',
     Autores: [artistas.TitoBernucci],
     Titulo: 'Sinho',
     Material: 'Bronze',
@@ -997,7 +997,7 @@ export const Sinho_TitoBernucci: Obra = {
 
 export const BenjaminConstant_DecioVillares_EduardoDeSa_VicenteOrnelas: Obra = {
     ID: 26,
-    Imagem: undefined,
+    Imagem: 'BenjaminConstant_DecioVillares_EduardoDeSa_VicenteOrnelas.jpeg',
     Autores: [
         artistas.DecioVilares,
         artistas.EduardoDeSa,
@@ -1045,7 +1045,7 @@ export const BenjaminConstant_DecioVillares_EduardoDeSa_VicenteOrnelas: Obra = {
 
 export const PauloDeFrontin_UgoTaddey: Obra = {
     ID: 27,
-    Imagem: undefined,
+    Imagem: 'PauloDeFrontin_UgoTaddey.jpeg',
     Autores: [artistas.UgoTaddey],
     Titulo: 'Paulo de Frontin',
     Material: 'Bronze',
@@ -1123,7 +1123,7 @@ export const JuscelinoKubitschek_Zanucchi: Obra = {
 
 export const FranciscoSerrador_ACoutinho: Obra = {
     ID: 29,
-    Imagem: undefined,
+    Imagem: 'FranciscoSerrador_ACoutinho.jpeg',
     Autores: [artistas.ACoutinho],
     Titulo: 'Francisco Serrador',
     Material: 'Bronze',
@@ -1229,7 +1229,7 @@ export const GetulioVargas_LuizSerri: Obra = {
 
 export const PescadorNapolitano_FrancoisRude: Obra = {
     ID: 31,
-    Imagem: undefined,
+    Imagem: 'PescadorNapolitano_FrancoisRude.jpeg',
     Autores: [artistas.FrancoisRude],
     Titulo: 'Pescador Napolitano',
     Material: 'marmore de carrara',
@@ -1304,7 +1304,7 @@ export const FonteJovemEuropa_MathurinMoreau: Obra = {
 
 export const ASereia_ProvinSerres: Obra = {
     ID: 33,
-    Imagem: undefined,
+    Imagem: 'ASereia_ProvinSerres.jpeg',
     Autores: [artistas.ProvinSerres],
     Titulo: 'A Sereia',
     Material: 'ferro fundido',
@@ -1344,7 +1344,7 @@ export const ASereia_ProvinSerres: Obra = {
 
 export const Primavera_GustaveFredericMichel: Obra = {
     ID: 34,
-    Imagem: undefined,
+    Imagem: 'Primavera_GustaveFredericMichel.jpeg',
     Autores: [artistas.GustaveFredericMichel],
     Titulo: 'Primavera',
     Material: 'mármore de Carrara ',
@@ -1428,7 +1428,7 @@ export const Outono_GustaveFredericMichel: Obra = {
 
 export const Inverno_GustaveFredericMichel: Obra = {
     ID: 36,
-    Imagem: undefined,
+    Imagem: 'Inverno_GustaveFredericMichel.png',
     Autores: [artistas.GustaveFredericMichel],
     Titulo: 'Inverno',
     Material: 'mármore de carrara',
@@ -1466,7 +1466,7 @@ export const Inverno_GustaveFredericMichel: Obra = {
 
 export const Verao_GustaveFredericMichel: Obra = {
     ID: 37,
-    Imagem: undefined,
+    Imagem: 'Verao_GustaveFredericMichel.png',
     Autores: [artistas.GustaveFredericMichel],
     Titulo: 'Verao',
     Material: 'mármore de carrara',
@@ -1549,7 +1549,7 @@ export const HeitorVillaLobos_BrunoGiorgi: Obra = {
 
 export const GeneralSantander_FranciscoVictorPalma: Obra = {
     ID: 39,
-    Imagem: undefined,
+    Imagem: 'GeneralSantander_FranciscoVictorPalma.jpeg',
     Autores: [artistas.FranciscoVictorPalma],
     Titulo: 'General Santander',
     Material: 'Bronze',
@@ -1625,7 +1625,7 @@ export const EvandroLinseSilva_AlfredoCeschiatti: Obra = {
 
 export const LutaDesigual_LDespresLaupedeCluny: Obra = {
     ID: 41,
-    Imagem: undefined,
+    Imagem: 'LutaDesigual_LeonDespresLaupedeCluny.jpeg',
     Autores: [artistas.LDespresLaupedeCluny],
     Titulo: 'Luta Desigual',
     Material: 'Peça em argamassa',
@@ -1711,9 +1711,9 @@ export const ZumbidosPalmares_RomeuAlves: Obra = {
     Execucao: true,
 };
 
-export const Uniao_MathurinMoreau: Obra = {
+export const AUniao_MathurinMoreau: Obra = {
     ID: 44,
-    Imagem: undefined,
+    Imagem: 'AUniao_MathurinMoreau.png',
     Autores: [artistas.MathurinMoreau],
     Titulo: 'União',
     Material: 'ferro fundido',
@@ -1755,9 +1755,9 @@ export const Uniao_MathurinMoreau: Obra = {
     Execucao: true,
 };
 
-export const Liberdade_MathurinMoreau: Obra = {
+export const ALiberdade_MathurinMoreau: Obra = {
     ID: 45,
-    Imagem: undefined,
+    Imagem: 'ALiberdade_MathurinMoreau.jpeg',
     Autores: [artistas.MathurinMoreau],
     Titulo: 'Liberdade',
     Material: 'ferro fundido',
@@ -1791,9 +1791,9 @@ export const Liberdade_MathurinMoreau: Obra = {
     Execucao: true,
 };
 
-export const Justiça_MathurinMoreau: Obra = {
+export const AJustiça_MathurinMoreau: Obra = {
     ID: 46,
-    Imagem: undefined,
+    Imagem: 'AJustiça_MathurinMoreau.jpeg',
     Autores: [artistas.MathurinMoreau],
     Titulo: 'Justiça',
     Material: 'ferro fundido',
@@ -1827,9 +1827,9 @@ export const Justiça_MathurinMoreau: Obra = {
     Execucao: true,
 };
 
-export const Fidelidade_MathurinMoreau: Obra = {
+export const AFidelidade_MathurinMoreau: Obra = {
     ID: 47,
-    Imagem: undefined,
+    Imagem: 'AFidelidade_MathurinMoreau.jpeg',
     Autores: [artistas.MathurinMoreau],
     Titulo: 'Fidelidade',
     Material: 'ferro fundido',
@@ -1865,7 +1865,7 @@ export const Fidelidade_MathurinMoreau: Obra = {
 
 export const JoaoCaetano_FranciscoManuelChavesPinheiro: Obra = {
     ID: 48,
-    Imagem: undefined,
+    Imagem: 'JoaoCaetano_FranciscoManuelChavesPinheiro.jpeg',
     Autores: [artistas.FranciscoManuelChavesPinheiro],
     Titulo: 'João Caetano',
     Material: 'Bronze',
@@ -2018,7 +2018,7 @@ export const SolarWindsurfer_JesperNeergaard: Obra = {
 
 export const SantosDumont_AmadeuZani: Obra = {
     ID: 51,
-    Imagem: undefined,
+    Imagem: 'SantosDumont_AmadeuZani.jpeg',
     Autores: [artistas.AmadeuZani],
     Titulo: 'Santos Dumont',
     Material: 'Bronze',
@@ -2054,7 +2054,7 @@ export const SantosDumont_AmadeuZani: Obra = {
 
 export const MulhercomAnfora_HumbertoCozzo: Obra = {
     ID: 52,
-    Imagem: undefined,
+    Imagem: 'MulhercomAnfora_HumbertoCozzo.jpeg',
     Autores: [artistas.HumbertoCozzo],
     Titulo: 'Mulher com Ânfora',
     Material: 'Bronze',
@@ -2098,7 +2098,7 @@ export const MulhercomAnfora_HumbertoCozzo: Obra = {
 
 export const MahatmaGandhi_SankhoChaudhuri: Obra = {
     ID: 53,
-    Imagem: undefined,
+    Imagem: 'MahatmaGandhi_SankhoChaudhuri.png',
     Autores: [artistas.SankhoChaudhuri],
     Titulo: 'Mahatma Gandhi',
     Material: 'Bronze',
@@ -2140,7 +2140,7 @@ export const MahatmaGandhi_SankhoChaudhuri: Obra = {
 
 export const Girardet_JoseOtavioCorreaLima: Obra = {
     ID: 54,
-    Imagem: undefined,
+    Imagem: 'Girardet_JoseOtavioCorreaLima.jpeg',
     Autores: [artistas.JoseOtavioCorreaLima],
     Titulo: 'Girardet',
     Material: 'Bronze',
@@ -2191,7 +2191,7 @@ export const Girardet_JoseOtavioCorreaLima: Obra = {
 
 export const CatullodaPaixaoCearense_HonorioPecanha: Obra = {
     ID: 55,
-    Imagem: undefined,
+    Imagem: 'CatullodaPaixaoCearense_HonorioPecanha.jpeg',
     Autores: [artistas.HonorioPecanha],
     Titulo: 'Catulo da Paixão Cearense',
     Material: 'granito petropolis',
@@ -2238,7 +2238,7 @@ export const CatullodaPaixaoCearense_HonorioPecanha: Obra = {
 
 export const AdolfoBergamini_HildegardoLeaoVelloso: Obra = {
     ID: 56,
-    Imagem: undefined,
+    Imagem: 'AdolfoBergamini_HildegardoLeaoVelloso.jpeg',
     Autores: [artistas.HildegardoLeaoVelloso],
     Titulo: 'Adolfo Bergamini',
     Material: 'Bronze',
@@ -2278,7 +2278,7 @@ export const AdolfoBergamini_HildegardoLeaoVelloso: Obra = {
 
 export const ChafarizdoMonroe_MathurinMoreau: Obra = {
     ID: 57,
-    Imagem: undefined,
+    Imagem: 'ChafarizdoMonroe_MathurinMoreau.png',
     Autores: [artistas.MathurinMoreau],
     Titulo: 'Chafariz do Monroe',
     Material: 'ferro fundido',
@@ -2379,7 +2379,7 @@ export const AshbelGreenSimentoneHelen_JoasPereiraDosPassos: Obra = {
 
 export const AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso: Obra = {
     ID: 59,
-    Imagem: undefined,
+    Imagem: 'AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso.jpeg',
     Autores: [artistas.HildegardoLeaoVelloso],
     Titulo: 'Almirante Pedro Max Frontin',
     Material: 'Bronze',
@@ -2437,7 +2437,7 @@ export const AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso: Obra = {
 
 export const BaraodeMaua_RodolfoBernardelli: Obra = {
     ID: 60,
-    Imagem: undefined,
+    Imagem: 'BaraodeMaua_RodolfoBernardelli.jpeg',
     Autores: [artistas.RodolfoBernardelli],
     Titulo: 'Barão de Mauá',
     Material: 'Bronze',
@@ -2478,7 +2478,7 @@ export const BaraodeMaua_RodolfoBernardelli: Obra = {
 
 export const PauloDeOliveiraSampaio_Desconhecida: Obra = {
     ID: 61,
-    Imagem: undefined,
+    Imagem: 'PaulodeOliveiraSampaio_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
     Titulo: 'Paulo de Oliveira Sampaio',
     Material: 'Bronze',
@@ -2549,11 +2549,11 @@ export const AtilioCorreaLima_CPincy: Obra = {
     Execucao: true,
 };
 
-export const Amizade_CharlesKeck: Obra = {
+export const AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna: Obra = {
     ID: 63,
-    Imagem: undefined,
-    Autores: [artistas.CharlesKeck],
-    Titulo: 'Adolfo Bergamini',
+    Imagem: 'AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna.jpeg',
+    Autores: [artistas.CharlesKeck, artistas.BenevenutoBerna],
+    Titulo: 'Amizade Entre Os Povos',
     Material: 'Bronze',
     Altura: undefined,
     Largura: undefined,
@@ -2646,7 +2646,7 @@ export const TeresaCristinaBragançadeBourbon_JoseLuizRibeiro: Obra = {
 
 export const AmoraLira_EugeneLouisLequesne: Obra = {
     ID: 65,
-    Imagem: undefined,
+    Imagem: 'AmoraLira_EugeneLouisLequesne.jpeg',
     Autores: [artistas.EugeneLouisLequesne],
     Titulo: 'Amor à Lira',
     Material: 'ferro fundido',
@@ -2737,7 +2737,7 @@ export const DuquedeCaxias_RodolfoBernardelli: Obra = {
 
 export const BaraodoRioBranco_HildegardoLeaoVelloso: Obra = {
     ID: 67,
-    Imagem: undefined,
+    Imagem: 'BaraodoRioBranco_HildegardoLeaoVelloso.jpeg',
     Autores: [artistas.HildegardoLeaoVelloso],
     Titulo: 'Barão do Rio Branco',
     Material: 'Bronze',
@@ -2782,7 +2782,7 @@ export const BaraodoRioBranco_HildegardoLeaoVelloso: Obra = {
 
 export const EvaristodeMoraes_LaurindoRamos: Obra = {
     ID: 68,
-    Imagem: undefined,
+    Imagem: 'EvaristodeMoraes_LaurindoRamos.jpg',
     Autores: [artistas.LaurindoRamos],
     Titulo: 'Evaristo de Moraes',
     Material: 'Bronze',
@@ -2843,7 +2843,7 @@ export const EvaristodeMoraes_LaurindoRamos: Obra = {
 
 export const MarechalDeodorodaFonseca_ModestinoKanto: Obra = {
     ID: 69,
-    Imagem: undefined,
+    Imagem: 'MarechalDeodorodaFonseca_ModestinoKanto.jpeg',
     Autores: [artistas.ModestinoKanto],
     Titulo: 'Marechal Deodoro da Fonseca',
     Material: 'Bronze',
@@ -2883,7 +2883,7 @@ export const MarechalDeodorodaFonseca_ModestinoKanto: Obra = {
 
 export const AnaNeri_LuizFerrer: Obra = {
     ID: 70,
-    Imagem: undefined,
+    Imagem: 'AnaNeri_LuizFerrer.jpeg',
     Autores: [artistas.LuizFerrer],
     Titulo: 'Ana Néri',
     Material: 'Bronze',
@@ -2969,45 +2969,9 @@ export const OlavoBilac_HumbertoCozzo: Obra = {
     Execucao: true,
 };
 
-/*export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
-    ID: 72,
-    Imagem: 'RodolfoBernardelli_JoseOtavioCorreaLima.png',
-    Autores: [artistas.JoseOtavioCorreaLima],
-    Titulo: 'Rodolfo Bernardelli',
-    Material: 'Bronze',
-    Altura: undefined,
-    Largura: undefined,
-    Profundidade: undefined,
-    Peso: undefined,
-    ValorObra: undefined,
-    DataInauguracao: undefined,
-    DatasImportantes: [new Data('1901', 'data de inauguração')],
-    Promotor: undefined,
-    Financiamento: undefined,
-    Propriedade: 'Pública',
-    Zona: 'Central',
-    Bairro: 'Centro',
-    Endereco: 'Passeio Público',
-    Latitude: '-22.913403',
-    Longitude: '-43.1786538',
-    SuporteEspacial: undefined,
-    Base: 'Com pedestal',
-    MaterialBase: undefined,
-    Status: 'Permanece em espaço público',
-    Descricao:
-        'O busto em bronze em homenagem ao escultor Bernardelli realizado por seu discípulo Correia Lima tem gravado no próprio bronze a sua intenção: "Ao Prof. Rodolfo Bernardelli."',
-    Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
-    Temporalidade: 'Permanente',
-    Categoria: 'Narratividade',
-    Funcao: 'Referencial',
-    Natureza: 'Cívica',
-    Tipologia: 'Busto',
-    Execucao: true,
-};*/
-
 export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
     ID: 103,
-    Imagem: undefined,
+    Imagem: 'RodolfoBernardelli_JoseOtavioCorreaLima.png',
     Autores: [artistas.JoseOtavioCorreaLima],
     Titulo: `Rodolfo Bernardelli`,
     Material: 'Bronze',
@@ -3032,7 +2996,6 @@ export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
     Status: 'Permanece em espaço público',
     Descricao: `O busto em homenagem a Bernardelli foi realizado por seu discípulo Correa Lima, que gravou no próprio bronze a sua intenção: Ao Prof. Rodolfo Bernardelli.`,
     Fatos: [
-        new Fato('', '', 'bem tombado federal', '', [], ''),
         new Fato('', '', 'Homenageado', 'Rodolfo Bernardelli', [], 'Rio de Janeiro'),
     ],
     Temporalidade: 'Permanente',
@@ -3045,7 +3008,7 @@ export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
 
 export const PedroAmerico_PauloMazzucchelli: Obra = {
     ID: 73,
-    Imagem: undefined,
+    Imagem: 'PedroAmerico_PauloMazzucchelli.jpeg',
     Autores: [artistas.PauloMazzucchelli],
     Titulo: 'Pedro Américo',
     Material: 'Bronze',
@@ -3084,7 +3047,7 @@ export const PedroAmerico_PauloMazzucchelli: Obra = {
 
 export const AlbertoNepomuceno_RodolfoBernardelli: Obra = {
     ID: 74,
-    Imagem: undefined,
+    Imagem: 'AlbertoNepomuceno_RodolfoBernardelli.jpeg',
     Autores: [artistas.RodolfoBernardelli],
     Titulo: 'Alberto Nepomuceno',
     Material: 'Bronze',
@@ -3207,7 +3170,7 @@ export const EdsonLuis_CristinaPozzobon: Obra = {
 
 export const MarcilioDias_LuisPaesLeme: Obra = {
     ID: 77,
-    Imagem: undefined,
+    Imagem: 'MarcilioDias_LuisPaesLeme.png',
     Autores: [artistas.LuisPaesLeme],
     Titulo: 'Marcílio Dias',
     Material: 'Bronze',
@@ -3249,7 +3212,7 @@ export const MarcilioDias_LuisPaesLeme: Obra = {
 
 export const BaraodeLadario_Joceil: Obra = {
     ID: 78,
-    Imagem: undefined,
+    Imagem: 'BaraodeLadario_Joceil.jpeg',
     Autores: [artistas.Joceil],
     Titulo: 'Barão de Ladário',
     Material: 'Bronze',
@@ -3288,7 +3251,7 @@ export const BaraodeLadario_Joceil: Obra = {
 
 export const CristianoOttoni_RodolfoBernardelli: Obra = {
     ID: 79,
-    Imagem: undefined,
+    Imagem: 'CristianoOttoni_RodolfoBernardelli.jpeg',
     Autores: [artistas.RodolfoBernardelli],
     Titulo: 'Cristiano Ottoni',
     Material: 'Bronze',
@@ -3396,9 +3359,9 @@ export const ChiquinhaGonzaga_HonorioPecanha: Obra = {
     Execucao: true,
 };
 
-export const IrineuMarinho_BenevenutoBernaa: Obra = {
+export const IrineuMarinho_BenevenutoBerna: Obra = {
     ID: 82,
-    Imagem: undefined,
+    Imagem: 'IrineuMarinho_BenevenutoBerna.jpeg',
     Autores: [artistas.BenevenutoBerna],
     Titulo: `Irineu Marinho`,
     Material: 'Bronze',
@@ -3436,9 +3399,9 @@ export const IrineuMarinho_BenevenutoBernaa: Obra = {
     Execucao: true,
 };
 
-export const PlacidoDeCastro_ArmandoShnoorr: Obra = {
+export const PlacidoDeCastro_ArmandoSocratesSchnoor: Obra = {
     ID: 83,
-    Imagem: undefined,
+    Imagem: 'PlacidoDeCastro_ArmandoSocratesSchnoor.jpeg',
     Autores: [artistas.ArmandoSocratesSchnoor],
     Titulo: `Plácido de Castro`,
     Material: 'Bronze',
@@ -3476,7 +3439,7 @@ export const PlacidoDeCastro_ArmandoShnoorr: Obra = {
 
 export const FontedoTritao_NicolinaVazDeAssisPintodoCouto: Obra = {
     ID: 84,
-    Imagem: undefined,
+    Imagem: 'FontedoTritao_NicolinaVazDeAssisPintodoCouto.jpeg',
     Autores: [artistas.NicolinaVazDeAssisPintodoCouto],
     Titulo: `Fonte do Tritão`,
     Material: 'Bronze',
@@ -3512,7 +3475,7 @@ export const FontedoTritao_NicolinaVazDeAssisPintodoCouto: Obra = {
 
 export const JosePauloSilva_CarlosDelNegro: Obra = {
     ID: 85,
-    Imagem: undefined,
+    Imagem: 'JosePauloSilva_CarlosDelNigro.png',
     Autores: [artistas.CarlosDelNigro],
     Titulo: 'Jose Paulo Silva',
     Material: 'Bronze',
@@ -3553,9 +3516,48 @@ export const JosePauloSilva_CarlosDelNegro: Obra = {
     Execucao: true,
 };
 
+export const AlmiranteJuliodeNoronha_ABraga: Obra = {
+    ID: 85,
+    Imagem: 'AlmiranteJuliodeNoronha_ABraga.jpg',
+    Autores: [artistas.ABraga],
+    Titulo: 'Almirante Julio d eNoronha',
+    Material: 'Bronze',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: `06/1980`,
+    DatasImportantes: [
+        new Data(`06/1980`, 'data de inauguração'),
+    ],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Sul',
+    Bairro: 'Leme',
+    Endereco: 'Praça Julio de Noronha',
+    Latitude: `-22.9622217`,
+    Longitude: `-43.1675421`,
+    SuporteEspacial: undefined,
+    Base: 'Com pedestal',
+    MaterialBase: 'Granito',
+    Status: 'Permanece em espaço público',
+    Descricao: `A homenagem ao Almirante e o reconhecimento e por sua participação no Conselho Naval. O monumento foi inaugurado com a presença do Prefeito Julio Coutinho e de Israel Klabin, que ali compareceu como um "homem do mar" não como uma autoridade.`,
+    Fatos: [
+        new Fato('', '', 'Homenageado', 'Julio de Noronha', [], 'Rio de Janeiro'),
+    ],
+    Temporalidade: 'Permanente',
+    Categoria: 'Narratividade',
+    Funcao: 'Referencial',
+    Natureza: 'Militar',
+    Tipologia: 'Busto',
+    Execucao: true,
+};
+
 export const RaymundoCorrea_HonorioPecanha: Obra = {
     ID: 86,
-    Imagem: undefined,
+    Imagem: 'RaymundoCorrea_HonorioPecanha.jpeg',
     Autores: [artistas.HonorioPecanha],
     Titulo: `Raymundo Corrêa`,
     Material: 'Bronze',
@@ -3597,7 +3599,7 @@ export const RaymundoCorrea_HonorioPecanha: Obra = {
 
 export const FranciscoBraga_PauloMazzucchelli: Obra = {
     ID: 87,
-    Imagem: undefined,
+    Imagem: 'FranciscoBraga_PauloMazzucchelli.jpeg',
     Autores: [artistas.PauloMazzucchelli],
     Titulo: `Francisco Braga`,
     Material: 'Bronze',
@@ -3754,7 +3756,7 @@ export const CastroAlves_EduardoDeSa: Obra = {
 
 export const FerreiraDeAraujo_RodolfoBernardelli: Obra = {
     ID: 91,
-    Imagem: undefined,
+    Imagem: 'FerreiraDeAraujo_RodolfoBernardelli.jpeg',
     Autores: [artistas.RodolfoBernardelli],
     Titulo: `Ferreira de Araújo`,
     Material: 'Bronze',
@@ -3883,7 +3885,7 @@ export const Primavera_MathurinMoreau: Obra = {
     Execucao: true,
 };
 
-export const Inverno_MathurinMoreau: Obra = {
+export const Inverno_MathurinMoreau: Obra = {// TODO
     ID: 94,
     Imagem: 'Inverno_MathurinMoreau.png',
     Autores: [artistas.MathurinMoreau],
@@ -5085,6 +5087,43 @@ export const Pixinguinha_OttoDumovich: Obra = {
     Execucao: true,
 };
 
+export const Braguinha_OttoDumovich: Obra = {
+    ID: 124,
+    Imagem: 'Braguinha_OttoDumovich.jpg',
+    Autores: [artistas.OttoDumovich],
+    Titulo: `Braguinha`,
+    Material: 'Bronze',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    DataInauguracao: `02/2004`,
+    DatasImportantes: [new Data(`02/2004`, 'data de inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Sul',
+    Bairro: 'Copacabana',
+    Endereco: 'Praça Demétrio Ribeiro',
+    Latitude: `-22.9620366`,
+    Longitude: `-43.1780575`,
+    SuporteEspacial: 'Calçada',
+    Base: 'Com pedestal',
+    MaterialBase: 'Granito',
+    Status: 'Permanece em espaço público',
+    Descricao: `Foi doado à cidade pela empresa Unisys Brasil, para homenagear o ídolo do carnaval carioca e morador do bairro de Copacabana.`,
+    Fatos: [
+        new Fato('', '', 'Fundição/Atelier', 'Zani Fundição Artística E Metalúrgica Ltda.', [], 'Rio de Janeiro'),
+    ],
+    Temporalidade: 'Permanente',
+    Categoria: 'Narratividade',
+    Funcao: 'Referencial',
+    Natureza: 'Cívica',
+    Tipologia: 'Estátua',
+    Execucao: true,
+};
+
 export const SergioCardoso_Marlota: Obra = {
     ID: 125,
     Imagem: undefined,
@@ -5123,7 +5162,7 @@ export const SergioCardoso_Marlota: Obra = {
 
 export const CarlosGomes_UgoTaddey: Obra = {
     ID: 126,
-    Imagem: undefined,
+    Imagem: 'CarlosGomes_UgoTaddey.png',
     Autores: [artistas.UgoTaddey],
     Titulo: `Carlos Gomes`,
     Material: 'Bronze',
@@ -5924,10 +5963,10 @@ export const PaulaFreitas_BenevenutoBerna: Obra = {
     Execucao: true,
 };
 
-export const AfraniodeMelloFranco_Desconhecida: Obra = {
+export const AfraniodeMeloFranco_BrunoGiorgi: Obra = {
     ID: 146,
-    // Imagem: 'AfraniodeMelloFranco_Desconhecida.png', TODO
-    Autores: [artistas.Desconhecida],
+    Imagem: 'AfraniodeMeloFranco_BrunoGiorgi.jpg',
+    Autores: [artistas.BrunoGiorgi],
     Titulo: `Afrânio de Mello Franco`,
     Material: 'Bronze',
     Altura: undefined,
@@ -5936,7 +5975,7 @@ export const AfraniodeMelloFranco_Desconhecida: Obra = {
     Peso: undefined,
     ValorObra: undefined,
     DataInauguracao: undefined,
-    DatasImportantes: [new Data(``, 'data de inauguração')],
+    DatasImportantes: [new Data(`10/2010`, 'data de inauguração')],
     Promotor: undefined,
     Financiamento: undefined,
     Propriedade: 'Pública',
@@ -7321,6 +7360,56 @@ export const FranciscoPalheta_Desconhecida: Obra = {
     Execucao: true,
 };
 
+export const Brasil_DanielBellionGomesPinto: Obra = {
+    ID: 161,
+    Imagem: 'Brasil_DanielBellionGomesPinto.jpg',
+    Autores: [artistas.DanielBellionGomesPinto],
+    Promotor: undefined,
+    Titulo: `Brasil`,
+    Renomeacao: false,
+    Classificacao: 'perene',
+    Categoria: 'sublimidade',
+    Tipologia: 'Escultura',
+    Material: `Aço Corten`,
+    Descricao: `Escultura em aço cortada apresentando o mapa do Brasil.`,
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Diametro: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    Execucao: true,
+    DataInauguracao: `10/2004`,
+    Zona: undefined,
+    Bairro: undefined,
+    Endereco: 'Avenida Chile',
+    Latitude: `-22.9089781`,
+    Longitude: `-43.179683`,
+    Lugar: undefined,
+    Remocao: undefined,
+    DataRealocacao: undefined,
+    Realocacao: undefined,
+    ZonaRealocacao: undefined,
+    BairroRealocacao: undefined,
+    EnderecoRealocacao: undefined,
+    LatitudeRealocacao: undefined,
+    LongitudeRealocacao: undefined,
+    LugarRealocacao: undefined,
+    Fatos: [
+        new Fato('', '', 'Fundição/Atelier', 'Eexecutado pelo estaleiro Aker Promar', [], 'Rio de Janeiro'),
+        new Fato('', '', 'Doação', 'Doado pelo estaleiro Aker Promar', [], 'Rio de Janeiro'),
+        new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+        new Fato(
+            '',
+            '',
+            'Vencedora',
+            'Obras vencedora do concurso nacional ao MOnumento a Getúlio VArgas pela criação do Banco NAcional de Desenvolvimento Economico - BNDES',
+            [],
+            'Rio de Janeiro',
+        ),
+    ],
+};
+
 export const AgripinoGrieco_DanielCrow_CurzioZani: Obra = {
     ID: 185,
     Imagem: undefined,
@@ -7654,6 +7743,44 @@ export const PaulHarris_Desconhecida: Obra = {
     Natureza: 'Cívica',
     Tipologia: 'Busto',
     Execucao: true,
+};
+
+export const CarlosAlbertodaCruzWenceslau_Desconhecida: Obra = {
+    ID: 952,
+    Imagem: 'CarlosAlbertodaCruzWenceslau_Desconhecida.jpg',
+    Autores: [artistas.Desconhecida],
+    Promotor: undefined,
+    Titulo: `Carlos Alberto da Cruz Wenceslau`,
+    Renomeacao: false,
+    Classificacao: 'perene',
+    Categoria: 'personalidades',
+    Tipologia: `Busto`,
+    Material: `Peça em argamassa e pedestal revestido com granito`,
+    Descricao: `Homenagem da Universidade Castelo Branco e do Lions Clube de Realengo.`,
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Diametro: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    Execucao: true,
+    DataInauguracao: `11/2009`,
+    Zona: 'este',
+    Bairro: 'Bangú',
+    Endereco: 'Praça Padre Miguel',
+    Latitude: `-22.8780552`,
+    Longitude: `-43.4347683`,
+    Lugar: undefined,
+    Remocao: undefined,
+    DataRealocacao: undefined,
+    Realocacao: undefined,
+    ZonaRealocacao: undefined,
+    BairroRealocacao: undefined,
+    EnderecoRealocacao: undefined,
+    LatitudeRealocacao: undefined,
+    LongitudeRealocacao: undefined,
+    LugarRealocacao: undefined,
+    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const MaedAgua_NewtonSa: Obra = {
@@ -10655,6 +10782,45 @@ export const IndioLutandocomoFelino_HippolyteFrancoisAugusteHippolytePeyrol: Obr
     Execucao: true,
 };
 
+export const AoPolicialMilitar_Desconhecida: Obra = {
+    ID: 903,
+    Imagem: 'AoPolicialMilitar_Desconhecida.jpg',
+    Autores: [artistas.Desconhecida],
+    Promotor: undefined,
+    Titulo: `Ao Policial Militar`,
+    Renomeacao: false,
+    Classificacao: 'perene',
+    Categoria: 'personalidades',
+    Tipologia: `Estátua`,
+    Material: `Peça em bronze com pedestal revestido de granito`,
+    Descricao: `Inaugurado na década de 1990 e reinaugurado em 2006 no calçadão da Penha.
+A homenagem foi uma iniciativa dos moradores da Leopoldina aos soldados do 16º Batalhão da Policia Militar que morreram em combate.`,
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Diametro: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    Execucao: true,
+    DataInauguracao: `1990`,
+    Zona: undefined,
+    Bairro: undefined,
+    Endereco: undefined,
+    Latitude: `-22.8422422`,
+    Longitude: `-43.2778349`,
+    Lugar: undefined,
+    Remocao: true,
+    DataRealocacao: '2006',
+    Realocacao: true,
+    ZonaRealocacao: 'Norte',
+    BairroRealocacao: 'Penha',
+    EnderecoRealocacao: 'Av. Bras de Pina',
+    LatitudeRealocacao: '-22.8421743',
+    LongitudeRealocacao: '-43.2778422',
+    LugarRealocacao: undefined,
+    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+};
+
 export const SanMartin_LouisJosephDaumas: Obra = {
     ID: 273,
     Imagem: undefined,
@@ -11479,7 +11645,7 @@ export const AVictorAssisBrasil_Desconhecida: Obra = {
 
 export const RitualdoVento_GabrielFonseca: Obra = {
     ID: 295,
-    Imagem: undefined,
+    Imagem: 'RitualdoVento_GabrielFonseca.jpg',
     Autores: [artistas.GabrielFonseca],
     Titulo: `Ritual do Vento`,
     Material: 'aço e alumínio',
@@ -13604,6 +13770,49 @@ export const TeixeiraSoares_JoseOtavioCorreaLima: Obra = {
     Execucao: true,
 };
 
+export const ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra: Obra = {
+    ID: 517,
+    Imagem: 'ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra.jpg',
+    Autores: [
+        artistas.GeorgeLopes,
+        artistas.GeorgeGuerra,
+    ],
+    Titulo: `Arcos das Palmeiras`,
+    Material: 'aço',
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Peso: undefined,
+    ValorObra: 'R$ 49500,00',
+    DataInauguracao: `07/1996`,
+    DatasImportantes: [
+        new Data(`07/1996`, 'data de inauguração'),
+        new Data(`2017`, 'furto'),
+    ],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
+    Zona: 'Oeste',
+    Bairro: 'Campo Grande',
+    Endereco: undefined,
+    Latitude: `-22.907364`,
+    Longitude: `-43.5658462`,
+    SuporteEspacial: undefined,
+    Base: undefined,
+    MaterialBase: undefined,
+    Status: 'Furtada',
+    Descricao: `4 estruturas com a parte superior fixadas chapas no sentido horizontal finalizada
+    por uma esfera pintada na cor da laranja. O marco é uma referência as antigas palmeiras das
+    fazendas que existiram na região. As peças (3 arcos) desapareceram em 2017, constatado em vistoria em novembro de 2017`,
+    Fatos: [new Fato('', '', '', '', [], '')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Ornamental',
+    Natureza: 'Urbanística',
+    Tipologia: 'Marco',
+    Execucao: true,
+};
+
 export const MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMarinho: Obra = {
     ID: 354,
     Imagem: undefined,
@@ -14570,7 +14779,7 @@ export const Escoteiro_FernandoThauby: Obra = {
 
 export const SemTitulo_HaroldoBarroso: Obra = {
     ID: 387,
-    Imagem: undefined,
+    Imagem: 'SemTitulo_HaroldoBarroso.jpg',
     Autores: [artistas.HaroldoBarroso],
     Titulo: `Sem Titulo`,
     Material: 'granito',
@@ -15176,7 +15385,7 @@ export const Harmonia_JeanJacquesPradier: Obra = {
 
 export const AbrahamMedina_Desconhecida: Obra = {
     ID: 500,
-    Imagem: undefined,
+    Imagem: 'AbrahamMedina_Desconhecida.jpg',
     Autores: [artistas.Desconhecida],
     Titulo: `Abraham Medina`,
     Material: 'Bronze',
@@ -15921,7 +16130,7 @@ export const Carnica_AnaluNabuco: Obra = {
 
 export const Atena_Desconhecida: Obra = {
     ID: 520,
-    Imagem: undefined,
+    Imagem: 'Atena_Desconhecida.png',
     Autores: [artistas.Desconhecida],
     Titulo: `Atena`,
     Material: 'mármore',
@@ -15940,9 +16149,9 @@ export const Atena_Desconhecida: Obra = {
     Propriedade: 'Pública',
     Zona: 'Oeste',
     Bairro: 'Jacarepaguá',
-    Endereco: 'Largo dos Leões',
-    Latitude: `-22.9491035`,
-    Longitude: `-43.3409763`,
+    Endereco: 'Bosque da Freguesia',
+    Latitude: `-22.9473113`,
+    Longitude: `-43.3468612`,
     SuporteEspacial: undefined,
     Base: 'Sem pedestal',
     MaterialBase: undefined,
@@ -16408,6 +16617,45 @@ export const FredericChopin_AugustZamoiski: Obra = {
     Natureza: 'Cívica',
     Tipologia: 'Estátua',
     Execucao: true,
+};
+
+export const AdelinoMoreira_MestreSaul: Obra = {
+    ID: 1166,
+    Imagem: 'AdelinoMoreira_MestreSaul.jpg',
+    Autores: [artistas.MestreSaul],
+    Promotor: undefined,
+    Titulo: `Adelino Moreira`,
+    Renomeacao: false,
+    Classificacao: 'perene',
+    Categoria: 'plasticidade',
+    Tipologia: `Estátua`,
+    Material: `Peça em bronze`,
+    Descricao: `Estátua ao compositor morador do bairro. Sentado em uma cadeira segurando um violão e apoiando a outra mão
+    sobre uma mesa, como se estivesse escrevendo uma composição.`,
+    Altura: undefined,
+    Largura: undefined,
+    Profundidade: undefined,
+    Diametro: undefined,
+    Peso: undefined,
+    ValorObra: undefined,
+    Execucao: true,
+    DataInauguracao: `01/2008`,
+    Zona: 'Oeste',
+    Bairro: 'Campo Grande',
+    Endereco: 'R. Campo Grande',
+    Latitude: `-22.9018191`,
+    Longitude: `-43.5589983`,
+    Lugar: undefined,
+    Remocao: undefined,
+    DataRealocacao: undefined,
+    Realocacao: undefined,
+    ZonaRealocacao: undefined,
+    BairroRealocacao: undefined,
+    EnderecoRealocacao: undefined,
+    LatitudeRealocacao: undefined,
+    LongitudeRealocacao: undefined,
+    LugarRealocacao: undefined,
+    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const MarechalCandidoRondon_NewtonSa: Obra = {
@@ -18187,7 +18435,7 @@ export const JuliodeCastilhos_Desconhecida: Obra = {
 export const AryBarroso_LeoSantana: Obra = {
     ID: 582,
     Imagem: 'AryBarroso_LeoSantana.png',
-    Autores: [artistas.LeoSantana], //TODO Leo SAntano ou Otto
+    Autores: [artistas.LeoSantana],
     Titulo: `Ary Barroso`,
     Material: 'Bronze',
     Altura: undefined,
@@ -18223,7 +18471,7 @@ export const AryBarroso_LeoSantana: Obra = {
 export const AryBarroso_OttoDumovich: Obra = {
     ID: 582,
     Imagem: 'AryBarroso_OttoDumovich.png',
-    Autores: [artistas.OttoDumovich], // TODO Otto ou Desconhecida
+    Autores: [artistas.OttoDumovich],
     Titulo: `Ary Barroso`,
     Material: 'Bronze',
     Altura: undefined,
@@ -18778,10 +19026,10 @@ export const DianadeGabies_Desconhecida: Obra = {
     Execucao: true,
 };
 
-export const BaraodeTaquara_BenevenutaBerna: Obra = {
+export const BaraodeTaquara_BenevenutoBerna: Obra = {
     ID: 474,
-    Imagem: 'BaraodeTaquara_BenevenutaBerna.png',
-    Autores: [artistas.BenevenutaBerna],
+    Imagem: 'BaraodeTaquara_BenevenutoBerna.png',
+    Autores: [artistas.BenevenutoBerna],
     Titulo: `Barão de Taquara`,
     Material: `Bronze`,
     Altura: undefined,

@@ -6739,19 +6739,6 @@ export const RicoReis: Pessoa = {
     Fatos: undefined,
 };
 
-export const BenevenutaBerna: Pessoa = {
-    ID: undefined,
-    Nome: `Benevenuta Berna`,
-    Nascimento: undefined,
-    CidadePaisNascimento: undefined,
-    Morte: undefined,
-    CidadePaisMorte: undefined,
-    Descriçao: undefined,
-    Profissoes: undefined,
-    Especialidades: undefined,
-    Fatos: undefined,
-};
-
 export const AnaluNabuco: Pessoa = {
     ID: undefined,
     Nome: `Analu Nabuco`,
