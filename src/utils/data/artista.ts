@@ -416,8 +416,8 @@ export const OscarNiemeyer: Artista = {
     Pessoa: pessoas.OscarNiemeyer,
 };
 
-export const PaulJeanBaptisteGasq: Artista = {
-    Pessoa: pessoas.PaulJeanBaptisteGasq,
+export const PaulJeanBaptisteGasg: Artista = {
+    Pessoa: pessoas.PaulJeanBaptisteGasg,
 };
 
 export const JoseMariaJacintoRabelo: Artista = {

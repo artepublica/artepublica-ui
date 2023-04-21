@@ -3685,9 +3685,9 @@ export const OscarNiemeyer: Pessoa = {
     Fatos: undefined,
 };
 
-export const PaulJeanBaptisteGasq: Pessoa = {
+export const PaulJeanBaptisteGasg: Pessoa = {
     ID: undefined,
-    Nome: `Paul Jean-Baptiste Gasq`,
+    Nome: `Paul Jean-Baptiste Gasg`,
     Nascimento: undefined,
     CidadePaisNascimento: undefined,
     Morte: undefined,
