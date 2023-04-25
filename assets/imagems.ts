@@ -315,7 +315,7 @@ const images = {
     'FonteWallaceII_CharlesAugusteLebourg.jpeg': require('./obras/FonteWallaceII_CharlesAugusteLebourg.jpeg'),
     'FonteWallaceIII_CharlesAugusteLebourg.png': require('./obras/FonteWallaceIII_CharlesAugusteLebourg.png'),
     'Bastoes_CeleidaTostes.jpeg': require('./obras/Bastoes_CeleidaTostes.jpeg'),
-    'Mo_CeleidaTostes.jpeg' 'Mo_CeleidaTostes.jpeg'),
+    'Mo_CeleidaTostes.jpeg': require('./obras/Mo_CeleidaTostes.jpeg'),
 };
 
 export default images;
