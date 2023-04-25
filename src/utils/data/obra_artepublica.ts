@@ -6942,9 +6942,9 @@ export const PedroErnesto_BenevenutoBerna: Obra = {
     Execucao: true,
 };
 
-export const AJuventude_HaroldoBarroso: Obra = {
+export const AJuventudeACulturaEAoEsporte_HaroldoBarroso: Obra = {
     ID: 174,
-    Imagem: undefined,
+    Imagem: 'AJuventudeACulturaEAoEsporte_HaroldoBarroso.jpeg',
     Autores: [artistas.HaroldoBarroso],
     Titulo: `A  Juventude, a Cultura e ao Esporte`,
     Material: 'concreto',
@@ -6988,7 +6988,7 @@ export const AJuventude_HaroldoBarroso: Obra = {
 
 export const AosCampeoesdoMundoBellini_MateusFernandes: Obra = {
     ID: 175,
-    Imagem: undefined,
+    Imagem: 'AosCampeoesdoMundoBellini_MateusFernandes.jpeg',
     Autores: [artistas.MateusFernandes],
     Titulo: `Aos Campeões do Mundo -  Bellini e outros`,
     Material: 'Bronze',
@@ -7023,7 +7023,7 @@ export const AosCampeoesdoMundoBellini_MateusFernandes: Obra = {
 
 export const EdsonPassos_HildegardoLeaoVelloso: Obra = {
     ID: 176,
-    Imagem: undefined,
+    Imagem: 'EdsonPassos_HildegardoLeaoVelloso.jpeg',
     Autores: [artistas.HildegardoLeaoVelloso],
     Titulo: `Edson Passos`,
     Material: 'Bronze',
@@ -7206,7 +7206,7 @@ export const AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto: Obra = 
 
 export const DomPedroII_JeanMagrou_HeitorDaSilvaCosta: Obra = {
     ID: 182,
-    Imagem: undefined,
+    Imagem: 'DomPedroII_JeanMagrou_HeitorDaSilvaCosta.jpeg',
     Autores: [
         artistas.JeanMagrou,
         artistas.HeitorDaSilvaCosta,
@@ -7379,7 +7379,7 @@ export const Brasil_DanielBellionGomesPinto: Obra = {
 
 export const AgripinoGrieco_DanielCrow_CurzioZani: Obra = {
     ID: 185,
-    Imagem: undefined,
+    Imagem: 'AgripinoGrieco_DanielCrow_CurzioZani.png',
     Autores: [
         artistas.DanielCrow,
         artistas.CurzioZani,
@@ -7498,7 +7498,7 @@ export const AristidesCaire_TitoBernucci: Obra = {
 
 export const BaraodoRioBranco_JoaoTurin: Obra = {
     ID: 188,
-    Imagem: undefined,
+    Imagem: 'BaraodoRioBranco_JoaoTurin.jpeg',
     Autores: [artistas.JoaoTurin],
     Titulo: `Barão do Rio Branco`,
     Material: 'Bronze',
@@ -7574,7 +7574,7 @@ export const NiltonSantos_EdgarDuvivierFilho: Obra = {
 
 export const OrlandoSilva_MiguelPastor: Obra = {
     ID: 190,
-    Imagem: undefined,
+    Imagem: 'OrlandoSilva_MiguelPastor.jpeg',
     Autores: [artistas.MiguelPastor],
     Titulo: `Orlando Silva`,
     Material: 'Bronze',
@@ -7609,7 +7609,7 @@ export const OrlandoSilva_MiguelPastor: Obra = {
 
 export const ChafarizDaExposicaoNacional1908_Desconhecida: Obra = {
     ID: 191,
-    Imagem: undefined,
+    Imagem: 'ChafarizDaExposicaoNacional1908_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
     Titulo: `Chafariz da Exposição Nacional de 1908`,
     Material: 'ferro fundido',
@@ -7644,7 +7644,7 @@ export const ChafarizDaExposicaoNacional1908_Desconhecida: Obra = {
 
 export const MarechalMascarenhasdeMoraes_IrmaosBernardini: Obra = {
     ID: 192,
-    Imagem: undefined,
+    Imagem: 'MarechalMascarenhasdeMoraes_IrmaosBernardini.jpeg',
     Autores: [artistas.IrmãosBernardini],
     Titulo: `Marechal Mascarenhas de Moraes`,
     Material: 'Bronze',
@@ -7679,7 +7679,7 @@ export const MarechalMascarenhasdeMoraes_IrmaosBernardini: Obra = {
 
 export const PaulHarris_Desconhecida: Obra = {
     ID: 193,
-    Imagem: undefined,
+    Imagem: 'PaulHarris_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
     Titulo: `Paul Harris`,
     Material: 'Bronze',
@@ -7752,7 +7752,7 @@ export const CarlosAlbertodaCruzWenceslau_Desconhecida: Obra = {
 
 export const MaedAgua_NewtonSa: Obra = {
     ID: 196,
-    Imagem: undefined,
+    Imagem: 'MaedAgua_NewtonSa.jpeg',
     Autores: [artistas.NewtonSa],
     Titulo: `Mãe d’Água`,
     Material: 'Bronze',
@@ -7865,7 +7865,7 @@ export const AlexanderFleming_LeonardoLima: Obra = {
 
 export const LimaBarreto_FranciscoAndrade: Obra = {
     ID: 199,
-    Imagem: undefined,
+    Imagem: 'LimaBarreto_FranciscoAndrade.jpeg',
     Autores: [artistas.FranciscoAndrade],
     Titulo: `Lima Barreto`,
     Material: 'Bronze',
@@ -7979,7 +7979,7 @@ export const CastroAlves_ModestinoKanto: Obra = {
 
 export const Leao_Desconhecida: Obra = {
     ID: 202,
-    Imagem: undefined,
+    Imagem: 'Leao_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
     Titulo: `Leão`,
     Material: 'ferro fundido',
@@ -8018,7 +8018,7 @@ export const Leao_Desconhecida: Obra = {
 
 export const IndiaI_JulesJeanJulesSalmson: Obra = {
     ID: 203,
-    Imagem: undefined,
+    Imagem: 'IndiaI_JulesJeanJulesSalmson.jpeg',
     Autores: [artistas.JulesJeanJulesSalmson],
     Titulo: `Índia`,
     Material: 'ferro fundido',
@@ -8054,10 +8054,10 @@ export const IndiaI_JulesJeanJulesSalmson: Obra = {
     Execucao: true,
 };
 
-export const Mae_Desconhecida: Obra = {
+export const Mae_RuiLeal: Obra = {
     ID: 204,
-    Imagem: undefined,
-    Autores: [artistas.Desconhecida],
+    Imagem: 'Mae_RuiLeal.jpeg',
+    Autores: [artistas.RuiLeal],
     Titulo: `Mãe`,
     Material: 'argamassa',
     Altura: undefined,
@@ -8065,8 +8065,8 @@ export const Mae_Desconhecida: Obra = {
     Profundidade: undefined,
     Peso: undefined,
     ValorObra: undefined,
-    DataInauguracao: `05/1969`,
-    DatasImportantes: [new Data(`05/1969`, 'data de inauguração')],
+    DataInauguracao: `05/1966`,
+    DatasImportantes: [new Data(`05/1966`, 'data de inauguração')],
     Promotor: undefined,
     Financiamento: undefined,
     Propriedade: 'Pública',
@@ -8130,7 +8130,7 @@ export const PedroFernandes_EdgarDuvivierFilho: Obra = {
 
 export const SaoCristovao_SergioBertoni: Obra = {
     ID: 206,
-    Imagem: undefined,
+    Imagem: 'SaoCristovao_SergioBertoni.jpeg',
     Autores: [artistas.SergioBertoni],
     Titulo: `São Cristóvão`,
     Material: 'Bronze',
@@ -8145,7 +8145,7 @@ export const SaoCristovao_SergioBertoni: Obra = {
     Financiamento: undefined,
     Propriedade: 'Pública',
     Zona: 'Norte',
-    Bairro: 'Jardim América',
+    Bairro: 'Cordovil',
     Endereco: 'Km 0 da via Dutra',
     Latitude: `-22.8189257`,
     Longitude: `-43.3201278`,
@@ -8165,7 +8165,7 @@ export const SaoCristovao_SergioBertoni: Obra = {
 
 export const VicenteDeCarvalho_RuffoFanucchi: Obra = {
     ID: 207,
-    Imagem: undefined,
+    Imagem: 'VicenteDeCarvalho_RuffoFanucchi.jpeg',
     Autores: [artistas.RuffoFanucchi],
     Titulo: `Vicente de Carvalho`,
     Material: 'Bronze',
@@ -8200,7 +8200,7 @@ export const VicenteDeCarvalho_RuffoFanucchi: Obra = {
 
 export const FonteWallaceII_CharlesAugusteLebourg: Obra = {
     ID: 208,
-    Imagem: undefined,
+    Imagem: 'FonteWallaceII_CharlesAugusteLebourg.jpeg',
     Autores: [artistas.CharlesAugusteLebourg],
     Titulo: `Fonte Wallace`,
     Material: 'ferro fundido',
@@ -8234,9 +8234,9 @@ export const FonteWallaceII_CharlesAugusteLebourg: Obra = {
     Execucao: true,
 };
 
-export const Bastões_CeleidaTostes: Obra = {
+export const Bastoes_CeleidaTostes: Obra = {
     ID: 209,
-    Imagem: undefined,
+    Imagem: 'Bastoes_CeleidaTostes.jpeg',
     Autores: [artistas.CeleidaTostes],
     Titulo: `Bastões`,
     Material: 'argamassa',
@@ -8311,7 +8311,7 @@ export const Roda_CeleidaTostes: Obra = {
 
 export const Mo_CeleidaTostes: Obra = {
     ID: 211,
-    Imagem: undefined,
+    Imagem: 'Mo_CeleidaTostes.jpeg',
     Autores: [artistas.CeleidaTostes],
     Titulo: `Mó`,
     Material: 'argamassa',
@@ -8678,7 +8678,7 @@ export const QuadradoemTorcaonoEspaco_FranzWeissmann: Obra = {
 
 export const AlbertoIReidaBelgica_LaurindoRamos: Obra = {
     ID: 222,
-    // Imagem: 'AlbertoIReidaBelgica_LaurindoRamos.png', TODO
+    Imagem: 'AlbertoIReidaBelgica_LaurindoRamos.png',
     Autores: [artistas.LaurindoRamos],
     Titulo: `Alberto I Rei da Belgica`,
     Material: 'Bronze',
@@ -8831,7 +8831,7 @@ export const MulherComCornucopia_PierreLoison: Obra = {
 
 export const FonteWallaceIII_CharlesAugusteLebourg: Obra = {
     ID: 226,
-    Imagem: undefined,
+    Imagem: 'FonteWallaceIII_CharlesAugusteLebourg.png',
     Autores: [artistas.CharlesAugusteLebourg],
     Titulo: `Fonte Wallace`,
     Material: 'ferro fundido',
