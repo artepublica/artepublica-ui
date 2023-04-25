@@ -34,6 +34,7 @@ module.exports = {
         '!src/utils/theme-provider/**/*.{ts,tsx}',
         '!src/pages/**/*.{ts,tsx}',
         '!src/providers/**/*.{ts,tsx}',
+        '!src/changeImagesSize.ts',
     ],
     coverageDirectory: '.coverage',
     coveragePathIgnorePatterns: [
