@@ -212,7 +212,7 @@ const images = {
     'GeneralSantander_FranciscoVictorPalma.jpeg': require('./obras/LutaDesigual_LeonDespresLaupedeCluny.jpeg'),
     'AUniao_MathurinMoreau.png': require('./obras/AUniao_MathurinMoreau.png'),
     'ALiberdade_MathurinMoreau.jpeg': require('./obras/ALiberdade_MathurinMoreau.jpeg'),
-    'AJustiça_MathurinMoreau.jpeg': require('./obras/AJustiça_MathurinMoreau.jpeg'),
+    'AJustica_MathurinMoreau.jpeg': require('./obras/AJustica_MathurinMoreau.jpeg'),
     'AFidelidade_MathurinMoreau.jpeg': require('./obras/AFidelidade_MathurinMoreau.jpeg'),
     'JoaoCaetano_FranciscoManuelChavesPinheiro.jpeg': require('./obras/JoaoCaetano_FranciscoManuelChavesPinheiro.jpeg'),
     'SantosDumont_AmadeuZani.jpeg': require('./obras/SantosDumont_AmadeuZani.jpeg'),

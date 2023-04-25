@@ -1791,9 +1791,9 @@ export const ALiberdade_MathurinMoreau: Obra = {
     Execucao: true,
 };
 
-export const AJustiça_MathurinMoreau: Obra = {
+export const AJustica_MathurinMoreau: Obra = {
     ID: 46,
-    Imagem: 'AJustiça_MathurinMoreau.jpeg',
+    Imagem: 'AJustica_MathurinMoreau.jpeg',
     Autores: [artistas.MathurinMoreau],
     Titulo: 'Justiça',
     Material: 'ferro fundido',
