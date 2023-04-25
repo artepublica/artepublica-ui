@@ -1899,7 +1899,7 @@ export const OscarNiemeyer: Pessoa = {
     CidadePaisMorte: undefined,
 };
 
-export const PaulJeanBaptisteGasq: Pessoa = {
+export const PaulJeanBaptisteGasg: Pessoa = {
     Nome: `Paul Jean-Baptiste Gasq`,
     Nascimento: undefined,
     CidadePaisNascimento: undefined,

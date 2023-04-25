@@ -1554,7 +1554,7 @@ export const PortaodoCampoDeSantana_Desconhecida: Obra = {
 export const Verao_PaulJeanBaptisteGasq: Obra = {
     ID: 150,
     Imagem: undefined,
-    Autores: [artistas.PaulJeanBaptisteGasq],
+    Autores: [artistas.PaulJeanBaptisteGasg],
     Promotor: undefined,
     Titulo: `Verão`,
     Renomeacao: false,
@@ -3089,7 +3089,7 @@ export const FontedaSereia_replica__Desconhecida: Obra = {
 export const Inverno_PaulJeanBaptesteGasq: Obra = {
     ID: 215,
     Imagem: undefined,
-    Autores: [artistas.PaulJeanBaptisteGasq],
+    Autores: [artistas.PaulJeanBaptisteGasg],
     Promotor: undefined,
     Titulo: `Inverno`,
     Renomeacao: false,

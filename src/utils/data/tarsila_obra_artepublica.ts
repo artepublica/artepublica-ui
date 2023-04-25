@@ -10675,10 +10675,10 @@ export const DianadeGabies_Desconhecida: Obra = {
     Tipologia: 'Estátua',
 };
 
-export const BaraodeTaquara_BenevenutaBerna: Obra = {
+export const BaraodeTaquara_BenevenutoBerna: Obra = {
     ID: 474,
-    Imagem: 'BaraodeTaquara_BenevenutaBerna.png',
-    Autores: [artistas.BenevenutaBerna],
+    Imagem: 'BaraodeTaquara_BenevenutoBerna.png',
+    Autores: [artistas.BenevenutoBerna],
     Titulo: `Barão de Taquara`,
     Material: `Bronze`,
     DataInauguracao: `10/1939`,

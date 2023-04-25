@@ -2552,7 +2552,10 @@ export const AtilioCorreaLima_CPincy: Obra = {
 export const AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna: Obra = {
     ID: 63,
     Imagem: 'AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna.jpeg',
-    Autores: [artistas.CharlesKeck, artistas.BenevenutoBerna],
+    Autores: [
+        artistas.CharlesKeck,
+        artistas.BenevenutoBerna,
+    ],
     Titulo: 'Amizade Entre Os Povos',
     Material: 'Bronze',
     Altura: undefined,

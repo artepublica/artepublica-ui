@@ -130,11 +130,11 @@ const images = {
     'CastroAlves_ModestinoKanto.png': require('./obras/CastroAlves_ModestinoKanto.png'),
     'DSebastiaoLeme_HeitorUsai.png': require('./obras/DSebastiaoLeme_HeitorUsai.png'),
     'GetulioVargas_LuizSerri.png': require('./obras/GetulioVargas_LuizSerri.png'),
-    'GetulioVargas_Desconhecida.jpg': require('./obras/GetulioVargasPaqueta_Desconhecida.jpg'),
+    'GetulioVargas_Desconhecida.jpg': require('./obras/GetulioVargas_Desconhecida.jpg'),
     'LuisDeCamoes_AntonioTaunay.png': require('./obras/LuisDeCamoes_AntonioTaunay.png'),
     'SaturninoSoaresMeirelles_Desconhecida.jpg': require('./obras/SaturninoSoaresMeirelles_Desconhecida.jpg'),
     'FreiLeandroDoSacramento_RibeiroDaCosta.jpg': require('./obras/FreiLeandroDoSacramento_RibeiroDaCosta.jpg'),
-    'MarechalMachadoBittencourt_JoseOtavioCorreaLima.gif': require('./obras/MarechalMachadoBittencourt_JoseOtavioCorreaLima.gif'),
+    'MarechalMachadoBittencourt_JoseOtavioCorreaLima.jpg': require('./obras/MarechalMachadoBittencourt_JoseOtavioCorreaLima.jpg'),
     'SaintHilaire_HumbertoCozzo.jpg': require('./obras/SaintHilaire_HumbertoCozzo.jpg'),
     'GoncalvesDias_RodolfoBernardelli.png': require('./obras/GoncalvesDias_RodolfoBernardelli.png'),
     'FonteJovemEuropa_MathurinMoreau.jpg': require('./obras/FonteJovemEuropa_MathurinMoreau.jpg'),
@@ -150,7 +150,7 @@ const images = {
     'VictorMeirelles_EduardoDeSa.png': require('./obras/VictorMeirelles_EduardoDeSa.png'),
     'OlavoBilac_HumbertoCozzo.png': require('./obras/OlavoBilac_HumbertoCozzo.png'),
     'CardealJoaquimArcoverde_Desconhecida.png': require('./obras/CardealJoaquimArcoverde_Desconhecida.png'),
-    'BaraodeTaquara_BenevenutaBerna.png': require('./obras/BaraodeTaquara_BenevenutaBerna.png'),
+    'BaraodeTaquara_BenevenutoBerna.png': require('./obras/BaraodeTaquara_BenevenutoBerna.png'),
     'ChiquinhaGonzaga_HonorioPecanha.jpg': require('./obras/ChiquinhaGonzaga_HonorioPecanha.jpg'),
     'ClovisBevilaqua_HonorioPecanha.png': require('./obras/ClovisBevilaqua_HonorioPecanha.png'),
     'EmilioDeMenezes_JoaoTurin.png': require('./obras/EmilioDeMenezes_JoaoTurin.png'),
@@ -195,7 +195,6 @@ const images = {
     'FonteDaCrianca_HenriFredericIselin.jpeg': require('./obras/FonteDaCrianca_HenriFredericIselin.jpeg'),
     'GeneralOsorio_RodolfoBernardelli.jpg': require('./obras/GeneralOsorio_RodolfoBernardelli.jpg'),
     'AryBarroso_LeoSantana.png': require('./obras/AryBarroso_LeoSantana.png'),
-    'MarechalMachadoBittencourt_JoseOtavioCorreaLima.jpg': require('./obras/MarechalMachadoBittencourt_JoseOtavioCorreaLima.jpg'),
     'JoseBonifacio_LouisRochet.jpeg': require('./obras/JoseBonifacio_LouisRochet.jpeg'),
     'TresVelas_IvanPaulPaccini.jpeg': require('./obras/TresVelas_IvanPaulPaccini.jpeg'),
     'FontedoMenino_MestreValentim.png': require('./obras/FontedoMenino_MestreValentim.png'),
@@ -297,10 +296,6 @@ const images = {
     'AosHahnemannianos_Desconhecida.jpeg': require('./obras/AosHahnemannianos_Desconhecida.jpeg'),
     'NoelRosa_AlfredoHerculanoFreixo.jpeg': require('./obras/NoelRosa_AlfredoHerculanoFreixo.jpeg'),
     'PedroErnesto_BenevenutoBerna.jpeg': require('./obras/PedroErnesto_BenevenutoBerna.jpeg'),
-
-
-
-
 };
 
 export default images;
