@@ -2597,9 +2597,9 @@ export const AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna: Obra = {
     Execucao: true,
 };
 
-export const TeresaCristinaBragançadeBourbon_JoseLuizRibeiro: Obra = {
+export const TeresaCristinaBragancadeBourbon_JoseLuizRibeiro: Obra = {
     ID: 64,
-    Imagem: 'TeresaCristinaBragançadeBourbon_JoseLuizRibeiro.jpg',
+    Imagem: 'TeresaCristinaBragancadeBourbon_JoseLuizRibeiro.jpg',
     Autores: [artistas.JoseLuizRibeiro],
     Titulo: 'Imperatriz Teresa Cristina Bragança de Bourbon',
     Material: 'Bronze',
@@ -5523,9 +5523,9 @@ export const UlyssesGuimaraes_SironFranco: Obra = {
     Execucao: true,
 };
 
-export const ChafarizdasTresGraças_RemoBernucci: Obra = {
+export const ChafarizdasTresGracas_RemoBernucci: Obra = {
     ID: 136,
-    Imagem: 'ChafarizdasTresGraças_RemoBernucci.jpeg',
+    Imagem: 'ChafarizdasTresGracas_RemoBernucci.jpeg',
     Autores: [artistas.RemoBernucci],
     Titulo: `Chafariz da Tres Graças`,
     Material: 'bronze e concreto',

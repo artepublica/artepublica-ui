@@ -1722,7 +1722,7 @@ export const UlyssesGuimaraes_SironFranco: Obra = {
     Tipologia: 'Busto',
 };
 
-export const ChafarizdasTresGraças_RemoBernucci: Obra = {
+export const ChafarizdasTresGracas_RemoBernucci: Obra = {
     ID: 136,
     Autores: [artistas.RemoBernucci],
     Titulo: `Chafariz da Tres Graças`,
