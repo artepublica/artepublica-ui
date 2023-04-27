@@ -327,8 +327,6 @@ const images = {
     'MulhereoFelino_Desconhecida.jpeg': require('./obras/MulhereoFelino_Desconhecida.jpeg'),
     'AlmiranteSaldanhadaGama_AntonioCaringi.jpeg': require('./obras/AlmiranteSaldanhadaGama_AntonioCaringi.jpeg'),
     'JeanSibelius_WainoAaltonem.png': require('./obras/JeanSibelius_WainoAaltonem.png'),
-
-
 };
 
 export default images;
