@@ -28,7 +28,7 @@ const images = {
     'Carnica_AnaluNabuco.jpg': require('./obras/Carnica_AnaluNabuco.jpg'),
     'Cartola_OttoDumovich.png': require('./obras/Cartola_OttoDumovich.png'),
     'Ceres_ThomasRegnaudin.jpg': require('./obras/Ceres_ThomasRegnaudin.jpg'),
-    'SemTitulo2_AmilcarDeCastro.jpg': require('./obras/SemTitulo2_AmilcarDeCastro.jpg'),
+    'SemTituloI_AmilcarDeCastro.jpg': require('./obras/SemTituloI_AmilcarDeCastro.jpg'),
     'ChicoXavier_Desconhecida.jpg': require('./obras/ChicoXavier_Desconhecida.jpg'),
     'ClarisseIndiodoBrasil_HCunhaMelo.jpg': require('./obras/ClarisseIndiodoBrasil_HCunhaMelo.jpg'),
     'ClementinoFraga_GiulioStarace.jpg': require('./obras/ClementinoFraga_GiulioStarace.jpg'),
@@ -316,6 +316,19 @@ const images = {
     'FonteWallaceIII_CharlesAugusteLebourg.png': require('./obras/FonteWallaceIII_CharlesAugusteLebourg.png'),
     'Bastoes_CeleidaTostes.jpeg': require('./obras/Bastoes_CeleidaTostes.jpeg'),
     'Mo_CeleidaTostes.jpeg': require('./obras/Mo_CeleidaTostes.jpeg'),
+    'BaraodeItamarati_PauloMazzucchelli.jpeg': require('./obras/BaraodeItamarati_PauloMazzucchelli.jpeg'), 
+    'LineudePaulaMachado_HildegardoLeaoVelloso.jpeg': require('./obras/LineudePaulaMachado_HildegardoLeaoVelloso.jpeg'),
+    'ProtecaooCaoeaCrianca_HippolyteFrancoisAugusteHippolytePeyrol.jpeg': require('./obras/ProtecaooCaoeaCrianca_HippolyteFrancoisAugusteHippolytePeyrol.jpeg'),
+    'PinheiroMachado_HildegardoLeaoVelloso.jpeg': require('./obras/PinheiroMachado_HildegardoLeaoVelloso.jpeg'),
+    'Jaguar_JoaoTurin.jpeg': require('./obras/Jaguar_JoaoTurin.jpeg'),
+    'Mercurio_Desconhecida.jpeg': require('./obras/Mercurio_Desconhecida.jpeg'),
+    'TomJobimOEstudante_VeraTorres.jpeg': require('./obras/TomJobimOEstudante_VeraTorres.jpeg'),
+    'AFonteDeusaThetis_LouisSauvageau.jpeg': require('./obras/AFonteDeusaThetis_LouisSauvageau.jpeg'),
+    'MulhereoFelino_Desconhecida.jpeg': require('./obras/MulhereoFelino_Desconhecida.jpeg'),
+    'AlmiranteSaldanhadaGama_AntonioCaringi.jpeg': require('./obras/AlmiranteSaldanhadaGama_AntonioCaringi.jpeg'),
+    'JeanSibelius_WainoAaltonem.png': require('./obras/JeanSibelius_WainoAaltonem.png'),
+
+
 };
 
 export default images;

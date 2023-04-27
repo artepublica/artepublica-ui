@@ -8464,7 +8464,7 @@ export const SantosDumont_Desconhecida: Obra = {
 
 export const BaraodeItamarati_PauloMazzucchelli: Obra = {
     ID: 215,
-    Imagem: undefined,
+    Imagem: 'BaraodeItamarati_PauloMazzucchelli.jpeg',
     Autores: [artistas.PauloMazzucchelli],
     Titulo: `Rocha Leão, o Barão de Itamarati`,
     Material: 'Bronze',
@@ -8499,7 +8499,7 @@ export const BaraodeItamarati_PauloMazzucchelli: Obra = {
 
 export const LineudePaulaMachado_HildegardoLeaoVelloso: Obra = {
     ID: 216,
-    Imagem: undefined,
+    Imagem: 'LineudePaulaMachado_HildegardoLeaoVelloso.jpeg',
     Autores: [artistas.HildegardoLeaoVelloso],
     Titulo: `Lineu de Paula Machado`,
     Material: 'Bronze',
@@ -8569,7 +8569,7 @@ export const Arvore_HelioPelegrino: Obra = {
 
 export const ProtecaooCaoeaCrianca_HippolyteFrancoisAugusteHippolytePeyrol: Obra = {
     ID: 219,
-    Imagem: undefined,
+    Imagem: 'ProtecaooCaoeaCrianca_HippolyteFrancoisAugusteHippolytePeyrol.jpeg',
     Autores: [artistas.MateusFernandes],
     Titulo: `Proteção, o Cão e a Criança`,
     Material: 'marmore carrara',
@@ -8716,7 +8716,7 @@ export const AlbertoIReidaBelgica_LaurindoRamos: Obra = {
 
 export const Mercurio_Desconhecida: Obra = {
     ID: 223,
-    Imagem: undefined,
+    Imagem: 'Mercurio_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
     Titulo: `Mercúrio`,
     Material: 'mármore de carrara',
@@ -8865,41 +8865,6 @@ export const FonteWallaceIII_CharlesAugusteLebourg: Obra = {
     Funcao: 'Utilitária',
     Natureza: 'Urbanística',
     Tipologia: 'Grupo escultórico',
-    Execucao: true,
-};
-
-export const TomJobimOEstudante_VeraTorres: Obra = {
-    ID: 227,
-    Imagem: undefined,
-    Autores: [artistas.VeraTorres],
-    Titulo: `A Tom Jobim, O Estudante`,
-    Material: 'Bronze',
-    Altura: undefined,
-    Largura: undefined,
-    Profundidade: undefined,
-    Peso: undefined,
-    ValorObra: undefined,
-    DataInauguracao: `1996`,
-    DatasImportantes: [new Data(`1996`, 'data de inauguração')],
-    Promotor: undefined,
-    Financiamento: undefined,
-    Propriedade: 'Pública',
-    Zona: 'Sul',
-    Bairro: 'Jardim Botânico',
-    Endereco: 'Jardim Botânico',
-    Latitude: `-22.968731`,
-    Longitude: `-43.2223012`,
-    SuporteEspacial: undefined,
-    Base: 'Com pedestal',
-    MaterialBase: undefined,
-    Status: 'Permanece em espaço público',
-    Descricao: undefined,
-    Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
-    Temporalidade: 'Permanente',
-    Categoria: 'Narratividade',
-    Funcao: 'Memorial',
-    Natureza: 'Artística',
-    Tipologia: 'Estátua',
     Execucao: true,
 };
 
@@ -9326,7 +9291,7 @@ export const VonMartius_AntonioPintodeMattos: Obra = {
 
 export const AFonteDeusaThetis_LouisSauvageau: Obra = {
     ID: 238,
-    Imagem: undefined,
+    Imagem: 'AFonteDeusaThetis_LouisSauvageau.jpeg',
     Autores: [artistas.LouisSauvageau],
     Titulo: `A Fonte Deusa Thetis`,
     Material: 'ferro fundido',
@@ -9662,7 +9627,7 @@ export const Primavera_LuciaGuerreiro: Obra = {
 
 export const PinheiroMachado_HildegardoLeaoVelloso: Obra = {
     ID: 247,
-    Imagem: undefined,
+    Imagem: 'PinheiroMachado_HildegardoLeaoVelloso.jpeg',
     Autores: [artistas.HildegardoLeaoVelloso],
     Titulo: `Pinheiro Machado`,
     Material: 'Bronze',
@@ -9698,7 +9663,7 @@ export const PinheiroMachado_HildegardoLeaoVelloso: Obra = {
 
 export const MulhereoFelino_Desconhecida: Obra = {
     ID: 248,
-    Imagem: undefined,
+    Imagem: 'MulhereoFelino_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
     Titulo: `Mulher e o Felino`,
     Material: 'mármore de carrara',
@@ -9735,7 +9700,7 @@ export const MulhereoFelino_Desconhecida: Obra = {
 
 export const AlmiranteSaldanhadaGama_AntonioCaringi: Obra = {
     ID: 249,
-    Imagem: undefined,
+    Imagem: 'AlmiranteSaldanhadaGama_AntonioCaringi.jpeg',
     Autores: [artistas.AntonioCaringi],
     Titulo: `Almirante Saldanha da Gama`,
     Material: 'Bronze',
@@ -9926,7 +9891,7 @@ export const CardealJoaquimArcoverde_Desconhecida: Obra = {
 };
 export const Jaguar_JoaoTurin: Obra = {
     ID: 253,
-    Imagem: undefined,
+    Imagem: 'Jaguar_JoaoTurin.jpeg',
     Autores: [artistas.JoaoTurin],
     Titulo: `Jaguar`,
     Material: 'Bronze',
@@ -10947,11 +10912,11 @@ export const Curumim_PedroCorreiaDeAraujo: Obra = {
     Execucao: true,
 };
 
-export const TomJobim_OttoDumovich: Obra = {
+export const ATomJobimOEstudante_OttoDumovich_OttoDumovich: Obra = {
     ID: 277,
     Imagem: 'ATomJobimOEstudante_OttoDumovich.jpg',
     Autores: [artistas.OttoDumovich],
-    Titulo: `Tom Jobim`,
+    Titulo: `A Tom Jobim O Estudante`,
     Material: 'Bronze',
     Altura: undefined,
     Largura: undefined,
@@ -12130,7 +12095,7 @@ O monumento foi erguido pela Prefeitura da Cidade por solicitação da família.
 
 export const JeanSibelius_WainoAaltonem: Obra = {
     ID: 308,
-    // Imagem: 'JeanSibelius_WainoAaltonem.png', TODO
+    Imagem: 'JeanSibelius_WainoAaltonem.png',
     Autores: [artistas.WainoAaltonem],
     Titulo: `Jean Sibelius`,
     Material: 'Bronze',
@@ -13824,7 +13789,7 @@ export const MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMari
 
 export const SemTituloI_AmilcarDeCastro: Obra = {
     ID: 355,
-    Imagem: 'SemTitulo2_AmilcarDeCastro.jpg',
+    Imagem: 'SemTituloI_AmilcarDeCastro.jpg',
     Autores: [artistas.AmilcarDeCastro],
     Titulo: `Sem Titulo`,
     Material: 'aço corten',
