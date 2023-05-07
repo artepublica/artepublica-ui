@@ -392,7 +392,6 @@ const images = {
     'CarmemGomes_JoseBarreto.jpeg': require('./obras/CarmemGomes_JoseBarreto.jpeg'),
     'ChafarizdosGolfinhos_AndreRedont.jpeg': require('./obras/ChafarizdosGolfinhos_AndreRedont.jpeg'),
     'VeraJanacopulos_AdrianaJanacopolus.jpeg': require('./obras/VeraJanacopulos_AdrianaJanacopolus.jpeg'),
-    'TeixeiraSoares_JoseOtavioCorreaLima.jpeg': require('./obras/TeixeiraSoares_JoseOtavioCorreaLima.jpeg'),
     'SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo.jpeg': require('./obras/SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo.jpeg'),
     'RodolfoAmoedo_JoseOtavioCorreaLima.jpeg': require('./obras/RodolfoAmoedo_JoseOtavioCorreaLima.jpeg'), 
     'SaoFranciscoDeAssiseSantaClara_EduardoDeSa.jpeg': require('./obras/SaoFranciscoDeAssiseSantaClara_EduardoDeSa.jpeg'),
