@@ -1,5 +1,7 @@
+import { useMemo, useState } from 'react';
+
 import { useNavigation, NavigationProp } from '@react-navigation/native';
-import { FlatList, Platform, useWindowDimensions, View } from 'react-native';
+import { ActivityIndicator, FlatList, Platform, useWindowDimensions, View } from 'react-native';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 
 import { Text, Image } from '@base-components';
@@ -12,7 +14,7 @@ import { RootNavigatorParamList } from 'src/app/navigation/RootNavigator';
 import styles from './styles';
 
 function Obras(): JSX.Element {
-    const { width } = useWindowDimensions();
+    const { width, height } = useWindowDimensions();
     const { theme } = useTheme();
     const navigation = useNavigation<NavigationProp<RootNavigatorParamList>>();
     const style = styles();
@@ -43,6 +45,11 @@ function Obras(): JSX.Element {
     const minGridWidth = (colunas - 1) * 144 + 136;
     const remainingWidth = allowedWidth - minGridWidth;
     const padding = remainingWidth / (colunas + 1);
+
+    const [
+        page,
+        setPage,
+    ] = useState<number>(1);
 
     const data = obrasComImagem
         .reduce<string[]>((resultado, key, index) => {
@@ -76,11 +83,27 @@ function Obras(): JSX.Element {
             return all;
         }, []);
 
+    const lines = useMemo<number>(() => Math.ceil(height / 350), [height]);
+    const dataSliced = useMemo<string[][]>(
+        () => data.slice(0, page * lines),
+        [
+            data,
+            page,
+            lines,
+        ],
+    );
+
     return (
         <View style={style.container}>
             <FlatList
-                data={data}
+                data={dataSliced}
                 style={{ width: '100%' }}
+                onEndReached={({ distanceFromEnd }) => {
+                    if (distanceFromEnd < 0) return;
+                    setPage(page + 1);
+                }}
+                onEndReachedThreshold={0.01}
+                contentContainerStyle={{ height }}
                 renderItem={({ item, index }) => {
                     const row = item;
                     const rowIndex = index;
@@ -290,6 +313,7 @@ function Obras(): JSX.Element {
                         </Grid>
                     );
                 }}
+                ListFooterComponent={dataSliced.length === data.length ? undefined : ActivityIndicator}
             />
         </View>
     );
