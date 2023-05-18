@@ -18436,7 +18436,7 @@ export const AryBarroso_OttoDumovich: Obra = {
 };
 export const AoNuncaMais_CristinaPozzobon: Obra = {
     ID: 582,
-    Imagem: undefined,
+    Imagem: 'AoNuncaMais_CristinaPozzobon.png',
     Autores: [artistas.CristinaPozzobon],
     Titulo: `Ao Nunca Mais`,
     Material: 'Aço',
@@ -18452,14 +18452,14 @@ export const AoNuncaMais_CristinaPozzobon: Obra = {
     Propriedade: 'Pública',
     Zona: 'Central',
     Bairro: 'Centro',
-    Endereco: 'Praça Floriano',
+    Endereco: 'Praça Marechal Floriano',
     Latitude: `-22.9112566`,
     Longitude: `-43.1758078`,
     SuporteEspacial: undefined,
     Base: undefined,
     MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Descricao: `Monumento em homenagem a resistência e a luta pela anistia, doado à Cidade pela Comissão de Anistia do Ministério da Justiça, por ocasião dos 50 anos do Golpe de 1964. As estrelas cravadas no piso são em homenagem aos militares cassados após o golpe de 1964.Escultura com cerca de 3 m de altura, ele tem uma bandeira "desconstruída" com estrelas afixadas no chão.`,
+    Descricao: `Monumento em homenagem a resistência e a luta pela anistia, doado à Cidade pela Comissão de Anistia do Ministério da Justiça, por ocasião dos 50 anos do Golpe de 1964. As estrelas cravadas no piso são em homenagem aos militares cassados após o golpe de 1964.Escultura com cerca de 3 m de altura, ele tem uma bandeira "desconstruída" com estrelas afixadas no chão.// O monumento “Ao nunca mais” é uma homenagem à resistência brasileira e à luta pela anistia e foi instalado em 2014 patrocinado pela Comissão de Anistia do Ministério da Justiça e doado à Prefeitura em ocasião dos 50 anos do Golpe de 1964. Feito pela artista plástica Cristina Pozzobon, a escultura tem 2,5 metros de altura, em aço córten, representa a bandeira brasileira cortada ao meio com estrelas no chão.`,
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'Permanente',
     Categoria: undefined,
@@ -18471,7 +18471,7 @@ export const AoNuncaMais_CristinaPozzobon: Obra = {
 
 export const Pax_MarioMatos: Obra = {
     ID: 582,
-    Imagem: undefined,
+    Imagem: 'Pax_MarioMatos.jpeg',
     Autores: [artistas.MarioMatos],
     Titulo: `Pax (Paz)`,
     Material: 'Bronze',
@@ -18487,7 +18487,7 @@ export const Pax_MarioMatos: Obra = {
     Propriedade: 'Pública',
     Zona: 'Central',
     Bairro: 'Centro',
-    Endereco: 'Praça Marechal Floriano, Cinelândia',
+    Endereco: 'Praça Marechal Floriano',
     Latitude: `-22.9099245`,
     Longitude: `-43.1763903`,
     SuporteEspacial: undefined,
@@ -18544,7 +18544,7 @@ export const Trabalho_MarioMatos: Obra = {
 
 export const CriancasComAConcha_FrançoisLespingola: Obra = {
     ID: 582,
-    Imagem: undefined,
+    Imagem: 'CriancasComAConcha_FrançoisLespingola.jpeg',
     Autores: [artistas.FrançoisLespingola],
     Titulo: `Crianças com a Concha`,
     Material: 'Mármore',
@@ -18615,7 +18615,7 @@ export const CriancasComoPassaro_SimonMazieredas: Obra = {
 
 export const CriancasComATocha_PhilippeGarnier: Obra = {
     ID: 582,
-    Imagem: undefined,
+    Imagem: 'CriancasComATocha_PhilippeGarnier.jpeg',
     Autores: [artistas.PhilippeGarnier],
     Titulo: `Crianças com a Tocha`,
     Material: 'Mármore',
@@ -18651,7 +18651,7 @@ export const CriancasComATocha_PhilippeGarnier: Obra = {
 
 export const CriancasComflores_PierreLaviron: Obra = {
     ID: 474,
-    Imagem: undefined,
+    Imagem: 'CriancasComflores_PierreLaviron.jpeg',
     Autores: [artistas.PierreLaviron],
     Titulo: `Crianças com flores`,
     Material: 'Mármore',
@@ -18881,7 +18881,7 @@ export const ChafarizOutono_MathurinMoreau: Obra = {
 
 export const HenriqueDodsworth_HonorioPecanha: Obra = {
     ID: 474,
-    Imagem: undefined,
+    Imagem: 'HenriqueDodsworth_HonorioPecanha.jpeg',
     Autores: [artistas.HonorioPecanha],
     Titulo: `Henrique Dodsworth`,
     Material: `Bronze`,
@@ -18998,7 +18998,7 @@ export const BaraodeTaquara_BenevenutoBerna: Obra = {
 
 export const BrigadeiroAntônioDeSampaio_VictorBrecheret: Obra = {
     ID: 474,
-    Imagem: undefined,
+    Imagem: 'BrigadeiroAntônioDeSampaio_VictorBrecheret.jpeg',
     Autores: [artistas.VictorBrecheret],
     Titulo: `Brigadeiro Antônio de Sampaio`,
     Material: `Bronze`,
@@ -19033,11 +19033,11 @@ export const BrigadeiroAntônioDeSampaio_VictorBrecheret: Obra = {
     Execucao: true,
 };
 
-export const LuisManoelOsorio_Desconhecida: Obra = {
+export const LuisManuelOsorio_Desconhecida: Obra = {
     ID: 474,
-    Imagem: undefined,
+    Imagem: 'LuisManuelOsorio_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
-    Titulo: `Luis Manoel Osorio (Duque de Caxias)`,
+    Titulo: `Luis Manuel Osorio (Duque de Caxias)`,
     Material: `Bronze`,
     Altura: undefined,
     Largura: undefined,
@@ -19072,7 +19072,7 @@ export const LuisManoelOsorio_Desconhecida: Obra = {
 
 export const MarechalHermesdaFonseca_DaviLeal: Obra = {
     ID: 474,
-    Imagem: undefined,
+    Imagem: 'MarechalHermesdaFonseca_DaviLeal.jpeg',
     Autores: [artistas.DaviLeal],
     Titulo: `Marechal Hermes da Fonseca`,
     Material: `Bronze`,
@@ -19109,7 +19109,7 @@ export const MarechalHermesdaFonseca_DaviLeal: Obra = {
 
 export const GeneralJoaoSeverianodaFonseca_Desconhecida: Obra = {
     ID: 474,
-    Imagem: undefined,
+    Imagem: 'GeneralJoaoSeverianodaFonseca_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
     Titulo: `General João Severiano da Fonseca`,
     Material: `Bronze`,
@@ -19226,7 +19226,7 @@ export const Piramide_MestreValentim: Obra = {
 
 export const Obelisco_Archi5: Obra = {
     ID: 169,
-    Imagem: undefined,
+    Imagem: 'Obelisco_Archi5.jpeg',
     Autores: [artistas.Archi5],
     Titulo: `Obelisco`,
     Material: 'aço corten',
@@ -19296,7 +19296,7 @@ export const Obelisco_EduardoDeSa: Obra = {
 
 export const ObeliscodoCaisdaImperatriz_Desconhecido: Obra = {
     ID: 3,
-    Imagem: undefined,
+    Imagem: 'ObeliscodoCaisdaImperatriz_Desconhecido.jpeg',
     Autores: [artistas.Desconhecida],
     Titulo: 'Obelisco do Cais da Imperatriz',
     Material: 'granito',
@@ -19403,7 +19403,7 @@ export const ObeliscodoLargodoBomRetiro_Desconhecida: Obra = {
 
 export const ObeliscodaAvenidaRioBranco_AZanuzziCia: Obra = {
     ID: 132,
-    Imagem: undefined,
+    Imagem: 'ObeliscodaAvenidaRioBranco_AZanuzziCia.jpeg',
     Autores: [artistas.Desconhecida],
     Titulo: `Obelisco da Avenida Rio Branco`,
     Material: `Peça em granito`,
@@ -19514,7 +19514,7 @@ export const ObeliscodoAlargamentodeCopacabana_Desconhecida: Obra = {
 
 export const ObeliscodaLinhaAmarela_Desconhecida: Obra = {
     ID: 885,
-    Imagem: undefined,
+    Imagem: 'ObeliscodaLinhaAmarela_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
     Titulo: `Obelisco da Linha Amarela`,
     Material: `Peça em aço`,
@@ -19548,7 +19548,7 @@ export const ObeliscodaLinhaAmarela_Desconhecida: Obra = {
 
 export const AAlimPedro_MiguelPastor: Obra = {
     ID: 964,
-    Imagem: undefined,
+    Imagem: 'AAlimPedro_MiguelPastor.jpeg',
     Autores: [artistas.MiguelPastor],
     Titulo: `À Alim Pedro`,
     Material: `Peça em concreto revestida de pedra São Tomé`,
@@ -19584,7 +19584,7 @@ export const AAlimPedro_MiguelPastor: Obra = {
 
 export const AAugustodeVasconcelos_MiguelPastor: Obra = {
     ID: 967,
-    Imagem: undefined,
+    Imagem: 'AAugustodeVasconcelos_MiguelPastor.jpeg',
     Autores: [artistas.MiguelPastor],
     Titulo: `À Augusto de Vasconcelos`,
     Material: `Peça em bronze e pedestal de granito`,

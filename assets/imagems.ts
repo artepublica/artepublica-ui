@@ -462,6 +462,22 @@ const images = {
     'Ossanha_TatiMoreno.jpeg': require('./obras/Ossanha_TatiMoreno.jpeg'),
     'MarechalCandidoRandon_AntonioPintodeMattos.jpeg': require('./obras/MarechalCandidoRandon_AntonioPintodeMattos.jpeg'),
     'Surf_MauricioBentes.jpeg': require('./obras/Surf_MauricioBentes.jpeg'),
+    'AoNuncaMais_CristinaPozzobon.png': require('./obras/AoNuncaMais_CristinaPozzobon.png'),
+    'Pax_MarioMatos.jpeg': require('./obras/Pax_MarioMatos.jpeg'),
+    'CriancasComAConcha_FrançoisLespingola.jpeg': require('./obras/CriancasComAConcha_FrançoisLespingola.jpeg'),
+    'CriancasComATocha_PhilippeGarnier.jpeg': require('./obras/CriancasComATocha_PhilippeGarnier.jpeg'),
+    'CriancasComflores_PierreLaviron.jpeg': require('./obras/CriancasComflores_PierreLaviron.jpeg'),
+    'HenriqueDodsworth_HonorioPecanha.jpeg': require('./obras/HenriqueDodsworth_HonorioPecanha.jpeg'),
+    'BrigadeiroAntônioDeSampaio_VictorBrecheret.jpeg': require('./obras/BrigadeiroAntônioDeSampaio_VictorBrecheret.jpeg'),
+    'LuisManuelOsorio_Desconhecida.jpeg': require('./obras/LuisManuelOsorio_Desconhecida.jpeg'),
+    'MarechalHermesdaFonseca_DaviLeal.jpeg': require('./obras/MarechalHermesdaFonseca_DaviLeal.jpeg'),
+    'GeneralJoaoSeverianodaFonseca_Desconhecida.jpeg': require('./obras/GeneralJoaoSeverianodaFonseca_Desconhecida.jpeg'),
+    'Obelisco_Archi5.jpeg': require('./obras/Obelisco_Archi5.jpeg'),
+    'ObeliscodoCaisdaImperatriz_Desconhecido.jpeg': require('./obras/ObeliscodoCaisdaImperatriz_Desconhecido.jpeg'),
+    'ObeliscodaAvenidaRioBranco_AZanuzziCia.jpeg': require('./obras/ObeliscodaAvenidaRioBranco_AZanuzziCia.jpeg'),
+    'ObeliscodaLinhaAmarela_Desconhecida.jpeg': require('./obras/ObeliscodaLinhaAmarela_Desconhecida.jpeg'),
+    'AAlimPedro_MiguelPastor.jpeg': require('./obras/AAlimPedro_MiguelPastor.jpeg'),
+    'AAugustodeVasconcelos_MiguelPastor.jpeg': require('./obras/AAugustodeVasconcelos_MiguelPastor.jpeg'),
 };
 
 export default images;
