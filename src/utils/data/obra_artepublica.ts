@@ -4691,7 +4691,7 @@ export const JoaoCandido_ValterBrito: Obra = {
 
 export const DomJoaoVI_BarataFeijo: Obra = {
     ID: 116,
-    Imagem: undefined,
+    Imagem: 'DomJoaoVI_BarataFeijo.png',
     Autores: [artistas.BarataFeijo],
     Titulo: `Dom João VI`,
     Material: 'Bronze',
@@ -5489,7 +5489,7 @@ export const Modulo65_AscanioMMM: Obra = {
 
 export const UlyssesGuimaraes_SironFranco: Obra = {
     ID: 135,
-    Imagem: undefined,
+    Imagem: 'UlyssesGuimaraes_SironFranco.png',
     Autores: [artistas.SironFranco],
     Titulo: `Homenagem a Ulysses Guimarães`,
     Material: 'destroços de eicóptero e resina',
@@ -5519,7 +5519,7 @@ export const UlyssesGuimaraes_SironFranco: Obra = {
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Busto',
+    Tipologia: 'Escultura',
     Execucao: true,
 };
 
@@ -6436,9 +6436,9 @@ export const NiloPecanha_NicolinaVazDeAssisPintodoCouto: Obra = {
 
 export const SerpentedoLago_NicolinaVazDeAssisPintodoCouto: Obra = {
     ID: 159,
-    Imagem: undefined,
+    Imagem: 'SerpentedoLago_NicolinaVazDeAssisPintodoCouto.jpeg',
     Autores: [artistas.NicolinaVazDeAssisPintodoCouto],
-    Titulo: `Serpente do Lago`,
+    Titulo: `Serpente`,
     Material: 'Bronze',
     Altura: undefined,
     Largura: undefined,
@@ -7292,11 +7292,11 @@ export const ImperatrizLeopoldina_EdgarDuvivierFilho: Obra = {
     Execucao: true,
 };
 
-export const FranciscoPalheta_Desconhecida: Obra = {
+export const FranciscoDeMeloPalheta_Desconhecida: Obra = {
     ID: 184,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
-    Titulo: `Francisco Palheta`,
+    Titulo: `Francisco de Melo Palheta`,
     Material: 'mármore',
     Altura: undefined,
     Largura: undefined,
@@ -7463,7 +7463,7 @@ export const AlegoriaAoComercio_Desconhecida: Obra = {
 
 export const AristidesCaire_TitoBernucci: Obra = {
     ID: 187,
-    Imagem: undefined,
+    Imagem: 'AristidesCaire_TitoBernucci.jpeg',
     Autores: [artistas.TitoBernucci],
     Titulo: `Aristides Caire`,
     Material: 'Bronze',
@@ -8534,7 +8534,7 @@ export const LineudePaulaMachado_HildegardoLeaoVelloso: Obra = {
 
 export const Arvore_HelioPelegrino: Obra = {
     ID: 217,
-    Imagem: undefined,
+    Imagem: 'Arvore_HelioPelegrino.png',
     Autores: [artistas.HelioPelegrino],
     Titulo: `Arvore`,
     Material: 'ferro e plástico',
@@ -8793,7 +8793,7 @@ export const ClementinoFraga_GiulioStarace: Obra = {
 
 export const MulherComCornucopia_PierreLoison: Obra = {
     ID: 225,
-    Imagem: undefined,
+    Imagem: 'MulherComCornucopia_PierreLoison.jpeg',
     Autores: [artistas.PierreLoison],
     Titulo: `Mulher Com Cornucopia`,
     Material: 'ferro fundido',
@@ -8941,7 +8941,7 @@ export const IsmaelSilva_OttoDumovich: Obra = {
 
 export const PioCorreia_AlicePittaluga: Obra = {
     ID: 228,
-    Imagem: undefined,
+    Imagem: 'PioCorreia_AlicePittaluga.jpeg',
     Autores: [artistas.AlicePittaluga],
     Titulo: `Pio Correia`,
     Material: 'Bronze',
@@ -8976,7 +8976,7 @@ export const PioCorreia_AlicePittaluga: Obra = {
 
 export const CamposPorto_PauloMazzuchelli: Obra = {
     ID: 229,
-    Imagem: undefined,
+    Imagem: 'CamposPorto_PauloMazzuchelli.jpeg',
     Autores: [artistas.PauloMazzucchelli],
     Titulo: `Campos Porto`,
     Material: 'Bronze',
@@ -9011,7 +9011,7 @@ export const CamposPorto_PauloMazzuchelli: Obra = {
 
 export const XochipilliDeusdasFlores_Desconhecida: Obra = {
     ID: 230,
-    Imagem: undefined,
+    Imagem: 'XochipilliDeusdasFlores_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
     Titulo: `Xochipilli Deus das Flores`,
     Material: 'pedra',
@@ -9046,7 +9046,7 @@ export const XochipilliDeusdasFlores_Desconhecida: Obra = {
 
 export const Ceres_Merzio: Obra = {
     ID: 231,
-    Imagem: undefined,
+    Imagem: 'Ceres_Merzio.jpeg',
     Autores: [artistas.Merzio],
     Titulo: `Ceres`,
     Material: 'ferro fundido',
@@ -9081,7 +9081,7 @@ export const Ceres_Merzio: Obra = {
 
 export const Diana_Merzio: Obra = {
     ID: 232,
-    Imagem: undefined,
+    Imagem: 'Diana_Merzio.jpeg',
     Autores: [artistas.Merzio],
     Titulo: `Diana`,
     Material: 'ferro fundido',
@@ -9116,7 +9116,7 @@ export const Diana_Merzio: Obra = {
 
 export const ChafarizDasMusas_HerbertWHogg: Obra = {
     ID: 233,
-    Imagem: undefined,
+    Imagem: 'ChafarizDasMusas_HerbertWHogg.jpeg',
     Autores: [artistas.HerbertWHogg],
     Titulo: `Chafariz Das Musas`,
     Material: 'ferro fundido',
@@ -9186,7 +9186,7 @@ export const FreiLeandroDoSacramento_RibeiroDaCosta: Obra = {
 
 export const DomJoaoVI_RodolfoBernardelli: Obra = {
     ID: 235,
-    Imagem: undefined,
+    Imagem: 'DomJoaoVI_RodolfoBernardelli.jpeg',
     Autores: [artistas.RodolfoBernardelli],
     Titulo: `Dom Joao VI`,
     Material: 'Bronze',
@@ -9219,11 +9219,11 @@ export const DomJoaoVI_RodolfoBernardelli: Obra = {
     Execucao: true,
 };
 
-export const BarbosaRodrigues_AntonioPintodeMattos: Obra = {
+export const JoaoBarbosaRodrigues_AntonioPintodeMattos: Obra = {
     ID: 236,
-    Imagem: undefined,
+    Imagem: 'JoaoBarbosaRodrigues_AntonioPintodeMattos.jpeg',
     Autores: [artistas.AntonioPintodeMattos],
-    Titulo: `Carmen Miranda`,
+    Titulo: `João Barbosa Rodrgiues`,
     Material: 'Bronze',
     Altura: undefined,
     Largura: undefined,
@@ -9256,7 +9256,7 @@ export const BarbosaRodrigues_AntonioPintodeMattos: Obra = {
 
 export const VonMartius_AntonioPintodeMattos: Obra = {
     ID: 237,
-    Imagem: undefined,
+    Imagem: 'VonMartius_AntonioPintodeMattos.jpeg',
     Autores: [artistas.AntonioPintodeMattos],
     Titulo: `Von Martius`,
     Material: 'Bronze',
@@ -9772,7 +9772,7 @@ export const MarechalEuricoGasparDutra_DSantosLeal: Obra = {
 
 export const ChafarizdasSaracuras_MestreValentim: Obra = {
     ID: 251,
-    Imagem: undefined,
+    Imagem: 'ChafarizdasSaracuras_MestreValentim.jpeg',
     Autores: [artistas.MestreValentim],
     Titulo: `Chafariz das Saracuras`,
     Material: 'bronze, granito e mármore',
@@ -11027,7 +11027,7 @@ export const AnjoComPeixe_AndreaVerrocchio: Obra = {
 
 export const ADança_AlicePittaluga: Obra = {
     ID: 280,
-    Imagem: undefined,
+    Imagem: 'ADança_AlicePittaluga.jpeg',
     Autores: [artistas.AlicePittaluga],
     Titulo: `A Dança`,
     Material: 'argamassa',
@@ -11062,7 +11062,7 @@ export const ADança_AlicePittaluga: Obra = {
 
 export const Ossanha_TatiMoreno: Obra = {
     ID: 281,
-    Imagem: undefined,
+    Imagem: 'Ossanha_TatiMoreno.jpeg',
     Autores: [artistas.TatiMoreno],
     Titulo: `Ossanha`,
     Material: 'resina',
@@ -12836,7 +12836,7 @@ export const CarlosChagas_HumbertoCozzo: Obra = {
 
 export const MarechalCandidoRandon_AntonioPintodeMattos: Obra = {
     ID: 330,
-    Imagem: undefined,
+    Imagem: 'MarechalCandidoRandon_AntonioPintodeMattos.jpeg',
     Autores: [artistas.AntonioPintodeMattos],
     Titulo: `Marechal Candido Rondon`,
     Material: 'Bronze',
@@ -17821,7 +17821,7 @@ export const AoPAN2007_RobertoKenjiFukuda: Obra = {
 
 export const Surf_MauricioBentes: Obra = {
     ID: 582,
-    Imagem: undefined,
+    Imagem: 'Surf_MauricioBentes.jpeg',
     Autores: [artistas.MauricioBentes],
     Titulo: `Surf`,
     Material: 'Ferro',
@@ -18187,7 +18187,7 @@ export const JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi: Obra = {
 
 export const LimaBarreto_EdgarDuvivier: Obra = {
     ID: 582,
-    Imagem: undefined,
+    Imagem: 'LimaBarreto_EdgarDuvivier.png',
     Autores: [artistas.EdgarDuvivier],
     Titulo: `Lima Barreto do Centro`,
     Material: 'Bronze',
@@ -18721,11 +18721,11 @@ export const APepeLopes_VeraTorres: Obra = {
     Execucao: true,
 };
 
-export const GeneralJoaquimIgnacioBaptistaCardoso_SMartinsRibeiro: Obra = {
+export const MarechalJoaquimIgnacioBaptistaCardoso_SMartinsRibeiro: Obra = {
     ID: 474,
-    Imagem: undefined,
+    Imagem: 'MarechalJoaquimIgnacioBaptistaCardoso_SMartinsRibeiro.jpeg',
     Autores: [artistas.SMartinsRibeiro],
-    Titulo: `General Joaquim Ignácio Baptista Cardoso`, //TODO livro diz marechal
+    Titulo: `Marechal Joaquim Ignácio Baptista Cardoso`,
     Material: `Bronze`,
     Altura: undefined,
     Largura: undefined,
@@ -18918,7 +18918,7 @@ export const HenriqueDodsworth_HonorioPecanha: Obra = {
 
 export const DianadeGabies_Desconhecida: Obra = {
     ID: 474,
-    Imagem: undefined,
+    Imagem: 'DianadeGabies_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
     Titulo: `Diana de Gabies`,
     Material: `Ferro fundido`,
@@ -19090,7 +19090,7 @@ export const MarechalHermesdaFonseca_DaviLeal: Obra = {
     Propriedade: 'Pública',
     Zona: 'Oeste',
     Bairro: 'Vila Militar',
-    Endereco: 'Praça Marechal', // TODO: Seria praça marechal Hermes?
+    Endereco: 'Praça Marechal Hermes',
     Latitude: `-22.8658028`,
     Longitude: `-43.4022003`,
     SuporteEspacial: undefined,
@@ -19108,7 +19108,6 @@ export const MarechalHermesdaFonseca_DaviLeal: Obra = {
 };
 
 export const GeneralJoaoSeverianodaFonseca_Desconhecida: Obra = {
-    // TODO - descricao diz q foi removido
     ID: 474,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -19134,7 +19133,7 @@ export const GeneralJoaoSeverianodaFonseca_Desconhecida: Obra = {
     SuporteEspacial: undefined,
     Base: 'Com pedestal',
     MaterialBase: 'Concreto',
-    Status: 'Permanece em espaço público',
+    Status: 'Removido do espaço público',
     Descricao: `Inicialmente instalado na Praça Marechal Hermes, o busto em bronze foi depois transferido ao logradouro que
     leva seu nome. O busto está desaparecido, em decorrência da obra da via Transolimpica.`,
     Fatos: [
@@ -19148,10 +19147,10 @@ export const GeneralJoaoSeverianodaFonseca_Desconhecida: Obra = {
     Execucao: true,
 };
 
-export const Aviadores_RebecaMatteIniguez: Obra = {
+export const Aviadores_RebecaMatteBello: Obra = {
     ID: 474,
-    Imagem: undefined,
-    Autores: [artistas.RebecaMatteIniguez], // TODO: livor n tem dois t no Matte
+    Imagem: 'Aviadores_RebecaMatteBello.png',
+    Autores: [artistas.RebecaMatteBello],
     Titulo: `Aviadores`,
     Material: `Bronze`,
     Altura: undefined,
@@ -19191,9 +19190,8 @@ Inaugurado na Praça Mauá, foi transferido em 1937 para o Campo dos Afonsos.`,
 };
 
 export const Piramide_MestreValentim: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 97,
-    Imagem: undefined,
+    Imagem: 'Piramide_MestreValentim.png',
     Autores: [artistas.MestreValentim],
     Titulo: `Pirâmide`,
     Material: 'bloco gnaisse',
@@ -19227,7 +19225,6 @@ export const Piramide_MestreValentim: Obra = {
 };
 
 export const Obelisco_Archi5: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 169,
     Imagem: undefined,
     Autores: [artistas.Archi5],
@@ -19263,9 +19260,8 @@ export const Obelisco_Archi5: Obra = {
 };
 
 export const Obelisco_EduardoDeSa: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 17,
-    Imagem: undefined,
+    Imagem: 'Obelisco_EduardoDeSa.png',
     Autores: [artistas.EduardoDeSa],
     Titulo: 'Obelisco',
     Material: 'granito',
@@ -19288,8 +19284,7 @@ export const Obelisco_EduardoDeSa: Obra = {
     Base: 'Sem pedestal',
     MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Descricao:
-        'Com 18 metros de altura, o obelisco é o marco comemorativo da construção da Avenida Central, em 1906.  Reza a lenda que Getúlio amarrou seu cavalo aqui, quando tomou a Capital Federal na revolução de 30.',
+    Descricao: 'Com 18 metros de altura, o obelisco é o marco comemorativo da construção da Avenida Central, em 1906.  Reza a lenda que Getúlio amarrou seu cavalo aqui, quando tomou a Capital Federal na revolução de 30.',
     Fatos: [new Fato('', '', 'Bem tombado estadual', '', [], 'Rio de Janeiro')],
     Temporalidade: 'Permanente',
     Categoria: 'Plasticidade',
@@ -19300,7 +19295,6 @@ export const Obelisco_EduardoDeSa: Obra = {
 };
 
 export const ObeliscodoCaisdaImperatriz_Desconhecido: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 3,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -19336,9 +19330,8 @@ export const ObeliscodoCaisdaImperatriz_Desconhecido: Obra = {
 };
 
 export const Obelisco_PauloCase: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 241,
-    Imagem: undefined,
+    Imagem: 'Obelisco_PauloCase.jpeg',
     Autores: [artistas.PauloCase],
     Titulo: `Obelisco de Ipanema`,
     Material: 'concreto',
@@ -19373,334 +19366,290 @@ export const Obelisco_PauloCase: Obra = {
 };
 
 export const ObeliscodoLargodoBomRetiro_Desconhecida: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 1234,
-    Imagem: undefined,
+    Imagem: 'ObeliscodoLargodoBomRetiro_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
-    Promotor: undefined,
     Titulo: `Obelisco do Largo do Bom Retiro`,
-    Renomeacao: false,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    Tipologia: 'Obelisco',
     Material: `Bloco de gnaisse esculpido`,
-    Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
-Peça maciça esculpida com base quadrada e outra piramidal de cerca de 6 metros de altura`,
     Altura: undefined,
     Largura: undefined,
     Profundidade: undefined,
-    Diametro: undefined,
     Peso: undefined,
     ValorObra: undefined,
-    Execucao: true,
     DataInauguracao: `08/1928`,
+    DatasImportantes: [new Data(`08/1928`, 'data inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
     Zona: 'Norte',
     Bairro: 'Alto da Boa Vista',
     Endereco: 'Parque Nacional da Tijuca',
     Latitude: `-22.9473613`,
     Longitude: `-43.2912779`,
+    SuporteEspacial: undefined,
+    Base: undefined,
+    MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Lugar: undefined,
-    Remocao: undefined,
-    DataRealocacao: undefined,
-    Realocacao: undefined,
-    ZonaRealocacao: undefined,
-    BairroRealocacao: undefined,
-    EnderecoRealocacao: undefined,
-    LatitudeRealocacao: undefined,
-    LongitudeRealocacao: undefined,
-    LugarRealocacao: undefined,
+    Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
+    Peça maciça esculpida com base quadrada e outra piramidal de cerca de 6 metros de altura`,
+    Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
 };
 
 export const ObeliscodaAvenidaRioBranco_AZanuzziCia: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 132,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
-    Promotor: undefined,
     Titulo: `Obelisco da Avenida Rio Branco`,
-    Renomeacao: false,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    Tipologia: 'Obelisco',
     Material: `Peça em granito`,
-    Descricao: `A Zanuzzi Cia - Obelisco circular de granito extraído do Morro da Viúva, com 28 toneladas paracomemorar da abertura da Avenida Rio Branco, iniciada em 8 de março de 1904 e concluído na data de inauguração do marco, dia 14 de novembro de 1906.
-O projeto foi organizado no escritório tecnico da Comissão Construtora da Avenida Central, cujo chefe era o Dr. Paulo de Frontim e executado pelos Srs A. Januzzi & Irmãos, tendo como engenheiro de acompanhamento o Dr. Le Cocq.
-O Monumento tem cinco blocos, com dimensões e decoração distintas, todos em pedra, coincidentes com o principal material utilizado nas construções novas da Avenida. O primeiro forma os degraus que o elevam. O segundo a base, o terceiro com cerca de 2m foi destinado à colocação de placas de bronze de identificação do Monumento. O quarto possui elementos decorativos típicos das construções ecléticas O quinto bloco com 10 metros finalizado por uma pirâmide.`,
     Altura: undefined,
     Largura: undefined,
     Profundidade: undefined,
-    Diametro: undefined,
     Peso: undefined,
     ValorObra: undefined,
-    Execucao: true,
     DataInauguracao: `11/1906`,
+    DatasImportantes: [new Data(`11/1906`, 'data inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
     Zona: 'Central',
     Bairro: 'Centro',
     Endereco: 'Av. Rio Branco',
     Latitude: `-22.9130043`,
     Longitude: `-43.1747473`,
+    SuporteEspacial: 'praça',
+    Base: undefined,
+    MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Lugar: undefined,
-    Remocao: undefined,
-    DataRealocacao: undefined,
-    Realocacao: undefined,
-    ZonaRealocacao: undefined,
-    BairroRealocacao: undefined,
-    EnderecoRealocacao: undefined,
-    LatitudeRealocacao: undefined,
-    LongitudeRealocacao: undefined,
-    LugarRealocacao: undefined,
+    Descricao: `A Zanuzzi Cia - Obelisco circular de granito extraído do Morro da Viúva, com 28 toneladas paracomemorar da abertura da Avenida Rio Branco, iniciada em 8 de março de 1904 e concluído na data de inauguração do marco, dia 14 de novembro de 1906.
+    O projeto foi organizado no escritório tecnico da Comissão Construtora da Avenida Central, cujo chefe era o Dr. Paulo de Frontim e executado pelos Srs A. Januzzi & Irmãos, tendo como engenheiro de acompanhamento o Dr. Le Cocq.
+    O Monumento tem cinco blocos, com dimensões e decoração distintas, todos em pedra, coincidentes com o principal material utilizado nas construções novas da Avenida. O primeiro forma os degraus que o elevam. O segundo a base, o terceiro com cerca de 2m foi destinado à colocação de placas de bronze de identificação do Monumento. O quarto possui elementos decorativos típicos das construções ecléticas O quinto bloco com 10 metros finalizado por uma pirâmide.`,
+    Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
 };
 
 export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 145,
-    Imagem: undefined,
+    Imagem: 'MonumentoALiberdadeDeExpressao_FranzWeissmann.jpeg',
     Autores: [artistas.FranzWeissmann],
-    Promotor: undefined,
     Titulo: `Monumento A Liberdade De Expressao`,
-    Renomeacao: false,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    Tipologia: `Obelisco`,
     Material: 'concreto',
-    Descricao: `Considerado o primeiro monumento de Arte Concreta da América Latina. Foi o primeiro monumento à liberdade de expressão a ser erigido nas Américas, além de ter sido a primeira obra pública de Franz Weissmam, encomendada pela Associação das Emissoras de São Paulo.`,
     Altura: '1600 cm',
     Largura: undefined,
     Profundidade: undefined,
-    Diametro: undefined,
     Peso: undefined,
     ValorObra: undefined,
-    Execucao: true,
     DataInauguracao: `12/10/1954`,
+    DatasImportantes: [new Data(`12/10/1954`, 'data de inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
     Zona: 'Norte',
     Bairro: 'Sao Cristovao',
     Endereco: 'Entrada da Quinta da Boa Vista',
     Latitude: `-22.9051942`,
     Longitude: `-43.2239741`,
+    SuporteEspacial: undefined,
+    Base: undefined,
+    MaterialBase: undefined,
     Status: 'Removida do espaço público',
-    Lugar: undefined,
-    Remocao: true,
-    DataRealocacao: undefined,
-    Realocacao: undefined,
-    ZonaRealocacao: undefined,
-    BairroRealocacao: undefined,
-    EnderecoRealocacao: undefined,
-    LatitudeRealocacao: undefined,
-    LongitudeRealocacao: undefined,
-    LugarRealocacao: undefined,
-    Fatos: [
-        new Fato('1954', '1954', 'Doação', 'Doação da Sociedade Interamericana de Imprensa', [], 'Rio de Janeiro'),
-        new Fato(
-            '1962',
-            '1962',
-            'Demolição',
-            'Demolido para as obras de alargamento de rua promovida pela prefeitura e pelo departamento de urbanização da SURSAN',
-            [pessoas.CarlosLacerda],
-            'Rio de Janeiro',
-        ),
-    ],
+    Descricao: `Considerado o primeiro monumento de Arte Concreta da América Latina. Foi o primeiro monumento à liberdade de expressão a ser erigido nas Américas, além de ter sido a primeira obra pública de Franz Weissmam, encomendada pela Associação das Emissoras de São Paulo.`,
+    Fatos: [new Fato('1954', '1954', 'Doação', 'Doação da Sociedade Interamericana de Imprensa', [], 'Rio de Janeiro'),
+    new Fato('1962','1962', 'Demolição', 'Demolido para as obras de alargamento de rua promovida pela prefeitura e pelo departamento de urbanização da SURSAN', [pessoas.CarlosLacerda], 'Rio de Janeiro'),],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
 };
 
 export const ObeliscodoAlargamentodeCopacabana_Desconhecida: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 349,
-    Imagem: undefined,
+    Imagem: 'ObeliscodoAlargamentodeCopacabana_Desconhecida.jpeg',
     Autores: [artistas.Desconhecida],
-    Promotor: undefined,
     Titulo: `Obelisco  do Alargamento de Copacabana`,
-    Renomeacao: false,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    Tipologia: `Obelisco`,
     Material: `Bloco de granito`,
-    Descricao: `Marco oferecido pelos moradores de Copacabana à Cidade, emcomemoração da reconstrução
-    e alargamento da Avenida Atlântica. Foi inaugurado na Avenida Atlantica próximo a Rua Almirante
-    Gonçalves. Foi transferido, na década de 1930, quando os canteiros centrais foram eliminadoso,
-    para a Praça Júlio de Noronha.Possui forma de coluna circular adornado com dois medalhões de bronze com a efígie do Prefeito Paulo de Frontin e outro com a do Presidente da República Delfim Moreira.`,
     Altura: undefined,
     Largura: undefined,
     Profundidade: undefined,
-    Diametro: undefined,
     Peso: undefined,
     ValorObra: undefined,
-    Execucao: true,
     DataInauguracao: `07/1919`,
+    DatasImportantes: [new Data('', 'século XIX')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
     Zona: 'Sul',
     Bairro: 'Leme',
     Endereco: 'Praça Júlio de Noronha',
     Latitude: `-22.9623683`,
     Longitude: `-43.1653128`,
+    SuporteEspacial: 'praça',
+    Base: undefined,
+    MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Lugar: undefined,
-    Remocao: undefined,
-    DataRealocacao: undefined,
-    Realocacao: undefined,
-    ZonaRealocacao: undefined,
-    BairroRealocacao: undefined,
-    EnderecoRealocacao: undefined,
-    LatitudeRealocacao: undefined,
-    LongitudeRealocacao: undefined,
-    LugarRealocacao: undefined,
+    Descricao: `Marco oferecido pelos moradores de Copacabana à Cidade, emcomemoração da reconstrução
+    e alargamento da Avenida Atlântica. Foi inaugurado na Avenida Atlantica próximo a Rua Almirante
+    Gonçalves. Foi transferido, na década de 1930, quando os canteiros centrais foram eliminadoso,
+    para a Praça Júlio de Noronha.Possui forma de coluna circular adornado com dois medalhões de bronze com a efígie do Prefeito Paulo de Frontin e outro com a do Presidente da República Delfim Moreira.`,
+    Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
 };
 
 export const ObeliscodaLinhaAmarela_Desconhecida: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 885,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
-    Promotor: undefined,
     Titulo: `Obelisco da Linha Amarela`,
-    Renomeacao: false,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    Tipologia: `Obelisco`,
     Material: `Peça em aço`,
-    Descricao: `Peça circular com uma estrutura central e outra cobrindo a primeira através de uma tela.`,
     Altura: undefined,
     Largura: undefined,
     Profundidade: undefined,
-    Diametro: undefined,
     Peso: undefined,
     ValorObra: undefined,
-    Execucao: true,
     DataInauguracao: `10/1997`,
+    DatasImportantes: [new Data('', 'século XIX')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
     Zona: 'Norte',
     Bairro: 'Cachambi',
     Endereco: 'Rua Dom Helder Camara',
     Latitude: `-22.8862914`,
     Longitude: `-43.2885982`,
+    SuporteEspacial: 'praça',
+    Base: undefined,
+    MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Lugar: undefined,
-    Remocao: undefined,
-    DataRealocacao: undefined,
-    Realocacao: undefined,
-    ZonaRealocacao: undefined,
-    BairroRealocacao: undefined,
-    EnderecoRealocacao: undefined,
-    LatitudeRealocacao: undefined,
-    LongitudeRealocacao: undefined,
-    LugarRealocacao: undefined,
+    Descricao: `Peça circular com uma estrutura central e outra cobrindo a primeira através de uma tela.`,
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
 };
 
 export const AAlimPedro_MiguelPastor: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 964,
     Imagem: undefined,
     Autores: [artistas.MiguelPastor],
-    Promotor: undefined,
     Titulo: `À Alim Pedro`,
-    Renomeacao: false,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    Tipologia: `Obelisco`,
     Material: `Peça em concreto revestida de pedra São Tomé`,
-    Descricao: `Alim foi um ilustre morador do bairro, que recebeu a homenagem em um obelisco com sua efÍgie. Foi idealizada pela Engenheira Elza Osnorne, para ser um marco dos festejos dos 25 anos da formatura da turma da qual saíram inúmeros engenheiros da prefeitura, inclusive o ex prefeito. Apesar de ser homenagem em vida, os motivos que deram origem as homenagens, a engenheira Elza Osborne, procurou honrar no 14 DOE, da Secretaria de Obras. O viaduto  recebeu o nome do homenageado em 14 de novembro de 1958 e não teve uma inauguração solene. 
-A efigie do homenageado em bronze foi furtada em outubro de 2017.`,
     Altura: undefined,
     Largura: undefined,
     Profundidade: undefined,
-    Diametro: undefined,
     Peso: undefined,
     ValorObra: undefined,
-    Execucao: true,
     DataInauguracao: `01/1958`,
+    DatasImportantes: [new Data(`01/1958`, 'data inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
     Zona: 'Oeste',
     Bairro: 'Campo Grande',
     Endereco: 'Praça Alim Pedro',
     Latitude: `-22.9067826`,
     Longitude: `-43.5655838`,
+    SuporteEspacial: 'praça',
+    Base: undefined,
+    MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Lugar: undefined,
-    Remocao: undefined,
-    DataRealocacao: undefined,
-    Realocacao: undefined,
-    ZonaRealocacao: undefined,
-    BairroRealocacao: undefined,
-    EnderecoRealocacao: undefined,
-    LatitudeRealocacao: undefined,
-    LongitudeRealocacao: undefined,
-    LugarRealocacao: undefined,
+    Descricao: `Alim foi um ilustre morador do bairro, que recebeu a homenagem em um obelisco com sua efÍgie. Foi idealizada pela Engenheira Elza Osnorne, para ser um marco dos festejos dos 25 anos da formatura da turma da qual saíram inúmeros engenheiros da prefeitura, inclusive o ex prefeito. Apesar de ser homenagem em vida, os motivos que deram origem as homenagens, a engenheira Elza Osborne, procurou honrar no 14 DOE, da Secretaria de Obras. O viaduto  recebeu o nome do homenageado em 14 de novembro de 1958 e não teve uma inauguração solene. 
+    A efigie do homenageado em bronze foi furtada em outubro de 2017.`,
+    Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
 };
 
 export const AAugustodeVasconcelos_MiguelPastor: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 967,
     Imagem: undefined,
     Autores: [artistas.MiguelPastor],
-    Promotor: undefined,
     Titulo: `À Augusto de Vasconcelos`,
-    Renomeacao: false,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    Tipologia: `Obelisco`,
     Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `Na homenagem ao senador originalmente existia a sua efigie numa placa em bronze fixada no pedestal que tem
-    caracteristicas de um obelisco.`,
     Altura: undefined,
     Largura: undefined,
     Profundidade: undefined,
-    Diametro: undefined,
     Peso: undefined,
     ValorObra: undefined,
-    Execucao: true,
     DataInauguracao: undefined,
+    DatasImportantes: [new Data('', 'século XIX')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
     Zona: 'Oeste',
     Bairro: 'Campo Grande',
     Endereco: 'Av. Santa Cruz',
     Latitude: `-22.8941433`,
     Longitude: `-43.5361555`,
+    SuporteEspacial: 'praça',
+    Base: undefined,
+    MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Lugar: undefined,
-    Remocao: undefined,
-    DataRealocacao: undefined,
-    Realocacao: undefined,
-    ZonaRealocacao: undefined,
-    BairroRealocacao: undefined,
-    EnderecoRealocacao: undefined,
-    LatitudeRealocacao: undefined,
-    LongitudeRealocacao: undefined,
-    LugarRealocacao: undefined,
+    Descricao: `Na homenagem ao senador originalmente existia a sua efigie numa placa em bronze fixada no pedestal que tem
+    caracteristicas de um obelisco.`,
     Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
 };
 
 export const ObeliscodeRochaMiranda_ErnaniFreire: Obra = {
-    // TODO: revisar obra e colocar no padrão acima
     ID: 1037,
     Imagem: undefined,
     Autores: [artistas.ErnaniFreire],
-    Promotor: undefined,
     Titulo: `Obelisco de Rocha Miranda`,
-    Renomeacao: false,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    Tipologia: `Obelisco`,
     Material: `Peça em ferro pintado`,
-    Descricao: `Obelisco de quinze metros de altura de ferro pintado de branco, c<om uma grande esfera no topo<. Construído para ser a referência do bairro a distância, tem na sua base piramidal,placas comemorativas das principais batalhas da FEB na II Guerra Mundial.
-Em 2018 a esfera superior foi retirada devido a corrosão. O destino da peça é desconhecido.`,
     Altura: undefined,
     Largura: undefined,
     Profundidade: undefined,
-    Diametro: undefined,
     Peso: undefined,
     ValorObra: undefined,
-    Execucao: true,
     DataInauguracao: `01/2002`,
+    DatasImportantes: [new Data(`01/2002`, 'data inauguração')],
+    Promotor: undefined,
+    Financiamento: undefined,
+    Propriedade: 'Pública',
     Zona: 'Norte',
     Bairro: 'Rocha Miranda',
     Endereco: 'Praça Oito de Maio',
     Latitude: `-22.8543015`,
     Longitude: `-43.3517691`,
+    SuporteEspacial: 'praça',
+    Base: undefined,
+    MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Lugar: undefined,
-    Remocao: undefined,
-    DataRealocacao: undefined,
-    Realocacao: undefined,
-    ZonaRealocacao: undefined,
-    BairroRealocacao: undefined,
-    EnderecoRealocacao: undefined,
-    LatitudeRealocacao: undefined,
-    LongitudeRealocacao: undefined,
-    LugarRealocacao: undefined,
+    Descricao: `Obelisco de quinze metros de altura de ferro pintado de branco, c<om uma grande esfera no topo<. Construído para ser a referência do bairro a distância, tem na sua base piramidal,placas comemorativas das principais batalhas da FEB na II Guerra Mundial.
+    Em 2018 a esfera superior foi retirada devido a corrosão. O destino da peça é desconhecido.`,
+    Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+    Temporalidade: 'Permanente',
+    Categoria: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Obelisco',
+    Execucao: true,
 };

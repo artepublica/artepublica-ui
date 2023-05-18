@@ -1284,8 +1284,8 @@ export const DavidXavierDeAzambuja: Artista = {
     Pessoa: pessoas.DavidXavierDeAzambuja,
 };
 
-export const RebecaMatteIniguez: Artista = {
-    Pessoa: pessoas.RebecaMatteIniguez,
+export const RebecaMatteBello: Artista = {
+    Pessoa: pessoas.RebecaMatteBello,
 };
 
 export const RicoReis: Artista = {

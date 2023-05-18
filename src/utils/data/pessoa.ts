@@ -6713,9 +6713,9 @@ export const DavidXavierDeAzambuja: Pessoa = {
     Fatos: undefined,
 };
 
-export const RebecaMatteIniguez: Pessoa = {
+export const RebecaMatteBello: Pessoa = {
     ID: undefined,
-    Nome: `Rebeca Matte Iñiguez`,
+    Nome: `Rebeca Matte Bello`,
     Nascimento: undefined,
     CidadePaisNascimento: undefined,
     Morte: undefined,
