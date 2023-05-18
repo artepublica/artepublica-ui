@@ -462,8 +462,6 @@ const images = {
     'Ossanha_TatiMoreno.jpeg': require('./obras/Ossanha_TatiMoreno.jpeg'),
     'MarechalCandidoRandon_AntonioPintodeMattos.jpeg': require('./obras/MarechalCandidoRandon_AntonioPintodeMattos.jpeg'),
     'Surf_MauricioBentes.jpeg': require('./obras/Surf_MauricioBentes.jpeg'),
-
-
 };
 
 export default images;
