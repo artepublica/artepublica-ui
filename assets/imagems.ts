@@ -458,7 +458,7 @@ const images = {
     'JoaoBarbosaRodrigues_AntonioPintodeMattos.jpeg': require('./obras/JoaoBarbosaRodrigues_AntonioPintodeMattos.jpeg'),
     'VonMartius_AntonioPintodeMattos.jpeg': require('./obras/VonMartius_AntonioPintodeMattos.jpeg'),
     'ChafarizdasSaracuras_MestreValentim.jpeg': require('./obras/ChafarizdasSaracuras_MestreValentim.jpeg'),
-    'ADança_AlicePittaluga.jpeg': require('./obras/ADança_AlicePittaluga.jpeg'),
+    'ADanca_AlicePittaluga.jpeg': require('./obras/ADanca_AlicePittaluga.jpeg'),
     'Ossanha_TatiMoreno.jpeg': require('./obras/Ossanha_TatiMoreno.jpeg'),
     'MarechalCandidoRandon_AntonioPintodeMattos.jpeg': require('./obras/MarechalCandidoRandon_AntonioPintodeMattos.jpeg'),
     'Surf_MauricioBentes.jpeg': require('./obras/Surf_MauricioBentes.jpeg'),

@@ -11025,9 +11025,9 @@ export const AnjoComPeixe_AndreaVerrocchio: Obra = {
     Execucao: true,
 };
 
-export const ADança_AlicePittaluga: Obra = {
+export const ADanca_AlicePittaluga: Obra = {
     ID: 280,
-    Imagem: 'ADança_AlicePittaluga.jpeg',
+    Imagem: 'ADanca_AlicePittaluga.jpeg',
     Autores: [artistas.AlicePittaluga],
     Titulo: `A Dança`,
     Material: 'argamassa',
