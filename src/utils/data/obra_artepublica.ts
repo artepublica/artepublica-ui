@@ -18998,7 +18998,7 @@ export const BaraodeTaquara_BenevenutoBerna: Obra = {
 
 export const BrigadeiroAntônioDeSampaio_VictorBrecheret: Obra = {
     ID: 474,
-    Imagem: 'BrigadeiroAntônioDeSampaio_VictorBrecheret.jpeg',
+    Imagem: 'BrigadeiroAntonioDeSampaio_VictorBrecheret.jpeg',
     Autores: [artistas.VictorBrecheret],
     Titulo: `Brigadeiro Antônio de Sampaio`,
     Material: `Bronze`,

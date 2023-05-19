@@ -468,7 +468,7 @@ const images = {
     'CriancasComATocha_PhilippeGarnier.jpeg': require('./obras/CriancasComATocha_PhilippeGarnier.jpeg'),
     'CriancasComflores_PierreLaviron.jpeg': require('./obras/CriancasComflores_PierreLaviron.jpeg'),
     'HenriqueDodsworth_HonorioPecanha.jpeg': require('./obras/HenriqueDodsworth_HonorioPecanha.jpeg'),
-    'BrigadeiroAntônioDeSampaio_VictorBrecheret.jpeg': require('./obras/BrigadeiroAntônioDeSampaio_VictorBrecheret.jpeg'),
+    'BrigadeiroAntonioDeSampaio_VictorBrecheret.jpeg': require('./obras/BrigadeiroAntonioDeSampaio_VictorBrecheret.jpeg'),
     'LuisManuelOsorio_Desconhecida.jpeg': require('./obras/LuisManuelOsorio_Desconhecida.jpeg'),
     'MarechalHermesdaFonseca_DaviLeal.jpeg': require('./obras/MarechalHermesdaFonseca_DaviLeal.jpeg'),
     'GeneralJoaoSeverianodaFonseca_Desconhecida.jpeg': require('./obras/GeneralJoaoSeverianodaFonseca_Desconhecida.jpeg'),
