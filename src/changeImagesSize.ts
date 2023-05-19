@@ -1,14 +1,22 @@
 import { differenceInMilliseconds } from 'date-fns';
 import sharp from 'sharp';
 
-import images from '../assets/imagems';
+import { Obra } from '@domain';
 
-const imgs: string[] = Object.keys(images).reduce<string[]>((resultado, key) => {
-    resultado.push(key);
+import * as obras from './utils/data/obra_artepublica';
+const typedObras: Record<string, Obra> = obras;
+
+const imgs: string[] = Object.keys(obras).reduce<string[]>((resultado, key) => {
+    const obra = typedObras[key];
+
+    if (obra.Imagem) {
+        resultado.push(obra.Imagem);
+    }
     return resultado;
 }, []);
 
 (async () => {
+    console.log('init');
     const inicio = new Date();
 
     for (const img of imgs) {
@@ -38,18 +46,18 @@ async function readFile(file: string): Promise<void> {
 
     const { width, height } = await img.metadata();
 
-    await getImage(file, img, height! > width! ? undefined : 272, height! > width! ? 272 : undefined);
+    await saveImage(file, img, height! > width! ? undefined : 272, height! > width! ? 272 : undefined);
 }
 
-async function getImage(file: string, img: sharp.Sharp, width?: number, height?: number): Promise<void> {
-    const [name] = file.split('.');
+async function saveImage(file: string, img: sharp.Sharp, width?: number, height?: number): Promise<void> {
+    //const [name] = file.split('.');
     await img
         .resize(width, height)
-        .toFormat('jpeg')
+        //.toFormat('jpeg')
         .jpeg({
             quality: 100,
             // chromaSubsampling: '4:4:4',
             force: true,
         })
-        .toFile(`/Users/stefanobassan/Projects/artepublica-ui/assets/obras/resized/${name}.jpeg`);
+        .toFile(`/Users/stefanobassan/Projects/artepublica-ui/assets/obras_resized/${file}`);
 }
