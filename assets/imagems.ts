@@ -312,6 +312,7 @@ const images = {
     'AlbertoIReidaBelgica_LaurindoRamos.png': require('./obras/AlbertoIReidaBelgica_LaurindoRamos.png'),
     'SaoCristovao_SergioBertoni.jpeg': require('./obras/SaoCristovao_SergioBertoni.jpeg'),
     'VicenteDeCarvalho_RuffoFanucchi.jpeg': require('./obras/VicenteDeCarvalho_RuffoFanucchi.jpeg'),
+    'FonteWallaceI_CharlesAugusteLebourg.png': require('./obras/FonteWallaceI_CharlesAugusteLebourg.png'),
     'FonteWallaceII_CharlesAugusteLebourg.jpeg': require('./obras/FonteWallaceII_CharlesAugusteLebourg.jpeg'),
     'FonteWallaceIII_CharlesAugusteLebourg.png': require('./obras/FonteWallaceIII_CharlesAugusteLebourg.png'),
     'Bastoes_CeleidaTostes.jpeg': require('./obras/Bastoes_CeleidaTostes.jpeg'),
@@ -478,6 +479,11 @@ const images = {
     'ObeliscodaLinhaAmarela_Desconhecida.jpeg': require('./obras/ObeliscodaLinhaAmarela_Desconhecida.jpeg'),
     'AAlimPedro_MiguelPastor.jpeg': require('./obras/AAlimPedro_MiguelPastor.jpeg'),
     'AAugustodeVasconcelos_MiguelPastor.jpeg': require('./obras/AAugustodeVasconcelos_MiguelPastor.jpeg'),
+    'LimaBarreto_FranciscoAndrade.jpeg': require('./obras/LimaBarreto_FranciscoAndrade.jpeg'),
+    'AgripinoGrieco_DanielCrow_CurzioZani.png': require('./obras/AgripinoGrieco_DanielCrow_CurzioZani.png'),
+    'AdelinoMoreira_MestreSaul.jpg': require('./obras/AdelinoMoreira_MestreSaul.jpg'),
+    'LutaDesigual_LeonDespresLaupedeCluny.jpeg': require('./obras/LutaDesigual_LeonDespresLaupedeCluny.jpeg'),
+    'Chafariz_AugusteMartin.jpeg': require('./obras/Chafariz_AugusteMartin.jpeg'),
 };
 
 export default images;
