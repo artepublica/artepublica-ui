@@ -18753,3 +18753,16 @@ export const MarcioSampaio: Pessoa = {
     Especialidades: undefined,
     Fatos: undefined,
 };
+
+export const RebecaMatteIniguez: Pessoa = {
+    ID: undefined,
+    Nome: 'Rebeca Matte Iniguez',
+    Nascimento: undefined,
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: undefined,
+};

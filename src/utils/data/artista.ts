@@ -1583,3 +1583,7 @@ export const MiguelPastor: Artista = {
 export const HaruyoshiOno: Artista = {
     Pessoa: pessoas.HaruyoshiOno,
 };
+
+export const RebecaMatteIniguez: Artista = {
+    Pessoa: pessoas.RebecaMatteIniguez,
+};

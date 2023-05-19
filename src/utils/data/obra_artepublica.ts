@@ -18544,7 +18544,7 @@ export const Trabalho_MarioMatos: Obra = {
 
 export const CriancasComAConcha_FrançoisLespingola: Obra = {
     ID: 582,
-    Imagem: 'CriancasComAConcha_FrançoisLespingola.jpeg',
+    Imagem: 'CriancasComAConcha_FrancoisLespingola.jpeg',
     Autores: [artistas.FrançoisLespingola],
     Titulo: `Crianças com a Concha`,
     Material: 'Mármore',
@@ -19284,7 +19284,8 @@ export const Obelisco_EduardoDeSa: Obra = {
     Base: 'Sem pedestal',
     MaterialBase: undefined,
     Status: 'Permanece em espaço público',
-    Descricao: 'Com 18 metros de altura, o obelisco é o marco comemorativo da construção da Avenida Central, em 1906.  Reza a lenda que Getúlio amarrou seu cavalo aqui, quando tomou a Capital Federal na revolução de 30.',
+    Descricao:
+        'Com 18 metros de altura, o obelisco é o marco comemorativo da construção da Avenida Central, em 1906.  Reza a lenda que Getúlio amarrou seu cavalo aqui, quando tomou a Capital Federal na revolução de 30.',
     Fatos: [new Fato('', '', 'Bem tombado estadual', '', [], 'Rio de Janeiro')],
     Temporalidade: 'Permanente',
     Categoria: 'Plasticidade',
@@ -19464,8 +19465,17 @@ export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Obra = {
     MaterialBase: undefined,
     Status: 'Removida do espaço público',
     Descricao: `Considerado o primeiro monumento de Arte Concreta da América Latina. Foi o primeiro monumento à liberdade de expressão a ser erigido nas Américas, além de ter sido a primeira obra pública de Franz Weissmam, encomendada pela Associação das Emissoras de São Paulo.`,
-    Fatos: [new Fato('1954', '1954', 'Doação', 'Doação da Sociedade Interamericana de Imprensa', [], 'Rio de Janeiro'),
-    new Fato('1962','1962', 'Demolição', 'Demolido para as obras de alargamento de rua promovida pela prefeitura e pelo departamento de urbanização da SURSAN', [pessoas.CarlosLacerda], 'Rio de Janeiro'),],
+    Fatos: [
+        new Fato('1954', '1954', 'Doação', 'Doação da Sociedade Interamericana de Imprensa', [], 'Rio de Janeiro'),
+        new Fato(
+            '1962',
+            '1962',
+            'Demolição',
+            'Demolido para as obras de alargamento de rua promovida pela prefeitura e pelo departamento de urbanização da SURSAN',
+            [pessoas.CarlosLacerda],
+            'Rio de Janeiro',
+        ),
+    ],
     Temporalidade: 'Permanente',
     Categoria: 'Plasticidade',
     Funcao: 'Referencial',
