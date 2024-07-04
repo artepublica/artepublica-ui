@@ -1,7 +1,7 @@
 type DependencyWheel = {
-    from: string;
-    to: string;
-    weight: number;
+  from: string;
+  to: string;
+  weight: number;
 };
 
 export default DependencyWheel;

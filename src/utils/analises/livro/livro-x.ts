@@ -5,21 +5,21 @@ import { default as citadosLivro } from './citados';
 import trocaCapital from '../capitais/troca-capital';
 import agenteDaPolitica from '../politica-publica/agente-da-politica';
 
-function livroX(livro: Livro, politicaPublica: PoliticaPublica): TrocaCapital[] {
-    const autores = [livro.Autor?.Nome].filter(onlyUniqueNotUndefinedString);
-    const citados = citadosLivro(livro);
+function livroX(
+  livro: Livro,
+  politicaPublica: PoliticaPublica,
+): TrocaCapital[] {
+  const autores = [livro.Autor?.Nome].filter(onlyUniqueNotUndefinedString);
+  const citados = citadosLivro(livro);
 
-    const autorXautor = trocaCapital(
-        autores.filter((autor) => agenteDaPolitica(politicaPublica, autor)),
-        citados,
-        'autor-citado',
-        [
-            TipoCapital.Social,
-            TipoCapital.Cultural,
-        ],
-    );
+  const autorXautor = trocaCapital(
+    autores.filter((autor) => agenteDaPolitica(politicaPublica, autor)),
+    citados,
+    'autor-citado',
+    [TipoCapital.Social, TipoCapital.Cultural],
+  );
 
-    return autorXautor;
+  return autorXautor;
 }
 
 export default livroX;

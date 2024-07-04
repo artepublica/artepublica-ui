@@ -1,7 +1,7 @@
 import { TrocaCapital } from '@domain';
 
 function politicaPublicaX(): TrocaCapital[] {
-    /*const coordenadores = coordenadoresPoliticaPublica(politicaPublica);
+  /*const coordenadores = coordenadoresPoliticaPublica(politicaPublica);
     const idealizadores = idealizadoresPoliticaPublica(politicaPublica);
     const seletores = seletoresPoliticaPublica(politicaPublica);
     const autores = autoresPoliticaPublica(politicaPublica);
@@ -19,7 +19,7 @@ function politicaPublicaX(): TrocaCapital[] {
         TipoCapital.Cultural,
     ]);*/
 
-    return [];
+  return [];
 }
 
 export default politicaPublicaX;

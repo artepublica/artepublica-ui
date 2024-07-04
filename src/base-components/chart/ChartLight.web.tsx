@@ -18,23 +18,26 @@ HighchartsDependecyWheel(Highcharts);
 HighchartsStreamgraph(Highcharts);
 
 type ChartLightProps = {
-    options: Highcharts.Options;
+  options: Highcharts.Options;
 };
 
 function ChartLight({ options }: ChartLightProps): JSX.Element {
-    const { theme } = useTheme();
-    const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
+  const { theme } = useTheme();
+  const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
 
-    Theme(Highcharts);
+  Theme(Highcharts);
 
-    return (
-        <HighchartsReact
-            constructorType="chart"
-            highcharts={Highcharts}
-            options={{ ...options, chart: { ...options.chart, backgroundColor: theme.background } }}
-            ref={chartComponentRef}
-        />
-    );
+  return (
+    <HighchartsReact
+      constructorType='chart'
+      highcharts={Highcharts}
+      options={{
+        ...options,
+        chart: { ...options.chart, backgroundColor: theme.background },
+      }}
+      ref={chartComponentRef}
+    />
+  );
 }
 
 export default ChartLight;

@@ -1,57 +1,57 @@
 import { Profissao } from '@domain';
 
 export const Arquiteto: Profissao = {
-    Nome: 'Arquiteto',
+  Nome: 'Arquiteto',
 };
 
 export const Professor: Profissao = {
-    Nome: 'Professor',
+  Nome: 'Professor',
 };
 
 export const Cenografo: Profissao = {
-    Nome: 'Cenografo',
+  Nome: 'Cenografo',
 };
 
 export const Jornalista: Profissao = {
-    Nome: 'Jornalista',
+  Nome: 'Jornalista',
 };
 
 export const DesignerGrafico: Profissao = {
-    Nome: 'Designer Grafico',
+  Nome: 'Designer Grafico',
 };
 
 export const CriticoDeArte: Profissao = {
-    Nome: 'Critico de Arte',
+  Nome: 'Critico de Arte',
 };
 
 export const Curador: Profissao = {
-    Nome: 'Curador',
+  Nome: 'Curador',
 };
 
 export const Antropologo: Profissao = {
-    Nome: 'Antropologo',
+  Nome: 'Antropologo',
 };
 
 export const Escritor: Profissao = {
-    Nome: 'Escritor',
+  Nome: 'Escritor',
 };
 
 export const Empresario: Profissao = {
-    Nome: 'Empresario',
+  Nome: 'Empresario',
 };
 
 export const HistoriadorDeArte: Profissao = {
-    Nome: 'Historiador de Arte',
+  Nome: 'Historiador de Arte',
 };
 
 export const Artista: Profissao = {
-    Nome: 'Artista',
+  Nome: 'Artista',
 };
 
 export const Economista: Profissao = {
-    Nome: 'Economista',
+  Nome: 'Economista',
 };
 
 export const Politico: Profissao = {
-    Nome: 'Politico',
+  Nome: 'Politico',
 };

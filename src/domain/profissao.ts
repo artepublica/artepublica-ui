@@ -1,6 +1,6 @@
 type Profissao = {
-    ID?: number;
-    Nome?: string;
+  ID?: number;
+  Nome?: string;
 };
 
 export default Profissao;

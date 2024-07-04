@@ -1,6 +1,6 @@
 type Coordenador = {
-    ID: number;
-    IDPessoa: number;
+  ID: number;
+  IDPessoa: number;
 };
 
 export default Coordenador;

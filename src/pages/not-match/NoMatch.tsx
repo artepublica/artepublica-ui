@@ -3,13 +3,13 @@ import { useEffect } from 'react';
 import { StackActions, useNavigation } from '@react-navigation/native';
 
 function NoMatch(): JSX.Element {
-    const navigation = useNavigation();
+  const navigation = useNavigation();
 
-    useEffect(() => {
-        navigation.dispatch(StackActions.replace('NotFound'));
-    }, []);
+  useEffect(() => {
+    navigation.dispatch(StackActions.replace('NotFound'));
+  }, []);
 
-    return <></>;
+  return <></>;
 }
 
 export default NoMatch;

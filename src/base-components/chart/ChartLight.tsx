@@ -5,17 +5,17 @@ import { useTheme } from '@utils';
 import MinimalAutoheightWebView from './MinimalAutoheightWebView';
 
 type ChartLightProps = {
-    options: Highcharts.Options;
+  options: Highcharts.Options;
 };
 
 function ChartLight({ options }: ChartLightProps): JSX.Element {
-    const { theme } = useTheme();
+  const { theme } = useTheme();
 
-    const script = `
+  const script = `
         Highcharts.chart('container', ${JSON.stringify({ ...options, chart: { ...options.chart, backgroundColor: theme.background } })});
     `;
 
-    const html = `
+  const html = `
         <!DOCTYPE html>
         <html>
             <head>
@@ -37,17 +37,17 @@ function ChartLight({ options }: ChartLightProps): JSX.Element {
         </html>
     `;
 
-    return (
-        <MinimalAutoheightWebView
-            testID="chart"
-            source={{
-                html,
-            }}
-            startInLoadingState
-            style={{ backgroundColor: 'transparent' }}
-            contentMode="mobile"
-        />
-    );
+  return (
+    <MinimalAutoheightWebView
+      testID='chart'
+      source={{
+        html,
+      }}
+      startInLoadingState
+      style={{ backgroundColor: 'transparent' }}
+      contentMode='mobile'
+    />
+  );
 }
 
 export default ChartLight;

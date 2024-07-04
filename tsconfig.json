@@ -13,8 +13,8 @@
       "@base-components": [
         "src/base-components"
       ],
-      "@componentes": [
-        "src/componentes"
+      "@components": [
+        "src/components"
       ],
       "@domain": [
         "./src/domain"

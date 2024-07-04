@@ -1,7 +1,7 @@
 type AssArtistaEspecialidade = {
-    ID?: number;
-    IDArtista?: number;
-    IDEspecialidade?: number;
+  ID?: number;
+  IDArtista?: number;
+  IDEspecialidade?: number;
 };
 
 export default AssArtistaEspecialidade;

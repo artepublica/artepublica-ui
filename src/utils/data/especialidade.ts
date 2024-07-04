@@ -1,20 +1,20 @@
 import { Especialidade } from '@domain';
 
 export const Escultor: Especialidade = {
-    Nome: 'Escultor',
+  Nome: 'Escultor',
 };
 
 export const Gravador: Especialidade = {
-    Nome: 'Gravador',
+  Nome: 'Gravador',
 };
 
 export const Pintor: Especialidade = {
-    Nome: 'Pintor',
+  Nome: 'Pintor',
 };
 export const Desenhista: Especialidade = {
-    Nome: 'Desenhista',
+  Nome: 'Desenhista',
 };
 
 export const VideoArtista: Especialidade = {
-    Nome: 'Video Artista',
+  Nome: 'Video Artista',
 };

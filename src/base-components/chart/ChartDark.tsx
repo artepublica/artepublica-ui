@@ -5,17 +5,17 @@ import { useTheme } from '@utils';
 import MinimalAutoheightWebView from './MinimalAutoheightWebView';
 
 type ChartProps = {
-    options: Highcharts.Options;
+  options: Highcharts.Options;
 };
 
 function ChartDark({ options }: ChartProps): JSX.Element {
-    const { theme } = useTheme();
+  const { theme } = useTheme();
 
-    const script = `
+  const script = `
         Highcharts.chart('container', ${JSON.stringify({ ...options, chart: { ...options.chart, backgroundColor: theme.background } })});
     `;
 
-    const html = `
+  const html = `
         <!DOCTYPE html>
         <html>
             <head>
@@ -37,16 +37,16 @@ function ChartDark({ options }: ChartProps): JSX.Element {
         </html>
     `;
 
-    return (
-        <MinimalAutoheightWebView
-            testID="chart"
-            source={{
-                html,
-            }}
-            startInLoadingState
-            style={{ backgroundColor: 'transparent' }}
-        />
-    );
+  return (
+    <MinimalAutoheightWebView
+      testID='chart'
+      source={{
+        html,
+      }}
+      startInLoadingState
+      style={{ backgroundColor: 'transparent' }}
+    />
+  );
 }
 
 export default ChartDark;

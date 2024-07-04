@@ -30,40 +30,40 @@ export const principalLight = magenta;
 export const secundariaLight = rosa;
 
 export const coresGraficoLight = [
-    magenta,
-    rosa,
-    lilas,
-    vinho,
-    azul,
-    azul2,
-    verde,
-    verde2,
-    amarelo,
-    laranja,
-    vermelho,
-    vermelho2,
-    rosa2,
-    amarelo2,
-    azul3,
-    verde3,
-    laranja2,
-    vinho2,
-    amarelo3,
-    verde4,
-    rosa3,
-    azul4,
-    laranja3,
-    petroleo,
-    verde5,
-    vermelho3,
-    branco,
+  magenta,
+  rosa,
+  lilas,
+  vinho,
+  azul,
+  azul2,
+  verde,
+  verde2,
+  amarelo,
+  laranja,
+  vermelho,
+  vermelho2,
+  rosa2,
+  amarelo2,
+  azul3,
+  verde3,
+  laranja2,
+  vinho2,
+  amarelo3,
+  verde4,
+  rosa3,
+  azul4,
+  laranja3,
+  petroleo,
+  verde5,
+  vermelho3,
+  branco,
 ];
 
 export function getRandomColor(): string {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }

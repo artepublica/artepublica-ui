@@ -2,9 +2,9 @@ import MandatoDiretorDivisaoSecretaria from './mandato_diretor_divisao_secretari
 import Pessoa from './pessoa';
 
 type DiretorSecretaria = {
-    ID?: number;
-    Pessoa?: Pessoa;
-    Mandatos?: MandatoDiretorDivisaoSecretaria[];
+  ID?: number;
+  Pessoa?: Pessoa;
+  Mandatos?: MandatoDiretorDivisaoSecretaria[];
 };
 
 export default DiretorSecretaria;

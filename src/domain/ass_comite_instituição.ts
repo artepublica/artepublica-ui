@@ -1,7 +1,7 @@
 type AssComiteInstituicao = {
-    ID?: number;
-    IDComite?: number;
-    IDInstituicao?: number;
+  ID?: number;
+  IDComite?: number;
+  IDInstituicao?: number;
 };
 
 export default AssComiteInstituicao;

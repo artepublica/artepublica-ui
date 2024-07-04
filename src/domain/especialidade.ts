@@ -1,6 +1,6 @@
 type Especialidade = {
-    ID?: number;
-    Nome?: string;
+  ID?: number;
+  Nome?: string;
 };
 
 export default Especialidade;
