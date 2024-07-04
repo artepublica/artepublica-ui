@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  node: circleci/node@5.1
+  node: circleci/node@5.2
 
 jobs:
   build: # this can be any name you choose
@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - node/install:
-          node-version: '16.16'
+          node-version: '20.13'
       - run: sudo npm install -g npm@latest
       - node/install-packages:
           pkg-manager: npm
@@ -23,7 +23,7 @@ jobs:
     steps:
       - checkout
       - node/install:
-          node-version: '16.16'
+          node-version: '20.13'
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel
       - run: sudo npm install -g now
@@ -35,7 +35,7 @@ jobs:
     steps:
       - checkout
       - node/install:
-          node-version: '16.16'
+          node-version: '20.13'
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel
       - run: sudo npm install -g now
@@ -47,7 +47,7 @@ jobs:
     steps:
       - checkout
       - node/install:
-          node-version: '16.16'
+          node-version: '20.13'
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel
       - run: sudo npm install -g now
