@@ -11,7 +11,8 @@
     "lint:fix": "eslint . --fix",
     "test": "jest",
     "test:ci": "jest --config=jest.ci.config.js",
-    "test:coverage": "jest --config=jest.ci.config.js --collectCoverage"
+    "test:coverage": "jest --config=jest.ci.config.js --collectCoverage",
+    "build:web": "expo export -p web --output-dir web-build"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
