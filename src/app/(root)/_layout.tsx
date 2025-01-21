@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useTheme } from '@utils';
 
-import navigationModalOptions from '../../base-components/modal/navigationModalOptions.wip';
+import navigationModalOptions from '../../base-components/modal/navigationModalOptions';
 
 export default function Layout(): JSX.Element {
   const { theme } = useTheme();
@@ -34,7 +34,7 @@ export default function Layout(): JSX.Element {
           <Stack>
             <Stack.Screen name='(menu)' options={{ headerShown: false }} />
             <Stack.Screen
-              name='obra'
+              name='heritage'
               options={({ navigation }) =>
                 navigationModalOptions(
                   navigation,

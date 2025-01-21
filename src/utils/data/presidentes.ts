@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Presidente from '../../domain/presidente';
 
 export const DeodoroDaFonseca: Presidente = {
-  Pessoa: pessoas.DeodoroDaFonseca,
+  Person: persons.DeodoroDaFonseca,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -14,7 +14,7 @@ export const DeodoroDaFonseca: Presidente = {
 };
 
 export const FlorianoPeixoto: Presidente = {
-  Pessoa: pessoas.FlorianoPeixoto,
+  Person: persons.FlorianoPeixoto,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -26,7 +26,7 @@ export const FlorianoPeixoto: Presidente = {
 };
 
 export const PrudenteDeMorais: Presidente = {
-  Pessoa: pessoas.PrudenteDeMorais,
+  Person: persons.PrudenteDeMorais,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -38,7 +38,7 @@ export const PrudenteDeMorais: Presidente = {
 };
 
 export const CamposSales: Presidente = {
-  Pessoa: pessoas.CamposSales,
+  Person: persons.CamposSales,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -50,7 +50,7 @@ export const CamposSales: Presidente = {
 };
 
 export const RodriguesAlves: Presidente = {
-  Pessoa: pessoas.RodriguesAlves,
+  Person: persons.RodriguesAlves,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -62,7 +62,7 @@ export const RodriguesAlves: Presidente = {
 };
 
 export const AfonsoPena: Presidente = {
-  Pessoa: pessoas.AfonsoPena,
+  Person: persons.AfonsoPena,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -74,7 +74,7 @@ export const AfonsoPena: Presidente = {
 };
 
 export const NiloPecanha: Presidente = {
-  Pessoa: pessoas.NiloPecanha,
+  Person: persons.NiloPecanha,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -86,7 +86,7 @@ export const NiloPecanha: Presidente = {
 };
 
 export const HermesdaFonseca: Presidente = {
-  Pessoa: pessoas.HermesdaFonseca,
+  Person: persons.HermesdaFonseca,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -98,7 +98,7 @@ export const HermesdaFonseca: Presidente = {
 };
 
 export const VenceslauBras: Presidente = {
-  Pessoa: pessoas.VenceslauBras,
+  Person: persons.VenceslauBras,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -110,7 +110,7 @@ export const VenceslauBras: Presidente = {
 };
 
 export const DelfimMoreira: Presidente = {
-  Pessoa: pessoas.DelfimMoreira,
+  Person: persons.DelfimMoreira,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -122,7 +122,7 @@ export const DelfimMoreira: Presidente = {
 };
 
 export const EpitacioPessoa: Presidente = {
-  Pessoa: pessoas.EpitacioPessoa,
+  Person: persons.EpitacioPessoa,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -134,7 +134,7 @@ export const EpitacioPessoa: Presidente = {
 };
 
 export const ArturBernardes: Presidente = {
-  Pessoa: pessoas.ArturBernardes,
+  Person: persons.ArturBernardes,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -146,7 +146,7 @@ export const ArturBernardes: Presidente = {
 };
 
 export const WashingtonLuis: Presidente = {
-  Pessoa: pessoas.WashingtonLuis,
+  Person: persons.WashingtonLuis,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -158,7 +158,7 @@ export const WashingtonLuis: Presidente = {
 };
 
 export const JoseLinhares: Presidente = {
-  Pessoa: pessoas.JoseLinhares,
+  Person: persons.JoseLinhares,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -170,7 +170,7 @@ export const JoseLinhares: Presidente = {
 };
 
 export const EuricoGasparDutra: Presidente = {
-  Pessoa: pessoas.EuricoGasparDutra,
+  Person: persons.EuricoGasparDutra,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -182,7 +182,7 @@ export const EuricoGasparDutra: Presidente = {
 };
 
 export const GetulioVargas: Presidente = {
-  Pessoa: pessoas.GetulioVargas,
+  Person: persons.GetulioVargas,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -194,7 +194,7 @@ export const GetulioVargas: Presidente = {
 };
 
 export const CafeFilho: Presidente = {
-  Pessoa: pessoas.CafeFilho,
+  Person: persons.CafeFilho,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -218,7 +218,7 @@ export const CafeFilho: Presidente = {
 };
 
 export const CarlosLuz: Presidente = {
-  Pessoa: pessoas.CarlosLuz,
+  Person: persons.CarlosLuz,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -230,7 +230,7 @@ export const CarlosLuz: Presidente = {
 };
 
 export const NereuRamos: Presidente = {
-  Pessoa: pessoas.NereuRamos,
+  Person: persons.NereuRamos,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -242,7 +242,7 @@ export const NereuRamos: Presidente = {
 };
 
 export const JuscelinoKubitschek: Presidente = {
-  Pessoa: pessoas.JuscelinoKubitschek,
+  Person: persons.JuscelinoKubitschek,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -254,7 +254,7 @@ export const JuscelinoKubitschek: Presidente = {
 };
 
 export const JanioQuadros: Presidente = {
-  Pessoa: pessoas.JanioQuadros,
+  Person: persons.JanioQuadros,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -266,7 +266,7 @@ export const JanioQuadros: Presidente = {
 };
 
 export const JoaoGoulart: Presidente = {
-  Pessoa: pessoas.JoaoGoulart,
+  Person: persons.JoaoGoulart,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -278,7 +278,7 @@ export const JoaoGoulart: Presidente = {
 };
 
 export const RanieriMazzilli: Presidente = {
-  Pessoa: pessoas.RanieriMazzilli,
+  Person: persons.RanieriMazzilli,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -296,7 +296,7 @@ export const RanieriMazzilli: Presidente = {
 };
 
 export const HumbertoCasteloBranco: Presidente = {
-  Pessoa: pessoas.HumbertoCasteloBranco,
+  Person: persons.HumbertoCasteloBranco,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -308,7 +308,7 @@ export const HumbertoCasteloBranco: Presidente = {
 };
 
 export const ArturDaCostaESilva: Presidente = {
-  Pessoa: pessoas.ArturDaCostaESilva,
+  Person: persons.ArturDaCostaESilva,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -320,7 +320,7 @@ export const ArturDaCostaESilva: Presidente = {
 };
 
 export const EmilioGarrastazuMedici: Presidente = {
-  Pessoa: pessoas.EmilioGarrastazuMedici,
+  Person: persons.EmilioGarrastazuMedici,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -332,7 +332,7 @@ export const EmilioGarrastazuMedici: Presidente = {
 };
 
 export const ErnestoGeisel: Presidente = {
-  Pessoa: pessoas.ErnestoGeisel,
+  Person: persons.ErnestoGeisel,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -344,7 +344,7 @@ export const ErnestoGeisel: Presidente = {
 };
 
 export const JoaoFigueiredo: Presidente = {
-  Pessoa: pessoas.JoaoFigueiredo,
+  Person: persons.JoaoFigueiredo,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -356,7 +356,7 @@ export const JoaoFigueiredo: Presidente = {
 };
 
 export const JoseSarney: Presidente = {
-  Pessoa: pessoas.JoseSarney,
+  Person: persons.JoseSarney,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -368,7 +368,7 @@ export const JoseSarney: Presidente = {
 };
 
 export const FernandoCollorDeMello: Presidente = {
-  Pessoa: pessoas.FernandoCollorDeMello,
+  Person: persons.FernandoCollorDeMello,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -380,7 +380,7 @@ export const FernandoCollorDeMello: Presidente = {
 };
 
 export const ItamarFranco: Presidente = {
-  Pessoa: pessoas.ItamarFranco,
+  Person: persons.ItamarFranco,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -392,7 +392,7 @@ export const ItamarFranco: Presidente = {
 };
 
 export const FernandoHenriqueCardoso: Presidente = {
-  Pessoa: pessoas.FernandoHenriqueCardoso,
+  Person: persons.FernandoHenriqueCardoso,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -404,7 +404,7 @@ export const FernandoHenriqueCardoso: Presidente = {
 };
 
 export const LuizInacioLulaDaSilva: Presidente = {
-  Pessoa: pessoas.LuizInacioLulaDaSilva,
+  Person: persons.LuizInacioLulaDaSilva,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -416,7 +416,7 @@ export const LuizInacioLulaDaSilva: Presidente = {
 };
 
 export const DilmaRousseff: Presidente = {
-  Pessoa: pessoas.DilmaRousseff,
+  Person: persons.DilmaRousseff,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -428,7 +428,7 @@ export const DilmaRousseff: Presidente = {
 };
 
 export const MichelTemer: Presidente = {
-  Pessoa: pessoas.MichelTemer,
+  Person: persons.MichelTemer,
   Mandatos: [
     {
       Pais: `Brasil`,
@@ -440,7 +440,7 @@ export const MichelTemer: Presidente = {
 };
 
 export const JairBolsonaro: Presidente = {
-  Pessoa: pessoas.JairBolsonaro,
+  Person: persons.JairBolsonaro,
   Mandatos: [
     {
       Pais: `Brasil`,

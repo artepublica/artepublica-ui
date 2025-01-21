@@ -1,15 +1,15 @@
-import { CuradorColecao, Exposicao, Pessoa } from '@domain';
+import { CuradorColecao, Exposicao, Person } from '@domain';
 import * as curadoresColecao from '@utils/data/curadores-colecao';
 
 import { entre } from './dataUtils';
 
 function curadorColecao_Exposicao(
   exposicao: Exposicao,
-): (Pessoa | undefined)[] {
+): (Person | undefined)[] {
   const typed_curadoresColecao: Record<string, CuradorColecao> =
     curadoresColecao;
 
-  const curadores: (Pessoa | undefined)[] = [];
+  const curadores: (Person | undefined)[] = [];
 
   Object.keys(typed_curadoresColecao).forEach((key) => {
     const curadorColecao = typed_curadoresColecao[key];
@@ -21,7 +21,7 @@ function curadorColecao_Exposicao(
         (entre(exposicao.DataInicio, mandato.DataInicio, mandato.DataFim) ||
           entre(exposicao.DataFim, mandato.DataInicio, mandato.DataFim))
       ) {
-        curadores.push(curadorColecao.Pessoa);
+        curadores.push(curadorColecao.Person);
       }
     });
   });

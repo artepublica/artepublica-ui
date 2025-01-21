@@ -1,15 +1,15 @@
-import { CoordenadorNucleoMuseu, Exposicao, Pessoa } from '@domain';
+import { CoordenadorNucleoMuseu, Exposicao, Person } from '@domain';
 import * as coordenadoresNucleoMuseu from '@utils/data/coordenador-nucleo-museu';
 
 import { entre } from './dataUtils';
 
 function coordenadorNucleoMuseu_Exposicao(
   exposicao: Exposicao,
-): (Pessoa | undefined)[] {
+): (Person | undefined)[] {
   const typed_coordenadoresNucleoMuseu: Record<string, CoordenadorNucleoMuseu> =
     coordenadoresNucleoMuseu;
 
-  const coordenadores: (Pessoa | undefined)[] = [];
+  const coordenadores: (Person | undefined)[] = [];
 
   Object.keys(typed_coordenadoresNucleoMuseu).forEach((key) => {
     const coordenadorNucleoMuseu = typed_coordenadoresNucleoMuseu[key];
@@ -21,7 +21,7 @@ function coordenadorNucleoMuseu_Exposicao(
         (entre(exposicao.DataInicio, mandato.DataInicio, mandato.DataFim) ||
           entre(exposicao.DataFim, mandato.DataInicio, mandato.DataFim))
       ) {
-        coordenadores.push(coordenadorNucleoMuseu.Pessoa);
+        coordenadores.push(coordenadorNucleoMuseu.Person);
       }
     });
   });

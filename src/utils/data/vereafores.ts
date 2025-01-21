@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Vereador from '../../domain/vereador';
 
 export const CesarEpitacioMaia: Vereador = {
-  Pessoa: pessoas.CesarEpitacioMaia,
+  Person: persons.CesarEpitacioMaia,
   Mandatos: [
     {
       Cidade: 'Rio de Janeiro',

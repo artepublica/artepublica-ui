@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import ConselheiroFundacao from '../../domain/conselheiro-fundacao';
 
 export const LauroCavalcanti: ConselheiroFundacao = {
-  Pessoa: pessoas.LauroCavalcanti,
+  Person: persons.LauroCavalcanti,
   Mandatos: [
     {
       NomeFundacao: 'Fundação Oscar Niemeyer',

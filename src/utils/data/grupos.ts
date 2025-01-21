@@ -1,4 +1,4 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Grupo from '../../domain/grupo';
 
 export const GrupoRex: Grupo = {
@@ -10,12 +10,12 @@ export const GrupoRex: Grupo = {
   DataInicio: '1966',
   DataFim: undefined,
   Participantes: [
-    pessoas.JoseResende,
-    //pessoas.WesleyDuckLee
-    //pessoas.NelsonLeimer
-    //pessoas.GeraldoBarros
-    //pessoas.FredericoNasser
-    //pessoas.CarlosFajardo
+    persons.JoseResende,
+    //persons.WesleyDuckLee
+    //persons.NelsonLeimer
+    //persons.GeraldoBarros
+    //persons.FredericoNasser
+    //persons.CarlosFajardo
   ],
 };
 
@@ -28,15 +28,15 @@ export const GrupoFrente: Grupo = {
   DataInicio: undefined,
   DataFim: undefined,
   Participantes: [
-    pessoas.FranzWeissmann,
-    pessoas.IvanSerpa,
-    pessoas.AluisioCarvao,
-    //pessoas.CarlosVal
-    pessoas.DecioVieira,
-    //pessoas.JoaoJoseDaSilvaCosta,
-    pessoas.LygiaClark,
-    pessoas.LygiaPape,
-    //pessoas.VicentIbberson,
+    persons.FranzWeissmann,
+    persons.IvanSerpa,
+    persons.AluisioCarvao,
+    //persons.CarlosVal
+    persons.DecioVieira,
+    //persons.JoaoJoseDaSilvaCosta,
+    persons.LygiaClark,
+    persons.LygiaPape,
+    //persons.VicentIbberson,
   ],
 };
 
@@ -45,5 +45,5 @@ export const GrupoNeoconcreto: Grupo = {
   Descricao: undefined,
   DataInicio: undefined,
   DataFim: undefined,
-  Participantes: [pessoas.FranzWeissmann],
+  Participantes: [persons.FranzWeissmann],
 };

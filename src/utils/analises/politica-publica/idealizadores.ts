@@ -3,7 +3,7 @@ import onlyUniqueNotUndefinedString from '@utils/list/unique-not-undefined-strin
 
 function idealizadores(politicaPublica: PoliticaPublica): string[] {
   return politicaPublica.Idealizadores != null
-    ? politicaPublica.Idealizadores.map((pessoa) => pessoa.Nome).filter(
+    ? politicaPublica.Idealizadores.map((person) => person.Name).filter(
         onlyUniqueNotUndefinedString,
       )
     : [];

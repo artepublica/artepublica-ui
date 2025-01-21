@@ -1,8 +1,8 @@
-import Pessoa from './pessoa';
+import Person from './person';
 
 type Concursado = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
   Cargo?: string;
   Orgao?: string;
   AbreviacaoOrgao?: string;

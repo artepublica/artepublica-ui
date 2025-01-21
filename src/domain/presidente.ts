@@ -1,10 +1,10 @@
-import MandatoPresidente from './mandato_presidente';
-import Pessoa from './pessoa';
+import Person from './person';
+import PresidentTerm from './president_term';
 
 type Presidente = {
   ID?: number;
-  Pessoa?: Pessoa;
-  Mandatos?: MandatoPresidente[];
+  Person?: Person;
+  Mandatos?: PresidentTerm[];
 };
 
 export default Presidente;

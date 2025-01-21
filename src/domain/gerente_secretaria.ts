@@ -1,9 +1,9 @@
 import MandatoGerenteSecretaria from './mandato_gerente_secretaria';
-import Pessoa from './pessoa';
+import Person from './person';
 
 type GerenteSecretaria = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
   Mandatos?: MandatoGerenteSecretaria[];
 };
 

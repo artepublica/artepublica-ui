@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Curso from '../../domain/curso';
 
 export const AmilcarDeCastro_EscolaGuinard_Desenho: Curso = {
-  Pessoa: pessoas.AmilcarDeCastro,
+  Person: persons.AmilcarDeCastro,
   Instituicao: 'Escola Guinard',
   AbreviacaoInstituicao: undefined,
   Cidade: 'Belo Horizonte',
@@ -15,7 +15,7 @@ export const AmilcarDeCastro_EscolaGuinard_Desenho: Curso = {
 };
 
 export const AmilcarDeCastro_EscolaGuinard_Pintura: Curso = {
-  Pessoa: pessoas.AmilcarDeCastro,
+  Person: persons.AmilcarDeCastro,
   Instituicao: 'Escola Guinard',
   AbreviacaoInstituicao: undefined,
   Cidade: 'Belo Horizonte',
@@ -28,7 +28,7 @@ export const AmilcarDeCastro_EscolaGuinard_Pintura: Curso = {
 };
 
 export const AmilcarDeCastro_EscolaGuinard_Escultura: Curso = {
-  Pessoa: pessoas.AmilcarDeCastro,
+  Person: persons.AmilcarDeCastro,
   Instituicao: 'Escola Guinard',
   AbreviacaoInstituicao: undefined,
   Cidade: 'Belo Horizonte',
@@ -41,7 +41,7 @@ export const AmilcarDeCastro_EscolaGuinard_Escultura: Curso = {
 };
 
 export const FarneseDeAndrade_EscolaGuinard_: Curso = {
-  Pessoa: pessoas.FarneseDeAndrade,
+  Person: persons.FarneseDeAndrade,
   Instituicao: 'Escola Guinard',
   AbreviacaoInstituicao: undefined,
   Cidade: 'Belo Horizonte',
@@ -54,7 +54,7 @@ export const FarneseDeAndrade_EscolaGuinard_: Curso = {
 };
 
 export const FranzWeissmann_EscolaNacionaldeBelasArtes_Arquitetura: Curso = {
-  Pessoa: pessoas.FranzWeissmann,
+  Person: persons.FranzWeissmann,
   Instituicao: 'Escola Nacional de Belas Artes',
   AbreviacaoInstituicao: undefined,
   Cidade: 'Rio de Janeiro',
@@ -66,7 +66,7 @@ export const FranzWeissmann_EscolaNacionaldeBelasArtes_Arquitetura: Curso = {
 };
 
 export const FranzWeissmann_EscolaNacionaldeBelasArtes_Pintura: Curso = {
-  Pessoa: pessoas.FranzWeissmann,
+  Person: persons.FranzWeissmann,
   Instituicao: 'Escola Nacional de Belas Artes',
   AbreviacaoInstituicao: undefined,
   Cidade: 'Rio de Janeiro',
@@ -78,7 +78,7 @@ export const FranzWeissmann_EscolaNacionaldeBelasArtes_Pintura: Curso = {
 };
 
 export const FranzWeissmann_EscolaNacionaldeBelasArtes_Desenho: Curso = {
-  Pessoa: pessoas.FranzWeissmann,
+  Person: persons.FranzWeissmann,
   Instituicao: 'Escola Nacional de Belas Artes',
   AbreviacaoInstituicao: undefined,
   Cidade: 'Rio de Janeiro',
@@ -90,7 +90,7 @@ export const FranzWeissmann_EscolaNacionaldeBelasArtes_Desenho: Curso = {
 };
 
 export const FranzWeissmann_EscolaNacionaldeBelasArtes_Escultura: Curso = {
-  Pessoa: pessoas.FranzWeissmann,
+  Person: persons.FranzWeissmann,
   Instituicao: 'Escola Nacional de Belas Artes',
   AbreviacaoInstituicao: undefined,
   Cidade: 'Rio de Janeiro',
@@ -102,7 +102,7 @@ export const FranzWeissmann_EscolaNacionaldeBelasArtes_Escultura: Curso = {
 };
 
 export const FranzWeissmann_AtelieAugustZamoyski_Desenho: Curso = {
-  Pessoa: pessoas.FranzWeissmann,
+  Person: persons.FranzWeissmann,
   Instituicao: 'Atelie August Zamoyski',
   AbreviacaoInstituicao: undefined,
   Cidade: 'Rio de Janeiro',
@@ -114,7 +114,7 @@ export const FranzWeissmann_AtelieAugustZamoyski_Desenho: Curso = {
 };
 
 export const FranzWeissmann_AtelieAugustZamoyski_Escultura: Curso = {
-  Pessoa: pessoas.FranzWeissmann,
+  Person: persons.FranzWeissmann,
   Instituicao: 'Atelie August Zamoyski',
   AbreviacaoInstituicao: undefined,
   Cidade: 'Rio de Janeiro',
@@ -126,7 +126,7 @@ export const FranzWeissmann_AtelieAugustZamoyski_Escultura: Curso = {
 };
 
 export const FranzWeissmann_AtelieAugustZamoyski_Fundicao: Curso = {
-  Pessoa: pessoas.FranzWeissmann,
+  Person: persons.FranzWeissmann,
   Instituicao: 'Atelie August Zamoyski',
   AbreviacaoInstituicao: undefined,
   Cidade: 'Rio de Janeiro',
@@ -138,7 +138,7 @@ export const FranzWeissmann_AtelieAugustZamoyski_Fundicao: Curso = {
 };
 
 export const WaltercioCaldas_MAMRJ_Pintura: Curso = {
-  Pessoa: pessoas.WaltercioCaldas,
+  Person: persons.WaltercioCaldas,
   Instituicao: 'Museu de Arte Moderna do Rio de Janeiro',
   AbreviacaoInstituicao: 'MAM Rio',
   Cidade: 'Rio de Janeiro',

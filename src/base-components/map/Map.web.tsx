@@ -11,7 +11,7 @@ type MapWrapperProps = {
   markers?: {
     position: { latitude: string; longitude: string };
     color?: string;
-    obra: Obra;
+    heritage: Obra;
   }[];
 };
 
@@ -36,7 +36,7 @@ function MyMapComponent({
   markers?: {
     position: { latitude: string; longitude: string };
     color?: string;
-    obra: Obra;
+    heritage: Obra;
   }[];
 }) {
   const router = useRouter();
@@ -107,7 +107,10 @@ function MyMapComponent({
         });
 
         gMarker.addListener('click', () => {
-          router.push({ pathname: '/obra', params: { obra: marker.obra.ID } });
+          router.push({
+            pathname: '/heritage',
+            params: { heritage: marker.heritage.ID },
+          });
         });
         gMarker.setMap(map);
         return gMarker;

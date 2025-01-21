@@ -1,8 +1,8 @@
-import Pessoa from './pessoa';
+import Person from './person';
 
 type Colunista = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
   Jornal?: string;
   Coluna?: string;
   Cidade?: string;

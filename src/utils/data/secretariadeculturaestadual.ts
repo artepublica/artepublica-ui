@@ -1,9 +1,9 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Secretario from '../../domain/secretario';
 
 export const HelenaMariaPortoSeveroDaCosta: Secretario = {
   ID: undefined,
-  Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
+  Person: persons.HelenaMariaPortoSeveroDaCosta,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Estatual de Cultura',

@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import CoordenadorNucleMuseu from '../../domain/coordenador_nucleo_museu';
 
 export const ReynaldoRoels: CoordenadorNucleMuseu = {
-  Pessoa: pessoas.ReynaldoRoels,
+  Person: persons.ReynaldoRoels,
   Mandatos: [
     {
       NomeMuseu: 'Museu de Arte Moderna do Rio de Janeiro',

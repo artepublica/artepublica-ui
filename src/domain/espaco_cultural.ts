@@ -1,4 +1,4 @@
-import Pessoa from './pessoa';
+import Person from './person';
 
 type EspacoCultural = {
   ID?: number;
@@ -7,7 +7,7 @@ type EspacoCultural = {
   Estado?: string;
   Pais?: string;
   Fundacao?: string;
-  Fundadores?: Pessoa[];
+  Fundadores?: Person[];
 };
 
 export default EspacoCultural;

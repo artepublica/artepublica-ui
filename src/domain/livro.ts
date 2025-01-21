@@ -1,15 +1,15 @@
-import Pessoa from './pessoa';
+import Person from './person';
 
 type Curso = {
   ID?: number;
-  Autor?: Pessoa;
+  Autor?: Person;
   Titulo?: string;
   Editora?: string;
   Cidade?: string;
   Estado?: string;
   Pais?: string;
   Data?: string;
-  Citados?: Pessoa[];
+  Citados?: Person[];
 };
 
 export default Curso;

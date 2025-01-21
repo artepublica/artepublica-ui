@@ -12,11 +12,11 @@ function trocaCapital(
     arr2.forEach((nome2) => {
       if (
         nome1 !== nome2 &&
-        associacoes.find((associacao) => associacao.pessoa1 === nome2) == null
+        associacoes.find((associacao) => associacao.person1 === nome2) == null
       ) {
         associacoes.push({
-          pessoa1: nome1,
-          pessoa2: nome2,
+          person1: nome1,
+          person2: nome2,
           tipo,
           capitais,
         });

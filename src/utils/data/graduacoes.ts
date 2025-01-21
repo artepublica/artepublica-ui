@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Graduacao from '../../domain/graduacao';
 
 export const LuizPauloFernandezCondArquitetura: Graduacao = {
-  Pessoa: pessoas.LuizPauloFernandezConde,
+  Person: persons.LuizPauloFernandezConde,
   Faculdade: 'Faculdade Nacional de Arquitetura da Universidade do Brasil',
   AbreviacaoFaculdade: 'UFRJ',
   Cidade: 'Rio de Janeiro',
@@ -15,7 +15,7 @@ export const LuizPauloFernandezCondArquitetura: Graduacao = {
 };
 
 export const HelenaMariaPortoSeveroDaCosta: Graduacao = {
-  Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
+  Person: persons.HelenaMariaPortoSeveroDaCosta,
   Faculdade: undefined,
   AbreviacaoFaculdade: undefined,
   Cidade: undefined,
@@ -28,7 +28,7 @@ export const HelenaMariaPortoSeveroDaCosta: Graduacao = {
 };
 
 export const EverardoMiranda: Graduacao = {
-  Pessoa: pessoas.EverardoMiranda,
+  Person: persons.EverardoMiranda,
   Faculdade: 'Universidade Federal do Rio de Janeiro',
   AbreviacaoFaculdade: 'UFRJ',
   Cidade: 'Rio de Janeiro',
@@ -41,7 +41,7 @@ export const EverardoMiranda: Graduacao = {
 };
 
 export const RonaldoBrito: Graduacao = {
-  Pessoa: pessoas.RonaldoBrito,
+  Person: persons.RonaldoBrito,
   Faculdade: 'Pontifícia Universidade Católica do Rio de Janeiro',
   AbreviacaoFaculdade: 'PUC/RJ',
   Cidade: 'Rio de Janeiro',
@@ -54,7 +54,7 @@ export const RonaldoBrito: Graduacao = {
 };
 
 export const FernandoCocchiarale: Graduacao = {
-  Pessoa: pessoas.FernandoCocchiarale,
+  Person: persons.FernandoCocchiarale,
   Faculdade: undefined,
   Cidade: undefined,
   Estado: undefined,
@@ -66,7 +66,7 @@ export const FernandoCocchiarale: Graduacao = {
 };
 
 export const LauroCavalcanti: Graduacao = {
-  Pessoa: pessoas.LauroCavalcanti,
+  Person: persons.LauroCavalcanti,
   Faculdade: 'Universidade Federal do Rio de Janeiro',
   AbreviacaoFaculdade: 'UFRJ',
   Cidade: 'Rio de Janeiro',
@@ -79,7 +79,7 @@ export const LauroCavalcanti: Graduacao = {
 };
 
 export const PauloVenancioFilho: Graduacao = {
-  Pessoa: pessoas.PauloVenancioFilho,
+  Person: persons.PauloVenancioFilho,
   Faculdade: 'Universidade Federal do Rio de Janeiro',
   AbreviacaoFaculdade: 'UFRJ',
   Cidade: 'Rio de Janeiro',
@@ -92,7 +92,7 @@ export const PauloVenancioFilho: Graduacao = {
 };
 
 export const JoseResende_Gravura: Graduacao = {
-  Pessoa: pessoas.JoseResende,
+  Person: persons.JoseResende,
   Faculdade: 'Fundação Armando Álvares Penteado',
   AbreviacaoFaculdade: 'FAAP',
   Cidade: undefined,
@@ -105,7 +105,7 @@ export const JoseResende_Gravura: Graduacao = {
 };
 
 export const JoseResende_Arquitetura: Graduacao = {
-  Pessoa: pessoas.JoseResende,
+  Person: persons.JoseResende,
   Faculdade: 'Mackenzie',
   AbreviacaoFaculdade: undefined,
   Cidade: undefined,
@@ -118,7 +118,7 @@ export const JoseResende_Arquitetura: Graduacao = {
 };
 
 export const AmilcarDeCastro: Graduacao = {
-  Pessoa: pessoas.AmilcarDeCastro,
+  Person: persons.AmilcarDeCastro,
   Faculdade: 'Universidade Federal de Minas Gerais',
   AbreviacaoFaculdade: 'UFMG',
   Cidade: 'Belo Horizonte',

@@ -1,4 +1,4 @@
-import Pessoa from './pessoa';
+import Person from './person';
 
 type Manifesto = {
   ID?: number;
@@ -9,8 +9,8 @@ type Manifesto = {
   Pais?: string;
   Local?: string;
   Data?: string;
-  Escritores?: Pessoa[];
-  Assinantes?: Pessoa[];
+  Escritores?: Person[];
+  Assinantes?: Person[];
 };
 
 export default Manifesto;

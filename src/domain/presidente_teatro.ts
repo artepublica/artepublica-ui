@@ -1,9 +1,9 @@
 import MandatoPresidenteTeatro from './mandato_presidente_teatro';
-import Pessoa from './pessoa';
+import Person from './person';
 
 type PresidenteTeatro = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
   Mandatos?: MandatoPresidenteTeatro[];
 };
 

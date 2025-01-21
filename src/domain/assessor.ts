@@ -1,6 +1,8 @@
+import Person from './person';
+
 type Assessor = {
   ID?: number;
-  IDPessoa?: number;
+  Person?: Person;
   IDSecretaria?: number;
   IDProfissao?: number;
   IDMandato?: number;

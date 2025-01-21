@@ -2,12 +2,12 @@ import { PoliticaPublica } from '@domain';
 
 function autorObraDaPolitica(
   politicaPublica: PoliticaPublica,
-  pessoa: string,
+  person: string,
 ): boolean {
   return (
     politicaPublica.Obras?.find(
       (obra) =>
-        obra.Autores?.find((autor) => autor.Pessoa?.Nome === pessoa) != null,
+        obra.Autores?.find((autor) => autor.Person?.Name === person) != null,
     ) != null
   );
 }

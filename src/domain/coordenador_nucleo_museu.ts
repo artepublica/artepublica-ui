@@ -1,9 +1,9 @@
 import MandatoCoordenadoriaMuseu from './mandato_coordenadoria_museu';
-import Pessoa from './pessoa';
+import Person from './person';
 
 type CoordenadorNucleMuseu = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
   Mandatos?: MandatoCoordenadoriaMuseu[];
 };
 

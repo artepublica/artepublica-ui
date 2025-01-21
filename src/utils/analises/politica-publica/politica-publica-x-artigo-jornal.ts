@@ -7,11 +7,11 @@ import { antes } from '../dataUtils';
 
 function fazParteDaPolitica(
   politicaPublica: PoliticaPublica,
-  pessoa: string,
+  person: string,
 ): boolean {
   return (
-    agenteDaPolitica(politicaPublica, pessoa) ||
-    autorObraDaPolitica(politicaPublica, pessoa)
+    agenteDaPolitica(politicaPublica, person) ||
+    autorObraDaPolitica(politicaPublica, person)
   );
 }
 
@@ -28,8 +28,8 @@ function politicaPublicaXartigoJornal(
   ) {
     return artigoJornalX(artigoJornal, politicaPublica).filter(
       (troca) =>
-        fazParteDaPolitica(politicaPublica, troca.pessoa1) ||
-        fazParteDaPolitica(politicaPublica, troca.pessoa2),
+        fazParteDaPolitica(politicaPublica, troca.person1) ||
+        fazParteDaPolitica(politicaPublica, troca.person2),
     );
   }
   return [];

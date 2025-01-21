@@ -1,4 +1,4 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Comissao from '../../domain/comissao';
 
 export const ComissaoDaPracaXV: Comissao = {
@@ -9,7 +9,7 @@ export const ComissaoDaPracaXV: Comissao = {
   Pais: 'Brasil',
   DataInicio: undefined,
   DataFim: undefined,
-  Coordenadores: [pessoas.HelenaMariaPortoSeveroDaCosta],
+  Coordenadores: [persons.HelenaMariaPortoSeveroDaCosta],
   Participantes: undefined,
   IntituicsoesEnvolvidas: [
     'Centro Cultural Banco do Brasil',

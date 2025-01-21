@@ -1,4 +1,4 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import EspacoCultural from '../../domain/espaco_cultural';
 
 export const EverardoMiranda: EspacoCultural = {
@@ -7,5 +7,5 @@ export const EverardoMiranda: EspacoCultural = {
   Estado: 'Rio de Janeiro',
   Pais: 'Brasil',
   Fundacao: '1983',
-  Fundadores: [pessoas.EverardoMiranda],
+  Fundadores: [persons.EverardoMiranda],
 };

@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Professor from '../../domain/professor';
 
 export const FranzWeissmann_EscolaGuinard_ModeloVivo: Professor = {
-  Pessoa: pessoas.FranzWeissmann,
+  Person: persons.FranzWeissmann,
   Instituicao: 'Escola Guinard',
   AbreviacaoInstituicao: undefined,
   Departamento: undefined,
@@ -15,7 +15,7 @@ export const FranzWeissmann_EscolaGuinard_ModeloVivo: Professor = {
 };
 
 export const FranzWeissmann_EscolaGuinard_Escultura: Professor = {
-  Pessoa: pessoas.FranzWeissmann,
+  Person: persons.FranzWeissmann,
   Instituicao: 'Escola Guinard',
   AbreviacaoInstituicao: undefined,
   Departamento: undefined,
@@ -28,7 +28,7 @@ export const FranzWeissmann_EscolaGuinard_Escultura: Professor = {
 };
 
 export const AlbertoDaVeigaGuignard_EscolaGuinard_Desenho: Professor = {
-  Pessoa: pessoas.AlbertoDaVeigaGuignard,
+  Person: persons.AlbertoDaVeigaGuignard,
   Instituicao: 'Escola Guinard',
   AbreviacaoInstituicao: undefined,
   Departamento: undefined,
@@ -41,7 +41,7 @@ export const AlbertoDaVeigaGuignard_EscolaGuinard_Desenho: Professor = {
 };
 
 export const AlbertoDaVeigaGuignard_EscolaGuinard_Pintura: Professor = {
-  Pessoa: pessoas.AlbertoDaVeigaGuignard,
+  Person: persons.AlbertoDaVeigaGuignard,
   Instituicao: 'Escola Guinard',
   AbreviacaoInstituicao: undefined,
   Departamento: undefined,
@@ -54,7 +54,7 @@ export const AlbertoDaVeigaGuignard_EscolaGuinard_Pintura: Professor = {
 };
 
 export const AugustZamoiski_AtelieAugustZamoyski_Desenho: Professor = {
-  Pessoa: pessoas.AugustZamoiski,
+  Person: persons.AugustZamoiski,
   Instituicao: 'Atelie August Zamoyski',
   AbreviacaoInstituicao: undefined,
   Departamento: undefined,
@@ -67,7 +67,7 @@ export const AugustZamoiski_AtelieAugustZamoyski_Desenho: Professor = {
 };
 
 export const AugustZamoiski_AtelieAugustZamoyski_Escultura: Professor = {
-  Pessoa: pessoas.AugustZamoiski,
+  Person: persons.AugustZamoiski,
   Instituicao: 'Atelie August Zamoyski',
   AbreviacaoInstituicao: undefined,
   Departamento: undefined,
@@ -80,7 +80,7 @@ export const AugustZamoiski_AtelieAugustZamoyski_Escultura: Professor = {
 };
 
 export const AugustZamoiski_AtelieAugustZamoyski_Fundicao: Professor = {
-  Pessoa: pessoas.AugustZamoiski,
+  Person: persons.AugustZamoiski,
   Instituicao: 'Atelie August Zamoyski',
   AbreviacaoInstituicao: undefined,
   Departamento: undefined,
@@ -93,7 +93,7 @@ export const AugustZamoiski_AtelieAugustZamoyski_Fundicao: Professor = {
 };
 
 export const FernandoCocchiarale_PucRJ_DepartamentoFilosofia: Professor = {
-  Pessoa: pessoas.FernandoCocchiarale,
+  Person: persons.FernandoCocchiarale,
   Instituicao: 'Pontifícia Universidade Católica do Rio de Janeiro',
   AbreviacaoInstituicao: 'PUC/RJ',
   Departamento: undefined,
@@ -107,7 +107,7 @@ export const FernandoCocchiarale_PucRJ_DepartamentoFilosofia: Professor = {
 
 export const FernandoCocchiarale_EscoladeArtesVisuaisdoParqueLage_DepartamentoFilosofia: Professor =
   {
-    Pessoa: pessoas.FernandoCocchiarale,
+    Person: persons.FernandoCocchiarale,
     Instituicao: 'Escola de Artes Visuais do Parque Lage',
     AbreviacaoInstituicao: undefined,
     Departamento: undefined,
@@ -120,7 +120,7 @@ export const FernandoCocchiarale_EscoladeArtesVisuaisdoParqueLage_DepartamentoFi
   };
 
 export const LuizPauloFernandezConde_UFRJ_DepartamentoArquitetura: Professor = {
-  Pessoa: pessoas.LuizPauloFernandezConde,
+  Person: persons.LuizPauloFernandezConde,
   Instituicao: 'Universidade Federal do Rio de Janeiro',
   AbreviacaoInstituicao: 'UFRJ',
   Departamento: undefined,
@@ -133,7 +133,7 @@ export const LuizPauloFernandezConde_UFRJ_DepartamentoArquitetura: Professor = {
 };
 
 export const ReynaldoRoels_EscolaDeArtesVisuaisDoParqueLaje: Professor = {
-  Pessoa: pessoas.ReynaldoRoels,
+  Person: persons.ReynaldoRoels,
   Instituicao: 'Escola de Artes Visuais do Parque Laje',
   AbreviacaoInstituicao: undefined,
   Departamento: undefined,
@@ -146,7 +146,7 @@ export const ReynaldoRoels_EscolaDeArtesVisuaisDoParqueLaje: Professor = {
 };
 
 export const RonaldoBrito_PUCRIO: Professor = {
-  Pessoa: pessoas.RonaldoBrito,
+  Person: persons.RonaldoBrito,
   Instituicao: 'Pontifícia Universidade Católica do Rio de Janeiro',
   AbreviacaoInstituicao: 'PUC/RJ',
   Departamento: undefined,
@@ -159,7 +159,7 @@ export const RonaldoBrito_PUCRIO: Professor = {
 };
 
 export const RonaldoBrito_UNIRIO: Professor = {
-  Pessoa: pessoas.RonaldoBrito,
+  Person: persons.RonaldoBrito,
   Instituicao: 'Universidade Federal do Estado do Rio de Janeiro',
   AbreviacaoInstituicao: 'UNIRIO',
   Departamento: 'Departamento de Teatro',
@@ -172,7 +172,7 @@ export const RonaldoBrito_UNIRIO: Professor = {
 };
 
 export const FernandoCocchiarale_HistoriaDaArte_PUCRIO: Professor = {
-  Pessoa: pessoas.FernandoCocchiarale,
+  Person: persons.FernandoCocchiarale,
   Instituicao: 'Pontifícia Universidade Católica do Rio de Janeiro',
   AbreviacaoInstituicao: 'PUC/RJ',
   Departamento: undefined,
@@ -185,7 +185,7 @@ export const FernandoCocchiarale_HistoriaDaArte_PUCRIO: Professor = {
 };
 
 export const FernandoCocchiarale_FilosofiaDaArte_PUCRIO: Professor = {
-  Pessoa: pessoas.FernandoCocchiarale,
+  Person: persons.FernandoCocchiarale,
   Instituicao: 'Pontifícia Universidade Católica do Rio de Janeiro',
   AbreviacaoInstituicao: 'PUC/RJ',
   Departamento: 'Departamento de Filosofia',
@@ -198,7 +198,7 @@ export const FernandoCocchiarale_FilosofiaDaArte_PUCRIO: Professor = {
 };
 
 export const FernandoCocchiarale_EscolaDeArtesVisuaisDoParqueLaje: Professor = {
-  Pessoa: pessoas.FernandoCocchiarale,
+  Person: persons.FernandoCocchiarale,
   Instituicao: 'Escola de Artes Visuais do Parque Laje',
   AbreviacaoInstituicao: undefined,
   Departamento: undefined,
@@ -211,7 +211,7 @@ export const FernandoCocchiarale_EscolaDeArtesVisuaisDoParqueLaje: Professor = {
 };
 
 export const LauroCavalcanti: Professor = {
-  Pessoa: pessoas.LauroCavalcanti,
+  Person: persons.LauroCavalcanti,
   Instituicao: 'Universidade Estadual do Rio de Janeiro',
   AbreviacaoInstituicao: 'UERJ',
   Departamento: 'Escola Superior de Desenho Industrial', // TODO?? ou é curso?
@@ -224,7 +224,7 @@ export const LauroCavalcanti: Professor = {
 };
 
 export const PauloVenancioFilho_UFRJ: Professor = {
-  Pessoa: pessoas.PauloVenancioFilho,
+  Person: persons.PauloVenancioFilho,
   Instituicao: 'Universidade Federal do Rio de Janeiro',
   AbreviacaoInstituicao: 'UFRJ',
   Departamento:
@@ -238,7 +238,7 @@ export const PauloVenancioFilho_UFRJ: Professor = {
 };
 
 export const JoseResende_Mackenzie: Professor = {
-  Pessoa: pessoas.JoseResende,
+  Person: persons.JoseResende,
   Instituicao: 'Mackenzie',
   AbreviacaoInstituicao: undefined,
   Departamento: 'Instituto de Artes e Decoração',
@@ -251,7 +251,7 @@ export const JoseResende_Mackenzie: Professor = {
 };
 
 export const JoseResende_FAAP: Professor = {
-  Pessoa: pessoas.JoseResende,
+  Person: persons.JoseResende,
   Instituicao: 'Fundação Armando Álvares Penteado',
   AbreviacaoInstituicao: 'FAAP',
   Departamento: 'Departamento de Escultura',
@@ -264,7 +264,7 @@ export const JoseResende_FAAP: Professor = {
 };
 
 export const JoseResende_PUCCampinas: Professor = {
-  Pessoa: pessoas.JoseResende,
+  Person: persons.JoseResende,
   Instituicao: 'Pontifícia Universidade Católica de Campinas',
   AbreviacaoInstituicao: 'PUC/Campinas',
   Departamento: 'Faculdade de Arquitetura e Urbanismo',
@@ -277,7 +277,7 @@ export const JoseResende_PUCCampinas: Professor = {
 };
 
 export const AmilcarDeCastro_EscolaGuinard_Composicao: Professor = {
-  Pessoa: pessoas.AmilcarDeCastro,
+  Person: persons.AmilcarDeCastro,
   Instituicao: 'Escola Guinard',
   AbreviacaoInstituicao: undefined,
   Departamento: undefined,
@@ -290,7 +290,7 @@ export const AmilcarDeCastro_EscolaGuinard_Composicao: Professor = {
 };
 
 export const AmilcarDeCastro_EscolaGuinard_Escultura: Professor = {
-  Pessoa: pessoas.AmilcarDeCastro,
+  Person: persons.AmilcarDeCastro,
   Instituicao: 'Escola Guinard',
   AbreviacaoInstituicao: undefined,
   Departamento: undefined,
@@ -303,7 +303,7 @@ export const AmilcarDeCastro_EscolaGuinard_Escultura: Professor = {
 };
 
 export const AmilcarDeCastro_UFMG: Professor = {
-  Pessoa: pessoas.AmilcarDeCastro,
+  Person: persons.AmilcarDeCastro,
   Instituicao: 'Universidade Federal de Minas Gerais',
   AbreviacaoInstituicao: 'UFMG',
   Departamento: 'Faculdade de Belas Artes',
@@ -316,7 +316,7 @@ export const AmilcarDeCastro_UFMG: Professor = {
 };
 
 export const IvanSerpa: Professor = {
-  Pessoa: pessoas.IvanSerpa,
+  Person: persons.IvanSerpa,
   Instituicao: 'Museu de Arte Moderna do Rio de Janeiro',
   AbreviacaoInstituicao: 'MAM Rio',
   Departamento: undefined,

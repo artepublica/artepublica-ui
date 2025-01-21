@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Livro from '../../domain/livro';
 
 export const Neoconcretismo_RonaldoBrito: Livro = {
-  Autor: pessoas.RonaldoBrito,
+  Autor: persons.RonaldoBrito,
   Titulo: 'Neoconcretismo: vértice e ruptura do projeto construtivo brasileiro',
   Editora: 'Funarte',
   Cidade: 'Rio de Janeiro',
@@ -10,23 +10,23 @@ export const Neoconcretismo_RonaldoBrito: Livro = {
   Pais: 'Brasil',
   Data: '1985',
   Citados: [
-    pessoas.FerreiraGullar,
-    pessoas.AmilcarDeCastro,
-    pessoas.FranzWeissmann,
-    pessoas.LygiaClark,
-    pessoas.LygiaPape,
-    pessoas.ReynaldoJardim,
-    pessoas.TheonSpanudis,
+    persons.FerreiraGullar,
+    persons.AmilcarDeCastro,
+    persons.FranzWeissmann,
+    persons.LygiaClark,
+    persons.LygiaPape,
+    persons.ReynaldoJardim,
+    persons.TheonSpanudis,
   ],
 };
 
 export const WaltercioCaldas_PauloVenancioFilho: Livro = {
-  Autor: pessoas.PauloVenancioFilho,
+  Autor: persons.PauloVenancioFilho,
   Titulo: 'Waltércio Caldas: manual da ciência popular',
   Editora: undefined,
   Cidade: undefined,
   Estado: undefined,
   Pais: undefined,
   Data: '1982',
-  Citados: [pessoas.WaltercioCaldas],
+  Citados: [persons.WaltercioCaldas],
 };

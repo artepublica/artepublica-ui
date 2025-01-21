@@ -16,7 +16,7 @@ function politicaPublicaXexposicao(
     antes(exposicao.DataInicio, politicaPublica.ProjetoInicio)
   ) {
     return exposicaoX(exposicao).filter((troca) =>
-      agenteDaPolitica(politicaPublica, troca.pessoa1),
+      agenteDaPolitica(politicaPublica, troca.person1),
     );
   }
   return [];

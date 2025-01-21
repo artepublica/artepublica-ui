@@ -1,7 +1,7 @@
 import { TrocaCapital } from '@domain';
 
 function compararNoData(o1: TrocaCapital, o2: TrocaCapital): boolean {
-  return o1.pessoa1 === o2.pessoa1 && o1.pessoa2 === o2.pessoa2; // || (o1.pessoa1 === o2.pessoa2 && o1.pessoa2 === o2.pessoa1);
+  return o1.person1 === o2.person1 && o1.person2 === o2.person2; // || (o1.person1 === o2.person2 && o1.person2 === o2.person1);
 }
 
 function juntarTrocas(

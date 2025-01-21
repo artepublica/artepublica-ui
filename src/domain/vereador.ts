@@ -1,9 +1,9 @@
 import MandatoVereador from './mandato_vereador';
-import Pessoa from './pessoa';
+import Person from './person';
 
 type Vereador = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
   Mandatos?: MandatoVereador[];
 };
 

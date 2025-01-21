@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import CuradorMuseu from '../../domain/curador_museu';
 
 export const FernandoCocchiarale: CuradorMuseu = {
-  Pessoa: pessoas.FernandoCocchiarale,
+  Person: persons.FernandoCocchiarale,
   Mandatos: [
     {
       NomeMuseu: 'Museu de Arte Moderna do Rio de Janeiro',
@@ -26,7 +26,7 @@ export const FernandoCocchiarale: CuradorMuseu = {
 };
 
 export const ReynaldoRoels: CuradorMuseu = {
-  Pessoa: pessoas.ReynaldoRoels,
+  Person: persons.ReynaldoRoels,
   Mandatos: [
     {
       NomeMuseu: 'Museu de Arte Moderna do Rio de Janeiro',
@@ -41,7 +41,7 @@ export const ReynaldoRoels: CuradorMuseu = {
 };
 
 export const PauloHerkenhoff: CuradorMuseu = {
-  Pessoa: pessoas.PauloHerkenhoff,
+  Person: persons.PauloHerkenhoff,
   Mandatos: [
     {
       NomeMuseu: 'Museu de Arte Moderna do Rio de Janeiro',

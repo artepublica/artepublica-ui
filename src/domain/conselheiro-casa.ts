@@ -1,9 +1,9 @@
 import MandatoCasa from './mandato_casa';
-import Pessoa from './pessoa';
+import Person from './person';
 
 type ConselheiroCasa = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
   Mandatos?: MandatoCasa[];
 };
 

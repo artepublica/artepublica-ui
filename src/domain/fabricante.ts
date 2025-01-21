@@ -1,4 +1,4 @@
-import Fato from './fato';
+import Fato from './fact';
 
 type Fabricante = {
   ID?: number;

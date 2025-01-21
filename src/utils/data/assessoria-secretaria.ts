@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import AssessorSecretaria from '../../domain/assessor_secretaria';
 
 export const DanielaPedras: AssessorSecretaria = {
-  Pessoa: pessoas.DanielaPedras,
+  Person: persons.DanielaPedras,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Cultura',
@@ -19,7 +19,7 @@ export const DanielaPedras: AssessorSecretaria = {
 };
 
 export const EverardoMiranda: AssessorSecretaria = {
-  Pessoa: pessoas.EverardoMiranda,
+  Person: persons.EverardoMiranda,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Cultura',
@@ -36,7 +36,7 @@ export const EverardoMiranda: AssessorSecretaria = {
 };
 
 export const PauloSergioDuarte: AssessorSecretaria = {
-  Pessoa: pessoas.PauloSergioDuarte,
+  Person: persons.PauloSergioDuarte,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Cultura',

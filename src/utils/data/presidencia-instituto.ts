@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import PresidenteInstituto from '../../domain/presidente_instituto';
 
 export const LuizPauloFernandezConde: PresidenteInstituto = {
-  Pessoa: pessoas.LuizPauloFernandezConde,
+  Person: persons.LuizPauloFernandezConde,
   Mandatos: [
     {
       NomeInstituto: 'Instituto do Arquitetos do Brasil - Rio de Janeiro',

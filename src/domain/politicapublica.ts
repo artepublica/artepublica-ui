@@ -1,5 +1,5 @@
 import Obra from './obra';
-import Pessoa from './pessoa';
+import Person from './person';
 
 type PoliticaPublica = {
   ID?: number;
@@ -15,10 +15,10 @@ type PoliticaPublica = {
   Pais?: string;
   Tipo?: string;
   Secretaria?: string;
-  Idealizadores?: Pessoa[];
+  Idealizadores?: Person[];
   Obras?: Obra[];
-  Coordenadores?: Pessoa[];
-  ComissaoDeSelecao?: Pessoa[];
+  Coordenadores?: Person[];
+  ComissaoDeSelecao?: Person[];
 };
 
 export default PoliticaPublica;

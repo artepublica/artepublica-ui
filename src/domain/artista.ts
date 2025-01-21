@@ -1,8 +1,8 @@
-import Pessoa from './pessoa';
+import Person from './person';
 
 type Artista = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
 };
 
 export default Artista;

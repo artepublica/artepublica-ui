@@ -1,12 +1,12 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import RevistaIndependentes from '../../domain/revista_independente';
 
 export const Malasartes: RevistaIndependentes = {
   Nome: 'Malasartes',
   Participantes: [
-    pessoas.RonaldoBrito,
-    pessoas.JoseResende,
-    pessoas.WaltercioCaldas,
+    persons.RonaldoBrito,
+    persons.JoseResende,
+    persons.WaltercioCaldas,
     //... outros criticos TODO
   ],
   DataInicio: '1975',

@@ -1,9 +1,9 @@
 import MandatoDeputadoFederal from './mandato_deputado_federal';
-import Pessoa from './pessoa';
+import Person from './person';
 
 type DeputadoFederal = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
   Mandatos?: MandatoDeputadoFederal[];
 };
 

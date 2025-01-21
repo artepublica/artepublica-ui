@@ -71,7 +71,7 @@ function Layout(): JSX.Element {
         })}
       />
       <Drawer.Screen
-        name='(majors)'
+        name='(mayors)'
         options={({ navigation }) => ({
           title: 'Análises-Prefeitos',
           headerShown: true,

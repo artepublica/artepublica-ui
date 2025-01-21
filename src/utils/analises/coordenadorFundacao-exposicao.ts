@@ -1,15 +1,15 @@
-import { CoordenadorFundacao, Exposicao, Pessoa } from '@domain';
+import { CoordenadorFundacao, Exposicao, Person } from '@domain';
 import * as coordenadoresFundacao from '@utils/data/coordenador-fundacao';
 
 import { entre } from './dataUtils';
 
 function coordenadorFundacao_Exposicao(
   exposicao: Exposicao,
-): (Pessoa | undefined)[] {
+): (Person | undefined)[] {
   const typed_coordenadoresFundacao: Record<string, CoordenadorFundacao> =
     coordenadoresFundacao;
 
-  const coordenadores: (Pessoa | undefined)[] = [];
+  const coordenadores: (Person | undefined)[] = [];
 
   Object.keys(typed_coordenadoresFundacao).forEach((key) => {
     const coordenadorFundacao = typed_coordenadoresFundacao[key];
@@ -21,7 +21,7 @@ function coordenadorFundacao_Exposicao(
         (entre(exposicao.DataInicio, mandato.DataInicio, mandato.DataFim) ||
           entre(exposicao.DataFim, mandato.DataInicio, mandato.DataFim))
       ) {
-        coordenadores.push(coordenadorFundacao.Pessoa);
+        coordenadores.push(coordenadorFundacao.Person);
       }
     });
   });

@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import DeputadoFederal from '../../domain/deputado_federal';
 
 export const CesarEpitacioMaia: DeputadoFederal = {
-  Pessoa: pessoas.CesarEpitacioMaia,
+  Person: persons.CesarEpitacioMaia,
   Mandatos: [
     {
       Pais: 'Brasil',

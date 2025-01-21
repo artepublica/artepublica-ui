@@ -9,7 +9,7 @@ type MapWrapperProps = {
   markers?: {
     position: { latitude: string; longitude: string };
     color?: string;
-    obra: Obra;
+    heritage: Obra;
   }[];
 };
 
@@ -69,8 +69,8 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
             }}
             onPress={() =>
               router.push({
-                pathname: '/obra',
-                params: { obra: marker.obra.ID },
+                pathname: '/heritage',
+                params: { heritage: marker.heritage.ID },
               })
             }
           />

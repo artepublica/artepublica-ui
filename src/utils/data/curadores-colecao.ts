@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import CuradorColecao from '../../domain/curador_colecao';
 
 export const ReynaldoRoels: CuradorColecao = {
-  Pessoa: pessoas.ReynaldoRoels,
+  Person: persons.ReynaldoRoels,
   Mandatos: [
     {
       NomeColecao: 'Coleção Gilberto Chateaubriand',

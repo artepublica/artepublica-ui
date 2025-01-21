@@ -20,8 +20,8 @@ function converterTrocaParaDependencyWheel(
   const weight = pesos.reduce((total, peso) => total + peso, 0);
 
   const dep = {
-    from: troca.pessoa1,
-    to: troca.pessoa2,
+    from: troca.person1,
+    to: troca.person2,
     weight,
   };
 

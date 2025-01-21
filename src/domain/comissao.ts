@@ -1,4 +1,4 @@
-import Pessoa from './pessoa';
+import Person from './person';
 
 type Comissao = {
   ID?: number;
@@ -9,8 +9,8 @@ type Comissao = {
   Pais?: string;
   DataInicio?: string;
   DataFim?: string;
-  Coordenadores?: Pessoa[];
-  Participantes?: Pessoa[];
+  Coordenadores?: Person[];
+  Participantes?: Person[];
   IntituicsoesEnvolvidas?: string[];
 };
 

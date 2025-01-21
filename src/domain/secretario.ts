@@ -1,12 +1,12 @@
 import MandatoSecretario from './mandato_secretario';
-import Pessoa from './pessoa';
-import Profissao from './profissao';
+import Person from './person';
+import Profession from './profession';
 
 type Secretario = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
   IDSecretaria?: string;
-  Profissao?: Profissao;
+  Profession?: Profession;
   Mandatos?: MandatoSecretario[];
 };
 

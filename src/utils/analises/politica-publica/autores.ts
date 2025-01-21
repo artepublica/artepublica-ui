@@ -6,7 +6,7 @@ function autores(politicaPublica: PoliticaPublica): string[] {
   return politicaPublica.Obras != null
     ? politicaPublica.Obras.map((obra) =>
         obra.Autores != null
-          ? obra.Autores.map((autor) => autor.Pessoa?.Nome)
+          ? obra.Autores.map((autor) => autor.Person?.Name)
           : [],
       )
         .reduce(reduceListOfList, [])

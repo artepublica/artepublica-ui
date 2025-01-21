@@ -1,10 +1,10 @@
-import Pessoa from './pessoa';
+import Person from './person';
 
 type ArtigoJornal = {
   ID?: number;
   Jornal?: string;
   Titulo?: string;
-  Autores?: Pessoa[];
+  Autores?: Person[];
   Cidade?: string;
   Estado?: string;
   Pais?: string;

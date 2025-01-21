@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Graduacao from '../../domain/graduacao';
 
 export const FernandoCocchiarale: Graduacao = {
-  Pessoa: pessoas.FernandoCocchiarale,
+  Person: persons.FernandoCocchiarale,
   Faculdade: 'Universidade Federal do Rio de Janeiro',
   AbreviacaoFaculdade: 'UFRJ',
   Cidade: 'Rio de Janeiro',
@@ -16,7 +16,7 @@ export const FernandoCocchiarale: Graduacao = {
 };
 
 export const LauroCavalcanti: Graduacao = {
-  Pessoa: pessoas.LauroCavalcanti,
+  Person: persons.LauroCavalcanti,
   Faculdade: 'Universidade Federal do Rio de Janeiro',
   AbreviacaoFaculdade: 'UFRJ',
   Cidade: 'Rio de Janeiro',
@@ -30,7 +30,7 @@ export const LauroCavalcanti: Graduacao = {
 };
 
 export const PauloVenancioFilho: Graduacao = {
-  Pessoa: pessoas.PauloVenancioFilho,
+  Person: persons.PauloVenancioFilho,
   Faculdade: 'Universidade Federal do Rio de Janeiro',
   AbreviacaoFaculdade: 'UFRJ',
   Cidade: 'Rio de Janeiro',

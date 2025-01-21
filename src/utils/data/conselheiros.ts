@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Conselheiro from '../../domain/conselheiro';
 
 export const LuizPauloFernandezConde: Conselheiro = {
-  Pessoa: pessoas.LuizPauloFernandezConde,
+  Person: persons.LuizPauloFernandezConde,
   Mandatos: [
     {
       NomeConselho: 'Conselho Municipal de Proteção ao Patrimônio Cultural',

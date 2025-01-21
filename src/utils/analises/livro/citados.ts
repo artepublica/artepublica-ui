@@ -3,7 +3,7 @@ import onlyUniqueNotUndefinedString from '@utils/list/unique-not-undefined-strin
 
 function citados(artigoJornal: Livro): string[] {
   return artigoJornal.Citados != null
-    ? artigoJornal.Citados.map((pessoa) => pessoa.Nome).filter(
+    ? artigoJornal.Citados.map((person) => person.Name).filter(
         onlyUniqueNotUndefinedString,
       )
     : [];

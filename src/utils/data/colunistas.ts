@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Colunista from '../../domain/colunista';
 
 export const ReynaldoRoels_JornalDOBrasil: Colunista = {
-  Pessoa: pessoas.ReynaldoRoels,
+  Person: persons.ReynaldoRoels,
   Jornal: 'Jornal do Brasil',
   Coluna: undefined, // TODO 'Crítico de arte'
   Cidade: 'Rio de Janeiro',
@@ -14,7 +14,7 @@ export const ReynaldoRoels_JornalDOBrasil: Colunista = {
 };
 
 export const RonaldoBrito_OGlobo: Colunista = {
-  Pessoa: pessoas.RonaldoBrito,
+  Person: persons.RonaldoBrito,
   Jornal: 'O GLobo',
   Coluna: undefined, // TODO 'Crítico de arte'
   Cidade: 'Rio de Janeiro',
@@ -26,7 +26,7 @@ export const RonaldoBrito_OGlobo: Colunista = {
 };
 
 export const RonaldoBrito_FolhaDeSaoPaulo: Colunista = {
-  Pessoa: pessoas.RonaldoBrito,
+  Person: persons.RonaldoBrito,
   Jornal: 'Folha de São Paulo',
   Coluna: undefined, // TODO 'Crítico de arte'
   Cidade: 'São Paulo',

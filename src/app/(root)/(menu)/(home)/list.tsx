@@ -3,16 +3,16 @@ import React from 'react';
 import Head from 'expo-router/head';
 import { StyleSheet, View } from 'react-native';
 
-import { ObrasRecorte } from '@pages';
+import { Heritages as HeritagesPage } from '@pages';
 
-export default function Listagem(): JSX.Element {
+export default function Heritages(): JSX.Element {
   return (
     <>
       <Head>
         <title>Arte Pública - Listagem</title>
       </Head>
       <View style={styles.container}>
-        <ObrasRecorte />
+        <HeritagesPage />
       </View>
     </>
   );

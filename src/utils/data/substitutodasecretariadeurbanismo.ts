@@ -1,9 +1,9 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Secretario from '../../domain/secretario';
 
 export const MariaMadalenaSaintMartinAstacio: Secretario = {
   ID: undefined,
-  Pessoa: pessoas.MariaMadalenaSaintMartinAstacio,
+  Person: persons.MariaMadalenaSaintMartinAstacio,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Urbanismo',
@@ -18,7 +18,7 @@ export const MariaMadalenaSaintMartinAstacio: Secretario = {
 
 export const MauroBarataSoaresDeFigueiredo: Secretario = {
   ID: undefined,
-  Pessoa: pessoas.MauroBarataSoaresDeFigueiredo,
+  Person: persons.MauroBarataSoaresDeFigueiredo,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Urbanismo',
@@ -33,7 +33,7 @@ export const MauroBarataSoaresDeFigueiredo: Secretario = {
 
 export const LeliaMariaBastosFraga: Secretario = {
   ID: undefined,
-  Pessoa: pessoas.LeliaMariaBastosFraga,
+  Person: persons.LeliaMariaBastosFraga,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Urbanismo e Meio Ambiente',

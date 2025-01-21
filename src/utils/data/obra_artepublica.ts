@@ -1,8 +1,7 @@
+import { Data, Fact, Obra } from '@domain';
+
 import * as artistas from './artista';
-import * as pessoas from './pessoa';
-import Data from '../../domain/data';
-import Fato from '../../domain/fato';
-import Obra from '../../domain/obra';
+import * as persons from './persons';
 
 export const CoronelAssuncao_RuffoFanucchi: Obra = {
   ID: 1,
@@ -31,7 +30,7 @@ export const CoronelAssuncao_RuffoFanucchi: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi erguido pela Prefeitura da Cidade ao oficial da policia militar do Distrito Federal, com o apoio de uma comissão composta pelo Tenente Coronel João Pereira Cunha, o Major Jos´Pinto Lemos e o capitão Cordeiro FRnaça.
     O busto do Coronel tinha, até 2007, de cada lado do pedestal um canhão e na frente um cão em posição de guarda também em bronze. O cão era o símbolo da antiga polícia militar, o animal imortalizado era conhecido como Brutus que pertenceu ao Coronel`,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -66,7 +65,7 @@ export const FonteDaCrianca_HenriFredericIselin: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Fundição Val D'Osne`,
-  Fatos: [new Fato('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -101,7 +100,7 @@ export const NossaSenhoradaImaculadaConceicao_Desconhecido: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -141,7 +140,7 @@ export const EsculturaParaORio_WaltercioCaldas: Obra = {
     horizontalidade costumeira. A peça recupera a sinuosidade dos desenhos das calçadas cariocas e é, assim uma homenagem a tradição
     urbanista da Cidade. Acolocação das pedras foi feita manualmente pelo artesão José de Lino.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1994',
       '1997',
       'Política Pública',
@@ -149,15 +148,15 @@ export const EsculturaParaORio_WaltercioCaldas: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1994',
       '1997',
       'Promotor',
       'Secretaria Municipal de Cultura',
-      [pessoas.HelenaMariaPortoSeveroDaCosta],
+      [persons.HelenaMariaPortoSeveroDaCosta],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Patrocínio',
@@ -165,7 +164,7 @@ export const EsculturaParaORio_WaltercioCaldas: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1997',
       '1997',
       'Vandalismo',
@@ -173,23 +172,23 @@ export const EsculturaParaORio_WaltercioCaldas: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '28/12/1997',
       '28/12/1997',
       'Crítica',
       'Essa peça é uma felicidade absoluta. O único porém é que se dilui em alguns angulos pela falta de contraste com os prédios. Mas até esses argumentos são a favor da escultura. A ideia é pegar o chão da cidade e levantá-lo é uma manobra simples e bonita',
-      [pessoas.ReynaldoRoels],
+      [persons.ReynaldoRoels],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '28/12/1997',
       '28/12/1997',
       'Crítica',
       'Não é a obra que mais gosto do Waltércio Caldas. Conceitualmente é interessante porque parece emergir do chão, mas acho que ele não conseguiu desenvolver bem essa ideia. Não é uma obra feliz.',
-      [pessoas.FredericoMoraes],
+      [persons.FredericoMoraes],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '17/05/2015',
       '7/05/2015',
       'Demolição',
@@ -197,7 +196,7 @@ export const EsculturaParaORio_WaltercioCaldas: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Reconstrução', '', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Reconstrução', '', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -236,7 +235,7 @@ export const MarechalMachadoBittencourt_JoseOtavioCorreaLima: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: 'O busto esta instalado no local onde foi assassinado.',
-  Fatos: [new Fato('', '', 'Homenageado', 'Marechal Bittencourt', [], '')],
+  Fatos: [new Fact('', '', 'Homenageado', 'Marechal Bittencourt', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -281,7 +280,7 @@ export const TeixeiraDeFreitas_RodolfoBernardelli: Obra = {
   Descricao:
     'No local foi removido um Chafariz ornamental. Segundo reportagem no Jornal do Commercio a obra é de 1904.',
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenageado',
@@ -289,7 +288,7 @@ export const TeixeiraDeFreitas_RodolfoBernardelli: Obra = {
       [],
       '',
     ),
-    new Fato(
+    new Fact(
       '1983',
       '1983',
       'Transferencia',
@@ -334,8 +333,8 @@ export const BuarquedeMacedo_JoseOtavioCorreaLima: Obra = {
   Descricao:
     'A estátua representa o Conselheiro de pé, trajando casaca, tendo nas mãos papéis, ao seu lado um globo terrestre, juntos a uma pasta na qual está escrita a palavra agricultura.',
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Buarque de Macedo', [], ''),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Buarque de Macedo', [], ''),
+    new Fact(
       '',
       '',
       'Subscrição pública',
@@ -379,7 +378,7 @@ export const ColunaMediaemCantoneirasDiagonais_FranzWeissmann: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Escultura em chapas e cantoneiras dividindo o espaço entre preenchido e vazado.',
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -415,7 +414,7 @@ export const BernardoPereiradeVasconcelos_FloryGama: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Homenageado voltado para o Colegio por ele criado, num reconhecimento público de seu trabalho. Para a homenagem foi criada uma comissão de professores presidida pelo Sr. Waldemiro Potsch com a participação de Carlos Potsch, George Samner, Tito Urbano Silveira, Pereira Reis Jr. Pedro Couto Jr, Isaac Volhan, Hugo Segadas Viana, Jose Carvalha e Libano Guedes .',
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -452,8 +451,8 @@ export const Tiradentes_FranciscoAndrade: Obra = {
   Descricao:
     'A escultura mostra um mártir com pulsos algemados, olhos voltados para o céu e semblante tranquilo, como que altivo perante a condenação à morte.// Reprodução Fotográfica Cesar Barreto',
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Tiradentes', [], ''),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Tiradentes', [], ''),
+    new Fact(
       '',
       '',
       'Iniciativa',
@@ -461,7 +460,7 @@ export const Tiradentes_FranciscoAndrade: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Concurso Público',
@@ -469,8 +468,8 @@ export const Tiradentes_FranciscoAndrade: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Bem tombado Municipal', '', [], 'Rio de Janeiro'),
-    new Fato('', '', 'Bem tombado Federal', '', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Bem tombado Municipal', '', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Bem tombado Federal', '', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -513,7 +512,7 @@ export const FranciscoPereiraPassos_RodolfoBernardelli: Obra = {
     O monumento ao Prefeito Pereira Passos foi uma inicativa dos funcionários da Municipalidade e erguido na Praça da
     República, próximo ao antigo prédio do Palácio da Prefeitura. Em 1 de abril de 1994 foi retirado para a demolição do antigo
     prédio da prefeitua. Posteriormente foi para o entroncamento da Avenida Rio Branco e Presidente Vargas, atual localização.// Francisco Franco Pereira Passos foi engenheiro, político brasileiro e prefeito do Rio de janeiro de 1902 a 1906. Ficou conhecido pela mais importante reforma urbana feita na cidade. Com a sua transformação, o Rio de Janeiro passou a ser chamado mundialmente de Cidade Maravilhosa.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -550,9 +549,9 @@ export const MachadoDeAssis_HumbertoCozzo: Obra = {
   Descricao:
     'Na época foi instalado na frente à Academia Brasileira de Letras, mas hoje se encontra entre os dois predios da Academia, contudo é uma obra pública.// Localizada na Avenida Presidente Wilson, em frente a sede da Academia Brasileira de Letras, a qual fundou e foi presidente, a estátua em bronze de Machado de Assis foi construída após pedido popular em comemoração ao 90º aniversário deste que foi um dos maiores escritores da língua portuguesa de todos os tempos.',
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Machado de Assis', [], ''),
-    new Fato('', '', 'Subscrição popular', '', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Machado de Assis', [], ''),
+    new Fact('', '', 'Subscrição popular', '', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Homenagem',
@@ -597,7 +596,7 @@ export const Ritmo_BrunoGiorgi: Obra = {
   Descricao:
     'Trata-se de uma peça abstrata, ultima obra publica de Bruna Giorgi.',
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -605,7 +604,7 @@ export const Ritmo_BrunoGiorgi: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1983',
       '1983',
       'Promotor',
@@ -613,7 +612,7 @@ export const Ritmo_BrunoGiorgi: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '08/1984',
       '08/1984',
       'Autoreização',
@@ -659,8 +658,8 @@ export const ManuelBandeira_OttoDumovich: Obra = {
     as peças em bronze, sobre um pedestal de concreto de forma piramidal. A neo-barroca do artista tem a fisionomia bem marcante
     do poeta.`,
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Manuel Bandeira', [], ''),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Manuel Bandeira', [], ''),
+    new Fact(
       '',
       '',
       'Inauguração',
@@ -668,7 +667,7 @@ export const ManuelBandeira_OttoDumovich: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Solicitação',
@@ -676,7 +675,7 @@ export const ManuelBandeira_OttoDumovich: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -721,7 +720,7 @@ export const GrandeQuadradoVermelho_FranzWeissmann: Obra = {
   Descricao: `Peça geométrica com espaço vazado como um elemento definidor. O plano, as articulações e o elemento vazado, cria a
     tridimensionalidade aberta, caracteristica do artista. Weissmann é o artista do corte e da solda, cuja força e ritmo é propiciado
     com as interseçoes dos planos. A cor é planejada, viva.`,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -766,7 +765,7 @@ export const OPassante_JoseResende: Obra = {
     de Giacometti, o Grande PAssante celebra simplesmente o novo herói anonimo que circula pelas ruas... O que qualifica estéticamente,
     todavia, é o calculo sutil de uma estrutura que ginga].`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1994',
       '1997',
       'Política Pública',
@@ -774,7 +773,7 @@ export const OPassante_JoseResende: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1994',
       '1997',
       'Promotor',
@@ -782,7 +781,7 @@ export const OPassante_JoseResende: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Patrocínio',
@@ -790,7 +789,7 @@ export const OPassante_JoseResende: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '12/12/1995',
       '12/12/1995',
       'Notícia',
@@ -838,7 +837,7 @@ export const JoseBonifacio_LouisRochet: Obra = {
     na França. José Bonifácio esta representando em corpo inteiro e de pé. Tem mão direita a pena apoiada
     em livros, como a simbolizar o instrumento com que escreveu o glorioso Manifesto as Nações. Destacando-se
     nas faces as figuras alegóricas da Justiça, Ciência, Integridade e Poesia.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -873,7 +872,7 @@ export const TresVelas_IvanPaulPaccini: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -914,7 +913,7 @@ export const FontedoMenino_MestreValentim: Obra = {
     que lançava água num barril de gnaisse. Foi substituído em 1841 por um anjo de chumbo, que
     segura à cartela com a legenda Sou útil inda brincando Em 2004 a estátua de chumbo, depois de
     diversas e graves mutilações, foi substituída por uma cópia em bronze.`,
-  Fatos: [new Fato('', '', 'Bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'Bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -954,7 +953,7 @@ export const FontedodosAmores_MestreValentim: Obra = {
     de cujos bicos a água caia. O coqueiro foi retirado em 1906, devido a ferrugem, por determinação
     do Conde dos Arcos e as garças não se conhece o destino. É representatiivo porque é a primeira
     estilização de animais da fauna nacional. Desativado desde o ano de 2016.`,
-  Fatos: [new Fato('', '', 'Bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'Bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -994,8 +993,8 @@ export const CarlosGomes_RodolfoBernardelli: Obra = {
   Descricao:
     'A estátua esteve durante 49 anos voltada para o Teatro Municipal do Rio de Janeiro.',
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Carlos Gomes', [], ''),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Carlos Gomes', [], ''),
+    new Fact(
       '',
       '',
       'Réplica',
@@ -1003,7 +1002,7 @@ export const CarlosGomes_RodolfoBernardelli: Obra = {
       [],
       'Campinas',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Financiamento',
@@ -1011,7 +1010,7 @@ export const CarlosGomes_RodolfoBernardelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Localização',
@@ -1019,7 +1018,7 @@ export const CarlosGomes_RodolfoBernardelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Inauguração',
@@ -1027,7 +1026,7 @@ export const CarlosGomes_RodolfoBernardelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '2009',
       '2009',
       'transferência',
@@ -1072,9 +1071,9 @@ export const VicenteCelestino_TitoBernucci: Obra = {
   Descricao:
     'E a representação da fisionomiade Vicente Celestino, uma gratidão do povo carioca ao cantor.',
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Vicente Celestino', [], ''),
-    new Fato('', '', 'Iniciativa', 'Proposta por Frederico Trota', [], ''),
-    new Fato('', '', 'Bem Tombado Estadual', '', [], ''),
+    new Fact('', '', 'Homenageado', 'Vicente Celestino', [], ''),
+    new Fact('', '', 'Iniciativa', 'Proposta por Frederico Trota', [], ''),
+    new Fact('', '', 'Bem Tombado Estadual', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -1112,8 +1111,8 @@ export const Sinho_TitoBernucci: Obra = {
   Descricao:
     'É a representação da fisionomia do compositor, um agradecimento o povo carioca.',
   Fatos: [
-    new Fato('', '', 'Bem Tombado Estadual', '', [], ''),
-    new Fato(
+    new Fact('', '', 'Bem Tombado Estadual', '', [], ''),
+    new Fact(
       '18/09/1888',
       '1930',
       'Homenageado',
@@ -1165,9 +1164,9 @@ export const BenjaminConstant_DecioVillares_EduardoDeSa_VicenteOrnelas: Obra = {
   Descricao: `O monumento tem como figura principal a escultura da Humanidade, simbolizada em uma mulher, tendo seu filho nos braços. A imagem da esposa de Benjamim, traz a bandeira república sendo bordada por
     sua filha e que Lea ofereceu a Escola Militar do Rio de Janeiro e a Escola Superior da Guerra. E o monumento que apresenta o maior número de símbolos exprimindo fatos históricos ligados a Pátria e a Humanidade.`,
   Fatos: [
-    new Fato('', '', 'Bem tombado Estadual', '', [], 'Rio de Janeiro'),
-    new Fato('', '', 'Homenageado', 'Benjamim Constant', [], ''),
-    new Fato(
+    new Fact('', '', 'Bem tombado Estadual', '', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Homenageado', 'Benjamim Constant', [], ''),
+    new Fact(
       '',
       '',
       'Oferecimento',
@@ -1175,7 +1174,7 @@ export const BenjaminConstant_DecioVillares_EduardoDeSa_VicenteOrnelas: Obra = {
       [],
       '',
     ),
-    new Fato(
+    new Fact(
       '2013',
       '2013',
       'Vandalismo',
@@ -1220,8 +1219,8 @@ export const PauloDeFrontin_UgoTaddey: Obra = {
   Descricao:
     'Abaixo de sua figura feminina segurando dois ramos de louro. como engenheiro da formação da cidade, no dia de seu 65º aniversário.',
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Engenheiro Paulo de Frontin', [], ''),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Engenheiro Paulo de Frontin', [], ''),
+    new Fact(
       '',
       '',
       'Promotor',
@@ -1229,7 +1228,7 @@ export const PauloDeFrontin_UgoTaddey: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '21/10/2008',
       '21/10/2008',
       'Furto',
@@ -1276,7 +1275,7 @@ export const JuscelinoKubitschek_Zanucchi: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Constituído pela cabeça em bronze do ex-presidente e base de concreto. Erguido originalmente por seus admiradores em 1961. Foi destruído por um grupo de oficiais militares saídos do Clube Militar logo após a vitória do golpe de estado, em 1º de abril de 1964. Reconstituído após a abertura política em 1983.// Com o lema "crescer 50 anos em 5", Juscelino Kubitschek foi um dos mais emblemáticos Presidentes do Brasil. Governante entre 1951​ e 1961, ele acelerou a economia brasileira aumentando as indústrias e transformando a sociedade do país em mais urbana que rural. Em sua gestão, trocou a capital do país do Rio de Janeiro para a recém construída cidade de Brasília, na região Centro-Oeste, feita no tempo recorde de 41 dias.// ',
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -1315,8 +1314,8 @@ export const FranciscoSerrador_ACoutinho: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: 'ao incentivador do cinema do Brasil',
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Francisco Serrador', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Francisco Serrador', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Homenagem',
@@ -1363,8 +1362,8 @@ export const GetulioVargas_LuizSerri: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Nessa ocasião, foi instalada no pedestal A Carta Testamento de Getúlio, como o principal documento relacionado a sua morte.// Getúlio Vargas é o presidente do Brasil com maior tempo de governo na história. Primeiro, de 1930 a 1945. Depois, foi eleito democraticamente de 1951 até seu suicídio em 1954, totalizando 18 anos no poder. Dentre os destaques do seu governo estão a consolidação de leis trabalhistas como carteira de trabalho, salário mínimo, férias remuneradas e licença maternidade.`,
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Getulio Vargas', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Getulio Vargas', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Promotor',
@@ -1372,7 +1371,7 @@ export const GetulioVargas_LuizSerri: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1954',
       '1954',
       'Inauguração',
@@ -1380,7 +1379,7 @@ export const GetulioVargas_LuizSerri: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '24/08/1962',
       '24/08/1962',
       'Reinauguração',
@@ -1388,7 +1387,7 @@ export const GetulioVargas_LuizSerri: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '08/018',
       '08/2018',
       'Furto',
@@ -1432,7 +1431,7 @@ export const PescadorNapolitano_FrancoisRude: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Escultura da figura de um menino em mármore sentado brincando com uma tartaruga. Essa peça foi apresentada em gesso no Salão de Paris em 1831 e em mármore em 1833.Está é uma cópia da escultura em mármore.É uma reprodução da existente do Museu do Louvre.',
-  Fatos: [new Fato('', '', 'Bem tombado estadual', '', [], '')],
+  Fatos: [new Fact('', '', 'Bem tombado estadual', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -1469,8 +1468,8 @@ export const FonteJovemEuropa_MathurinMoreau: Obra = {
   Descricao:
     'Fonte tipo estela, com uma escultura de estilo neoiclassico, representando de uma jovem figura feminina, a Jovem Europa, que através de uma bica que jorra a água, fundidas na França em 1885.Essa fonte forma um grupo de quatro conjuntos, expostos no centro do parque. Na sua origem eram oito conjuntos. quando o parque ocupava até a Avenida Presidente Vargas. Três desapareceram em 1945 e uma quarta no ano 2000. Essas peças foram instaladas posteriormente a inauguração, após inúmeras queixas dos frequentadores, da ausencia de água no parque.',
   Fatos: [
-    new Fato('', '', 'Bem tombado estadual', '', [], ''),
-    new Fato('', '', 'Bem tombado municipal', '', [], ''),
+    new Fact('', '', 'Bem tombado estadual', '', [], ''),
+    new Fact('', '', 'Bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
@@ -1508,9 +1507,9 @@ export const ASereia_ProvinSerres: Obra = {
   Descricao:
     'Escultura instalada no Campo de Santana foi transferida para o depósito em 2005, devido a acentuada corrosão, impedindo de sua permanecia em funcionamento com água.',
   Fatos: [
-    new Fato('', '', 'Bem tombado estadual', '', [], ''),
-    new Fato('', '', 'Bem tombado municipal', '', [], ''),
-    new Fato('', '2005', 'removida para o depósito', '', [], ''),
+    new Fact('', '', 'Bem tombado estadual', '', [], ''),
+    new Fact('', '', 'Bem tombado municipal', '', [], ''),
+    new Fact('', '2005', 'removida para o depósito', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
@@ -1551,8 +1550,8 @@ export const Primavera_GustaveFredericMichel: Obra = {
   Descricao:
     'Escultura representando uma mulher, de grande sensualidade, com movimentos leves e um discreto sorriso. cabelos livres e soltos, segurando uns arranjos de flores, típico da primavera. Apoiada em uma espécie de pedra onde na parte posterior encontramos um arranjo com três flores e respectiva ramagem, na sua mão esquerda casal de pombos enamorados e seus pés estão descalços.',
   Fatos: [
-    new Fato('', '', 'Bem tombado estadual', '', [], ''),
-    new Fato('', '', 'Bem tombado municipal', '', [], ''),
+    new Fact('', '', 'Bem tombado estadual', '', [], ''),
+    new Fact('', '', 'Bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -1593,8 +1592,8 @@ export const Outono_GustaveFredericMichel: Obra = {
   Descricao:
     'Escultura de uma mulher envolta em um pano,olhando em direção a uma cesta de vime cheia de frutas, especialmente maçã e uva, cabelos presos pelo arranjo de uma flor. A vesta esta cobrindo somente as pernas.',
   Fatos: [
-    new Fato('', '', 'Bem tombado estadual', '', [], ''),
-    new Fato('', '', 'Bem tombado municipal', '', [], ''),
+    new Fact('', '', 'Bem tombado estadual', '', [], ''),
+    new Fact('', '', 'Bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -1631,8 +1630,8 @@ export const Inverno_PaulJeanBaptisteGasg: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'Bem tombado estadual', '', [], ''),
-    new Fato('', '', 'Bem tombado municipal', '', [], ''),
+    new Fact('', '', 'Bem tombado estadual', '', [], ''),
+    new Fact('', '', 'Bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -1669,8 +1668,8 @@ export const Verao_PaulJeanBaptisteGasg: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'Bem tombado estadual', '', [], ''),
-    new Fato('', '', 'Bem tombado municipal', '', [], ''),
+    new Fact('', '', 'Bem tombado estadual', '', [], ''),
+    new Fact('', '', 'Bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -1712,9 +1711,9 @@ export const HeitorVillaLobos_BrunoGiorgi: Obra = {
   Descricao:
     'A homenagem ao maior compositor brasileiro está instalada ao lado do Theatro Municipal do Rio de Janeiro. Furtada na década de 1990, foi refundida em bronze a partir do molde original e recolocada no seu pedestal.// sua contribuição na música brasileira.// Heitor Villa-Lobos (1887-1959) foi um dos maiores maestros brasileiros de todos os tempos e se tornou o mais conhecido e significante compositor latino americano até hoje. Suas composições se tornaram únicas devido a presença da influência da tradição clássica européia e da música popular brasileira e indígena. Ele costumava dizer "Eu não uso o folclore, eu sou o folclore" para mostrar sua posição única entre outros compositores clássicos. "Trenzinho do Caipira” é uma de suas obras mais famosas mundialmente.',
   Fatos: [
-    new Fato('', '', 'Homenageado', '', [pessoas.VillaLobos], 'Rio de Janeiro'),
-    new Fato('17/11/1998', '17/11/1998', 'Réplica', '', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Homenageado', '', [persons.VillaLobos], 'Rio de Janeiro'),
+    new Fact('17/11/1998', '17/11/1998', 'Réplica', '', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Fundição/ atelier',
@@ -1722,7 +1721,7 @@ export const HeitorVillaLobos_BrunoGiorgi: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1998',
       '1998',
       'Réplica',
@@ -1767,7 +1766,7 @@ export const GeneralSantander_FranciscoVictorPalma: Obra = {
   Descricao:
     'A estátua do heroí nacional foi uma oferta do governo colombiano ao Brasil.',
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -1775,7 +1774,7 @@ export const GeneralSantander_FranciscoVictorPalma: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Homenageado', 'General Santander', [], ''),
+    new Fact('', '', 'Homenageado', 'General Santander', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -1813,7 +1812,7 @@ export const EvandroLinseSilva_AlfredoCeschiatti: Obra = {
   Descricao:
     'O busto foi uma homengamem da IBMEC ao jurista, na comemoração da adoção da Praça IV de julho e do novo espaço revitalizado.',
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenagem',
@@ -1821,7 +1820,7 @@ export const EvandroLinseSilva_AlfredoCeschiatti: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Homenageado', 'Jurista Evandro Lins e Silva', [], ''),
+    new Fact('', '', 'Homenageado', 'Jurista Evandro Lins e Silva', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -1861,7 +1860,7 @@ export const LutaDesigual_LDespresLaupedeCluny: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'grupo escultórico que representa o combate entre um homem e um felino,sobre um dos elementos criados por AugusteFrancoisMarieGlaziou, uma pedra redonda, a cerca de 2,5 m de altura. A peça é datada de 1872',
-  Fatos: [new Fato('', '', 'Bem tombado estadual', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Bem tombado estadual', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -1908,8 +1907,8 @@ export const ZumbidosPalmares_RomeuAlves: Obra = {
     Britânico, em Londres, partiu de Darcy Ribeiro, que mandou ampliar a peça original de 36
     centímetros para três metros, fundindo-a em 800 quilos de bronze.`,
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Zumbi dos Palmares', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Zumbi dos Palmares', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Idealização',
@@ -1961,7 +1960,7 @@ export const AUniao_MathurinMoreau: Obra = {
     Janeiro, foi montada uma exposição na Praça Nossa Senhora da Paz, quando foram transferida
     temporariamente. Finalmente em 2005, com o Projeto Monumenta Praça Tiradentes, a escultura
     retornou ao seu lugar de origem. Fundição Val D'Osne`,
-  Fatos: [new Fato('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -1997,7 +1996,7 @@ export const ALiberdade_MathurinMoreau: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Peça neoclássica que personifica os ideais valorizados pela filosofia Positivista de Auguste Comte. Um atraso na confecão e entrega fez com que as estatuas fossem instaladas em 1863, um ano após a inauguração da praça. Na reforma de 1949/50 as estátuas foram transferida para o Campo de São Cristóvão permanecendo até os anos de 1980, quando do início das obras da abertura da Linha Vermelha foram recolhidas no depósito da Fundação Parques e Jardins, permanecendo até 1992 quando foram novamente transferidas para o recém criado Parque Noronha Santos. No ano de 1999, para valorizar o acervo das peças das fundições francesas no Rio de Janeiro, foi montada uma exposição na Praça Nossa Senhora da Paz, quando foram transferida temporariamente. Finalmente em 2005, com o Projeto Monumenta Praça Tiradentes, a escultura retornou ao seu lugar de origem.',
-  Fatos: [new Fato('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -2033,7 +2032,7 @@ export const AJustica_MathurinMoreau: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Peça neoclássica que personifica os ideais valorizados pela filosofia Positivista de Auguste Comte. Um atraso na confeção e entrega fez com que as estatuas fossem instaladas em 1863, um ano após a inauguração da praça. Na reforma de 1949/50 as estatuas foram transferida para o Campo de São Cristóvão permanecendo até os anos de 1980, quando do inicio das obras da abertura da Linha Vermelha foram recolhidas no depósito da Fundação Parques e Jardins, permanecendo até1992 quando foram novamente transferidas para o recém criado Parque Noronha Santos. No ano de 1999, para valorizar o acervo das peças das fundições francesas no Rio de Janeiro, foi montada uma exposição na Praça Nossa Senhora da Paz, quando foram transferida temporariamente. Finalmente em 2005, com o Projeto Monumenta Praça Tiradentes, a escultura retornou ao seu lugar de origem.',
-  Fatos: [new Fato('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -2069,7 +2068,7 @@ export const AFidelidade_MathurinMoreau: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Peça neoclássica que personifica os ideais, valorizados pela filosofia Positivista, de Auguste Comte. Um atraso na confecão e entrega fez com que as estatuas fossem instaladas em 1863, um ano após a inauguração da praça. Na reforma de 1949/50 as estatuas foram transferida para o Campo de São Cristóvão, permanecendo até os anos de 1980. Quando do inicio das obras da abertura da Linha Vermelha, foram recolhidas no depósito da Fundação Parques e Jardins, permanecendo até1992, quando foram novamente transferidas para o recém criado Parque Noronha Santos. No ano de 1999, para valorizar o acervo das peças das fundições francesas no Rio de Janeiro, foi montada uma exposição na Praça Nossa Senhora da Paz, quando foram transferida temporariamente. Finalmente em 2005, com o Projeto Monumenta Praça Tiradentes, a escultura retornou ao seu lugar de origem.',
-  Fatos: [new Fato('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -2117,7 +2116,7 @@ export const JoaoCaetano_FranciscoManuelChavesPinheiro: Obra = {
     em frente ao teatro que hoje leva o seu nome, na gestão Julio Furtado da Inspetoria de Caça,
     Matas e Florestas. O homenageado esta representado comos trajes do personagem principal da
     peça "Oscar, filho de Ossion", um das suas melhores representações.`,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -2167,8 +2166,8 @@ export const DomPedroI_LouisRochet: Obra = {
     Gratidão dos Brasileiros. Nas faces laterais, as armas bragantinas vigiadas por dragões. A estátua mostra D. Pedro I montado a
     cavalo, apresentando na sua mão direito o auto de Independência do Brasil.`,
   Fatos: [
-    new Fato('', '', 'Bem tombado federal', '', [], 'Rio de Janeiro'),
-    new Fato('', '', 'Bem tombado estadual', '', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Bem tombado federal', '', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Bem tombado estadual', '', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -2206,7 +2205,7 @@ export const SolarWindsurfer_JesperNeergaard: Obra = {
   Descricao: `Peça esculpida no bloco em mármore de Carrara, cortado por linhas verticais
     profundas que se direcionam para ocentro da peça.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '03/1997',
       '03/1997',
       'fato',
@@ -2214,7 +2213,7 @@ export const SolarWindsurfer_JesperNeergaard: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '02/1999',
       '02/1999',
       'Aprovação',
@@ -2222,7 +2221,7 @@ export const SolarWindsurfer_JesperNeergaard: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Patrocínio',
@@ -2266,7 +2265,7 @@ export const SantosDumont_AmadeuZani: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `grupo escultórico de placas de granito encaixadas onde foram inseridas as esculturas. O maior destaque a figura de Santos Dumont pensativo e acima deste, a figura do Ícaro prestes a voar.
     Além desses elementos tem-se peças de avião e figuras humanas caídas.`,
-  Fatos: [new Fato('', '', 'Homenageado', 'Santos Dumont', [], '')],
+  Fatos: [new Fact('', '', 'Homenageado', 'Santos Dumont', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -2310,7 +2309,7 @@ export const MulhercomAnfora_HumbertoCozzo: Obra = {
     para o depósito da Fundação Parques e Jardins, e posteriormente transferida para a parca Pio XI 
     Chamada pelo artista de "Oferenda" está<no centro do lago, que tem a forma de rosa, com um jato
     de água saindo a ânfora. Desativado desde maio de 2017.`,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -2349,8 +2348,8 @@ export const MahatmaGandhi_SankhoChaudhuri: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('02/1965', '02/1965', 'Inauguração', '', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('02/1965', '02/1965', 'Inauguração', '', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Presente',
@@ -2358,7 +2357,7 @@ export const MahatmaGandhi_SankhoChaudhuri: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Homenageado', 'Mahatma Gandhi', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Homenageado', 'Mahatma Gandhi', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -2400,8 +2399,8 @@ export const Girardet_JoseOtavioCorreaLima: Obra = {
     da Escola Nacional de Balas Artes e de gravura na Casa da Moeda, no momento da comemoração do
     99º aniversario. O busto foi furtado em agosto de 2016.`,
   Fatos: [
-    new Fato('12/1945', '12/1945', 'Inauguração', '', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('12/1945', '12/1945', 'Inauguração', '', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Homenageado',
@@ -2409,7 +2408,7 @@ export const Girardet_JoseOtavioCorreaLima: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('08/2016', '08/2016', 'Furto', '', [], 'Rio de Janeiro'),
+    new Fact('08/2016', '08/2016', 'Furto', '', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -2447,7 +2446,7 @@ export const CatullodaPaixaoCearense_HonorioPecanha: Obra = {
   Descricao:
     'Subscrição pública. A obra apresenta somente a sua fisionomia do homenageado sobre um pedestal de granito aparelhado, com uma pequena dedicatória esculpida na pedra.',
   Fatos: [
-    new Fato(
+    new Fact(
       '01/1940',
       '01/1940',
       'Inauguração',
@@ -2455,8 +2454,8 @@ export const CatullodaPaixaoCearense_HonorioPecanha: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Homenageado', 'Catulo', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Catulo', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Subscrição pública',
@@ -2501,8 +2500,8 @@ export const AdolfoBergamini_HildegardoLeaoVelloso: Obra = {
   Descricao:
     'Apesar do prédio ter sido demolido nos anos 70, a homenagem permaneceu na mesma posição.',
   Fatos: [
-    new Fato('10/1946', '10/1946', 'Inauguração', '', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('10/1946', '10/1946', 'Inauguração', '', [], 'Rio de Janeiro'),
+    new Fact(
       '10/1946',
       '10/1946',
       "Promotor'",
@@ -2510,7 +2509,7 @@ export const AdolfoBergamini_HildegardoLeaoVelloso: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '10/1946',
       '10/1946',
       'Homenageado',
@@ -2518,7 +2517,7 @@ export const AdolfoBergamini_HildegardoLeaoVelloso: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '10/1946',
       '10/1946',
       'Doação',
@@ -2577,7 +2576,7 @@ export const ChafarizdoMonroe_MathurinMoreau: Obra = {
     movimento sustentado nos braços uma grande bacia superior. Cada peca tem cerca de 2,5 metros de
     altura e têm ao seu redor figuras de anjos. Entre cada figura existe uma pequena bacia
     semicircular de onde escorre a água de pequenos bicos. Esta desativado no ano desde 2005.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -2616,7 +2615,7 @@ export const AshbelGreenSimentoneHelen_JoasPereiraDosPassos: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: 'Estátua do casal Ashbel e Helen. ',
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -2624,7 +2623,7 @@ export const AshbelGreenSimentoneHelen_JoasPereiraDosPassos: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '2011',
       '2011',
       'Transferencia',
@@ -2632,7 +2631,7 @@ export const AshbelGreenSimentoneHelen_JoasPereiraDosPassos: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -2640,7 +2639,7 @@ export const AshbelGreenSimentoneHelen_JoasPereiraDosPassos: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenagem',
@@ -2689,7 +2688,7 @@ export const AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso: Obra = {
     Foi transferido 1998 onde recebeu um novo pedestal econstruídoum painel no seu entorno,
     atribuido a J.Segura.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1954',
       '1954',
       'Inauguração',
@@ -2697,7 +2696,7 @@ export const AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1998',
       '1998',
       'transferência',
@@ -2705,7 +2704,7 @@ export const AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1998',
       '1998',
       'Reinauguração',
@@ -2750,8 +2749,8 @@ export const BaraodeMaua_RodolfoBernardelli: Obra = {
   Descricao:
     'O Monumento a Mauá teve origem no Clube de Engenharia, para ocinqüentenário das estradas de ferro, que apresentou um parecer naquele sentido, merecendo aprovação.A pedra fundamental do monumento foi lançada no dia 30 de abril de 1904. Composto por uma coluna dórica talhada em granito Irajá, assente em uma base de cantaria em no seu topo está a estátua de bronze em tamanho natural, de Visconde de Mauá.  A estátua apresenta na mão um chapéu alto e a bengala. Na base dois baixo; relevos em bronze, simbolizando, uma indústria e representando o outro a Baronesa, a primeira locomotiva no Brasil.',
   Fatos: [
-    new Fato('10/1946', '10/1946', 'Inauguração', '', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('10/1946', '10/1946', 'Inauguração', '', [], 'Rio de Janeiro'),
+    new Fact(
       '10/1946',
       '10/1946',
       "Promotor'",
@@ -2759,7 +2758,7 @@ export const BaraodeMaua_RodolfoBernardelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '10/1946',
       '10/1946',
       'Homenageado',
@@ -2767,7 +2766,7 @@ export const BaraodeMaua_RodolfoBernardelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '10/1946',
       '10/1946',
       'Doação',
@@ -2810,7 +2809,7 @@ export const PauloDeOliveiraSampaio_Desconhecida: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -2847,8 +2846,8 @@ export const AtilioCorreaLima_CPincy: Obra = {
   Descricao:
     'Esse monumento homenageia ao arquiteto e urbanista Atílio Correia Lima que projetou a Estação de Hidroavião',
   Fatos: [
-    new Fato('01/1994', '01/1994', 'Inauguração', '', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('01/1994', '01/1994', 'Inauguração', '', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Homenageado',
@@ -2901,7 +2900,7 @@ export const AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna: Obra = {
     Centro Carioca, promoveu sua inauguração proxima a Igreja de Santa Luiza. Em4 de julho de 1942
     o monumento foi reinaugurado sobre outro pedestal de granito, elaborado pelo escultor Bernevenuto
     Berna, na Praça IV de Julho, em frente ao Consulado dos Estados Unidos.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -2940,8 +2939,8 @@ export const TeresaCristinaBragancadeBourbon_JoseLuizRibeiro: Obra = {
   Status: 'Furtada',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Imperatriz Teresa Cristina', [], ''),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Imperatriz Teresa Cristina', [], ''),
+    new Fact(
       '',
       '',
       'Homenagem',
@@ -2949,8 +2948,8 @@ export const TeresaCristinaBragancadeBourbon_JoseLuizRibeiro: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Apoio', 'Consulado da Itália', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Apoio', 'Consulado da Itália', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -2999,7 +2998,7 @@ export const AmoraLira_EugeneLouisLequesne: Obra = {
     Guanabara onde permanece até hoje. O conjunto tem a escultura de uma criança com a asa, como um
     anjo dedilhando uma lira, sobreum pedestal quadrado de onde verte água de cada lado sobre uma
     pequena bacia também de ferro. Esta desativado desde o ano de 2010.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -3049,7 +3048,7 @@ export const DuquedeCaxias_RodolfoBernardelli: Obra = {
     a palavra Pantheon. Por esta entrada tem-se acesso à cripta. em forma circular, tem logo
     à entrada, lateralmente, dois painéis, uma homenagem ao Exército e outro a Marinha sendo
     toda revestida de mármore em tons de rosa claro e verde.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -3087,8 +3086,8 @@ export const BaraodoRioBranco_HildegardoLeaoVelloso: Obra = {
     em bronze, dois altos-relevos representando os dois maiores trabalhos de Rio Branco: a conquista pacífica das Missões e do Amapá. Na parte posterior o escultor Leão Veloso fez
     a representação dos rios Amazonas e Uruguai.`,
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Barão do Rio Branco', [], ''),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Barão do Rio Branco', [], ''),
+    new Fact(
       '',
       '',
       'Projeto',
@@ -3096,7 +3095,7 @@ export const BaraodoRioBranco_HildegardoLeaoVelloso: Obra = {
       [],
       '',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Reformulação da obra',
@@ -3104,7 +3103,7 @@ export const BaraodoRioBranco_HildegardoLeaoVelloso: Obra = {
       [],
       '',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Comissão de reformulação da obra',
@@ -3112,7 +3111,7 @@ export const BaraodoRioBranco_HildegardoLeaoVelloso: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Subscrição Pública',
@@ -3120,7 +3119,7 @@ export const BaraodoRioBranco_HildegardoLeaoVelloso: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Execução',
@@ -3128,7 +3127,7 @@ export const BaraodoRioBranco_HildegardoLeaoVelloso: Obra = {
       [],
       '',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Cópia',
@@ -3178,8 +3177,8 @@ export const EvaristodeMoraes_LaurindoRamos: Obra = {
   Descricao:
     'Como houve saldo o Dr. Mello Vianna e Salles Malheiros resolveram fundir outro busto.',
   Fatos: [
-    new Fato('07/1942', '07/1942', 'Inauguração', '', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('07/1942', '07/1942', 'Inauguração', '', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Homenageado',
@@ -3187,7 +3186,7 @@ export const EvaristodeMoraes_LaurindoRamos: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Promotor',
@@ -3195,7 +3194,7 @@ export const EvaristodeMoraes_LaurindoRamos: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Patrocínio',
@@ -3203,7 +3202,7 @@ export const EvaristodeMoraes_LaurindoRamos: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Cópia',
@@ -3211,7 +3210,7 @@ export const EvaristodeMoraes_LaurindoRamos: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Patrocínio',
@@ -3257,8 +3256,8 @@ export const MarechalDeodorodaFonseca_ModestinoKanto: Obra = {
     Nas laterais diversos vultos da época da Proclamação Câmara e Floriano Peixoto. Na frente do embasamento, destaca-se a imagem da República, simbolizada por uma mulher. Em outra face aparece a figura de
     D. Rosa Paulina da Fonseca, mãe de Deodoro.`,
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Marechal Deodoro da Fonseca', [], ''),
-    new Fato('', '', 'bem tombado estadual', '', [], ''),
+    new Fact('', '', 'Homenageado', 'Marechal Deodoro da Fonseca', [], ''),
+    new Fact('', '', 'bem tombado estadual', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -3296,8 +3295,8 @@ export const AnaNeri_LuizFerrer: Obra = {
   Descricao:
     'O monumento foi erguido depois de numa resolução formada na Terceira Conferência Interamericana, realizada no Rio de Janeiro em 1935, onde contribuíram as Sociedades Nacionais da Cruz Vermelha dos seguintes países: Argentina, Bolívia, Brasil, Canadá, Chile Colômbia, Costa Rica, Cuba, Equador, Estados Unidos, Guatemala, Haiti, Honduras, México, Nicarágua, Paraná, República Dominicana, São Salvador, Uruguai e Venezuela.',
   Fatos: [
-    new Fato('10/1946', '10/1946', 'Inauguração', '', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('10/1946', '10/1946', 'Inauguração', '', [], 'Rio de Janeiro'),
+    new Fact(
       '10/1946',
       '10/1946',
       "Promotor'",
@@ -3305,7 +3304,7 @@ export const AnaNeri_LuizFerrer: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '10/1946',
       '10/1946',
       'Homenageado',
@@ -3313,7 +3312,7 @@ export const AnaNeri_LuizFerrer: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '10/1946',
       '10/1946',
       'Doação',
@@ -3358,9 +3357,9 @@ export const OlavoBilac_HumbertoCozzo: Obra = {
   Descricao:
     'Imponente busto em bronze sobre pedestal de granito, homenageando o poeta e jornalista carioca, o nome mais popular e admirado da poesia parnasiana no Brasil. //O destaque no monumento é painel em alto relevo de bronze onde esta representado seu poema épico "O caçador de esmeraldas". Foi promovido pela Academia de Letras para a recuperação do poeta instalado no Passeio Público para criar naquele espaço "O Pantheon dos Poetas e dos Artistas". O busto foi entregue pelo escultor dentro do prazo previsto.// Olavo Bilac (1865 - 1918) foi um célebre escritor e jornalista brasileiro. Poeta parnasiano, fundou a Academia Brasileira de Letras ao lado de Machado de Assis e outros grandes pensadores de seu tempo. Republicano e nacionalista muito ativo politicamente, Bilac fez campanhas cívicas a favor da alfabetização e foi autor do “Hino à Bandeira”, em 1889.',
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Olavo Bilac', [], 'Rio de Janeiro'),
-    new Fato('', '', 'Promotor', 'Academia de Letras', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Olavo Bilac', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Promotor', 'Academia de Letras', [], 'Rio de Janeiro'),
+    new Fact(
       '02/07/1935',
       '02/07/1935',
       'Contrato Execução',
@@ -3404,7 +3403,7 @@ export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `O busto em homenagem a Bernardelli foi realizado por seu discípulo Correa Lima, que gravou no próprio bronze a sua intenção: Ao Prof. Rodolfo Bernardelli.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenageado',
@@ -3449,9 +3448,9 @@ export const PedroAmerico_PauloMazzucchelli: Obra = {
   Descricao:
     'O monumento homenagea o artista entre os icones brasileiros. Foi uma iniciativa da Sociedade Brasileira de Belas Artes.',
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], 'Rio de Janeiro'),
-    new Fato('', '', 'Homenageado', 'Pedro Américo', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'bem tombado federal', '', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Homenageado', 'Pedro Américo', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Promotor',
@@ -3495,7 +3494,7 @@ export const AlbertoNepomuceno_RodolfoBernardelli: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'O monumento ao "Pai do Nacionalismo da musica erudita" foi realizado por seu amigo Rodolfo Bernardelli. Em 1885, Nepomuceno mudou-se para o Rio de Janeiro e foi morar na residencia dos Bernardelli, onde firmou amizade, o que pemitiu que tivesse continuidade seus estudos musicas. O monumento foi uma iniciativa do Diretorio Academico do Instituto Nacional de Musica. A inauguração foi realizada pela maestrina Joanidia Sodre. Estivram presentes o maestro Francisco Braga, professores do Instituto Nacional de Msica, os membros da diretoria, promotores da homenagem.',
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -3546,7 +3545,7 @@ export const APaz_SironFranco: Obra = {
     Peru; Polônia; Portugal; Quênia; Romênia; San Marino; São Vicente; e As Granadenas; SenegalSerra Leoa; Seychelles; Síria;
     Slovênia; Suazilândia; Suécia; Suriname; Tchecoslováquia, Tanzânia; Trinidad e Tobago; Turisia; Turquia; Tuvalu; Uguada;
     Ukrania; Vanatu; Zaire; Zâmbia; Zimbábue.`,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -3622,7 +3621,7 @@ export const MarcilioDias_LuisPaesLeme: Obra = {
   Descricao:
     'O busto esta sob a guarda do Arsenal devido a obra da praça Barão de Ladário.',
   Fatos: [
-    new Fato(
+    new Fact(
       '2011',
       '2011',
       'Transferencia',
@@ -3630,7 +3629,7 @@ export const MarcilioDias_LuisPaesLeme: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -3638,7 +3637,7 @@ export const MarcilioDias_LuisPaesLeme: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenagem',
@@ -3685,7 +3684,7 @@ export const BaraodeLadario_Joceil: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Efigie do homenageado foi realizada pela Marinha de Guerra para o reconhecimento público. O busto esta sob a guarda do Arsenal devido a obra da praça Barão de Ladário, até 20 de março de 2017 quando foi reinaugurada a praça.',
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -3721,7 +3720,7 @@ export const CristianoOttoni_RodolfoBernardelli: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'O monumento foi erguido em praça pública em frente a antiga estaçãoferroviária. Quando dasreformas na áreaa estátua foi transferida para a fachada do prédio da Central do Brasil. O homenageado esta de pé tendo uma das mãos sobre o peito. Originalmente o pedestal tinha cinco (5) metros de altura, e em cada lado do pedestal simbolizam chaminés de locomotivas e semi-círculos imitando rodas. Erguido por subscrição popular promovida pela Comissão do Jubileuda Estrada de Ferro Central do Brasil',
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -3757,7 +3756,7 @@ export const SaturninoSoaresMeirelles_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Este busto foi erguido por iniciativa do Instituto Hahnemanniano do Brasil e doado á Cidade.',
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -3794,8 +3793,8 @@ export const ChiquinhaGonzaga_HonorioPecanha: Obra = {
   Descricao:
     'A peça apresenta a homenageada elegante com vestimenta de época.// Busto em bronze foi uma iniciativa da Sociedade Cultural Chiquinha Gonzaga. A maestrina e compositora foi a primeira mulher brasileira a assinar partituras chegando a realizar dezenas de peças teatrais e mais de 2 mil composições musicais.// Compositora e maestrina carioca, Chiquinha Gonzaga (1847-1935) destaca-se na história e cultura brasileira pela coragem com que enfrentou a sociedade patriarcal criando uma profissão inédita para a mulher. Primeira pianista de choro, gênero popular da música brasileira, ela também é autora da primeira marcha carnavalesca com letra ("Ó Abre Alas”, 1899) e também a primeira mulher a reger uma orquestra no Brasil.',
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Chiquinha Gonzaga', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Chiquinha Gonzaga', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Promotor',
@@ -3839,8 +3838,8 @@ export const IrineuMarinho_BenevenutoBerna: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem a Irineu Marinho esta na entrada do parque, voltado para o Lapa. É composto pelo busto do homenageado e por uma engrenagem tipica de um jornal, identificando sua história.`,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato(
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact(
       '',
       '',
       'Inauguração',
@@ -3848,8 +3847,8 @@ export const IrineuMarinho_BenevenutoBerna: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Homenageado', 'Irineu Marinho', [], 'Rio de Janeiro'),
-    new Fato('', '', 'Promotor', 'Centro Carioca', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Homenageado', 'Irineu Marinho', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Promotor', 'Centro Carioca', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -3887,8 +3886,8 @@ export const PlacidoDeCastro_ArmandoSocratesSchnoor: Obra = {
   Descricao:
     'Este busto foi erguido por iniciativa do Instituto Hahnemanniano do Brasil e doado á Cidade.',
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato(
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact(
       '',
       '',
       'Homenageado',
@@ -3932,7 +3931,7 @@ export const FontedoTritao_NicolinaVazDeAssisPintodoCouto: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A escultura do tritão é uma reprodução da obra de Nicolina Vaz de Assis, que realizou
     a escultura original. A figura de um tritão segurando um cantil de onde escorre a água.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -3971,9 +3970,9 @@ export const JosePauloSilva_CarlosDelNegro: Obra = {
   Status: 'Furtada',
   Descricao: `Por sua vida dedicada a música ele se encontra voltado para a Escola Nacional de Música. Peça foi furtada em outubro de 2017.`,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'Homenageado', 'Paulo Silva', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'Homenageado', 'Paulo Silva', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Promotor',
@@ -3981,7 +3980,7 @@ export const JosePauloSilva_CarlosDelNegro: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Inauguração',
@@ -4025,7 +4024,7 @@ export const AlmiranteJuliodeNoronha_ABraga: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem ao Almirante e o reconhecimento e por sua participação no Conselho Naval. O monumento foi inaugurado com a presença do Prefeito Julio Coutinho e de Israel Klabin, que ali compareceu como um "homem do mar" não como uma autoridade.`,
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Julio de Noronha', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Homenageado', 'Julio de Noronha', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -4065,9 +4064,9 @@ export const RaymundoCorrea_HonorioPecanha: Obra = {
   Status: 'Furtada',
   Descricao: `O monumento o imortaliza pelos carater popular de seus sonetos.`,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'Homenageado', 'Raymundo Corrêa', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'Homenageado', 'Raymundo Corrêa', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Promotor',
@@ -4114,7 +4113,7 @@ export const FranciscoBraga_PauloMazzucchelli: Obra = {
     prefeito João Vital e do escritor Alvaro Moreyra, em nome dos amigos do homenageado.
     Em 9 de dezembro de 1952, a peça foi furtada e mais tarde reposta no Passeio Paublico, voltado
     para a Escola Nacional de Música, na Rua do Passeio. A peça foi furtada em abril de 2016.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -4150,9 +4149,9 @@ export const VictorMeirelles_EduardoDeSa: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `no dia que comemorava o 69º aniversario da instituição, por ter sido o pintor catarinense um benemerito da instituição.`,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'Homenageado', 'Victor Meirelles', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'Homenageado', 'Victor Meirelles', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Doação',
@@ -4201,7 +4200,7 @@ export const MestreValentim_RomeuAlves: Obra = {
     2004 e refeita pelo artista Romeu Alves. A idéia de se fazer o Mestre Valentim, surgiu em 1899
     quando Araújo Vianna, professor de Historia da Arquitetura da Escola de Belas Artes, escreveu
     um artigo no jornal  A Noticia, ressaltando a necessidade de se homenagear  o artista.// Mestre Valentim foi um dos principais artistas do Brasil Colonial. Considerado um artista completo por suas produções escultóricas, arquitetônicas e urbanísticas, sua expressão foi grandiosa nos estilos Barroco, Rococó e Clássico. Influenciado pela missão francesa, medida que trouxe artistas e urbanistas apoiados pelo rei D. João VI para produzir arte no Rio de Janeiro, ele criou, projetou e executou importantes espaços sociais urbanos, como o Chafariz da Pirâmide, localizado na Praça XV, e o Passeio Público, primeiro jardim aberto à população da cidade.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -4237,8 +4236,8 @@ export const CastroAlves_EduardoDeSa: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Busto em bronze de poeta brasileiro conhecido por combater a escravidão (1847-1871)// O monumento se destaca com a peça de meio corpo com um instrumento musical nas mãos. O pedestal com representação marajoara, com pedras de diferentes tonalidades, forma uma composição original.// Nascido no interior da Bahia, Castro Alves (1847-1871) foi um dos mais icônicos poetas do Romantismo Brasileiro no século 19. Inspirado pela temática social, como o combate à escravidão e opressão, ficou conhecido como "Poeta dos Escravos". Seu trabalho mais marcante é "Navio Negreiro", um poema épico-dramático que denuncia a escravidão dos negros africanos e seu transporte até chegar ao Brasil.`,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'Homenageado', 'Castro Alves', [], 'Rio de Janeiro'),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'Homenageado', 'Castro Alves', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -4275,8 +4274,8 @@ export const FerreiraDeAraujo_RodolfoBernardelli: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Na inauguração estava localizado a esquerda do portão central.`,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato(
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact(
       '08/1912',
       '08/1912',
       'Inauguração',
@@ -4284,8 +4283,8 @@ export const FerreiraDeAraujo_RodolfoBernardelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Homenageado', 'Ferreira de Araújo', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Ferreira de Araújo', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Promotor',
@@ -4333,9 +4332,9 @@ export const GoncalvesDias_RodolfoBernardelli: Obra = {
     cabelos encaracolados, bigodes e barba sem vestimenta. O pedestal de granito tem linhas
     retas, deixando a busto expressivo destacam-se no espaço.// Antonio Gonçalves Dias foi advogado, jornalista e poeta brasileiro, no século 19. Como um dos grandes nomes do Romantismo Brasileiro da primeira geração, seu trabalho mais memorável é "Canção do Exílio", poema em que mostra a aversão aos valores portugueses e exalta os valores naturais do Brasil, devido ao rompimento recente de Portugal e sua colônia.`,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'Homenageado', 'Gonçalvez Dias', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'Homenageado', 'Gonçalvez Dias', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Promotor',
@@ -4382,8 +4381,8 @@ export const Primavera_MathurinMoreau: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Estátua neoclássica da figura de uma mulher, segurando uma guirlanda de flores, trajando uma veste vaporosa. Foirealizada nas Fundições de Val dOsne, França.`,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -4424,8 +4423,8 @@ export const Inverno_GustaveFredericMichel: Obra = {
     O pedestal também em ferro fundido assemelha-se a todos o do conjunto. Peça circular decorada com ramalhete de flores com trigo e mascara.
     A estátua do Inverno do Passeio possuía originalmente uma lamparina. No Passeio Publico nos anos de 1990 existiam tres figuras que representavam as estações do ano ( Verão, Outono e Inverno). O conjunto somente ficou completo com a instalação dessa escultura no ano de 2000.`,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -4465,8 +4464,8 @@ export const Outono_MathurinMoreau: Obra = {
   Status: 'Removida do espaço público',
   Descricao: `Estátua neoclássica da figura de homem com um grande cacho de uva, sobre um pedestal também em ferro fundido. A peça foi transferida para o depósito em janeiro de 2016, devido ao dano no pedestal. `,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -4506,8 +4505,8 @@ export const Verao_GustaveFredericMichel: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Estátua neoclássica da figura de homem segurando uma foice e um machado, sobre um pedestal em ferro fundido.<Provavelmente trazida para o Rio de Janeiro na reforma realizada pelo paisagista AugusteFrancoisMarieGlaziou por determinação de D.Pedro II.`,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'Homenageado', 'Castro Alves', [], 'Rio de Janeiro'),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'Homenageado', 'Castro Alves', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -4545,7 +4544,7 @@ export const NelsonMege_HonorioPecanha: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Busto em bronze erigido por iniciativa dos moradores da Ilha do Governador.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -4586,7 +4585,7 @@ export const OMascate_HonorioPecanha: Obra = {
     Conservação e Serviços Públicos, entrega recuperado nesta sexta-feira, dia 18 de maio, a escultura em bronze “O Mascate”, instalada
     entre as ruas Buenos Aires e Regente Feijó, na Saara, Centro do Rio.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1991',
       '1991',
       'Doação',
@@ -4594,7 +4593,7 @@ export const OMascate_HonorioPecanha: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenagem',
@@ -4602,7 +4601,7 @@ export const OMascate_HonorioPecanha: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1964',
       '1964',
       'Original',
@@ -4610,7 +4609,7 @@ export const OMascate_HonorioPecanha: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -4618,7 +4617,7 @@ export const OMascate_HonorioPecanha: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Manutenção',
@@ -4664,7 +4663,7 @@ export const LuisdeCamoes_AntonioTaunay: Obra = {
     executado pelo escultor francês Antonio Taunay. Homenagemcom a figura clássica de Camões com o rosto de lado com coroa de
     louros e vestimenta da época. A peça esta sobre um pequeno pedestal de granito polido, de lado para Real Gabinete de Leitura
     com o olhar dirigido para aquela instituição.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -4701,7 +4700,7 @@ export const RetanguloVazado_FranzWeissmann: Obra = {
   Descricao: `Peça geométrica com espaço vazado como um elemento definidor. O plano, as articulações e o elemento vazado, cria
     a tridimensionalidade aberta, caracteristica do artista.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1994',
       '1997',
       'Política Pública',
@@ -4709,7 +4708,7 @@ export const RetanguloVazado_FranzWeissmann: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1994',
       '1997',
       'Promotor',
@@ -4717,7 +4716,7 @@ export const RetanguloVazado_FranzWeissmann: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '27/09/1996',
       '27/09/1996',
       'Inauguração',
@@ -4760,7 +4759,7 @@ export const SiqueiraCampos_Desconhecida: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -4795,7 +4794,7 @@ export const AlegoriadaMusica_RodolfoBernardelli: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -4830,7 +4829,7 @@ export const RuiBarbosa_DeoclecianoMartinsDeOliveiraFilho: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento é uma propriedade do Tribunal de Justiça do Rio de Janeiro e ocupa um espaço público, por cessão, para o reconhecimento a um dos principais jurista brasileiro.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -4865,7 +4864,7 @@ export const ElevandoSe_JoseResende: Obra = {
   MaterialBase: undefined,
   Status: 'Em cessão de uso em espaço público',
   Descricao: `Peça com cortes retos em dobras.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -4900,7 +4899,7 @@ export const VenusReclinada_JoseResende: Obra = {
   MaterialBase: undefined,
   Status: 'Em cessão de uso em espaço público',
   Descricao: `Peça em aço expressando um corpo. É uma peça privada em cessão de uso em área pública. A obra, segundo o artista ganhou o apelido de Negona. A obra nunca foi pichada e é preservada por todos os guardadores de carro que atuan na região. Ela não é pública, o proprietário é PAulo Fernandes`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -4935,7 +4934,7 @@ export const FranciscoMignone_BrunoGiorgi: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -4972,8 +4971,8 @@ export const Encontro_FranzWeissmann: Obra = {
   Descricao: `Peça em aço corten pintada, se referindo ao encontro de duas tiras, ou duas partes de um cubo. Escultura do Conjunto
     Cândido Mendes, e exposta em área publica desde 1985.`,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'Homenageado', 'Castro Alves', [], 'Rio de Janeiro'),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'Homenageado', 'Castro Alves', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -5009,7 +5008,7 @@ export const DSebastiaoLeme_HeitorUsai: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -5044,7 +5043,7 @@ export const MonumentoaJuventude_BrunoGiorgi: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Escultura de um casal de jovens caminhando. Foi executada especialmente para os jardins do antigo edifício do Ministério da Educação e Saúde, atual Palácio Capanema, obra prima da arquitetura modernista no Brasil. Esse monumento é um Patrimônio da União. Obra teria 7 metros de altura`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -5079,7 +5078,7 @@ export const AssisChateaubriand_BrunoGiorgi: Obra = {
   MaterialBase: undefined,
   Status: 'Removida do espaço público',
   Descricao: `A homenagem partiu do Jornal do Comércio, que solicitou Autores:ização a Prefeitura para instalar o monuemtno. Originariamente instalado na Rua da Candelária foi transferido para o depósito em2013.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -5115,7 +5114,7 @@ export const Terra_FranzWeissmann: Obra = {
   Status: 'Em cessão de uso em espaço público',
   Descricao: `Escultura do Conjunto Cândido Mendes`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1958',
       '1958',
       'Produção',
@@ -5159,7 +5158,7 @@ export const ModestinoKanto_HonorioPecanha: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenageado',
@@ -5167,7 +5166,7 @@ export const ModestinoKanto_HonorioPecanha: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenagem',
@@ -5175,7 +5174,7 @@ export const ModestinoKanto_HonorioPecanha: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Comissão Patrocinadora',
@@ -5222,8 +5221,8 @@ export const JoaoCandido_ValterBrito: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `e somente em 2008 foi instalado definitivamente na Praça XV, local que marca a Revolta das Chibatas.`,
   Fatos: [
-    new Fato('', '', 'Homenageado', 'João Candido, o Almirante Negro', [], ''),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'João Candido, o Almirante Negro', [], ''),
+    new Fact(
       '',
       '',
       'Doação',
@@ -5231,7 +5230,7 @@ export const JoaoCandido_ValterBrito: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '2008',
       '2008',
       'transferência',
@@ -5275,8 +5274,8 @@ export const DomJoaoVI_BarataFeijo: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Estátua equestre tendo a figura de D. João VI montado, tendo a mão direita o globo terrestre, símbolo do poder. A estátua esta sobre um pedestal de concreto.`,
   Fatos: [
-    new Fato('', '', 'Homenageado', 'João VI', [], ''),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'João VI', [], ''),
+    new Fact(
       '',
       '',
       'Homenagem',
@@ -5284,8 +5283,8 @@ export const DomJoaoVI_BarataFeijo: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Doação', 'Governo Português', [], 'Rio de Janeiro'),
-    new Fato('', '', 'Execução', 'Barata Feio', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Doação', 'Governo Português', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Execução', 'Barata Feio', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -5323,10 +5322,10 @@ export const GeneralOsorio_RodolfoBernardelli: Obra = {
   Descricao: `Foi construido como o mousoleu do General. É composto de um grande pedestal revestido de granito de Baveno, onde estão fixados dois baixos-relevos e a estátua de Osorio montado a cavalo,
     com espada em punho. Foi Erguido como um tributo ao seu excelente desempenho como um militar na "guerra da Tríplice Aliança" que se desenvolveu entre 1864 e 1870.`,
   Fatos: [
-    new Fato('', '', 'Homenageado', 'General Osório', [], ''),
-    new Fato('', '', 'Subscrição popular', '', [], 'Rio de Janeiro'),
-    new Fato('2014', '2014', 'Vandalismo', '', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'General Osório', [], ''),
+    new Fact('', '', 'Subscrição popular', '', [], 'Rio de Janeiro'),
+    new Fact('2014', '2014', 'Vandalismo', '', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Depósito',
@@ -5380,7 +5379,7 @@ export const PequenoJornaleiro_AnisioOscarMotta: Obra = {
     Magno, lidera uma campanha para que a escultura do artista Fritz (1895-1969) volte ao seu lugar
     de origem, na calçada da Av. Rio Branco esquina com a Rua do Ouvidor.Ontem, Eduardo Paes, que
     tem consciência da importância do monumento, foi lacônico: Depois da obra voltamos com ela.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -5422,7 +5421,7 @@ export const JoaoCalvino_JoasPereiraDosPassos: Obra = {
     substituindo o nome anterior Espaço Guinard. A alteração foi decorrente da parceria público-privada entre a prefeitura da
     cidade e a Igreja Presbiteriana do Rio de Janeiro, que idealizou o novo espaço público.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -5466,7 +5465,7 @@ export const ReverendoMathathiasGomes_JoasPereiraDosPassos: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Esse monumento foi uma solicitação do Reverendo Guilhermino da Igreja Presbiteriana a Prefeitura da cidade.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -5511,7 +5510,7 @@ export const SemTitulo_IvensMachado: Obra = {
   Descricao: `Escultura em concreto armado em forma retrocida . O conjunto e pintado na cor concreto com um circulo no seu
     centro pintado de vermelho. Foi transferida em 2013 para o parque devido as obras urbanas que atingiram a Rua Uruguaiana.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1994',
       '1997',
       'Política Pública',
@@ -5519,7 +5518,7 @@ export const SemTitulo_IvensMachado: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1994',
       '1997',
       'Promotor',
@@ -5527,7 +5526,7 @@ export const SemTitulo_IvensMachado: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '01/1997',
       '01/1997',
       'Inauguração',
@@ -5570,7 +5569,7 @@ export const PrincesaIsabel_Desconhecida: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -5609,7 +5608,7 @@ export const SemTitulo_AmilcarDeCastro: Obra = {
     no aço é planejada com sensibilidade cativante. Apesar de ser realizada em materiais e técnicas industriais, seu trabalho é puro gesto.
     O trabalho também dialoga com o tempo ao incorpoarar a oxidação do material à condiçao natural do trabalho.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1953',
       '1953',
       'Projeto',
@@ -5617,7 +5616,7 @@ export const SemTitulo_AmilcarDeCastro: Obra = {
       [],
       'São Paulo',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Características obra',
@@ -5625,7 +5624,7 @@ export const SemTitulo_AmilcarDeCastro: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1994',
       '1997',
       'Política Pública',
@@ -5633,7 +5632,7 @@ export const SemTitulo_AmilcarDeCastro: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1994',
       '1997',
       'Promotor',
@@ -5641,12 +5640,12 @@ export const SemTitulo_AmilcarDeCastro: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '10/06/1996',
       '10/06/1996',
       'Inauguração',
       'Segunda peça do E.U. a ser inaugurada. Amilcar de Casto esteve presente na inauguração ao lado da Secretária Municipal de Cultura',
-      [pessoas.HelenaMariaPortoSeveroDaCosta],
+      [persons.HelenaMariaPortoSeveroDaCosta],
       'Rio de Janeiro',
     ),
   ],
@@ -5688,7 +5687,7 @@ export const Pixinguinha_OttoDumovich: Obra = {
     a obra de Dumovich. A estatua de tamanho natural representa Pixinguinha tocando saxofone, de gravata borboleta, chapéu de palha
     e sapato bicolor. No pedestal está fixado uma placa em bronze composto com os Oito Batutas, grupo que acompanhava Pixinguinha`,
   Fatos: [
-    new Fato(
+    new Fact(
       '23/04/1996',
       '23/04/1996',
       'Inauguração',
@@ -5696,7 +5695,7 @@ export const Pixinguinha_OttoDumovich: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -5740,7 +5739,7 @@ export const Braguinha_OttoDumovich: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Foi doado à cidade pela empresa Unisys Brasil, para homenagear o ídolo do carnaval carioca e morador do bairro de Copacabana.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -5784,7 +5783,7 @@ export const SergioCardoso_Marlota: Obra = {
   Status: 'Furtada',
   Descricao: `Pequena homenagem doado à cidade do Rio de Janeiro. Na placa que identifica o monumento tem a seguinte frase: Tudo começou aqui em Santa Tereza".
     A efigie em bronze do artista foi furtada em 30 de maio de 2017`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -5819,7 +5818,7 @@ export const CarlosGomes_UgoTaddey: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `É uma homenagem idealizada por Pedro Bruno ao grande maestro brasileiro. O monumento foi uma iniciativa do Prof. Manoel Antonio Lima de magalhães inaugurado na Festa dos Passaros e Arvores.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -5854,7 +5853,7 @@ export const AndreThevet_CyniraNDantas: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `O monumento é a referência ao descobridor da Ilha de Paquetá.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -5890,7 +5889,7 @@ export const BebedouroDosPassarosI_PedroBruno: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `grupo escultórico formado por um par de  peixes estilizados em concreto pintado de verde, com uma ânfora ao centro.
     Desativado em data desconhecida.`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -5926,7 +5925,7 @@ export const BebedouroDosPassarosII_PedroBruno: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `grupo escultórico formado por um par de peixes estilizados em concreto pintado de verde, com uma ânfora ao centro.
     Desativado em data desconhecida.`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -5962,7 +5961,7 @@ export const BebedouroDosPassarosIII_PedroBruno: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `grupo escultórico formado por um par de peixes estilizados em concreto pintado de verde, com uma ânfora ao centro.
     Desativado em data desconhecida.`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -5997,7 +5996,7 @@ export const PedroBruno_PauloMazzucchelli: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Esse monumento foi inaugurado pelo seu próprio Pintor Pedro Bruno, responsável pelo seu projeto e estruturação artística da Ilha de Paquetá, como homenagem dos moradores.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6032,7 +6031,7 @@ export const GetulioVargas_Desconhecida: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6067,7 +6066,7 @@ export const Golfinho_AugustoSilva: Obra = {
   MaterialBase: 'pedra',
   Status: 'Permanece em espaço público',
   Descricao: `Escultura de golfinho, apoiado sobre blocos de pedra voltado para o mar.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -6108,7 +6107,7 @@ export const Modulo65_AscanioMMM: Obra = {
     encerramento do encontro da Câmara Interamericana de Arbitragem Comercial e da Associação Ibero-Americana de Câmaras de Comércio
     do Rio de Janeiro. Por haver no local originalmente escolhido uma estátua do Papa João Paulo lI,`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -6152,7 +6151,7 @@ export const UlyssesGuimaraes_SironFranco: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Para sua confecção, Siron Franco utilizou destroços do helicóptero que caiu no mar de Angra dos Reis, matando Ulysses e sua mulher, dona Mora, o ex-senador Severo Gomes e sua mulher, Henriquetta, e o piloto Jorge Comeratto. Também integram a escultura uma garrafa de poire, bebida à base de pera preferida pelo ex-deputado, um exemplar da Bíblia e fotos e poemas de Ulysses. A inauguração será feita pelo prefeito César Maia e contará com a presença de Tito Henrique, enteado de Ulysses e filho de dona Mora.',
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6197,7 +6196,7 @@ export const ChafarizdasTresGracas_RemoBernucci: Obra = {
    tem 3 metros de altura. Foi inaugurado na Glória em 1964 e transferido para a frente do
    CASS (Centro Administrativo São sebastião) em 2002, devido aos constantes danos para o furto do
    bronze das esculturas. Esta desativado desde maio de 2017.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -6236,7 +6235,7 @@ export const Chafariz_AugusteMartin: Obra = {
     e uma de Netuno sustentam uma bacia menor, da qual se eleva a figura de um menino sentado um
     golfinho estilizado. Existe um similar no deposito do Parque Noronha Santos que foi retirado
     do Campo de São Cristovão. O Chafariz esta desativado desde maio de 2017.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -6275,8 +6274,8 @@ export const Indio_JulesJeanJulesSalmson: Obra = {
     2001. Escultura representando um índio. Situava-se em outro local do parque, sendo transferida
     para o sítio atual quando da construção do portão.`,
   Fatos: [
-    new Fato('', '', 'Fundição/Atelier', "Val d'Osne", [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Fundição/Atelier', "Val d'Osne", [], 'Rio de Janeiro'),
+    new Fact(
       '05/10/2000',
       '',
       'Tombamento',
@@ -6322,7 +6321,7 @@ export const Leao_HippolyteFrancoisAugusteHippolytePeyrol: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Escultura representando um felino em posição de ataque, como um guardião do Chafariz.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -6358,8 +6357,8 @@ export const India_JulesJeanJulesSalmson: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'Fundição/Atelier', "Val d'Osne", [], 'Rio de Janeiro'),
-    new Fato('', '', '', '', [], ''),
+    new Fact('', '', 'Fundição/Atelier', "Val d'Osne", [], 'Rio de Janeiro'),
+    new Fact('', '', '', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -6410,7 +6409,7 @@ export const CristoRedentor_PaulLandowski: Obra = {
     do pedestal, pesando toneladas. Durante a cerimônia de inauguração, os holofotes que iluminavam
     a estátua foram acionados, de Roma, por Guglielmo Marconi. Em 2007, em votação internacional, o
     Cristo Redentor foi eleito uma das novas Sete Maravilhas do Mundo.`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6447,7 +6446,7 @@ export const Escravo_MarliMazeredo: Obra = {
   Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do
     ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e o IBAMA desde 22 de março de 2001.
     A escultura, homenageia os escravos que trabalharam na Floresta da Tijuca.`,
-  Fatos: [new Fato('', '', "Fundação Val D'Osne", '', [], '')],
+  Fatos: [new Fact('', '', "Fundação Val D'Osne", '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -6484,8 +6483,8 @@ export const FonteWallaceI_CharlesAugusteLebourg: Obra = {
   Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
     Fonte introduzida no parque, provavelmente, pelo paisagista Auguste AugusteFrancoisMarieGlaziou, durante a gestão do Barão d&rsquo;Escragnolle. Suas cariátides, sustentando a cúpula, representam a Bondade, a Caridade, a Sobriedade e a Simplicidade.`,
   Fatos: [
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
-    new Fato('', '', "Fundação Val D'Osne", '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', "Fundação Val D'Osne", '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
@@ -6521,7 +6520,7 @@ export const AlmiranteCochrane_Lana: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Homenagem em um bloco monolitico de granito de grande dimensão com a efigie do Almirante.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6557,7 +6556,7 @@ export const ACleydePradoMaia_EdgarDuvivier: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Uma pomba inspirada na "Pomba da Paz" de Picasso, é a homenagem Cleyde Prado Maia.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -6601,7 +6600,7 @@ export const PaulaFreitas_BenevenutoBerna: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem está fixada num bloco de granito em formato de livro, com a figura circundado por uma coroa de louros.
     Em 1935, por iniciativa de um grupo de ex-discípulos e Autores:idades públicas da cidade, foi erguida nos jardins do colégio o monumento a sua memória. Em 3 de outubro de 1946, foi solenemente reinaugurado na praça.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6636,7 +6635,7 @@ export const AfraniodeMeloFranco_BrunoGiorgi: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6671,7 +6670,7 @@ export const FranciscoPaulaMayrink_PinedoParis: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento é uma reverência cívica promovida pelo Instituto Histórico e Geográfico da Cidade ao seu conselheiro. Esta nesta praça porque ele morava ali proximo.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6706,7 +6705,7 @@ export const Fidelidade_BenevenutoBerna: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Escultura, representando dois cães em tamanho natural, erigida por iniciativa do vereador Frederico Trotta.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -6741,7 +6740,7 @@ export const XavierdeBrito_ElzaCansancaoMedeiros: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem com o busto, foi uma iniciativa dos Cadetes daEscola Militar de Realengo, em comemoração dos 50 anos da Revolta de 05 de julho de 1922, Revolta dos Tenentes, ao comandante da Escola Militar de Realengo, que liberou insurreição dos cadetes e vários oficiais em solidariedade às tropas amotinadas.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6776,7 +6775,7 @@ export const LamartineBabo_Desconhecida: Obra = {
   MaterialBase: 'mármore',
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem a Lamartine Babo foi erigido por iniciativa de seus amigos do América Futebol Clube.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6814,7 +6813,7 @@ export const LuisGastaoDEscragnolleDoria_CurzioZani: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6849,7 +6848,7 @@ export const OswaldoDinizMagalhaes_MateusFernandes: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Estátua em bronze de um atleta com um bastão na mão, simbolizando o rádio-ginasta, com o seu principal instrumento de ginastica. No pedestal aparece a efígie do rosto do professor. O monumento foi inaugurado na presença do homenageado que o inaugurou.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6889,7 +6888,7 @@ export const BarletJames_RuffoFanucchi: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi retirado para as obras do Metrô em 1976 e guardado no depósito da Fundação Parques e Jardins. Somente foi recolocado em 1996 em um novo pedestal.
     O monumento ao deputado foi uma iniciativa do Movimento Libertador da Terra Carioca. que patrocinou a obra.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6927,7 +6926,7 @@ export const ThomasDelfinoDosSantos_RuffoFanucchi: Obra = {
     foi da União Autonomista Carioca do Movimento Libertador da Terra Carioca.
 A homenagem foi retirada da praça Saens Pena para as obras do Metrô em 1976, guardado no depósito da Fundação Parques e Jardins
 e recolocado em 1996.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -6964,7 +6963,7 @@ export const DomPedroI_Desconhecida: Obra = {
   Descricao: `A homenagem foi instalada nesse local em função da implantação do quartel da Guarda Municipal da cidade, que tem
     D. Pedro I como seu patrono. O modelo dessa peça em gesso é uma obra de Marc Ferrez do Museu personalidades Nacional de 1826.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -7007,7 +7006,7 @@ export const SaoCristovao_Desconhecida: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Tradicional imagem de São Cristóvão, carregando o Menino Jesus, em bronze, doada à cidade pelos jornaisO DiaeA notícia, e pelo então Deputado Chagas Freitas, em homenagem à classe dos motoristas. A peça foi furtada e refeita pela Fundição Zani e reinaugurada em 16 de junho de 2002.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7042,7 +7041,7 @@ export const JoseBonifacio_MarcosAndreSales: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem ao Patriarca da Independência, tutor do Imperador do Brasil, D. Pedro, que nasceu no Palácio da Quinta da Boa Vista. A obra foi paga pelo Ministério da Viação e executada na Italia. Veio para o Brasil, partindo de Genova, em setembro de 1910.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7077,7 +7076,7 @@ export const NiloPecanha_NicolinaVazDeAssisPintodoCouto: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Homenagem ao Presidente da República, que reformulou o parque, mantendo o projeto do paisagista AugusteFrancoisMarieGlaziou que o realizou no periodo imperial. A obra foi paga pelo Ministério da Viação.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7113,7 +7112,7 @@ export const SerpentedoLago_NicolinaVazDeAssisPintodoCouto: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura em bronze de uma serpente sobre uma pedra, de onde jorrava água por sua boca, para movimentação da agua do lago criado.A obra foi paga pelo Ministério da Viação.
     Desativado em data desconhecida.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -7148,7 +7147,7 @@ export const CantodasSereias_NicolinaVazDeAssisPintodoCouto: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Grupo escultórico executada em um único bloco de pedra, que representa um grupo de sereias, com um homem atraído pelo seu canto das sereias.A obra foi paga pelo Ministério da Viação e executada na Italia. Veio para o Brasil, partindo de Genova, em setembro de 1910.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -7184,7 +7183,7 @@ export const LuizGonzaga_JoasPereiraDosPassos: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A estátua representa o Rei do Baião em seus típicos trajes nordestinos, sobre um mapa do Brasil.// A frente da clássica Feira de Tradições Nordestinas, no pavilhão do bairro de São Cristóvão, está a estátua de Luiz Gonzaga, o Rei do Baião. Com seu figurino de shows inspirado nos vaqueiros nordestinos e sua sanfona, ele se encontra sobre o mapa do Brasil.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -7228,7 +7227,7 @@ export const PedroI_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Foi erigido em comemoração aos 150 anos da Independência do Brasil, marcando o local de onde D. Pedro I se encaminhava para a Fazenda Imperial de Santa Cruz, Foi uma iniciativa do Rotary Ckub e na inauguração esteve presente o Secretario de Obras, Emilio Ibrahim, representando o governador Chagas Freitas.
     O modelo dessa peça em gesso é uma obra de Marc Ferrez do Museu personalidades Nacional de 1826.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7264,7 +7263,7 @@ export const Cartola_OttoDumovich: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem foi instalada em frente ao Centro Cultural Cartola, na Mangueira e doada à Cidade do Rio de Janeiro pela empresa Unysse// `,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -7307,7 +7306,7 @@ export const RenatoRusso_Ique: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Definidos por muitos como a voz da geração dos anos 1980, Renato Russo é o nome artístico de Renato Manfredini Júnior, cantor e compositor brasileiro, fundador da Legião Urbana, uma das maiores bandas de rock brasileiro. Ele morreu em 1996 em decorrência de complicações da AIDS. O monumento em bronze assinado pelo cartunista Ique reproduz o tamanho natural do cantor e foi inaugurado em 2012 na Ilha do Governador, onde Renato viveu com sua família durante a infância.`,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7343,7 +7342,7 @@ export const EscravaAnastacia_JaimeSampaio: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi erguido representando o sacrifício de mulher escrava. Uma comissão solicitou a Prefeitura o espaço
     que custeou e obra e doou a Cidade do Rio de Janeiro.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7378,7 +7377,7 @@ export const FonteMedusa_Desconhecida: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Fonte tipo estela com a figura de uma Medusa. Essa fonte foi instalada por D.Pedro II com o objetivo de abastecer a população que foi residir nas proximidades da Quinta da Boa vista, e até hoje exerce esta função.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -7413,7 +7412,7 @@ export const HelenoDaCostaBrandao_HonorioPecanha: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Monumento erguido pelos moradores do bairro em homenagem ao médico.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7449,7 +7448,7 @@ export const AosHahnemannianos_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi erguido pelo Dr. David Castro numa iniciativa do Instituto Hahnemanniano do Brasil, em homenagem aos pioneiros.
     Apoiada em uma base única ergue-se 5 pedestais. Em cada uma esta fixada a efigie do médico. Abaixo de cada placa tem-se a data do nascimento e falecimento de cada homenageado.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7485,7 +7484,7 @@ export const NoelRosa_AlfredoHerculanoFreixo: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Foi inaugurado na Praça Tobias Barreto e transferido em 1946 para a atual localização.
     Coluna de granito tendo na parte superior uma efígie de Noel Rosa, e na parte inferior um ramo de louros e um violão.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7522,9 +7521,9 @@ export const NoelRosa_JoasPereiraDosPassos: Obra = {
   Descricao: `Grupo escultórico em bronze, representando Noel Rosa sentado numa mesa de bar,
     sendo atendido pelo garçom. O grupo escultórico fica no centro, emoldurado por quatro portas
     estilizadas em granito e ferro. Executado pelo projeto Rio-Cidade no Largo do Maracanã,
-    trata-se do primeiro monumento interativo da cidade.// Um dos maiores compositores de samba no Brasil, Noel Rosa foi fundamental para a legitimação do samba, estilo de música da periferia, entre a classe média. Conhecido como “Poeta da Vila”, o monumento em sua homenagem encontra-se no bairro de Vila Isabel. Instalado em 1996 e com autoria de Joás Pereira Passos, esse foi o primeiro monumento interativo do Rio ao permitir que as pessoas sentassem a mesa com Noel. (Foto: Alexandre Macieira.)`,
+    trata-se do primeiro monumento interativo da cidade.// Um dos maiores compositores de samba no Brasil, Noel Rosa foi fundamental para a legitimação do samba, estilo de música da periferia, entre a classe média. Conhecido como “Poeta da Vila”, o monumento em sua homenagem encontra-se no bairro de Vila Isabel. Instalado em 1996 e com autoria de Joás Pereira Passos, esse foi o primeiro monumento interativo do Rio ao permitir que as persons sentassem a mesa com Noel. (Foto: Alexandre Macieira.)`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -7568,7 +7567,7 @@ export const NoelRosa_GilbertoMandarino: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Pequeno busto próximo aos bares frequentados pelo compositor.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -7611,7 +7610,7 @@ export const PedroErnesto_BenevenutoBerna: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem em bronze foi umainiciativa da Sociedade Beneficente dos Engenheiros Municipais.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7655,7 +7654,7 @@ export const AJuventudeACulturaEAoEsporte_HaroldoBarroso: Obra = {
     Foi desmontado em dezembro de 2010 para as obras de remanejamento do rio Joana, sendo transferido
     para o deposito, no parque Noronha Santos, onde permanece até a presente data. É a unica obra
     publica na cidade do Rio de Janeiro.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -7690,7 +7689,7 @@ export const AosCampeoesdoMundoBellini_MateusFernandes: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento é uma homenagem aos jogadores que se consagraram campeães do mundo, com destaque a estátua de um jogador conhecido como o Bellini. No pedestal tem as placas com o nome dos jogadores que participaram de várias Copa do Mundo, quando o Brasil foi o campeão. O monumento foi uma iniciativa do Rio da Voz e Jornal dos Esportes.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7725,7 +7724,7 @@ export const EdsonPassos_HildegardoLeaoVelloso: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi uma iniciativa dos amigos e do Clube de Engenharia, e esta situado no acesso a Avenida Edson Passos, aberta pelo engenheiro. Foi inuauguurado pelo prefeito Alim Pedro.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7761,7 +7760,7 @@ export const IrmaoGoncalvesXavier_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem ao Irmão foi erigido por iniciativa da Diretoria do Colégio e pela Associação dos Antigos Alunos
     Maristas do Rio de Janeiro.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7798,7 +7797,7 @@ export const SaoMaron_RomeuAlves: Obra = {
   Descricao: `O monumento foi oferecido ao povo carioca pela comunidade maronita, por iniciativa da Paróquia de Nossa Senhora
     do Líbano.Foi executado na Fundição Zani.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -7844,7 +7843,7 @@ export const SaoCharbel_RomeuAlves: Obra = {
     fundida pela Fundição Zani. A homenagem foi inaugurada pelo cardeal Eugenio Sales, por ter sido canonizado pelo Papa Paulo
     VI em 9 de outubro de 1977.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -7888,7 +7887,7 @@ export const AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto: Obra =
     MaterialBase: 'Granito',
     Status: 'Permanece em espaço público',
     Descricao: `Busto em homenagem ao paisagista criador do parque.A peça é esculpida em um bloco maciço de mármore.A obra foi paga pelo Ministério da Viação e executada na Italia. Veio para o Brasil, partindo de Genova, em setembro de 1910.`,
-    Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+    Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
@@ -7929,7 +7928,7 @@ export const DomPedroII_JeanMagrou_HeitorDaSilvaCosta: Obra = {
     projetor da ciência, artes e letras, de acortdo com o projeto de Coube a iniciativa do Instituto
     Histórico e Geográfico Brasileiro de homenagear o Imperador e foi financiado por subscrição
     pública.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -7972,7 +7971,7 @@ export const ImperatrizLeopoldina_EdgarDuvivierFilho: Obra = {
     de reverenciar vultos expressivos da trajetória do pais, no ano de comemoração dos 200 anos do nascimento da primeira
     imperatriz, esposa do príncipe D. Pedro.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -8015,7 +8014,7 @@ export const FranciscoDeMeloPalheta_Desconhecida: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8060,7 +8059,7 @@ export const Brasil_DanielBellionGomesPinto: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -8068,7 +8067,7 @@ export const Brasil_DanielBellionGomesPinto: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -8076,8 +8075,8 @@ export const Brasil_DanielBellionGomesPinto: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Vencedora',
@@ -8124,7 +8123,7 @@ export const AgripinoGrieco_DanielCrow_CurzioZani: Obra = {
     ilustre do bairro, da Rua Aristides Caire. Na inauguração esteve presente, na comemoração dos
     seus 80 anos de vida. A inauguração foi organizada pela Administração Regional.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -8167,7 +8166,7 @@ export const AlegoriaAoComercio_Desconhecida: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8202,7 +8201,7 @@ export const AristidesCaire_TitoBernucci: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8240,7 +8239,7 @@ export const BaraodoRioBranco_JoaoTurin: Obra = {
   MaterialBase: 'Granito',
   Status: 'Furtada',
   Descricao: `Busto acadêmico do homenageado. O monumento foi inaugurao 14 anos após a sua morte reverenciando o chanceler. Esse busto foi apresentado por Turin no Salon des Artites François em 1913.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8277,7 +8276,7 @@ export const NiltonSantos_EdgarDuvivierFilho: Obra = {
   Descricao: `Homenagem numa de suas posturas típicas. Doação à cidade pelo Clube de Regatas Botafogo em frente ao seu estadio
     do Engenhão.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -8320,7 +8319,7 @@ export const OrlandoSilva_MiguelPastor: Obra = {
   MaterialBase: 'Concreto',
   Status: 'Permanece em espaço público',
   Descricao: `Homenagem executada em vida por iniciativa da Prefeitura Municipal.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8355,7 +8354,7 @@ export const ChafarizDaExposicaoNacional1908_Desconhecida: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', 'Cia Nacional de Fundição', '', [], '')],
+  Fatos: [new Fact('', '', 'Cia Nacional de Fundição', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -8390,7 +8389,7 @@ export const MarechalMascarenhasdeMoraes_IrmaosBernardini: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem ao Patriarca da Independência, tutor do Imperador do Brasil, D. Pedro, que nasceu no Palácio da Quinta da Boa Vista. A obra foi paga pelo Ministério da Viação e executada na Italia. Veio para o Brasil, partindo de Genova, em setembro de 1910.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8425,7 +8424,7 @@ export const PaulHarris_Desconhecida: Obra = {
   MaterialBase: 'Concreto',
   Status: 'Permanece em espaço público',
   Descricao: `Em 19 de julho de 1961, o Governador carlos Lacerda, decretou como logradouro a Praça Paul Harris em Bonsucesso. Em 1963 inaugurou o ajardinamento da praça, que teve a iniciativa do rotariano o Professor Augusto Medeiros da Motta.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8469,7 +8468,7 @@ export const CarlosAlbertodaCruzWenceslau_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const MaedAgua_NewtonSa: Obra = {
@@ -8503,7 +8502,7 @@ export const MaedAgua_NewtonSa: Obra = {
     A obra ficou exposta na camara e foi adquirida pelo Sr. Governador Carlos Lacerda, e doado para
     o Estado e posteriormente transferida para o Municipio. Foi comprada em 16/06/1964 do irmão do
     artista Edson Sá . Esta desativado desde maio de 2017.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -8541,7 +8540,7 @@ export const ExudosVentos_MarioCravoNeto: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -8576,7 +8575,7 @@ export const AlexanderFleming_LeonardoLima: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8620,7 +8619,7 @@ export const LimaBarreto_FranciscoAndrade: Obra = {
     Ajuda. Possibilidade que foi rapidamente descartada: o escritor não era religioso. Ironicamente,
     talvez de fronte dos botequins . Enfim, optou-se pelo mar. pois a escolha agradaria em cheio a
     Lima Barreto, pois numa de suas frases afirma: Pouco olho o céu, quase nunca lua, mas sempre o marco.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8655,7 +8654,7 @@ export const CarmenMiranda_MateusFernandes: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi inaugurado no Largo da Carioca, e em 1979 na localização atual. O monumento foi obtido atraves de subscrição, promovido pela Revista do Radio atraves do diretor Sr. Anselmo Domingos. Foi uma iniciativa da Revista e da Loja Reida Voz. Na inauguração estiveram presentes varios artistas como Orlando Silva, Silvio Caldas, João Dias e Celiz Zenatti.// Estrela no cinema americano, a atriz e cantora Carmen Miranda se tornou a terceira personalidade mais popular nos EUA abrindo portas para a entrada da música brasileira no mundo. Entre 1930 e 1950 ela emplacou hits como a “Ta-hí (Pra Você Gostar de Mim)” e estrelou filmes como “Banana da Terra” (1939), em que aparece pela primeira vez caracterizada como a personagem que a lançou ao mundo enquanto interpreta a música “O que é que a baiana tem?”, de Dorival Caymmi. O busto em bronze da Pequena Notável foi instalado em 1960 no Largo da Carioca, mas desde 1970 se encontra na Ilha do Governador. `,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8690,7 +8689,7 @@ export const CastroAlves_ModestinoKanto: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Homenagem de seus admiradores.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8729,7 +8728,7 @@ export const Leao_Desconhecida: Obra = {
     observando a paisagem. Foi inaugurado o primeiro Leão de argamassa, instalado pelo Lions Ilha.
     Douze horas depois da inauguração seis homens depredaram a peça que foi refeita e reinstalada
     até julho de 2013.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -8765,8 +8764,8 @@ export const IndiaI_JulesJeanJulesSalmson: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura representando uma índia com um peixe em uma das nmãos sobre pedestal de mesmo material.`,
   Fatos: [
-    new Fato('', '', 'Fundição/Atelier', "Val d'Osne", [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Fundição/Atelier', "Val d'Osne", [], 'Rio de Janeiro'),
+    new Fact(
       '2000',
       '2000',
       'Tombamento',
@@ -8810,7 +8809,7 @@ export const Mae_RuiLeal: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura em argamassa de argila em tamanho natural sentada em um pequeno banco de madeira, com uma criança em seu colo.
     A homenageada conforme descrito no Diario de Noticias, é a Mãe Senhora da Bahia. A insuguração foi muito concorrida com a programação a cargo de D. Elza Osborne. Compareceram varias Autores:idades cinclusive os embaixadores da Nigeria e do senegal e o compositor Caymmi.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -8847,7 +8846,7 @@ export const PedroFernandes_EdgarDuvivierFilho: Obra = {
   Descricao: `A homenagem foi uma iniciativa de sua filha Rosa Fernandes, ao patriarca da família e o reconhecimento moradores
     do bairro.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -8890,7 +8889,7 @@ export const SaoCristovao_SergioBertoni: Obra = {
   MaterialBase: 'Concreto',
   Status: 'Permanece em espaço público',
   Descricao: `A estátua em bronze do Santo está inserido em um construção formando uma capela que possui 20 metros de altura e com laminas de 4 lâminas de concreto. A homenagem foi realizada pela Mercedes Benz do Brasil<, ao protetor dos motoristas.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8925,7 +8924,7 @@ export const VicenteDeCarvalho_RuffoFanucchi: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem foi uma iniciativa do vereador Milton de Castro Menezes com apoio do Instituto Histórico e Geográfico da Cidade.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -8961,7 +8960,7 @@ export const FonteWallaceII_CharlesAugusteLebourg: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Fonte criada a pedido do filantropo inglês Richard Wallace.Trata-se de uma fonte em ferro fundido ornada por quatro cariatides que representam a bondade, a simplicidade, a caridade e a sobriedade e sustentam uma cúpula ornamentada com escamas de dragão, terminando numa ponteira. A água que sai do interior da cúpula e cai numa pequena bacia colocada aos pés das cariatides.
     Desativado desde de maio de 2017.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -8996,7 +8995,7 @@ export const Bastoes_CeleidaTostes: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -9035,7 +9034,7 @@ export const Roda_CeleidaTostes: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Trata-se de peça redonda com furo ao centro.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1965',
       '1965',
       'Tombamento',
@@ -9082,7 +9081,7 @@ export const Mo_CeleidaTostes: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Trata-se de peça formada por uma pequena roda com um cone ao centro.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1965',
       '1965',
       'Tombamento',
@@ -9126,7 +9125,7 @@ export const Contemplacao_JesperNeewgaard: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Peça abstrata. È a primeira obra do artista na America do Sul.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -9134,7 +9133,7 @@ export const Contemplacao_JesperNeewgaard: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1965',
       '1965',
       'Tombamento',
@@ -9177,7 +9176,7 @@ export const Indio_CharlesAugusteLebourg: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -9216,7 +9215,7 @@ export const SantosDumont_Desconhecida: Obra = {
     levou o nome do Brasil. Esse monumento foi custeado pela entidade. A figura de Santos Dumont
     nessa homenagem esta sem o tradicional chapéu.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -9259,7 +9258,7 @@ export const BaraodeItamarati_PauloMazzucchelli: Obra = {
   MaterialBase: 'Concreto',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi inicialmente inaugurado em 1938 na praça Rocha Leão. Foi removida para o depósito em 05 de novembro de 1969 ficando guardado ate 1998, quando numa reforrma da praça foi instalado.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -9294,7 +9293,7 @@ export const LineudePaulaMachado_HildegardoLeaoVelloso: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Estátua em bronze do tamanho natural com o homenageado trajando um terno em elegante postura. Éuma homenagem aoBenemérito promovida peloJockey Club Brasileiro. O monumento foi inaugurado durante um parea a ele dedicado.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -9329,7 +9328,7 @@ export const Arvore_HelioPelegrino: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -9370,7 +9369,7 @@ export const ProtecaooCaoeaCrianca_HippolyteFrancoisAugusteHippolytePeyrol: Obra
     Escultura em mármore, representando um Cão em posição de vigia, próximo a uma figura de uma
     criança dormindo sobre um cesto. A escultura esta sobre um pedestal de granito, onde esta
     gravada o nome Proteção`,
-    Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+    Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
     Temporalidade: 'Permanente',
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
@@ -9405,7 +9404,7 @@ export const SemTitulo_MariaLuciaPivetti: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -9440,7 +9439,7 @@ export const QuadradoemTorcaonoEspaco_FranzWeissmann: Obra = {
   MaterialBase: undefined,
   Status: 'Em cessão de uso em espaço público',
   Descricao: `Escultura abstrata em cessão de uso em área pública da Prefeitura.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -9478,7 +9477,7 @@ export const AlbertoIReidaBelgica_LaurindoRamos: Obra = {
     dos moradores de Copacabana, que encantava com a simplicidade com que se direigia ao mar para o
     banho matinal O discurso de inauguração coube ao Dr. Luiz Carpenter que inauteceu sua presença
     no bairro. O busto apresenta o rei com seu trage de gala.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -9515,7 +9514,7 @@ export const Mercurio_Desconhecida: Obra = {
   Descricao: `Escultura em estilo neoclássico, representando o deus com o caduceu na mão direita,
     do mesmo conjunto das Atenas que exitem no Bosque da Freguesia, na Praça dos Estudantes e no
     Jardim do Méier.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -9555,7 +9554,7 @@ export const ClementinoFraga_GiulioStarace: Obra = {
     rua. Em março de 2012 foi novamente tranferido para o depósito devido a uma  obra urbana. Em
     15 de setembro de 2012 foi reinaugurado na Praça Santos Dumont atendendo uma solicitação da
     familia.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -9591,8 +9590,8 @@ export const MulherComCornucopia_PierreLoison: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
@@ -9629,9 +9628,9 @@ export const FonteWallaceIII_CharlesAugusteLebourg: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', "Fundação Val D'Osne", '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', "Fundação Val D'Osne", '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
@@ -9667,7 +9666,7 @@ export const TomJobim_ChristinaMotta: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: '',
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Memorial',
@@ -9703,7 +9702,7 @@ export const IsmaelSilva_OttoDumovich: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Monumento em bronze solicitado pela Escola de Samba Estácio de Sá à Prefeitura do Rio para homenagear o sambista Ismael Silva, fundador do bloco que se tornou o precursor da primeira escola de samba que se tem notícia, a Deixa Falar.',
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Memorial',
@@ -9738,7 +9737,7 @@ export const PioCorreia_AlicePittaluga: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -9773,7 +9772,7 @@ export const CamposPorto_PauloMazzuchelli: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -9808,7 +9807,7 @@ export const XochipilliDeusdasFlores_Desconhecida: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', 'doação do governo do méxico', '', [], '')],
+  Fatos: [new Fact('', '', 'doação do governo do méxico', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -9843,7 +9842,7 @@ export const Ceres_Merzio: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -9878,7 +9877,7 @@ export const Diana_Merzio: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', 'bem tomado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tomado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -9913,7 +9912,7 @@ export const ChafarizDasMusas_HerbertWHogg: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Fundição inglesa`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -9948,7 +9947,7 @@ export const FreiLeandroDoSacramento_RibeiroDaCosta: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -9983,7 +9982,7 @@ export const DomJoaoVI_RodolfoBernardelli: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -10018,7 +10017,7 @@ export const JoaoBarbosaRodrigues_AntonioPintodeMattos: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -10053,7 +10052,7 @@ export const VonMartius_AntonioPintodeMattos: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -10094,8 +10093,8 @@ export const AFonteDeusaThetis_LouisSauvageau: Obra = {
     aquáticas e adornada por um colar de conchas e deixa escorrer lentamente o conteúdo da bilha
     que graciosamente segura. Desativado desde o ano de 2001. Fundição Val d'Osne`,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
@@ -10131,7 +10130,7 @@ export const Eco_MestreValentim: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi inaugurado no Largo da Carioca, e em 1979 na localização atual. O monumento foi obtido atraves de subscrição, promovido pela Revista do Radio atraves do diretor Sr. Anselmo Domingos. Foi uma iniciativa da Revista e da Loja Reida Voz. Na inauguração estiveram presentes varios artistas como Orlando Silva, Silvio Caldas, João Dias e Celiz Zenatti.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Decorativa',
@@ -10170,7 +10169,7 @@ export const OCorneteiro_Ique: Obra = {
     era recuar, o corneteiro avançou e com o som da sua corneta fez as tropas portuguesas recuarem com medo de uma nova investida
     dos inimigos.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -10214,7 +10213,7 @@ export const LouisPasteur_HeitorDaSilvaCosta: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Homenagem realizada pelo engenheiro arquiteto Heitor da Silva Costa, com a colaboração do Professor Gronchi. Foi inaugurado em 1925 no começo da averinda de mesmo nome e transferida para essa praça ao lado da antiga Escola de Medicina em agosto de 1947. Foi realizado poriniciativa da Sociedade de Medicina e Cirurgia. Na inauguração estavam presentes o Ministro das Relações Exteriores e o Emabixador da Franaça.
     A herma de Pasteur, o representa pensativoem busca da solução do problema da raiva, no simbolismo de um cão, que emerge da base do pedestal.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -10249,7 +10248,7 @@ export const Tartaruga_JoseResende: Obra = {
   MaterialBase: undefined,
   Status: 'Em cessão de uso em espaço público',
   Descricao: `Escultura de chapas de aço corten sobrepostas.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -10285,7 +10284,7 @@ export const MarioPedrosa_RomeuAlves: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Monumento homenagea o pensador e critico de arte.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -10293,7 +10292,7 @@ export const MarioPedrosa_RomeuAlves: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '2000',
       '2000',
       'Tombamento',
@@ -10339,7 +10338,7 @@ export const AMeninadosBaloesEncantados_SandraGuinle: Obra = {
     "Crianças em Paz" . Escultura figurativa de uma criança segurando balões de gás. O braço com o
     balões da escultura foram furtados em março de 2018.`,
   Fatos: [
-    new Fato('', '2018', 'Furto', 'Braços e balões', [], 'Rio de Janeiro'),
+    new Fact('', '2018', 'Furto', 'Braços e balões', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -10375,7 +10374,7 @@ export const Interacao_MarliMazeredo: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -10410,7 +10409,7 @@ export const Primavera_LuciaGuerreiro: Obra = {
   MaterialBase: 'Concreto',
   Status: 'Permanece em espaço público',
   Descricao: `Escultura representando a brincadeira de roda entre duas crianças,doação do escritor Paulo Coelho à cidade.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -10446,7 +10445,7 @@ export const PinheiroMachado_HildegardoLeaoVelloso: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Monumento erquido por uma iniciativa da Camara dos Deputados, Deputado Francisco Valladares.
     O monumento art-decor, tem a figura de Pinehiro Machado em tamanho natural, sobre uma tribuna tendo nas laterais do pedestal as figuras feminicas representando a Gloria e a Apoteose.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -10482,7 +10481,7 @@ export const MulhereoFelino_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura feminina apoiada em um cântaro sobre um fenino deitado ao chão.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '2011',
       '2011',
       'Tombamento',
@@ -10527,7 +10526,7 @@ export const AlmiranteSaldanhadaGama_AntonioCaringi: Obra = {
   Descricao: `Composto por pedestal de granito, com escadarias, de frente para o mar, há um golfinho e a proa de um navio na parte de trás. Possui um obelisco, tendo ao lado direito um baixo-relevo em bronze figurando o navio Riachuelo, e em cima uma figura de mulher que representa a sabedoria. Do lado esquerdo outro baixo relevo o navio Paraíba e em cima outra figura feminina simboliza a Força.
     Na parte traseira do obelisco, foi esculpida uma frase de Rui Barbosa, uma roda de leme e o nome de Riachuelo. Entre o obelisco e a proa do navio, situa-se a estatua de Saldanha da Gama, em uniforme de gala, apoiando suas mãos na espada, em cima no obelisco o seu brazao.
     Omonumento foi erguido por ocasião do encerramento das solenidades comemorativas dos 127 anos da Batalha do Riachuelo, pelo Ministério da Marinha. Foi inaugurado por dois guardas marinhas. Na base tem inscito as seguintes palavras de Rui Barbosa:" Heoir ddos herois, o organizador possivel da nossa Marinha, homem mais completa e o carater mais extraordinario que ja conheci".`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -10562,7 +10561,7 @@ export const MarechalEuricoGasparDutra_DSantosLeal: Obra = {
   MaterialBase: 'Granito',
   Status: 'Removida do espaço público',
   Descricao: `Inicialmente foi instalado na Rua Dr.Garnier em frente ao Regimento Mallet. A homenagem em busto de bronze ao ex-presidente partiu de antigos vizinhos seus da Rua Redentor. Foi inaugurado em 1972 no Jardim de Alá e transferido para o depósito devido as obras do Metrô em 2013.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -10605,7 +10604,7 @@ export const ChafarizdasSaracuras_MestreValentim: Obra = {
     arcebispo D Joaquim Arcoverde. Foi inaugurado em 13 de maio de 1912, na presença do general
     Bento Ribeiro, prefeito da Cidade, do Sr. Jeronino Coelho, diretor de Obras e de Julio Furtado,
     diretor de Matas e Jardins.mEsta desativado desde maio de 2017.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -10643,7 +10642,7 @@ export const GeneralOsorio_Desconhecida: Obra = {
     Brasileiro, pelos generais da reserva do exército. Trata-se de uma réplica de um modelo do
     Arsenal de Guerra.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -10651,7 +10650,7 @@ export const GeneralOsorio_Desconhecida: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1200',
       '1200',
       'Tombamento',
@@ -10694,7 +10693,7 @@ export const CardealJoaquimArcoverde_Desconhecida: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -10732,7 +10731,7 @@ export const Jaguar_JoaoTurin: Obra = {
     do Rio de Janeiro. Ambas foram colocadas, em espaços públicos da cidade. Instalado
     primeiramente na Praça General Osório foi transferido para a Praça Nossa Senhora da Paz em
     1987, quando da realização das obras do Metrô. Retornando ao local de origem em 1994.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -10770,7 +10769,7 @@ export const Acoplamento_MarioCravo: Obra = {
     Escultura de grande dimensão, composta por duas esferas, unidas em seu centro. Ambas são
     pintadas na cor amarela queimada na área externa e de preto na interna. Esta fixada
     diretamente no piso, provocando a sensação que esta prestes a rolar.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -10806,7 +10805,7 @@ export const Evolucao_MelindaGarcia: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Peça composta por peças semelhantes na forma. Os espeços vazados entre as menores e as maiores demonstram formas diferentes.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -10850,7 +10849,7 @@ export const Maternidade_RomeoAlves: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Peça formando um conjunto de duas figuras de diferentes tamanhos, entrelaçadas como uma mãe e o filho.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -10894,7 +10893,7 @@ export const PrincipedosBosques_RemoBernucci: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Figura abstrata num desenvolvimento retilíneo com cerca de três metros de altura.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -10940,7 +10939,7 @@ export const Iansa_TatiMoreno: Obra = {
     adereços e postura na incorporação. A localização entre pedras e densa vegetação hamoniza a
     peça ao ambiente.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -10986,7 +10985,7 @@ export const MarcosTamoio_FloryGama: Obra = {
     parque das esculturas carioca. Foi inaugurado com a presença do ex-governador Faria Lima, e do vice presidente da camara dos
     veadores Moacir Bastos, que coordenpu a campanha para erguer essa homenadem`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -11031,7 +11030,7 @@ export const EstruturaEmDiagonal_FranzWeissmann: Obra = {
   Descricao: `Essa peça na cor vermelho foi doada à Prefeitura pela Construtora Andrade Gutiérrez.
     Escultura formada por diversas chapas, todas em cortes diagonais, formando no espaço linhas cortas em vários angulos quando da visão do admirador.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doador',
@@ -11077,7 +11076,7 @@ export const Compressao_FranciscoStockinger: Obra = {
     outro que surge entre os blocos formado tubos de aço que ultrapassam os blocos. A obra de materiais brutos,
     sem tratamento, que expõe uma ação ou ato da compreensão.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -11122,7 +11121,7 @@ export const Oxossi_Caribe: Obra = {
   Descricao:
     'Confeccionada em um mural, apresenta em baixo relevo a figura de Oxossi com toda a vestimenta, armas e a simbologia do Orixa. Com cerca de três metros a peça induz a grandiosidade.',
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -11169,7 +11168,7 @@ export const Construcao_BrunoGiorgi: Obra = {
     sobre as outras formando no espaço vazios e curvas. A fixação de uma sobre a outra, elabora uma montagem,
     onde todos unidos formam o conjunto`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -11214,7 +11213,7 @@ export const CosmoI_MariaGuilherminaFernandes: Obra = {
   Descricao: `A peça foi doada pelo Sindicato Nacional da Indústria de Construção Naval.
     Escultura que trabalha a partir de duas formas básicas unidas. A peça alonga-se com cerca de três metros, permitindo diferentes angulos a visão das formas em diferentes dimensões.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -11258,7 +11257,7 @@ export const HomemSentado_MarioAgostinelli: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura figurativa em tamanho natural, sentada.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -11305,7 +11304,7 @@ export const Sofia_SoniaEbling: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura representando uma figura feminina de formas tipicamente brasileira.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -11313,7 +11312,7 @@ export const Sofia_SoniaEbling: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -11321,7 +11320,7 @@ export const Sofia_SoniaEbling: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '1957',
       'Criaçãoe',
@@ -11368,7 +11367,7 @@ export const Incerteza_Marmura: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura apresentando m figura humana sentada numa postura de recolhimento, com o olhar baixo e encolhida.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1954',
       '1954',
       'Criação',
@@ -11376,7 +11375,7 @@ export const Incerteza_Marmura: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -11423,7 +11422,7 @@ export const Prometeu_EvandroCarneiro: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura formada por três elementos com contornos de braço, perna e asa, todas orientadas na mesma direção.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -11431,7 +11430,7 @@ export const Prometeu_EvandroCarneiro: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -11477,8 +11476,8 @@ export const Encontro_EdgarDuvivier: Obra = {
     recortada em diversas linhas composta por três elementos unidos. A peça forma uma estrutura
     leve e esbelta revelando um delicadeza.`,
   Fatos: [
-    new Fato('', '1960', 'Criação', 'Data da obra', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '1960', 'Criação', 'Data da obra', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Doação',
@@ -11522,7 +11521,7 @@ export const StuartAngel_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '1960', 'Criação', 'Data da obra', [], 'Rio de Janeiro'),
+    new Fact('', '1960', 'Criação', 'Data da obra', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -11564,7 +11563,7 @@ export const EvangelistaMateus_AlfredoCeschiatti: Obra = {
     de Brasilia em bronze. Escultura de uma figura humana de corpo inteiro em posição ereta,
     personalizando a grandeza, a correção e a firmeza.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -11572,7 +11571,7 @@ export const EvangelistaMateus_AlfredoCeschiatti: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1968',
       '',
       'Criação',
@@ -11619,7 +11618,7 @@ export const Estrutura_SergioCamargo: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Peça composta por 10 blocos maciços de mármore, que sofreram cotes diferentes no seu topo. O encaixe forma uma estrutura alongada em movimento.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -11627,7 +11626,7 @@ export const Estrutura_SergioCamargo: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '1973',
       'Criação',
@@ -11674,7 +11673,7 @@ export const IndioLutandocomoFelino_HippolyteFrancoisAugusteHippolytePeyrol: Obr
     Descricao: `Inaugurada em 1906 na Rua da Glória e em 1979 na atual localização no parque da Catacumba.
     Esta obra em mármore de Carrara foi adquirida durante a administração do Prefeito Pereira Passos.
     A escultura representa a figura do homem em luta com um tigre. Peça de padrão neoclássico com intensa expressão de força e movimento.`,
-    Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+    Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
     Temporalidade: 'Permanente',
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
@@ -11719,7 +11718,7 @@ A homenagem foi uma iniciativa dos moradores da Leopoldina aos soldados do 16º 
   LatitudeRealocacao: '-22.8421743',
   LongitudeRealocacao: '-43.2778422',
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const SanMartin_LouisJosephDaumas: Obra = {
@@ -11749,7 +11748,7 @@ export const SanMartin_LouisJosephDaumas: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Foi uma oferta do Governo da Argentina ao Governo do Estado da Guanabara, doada por um grupo de Oficiais da Armada Argentina.
     Monumento equestre de grandes proporções, com o Autores: da independência da Argentina, Chile e Peru, sobre um cavalo empinado e apontado para o oeste, direção tomada pelo "libertador" após o início da marcha sobre os espanhóis.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -11762,7 +11761,7 @@ export const JoaoPessoa_SamuelMartinsRibeiro: Obra = {
   ID: 274,
   Imagem: 'JoaoPessoa_SamuelMartinsRibeiro.jpeg',
   Autores: [artistas.SamuelMartinsRibeiro],
-  Titulo: `João Pessoa`,
+  Titulo: `João Person`,
   Material: 'Bronze',
   Altura: undefined,
   Largura: undefined,
@@ -11783,9 +11782,9 @@ export const JoaoPessoa_SamuelMartinsRibeiro: Obra = {
   Base: 'Com pedestal',
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
-  Descricao: `Inicialmente o Monumento foi instalado na Praia de Botafogo, entre as Ruas Voluntários da Patria e São Clemente. Quando foi construído o viaduto, ligando a praia de Botafogo a Rua da Passagem, a estátua foi transferida para o Largo Indio do Brasil. Foi novamente transferido para a Avenida Epitácio Pessoa a pedido da família, devido a constante vandalismo, no ano de 2000. A homenagem foi uma iniciativa de uma Comissão de Antigos Membros da Aliança Liberal.
-    A estátua apresenta a figura de João Pessoa de pé, ereto, olhar firme, com as mãos para trás, atitude que lhe era peculiar.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Descricao: `Inicialmente o Monumento foi instalado na Praia de Botafogo, entre as Ruas Voluntários da Patria e São Clemente. Quando foi construído o viaduto, ligando a praia de Botafogo a Rua da Passagem, a estátua foi transferida para o Largo Indio do Brasil. Foi novamente transferido para a Avenida Epitácio Person a pedido da família, devido a constante vandalismo, no ano de 2000. A homenagem foi uma iniciativa de uma Comissão de Antigos Membros da Aliança Liberal.
+    A estátua apresenta a figura de João Person de pé, ereto, olhar firme, com as mãos para trás, atitude que lhe era peculiar.`,
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -11824,7 +11823,7 @@ export const LagoaSolidaria_MarliMazeredo: Obra = {
     e teve o apoio e a colaboração dos clubes da orla da Lagoa. No decorrer de três anos, a campanha arrecadou doações, que foram
     repassadas para instituições de caridade. Para o ano de 2000, a escultora instalou na Av. Mario Ribeiro, o símbolo da campanha,
     peça ampliada do troféu, marcando no espaço público a campanha de solidariedade.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -11863,7 +11862,7 @@ export const Curumim_PedroCorreiaDeAraujo: Obra = {
     reinstalada numa pedra dentro da lagoa, a pedido do Autores:, devido aos constantes vandalismo e danos que a escultura sofreu
     ao longo dos anos.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -11871,7 +11870,7 @@ export const Curumim_PedroCorreiaDeAraujo: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -11917,7 +11916,7 @@ export const ATomJobimOEstudante_OttoDumovich_OttoDumovich: Obra = {
     ao lado de seu filho planta uma palmeira no parque. Em 2002 após a atuação da Prefeitura no parque Lage, para a recuperação espaço com
     base do convênio entre a Prefeitura da Cidade e o Parque Nacional da Tijuca. Foi instalada essa homeagem à Tom Jobim, lembrando sua campanha
     na defesa do parque. O monumento permanece no parque por uma cessão de uso.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -11956,7 +11955,7 @@ export const OttoLaraResende_JoasPereiraDosPassos: Obra = {
     uma folha em bronze com texto e frases do jornalista e um aparelho de telefone. Ao lado da mesa tem-se uma cadeira e ao fundo
     tem-se um painel em laminado vazado para se ter ao fundo uma paisagem as alamedas de palmeiras do Jardim Botânico.// Figura notável no meio intelectual, o jornalista e escritor Otto Lara Resende teve grande atividade jornalistica em diversos periódicos como O Globo, Folha de São Paulo, Jornal do Brasil, Manchete, Diário Carioca, Correio da Manhã. Amigo de diversos escritores foi eleito membro da Academia Brasileira de Letras. `,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -11999,7 +11998,7 @@ export const AnjoComPeixe_AndreaVerrocchio: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -12034,7 +12033,7 @@ export const ADanca_AlicePittaluga: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -12069,7 +12068,7 @@ export const Ossanha_TatiMoreno: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -12104,7 +12103,7 @@ export const Narciso_MestreValentim: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: ``,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -12139,7 +12138,7 @@ export const SaintHilaire_HumbertoCozzo: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -12176,7 +12175,7 @@ export const MedidadoTempo_FransKrajcberg: Obra = {
   Descricao: `A obra foi adquirida pela Prefeitura da Cidade do Rio de Janeiro.
     Escultura realizada com tramas de cipós da Amazonia. O trabalho desenvolvido teve como
     inspiração o antigo instrumento que medir o tempo, a ampulheta.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -12215,7 +12214,7 @@ export const Guardiao_CeleidaTostes: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -12262,7 +12261,7 @@ export const FrutodoEspaco_AntonioManuelOliveira: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura na qual figura as letras H.O iniciais do homenageado Hélio Oiticica. O monumento foi exposto em 1980 no Parque da Catacumba,
     e adquirido pela Prefeitura no ano seguinte.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -12297,7 +12296,7 @@ export const Jacare2000_MariaHelenaVasco: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -12333,7 +12332,7 @@ export const RaizesAmazonas_FernandoCasas: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura de duas peças em mármore esculpida, sem forma geométrica definida e sem superficie regular, criando
     uma peça bruta natural. A peça sem pedestal integra ao solo como se dele tivesse sido retirada.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -12370,7 +12369,7 @@ export const Nijinsky_MarliMazeredo: Obra = {
   Descricao: `Estátua estilizada do homenageado, doada à cidade pela empresa Prismart. A peça de corpo inteiro tem as pernas
     unidas em uma.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -12414,7 +12413,7 @@ export const DianaaCacadora_HeloisaDolabella: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Figura humana abstrata com movimento.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -12458,7 +12457,7 @@ export const Lua_JoseRaulAllegretti: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Em aço inoxidavel de forma esférica apoiada em um poste de aço pintado. Funciona como um mobile.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -12505,7 +12504,7 @@ export const Flora_MarioCravo: Obra = {
   Descricao: `Escultura de peças finas com cortes ora curvos ora retos, criando dobras e vazados. É pintada na cor amarelo ouro na
     faixa externa e marrom conhaque nos trechos internos.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -12549,7 +12548,7 @@ export const Atleta_RemoBernucci: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura adquirida ao Autores: pelo Sr. Emilio Alfredo Giannelli e doada à Prefeitura.
     Figura humana abstrata com movimento leve.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -12584,7 +12583,7 @@ export const AVictorAssisBrasil_Desconhecida: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -12621,7 +12620,7 @@ export const RitualdoVento_GabrielFonseca: Obra = {
   Descricao:
     'Cinco peças nas cores amarelo, verde, azul, vermelho e laranja que giram com a força do vento.  As esculturas  apresentam a leveza como em vôo. Esta obra foi exposta inicialmente na Av. Rio Branco 1, conhecida como RB1, em 1999, e posteriormente doada à Cidade do Rio de Janeiro pelo próprio Autores:.',
   Fatos: [
-    new Fato('', '', 'transferida da avenida rio branco, n 1', '', [], ''),
+    new Fact('', '', 'transferida da avenida rio branco, n 1', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -12662,7 +12661,7 @@ export const AVieiraSoutoePauloDeFrontin_RodolfoBernardelli: Obra = {
     que leva o nome. Em 1992, na reforma da urbanização da Av. Vieira Souto, o marco foi deslocado,
     para o canteiro central próximo ao Jardim de Ala.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '1992',
       'removido para o canteiro central do Jardim de Ala',
@@ -12708,7 +12707,7 @@ export const JozefPilsudski_Farynkiewicz: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Homenagem ao herói nacional e fundador da Polônia, doado à Cidade do Rio de Janeiro, pela Associação dos Ex-Comabatentes Polonesas, representado pelo Sr. Janus Pawiewski, como um simbolo eterno de liberdade.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -12743,7 +12742,7 @@ export const RubenDario_DanielCrow_CurzioZani: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Monumento foi doado pelo Emabaixador da Nicarágua no Brasil, Sr. Sanson Balladares erealizado pela Prefeitura da Cidade do Rio de Janeiro para homengear o poeta ibero - americano. O monumento tem ainscrição: A.L.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -12778,7 +12777,7 @@ export const Trio_JoseCesarBranquinho: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Escultura em ferro (vergalhão) pintada, composto por três peças figurando a silhueta humana.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -12821,7 +12820,7 @@ export const FormasnoEspacoI_OscarNiemeyer: Obra = {
     transferido do parque devido a estado de degradação. Em ferro recortado recebe uma pintura
     vermelha para destacar na paisagem.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '2000',
       '2000',
       'Exposição',
@@ -12829,7 +12828,7 @@ export const FormasnoEspacoI_OscarNiemeyer: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '2002',
       '2002',
       'Doação',
@@ -12880,7 +12879,7 @@ export const FormasnoEspacoII_OscarNiemeyer: Obra = {
     transferido do parque devido a estado de degradação.
     Em ferro recortado recebe uma pintura vermelha para destacar na paisagem.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '2000',
       '2000',
       'Exposição',
@@ -12888,7 +12887,7 @@ export const FormasnoEspacoII_OscarNiemeyer: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '2002',
       '2002',
       'Doação',
@@ -12939,7 +12938,7 @@ export const Violencia_OscarNiemeyer: Obra = {
     transferido do parque devido a estado de degradação.
     Em ferro recortado recebe uma pintura vermelha para destacar na paisagem.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '2000',
       '2000',
       'Exposição',
@@ -12947,7 +12946,7 @@ export const Violencia_OscarNiemeyer: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '2002',
       '2002',
       'Doação',
@@ -12998,7 +12997,7 @@ export const Mulher_OscarNiemeyer: Obra = {
     transferido do parque devido a estado de degradação.
     Em ferro recortado recebe uma pintura vermelha para destacar na paisagem.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '2000',
       '2000',
       'Exposição',
@@ -13006,7 +13005,7 @@ export const Mulher_OscarNiemeyer: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '2002',
       '2002',
       'Doação',
@@ -13052,7 +13051,7 @@ export const OthonXavierdeBrito_RuffoFanucchi: Obra = {
     comissão de honra e de uma comissão executiva. O Marechal Rondon foi o presidente da comissão
     que ergueu o monumento. O monumento e um monolitoem granito com uma placa grande vertical em
     alto relevo representando o Dr.º Othon Xavier.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13096,7 +13095,7 @@ export const MiguelCouto_HeitorUsai: Obra = {
     faziam parte da comissão os professores Carlos Chagas, Fernando Magalhães e Helion Povoa, 
     ministro Rodrigo Otávio, Barão de Ramiz Galvão, srs. Felix Pacheco, Otávio Pinto e Domingos 
     Niobel.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13134,7 +13133,7 @@ export const ZozimoBarrosoDoAmaral_RobertoSa: Obra = {
     está sobre o ombro. Para caracterizar a sua profissão e completar um conjunto existe uma parte da murada do Leblon em bronze
     onde está fixada uma máquina de escrever, uma agenda e uma página do Jornal do Brasil com o nome estampado em sua coluna.
 O monumento foi erguido pela Prefeitura da Cidade por solicitação da família.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13175,7 +13174,7 @@ export const JeanSibelius_WainoAaltonem: Obra = {
      do 1º centenário de nascimento. Foi encomendado pelo Ministerio da Educação Nacional da 
      Filandia. A cabeça com a fisionomia do homenageado esta sobre um grande pedestal de 2,80
       revestido de granito polido negro.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13211,7 +13210,7 @@ export const ZuzuAngel_MarliMazeredo: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura de uma figura feminina esbelta, de formas estilizadas em resina. No pedestal um medalhão com a
     efígie identifica a homenageada.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -13256,7 +13255,7 @@ export const Ceres_ThomasRegnaudin: Obra = {
     quando de sua construção por Pereira Passos. A escultura é esculpida com grandes e vaporosas vestes e cabelos presos e traças e pés descalços,
     apresenta em uma das mãos um ramalhete indicando o plantio como sua missão de proteção.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Réplica',
@@ -13264,7 +13263,7 @@ export const Ceres_ThomasRegnaudin: Obra = {
       [],
       'Versailles',
     ),
-    new Fato(
+    new Fact(
       '2017',
       '2017',
       'Remoção',
@@ -13272,7 +13271,7 @@ export const Ceres_ThomasRegnaudin: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '2000',
       '2000',
       'Restauro',
@@ -13280,7 +13279,7 @@ export const Ceres_ThomasRegnaudin: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1938',
       '1938',
       'Bem tombado municipal',
@@ -13327,7 +13326,7 @@ export const Marte_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Arte Cidade Restauro - Escultura realizada para ser instalada no Jardim do Valongo, preservando as originais em local seguro e as réplicas em exposição ao público. Com o retorno das originais para o Jardim do Valongo,essas peças foram transferidas para esse jardim.Foi retirada do jardim do Palacio em 2017, pelo prefeito da cidade.
     A escultura esta no Palácio da Cidade por cessão de uso.`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -13366,7 +13365,7 @@ export const MercurioPalacioCidade_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Arte Cidade Restauro - Escultura realizada para ser instalada no Jardim do Valongo, preservando as originais em local seguro e as réplicas em exposição ao público. Com o retorno das originais para o Jardim do Valongo,essas peças foram transferidas para esse jardim. Essa peça reproduz a figura de Hermes, clássica greca.
     A escultura esta no Palácio da Cidade por cessão de uso.Foi retirada do jardim do Palacio em 2017, pelo prefeito da cidade.`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -13407,7 +13406,7 @@ export const Minerva_Giustiniani: Obra = {
     local seguro e as réplicas em exposição ao público. Com o retorno das originais para o Jardim do Valongo essas peças foram
     transferidas para esse jardim. A escultura esta no Palácio da Cidade por cessão de uso.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Réplica',
@@ -13415,7 +13414,7 @@ export const Minerva_Giustiniani: Obra = {
       [],
       'Roma',
     ),
-    new Fato(
+    new Fact(
       '2017',
       '2017',
       'Remoção',
@@ -13423,7 +13422,7 @@ export const Minerva_Giustiniani: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1938',
       '1938',
       'Bem tombado municipal',
@@ -13431,7 +13430,7 @@ export const Minerva_Giustiniani: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Restauro',
@@ -13475,7 +13474,7 @@ export const Chafariz_AndrewHandyside: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Trata-se de uma obra de Autores:ia de Andrew Handyside & Co, com sede em Derby, Inglaterra. Foi fundida por Brittania Foundry, correspondeente ao modelo 38 do catalago chamado An Illustrated book of Designs for Fountains and Vases, de 1879.
     É um pequeno Chafariz, sobre um tanque circular de granito eleva-se um coluna central octogonal, decorada com volutas e folhas de acanto, sustentando duas taças, sobre a maior. Três pequenos tritões servem de apoio a uma taça menor que sustenta um fuste terminado em coroa, do qual caem as águas Desativado desde o ano de 2000.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -13510,7 +13509,7 @@ export const Maternidade_CelsoAntonio: Obra = {
   MaterialBase: 'Gnaisse',
   Status: 'Permanece em espaço público',
   Descricao: `Esculpida em 1943 originalmente para ornar o prédio do Ministério da Educação e Saúde, hoje Palácio Gustavo Capanema, ao lado de outra obra do mesmo material e Autores:ia a, Moça Reclinada. Esta em area publica desde 1952, onde recebeu o tombamento em 2008.`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -13545,7 +13544,7 @@ export const FredericoOzanam_DanteCroce: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi doado à Cidade peloConselho Superior do Brasil da Fundação da Sociedade de São Vicente de Paula,para comemorar o centenário da Fundação da Confederação Vicentina do Brasil. A imagem do homenageado refere-se ao seu periodo universitario, quando caminhava com um livro na mão.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13580,7 +13579,7 @@ export const PedroJuanCaballero_LeonardoLima: Obra = {
   MaterialBase: 'Concreto',
   Status: 'Permanece em espaço público',
   Descricao: `Peça com a figura do homeanageado com o traje tipico de sua época.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13617,7 +13616,7 @@ export const JuruenadeMatos_JoaquimMoreiraJunior: Obra = {
   Descricao: `O monumento foi uma homenagem do Gremio Ciltural Catulo da Paixão Cearense, ao
     colegio Juruema de Matos seu fundador em 1927,  uma das escolas tradicionais unidade
     educacionais da cidade, cujo endereço era na Praia de Botafogo nº 188.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13652,7 +13651,7 @@ export const FranciscoMoranzan_RomeuAlves: Obra = {
   MaterialBase: 'Concreto',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi inaugurado originariamente na Praia de Botafogo, na antiga Praça Honduras, posteriormente foi retirado, retornando em 17/11/2004, atendendo a solicitação do consulado de Honduras.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13687,7 +13686,7 @@ export const CarvalhodeBrito_RuffoFanucchi: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento acadêmico com a fisionomia marcante do homenageado. Inaugurado pelo prefeito Alim Pedro, com discurso do Ministro da Justiça e membro da Academia de Letras, Dr. Afonso Pena. O agradecimento em nome da família foi realizada pelo o deputado  Ramiro Berbert de Castro.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13725,7 +13724,7 @@ export const SimonBolivar_Desconhecida: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Estátua equestre de Símom Bolivar foi uma doação do Governo de Venezuela ao Brasil. Destaca a beleza da obra com a seguinte inscrição no pedestal:SIMOM BOLIVAR,LIBERTADORDAVENEZUELA, COLOMBIA, EQUADOR,PANAMA, PERU E BOLIVIA.AVENEZUELA AOBRASIL1978`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13765,7 +13764,7 @@ export const GeneralJoseArtigas_VHabegger: Obra = {
   Descricao: `O monumento foi uma doação do Governo do Uruguai à Cidade do Rio. Foi inaugurado
     em 1º de setembro de 1979 na Praça Artigas, na Cidade Nova. Devido às obras do Teleporto, foi
     removido e instalado nessa praça em 19 de setembro de 1997.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13800,7 +13799,7 @@ export const Bocage_JoaquimCorrea: Obra = {
   MaterialBase: 'Gnaisse',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi doado pelo governo português, durante as comemorações do IV Centenário da fundação da Cidade do Rio de Janeiro, no mesmo ano do bicentenário do poeta. O busto foi uma retribuição a doação a Portugal pelo Brasil, o busto de Olavo Bilac para Setubal. Foi levado por uma comissão de membros da Academia Brasileira de Letras. O busto de Bocage veio para o Brasil pelo professor Hernani Cidade`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13837,7 +13836,7 @@ export const YhitzakRabin_EdgarDuvivierFilho: Obra = {
   Descricao: `O pequeno monumento foi uma iniciativa do Presidente da Câmara Municipal do Rio de Janeiro, o Vereador
     Gérson Bergher`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -13883,7 +13882,7 @@ export const BartolomeuMitre_LourillandSan: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi uma doação do governo argentino à cidade como um sinal de amizade. Na inauguração esteve presente o diretor geral de La Nacion, de Buenos Aires, jornalista Bartolomeu Mitre, bisneto do heroi nacioanl.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13924,7 +13923,7 @@ export const CarlosChagas_HumbertoCozzo: Obra = {
     Cultura, no ano do centenário de nascimento do grande médico e cientista brasileiro. O
     monumento foi retirado e transferido para o deposito em 15 de junho de 2018, devido a atos
     de vandalismos.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -13959,7 +13958,7 @@ export const MarechalCandidoRandon_AntonioPintodeMattos: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -14002,7 +14001,7 @@ export const FontedoManequinho_BelmiroDeAlmeida: Obra = {
     repetindo o gesto de um torcedor anônimo em 1948. Inaugurado na Praça Floriano, transferido em
     1922 para a Praia de Botafogo e em 1990 para atual localização. Zani Fundição Artística E Metalúrgica Ltda.`,
   Fatos: [
-    new Fato(
+    new Fact(
       'data',
       '2008',
       'Bem tombado municipal',
@@ -14048,7 +14047,7 @@ export const AEcadeQueiroz_RodolfoPintoCouto: Obra = {
     Avenida Rui Barbosa, próximo à Praia de Botafogo . Finalmente, em 1982 passou para a localização
     atual, no canteiro central da Avenida Lauro Sodré. O monumento nasceu da iniciativa de
     intelectuais e homens de letras do Brasil, com Coelho Neto à frente.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Referencial',
@@ -14089,7 +14088,7 @@ export const FonteIrmaosRamosPinto_AntonioTeixeiraLopes: Obra = {
     da obra,. Foi doada pelos irmãos Adriano Ramos Pinto, donos de célebre vinícola, à cidade do
     Rio de Janeiro. A cabeça que foi retirada do monumento com a obra de restauração foi guardada
     no deposito da Prefeitura. Desativado em data desconhecida.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -14124,7 +14123,7 @@ export const OswaldoCruz_HumbertoCozzo: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento é uma homenagem por sua dedicação a medicina experimental no Brasil.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -14159,7 +14158,7 @@ export const AlmiranteTamandare_HildegardoLeaoVelloso: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O Monumento foi uma iniciativa da Marinha, que escolheu o local da praia de Botafogo, onde desde 1916 existia uma herma do Marquês. No alto, está o Almirante, Patrono da Marinha do Brasil, de pé, em atitude de comando ladeado por figuras que simbolizam a Glória. A linha do pedestal representa uma quilha de navio, um belo exemplar do periodo artístico do Art-Decor.`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -14194,7 +14193,7 @@ export const Crepusculo_HenriWeigele: Obra = {
   MaterialBase: 'Gnaisse',
   Status: 'Permanece em espaço público',
   Descricao: `Escultura feminina figurativa, adquirida na França para adornar o jardim criado por Pereira Passos.`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -14232,7 +14231,7 @@ export const PoesiaemRuinas_JeanMagrou: Obra = {
   MaterialBase: 'Gnaisse',
   Status: 'Permanece em espaço público',
   Descricao: `Escultura neoclássica feminina com elegante movimento, com os braço apoiado em um pedestal, adquirida na França para o espaço público carioca.Estátua em tamanho natural, com os braços elevados apoiando a cabeça`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -14272,7 +14271,7 @@ export const NossaSenhoradaImaculadaConceicao_GiuseppeNavone: Obra = {
   Descricao: `Peça executada em 1907 foi doada à cidade pela Arquidiocese do Rio de Janeiro, nas
     comemorações do centenário da promulgação do dogma da Imaculada Conceição de Nossa Senhora, e
     se ergue sobre um alto pedestal revestido em mármore branco.`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -14307,7 +14306,7 @@ export const LorenzoFernandes_AristocherBenjamimMeschessi: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem em um busto acadêmico, foi uma iniciativa do Conservatório Brasileiro de Música.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -14342,7 +14341,7 @@ export const EmilioDeMenezes_JoaoTurin: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O busto do homenageado esta apresentado de forma academica, com vestimenta da época e expressão forte. Essa peça foi apresentado no Salon dos Artites François em 1921.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -14377,7 +14376,7 @@ export const AlfredoGomes_PauloMazzucchelli: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O busto em homenagem ao mestre, foi uma iniciativa de seus ex-alunos.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -14413,8 +14412,8 @@ export const ONascimentodeVenus_MathurinMoreau: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
@@ -14451,8 +14450,8 @@ export const CristovaoColombo_MathurinMoreau: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -14489,8 +14488,8 @@ export const America_MathurinMoreau: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -14527,8 +14526,8 @@ export const Oceania_MathurinMoreau: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -14565,8 +14564,8 @@ export const Africa_MathurinMoreau: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -14603,8 +14602,8 @@ export const Europa_MathurinMoreau: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -14641,8 +14640,8 @@ export const Asia_MathurinMoreau: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -14679,8 +14678,8 @@ export const MeninoComPassaro_MathurinMoreau: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -14717,8 +14716,8 @@ export const FiguraFemininaI_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -14755,8 +14754,8 @@ export const FiguraFemininaII_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -14799,7 +14798,7 @@ export const TeixeiraSoares_JoseOtavioCorreaLima: Obra = {
     por iniciativa da Revista das Estradas de Ferro. Em nome da Comissão executiva falou Paulo de
     Frontim. Foi transferido para a Rua Cosme Velho, ao lado da Estação de Ferro Corcovado por ter
     sido este o idealizador da ferrovia`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -14839,7 +14838,7 @@ export const ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra: Obra = {
   Descricao: `4 estruturas com a parte superior fixadas chapas no sentido horizontal finalizada
     por uma esfera pintada na cor da laranja. O marco é uma referência as antigas palmeiras das
     fazendas que existiram na região. As peças (3 arcos) desapareceram em 2017, constatado em vistoria em novembro de 2017`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Ornamental',
@@ -14878,8 +14877,8 @@ export const MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMari
     Descricao: `Foi inaugurado em 1959 mas somente em 1960, a cripta recebeu as urnas com os restos mortais dos 467 brasileiros mortos no conflito, vindos do Cemitério de Pistoia. O monumento tem três planos, plataforma, patamar e subsolo. Entre os pilones do pórtico, com 31 metros de altura, está o túmulo do soldado desconhecido, centro de todas as solenidades cívicas, local também da chama eterna. À direita vê-se o grupo escultórico de Júlio Castelli Filho, feito em módulos de ferro metalizado.e a escultura de  Alfredo Ceschiatti em homenagem às três forças armadas. No patamar, ao nível da praça, encontra-se o museu, um jardim interno, um lago e painéis de Cerâmica de Anísio Medeiros.No subsolo, na entrada do qual se acham gravados os nomes dos dois mil brasileiros, militares e civis, mortos pelos torpedeamentos alemães, umagrande cripta contém 468 jazigos de mármore nacional com tampos em mármore de Carrara preto, nos quais estão gravados o nome. Quinze jazigos não possuem nomes gravados, e dois são cenotáfios dedicados a desaparecidos.
     O Monumento teve sua construção iniciada a 24 de junho de 1957 e, embora inaugurado a 07 de abril do mesmo ano, a sua obra só foi concluída em 24 de junho de 1960.`,
     Fatos: [
-      new Fato('', '', 'bem tombado federal', '', [], ''),
-      new Fato('', '', 'bem tombado municipal', '', [], ''),
+      new Fact('', '', 'bem tombado federal', '', [], ''),
+      new Fact('', '', 'bem tombado municipal', '', [], ''),
     ],
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
@@ -14916,7 +14915,7 @@ export const SemTituloI_AmilcarDeCastro: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura abstrata em chapa de aço corten, com uma dobra e duas faces. A peça esta em cessão de uso em área da
     Prefeitura.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -14951,7 +14950,7 @@ export const EspacoCircularEmCuboVirtual_FranzWeissmann: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Peça única com quatro faces retangulares, formando um semicírculo vazado. A obra foi criada em 1958. A peça esta em cessão de uso em área da Prefeitura.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -14987,8 +14986,8 @@ export const AsTresForcasArmadas_AlfredoCeschiatti: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -15025,7 +15024,7 @@ export const Cuauhtemoc_CarlosObregonSantacilia: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Monumento doado pelo governo do México, como parte das comemorações do Centenário da Independência (1922), à cidade do Rio de Janeiro. Foi inaugurado na data nacional mexicana.
     O conjunto com a escultura e pedestal com serpentes estilizadas e baixos relevos, que invocam a mitologia Asteca é talvez um dos primeiros elementos Art-Déco a ser instalado em nossa cidade, numa época onde ainda predominava o eclético e o estilo neo-colonial. Trata-se de uma réplica da original deCarlos Obregon Santacília.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'comemorativa',
@@ -15060,7 +15059,7 @@ export const JosedeAlencar_RodolfoBernardelli: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento apresenta José de Alencar sentado e em tamanho natural. Em seu pedestal foram embutidos medalhões em baixos relevos representando cenas extraídas dos romances: O Guarany, o Gaúcho, o Sertanejo e Iracema. A obra foi uma iniciativa do jornalista Ferreira de Araujo.`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15101,7 +15100,7 @@ export const BernardoOHiggins_CaroccabaThor: Obra = {
     Avenida Chile, no canteiro central, posteriormente foi transferida para um canteiro laterial em 23 de maio de 1996 e finalmente em 17 de janeiro de 2007 foi inaugurado nesse local.
 Doado a cidade do Rio de Janeiro pelo governo do Chile por ocasião do seu IV Centenário da fundação da Cidade.
 Estátua com a figura do homenageado com uma farda chilena tendo na direita uma espera e na esquerda uma folha de papel. A estátua esta sobre um pedestal de concreto revertido em granito cinza.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15136,7 +15135,7 @@ export const Primavera_JeanBaptistePoultier: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Uma das peças de um grupo escultórico das quatro estações do ano, reprodução de Ceres de Jean Baptiste Poultier,exposta no jardim do Palácio de Versailles.`,
-  Fatos: [new Fato('', '', 'bem tombado estadual', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado estadual', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -15171,7 +15170,7 @@ export const Verao_PierreLeGros: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Peça do grupo escultórico representando o Verão, reprodução do Pandora de Pierre Le Gros existente nos Jardins de Versalles.`,
-  Fatos: [new Fato('', '', 'bem tombado estadual', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado estadual', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -15210,7 +15209,7 @@ export const AlfredoAgache_HeitorUsai: Obra = {
   Status: 'Transferida',
   Descricao: `É uma homenagem oferecido pelo Clube de Engenharia, pela Associação dos Artistas Brasileiros e o Comite Nacional de Urbanismo, como parte das comemorações para assinalar a passagem do Dia da França.
     Apos a reforma da praça depois da obra do Metro, em 1992, o monumento foi reinaugurado.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15245,7 +15244,7 @@ export const AfonsoCelso_LaurindoRamos: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem do academico traz o fardão e fisionomia tranquila. Foi erguido por iniciativa da Sociedade dos Amigos de Afonso Celso.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15280,7 +15279,7 @@ export const CarmemGomes_JoseBarreto: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem foi uma iniciativa da Sociedade dos Artistas Líricos Brasileiros, na época era presidida pelo filho da cantora, Jim Barboza. O monumeto teve o patrocinio de uma comissão composta por Carlos Magno, Negrão de Lima e Clovis Slagado.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15315,7 +15314,7 @@ export const Outono_JacquesHouzeau: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Representação do Outono reprodução da escultura Faune de Jacques Houzeau,<existente no jardim do Palácio de Versailles.`,
-  Fatos: [new Fato('', '', 'bem tombado estadual', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado estadual', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -15350,7 +15349,7 @@ export const Inverno_SimonHurtvelle: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Elegante escultura representando o inverno com vestimenta típica para a estação do ano. É uma reprodução de Théophraste, de Simon Hurtvelle.`,
-  Fatos: [new Fato('', '', 'bem tombado estadual', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado estadual', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -15386,7 +15385,7 @@ export const ChafarizdosGolfinhos_AndreRedont: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `O Chafariz é composto por quatro golfinhos laterais, um jorro névoa e outro central, com cerca de doze metos de altura. São inspirados aos existentes no jardim do Palácio de Versailles, projetado pelo arquiteto paisagista da equipe de Alfred Agache.
     Esta desativado desde maio de 2017.`,
-  Fatos: [new Fato('', '', 'bem tombado estadual', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado estadual', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -15425,7 +15424,7 @@ export const CandidoMendes_BenevenutoBerna: Obra = {
   Status: 'Transferida',
   Descricao: `A homenagem visa registrar a importância de sua atuação em instituições de ensino e pesquisa nas áreas de sociologia e direito.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1995',
       '1995',
       'Tombamento',
@@ -15469,7 +15468,7 @@ export const VeraJanacopulos_AdrianaJanacopolus: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem partiu do Circulo de Arte Vera Janacópulos, presidia pelo deputado Gustavo Capanema, fundada em 1955 com o objetivo de propagar e ensinar o método do canto de camara. A obra foi executada pela sua irmã Adriana, com os custos por conta da prefeitura.
     A inauguração contou com a presença do Prefeito Sá Freire, que fez erigir o monumento por conta dos cofres publicos. Esteve presente o diretor do Departamento Parques e Jardins Sr. Mauro Viegas, Pascoal carlos Magno, do representante do Ministro da Educação, Sr. Poessel.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15504,7 +15503,7 @@ export const ClovisBevilaqua_HonorioPecanha: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `É uma homenagem a quem organizou o projeto do Código Civil Brasileiros e representou o Brasil no Tribunal de Haia. A inauguração fez parte das comemorações do Dia do Jurista.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15541,7 +15540,7 @@ export const TeixeiraMendes_BrunoGiorgi: Obra = {
   Descricao: `A homenagem foi inaugurada nas comemorações do dia da bandeira, por ter sido um dos idealizadores da Bandera Nacional. Foi erguido por iiniciativa do Clube Positivista e do Almirante Henrique Batista, presidente da Associação dos Ex-Combatentes do Brasil, seção do Rio de Janeiro.
     O ato teve a presença do prefeito Marcos Tamoio e do Embaixador Paulo Carneiro.
     Passados sete anos de sua inauguração. o busto foi roubado, e recolocado em 16 de dezembro de 1986, se recorreu ao Autores: da obra, Bruno Giorgi, que tinha o modelo original e Autores:ização a confecção da réplica.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15576,7 +15575,7 @@ export const PereiraCarneiro_EgistoBertozzi: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi inaugurado na praça Marechal Âncora, devido a sua ligação com a Panair do Brasil. Foi posteriormente transferido para essa praça.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15612,7 +15611,7 @@ export const GetulioVargas_JoasPereiraDosPassos: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem foi idealizado e erguido por Henock de Almeida e executado pelo artista plástico Joás,para compor o
     Memorial a Getulio Vargas,criado para as comemorações do cinquentenário de sua morte.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15648,7 +15647,7 @@ export const SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Monumento erguido pelo Instituto Histórico e Geográfico Brasileiro, por subscrição popular, paraos festejos relativos do Quarto Centanário da Cidade.
     Na escultura foi utilizando o granito da pedreira do Alto da Boa Vista, o bloco pesava 20 toneladas e foi executado na marmoaria Nossa Senhora de Fátima tendo a imagem 7 metros e 30 centimetros.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15684,7 +15683,7 @@ export const BadenPowell_VincenzoLarocca: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi uma iniciativa da União dos Escoteiros Do Brasil ao Escoteiro Chefe Mundial. O monumento foi inaugurado pelo escoteiro Jose de Araujo Filho, que descerou a bandeira. Compareceram a cerimonia 2 jovens venezianos e 1 (um) mexicano.
     Esta representado em meio corpo com os braços cruzados.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15722,7 +15721,7 @@ export const RodolfoAmoedo_JoseOtavioCorreaLima: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Monumento em homenagem ao professor e diretor da Escola de Belas Artes, que fez discípulos entre outros: Eliseu Visconti, Lucílio de Albuquerque e Chamberland`,
-  Fatos: [new Fato('', '', 'l', '', [], '')],
+  Fatos: [new Fact('', '', 'l', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15763,7 +15762,7 @@ export const SaoFranciscoDeAssiseSantaClara_EduardoDeSa: Obra = {
     conjunto é completado por quatro baixos-relevos, assinalando os principais episódios da vida
     do grande santo” As placas no pedestal não são originais. O Jornal do Brasil descreve o furto
     das placas na edição de 10 de abril de 1963.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15805,7 +15804,7 @@ export const Escoteiro_FernandoThauby: Obra = {
     A estátua foifundida em 1915. Do molde original, foram tiradas duas cópias: uma delas estáno Rio, e asegunda encontra-se no Parque Metropolitano de Santiago.
     Essa estátua serviu de modelo para o selo comemorativo do AcampamentoInternacional de Patrulhas, realizado em 1954, em São Paulo. Em março de 2009 teve a bandeira furtada.
     Em maio de 2019, a escultura foi furtada.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15841,7 +15840,7 @@ export const SemTitulo_HaroldoBarroso: Obra = {
   Status: 'Em cessão de uso em espaço público',
   Descricao: `Escultura contemporânea de granito, composta de três peças num único bloco.
     A peça esta em cessão de uso em área da Prefeitura.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -15876,7 +15875,7 @@ export const Harmonia_MarliMazeredo: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Peça abstrata comemorativa da Eco-Rio 1992. Originalmente era composto por duas peças. Uma esta no parque e a outra no deposito da Prefeitura desde 2005 devido ao dano na sua base.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'comemorativa',
@@ -15914,7 +15913,7 @@ export const FelinoDeitado_HippolyteFrancoisAugusteHippolytePeyrol: Obra = {
   MaterialBase: undefined,
   Status: 'Transferida',
   Descricao: `Inicialmente foram instalados nos jardins da Praia de Botafogo e transferido para a Praça Paris.Escultura do felino em posição de ataque, como guardião do Chafariz.`,
-  Fatos: [new Fato('', '', 'bem tombado estadual', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado estadual', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -15950,7 +15949,7 @@ export const AlmiranteBarroso_JoseOtavioCorreaLima: Obra = {
   Status: 'Transferida',
   Descricao:
     'Esta escultura de José Otávio Correa de Lima foi inaugurada na Praça Luís de Camões em 19 de novembro de 1909. Com as obras do Metrô, o monumento foi transferido para a Praça Paris, onde permaneceu desde então. Possui as seguintes legendas: “Riachuelo XI de junho de MDCCCLXV” e “Ao Almirante Barroso a nação”. Na base no monumento estão seus restos mortais. Essa pedra foi encontrada quando o monumento foi transferido da Praça Juares Tavola para a Praça Paris devido as obras do Metro. A pedra tem em baixo-relevo a seguinte inscrição: No dia 11 de junho de 1908, sendo presidente da República o Sr. Dr. Afonso Augusto Moreira Pena e ministro da Marinha o Exmo. Sr. Alexandrino de Alencar foi lançada esta pedra sobre a qual será erigido, por ordem do Exmo. Sr. Augusto Tavares de Lira, Ministro da Justiça e Negócios Interiores, de acordo com o Decreto nº 1697, de 10 de junho de 1907, o monumento ao Almirante Barroso e aos heróis da Batalha Naval de Riachuelo./ Este monumento foi inaugurado em 1909, na Praça Juarez Tavola, próxima ao Hotel Gloria. Com as obras do Metrô o monumento foi transferido para a Praça Paris onde se encontra desde então.O monumento descrito pelo Autores: Sobre um pedestal em granito de Petrópolis assenta a estátua de Barroso, em bronze, com quatro metros de altura, representada em atitude triunfal, no passadiço de comando. No sopé da coluna, em cada face lateral, assentam duas figuras aladas simbolizando, respectivamente, na gênios da Pátria e da Vitória, sobre duas proas, tudo em bronze. À frente do pedestal, um grande baixo-relevo, com dois metros e quarenta de comprimento, por um metro de alto, representa a Batalha Naval de Riachuelo. Quatro medalhões, nos ângulos, perpetuam as efígies de Oliveira Pimentel, Pedro Afonso, Andrade Maia e Lima Barros, encadeando esses medalhões nove placas, na base, com os nomes dos vapores e dos intrépidos comandantes que formaram parte numa batalha. Ainda dois medalhões abaixo contém as efígies dos heróis Greenhalgh e Marcílio Dias',
-  Fatos: [new Fato('', '', 'bem tombado estadual', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado estadual', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -15986,7 +15985,7 @@ export const FranciscoAdolfoVarnhagen_JoseOtavioCorreaLima: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem realizada pelo Instituto Histórico e Geográfico Brasileiro em comemoração ao centenário de sua fundação, no qual Adolfo Varnhagem foi primeiro-secretário.O busto a Varhagem esta num pedestal de granito, na parte inferior do pedestal se encontra a figura de umafeminina tendo um livro aberto nas mãos simbolizando a história.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '21/10/1938',
       '21/10/1938',
       'Inauguração',
@@ -15994,7 +15993,7 @@ export const FranciscoAdolfoVarnhagen_JoseOtavioCorreaLima: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '21/10/1938',
       '21/10/1938',
       'Homenageado',
@@ -16038,7 +16037,7 @@ export const BrigadeiroEduardoGomes_EdgarDuvivier: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem ao brigadeiro em trajes civis, foi uma doação de alunos da Escola Superior de Guerra.`,
   Fatos: [
-    new Fato(
+    new Fact(
       `26/10/1988`,
       `26/10/1988`,
       'Homenagem',
@@ -16046,7 +16045,7 @@ export const BrigadeiroEduardoGomes_EdgarDuvivier: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       `01/02/1998`,
       `01/02/1998`,
       'Vandalismo',
@@ -16054,7 +16053,7 @@ export const BrigadeiroEduardoGomes_EdgarDuvivier: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       `25/08/1998`,
       `25/08/1998`,
       'Vandalismo',
@@ -16062,7 +16061,7 @@ export const BrigadeiroEduardoGomes_EdgarDuvivier: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       ``,
       ``,
       'Fundição/Atelier',
@@ -16105,7 +16104,7 @@ export const CardealArcoverde_HeitorUsai: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `É uma homenagem da Cidade do Rio de Janeiro, ao primeiro Cardeal do Brasil, no 1º Conciliato Brasileiro, permanecendo em frente ao Palácio Episcopal.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -16146,7 +16145,7 @@ export const PedroAlvaresCabral_RodolfoBernardelli: Obra = {
     Frei Henrique do Coimbra, capelão e celebrante da primeira missa. Numa das face do pedestal
     está gravado o seguinte: A Associação do Quarto Centenário do Descobrimento do Brasil mandou 
     erigir este Monumento `,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -16185,7 +16184,7 @@ export const EduardoTapajos_GilbertoMandarino: Obra = {
   Status: 'Furtada',
   Descricao: `Peça academica com a fisionomia tranquila e traje elegante.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -16228,7 +16227,7 @@ export const AberturadosPortos_EugeneBenet: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Esse monumento foi uma iniciativa da Associção Comercial do Rio de Janeiro para as comemorações da abertura dos portos para as nações amigas promovida por D. João VI. O grupo escultórico é composto por duas figuras femininas em bronze de 3 metros de altura, uma representando o Comércio e a Navegação. Estas estátuas são inspiradas nas existentes na Praça da Concórdia em Paris. A estátua que simboliza o comércio tem mão direita apoiada em um escudo, e a da navegada esta apoiada em uma âncora.`,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -16263,7 +16262,7 @@ export const AlbertoDeOliveira_PetrusVerdier: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem ao poeta tem a figura academica. O monumento foi inaugurado pelas poetisas Maria Eugenia e Ana Amelia de Queiroz Carneiro de Mendonça, que desceram a bandeira nacional que o cobria. O discurso de inauguração foi realizado pelo Ministro de Justiça Dr. Vianna de Castello.O monumento foi inaugurado no dia que se completo 30 anos da publicação de seu primeiro livro. `,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -16299,7 +16298,7 @@ export const LasarSegall_LiubaWolf: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Em 1960, a artista Liuba , fez o busto em bronze emhomenagem ao pintor, mas somente instalado em 1964.
     A homenagem foi uma iniciativa do Departamento de Cultura do Estado, em comemoração do 30º aniversario da primeira exposição de arte moderna.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -16335,7 +16334,7 @@ export const ClarisseIndiodoBrasil_HCunhaMelo: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Na homenagem Clarisse está representada com a fisionomia tranquila, em volta em três figuras anjo na altura do
     ombro.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -16370,7 +16369,7 @@ export const ClariceLispector_EdgarDuvivier: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Nascida na Ucrânia e naturalizada brasileira, a premiada Clarice Lispector é considerada uma das mais importantes escritoras brasileiras do século XX tendo sido traduzida para mais de 10 idiomas, do tcheco ao japonês. Com autoria de Edgar Duvivier, a escultura que traz Clarice com seu companheiro, o cão UIisses, está no bairro do Leme, onde ela viveu por 12 anos.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -16405,7 +16404,7 @@ export const Chacrinha_Ique: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Caminhando pelas ruas do bairro Jardim Botânico podemos encontrar Abelardo Barbosa, o Chacrinha. Considerado um dos melhores apresentadores de televisão, O “Velho Guerreiro” desfila com uma gravata borboleta, um bacalhau na mão e a tradicional buzina pendurada no pescoço. A Estátua assinada pelo cartunista Ique Woitschach foi instalada, em 2010, no caminho que o apresentador fazia para o antigo Teatro Fênix. `,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -16446,7 +16445,7 @@ export const Harmonia_JeanJacquesPradier: Obra = {
     iria ser instalada no Largo da Carioca, cuja ideia foi rejeita. Posteriormente foi sugerida
     a instalação no Largo do Boticário tambem não aceita, sendo então alocada no Largo dos
     Leões, onde permanece até hoje. Desativado em data desconhecida.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -16482,7 +16481,7 @@ export const AbrahamMedina_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem para lembrar o carioca entusiasta que promoveu e valorizou a cidade.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1999',
       '1999',
       'Furto',
@@ -16490,9 +16489,9 @@ export const AbrahamMedina_Desconhecida: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Fundição/Atelier', "Porão d'Arte", [], 'Rio de Janeiro'),
-    new Fato('', '', 'Doação', 'Obra doada à cidade', [], 'Rio de Janeiro'),
-    new Fato('', '', 'Homenagem', 'Homenagem dos amigos', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Fundição/Atelier', "Porão d'Arte", [], 'Rio de Janeiro'),
+    new Fact('', '', 'Doação', 'Obra doada à cidade', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Homenagem', 'Homenagem dos amigos', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
@@ -16530,7 +16529,7 @@ export const GetulioVargasBenfica_Desconhecida: Obra = {
   Descricao: `A homenagem ao ex-presidente foi erguida pelo reconhecimento e esta localizada no interior do conjunto dos
     ex-combatentes.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -16573,7 +16572,7 @@ export const PadreGuilhermeDecaminada_Desconhecida: Obra = {
   MaterialBase: 'Concreto',
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem ao padre missionário foi erguido por gratidão ao seu trabalho incansavelmente na região.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -16610,8 +16609,8 @@ export const AlvaroCostaMelo_Desconhecida: Obra = {
   Descricao: `O busto é uma homenagem da Força Empresarial de Bonsucesso ao empresário local. Foi uma iniciativa do
     gerente do Unibanco Wilson Xavier que angariou fundos e instalou um busto.`,
   Fatos: [
-    new Fato('', '', 'Fundição/Atelier', 'Laborate', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Fundição/Atelier', 'Laborate', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '01/05/1993',
       'Homenageado',
@@ -16619,7 +16618,7 @@ export const AlvaroCostaMelo_Desconhecida: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '07/05/1993',
       '07/05/1993',
       'Missa de 7 dia',
@@ -16627,7 +16626,7 @@ export const AlvaroCostaMelo_Desconhecida: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenagem',
@@ -16671,7 +16670,7 @@ export const AlmiranteMiguelGrau_PedroMMartinezCorada: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Busto foi doado à cidade do Rio de Janeiro pela Marinha de Guerra Peruana.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -16715,7 +16714,7 @@ export const ChicoXavier_Desconhecida: Obra = {
   Status: 'Removida do espaço público',
   Descricao:
     'Busto encontrado nos jardins do Parque Lage e doada a Fundação Parques e Jardins, depósito',
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -16752,7 +16751,7 @@ export const JoaoPauloII_MarioAgostinelli: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A peça foi confeccionada durante dois meses e meio. A iniciativa da Prefeitura da Cidade do Rio de Janeiro fez parte da organização do II Encontro Mundial das famílias com o Papa João Paulo II. O pontifície é representado de corpo inteiro numa postura típica de acolhimento. Junto a ele, encontra-se uma placa com as inscrições: Papa João Paulo II. E conhecereis a verdade e a verdade vos libertará.Jardim da Catedral Metropolitana de São Sebastião,`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1997',
       '1997',
       'Encomenda oficial',
@@ -16760,7 +16759,7 @@ export const JoaoPauloII_MarioAgostinelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -16768,7 +16767,7 @@ export const JoaoPauloII_MarioAgostinelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1997',
       '1997',
       'Patrocínio',
@@ -16776,7 +16775,7 @@ export const JoaoPauloII_MarioAgostinelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '04/10/1997',
       '04/10/1997',
       'Inauguração',
@@ -16784,7 +16783,7 @@ export const JoaoPauloII_MarioAgostinelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '06/11/1997',
       '06/11/1997',
       'Vandalismo',
@@ -16792,7 +16791,7 @@ export const JoaoPauloII_MarioAgostinelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '11/11/1997',
       '11/11/1997',
       'Limpeza',
@@ -16836,7 +16835,7 @@ export const MacacoTiao_GianPietroZanni: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Estátua homenageando o mais popular animal na história do Zoológico do Rio de Janeiro, morto em 1996, patrocinada
     pela rede de lanchonetes Mc Donalds, que o adotara dois anos antes.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'celebratória',
@@ -16873,7 +16872,7 @@ export const OMascateRiachuelo_HonorioPecanha: Obra = {
   Descricao: `Réplica da escultura de um homem com alegorias, uma amostra de tecido num braço, e com a outra mão abrindo um baú de
     mercadorias. É uma homenagem do SENAC ao pioneiro do comercio no Brasil. É uma reprodução do original realizado em 1964.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1964',
       '1964',
       'Original',
@@ -16881,7 +16880,7 @@ export const OMascateRiachuelo_HonorioPecanha: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -16925,7 +16924,7 @@ export const DuploTotem_CeleidaTostes: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Trata-se de duas peças formando conjunto.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1965',
       '1965',
       'Tombamento',
@@ -16970,7 +16969,7 @@ export const EliasGoraybe_Desconhecida: Obra = {
   Descricao: `Homenagem ao primeiro pároco da Matriz Maronita Nossa Senhora do Líbano, erigido por uma iniciativa da comunidade
     libanesa do Rio de Janeiro.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -17013,7 +17012,7 @@ export const Laranja_GeorgeLopes_GeorgeGuerra: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Trata-se de uma escultura em aço pintado na cor laranja vazada criando uma forma de uma laranja. A obra custou 4 vezes o valor da escultura Prometeu, de Bruno Giorgi, avaliada em R$ 8mil`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
@@ -17048,7 +17047,7 @@ export const Broca_GeorgeLopes_GeorgeGuerra: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Escultura representando uma broca como saindo do solo.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
@@ -17084,7 +17083,7 @@ export const ArcoIris_GeorgeLopes_GeorgeGuerra: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `É uma escultura composta por colunas feitas em chapa de aço retangular unidas por peças do mesmo material
     pintada em diversas cores para representar um arco-íris.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
@@ -17121,7 +17120,7 @@ export const Laranjais_GeorgeLopes_GeorgeGuerra: Obra = {
   Descricao: `Colunas de concreto com uma semiesfera na extremidade, representando os laranjais
     existentes na região durante o período de ocupação rural. Cada colunata custou a época foi
     R42.280,00.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
@@ -17157,7 +17156,7 @@ export const Colunatas_GeorgeLopes_GeorgeGuerra: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Colunas de concreto com uma semiesfera na extremidade, representando os laranjais existentes na região durante o
     período de ocupação rural. Cada colunata custou a época foi R$2.280,00.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
@@ -17192,7 +17191,7 @@ export const Piramide_GeorgeLopes_GeorgeGuerra: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Escultura formando uma pirâmide representando o desenvolvimento da região.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
@@ -17228,7 +17227,7 @@ export const SaoFranciscodePaula_GiovanniBattistaMaini: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A escultura foi inaugurada na data comemorativa dos 40 anos da Ordem dos Mínimos do Brasil na Barra da Tijuca.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Réplica',
@@ -17272,7 +17271,7 @@ export const Carnica_AnaluNabuco: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura patrocinada pelo Apoio Espaço 41 Oficina de Arte e doada à Cidade do Rio de Janeiro.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -17319,7 +17318,7 @@ export const Atena_Desconhecida: Obra = {
   Status: 'Transferida',
   Descricao: `A escultura que representa a Deusa das Artes. Foi retirada em 1988 da Praça das Nações e transferida para o depósito da Prefeitura da época. Em 1994 foi instalada para o parque a fim de embelezar o espaço.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1988',
       '1988',
       'Remoção',
@@ -17327,7 +17326,7 @@ export const Atena_Desconhecida: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1994',
       '1994',
       'Realocação',
@@ -17374,7 +17373,7 @@ export const Menora_Desconhecida: Obra = {
     comunidade Judaica no Rio de Janeiro. O monumento retirado em 1988, a fim de possibilitar as
     obras de construção, da estação do metro de Copacabana, foi reinstalado em 12 de dezembro de
     2004, por iniciativa da organização judaica Beit Lubavitch pela CHL Incorporações.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Celebratória',
@@ -17409,7 +17408,7 @@ export const Animais_JorgeMarioJauregui: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Peças representando animais recortados fixadas ao longo de um mural. Foi instalado no Projeto Rio-Cidade na área de lazer infantil.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -17445,7 +17444,7 @@ export const ADiasdaCruz_VicenteDelRio_LuizCarlosToledo: Obra = {
   Status: 'Furtada',
   Descricao: `O monumento, um monolito com blocos de pedra de mão, tem a efígie do médico. A peça em bronze é cópia da
     existente na Praça Tobias Barreto, em Vila Isabel. A efígie foi furtada em 2009.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -17481,7 +17480,7 @@ export const AAugustoMotta_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem ao professor e educador, foi doada pelo Rotary Club Leopoldinense e
     inaugurado na reforma da praça promovida pelo Rio-Cidade Bonsucesso.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -17521,7 +17520,7 @@ export const FernandoBaptistaGoncalves_EdgarDuvivierFilho: Obra = {
   Descricao: `Trata-se de uma homenagem dos antigos alunos do Colégio Padre Antonio Vieira ao mestre. Foi doada à Cidade pela
     associação dos alunos.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -17564,7 +17563,7 @@ export const SagradoCoracaodeJesus_Desconhecida: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `A imagem do Sagrado Coração de Jesus está com a presença conhecida na praça desde 1971.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -17599,7 +17598,7 @@ export const JCarlos_HumbertoCozzo: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem foi instalada nessa praça pela proximidade a residência de J Carlos, por iniciativa de seus amigos. A cabeça em bronze se sustenta sobre uma coluna circular de granito preto, onde existe uma gravação em baixo relevo com o nome do cartunista e diversos rostos femininos.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -17634,7 +17633,7 @@ export const ManuelMadruga_FloryGama: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Foi uma homenagem da Sociedade dos Artistas Nacionais e a Sociedade Brasileira de Belas Artes no 1º aniversário da morte do grande artista.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -17670,7 +17669,7 @@ export const QuintinoBocaiuva_HildegardoLeaoVelloso: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi o projeto vitorioso de um consurso publico. O Autores: resolveu adotar um projeto simples, com o homenageado em gruande dimessão ( cerca de onze metros de altura), com a descrição biografica na parte posterior.
     Foi inicialmente instalado na antiga Praça Piaçava, atual José Mariano, no Jardim Botânico. Por ocasião da construção do viaduto pelo DER, o monumento não foi desmontado. Em 1982, foi restaurado e assentado sobre um pedestal de concreto armado.`,
-  Fatos: [new Fato('', '', 'bem tombado estadual', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado estadual', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -17706,7 +17705,7 @@ export const EusebioDeOliveira_CesarDoria: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem foi erguida por iniciativa do Departamento Nacional de Produção Mineral e do Ministério da Agricultura, em frente à sede do antigo Serviço Geológico e Mineralógico do Brasil,que por longos anos foi diretor dessa tradicional instituição científica.
     Na obra, foram empregados blocos de pedras de cores azul, verde e rosa, simbolizando a especialização em que tanto se aprofundou o espírito pesquisador do geólogo homenageado.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -17743,7 +17742,7 @@ export const HeroisdeLagunaeDourados_AntonioPintodeMattos: Obra = {
   Descricao: `A idéia da elevação de um monumento aos heróis do drama épico da Retirada da Laguna e de Dourados, capitaneados pelo Tenente Antônio João, data de 1920. O primeiro projeto proposto foi de Autores:ia do General Maciel de Miranda, e deveria ser erguido no pátio interno do Quartel-general do Rio de Janeiro, depois Ministério da Guerra. O atual monumento, em bronze e granito foi uma iniciativa do Coronel Pedro Cordolino Ferreira de Azevedo.
     Sobre uma base circular, esta uma cripta onde se encontram os retos mortais do Coronel Camisão, do Guia Lopes e o cenotáfio do Tenente Antônio João, desde 15 de novembro de 1941 quando foi inaugurada. Desta ergue-se a coluna onde esta a alegoria da Vitória. Ao centro da coluna estão as estátuas dos três principais heróis: o Tenente Antônio João, no momento em que, baleado, cambaleando; o Guia Lopes, recurvado, apoiando o queixo no dorso da mão esquerda, e o Coronel Camisão, com a fisionomia de quem tem uma grave decisão a tomar, tendo numa das mãos a espada e na outra o mapa de campanha. Mais acima, do ponto onde parte a coluna, erguem-se três grandes alegorias em bronze, representando a Pátria, a Espada e a História
     Diversos artistas participaram na execução monumento: a grade à entrada da cripta é de Curzio Zani; a porta de entrada do recinto de Calmon Barreto; a imagem de Cristo sobre a lápide do mesmo artista; o lanceiro guardando o sarcófago de Leão Veloso, e os sete medalhões com efígies e nomes dos heróis de Adalberto de Matos.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -17789,7 +17788,7 @@ export const FredericChopin_AugustZamoiski: Obra = {
     Guerra Mundial com a invasão da Polonia. Foi doado pela colônia polonesa ao Brasil. Trata-se de
     uma estatua em bronze, sobre pedestal cúbico, representado o compositor de pé com expressão
     pensativa, chamado pelos polonose "Estatua da Saudade"`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -17834,7 +17833,7 @@ export const AdelinoMoreira_MestreSaul: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const MarechalCandidoRondon_NewtonSa: Obra = {
@@ -17864,7 +17863,7 @@ export const MarechalCandidoRondon_NewtonSa: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem foi erigido em comemoração ao 15 º aniversário da Embratel (Empresa Brasileira de Telecomunicações),
     ao seu patrono. O Marechal esta representando com sua farda. Foi inaugurado pelo General Frederico Rondon, primo do homenageaso .`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -17908,7 +17907,7 @@ export const IntentonaComunista_HumbertoCozzo: Obra = {
     foram para esse monumento estilo art decor.Ao centro, numa coluna ladeada por duas urnas,
     vê-se a figura da República, com uma coroa de louros nas mãos. A seus pés, mais à frente,
     ergue-se a estátua em bronze de um soldado ferido. O Monumento em 1974 foir transferido do Cemitério São João Batista para a praça.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -17943,7 +17942,7 @@ export const Vestal_Desconhecida: Obra = {
   MaterialBase: 'Gnaisse',
   Status: 'Permanece em espaço público',
   Descricao: `Escultura feminina com uma chama sagrada nas mãos, uma representação neoclássica.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -17978,7 +17977,7 @@ export const Ceres_Desconhecida: Obra = {
   MaterialBase: 'Gnaisse',
   Status: 'Permanece em espaço público',
   Descricao: `Escultura feminina com espigas de trigo em suas mãos, numa representação neoclássica`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -18013,7 +18012,7 @@ export const Flora_Desconhecida: Obra = {
   MaterialBase: 'Gnaisse',
   Status: 'Permanece em espaço público',
   Descricao: `Escultura feminina neoclássica representando Flora com a cabeça coroada de flores.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -18048,7 +18047,7 @@ export const Pomona_Desconhecida: Obra = {
   MaterialBase: 'Gnaisse',
   Status: 'Permanece em espaço público',
   Descricao: `Escultura feminina com frutos nas mãos de linhas neoclássicas. `,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -18082,8 +18081,8 @@ export const SaoPedrodoMar_EdgarDuvivier: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Singela escultura de corpo de cilindrico, representando o Apóstolo sobre uma pedra da baía.
-    Segundo o Sr. José Carlos Audiface de Brito " Indo a Itália após Torneio Mundial de Caça Submarino, conheci em Rapallo o Cristo submerso. Tive então a ideia da imagem de São Pedro. Regressando ao Brasil, conseguiu o apoio do caçador e jornalista João Carlos Vogt e do escultor Edgard Duvivier Com subscrição levantou os fundos necessários à fundição. A ideia inicial de colocá-la no fundo do mar nas Cagaras, foi abandonada para possibilitar o acesso a mesma de maior número de pessoas, opinando-se pela colocação na Urca em frente a igreja cujo o pároco padre Barbosa, que colaborou com o projeto. A imagem de São Pedro executada para ser olhada de cima para baixo, na previsão inicial de colocá-la no fundo do mar nas ilhas Cagaras, Na cerimônia de colocação, em 1959, participaram os membros da equipe brasileira ao mencionado I Torneio Mundial de Caça Submarina em Portugual, e os desportistas Vitório Berredo, Victor Wellisch, Américo Santarelle e outros."`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+    Segundo o Sr. José Carlos Audiface de Brito " Indo a Itália após Torneio Mundial de Caça Submarino, conheci em Rapallo o Cristo submerso. Tive então a ideia da imagem de São Pedro. Regressando ao Brasil, conseguiu o apoio do caçador e jornalista João Carlos Vogt e do escultor Edgard Duvivier Com subscrição levantou os fundos necessários à fundição. A ideia inicial de colocá-la no fundo do mar nas Cagaras, foi abandonada para possibilitar o acesso a mesma de maior número de persons, opinando-se pela colocação na Urca em frente a igreja cujo o pároco padre Barbosa, que colaborou com o projeto. A imagem de São Pedro executada para ser olhada de cima para baixo, na previsão inicial de colocá-la no fundo do mar nas ilhas Cagaras, Na cerimônia de colocação, em 1959, participaram os membros da equipe brasileira ao mencionado I Torneio Mundial de Caça Submarina em Portugual, e os desportistas Vitório Berredo, Victor Wellisch, Américo Santarelle e outros."`,
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18154,7 +18153,7 @@ export const EdmundoBittencourt_HildegardoLeaoVelloso: Obra = {
   Longitude: `-43.1903542`,
   Descricao: `O monumento foi erguido por Iniciativa de um grupo de admiradores`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Comissão de homenagem',
@@ -18202,7 +18201,7 @@ export const ComendadorPauloFPeixotoDaFonseca_HonorioPecanha: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `No singelo monumento de granito bruto tem uma placa fixada a efígiedo Comendador e uma outra alusivaàssuas doações à Cidade.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18237,7 +18236,7 @@ export const AlbertEinstein_HonorioPecanha: Obra = {
   MaterialBase: 'Gnaisse',
   Status: 'Permanece em espaço público',
   Descricao: `O monumento foi inaugurado nocentenário do nascimentode Albert Einstein, por iniciativa daLoja Albert Einstein  de b&rsquo;Nai  de B&rsquo;Ricth do Brasil. O ato foi prescedido de uma benção ecunemica com os religiosos Dom Estevão Bittencourt, Partos Nehemias Marien e o Rabino Nersod Benesay. O descerraemnto foi feito por representantes diplomático de Israel e Alemanha.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18274,7 +18273,7 @@ export const IbrahimSued_MarcosAndreSales: Obra = {
   Descricao: `A homenagem foi iniciativa de sua filha e realizada por subscrição de seus amigos jornalistas. Foi uma doação à
     Cidade. A inauguração contou com a presença do Prefeito Cesar Maia e o neto de Ibrahim agradeceu a homenagem.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -18319,7 +18318,7 @@ export const SerenaDamadoMar_LuizFigueiredo: Obra = {
   Descricao: `Escultura em bronze doada à Cidade pela Companhia de Navegação Viamar com apoio da Fundação Rio Arte. Foi
     inaugurada pera os festejos de Iemanjá no ano de 1988.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -18364,7 +18363,7 @@ export const CarlosDrummondDeAndrade_LeoSantana: Obra = {
   Descricao: `O monumento foi instalado em comemoração ao centenário do nascimento do poeta.
 A criação foi inspirada numa foto tirada pelo fotógrafo Rogério Reis. O poeta está sentado no banco em frente à Avenida Rainha
 Elizabet, voltado para a cidade e de costas para o mar.//Localizada próximo ao posto 6, em Copacabana, o monumento a Carlos Drummond de Andrade é campeão em interação por quem passeia pelo calçadão mais famoso da cidade. A obra foi instalada em 2002 para comemoração do centenário do poeta mineiro e mais influente escritor brasileiro no século XX.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18400,7 +18399,7 @@ export const DorivalCaymmi_OttoDumovich: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem à Dorival Caymmi foi uma solicitação da família à Prefeitura da Cidade, inspirada numa fotografia de
     Evandro Teixeira, em Ipanema.// No final da praia de Copacabana, o cantor e compositor baiano Dorival Caymmi saúda os visitantes. Inspirada no registro das lentes de Evandro Teixeira, a estátua de autoria de Otto Dumovich foio inaugurada em 2008 e está próxima da vila dos pescadores, um tema recorrente nas suas canções.`,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18435,7 +18434,7 @@ export const TimMaia_ChristinaMotta: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Nascido e eternizado na Tijuca, na Praça Afonso Pena, Tim Maia é responsável pela introdução do soul na música popular brasileira e reconhecido mundialmente como um dos maiores ícones da música no Brasil. Com autoria de Cristina Motta, a estátua do cantor é uma das mais recentes no Rio e possui 150 quilos, apenas 10 a menos do que o cantor.`,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18470,7 +18469,7 @@ export const AnaCarolina_MarliMazeredo: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'undefined',
   Funcao: 'Referencial',
@@ -18506,7 +18505,7 @@ export const TeneteSiqueiraCamposAoLevantedos18doForte_JoseRangel: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `O monumento é o reconhecimento "Aos 18 combatentes" , sairam em marcha pela Avenida Atlântica. A estátua em bronze representa Siqueira Campos no momento que foi alvejado por um tiro.
     Foi inaugurado em 20 de setembro de 1959 na Praça Eugênio Jardim e reinaugurado na Avenida Atlântica em 05 de julho de 1974.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18546,7 +18545,7 @@ export const PrincesaIsabel_EdgarDuvivierFilho: Obra = {
   Descricao: `Estátua em bronze inspirada numa fotografia, onde a princesa tem na mão uma pena como se estivesse acabando de
     assinar a Lei Áurea a na outra um gesto solto. A confecção da escultura foi solicitada ao prefeito`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '13/05/2003',
       'Inauguração',
@@ -18554,7 +18553,7 @@ export const PrincesaIsabel_EdgarDuvivierFilho: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Solicitação',
@@ -18562,7 +18561,7 @@ export const PrincesaIsabel_EdgarDuvivierFilho: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/ Atelier',
@@ -18570,8 +18569,8 @@ export const PrincesaIsabel_EdgarDuvivierFilho: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato('', '01/08/2018', 'Furto', '', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact('', '01/08/2018', 'Furto', '', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'undefined',
@@ -18610,7 +18609,7 @@ export const CoelhoCintra_LaurindoRamos: Obra = {
     ocasião do centenário da urbanização do bairro, em 1892. Inicialmente foi instalado nesse
     local, em 1996 foi transferido para a Avenida Lauro Sodre, onde permaneceu até junho de
     2006, quando retornou para a Avenida Princesa Isabel, por solicitação da família.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18650,7 +18649,7 @@ export const ViscondedoRioBranco_FelixMauriceCharpentier: Obra = {
     Paris. Foi inaugurada na praça da Glória, nas proximidades da base do Outeiro e nessa praça
     em 1996. O monumento foi erguido por subscrição publica com a iniciativa a cargo da Viscondessa.
     Tem sete metros de altura, sendo de dois metros de altura da estátua em bronze. O pedestal mede 3,35 metros. O Visconde está sentado e veste o uniforme de Senador do Império. O braço direito descansa em dois livros  A Convenção de 20 de fevereiro, obra sua, de diplomata e de estadista, e o volume de 1871, da  Coleção de Leis do Brasil. No chão, encostada à cadeira, vê-se uma pasta de papéis, com o dístico: _ Presidente do Conselho de Ministros.O pedestal é de Pedra da Boloye e está assentado sobre uma base de granito brasileiro.Na frente há em bronze uma figura de mulher representando a história. Ela traz escrita, numa tábua, de bronze, as palavras latinas, dos Anais de Tácito e está em atitude de quem as lê. A mão direita sustenta um estilete.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18684,7 +18683,7 @@ export const IrmaosBernardelli_HildegardoLeaoVelloso: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `É uma dupla homenagem aos irmãos Rodolfo e Henrique Bernardelli no centenario de Rodolfo. A praça foi escolhida porque nesse local viveram e trabaharam os artistas.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18720,7 +18719,7 @@ export const Vitoria_MarliMazeredo: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Escultura abstrata representando a "Vitória".`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -18768,7 +18767,7 @@ export const SarahKubitschek_MarliMazeredo: Obra = {
   Descricao: `O monumento tem o busto de Sara envolto num semicírculo em resina e mármore. Foi uma iniciativa da Associação
     Cultural Sara Kubitschek em homenagem a sua patrona.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -18811,7 +18810,7 @@ export const SerzedeloCorreia_RodolfoBernardelli: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem foi em reconhecimento ao engenheiro do governo do Prefeito Pereira Passos. Foi uma iniciativa dos dos moradores de Copacabana.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18851,9 +18850,9 @@ export const Baleia_AngeloVenosa: Obra = {
   Descricao: `Peça de 16 toneladas composta por dois elementos em aço de 2 polegadas de espessua, com 17 aneis de 4 metros de altura,; 2,50m de
     largura e 6 metros de comprimento e outra peça menos com 1 metro de altura 2 de largura e 2,50 de comprimento.`,
   Fatos: [
-    new Fato('', '', 'Título', 'Sem título', [], 'Rio de Janeiro'),
-    new Fato('', '', 'Renomeação', 'A baleia', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Título', 'Sem título', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Renomeação', 'A baleia', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Doação',
@@ -18861,7 +18860,7 @@ export const Baleia_AngeloVenosa: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1998',
       '1998',
       'Transferencia',
@@ -18869,7 +18868,7 @@ export const Baleia_AngeloVenosa: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -18911,7 +18910,7 @@ export const MarechalFlorianoPeixoto_EduardoDeSa: Obra = {
     Marechal Floriano Peixoto, com espada em punho. As figuras de Tiradentes,Jose Bonifácioe Benjamim Constant, que surgem da bandeira da República. Na base as grandes datas da nossa história  1500, 1822, 1888 e 1889
     estão gravadas e no plano inferior, as seguintes legendas  A sã política é filha da moral e da razão  O amor por principio e a ordem por base; o progresso por fim  Libertas quae sera tamen  A bem amada Pátria, a
     gratidão de seus filhos.`,
-  Fatos: [new Fato('', '', 'Subscrição Popular', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Subscrição Popular', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18949,7 +18948,7 @@ export const PauloSampaio_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A primeira homenagem foi retirada da Praça em frente ao prédio da finada companhia aereo em 1967. Esse busto
     foi um pedido dos ex-funcionários da Panair ao prefeitura`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -18984,7 +18983,7 @@ export const CasteloBranco_DanteCroce: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem foi uma iniciativa do governo do Estado. A saudação foi feita pelo governador Chagas Freitas, que destacou a personalidade do ex-presidente e disse que “o povo e o governo cariocas resgatam uma divida.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -19022,7 +19021,7 @@ export const UniaodosPovosAmericanos_MarioAgostinelli: Obra = {
     simbolizando a união das Três Américas sobre um pedestal. O monumento foi retirado do canteiro
     central para as obras do metro retornando para o espaço publico em 2016.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '01/1955',
       '01/1955',
       'Inauguração',
@@ -19030,7 +19029,7 @@ export const UniaodosPovosAmericanos_MarioAgostinelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Remoção',
@@ -19038,7 +19037,7 @@ export const UniaodosPovosAmericanos_MarioAgostinelli: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '2016',
       '2016',
       'Realocação',
@@ -19084,7 +19083,7 @@ export const BichosHibridos_VaniaVilela: Obra = {
     Escultura abstrata em ferro pintada nas cores preto e vermelho com recortes, com cerca de 3 metros a peça maior e 2,50 a menor,
     cria a peça uma dimensão lúdica. A peça esta desaparecida desde a obra da duplicação do Viaduto do Joá, que retirou para a
     execução da obra`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
@@ -19123,7 +19122,7 @@ export const AoPAN2007_RobertoKenjiFukuda: Obra = {
     foi doada à Cidade pelas construtoras Carvalho Hosken e a RJZ Cyrela. Foram necessários seis meses para que a escultura ficasse pronta.
     Precisou ser dividida em duas partes devido ao tamanho, foram necessárias mais duas semanas até que a montagem pudesse ser
     concluída no local definitivo.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -19158,7 +19157,7 @@ export const Surf_MauricioBentes: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -19194,7 +19193,7 @@ export const AyrtonSenna_MarioPitanguy: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Estátua em tamanho real do piloto Ayrton Senna. O piloto foi retratado trajando um macacão e está posicionado no deugrau mais alto de um pódio e celebrando uma vitória com a bandeira do brasil nas mãos.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '27/12/2019',
       '27/12/2019',
       'Inauguração',
@@ -19202,7 +19201,7 @@ export const AyrtonSenna_MarioPitanguy: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -19210,7 +19209,7 @@ export const AyrtonSenna_MarioPitanguy: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenageado',
@@ -19254,8 +19253,8 @@ export const JoaquimNabuco_OttoDumovich: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'Homenageado', 'Joaquim Nabuco', [], ''),
-    new Fato(
+    new Fact('', '', 'Homenageado', 'Joaquim Nabuco', [], ''),
+    new Fact(
       '',
       '',
       'Homenagem',
@@ -19263,7 +19262,7 @@ export const JoaquimNabuco_OttoDumovich: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Solicitação',
@@ -19307,7 +19306,7 @@ export const CandidoDeOliveira_LaurindoRamos: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Solicitação',
@@ -19315,8 +19314,8 @@ export const CandidoDeOliveira_LaurindoRamos: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('06/1991', '06/1991', 'Inauguração', '', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('06/1991', '06/1991', 'Inauguração', '', [], 'Rio de Janeiro'),
+    new Fact(
       '1919',
       '1919',
       'Réplica',
@@ -19324,7 +19323,7 @@ export const CandidoDeOliveira_LaurindoRamos: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -19368,7 +19367,7 @@ export const SebastiaoLeme_MariaDaGloriaVianaPatrasso: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem em agradecimento ao segundo cardeal brasileiro.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenageado',
@@ -19376,7 +19375,7 @@ export const SebastiaoLeme_MariaDaGloriaVianaPatrasso: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '10/1951',
       '10/1951',
       'Inauguração',
@@ -19422,7 +19421,7 @@ export const PierreRichiereGuillaumeChartier_JoasPereiraDosPassos: Obra = {
     de monumento comemorativo à primeira celebração eucarística protestante no Brasil e nas Américas, realizada no Rio de Janeiro
     em 21 de março de 1557.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -19465,7 +19464,7 @@ export const CondeCunha_LuisPaesLeme: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Homenagem ao fundador do Arsenal do Rio de Janeiro. O erguido graçaas a iniciativa di Almirante Renato Guilhobel, firetor do AMRJ. O busto esta sob a guarda do Arsenal devido a obra da praça Barão de Ladário.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -19500,7 +19499,7 @@ export const AntonioJanuzzi_Desconhecida: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `O busto foi uma doação da ONG Ital Rio para à cidade do Rio. Foi retirado em 11 de janeiro de 2016, devido as obras do VLT no centro do Rio e transferido para o depósito da Prefeitura.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -19535,7 +19534,7 @@ export const JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Trata-se de um monolito com uma placa em bronze com a figura do homenageado.<Temporariamente sem visitação no jardim da Biblioteca Nacional. O monumento foi erguido por iniciativa dos jornalistas Heitor Beltrão e Ariosto Berna, com apoio do Movimento Libertador da Terra Carioca e da Casa do Jornalista. Foi inaugurado na data do centenário do Nascimento do homenageado.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -19570,7 +19569,7 @@ export const LimaBarreto_EdgarDuvivier: Obra = {
   MaterialBase: 'Concreto',
   Status: 'Permanece em espaço público',
   Descricao: `Esse monumento foi erguido a pedido da Casa Lima Barreto, pela Prefeitura nas comemorações do nascimento do escritor brasileiro.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -19605,7 +19604,7 @@ export const AMelvinJoneseArmandoFarjado_Ariel: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Monolito em homenagem ao primeiro Leão Brasileiro Armando Farjado, e de Melvin Jones. Na frente o marco tem duas mãos unidas esculpida na pedra. O Monumento foi inaugurado na passagem do 25º aniversatio da fundação do clube, durante XXV Convenção Nacional do Lios Club, com a participação de oito mil associados.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -19642,7 +19641,7 @@ export const GabrielHabib_HildegardoLeaoVelloso: Obra = {
   Descricao: `O busto foi realizado nos anos de 1960 e instalada na loja da rede no Centro e
     posteriormente para uma outra no bairro de Inhaúma. Somente em 2014 foi doado pela familia para
     o reconhecimento público.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -19679,7 +19678,7 @@ export const GrandjeandeMontiny_NicolinaVazDeAssisPintodoCouto: Obra = {
   Descricao: `Esse monumento foi inicialmente instalado na Quinta da Boa Vista junto de Auguste Francois Marie Glaziou. Em 1996,
     por solicitação da Casa França Brasil a Fundação Parques e Jardins concedeu a cessão de uso para aquela instituição,
     permanecendo até hoje. A obra foi paga pelo Ministério da Viação.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -19714,7 +19713,7 @@ export const JuliodeCastilhos_Desconhecida: Obra = {
   MaterialBase: 'Concreto',
   Status: 'Permanece em espaço público',
   Descricao: `O busto de Julio de Castilhos estava no depósito da Prefeitura desde os anos de 1980. Por iniciativa da Casa de Deodoro, a Prefeitura realizou a cessão do uso do busto, a fim de garantir sua integridade bem como sua exposição em espaço público.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -19750,7 +19749,7 @@ export const AryBarroso_LeoSantana: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Consagrado compositor de "Aquarela do Brasil", uma das músicas que mais produz direitos autorais no exterior, Ary Barroso ganhou uma estátua de bronze no ano de seu centenário de nascimento em Copacabana.',
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -19785,7 +19784,7 @@ export const AryBarroso_OttoDumovich: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
@@ -19819,7 +19818,7 @@ export const AoNuncaMais_CristinaPozzobon: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Monumento em homenagem a resistência e a luta pela anistia, doado à Cidade pela Comissão de Anistia do Ministério da Justiça, por ocasião dos 50 anos do Golpe de 1964. As estrelas cravadas no piso são em homenagem aos militares cassados após o golpe de 1964.Escultura com cerca de 3 m de altura, ele tem uma bandeira "desconstruída" com estrelas afixadas no chão.// O monumento “Ao nunca mais” é uma homenagem à resistência brasileira e à luta pela anistia e foi instalado em 2014 patrocinado pela Comissão de Anistia do Ministério da Justiça e doado à Prefeitura em ocasião dos 50 anos do Golpe de 1964. Feito pela artista plástica Cristina Pozzobon, a escultura tem 2,5 metros de altura, em aço córten, representa a bandeira brasileira cortada ao meio com estrelas no chão.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: undefined,
   Funcao: undefined,
@@ -19856,7 +19855,7 @@ export const Pax_MarioMatos: Obra = {
   Descricao: `Figura feminina em bronze representando a Paz, sobre uma coluna em mármore de Verona com florões e detalhe corinto
     no topo. Esse monumento faz par com outro, que representa o trabalho, emoldurando o prédio da Camara dos Vereadores da Cidade,
     o Palácio Pedro Ernesto.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: undefined,
   Funcao: undefined,
@@ -19892,7 +19891,7 @@ export const Trabalho_MarioMatos: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Figura feminina em bronze representando o Trabalho, sobre uma coluna em mármore de Verona com florões e detalhe
     corinto no topo. Esse monumento faz par com outro, que representa a Paz, emoldurando o prédio da Câmara dos Vereadores.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: undefined,
   Funcao: undefined,
@@ -19928,7 +19927,7 @@ export const CriancasComAConcha_FrançoisLespingola: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Esse conjunto de crianças, são reproduções das peças do Jardim de Versalhes, de
     François Lespingola, doada à cidade pelafamília Guinle, para a decoração do Chafariz.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
@@ -19964,7 +19963,7 @@ export const CriancasComoPassaro_SimonMazieredas: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Esse conjunto de crianças são reproduções de Simon Mazièredas peças Jardim de Versalhes, doada à cidade pela família Guinle.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '1990',
       'Tombado pelo IPHAN pelo processo 1132-T-84 e inscrito no Livro de Belas Artes Nº inscr.: 597 ;Vol. 2 ;F. 018',
@@ -20009,7 +20008,7 @@ export const CriancasComATocha_PhilippeGarnier: Obra = {
   Descricao: `Esse conjunto de crianças são reproduções, das peças existentes nos Jardim de
     Versalhes, de Philippe Granier, doada à cidade pela família Guinle para a decoração do Chafariz.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '1990',
       'Tombado pelo IPHAN pelo processo 1132-T-84 e inscrito no Livro de Belas Artes Nº inscr.: 597 ;Vol. 2 ;F. 018',
@@ -20054,7 +20053,7 @@ export const CriancasComflores_PierreLaviron: Obra = {
   Descricao: `O conjunto de crianças são reproduções das peças do Jardim de Versalhes, de
     Pierre Laviron,doada à cidade pelafamília Guinle.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '1990',
       'Tombado pelo IPHAN pelo processo 1132-T-84 e inscrito no Livro de Belas Artes Nº inscr.: 597 ;Vol. 2 ;F. 018',
@@ -20253,7 +20252,7 @@ export const ChafarizOutono_MathurinMoreau: Obra = {
   MaterialBase: 'Ferro fundido',
   Status: 'Permanece em espaço público',
   Descricao: `O Chafariz em ferro fundido foi doado pelo Barão da Taquara para o embelezamento da localidade e o abastecimento dos animais que por ali passavam. Um pedestal quadrangular, tendo em cada face uma carranca que verte água numa bacia em semicírculo, serve de pedestal a uma graciosa estátua masculina, representando a estação.`,
-  Fatos: [new Fato('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: undefined,
   Funcao: undefined,
@@ -20326,8 +20325,8 @@ export const DianadeGabies_Desconhecida: Obra = {
     como As crianças e o guarda-chuva, inaugurado em 1936. Com o seu desaparecimento foi substituído por esta escultura.
     É uma reprodução em ferro fundida da existente do Museu do Louvre.`,
   Fatos: [
-    new Fato('', '', 'Fundição/Atelier', "Val d'Osne", [], 'Rio de Janeiro'),
-    new Fato('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Fundição/Atelier', "Val d'Osne", [], 'Rio de Janeiro'),
+    new Fact('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
   Categoria: undefined,
@@ -20506,7 +20505,7 @@ export const GeneralJoaoSeverianodaFonseca_Desconhecida: Obra = {
   Descricao: `Inicialmente instalado na Praça Marechal Hermes, o busto em bronze foi depois transferido ao logradouro que
     leva seu nome. O busto está desaparecido, em decorrência da obra da via Transolimpica.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -20555,7 +20554,7 @@ export const Aviadores_RebecaMatteBello: Obra = {
   Descricao: `Escultura simbolizando a luta pela conquista do ar através das figuras Dédalo contemplando Ícaro, seu filho, morto. Foi uma doação do povo chileno à Cidade, durante as comemorações do Centenário da Independência, como reconhecimento à Santos Dumont na descoberta do mais pesado que o ar.
 Inaugurado na Praça Mauá, foi transferido em 1937 para o Campo dos Afonsos.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -20598,7 +20597,7 @@ export const Piramide_MestreValentim: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: `Foi construída no período de 1794 a 1806 e são as últimas obras públicas do Mestre Valentim. A pirâmide com cerca de quinze metros de altura e dois metros em cada face da seção. Há uma inscrição cartela oval em mármore de Ào Amor ao Publico"`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
@@ -20633,7 +20632,7 @@ export const Obelisco_Archi5: Obra = {
   MaterialBase: 'Granito',
   Status: 'Permanece em espaço público',
   Descricao: `Obelisco de doze metros de altura, composto por três elementos. O primeiro, um bloco quadrado confeccionado por blocos de granito. O segundo elemento, um cilindro de dois metros de altura. O terceiro elemento é a piramide com duas hastes de aço com dez metros de altura. Cada haste é formada por duas barras, formando um triangulo na base que diminui até a extremidade.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
@@ -20669,7 +20668,7 @@ export const Obelisco_EduardoDeSa: Obra = {
   Status: 'Permanece em espaço público',
   Descricao:
     'Com 18 metros de altura, o obelisco é o marco comemorativo da construção da Avenida Central, em 1906.  Reza a lenda que Getúlio amarrou seu cavalo aqui, quando tomou a Capital Federal na revolução de 30.',
-  Fatos: [new Fato('', '', 'Bem tombado estadual', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Bem tombado estadual', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
@@ -20704,7 +20703,7 @@ export const ObeliscodoCaisdaImperatriz_Desconhecido: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: '',
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
@@ -20740,7 +20739,7 @@ export const Obelisco_PauloCase: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Projetado para ser o marco de Ipanema. Foi criado pelo Rio-Cidade e se situa no local onde os bondes faziam o
     retorno para circular no bairro. O Obelisco tem forma circular com uma bola no seu topo.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
@@ -20776,7 +20775,7 @@ export const ObeliscodoLargodoBomRetiro_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
     Peça maciça esculpida com base quadrada e outra piramidal de cerca de 6 metros de altura`,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
@@ -20813,7 +20812,7 @@ export const ObeliscodaAvenidaRioBranco_AZanuzziCia: Obra = {
   Descricao: `A Zanuzzi Cia - Obelisco circular de granito extraído do Morro da Viúva, com 28 toneladas paracomemorar da abertura da Avenida Rio Branco, iniciada em 8 de março de 1904 e concluído na data de inauguração do marco, dia 14 de novembro de 1906.
     O projeto foi organizado no escritório tecnico da Comissão Construtora da Avenida Central, cujo chefe era o Dr. Paulo de Frontim e executado pelos Srs A. Januzzi & Irmãos, tendo como engenheiro de acompanhamento o Dr. Le Cocq.
     O Monumento tem cinco blocos, com dimensões e decoração distintas, todos em pedra, coincidentes com o principal material utilizado nas construções novas da Avenida. O primeiro forma os degraus que o elevam. O segundo a base, o terceiro com cerca de 2m foi destinado à colocação de placas de bronze de identificação do Monumento. O quarto possui elementos decorativos típicos das construções ecléticas O quinto bloco com 10 metros finalizado por uma pirâmide.`,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
@@ -20849,7 +20848,7 @@ export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Obra = {
   Status: 'Removida do espaço público',
   Descricao: `Considerado o primeiro monumento de Arte Concreta da América Latina. Foi o primeiro monumento à liberdade de expressão a ser erigido nas Américas, além de ter sido a primeira obra pública de Franz Weissmam, encomendada pela Associação das Emissoras de São Paulo.`,
   Fatos: [
-    new Fato(
+    new Fact(
       '1954',
       '1954',
       'Doação',
@@ -20857,12 +20856,12 @@ export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '1962',
       '1962',
       'Demolição',
       'Demolido para as obras de alargamento de rua promovida pela prefeitura e pelo departamento de urbanização da SURSAN',
-      [pessoas.CarlosLacerda],
+      [persons.CarlosLacerda],
       'Rio de Janeiro',
     ),
   ],
@@ -20903,7 +20902,7 @@ export const ObeliscodoAlargamentodeCopacabana_Desconhecida: Obra = {
     e alargamento da Avenida Atlântica. Foi inaugurado na Avenida Atlantica próximo a Rua Almirante
     Gonçalves. Foi transferido, na década de 1930, quando os canteiros centrais foram eliminadoso,
     para a Praça Júlio de Noronha.Possui forma de coluna circular adornado com dois medalhões de bronze com a efígie do Prefeito Paulo de Frontin e outro com a do Presidente da República Delfim Moreira.`,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
@@ -20973,7 +20972,7 @@ export const AAlimPedro_MiguelPastor: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Alim foi um ilustre morador do bairro, que recebeu a homenagem em um obelisco com sua efÍgie. Foi idealizada pela Engenheira Elza Osnorne, para ser um marco dos festejos dos 25 anos da formatura da turma da qual saíram inúmeros engenheiros da prefeitura, inclusive o ex prefeito. Apesar de ser homenagem em vida, os motivos que deram origem as homenagens, a engenheira Elza Osborne, procurou honrar no 14 DOE, da Secretaria de Obras. O viaduto  recebeu o nome do homenageado em 14 de novembro de 1958 e não teve uma inauguração solene. 
     A efigie do homenageado em bronze foi furtada em outubro de 2017.`,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
@@ -21009,7 +21008,7 @@ export const AAugustodeVasconcelos_MiguelPastor: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Na homenagem ao senador originalmente existia a sua efigie numa placa em bronze fixada no pedestal que tem
     caracteristicas de um obelisco.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
@@ -21045,7 +21044,7 @@ export const ObeliscodeRochaMiranda_ErnaniFreire: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Obelisco de quinze metros de altura de ferro pintado de branco, c<om uma grande esfera no topo<. Construído para ser a referência do bairro a distância, tem na sua base piramidal,placas comemorativas das principais batalhas da FEB na II Guerra Mundial.
     Em 2018 a esfera superior foi retirada devido a corrosão. O destino da peça é desconhecido.`,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',

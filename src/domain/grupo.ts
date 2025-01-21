@@ -1,4 +1,4 @@
-import Pessoa from './pessoa';
+import Person from './person';
 
 type Grupo = {
   ID?: number;
@@ -9,7 +9,7 @@ type Grupo = {
   Pais?: string;
   DataInicio?: string;
   DataFim?: string;
-  Participantes?: Pessoa[];
+  Participantes?: Person[];
 };
 
 export default Grupo;

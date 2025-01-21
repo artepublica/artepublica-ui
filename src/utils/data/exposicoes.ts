@@ -1,4 +1,4 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Exposicao from '../../domain/exposicao';
 
 export const BienalDeVeneza1988: Exposicao = {
@@ -12,8 +12,8 @@ export const BienalDeVeneza1988: Exposicao = {
   DataInicio: '26/06/1988',
   DataFim: '25/09/1988',
   Expositores: [
-    pessoas.JoseResende,
-    //pessoas.JuraciDoria,
+    persons.JoseResende,
+    //persons.JuraciDoria,
   ],
   Patrocinios: undefined,
   Curadores: undefined, //TODO
@@ -30,11 +30,11 @@ export const DocumentaKassel1992: Exposicao = {
   DataInicio: '13/06/1992',
   DataFim: '20/09/1992',
   Expositores: [
-    pessoas.JoseResende,
-    //pessoas.CildoMeireles,
-    //pessoas.JacLeirner,
-    //pessoas.SaintClairCemin,
-    pessoas.WaltercioCaldas,
+    persons.JoseResende,
+    //persons.CildoMeireles,
+    //persons.JacLeirner,
+    //persons.SaintClairCemin,
+    persons.WaltercioCaldas,
   ],
   Patrocinios: undefined,
   Curadores: undefined, //TODO
@@ -51,19 +51,19 @@ export const ExposicaoNeoconcreta1959: Exposicao = {
   DataInicio: '22/03/1959',
   DataFim: undefined,
   Expositores: [
-    pessoas.AluisioCarvao,
-    pessoas.AmilcarDeCastro,
-    pessoas.DecioVieira,
-    pessoas.FerreiraGullar,
-    pessoas.FranzWeissmann,
-    pessoas.HelioOiticica,
-    pessoas.HerculesBarsotti,
-    pessoas.IvanSerpa,
-    pessoas.LygiaClark,
-    pessoas.LygiaPape,
-    pessoas.OsmarDillon,
-    pessoas.TheonSpanudis,
-    pessoas.WillysDeCastro,
+    persons.AluisioCarvao,
+    persons.AmilcarDeCastro,
+    persons.DecioVieira,
+    persons.FerreiraGullar,
+    persons.FranzWeissmann,
+    persons.HelioOiticica,
+    persons.HerculesBarsotti,
+    persons.IvanSerpa,
+    persons.LygiaClark,
+    persons.LygiaPape,
+    persons.OsmarDillon,
+    persons.TheonSpanudis,
+    persons.WillysDeCastro,
   ],
   Patrocinios: undefined,
   Curadores: undefined, //TODO
@@ -80,25 +80,25 @@ export const ExperienciaNeoconcreta1991_MAMRJ: Exposicao = {
   DataInicio: '09/05/1991',
   DataFim: '23/06/1991',
   Expositores: [
-    pessoas.AluisioCarvao,
-    pessoas.AmilcarDeCastro,
-    pessoas.ClaudioMelloESouza,
-    pessoas.DecioVieira,
-    pessoas.FerreiraGullar,
-    pessoas.FranzWeissmann,
-    pessoas.HelioOiticica,
-    pessoas.HerculesBarsotti,
-    pessoas.LygiaClark,
-    pessoas.LygiaPape,
-    pessoas.OsmarDillon,
-    pessoas.ReynaldoJardim,
-    pessoas.RobertoPontual,
-    pessoas.TheonSpanudis,
-    pessoas.WillysDeCastro,
-    pessoas.VasniSantana, //TODO itau cultural n cita ele
+    persons.AluisioCarvao,
+    persons.AmilcarDeCastro,
+    persons.ClaudioMelloESouza,
+    persons.DecioVieira,
+    persons.FerreiraGullar,
+    persons.FranzWeissmann,
+    persons.HelioOiticica,
+    persons.HerculesBarsotti,
+    persons.LygiaClark,
+    persons.LygiaPape,
+    persons.OsmarDillon,
+    persons.ReynaldoJardim,
+    persons.RobertoPontual,
+    persons.TheonSpanudis,
+    persons.WillysDeCastro,
+    persons.VasniSantana, //TODO itau cultural n cita ele
   ],
   Patrocinios: ['Rioarte', 'BAnerj', 'Transportes Fink'],
-  Curadores: [pessoas.FernandoCocchiarale],
+  Curadores: [persons.FernandoCocchiarale],
 };
 export const ExperienciaNeoconcreta1991_Curitiba: Exposicao = {
   Nome: 'Experiência Neoconcreta',
@@ -111,13 +111,13 @@ export const ExperienciaNeoconcreta1991_Curitiba: Exposicao = {
   DataInicio: '1991',
   DataFim: undefined,
   Expositores: [
-    pessoas.AluisioCarvao,
-    pessoas.FranzWeissmann,
-    pessoas.LygiaClark,
-    pessoas.LygiaPape,
+    persons.AluisioCarvao,
+    persons.FranzWeissmann,
+    persons.LygiaClark,
+    persons.LygiaPape,
   ],
   Patrocinios: undefined,
-  Curadores: [pessoas.FernandoCocchiarale],
+  Curadores: [persons.FernandoCocchiarale],
 };
 
 export const ExposicaoEscultura1992: Exposicao = {
@@ -130,13 +130,13 @@ export const ExposicaoEscultura1992: Exposicao = {
   DataInicio: '29/01/1992',
   DataFim: undefined,
   Expositores: [
-    pessoas.AmilcarDeCastro,
-    pessoas.AngeloVenosa,
-    pessoas.CristinaSalgado,
-    pessoas.FransKrajcberg,
-    pessoas.FranzWeissmann,
-    pessoas.LygiaPape,
-    pessoas.Tunga,
+    persons.AmilcarDeCastro,
+    persons.AngeloVenosa,
+    persons.CristinaSalgado,
+    persons.FransKrajcberg,
+    persons.FranzWeissmann,
+    persons.LygiaPape,
+    persons.Tunga,
   ],
   Patrocinios: undefined,
   Curadores: undefined, //TODO
@@ -152,13 +152,13 @@ export const PoetasDoEspacoEDaCor1997: Exposicao = {
   DataInicio: '1997',
   DataFim: undefined,
   Expositores: [
-    pessoas.AldirMendesDeSouza,
-    pessoas.AlfredoVolpi,
-    pessoas.AncangeloIanelli,
-    pessoas.FranzWeissmann,
+    persons.AldirMendesDeSouza,
+    persons.AlfredoVolpi,
+    persons.AncangeloIanelli,
+    persons.FranzWeissmann,
   ],
   Patrocinios: undefined,
-  Curadores: undefined, //pessoas.SabinadeLibman
+  Curadores: undefined, //persons.SabinadeLibman
 };
 
 export const ExposicaoIndividualFranzWeissmann1946: Exposicao = {
@@ -170,7 +170,7 @@ export const ExposicaoIndividualFranzWeissmann1946: Exposicao = {
   Local: 'Diretório de Estudantes da ENBA',
   DataInicio: '1946',
   DataFim: undefined,
-  Expositores: [pessoas.FranzWeissmann],
+  Expositores: [persons.FranzWeissmann],
   Patrocinios: undefined,
   Curadores: undefined, //TODO
 };
@@ -187,25 +187,25 @@ export const PrimeiraExposiçãoInternacionaldeEsculturasEfemerasForteleza1986: 
     DataInicio: '09/1986',
     DataFim: '11/1986',
     Expositores: [
-      //pessoas.AmeliaToledo,
-      pessoas.AmilcarDeCastro,
-      pessoas.AscanioMMM,
-      //pessoas.CarlosFarjado,
-      //pessoas.DudiMajaRosa,
-      pessoas.FransKrajcberg,
-      pessoas.JoseResende,
-      //pessoas.JulioPlaza
-      //pessoas.Leonilson,
-      pessoas.MauricioBentes,
-      //pessoas.NelzonLeirner,
-      pessoas.GianPietroZanni,
-      //pessoas.ReginaSilveira,
-      pessoas.SergioCamargo,
-      pessoas.ServuloEsmeraldo,
-      pessoas.SironFranco, //TODO este n estava no itaul cultural como nos fatos
+      //persons.AmeliaToledo,
+      persons.AmilcarDeCastro,
+      persons.AscanioMMM,
+      //persons.CarlosFarjado,
+      //persons.DudiMajaRosa,
+      persons.FransKrajcberg,
+      persons.JoseResende,
+      //persons.JulioPlaza
+      //persons.Leonilson,
+      persons.MauricioBentes,
+      //persons.NelzonLeirner,
+      persons.GianPietroZanni,
+      //persons.ReginaSilveira,
+      persons.SergioCamargo,
+      persons.ServuloEsmeraldo,
+      persons.SironFranco, //TODO este n estava no itaul cultural como nos fatos
     ],
     Patrocinios: undefined,
-    Curadores: [pessoas.ServuloEsmeraldo],
+    Curadores: [persons.ServuloEsmeraldo],
   };
 
 export const PrimeiraExposiçãoInternacionaldeEsculturasAoArLivre: Exposicao = {
@@ -218,34 +218,34 @@ export const PrimeiraExposiçãoInternacionaldeEsculturasAoArLivre: Exposicao = 
   DataInicio: '09/1996',
   DataFim: '03/1997',
   Expositores: [
-    pessoas.AmilcarDeCastro,
-    pessoas.AnaNorogrando,
-    pessoas.CarlosDeBrittoVelho,
-    pessoas.ClaudioTozzi,
-    pessoas.FernandoLindote,
-    pessoas.FranciscoStockinger,
-    pessoas.FranzWeissmann,
-    pessoas.GaudencioFidelis,
-    pessoas.JoseResende,
-    pessoas.MarliAmadoAraujo,
-    pessoas.PatricioFarias,
-    pessoas.PauloRobertoDeChristo,
-    pessoas.ServuloEsmeraldo,
-    pessoas.SironFranco,
-    pessoas.VascoPrado,
+    persons.AmilcarDeCastro,
+    persons.AnaNorogrando,
+    persons.CarlosDeBrittoVelho,
+    persons.ClaudioTozzi,
+    persons.FernandoLindote,
+    persons.FranciscoStockinger,
+    persons.FranzWeissmann,
+    persons.GaudencioFidelis,
+    persons.JoseResende,
+    persons.MarliAmadoAraujo,
+    persons.PatricioFarias,
+    persons.PauloRobertoDeChristo,
+    persons.ServuloEsmeraldo,
+    persons.SironFranco,
+    persons.VascoPrado,
 
     //TODO o citados abaixo n constam no itau cultural
-    pessoas.ClaudioMaciel,
-    pessoas.GustavoNakle,
-    pessoas.XicoStockinger,
-    pessoas.JorgeFranciscoSoto,
-    pessoas.MieyaBaglietto,
-    pessoas.PepAdmetlla,
-    pessoas.JulianAgosta,
-    pessoas.JoseDeGuimaraes,
+    persons.ClaudioMaciel,
+    persons.GustavoNakle,
+    persons.XicoStockinger,
+    persons.JorgeFranciscoSoto,
+    persons.MieyaBaglietto,
+    persons.PepAdmetlla,
+    persons.JulianAgosta,
+    persons.JoseDeGuimaraes,
   ],
   Patrocinios: undefined,
-  Curadores: undefined, //pessoas.JoseFraciscoAlves
+  Curadores: undefined, //persons.JoseFraciscoAlves
 };
 
 export const ExposicaoIndividualAmilcarDeCastro: Exposicao = {
@@ -257,7 +257,7 @@ export const ExposicaoIndividualAmilcarDeCastro: Exposicao = {
   Local: 'Galeria Silvia Cintra',
   DataInicio: '11/06/1996',
   DataFim: undefined,
-  Expositores: [pessoas.AmilcarDeCastro],
+  Expositores: [persons.AmilcarDeCastro],
   Patrocinios: undefined,
   Curadores: undefined, //TODO
 };
@@ -273,10 +273,10 @@ export const SalaoOficial1934: Exposicao = {
   DataInicio: '1934',
   DataFim: undefined,
   Expositores: [
-    pessoas.HildegardoLeaoVelloso,
-    pessoas.ManoelConstantino,
-    pessoas.HaydeaSantiago,
-    pessoas.GasparMagalhaes,
+    persons.HildegardoLeaoVelloso,
+    persons.ManoelConstantino,
+    persons.HaydeaSantiago,
+    persons.GasparMagalhaes,
   ],
   Patrocinios: undefined,
   Curadores: undefined, //TODO
@@ -292,104 +292,104 @@ export const BienalDeSaoPaulo1957: Exposicao = {
   DataInicio: '22/09/1957',
   DataFim: '30/12/1957',
   Expositores: [
-    //pessoas.AldemirMartins,
-    //pessoas.AlexandreWollner, //(Prêmio pelo Cartaz do evento)
-    pessoas.AlfredoVolpi,
-    //pessoas.AlmirMavignier,
-    pessoas.AluisioCarvao,
-    //pessoas.AnatolWladyslaw,
-    //pessoas.AnnaLetycia,
-    //pessoas.AntonioBandeira
-    //pessoas.ArnaldoPedrosoDHorta
-    //pessoas.BenNicholson, // (Prêmio Pintura Estrangeira)
-    pessoas.BrunoGiorgi,
-    //Bpessoas.urle Marx
-    //pessoas.ClaraHeteny
-    //pessoas.DaniloDiPrete
-    //pessoas.DorothyBastos
-    //pessoas.EdithBehring
-    //pessoas.Elide onzeglio
-    //pessoas.ElisaMartinsDaSilveira
-    //pessoas.EmericLanyi
-    //pessoas.ErnaniVasconcellos
-    //pessoas.FaygaOstrower // (Prêmio Gravura Nacional)
-    //pessoas.FernandoLemos,// (Prêmio Desenho Nacional)
-    //pessoas.FlavioShiro
-    //pessoas.Flexor
-    //pessoas.FranciscoAmêndola
-    pessoas.FransKrajcberg, // (Prêmio Pintura Nacional)
-    pessoas.FranzWeissmann, // (Prêmio Escultura Nacional)
-    //pessoas.GiorgioMorandi,// (Grande Prêmio São Paulo)
-    //pessoas.Hamaguchi, //(Prêmio Gravura Estrangeira)
-    //pessoas.HansenBahia,
-    //pessoas.HelioOiticica,
-    //pessoas.HerculesBarsotti,
-    //pessoas.HermelindoFiaminghi,
-    //pessoas.HildeWeber,
-    //pessoas.IlsaKawallLealFerreira,
-    //pessoas.IoneSaldanha,
-    pessoas.IvanSerpa,
-    //pessoas.JacquesDouchez,
-    //pessoas.JoaoLuisOliveiraChaves,
-    //pessoas.JorgedeOteiza, //(Prêmio Escultura Estrangeira)
-    //pessoas.JoseClaudio,
-    //pessoas.JoseFabioBarbosaDaSilva,
-    //pessoas.JosePedrosa,
-    //pessoas.KarlPlattner,
-    //pessoas.LasarSegall,
-    //pessoas.LeopoldoRaimo,
-    //pessoas.LeylaPerroneMoisés,
-    //pessoas.LotharCharoux,
-    //pessoas.LuizSacilotto,
-    //pessoas.LulaCardosoAyres,
-    pessoas.LygiaClark,
-    pessoas.LygiaPape,
-    //pessoas.MarceloGrassmann,
-    //pessoas.MariaLeontina, //(Prêmio Aquisição)
-    //pessoas.MarioCravoJúnior,
-    //pessoas.MauricioNogueiraLima,
-    //pessoas.MiltonDacosta, //(Prêmio Aquisição)
-    //pessoas.Moussia,
-    //pessoas.PaoloRissone,
-    //pessoas.Piza,
-    //pessoas.RaymundoNogueira,
-    //pessoas.RossiniPerez,
-    pessoas.SergioCamargo,
-    //pessoas.TeresaDAmico,
-    //pessoas.TeresaNicolao,
-    //pessoas.TizianaBonazzola,
-    pessoas.VictorBrecheret,
-    //pessoas.WaldemarCordeiro,
-    //pessoas.WaldemarDaCosta,
-    //pessoas.WegaNery, //(Prêmio Desenho Nacional)
-    pessoas.WillysDeCastro,
-    //pessoas.YolandaMohalyi,
-    //pessoas.ZeliaSalgado,
+    //persons.AldemirMartins,
+    //persons.AlexandreWollner, //(Prêmio pelo Cartaz do evento)
+    persons.AlfredoVolpi,
+    //persons.AlmirMavignier,
+    persons.AluisioCarvao,
+    //persons.AnatolWladyslaw,
+    //persons.AnnaLetycia,
+    //persons.AntonioBandeira
+    //persons.ArnaldoPedrosoDHorta
+    //persons.BenNicholson, // (Prêmio Pintura Estrangeira)
+    persons.BrunoGiorgi,
+    //persosns.BurleMarx
+    //persons.ClaraHeteny
+    //persons.DaniloDiPrete
+    //persons.DorothyBastos
+    //persons.EdithBehring
+    //persons.Elide onzeglio
+    //persons.ElisaMartinsDaSilveira
+    //persons.EmericLanyi
+    //persons.ErnaniVasconcellos
+    //persons.FaygaOstrower // (Prêmio Gravura Nacional)
+    //persons.FernandoLemos,// (Prêmio Desenho Nacional)
+    //persons.FlavioShiro
+    //persons.Flexor
+    //persons.FranciscoAmêndola
+    persons.FransKrajcberg, // (Prêmio Pintura Nacional)
+    persons.FranzWeissmann, // (Prêmio Escultura Nacional)
+    //persons.GiorgioMorandi,// (Grande Prêmio São Paulo)
+    //persons.Hamaguchi, //(Prêmio Gravura Estrangeira)
+    //persons.HansenBahia,
+    //persons.HelioOiticica,
+    //persons.HerculesBarsotti,
+    //persons.HermelindoFiaminghi,
+    //persons.HildeWeber,
+    //persons.IlsaKawallLealFerreira,
+    //persons.IoneSaldanha,
+    persons.IvanSerpa,
+    //persons.JacquesDouchez,
+    //persons.JoaoLuisOliveiraChaves,
+    //persons.JorgedeOteiza, //(Prêmio Escultura Estrangeira)
+    //persons.JoseClaudio,
+    //persons.JoseFabioBarbosaDaSilva,
+    //persons.JosePedrosa,
+    //persons.KarlPlattner,
+    //persons.LasarSegall,
+    //persons.LeopoldoRaimo,
+    //persons.LeylaPerroneMoisés,
+    //persons.LotharCharoux,
+    //persons.LuizSacilotto,
+    //persons.LulaCardosoAyres,
+    persons.LygiaClark,
+    persons.LygiaPape,
+    //persons.MarceloGrassmann,
+    //persons.MariaLeontina, //(Prêmio Aquisição)
+    //persons.MarioCravoJúnior,
+    //persons.MauricioNogueiraLima,
+    //persons.MiltonDacosta, //(Prêmio Aquisição)
+    //persons.Moussia,
+    //persons.PaoloRissone,
+    //persons.Piza,
+    //persons.RaymundoNogueira,
+    //persons.RossiniPerez,
+    persons.SergioCamargo,
+    //persons.TeresaDAmico,
+    //persons.TeresaNicolao,
+    //persons.TizianaBonazzola,
+    persons.VictorBrecheret,
+    //persons.WaldemarCordeiro,
+    //persons.WaldemarDaCosta,
+    //persons.WegaNery, //(Prêmio Desenho Nacional)
+    persons.WillysDeCastro,
+    //persons.YolandaMohalyi,
+    //persons.ZeliaSalgado,
   ],
   Patrocinios: undefined,
   Curadores: undefined,
   Juri: [
-    //pessoas.AlfredHBarr
-    //pessoas.ArmandoBFerrari
-    //pessoas.ArthurProfili
-    //pessoas.CarlosFlexaRibeiro
-    //pessoas.FlavioDeAquino
-    //pessoas.JVanLerberghe
-    //pessoas.JCHeyligers
-    //pessoas.JacquesLassaigne
-    //pessoas.JiriKotalik
-    //pessoas.LivioAbramo
-    //pessoas.LourivalGomesMachado
-    //pessoas.LudwigGrote
-    //pessoas.LuizGonzalesRobles
-    //pessoas.MarcelIanco
-    //pessoas.MarcoValsecchi
-    pessoas.MariaMartins, // TODO é ela mesma??
-    //pessoas.PhilipHendy
-    //pessoas.ShinkenKurihara
-    //pessoas.WolfgangPfeiffer
+    //persons.AlfredHBarr
+    //persons.ArmandoBFerrari
+    //persons.ArthurProfili
+    //persons.CarlosFlexaRibeiro
+    //persons.FlavioDeAquino
+    //persons.JVanLerberghe
+    //persons.JCHeyligers
+    //persons.JacquesLassaigne
+    //persons.JiriKotalik
+    //persons.LivioAbramo
+    //persons.LourivalGomesMachado
+    //persons.LudwigGrote
+    //persons.LuizGonzalesRobles
+    //persons.MarcelIanco
+    //persons.MarcoValsecchi
+    persons.MariaMartins, // TODO é ela mesma??
+    //persons.PhilipHendy
+    //persons.ShinkenKurihara
+    //persons.WolfgangPfeiffer
   ],
-  JuriDeSelecao: undefined, //pessoas.JoseGeraldoVieira
+  JuriDeSelecao: undefined, //persons.JoseGeraldoVieira
 };
 
 export const SalaoDeArteModerna1958: Exposicao = {
@@ -402,41 +402,41 @@ export const SalaoDeArteModerna1958: Exposicao = {
   DataInicio: '1958',
   DataFim: undefined,
   Expositores: [
-    //pessoas.AloysioZaluar
-    pessoas.AluisioCarvao,
-    //pessoas.AlvaroApocalypse
-    //pessoas.AnnaLetycia //(Prêmio Viagem ao País)
-    //pessoas.ArnaldoPedrosoDHorta
-    //pessoas.Babinski
-    //pessoas.BustamanteSa
-    //pessoas.CarlosScliar
-    //pessoas.Djanira
-    //pessoas.EdsonMotta
-    //pessoas.FaygaOstrower
-    //pessoas.FranciscoRebolo
-    pessoas.FranzWeissmann, //(Prêmio Viagem ao Exterior)
-    //pessoas.GilvanSamico
-    //pessoas.GlenioBianchetti
-    //pessoas.Guignard
-    //pessoas.HeloisadeFaria
-    //pessoas.JoséOiticicaFilho
-    pessoas.LygiaPape, //(Prêmio Isenção de Júri (medalha de prata))
-    //pessoas.MariaHelenaAndres
-    pessoas.MaryVieira,
-    //pessoas.NoemiaGuerra
-    //pessoas.OrlandoDaSilva
-    //pessoas.ReninaKatz
-    //pessoas.RossiniPerez
-    //pessoas.RubemValentim //(Prêmio Aquisição)
-    pessoas.SergioCamargo,
-    //pessoas.Sheila
-    //pessoas.TakeshiSuzuki
-    //pessoas.UbirajaraRibeiro
-    //pessoas.Zaluar //(Premio de viagem ao exterior)
+    //persons.AloysioZaluar
+    persons.AluisioCarvao,
+    //persons.AlvaroApocalypse
+    //persons.AnnaLetycia //(Prêmio Viagem ao País)
+    //persons.ArnaldoPedrosoDHorta
+    //persons.Babinski
+    //persons.BustamanteSa
+    //persons.CarlosScliar
+    //persons.Djanira
+    //persons.EdsonMotta
+    //persons.FaygaOstrower
+    //persons.FranciscoRebolo
+    persons.FranzWeissmann, //(Prêmio Viagem ao Exterior)
+    //persons.GilvanSamico
+    //persons.GlenioBianchetti
+    //persons.Guignard
+    //persons.HeloisadeFaria
+    //persons.JoséOiticicaFilho
+    persons.LygiaPape, //(Prêmio Isenção de Júri (medalha de prata))
+    //persons.MariaHelenaAndres
+    persons.MaryVieira,
+    //persons.NoemiaGuerra
+    //persons.OrlandoDaSilva
+    //persons.ReninaKatz
+    //persons.RossiniPerez
+    //persons.RubemValentim //(Prêmio Aquisição)
+    persons.SergioCamargo,
+    //persons.Sheila
+    //persons.TakeshiSuzuki
+    //persons.UbirajaraRibeiro
+    //persons.Zaluar //(Premio de viagem ao exterior)
   ],
   Patrocinios: undefined,
   Curadores: undefined, //TODO
-  Juri: undefined, //pessoas.IbereCamargo
+  Juri: undefined, //persons.IbereCamargo
 };
 
 export const SalaoNacionalDeArtesPlasticas1993: Exposicao = {
@@ -449,39 +449,39 @@ export const SalaoNacionalDeArtesPlasticas1993: Exposicao = {
   DataInicio: '02/12/1993',
   DataFim: undefined,
   Expositores: [
-    pessoas.CristinaSalgado,
-    //pessoas.DavidCury
-    //pessoas.ElianeDuarte
-    //pessoas.EnricaBernardelli
-    //pessoas.FabioNoronha //(Prêmio Viagem ao País)
-    //pessoas.FeresLourençoKhoury
-    //pessoas.FernandoAugusto
-    pessoas.FranzWeissmann, // TODO nao aparece no itaul cultural como expositor, apesar de receber o premio
-    //pessoas.FredericoDalton
-    //pessoas.oseBento
-    //pessoas.JoseDamasceno
-    //pessoas.KlingerCarvalho
-    //pessoas.LorisMachado
-    //pessoas.MarcoPauloRolla
-    //pessoas.MonicaSartori //(Prêmio Viagem ao Exterior)
-    //pessoas.NelsonScrenci
-    //pessoas.NiuraBellavinha
-    //pessoas.NydiaNegromonte
-    //pessoas.PedroWrede
-    //pessoas.RinaldoSilva //(Prêmio Unesco)
-    //pessoas.RosanaPalazyan //(Prêmio Aquisição)
-    //pessoas.RosangelaRenno
-    //pessoas.VaniaBarbosa
-    //pessoas.VeraMartins
+    persons.CristinaSalgado,
+    //persons.DavidCury
+    //persons.ElianeDuarte
+    //persons.EnricaBernardelli
+    //persons.FabioNoronha //(Prêmio Viagem ao País)
+    //persons.FeresLourençoKhoury
+    //persons.FernandoAugusto
+    persons.FranzWeissmann, // TODO nao aparece no itaul cultural como expositor, apesar de receber o premio
+    //persons.FredericoDalton
+    //persons.oseBento
+    //persons.JoseDamasceno
+    //persons.KlingerCarvalho
+    //persons.LorisMachado
+    //persons.MarcoPauloRolla
+    //persons.MonicaSartori //(Prêmio Viagem ao Exterior)
+    //persons.NelsonScrenci
+    //persons.NiuraBellavinha
+    //persons.NydiaNegromonte
+    //persons.PedroWrede
+    //persons.RinaldoSilva //(Prêmio Unesco)
+    //persons.RosanaPalazyan //(Prêmio Aquisição)
+    //persons.RosangelaRenno
+    //persons.VaniaBarbosa
+    //persons.VeraMartins
   ],
   Patrocinios: undefined,
   Curadores: undefined,
   Juri: [
-    //pessoas.AracyAmaral
-    pessoas.FerreiraGullar,
-    pessoas.FredericoMoraes,
-    //pessoas.JoaoCarlosGoldberg
-    //pessoas.MarcusDeLontraCosta
+    //persons.AracyAmaral
+    persons.FerreiraGullar,
+    persons.FredericoMoraes,
+    //persons.JoaoCarlosGoldberg
+    //persons.MarcusDeLontraCosta
   ],
 };
 
@@ -495,10 +495,10 @@ export const FranzWeissmann_UmaRetrospective_1998: Exposicao = {
   Local: 'CCBB/RJ',
   DataInicio: '09/10/1998',
   DataFim: '06/12/1998',
-  Expositores: [pessoas.FranzWeissmann],
+  Expositores: [persons.FranzWeissmann],
   Patrocinios: undefined,
   Curadores: undefined, //TODO
-  CatalogoEscritoPor: [pessoas.ReynaldoRoels],
+  CatalogoEscritoPor: [persons.ReynaldoRoels],
 };
 export const FranzWeissmann_UmaRetrospective_1999: Exposicao = {
   Nome: 'Franz Weissmann: uma retrospectiva',
@@ -510,10 +510,10 @@ export const FranzWeissmann_UmaRetrospective_1999: Exposicao = {
   Local: 'MAC/USP',
   DataInicio: '15/01/1999',
   DataFim: undefined,
-  Expositores: [pessoas.FranzWeissmann],
+  Expositores: [persons.FranzWeissmann],
   Patrocinios: undefined,
   Curadores: undefined, //TODO
-  CatalogoEscritoPor: [pessoas.ReynaldoRoels],
+  CatalogoEscritoPor: [persons.ReynaldoRoels],
 };
 
 export const TresMilMetrosCubicos: Exposicao = {
@@ -526,17 +526,17 @@ export const TresMilMetrosCubicos: Exposicao = {
   DataInicio: '17/12/1983',
   DataFim: undefined,
   Expositores: [
-    //pessoas.AntonioDias,
-    //pessoas.ArturBarrio
-    //pessoas.CildoMeireles
-    pessoas.JoseResende,
-    //pessoas.MarcelloNitsche
-    pessoas.Tunga,
-    //pessoas.UmbertoCostiBarros //TODO n consta no itau cultural
-    pessoas.WaltercioCaldas,
+    //persons.AntonioDias,
+    //persons.ArturBarrio
+    //persons.CildoMeireles
+    persons.JoseResende,
+    //persons.MarcelloNitsche
+    persons.Tunga,
+    //persons.UmbertoCostiBarros //TODO n consta no itau cultural
+    persons.WaltercioCaldas,
   ],
   Patrocinios: undefined,
-  Curadores: [pessoas.EverardoMiranda],
+  Curadores: [persons.EverardoMiranda],
   CatalogoEscritoPor: undefined,
 };
 
@@ -550,28 +550,28 @@ export const MostraInternacionalDeArteConcretaZurique: Exposicao = {
   DataInicio: '1960',
   DataFim: undefined,
   Expositores: [
-    //pessoas.AlexandreWollner
-    //pessoas.AlmirMavignier
-    pessoas.AluisioCarvao,
-    pessoas.AmilcarDeCastro,
-    pessoas.DecioVieira,
-    //pessoas.Fejer
-    pessoas.FranzWeissmann,
-    //pessoas.GeraldoDeBarros
-    pessoas.HelioOiticica,
-    pessoas.HerculesBarsotti,
-    //pessoas.HermelindoFiaminghi
-    //pessoas.JudithLauand
-    //pessoas.LuizSacilotto
-    pessoas.LygiaClark,
-    pessoas.LygiaPape,
-    pessoas.MaryVieira,
-    //pessoas.MauricioNogueiraLima
-    //pessoas.WaldemarCordeiro
-    pessoas.WillysDeCastro,
+    //persons.AlexandreWollner
+    //persons.AlmirMavignier
+    persons.AluisioCarvao,
+    persons.AmilcarDeCastro,
+    persons.DecioVieira,
+    //persons.Fejer
+    persons.FranzWeissmann,
+    //persons.GeraldoDeBarros
+    persons.HelioOiticica,
+    persons.HerculesBarsotti,
+    //persons.HermelindoFiaminghi
+    //persons.JudithLauand
+    //persons.LuizSacilotto
+    persons.LygiaClark,
+    persons.LygiaPape,
+    persons.MaryVieira,
+    //persons.MauricioNogueiraLima
+    //persons.WaldemarCordeiro
+    persons.WillysDeCastro,
   ],
   Patrocinios: undefined,
-  Curadores: undefined, //pessoas.MaxBill,
+  Curadores: undefined, //persons.MaxBill,
   CatalogoEscritoPor: undefined,
 };
 
@@ -585,27 +585,27 @@ export const SalaoDeArteModerna1967: Exposicao = {
   DataInicio: '1967',
   DataFim: undefined,
   Expositores: [
-    //pessoas.AlexandreFilho
-    //pessoas.AloysioZaluar// (Isenção do júri)
-    pessoas.AmilcarDeCastro,
-    //pessoas.AntonioManuel
-    pessoas.AscanioMMM,
-    //pessoas.BettyKing
-    //pessoas.CarlosVergara
+    //persons.AlexandreFilho
+    //persons.AloysioZaluar// (Isenção do júri)
+    persons.AmilcarDeCastro,
+    //persons.AntonioManuel
+    persons.AscanioMMM,
+    //persons.BettyKing
+    //persons.CarlosVergara
     //essoas.CeliaShalders
-    //pessoas.Chanina //(Isenção do Júri.)
-    //pessoas.EraldoMotta
-    //pessoas.Kaiuca
-    //pessoas.MariaLuizaLeao
-    //pessoas.MarinaNazareth
-    //pessoas.PauloMenten
-    //pessoas.PedroEscosteguy
-    //pessoas.QuirinoCampofiorito
-    //pessoas.RubemLudolf
-    //pessoas.RubensGerchman
-    //pessoas.Sigaud
-    //pessoas.SolangeEscosteguy
-    pessoas.SoniaEbling, //(Prêmio de Viagem ao Brasil)
+    //persons.Chanina //(Isenção do Júri.)
+    //persons.EraldoMotta
+    //persons.Kaiuca
+    //persons.MariaLuizaLeao
+    //persons.MarinaNazareth
+    //persons.PauloMenten
+    //persons.PedroEscosteguy
+    //persons.QuirinoCampofiorito
+    //persons.RubemLudolf
+    //persons.RubensGerchman
+    //persons.Sigaud
+    //persons.SolangeEscosteguy
+    persons.SoniaEbling, //(Prêmio de Viagem ao Brasil)
   ],
   Patrocinios: undefined,
   Curadores: undefined, //TODO
@@ -621,182 +621,182 @@ export const BienalDeSaoPaulo1953: Exposicao = {
   DataInicio: '13/12/1953',
   DataFim: '26/02/1954',
   Expositores: [
-    //pessoas.AbrahamPalatnik
-    //pessoas.AfonsoDuarteAngelico
-    //pessoas.AgostinhoDaMotta
-    //pessoas.Ahmes
-    //pessoas.AlbertoTeixeira
-    //pessoas.AldemirMartins //(Nadir Figueiredo S.A.)
-    //pessoas.AlexanderCalder
-    //pessoas.AlexandreWollner
-    //pessoas.AlfredManessier //(Prêmio Internacional de Pintura)
-    pessoas.AlfredoCeschiatti,
-    pessoas.AlfredoVolpi, //(Prêmio Nacional de Pintura)
-    //pessoas.AlmeidaJunior
-    //pessoas.loisioMagalhaes
-    pessoas.AluisioCarvao,
-    pessoas.AmilcarDeCastro,
-    //pessoas.AnatolWladyslaw
-    //pessoas.AnesiaPachecoeChaves
-    //pessoas.AntonioAlvesAlmeida
-    //pessoas.AntonioBandeira //(Prêmio pelo Cartaz)
-    //pessoas.AntonioParreiras
-    //pessoas.AntonioPrado Netto
-    //pessoas.AntonioVargas
-    //pessoas.ArmandoBalloni
-    //pessoas.ArnaldoPedrosoDHorta //(Prêmio Nacional de Desenho)
-    //pessoas.ArnaudJulienPallière
-    //pessoas.AugustMuller
-    //pessoas.AugustoRodrigues
-    //pessoas.AugustoRodriguesDuarte
-    //pessoas.Aurélio eFigueiredo
-    //pessoas.BaptistaDaCosta
-    //pessoas.BassanoVaccarini
-    //pessoas.BellaPrado
-    //pessoas.BenShahn //(Prêmio Internacional de Desenho)
-    //pessoas.Bonadei
-    pessoas.BrunoGiorgi, // (Prêmio Nacional de Escultura)
-    //pessoas.CaciporeTorres
-    //pessoas.CaetanoFraccaroli
-    //pessoas.CarlosBastos
-    //pessoas.CarlosPrado
-    //pessoas.Caron
-    //pessoas.Carybe
-    //pessoas.Castagneto
-    //pessoas.CHMartin
-    //pessoas.CiceroDias
-    //pessoas.ClaraHeteny
-    //pessoas.DaniloDiPrete
-    //pessoas.DarcyPenteado
-    pessoas.DecioVieira,
-    //pessoas.DeiaDeCamposLemos
-    //pessoas.DiCavalcanti //(Prêmio Nacional de Pintura)
-    //pessoas.Djanira
-    //pessoas.ElisaMartinsDaSilveira
-    //pessoas.ElisabethNobiling
-    //pessoas.EliseuVisconti
-    //pessoas.EmanuelManasse
-    //pessoas.EmericLanyi
-    //pessoas.EmericMarcier
-    //pessoas.EmygdioDeBarros
-    //pessoas.EstellaTuschnieder
-    //pessoas.Fampon
-    //pessoas.FaygaOstrower
-    //pessoas.FeliciaLeirner
-    //pessoas.FelixEmileTaunay
-    //pessoas.FernandoLemos //(Prêmio Aquisição)
-    //pessoas.FernandoRomani
-    //pessoas.FirminoMonteiro
-    //pessoas.FirminoSaldanha
-    //pessoas.FlavioDeCarvalho
-    //pessoas.Flexor
-    //pessoas.FrankSchaeffer
-    //pessoas.FransKrajcberg
-    //pessoas.FransPost
-    //pessoas.ranzWeissmann
-    //pessoas.GaetanoMiani
-    //pessoas.GarciayVasquez
-    //pessoas.GastoneNovelli
-    //pessoas.GeorgGrimm
-    //pessoas.GeraldoDeBarros
-    //pessoas.GermanadeAngelis
-    //pessoas.GezaHeller
-    //pessoas.GiorgioMorandi// (Prêmio Internacional de Gravura)
-    //pessoas.iseldaLeirner
-    //pessoas.GracielaFuensalida
-    //pessoas.HansenBahia
-    //pessoas.HeinzKühn
-    //pessoas.HeitordosPrazeres
-    //pessoas.HenriLaurens //(Grande Prêmio - IV centenário de Sâo Paulo)
-    //pessoas.HenriqueBoese
-    //pessoas.HenryMoore //(Prêmio Internacional de Escultura)
-    //pessoas.HildaGoltz
-    //pessoas.ildeWeber
-    //pessoas.CHornbrook
-    //pessoas.InahDAvilaCosta
-    //pessoas.oneSaldanha
-    pessoas.IvanSerpa,
-    //pessoas.IzarDoAmaralBerlinck
-    //pessoas.JacquesDouchez
-    //pessoas.eanBaptisteDebret
-    //pessoas.JoaoBatistaPagani
-    //pessoas.JoaoFranciscoMuzzi
-    //pessoas.JoseAntônioDaSilva
-    //pessoas.JoseFábioBarbosaDaSilva
-    //pessoas.JoseSilveiraDAvila
-    //pessoas.JulioGuerra
-    //pessoas.KarlPlattner
-    //pessoas.LeopoldoRaimo
-    //pessoas.LisaFickerHofmann
-    //pessoas.LivioAbramo //(Prêmio Nacional de Gravura)
-    //pessoas.LotharCharoux
-    //pessoas.LouisBuvelot
-    //pessoas.Lucette aribe
-    //pessoas.LuigiStalloni
-    //pessoas.LuizSacilotto
-    //pessoas.LulaCardoso Ayres
-    pessoas.LygiaClark,
-    //pessoas.ManabuMabe
-    //pessoas.MarceloGrassmann
-    //pessoas.MariaHelenaAndres
-    pessoas.MariaMartins,
-    //pessoas.MarianneOverbeck
-    //pessoas.MariliaGiannettiTorres
-    //pessoas.MarinaCaram
-    //pessoas.MarioCravoJúnior
-    //pessoas.MarioZanini
-    pessoas.MaryVieira,
-    //pessoas.MauroFrancini
-    //pessoas.MilanDuzek
-    //pessoas.MiltonGoldring
-    //pessoas.MisabelPedrosa
-    //pessoas.Moussia
-    //pessoas.NicolasAntoineTaunay
-    //pessoas.NicolauFacchinetti
-    //pessoas.OdettoGuersoni
-    //pessoas.OrlandoTeruz
-    //pessoas.OswaldDeAndradeFilho
-    //pessoas.OswaldoGoeldi
-    //pessoas.PaoloRissone
-    //pessoas.PauloBecker
-    //pessoas.PauloSzentkuti
-    //pessoas.PhillippeMaeck
-    //pessoas.PieterGodfriedBertichen
-    //pessoas.PintoBandeira
-    //pessoas.Piza //(pessoas.Prêmio Aquisição)
-    //pessoas.PolaRezende
-    //pessoas.PollyMcDonell
-    //pessoas.PotyLazzarotto
-    //pessoas.QuinsacMonvoisin
-    //pessoas.RamiroMartins
-    //pessoas.RaymundoNogueira
-    //pessoas.ReneeLefèvre
-    //pessoas.RobertTatin
-    //pessoas.RufinoTamayo //(Prêmio Internacional de Pintura)
-    //pessoas.SadaYazima
-    //pessoas.SeppBaendereck
-    //pessoas.Sespe
-    //pessoas.ShigetoTanaka
-    //pessoas.SinItiroYazima
-    pessoas.SoniaEbling,
-    //pessoas.TadashiKaminagai
-    //pessoas.TarsilaDoAmaral
-    //pessoas.TellesJúnior
-    //pessoas.TeresaDAmico
-    //pessoas.TizianaBonazzola
-    //pessoas.UbiBava
-    //pessoas.VandenPeereboon
-    //pessoas.VictorMeirelles
-    //pessoas.VieiraDaSilva //(Prêmio Aquisição)
-    //pessoas.Vinet
-    //pessoas.VittorioGobbis
-    //pessoas.WaldemarDaCosta
-    //pessoas.WalterLewy
-    //pessoas.WegaNery
-    //pessoas.YolandaMohalyi
-    //pessoas.YvoneThomescu
-    //pessoas.ZachariasAutuori
-    //pessoas.ZeliaSalgado
+    //persons.AbrahamPalatnik
+    //persons.AfonsoDuarteAngelico
+    //persons.AgostinhoDaMotta
+    //persons.Ahmes
+    //persons.AlbertoTeixeira
+    //persons.AldemirMartins //(Nadir Figueiredo S.A.)
+    //persons.AlexanderCalder
+    //persons.AlexandreWollner
+    //persons.AlfredManessier //(Prêmio Internacional de Pintura)
+    persons.AlfredoCeschiatti,
+    persons.AlfredoVolpi, //(Prêmio Nacional de Pintura)
+    //persons.AlmeidaJunior
+    //persons.loisioMagalhaes
+    persons.AluisioCarvao,
+    persons.AmilcarDeCastro,
+    //persons.AnatolWladyslaw
+    //persons.AnesiaPachecoeChaves
+    //persons.AntonioAlvesAlmeida
+    //persons.AntonioBandeira //(Prêmio pelo Cartaz)
+    //persons.AntonioParreiras
+    //persons.AntonioPrado Netto
+    //persons.AntonioVargas
+    //persons.ArmandoBalloni
+    //persons.ArnaldoPedrosoDHorta //(Prêmio Nacional de Desenho)
+    //persons.ArnaudJulienPallière
+    //persons.AugustMuller
+    //persons.AugustoRodrigues
+    //persons.AugustoRodriguesDuarte
+    //persons.Aurélio eFigueiredo
+    //persons.BaptistaDaCosta
+    //persons.BassanoVaccarini
+    //persons.BellaPrado
+    //persons.BenShahn //(Prêmio Internacional de Desenho)
+    //persons.Bonadei
+    persons.BrunoGiorgi, // (Prêmio Nacional de Escultura)
+    //persons.CaciporeTorres
+    //persons.CaetanoFraccaroli
+    //persons.CarlosBastos
+    //persons.CarlosPrado
+    //persons.Caron
+    //persons.Carybe
+    //persons.Castagneto
+    //persons.CHMartin
+    //persons.CiceroDias
+    //persons.ClaraHeteny
+    //persons.DaniloDiPrete
+    //persons.DarcyPenteado
+    persons.DecioVieira,
+    //persons.DeiaDeCamposLemos
+    //persons.DiCavalcanti //(Prêmio Nacional de Pintura)
+    //persons.Djanira
+    //persons.ElisaMartinsDaSilveira
+    //persons.ElisabethNobiling
+    //persons.EliseuVisconti
+    //persons.EmanuelManasse
+    //persons.EmericLanyi
+    //persons.EmericMarcier
+    //persons.EmygdioDeBarros
+    //persons.EstellaTuschnieder
+    //persons.Fampon
+    //persons.FaygaOstrower
+    //persons.FeliciaLeirner
+    //persons.FelixEmileTaunay
+    //persons.FernandoLemos //(Prêmio Aquisição)
+    //persons.FernandoRomani
+    //persons.FirminoMonteiro
+    //persons.FirminoSaldanha
+    //persons.FlavioDeCarvalho
+    //persons.Flexor
+    //persons.FrankSchaeffer
+    //persons.FransKrajcberg
+    //persons.FransPost
+    //persons.ranzWeissmann
+    //persons.GaetanoMiani
+    //persons.GarciayVasquez
+    //persons.GastoneNovelli
+    //persons.GeorgGrimm
+    //persons.GeraldoDeBarros
+    //persons.GermanadeAngelis
+    //persons.GezaHeller
+    //persons.GiorgioMorandi// (Prêmio Internacional de Gravura)
+    //persons.iseldaLeirner
+    //persons.GracielaFuensalida
+    //persons.HansenBahia
+    //persons.HeinzKühn
+    //persons.HeitordosPrazeres
+    //persons.HenriLaurens //(Grande Prêmio - IV centenário de Sâo Paulo)
+    //persons.HenriqueBoese
+    //persons.HenryMoore //(Prêmio Internacional de Escultura)
+    //persons.HildaGoltz
+    //persons.ildeWeber
+    //persons.CHornbrook
+    //persons.InahDAvilaCosta
+    //persons.oneSaldanha
+    persons.IvanSerpa,
+    //persons.IzarDoAmaralBerlinck
+    //persons.JacquesDouchez
+    //persons.eanBaptisteDebret
+    //persons.JoaoBatistaPagani
+    //persons.JoaoFranciscoMuzzi
+    //persons.JoseAntônioDaSilva
+    //persons.JoseFábioBarbosaDaSilva
+    //persons.JoseSilveiraDAvila
+    //persons.JulioGuerra
+    //persons.KarlPlattner
+    //persons.LeopoldoRaimo
+    //persons.LisaFickerHofmann
+    //persons.LivioAbramo //(Prêmio Nacional de Gravura)
+    //persons.LotharCharoux
+    //persons.LouisBuvelot
+    //persons.Lucette aribe
+    //persons.LuigiStalloni
+    //persons.LuizSacilotto
+    //persons.LulaCardoso Ayres
+    persons.LygiaClark,
+    //persons.ManabuMabe
+    //persons.MarceloGrassmann
+    //persons.MariaHelenaAndres
+    persons.MariaMartins,
+    //persons.MarianneOverbeck
+    //persons.MariliaGiannettiTorres
+    //persons.MarinaCaram
+    //persons.MarioCravoJúnior
+    //persons.MarioZanini
+    persons.MaryVieira,
+    //persons.MauroFrancini
+    //persons.MilanDuzek
+    //persons.MiltonGoldring
+    //persons.MisabelPedrosa
+    //persons.Moussia
+    //persons.NicolasAntoineTaunay
+    //persons.NicolauFacchinetti
+    //persons.OdettoGuersoni
+    //persons.OrlandoTeruz
+    //persons.OswaldDeAndradeFilho
+    //persons.OswaldoGoeldi
+    //persons.PaoloRissone
+    //persons.PauloBecker
+    //persons.PauloSzentkuti
+    //persons.PhillippeMaeck
+    //persons.PieterGodfriedBertichen
+    //persons.PintoBandeira
+    //persons.Piza //(persons.Prêmio Aquisição)
+    //persons.PolaRezende
+    //persons.PollyMcDonell
+    //persons.PotyLazzarotto
+    //persons.QuinsacMonvoisin
+    //persons.RamiroMartins
+    //persons.RaymundoNogueira
+    //persons.ReneeLefèvre
+    //persons.RobertTatin
+    //persons.RufinoTamayo //(Prêmio Internacional de Pintura)
+    //persons.SadaYazima
+    //persons.SeppBaendereck
+    //persons.Sespe
+    //persons.ShigetoTanaka
+    //persons.SinItiroYazima
+    persons.SoniaEbling,
+    //persons.TadashiKaminagai
+    //persons.TarsilaDoAmaral
+    //persons.TellesJúnior
+    //persons.TeresaDAmico
+    //persons.TizianaBonazzola
+    //persons.UbiBava
+    //persons.VandenPeereboon
+    //persons.VictorMeirelles
+    //persons.VieiraDaSilva //(Prêmio Aquisição)
+    //persons.Vinet
+    //persons.VittorioGobbis
+    //persons.WaldemarDaCosta
+    //persons.WalterLewy
+    //persons.WegaNery
+    //persons.YolandaMohalyi
+    //persons.YvoneThomescu
+    //persons.ZachariasAutuori
+    //persons.ZeliaSalgado
   ],
   Patrocinios: undefined,
   Curadores: undefined, //TODO
@@ -812,23 +812,23 @@ export const GrupoFrente_1954: Exposicao = {
   DataInicio: '30/06/1954',
   DataFim: undefined,
   Expositores: [
-    //pessoas.AbrahamPalatnik
-    pessoas.AluisioCarvao,
-    //pessoas.CarlosVal
-    //pessoas.CesarOiticica
-    pessoas.DecioVieira,
-    //pessoas.ElisaMartinsDaSilveira.
-    pessoas.FranzWeissmann,
-    pessoas.HelioOiticica,
-    pessoas.IvanSerpa,
-    //pessoas.JoaoJoseDaSilvaCosta,
-    pessoas.LygiaClark,
-    pessoas.LygiaPape,
-    //pessoas.RubemLudolf
-    //pessoas.VicentIbberson,
+    //persons.AbrahamPalatnik
+    persons.AluisioCarvao,
+    //persons.CarlosVal
+    //persons.CesarOiticica
+    persons.DecioVieira,
+    //persons.ElisaMartinsDaSilveira.
+    persons.FranzWeissmann,
+    persons.HelioOiticica,
+    persons.IvanSerpa,
+    //persons.JoaoJoseDaSilvaCosta,
+    persons.LygiaClark,
+    persons.LygiaPape,
+    //persons.RubemLudolf
+    //persons.VicentIbberson,
   ],
   Patrocinios: undefined,
-  Curadores: [pessoas.FerreiraGullar],
+  Curadores: [persons.FerreiraGullar],
 };
 
 export const GrupoFrente_1955: Exposicao = {
@@ -841,20 +841,20 @@ export const GrupoFrente_1955: Exposicao = {
   DataInicio: '14/07/1955',
   DataFim: undefined,
   Expositores: [
-    //pessoas.AbrahamPalatnik
-    pessoas.AluisioCarvao,
-    //pessoas.CarlosVal
-    //pessoas.CesarOiticica
-    pessoas.DecioVieira,
-    //pessoas.ElisaMartinsDaSilveira.
-    pessoas.FranzWeissmann,
-    pessoas.HelioOiticica,
-    pessoas.IvanSerpa,
-    //pessoas.JoaoJoseDaSilvaCosta,
-    pessoas.LygiaClark,
-    pessoas.LygiaPape,
-    //pessoas.RubemLudolf
-    //pessoas.VicentIbberson,
+    //persons.AbrahamPalatnik
+    persons.AluisioCarvao,
+    //persons.CarlosVal
+    //persons.CesarOiticica
+    persons.DecioVieira,
+    //persons.ElisaMartinsDaSilveira.
+    persons.FranzWeissmann,
+    persons.HelioOiticica,
+    persons.IvanSerpa,
+    //persons.JoaoJoseDaSilvaCosta,
+    persons.LygiaClark,
+    persons.LygiaPape,
+    //persons.RubemLudolf
+    //persons.VicentIbberson,
   ],
   Patrocinios: undefined,
   Curadores: undefined,
@@ -870,20 +870,20 @@ export const GrupoFrente_1956: Exposicao = {
   DataInicio: '17/03/1956',
   DataFim: undefined,
   Expositores: [
-    //pessoas.AbrahamPalatnik
-    pessoas.AluisioCarvao,
-    //pessoas.CarlosVal
-    //pessoas.CesarOiticica
-    pessoas.DecioVieira,
-    //pessoas.ElisaMartinsDaSilveira.
-    pessoas.FranzWeissmann,
-    pessoas.HelioOiticica,
-    pessoas.IvanSerpa,
-    //pessoas.JoaoJoseDaSilvaCosta,
-    pessoas.LygiaClark,
-    pessoas.LygiaPape,
-    //pessoas.RubemLudolf
-    //pessoas.VicentIbberson,
+    //persons.AbrahamPalatnik
+    persons.AluisioCarvao,
+    //persons.CarlosVal
+    //persons.CesarOiticica
+    persons.DecioVieira,
+    //persons.ElisaMartinsDaSilveira.
+    persons.FranzWeissmann,
+    persons.HelioOiticica,
+    persons.IvanSerpa,
+    //persons.JoaoJoseDaSilvaCosta,
+    persons.LygiaClark,
+    persons.LygiaPape,
+    //persons.RubemLudolf
+    //persons.VicentIbberson,
   ],
   Patrocinios: undefined,
   Curadores: undefined,
@@ -899,14 +899,14 @@ export const GrupoFrente_1956_2: Exposicao = {
   DataInicio: '23/06/1956',
   DataFim: undefined,
   Expositores: [
-    //pessoas.AbrahamPalatnik
-    pessoas.AluisioCarvao,
-    //pessoas.CesarOiticica
-    pessoas.DecioVieira,
-    pessoas.FranzWeissmann,
-    pessoas.HelioOiticica,
-    pessoas.IvanSerpa,
-    pessoas.LygiaClark,
+    //persons.AbrahamPalatnik
+    persons.AluisioCarvao,
+    //persons.CesarOiticica
+    persons.DecioVieira,
+    persons.FranzWeissmann,
+    persons.HelioOiticica,
+    persons.IvanSerpa,
+    persons.LygiaClark,
   ],
   Patrocinios: undefined,
   Curadores: undefined,
@@ -922,65 +922,65 @@ export const SalaodeArtedeRibeiraoPreto: Exposicao = {
   DataInicio: '03/09/1988',
   DataFim: '09/10/1988',
   Expositores: [
-    pessoas.AlexGama,
-    pessoas.AntonioSergioDeSouza,
-    pessoas.BeraldaAltenfelder,
-    pessoas.CaetanoDeAlmeida,
-    pessoas.CarlaGuagliardi,
-    pessoas.CarlosWolney,
-    pessoas.CenimarSMarques,
-    pessoas.ClaudiaRenault,
-    pessoas.ClaudioCretti,
-    pessoas.ClebioMaduro,
-    pessoas.CleidoVasconcelos,
-    pessoas.EdgardDeSouza,
-    pessoas.EmilioBarolo,
-    pessoas.EymardBrandao, //(GrandePrêmioCidadedeRibeirãoPreto),
-    pessoas.FernandoAugusto,
-    pessoas.FernandoBento,
-    pessoas.FernandoFonseca,
-    pessoas.GermanaMonteMor,
-    pessoas.GiovannaMartins,
-    pessoas.JoseFernandoGDeleu,
-    pessoas.JulioDaCostaFeliz,
-    pessoas.LeticiaFaria,
-    pessoas.LuizLopreto,
-    pessoas.MariaAnitaOPCuzzah,
-    pessoas.MariaElisaBMCampos,
-    pessoas.MarinaBraghetto,
-    pessoas.Maurilima, //(PrêmioCidadedeRibeirãoPret),
-    pessoas.MendesFaria,
-    pessoas.MirleneFreire,
-    pessoas.NazarethPacheco,
-    pessoas.NydiaNegromonte,
-    pessoas.OlavoDeOliveiraSenne,
-    pessoas.OrlandoMFeitosa,
-    pessoas.OsmarDalio,
-    pessoas.Palo,
-    pessoas.PaulinoLazur,
-    pessoas.PauloMiranda,
-    pessoas.RachelDeAlmeidaMagalhaes, //(ReferênciaEspecialdoJúri),
-    pessoas.RicardoLuizHomem,
-    pessoas.RodrigoDeCastro, //(PrêmioCitibank-Aquisição),
-    pessoas.RosangelaRenno, //(PrêmioCidadedeRibeirãoPreto),
-    pessoas.RuiAlonso, //(PrêmioCitibank-Aquisição),
-    pessoas.SaleteMulin,
-    pessoas.SergioCappae,
-    pessoas.SheylaCabral,
-    pessoas.SilviaCunha,
-    pessoas.VaniaBarbosa,
-    pessoas.YvoniGarrigos,
+    persons.AlexGama,
+    persons.AntonioSergioDeSouza,
+    persons.BeraldaAltenfelder,
+    persons.CaetanoDeAlmeida,
+    persons.CarlaGuagliardi,
+    persons.CarlosWolney,
+    persons.CenimarSMarques,
+    persons.ClaudiaRenault,
+    persons.ClaudioCretti,
+    persons.ClebioMaduro,
+    persons.CleidoVasconcelos,
+    persons.EdgardDeSouza,
+    persons.EmilioBarolo,
+    persons.EymardBrandao, //(GrandePrêmioCidadedeRibeirãoPreto),
+    persons.FernandoAugusto,
+    persons.FernandoBento,
+    persons.FernandoFonseca,
+    persons.GermanaMonteMor,
+    persons.GiovannaMartins,
+    persons.JoseFernandoGDeleu,
+    persons.JulioDaCostaFeliz,
+    persons.LeticiaFaria,
+    persons.LuizLopreto,
+    persons.MariaAnitaOPCuzzah,
+    persons.MariaElisaBMCampos,
+    persons.MarinaBraghetto,
+    persons.Maurilima, //(PrêmioCidadedeRibeirãoPret),
+    persons.MendesFaria,
+    persons.MirleneFreire,
+    persons.NazarethPacheco,
+    persons.NydiaNegromonte,
+    persons.OlavoDeOliveiraSenne,
+    persons.OrlandoMFeitosa,
+    persons.OsmarDalio,
+    persons.Palo,
+    persons.PaulinoLazur,
+    persons.PauloMiranda,
+    persons.RachelDeAlmeidaMagalhaes, //(ReferênciaEspecialdoJúri),
+    persons.RicardoLuizHomem,
+    persons.RodrigoDeCastro, //(PrêmioCitibank-Aquisição),
+    persons.RosangelaRenno, //(PrêmioCidadedeRibeirãoPreto),
+    persons.RuiAlonso, //(PrêmioCitibank-Aquisição),
+    persons.SaleteMulin,
+    persons.SergioCappae,
+    persons.SheylaCabral,
+    persons.SilviaCunha,
+    persons.VaniaBarbosa,
+    persons.YvoniGarrigos,
   ],
   Patrocinios: undefined,
-  Curadores: [pessoas.JoaoCarlosDeFigueiredoFerraz],
+  Curadores: [persons.JoaoCarlosDeFigueiredoFerraz],
   Juri: [
-    pessoas.AlbertoTassinari,
-    pessoas.CelmaAlvim,
-    pessoas.PieterThomasTjabbes,
-    pessoas.RonaldoBrito,
-    pessoas.TadeuChiarelli,
+    persons.AlbertoTassinari,
+    persons.CelmaAlvim,
+    persons.PieterThomasTjabbes,
+    persons.RonaldoBrito,
+    persons.TadeuChiarelli,
   ],
-  Montadores: [pessoas.RubenBreitman],
+  Montadores: [persons.RubenBreitman],
 };
 
 export const SalaoNacionaldeArtesPlásticas_1991_Brasilia: Exposicao = {
@@ -993,80 +993,80 @@ export const SalaoNacionaldeArtesPlásticas_1991_Brasilia: Exposicao = {
   DataInicio: '12/12/1991',
   DataFim: '19/01/1992',
   Expositores: [
-    pessoas.AndreCosta,
-    pessoas.AngeloMarzano, //(PrêmioAquisitivo-GDF),
-    pessoas.AnnarreSmith,
-    pessoas.AntonioSergio, //(PrêmioParticipação-GDF),
-    pessoas.ArlindoDaibert,
-    pessoas.AvatarMoraes,
-    pessoas.BeraldaAltenfelder, //(PrêmioAquisitivo-GDF),
-    pessoas.CarlaGuagliardi,
-    pessoas.CarlosBorges, //(PrêmioAquisitivo-GDF),
-    pessoas.CarlosMuniz,
-    pessoas.ChaiChang,
-    pessoas.CosmeMartins,
-    pessoas.CourtneySmith, //(PrêmioAquisitivo-GDF),
-    pessoas.DanFialdini,
-    pessoas.DanielFeingold, //(PrêmioViagemaoExterior-IBAC),
-    pessoas.DomingosTotora,
-    pessoas.EdgarRacy,
-    pessoas.EduardoHaesbaert,
-    pessoas.ElderRochaFilho,
-    pessoas.ElianeProlik, //(PrêmioAquisição-IBAC),
-    pessoas.ElisaBracher, //(PrêmioJovemArtista-Unesco(MedalhadebronzePicasso)),
-    pessoas.EsterGrinspum,
-    pessoas.FatimaNeves, //(PrêmioAquisitvo-GDF),
-    pessoas.GeorgiaKyriakakis, //(PrêmioAquisitivo-GDF),
-    pessoas.GiselaWaetge, //(PrêmioAquisitivo-GDF),
-    pessoas.GladstoneDeMenezes,
-    pessoas.HelioSiqueira, //(PrêmioAquisitivo-GDF),
-    pessoas.IvanildeBrunow, //(PrêmioAquisitivo-GDF),
-    pessoas.JairCorreia,
-    pessoas.JoseBento, //(PrêmioViagemaoPaís-IBAC),
-    pessoas.JosePatricio, //(PrêmioAquisitivo-GDF),
-    pessoas.LauraVinci, //(PrêmioAquisitivo-GDF),
-    pessoas.MarciaPastore,
-    pessoas.MarcioPerigo, //(PrêmioAquisição-GDF),
-    pessoas.MarcusAndre, //(PrêmioAquisitivo-GDF),
-    pessoas.MarcusVinícius,
-    pessoas.MariaDoCarmo,
-    pessoas.MariaTerezaLouro, //(PrêmioAquisitivo-GDF),
-    pessoas.MariannitaLuzzati, //(PrêmioBrasíliadeArtesPlásticas),
-    pessoas.MariluBeer,
-    pessoas.MarioAzevedo, //(PrêmioAquisitivo-GDF),
-    pessoas.MoisesLucas,
-    pessoas.NiciaBormann,
-    pessoas.NiuraBellavinha,
-    pessoas.OrlandoCastano, //(PrêmioAquisição-GDF),
-    pessoas.PatriciaNorman,
-    pessoas.RicardoCristofaro, //(PrêmioAquisitivo-GDF),
-    pessoas.RinaldoSilva, //(PrêmioAquisitivo-GDF),
-    pessoas.RogerioGomes,
-    pessoas.RoseFraymund, //(PrêmioAquisitivo-GDF),
-    pessoas.SandraTucci,
-    pessoas.SergioRizo,
-    pessoas.ShirleyPaesLeme,
-    pessoas.StellaMaris,
-    pessoas.WalterGuerra,
+    persons.AndreCosta,
+    persons.AngeloMarzano, //(PrêmioAquisitivo-GDF),
+    persons.AnnarreSmith,
+    persons.AntonioSergio, //(PrêmioParticipação-GDF),
+    persons.ArlindoDaibert,
+    persons.AvatarMoraes,
+    persons.BeraldaAltenfelder, //(PrêmioAquisitivo-GDF),
+    persons.CarlaGuagliardi,
+    persons.CarlosBorges, //(PrêmioAquisitivo-GDF),
+    persons.CarlosMuniz,
+    persons.ChaiChang,
+    persons.CosmeMartins,
+    persons.CourtneySmith, //(PrêmioAquisitivo-GDF),
+    persons.DanFialdini,
+    persons.DanielFeingold, //(PrêmioViagemaoExterior-IBAC),
+    persons.DomingosTotora,
+    persons.EdgarRacy,
+    persons.EduardoHaesbaert,
+    persons.ElderRochaFilho,
+    persons.ElianeProlik, //(PrêmioAquisição-IBAC),
+    persons.ElisaBracher, //(PrêmioJovemArtista-Unesco(MedalhadebronzePicasso)),
+    persons.EsterGrinspum,
+    persons.FatimaNeves, //(PrêmioAquisitvo-GDF),
+    persons.GeorgiaKyriakakis, //(PrêmioAquisitivo-GDF),
+    persons.GiselaWaetge, //(PrêmioAquisitivo-GDF),
+    persons.GladstoneDeMenezes,
+    persons.HelioSiqueira, //(PrêmioAquisitivo-GDF),
+    persons.IvanildeBrunow, //(PrêmioAquisitivo-GDF),
+    persons.JairCorreia,
+    persons.JoseBento, //(PrêmioViagemaoPaís-IBAC),
+    persons.JosePatricio, //(PrêmioAquisitivo-GDF),
+    persons.LauraVinci, //(PrêmioAquisitivo-GDF),
+    persons.MarciaPastore,
+    persons.MarcioPerigo, //(PrêmioAquisição-GDF),
+    persons.MarcusAndre, //(PrêmioAquisitivo-GDF),
+    persons.MarcusVinícius,
+    persons.MariaDoCarmo,
+    persons.MariaTerezaLouro, //(PrêmioAquisitivo-GDF),
+    persons.MariannitaLuzzati, //(PrêmioBrasíliadeArtesPlásticas),
+    persons.MariluBeer,
+    persons.MarioAzevedo, //(PrêmioAquisitivo-GDF),
+    persons.MoisesLucas,
+    persons.NiciaBormann,
+    persons.NiuraBellavinha,
+    persons.OrlandoCastano, //(PrêmioAquisição-GDF),
+    persons.PatriciaNorman,
+    persons.RicardoCristofaro, //(PrêmioAquisitivo-GDF),
+    persons.RinaldoSilva, //(PrêmioAquisitivo-GDF),
+    persons.RogerioGomes,
+    persons.RoseFraymund, //(PrêmioAquisitivo-GDF),
+    persons.SandraTucci,
+    persons.SergioRizo,
+    persons.ShirleyPaesLeme,
+    persons.StellaMaris,
+    persons.WalterGuerra,
   ],
   Patrocinios: undefined,
   Curadores: [],
   Juri: [],
   Montadores: [],
-  Organizadores: [pessoas.JoãoDeSylos, pessoas.LedaWatson],
+  Organizadores: [persons.JoãoDeSylos, persons.LedaWatson],
   ComissaoDePremiacao: [
-    pessoas.CasemiroXavierDeMendonça,
-    pessoas.IvoZanini,
-    pessoas.JoaoCamara,
-    pessoas.JoaoEvangelistaAndradeFilho,
-    pessoas.RonaldoBrito,
+    persons.CasemiroXavierDeMendonça,
+    persons.IvoZanini,
+    persons.JoaoCamara,
+    persons.JoaoEvangelistaAndradeFilho,
+    persons.RonaldoBrito,
   ],
   ComissaoDeSelecao: [
-    pessoas.CasemiroXavierDeMendonça,
-    pessoas.IvoZanini,
-    pessoas.JoaoCamara,
-    pessoas.JoaoEvangelistaAndradeFilho,
-    pessoas.RonaldoBrito,
+    persons.CasemiroXavierDeMendonça,
+    persons.IvoZanini,
+    persons.JoaoCamara,
+    persons.JoaoEvangelistaAndradeFilho,
+    persons.RonaldoBrito,
   ],
 };
 
@@ -1079,9 +1079,9 @@ export const IndividualdeEduardoSued: Exposicao = {
   Local: 'Paço Imperial',
   DataInicio: '24/09/1992',
   DataFim: '01/11/1992',
-  Expositores: [pessoas.EduardoSued],
+  Expositores: [persons.EduardoSued],
   Patrocinios: undefined,
-  Curadores: [pessoas.RonaldoBrito],
+  Curadores: [persons.RonaldoBrito],
   Juri: undefined,
   Montadores: undefined,
 };
@@ -1095,9 +1095,9 @@ export const WaltercioCaldasEsculturas: Exposicao = {
   Local: 'Paço Imperial',
   DataInicio: '06/07/1988',
   DataFim: '27/07/1988',
-  Expositores: [pessoas.WaltercioCaldas],
+  Expositores: [persons.WaltercioCaldas],
   Patrocinios: undefined,
-  Curadores: [pessoas.PauloVenancioFilho],
+  Curadores: [persons.PauloVenancioFilho],
   Juri: undefined,
   Montadores: undefined,
 };
@@ -1111,9 +1111,9 @@ export const IndividualdeIvensMachado: Exposicao = {
   Local: undefined,
   DataInicio: '31/08/1988',
   DataFim: '29/09/1988',
-  Expositores: [pessoas.IvensMachado],
+  Expositores: [persons.IvensMachado],
   Patrocinios: undefined,
-  Curadores: [pessoas.PauloVenancioFilho],
+  Curadores: [persons.PauloVenancioFilho],
   Juri: undefined,
   Montadores: undefined,
 };
@@ -1127,9 +1127,9 @@ export const IndividualdeAngeloVenosa: Exposicao = {
   Local: 'Galeria Sérgio Milliet',
   DataInicio: '13/09/1989',
   DataFim: '04/10/1989',
-  Expositores: [pessoas.AngeloVenosa],
+  Expositores: [persons.AngeloVenosa],
   Patrocinios: undefined,
-  Curadores: [pessoas.PauloVenancioFilho],
+  Curadores: [persons.PauloVenancioFilho],
   Juri: undefined,
   Montadores: undefined,
 };
@@ -1145,45 +1145,45 @@ export const PoéticasVisuais: Exposicao = {
   DataInicio: '29/09/1977',
   DataFim: '30/10/1977',
   Expositores: [
-    pessoas.AnesiaPachecoEChaves,
-    pessoas.AnnaBellaGeiger,
-    pessoas.ArturBarrio,
-    pessoas.BeneFonteles,
-    pessoas.ClaudioFerlauto,
-    pessoas.DarioChiaverini,
-    pessoas.EssilaParaiso,
-    pessoas.FernandoCocchiarale,
-    pessoas.GabrielBorba,
-    pessoas.GastaoDeMagalhaes,
-    pessoas.GenilsonSoares,
-    pessoas.GersonZanini,
-    pessoas.Gretta,
-    pessoas.JoaquimBranco,
-    pessoas.JosePauloPaes,
-    pessoas.JulioPlaza,
-    pessoas.LauroCavalcanti,
-    pessoas.LeticiaParente,
-    pessoas.LourdesCedran,
-    pessoas.LuisGuardiaNeto,
-    pessoas.LuizBarth,
-    pessoas.MarcodoValle,
-    pessoas.MarioIshikawa,
-    pessoas.MauricioFridman,
-    pessoas.MiriamDanowski,
-    pessoas.MontezMagno,
-    pessoas.PauloBruscky,
-    pessoas.PauloHerkenhoff,
-    pessoas.ReginaSilveira,
-    pessoas.ReginaVater,
-    pessoas.RobertoKeppler,
-    pessoas.SoniaAndrade,
-    pessoas.VeraChavesBarcellos,
+    persons.AnesiaPachecoEChaves,
+    persons.AnnaBellaGeiger,
+    persons.ArturBarrio,
+    persons.BeneFonteles,
+    persons.ClaudioFerlauto,
+    persons.DarioChiaverini,
+    persons.EssilaParaiso,
+    persons.FernandoCocchiarale,
+    persons.GabrielBorba,
+    persons.GastaoDeMagalhaes,
+    persons.GenilsonSoares,
+    persons.GersonZanini,
+    persons.Gretta,
+    persons.JoaquimBranco,
+    persons.JosePauloPaes,
+    persons.JulioPlaza,
+    persons.LauroCavalcanti,
+    persons.LeticiaParente,
+    persons.LourdesCedran,
+    persons.LuisGuardiaNeto,
+    persons.LuizBarth,
+    persons.MarcodoValle,
+    persons.MarioIshikawa,
+    persons.MauricioFridman,
+    persons.MiriamDanowski,
+    persons.MontezMagno,
+    persons.PauloBruscky,
+    persons.PauloHerkenhoff,
+    persons.ReginaSilveira,
+    persons.ReginaVater,
+    persons.RobertoKeppler,
+    persons.SoniaAndrade,
+    persons.VeraChavesBarcellos,
   ],
   Patrocinios: undefined,
-  Curadores: [pessoas.JulioPlaza],
+  Curadores: [persons.JulioPlaza],
   Juri: undefined,
   Montadores: undefined,
-  Organizadores: [pessoas.WalterZanini],
+  Organizadores: [persons.WalterZanini],
 };
 
 export const AsArtesdoPoder: Exposicao = {
@@ -1196,21 +1196,21 @@ export const AsArtesdoPoder: Exposicao = {
   DataInicio: '15/09/1992',
   DataFim: undefined,
   Expositores: [
-    pessoas.AlexandreDaCosta,
-    pessoas.AntonioBerni,
-    pessoas.AntonioDias,
-    pessoas.Barrao,
-    pessoas.CaetanoDeAlmeida,
-    pessoas.JoaoCamara,
-    pessoas.JuanGenoves,
-    pessoas.LuizZerbini,
-    pessoas.MarcoAndre,
-    pessoas.MiguelRioBranco,
-    pessoas.PedroEscosteguy,
-    pessoas.RubensGerchman,
+    persons.AlexandreDaCosta,
+    persons.AntonioBerni,
+    persons.AntonioDias,
+    persons.Barrao,
+    persons.CaetanoDeAlmeida,
+    persons.JoaoCamara,
+    persons.JuanGenoves,
+    persons.LuizZerbini,
+    persons.MarcoAndre,
+    persons.MiguelRioBranco,
+    persons.PedroEscosteguy,
+    persons.RubensGerchman,
   ],
   Patrocinios: undefined,
-  Curadores: [pessoas.LauroCavalcanti, pessoas.LuizAquila],
+  Curadores: [persons.LauroCavalcanti, persons.LuizAquila],
   Juri: undefined,
   Montadores: undefined,
 };
@@ -1225,27 +1225,27 @@ export const SalãoNacionaldeArtesPlásticas1994: Exposicao = {
   DataInicio: '27/10/1994',
   DataFim: undefined,
   Expositores: [
-    pessoas.ElianeDuarte, //(PrêmioViagemaoExterior)
-    pessoas.ErnestoBonato, //((PrêmioUnesco)
-    pessoas.FelixBressan,
-    pessoas.FernandoAugusto, //((PrêmioAquisição)
-    pessoas.FranzWeissmann,
-    pessoas.LeilaDanziger,
-    pessoas.LuciaFetal,
-    pessoas.LuciaVilaseca,
-    pessoas.MarcoPauloRolla, //((PrêmioAquisição)
-    pessoas.NydiaNegromonte,
-    pessoas.PauloHumbertoDeAlmeida,
-    pessoas.VeraMartins, //((PrêmioAquisição)
+    persons.ElianeDuarte, //(PrêmioViagemaoExterior)
+    persons.ErnestoBonato, //((PrêmioUnesco)
+    persons.FelixBressan,
+    persons.FernandoAugusto, //((PrêmioAquisição)
+    persons.FranzWeissmann,
+    persons.LeilaDanziger,
+    persons.LuciaFetal,
+    persons.LuciaVilaseca,
+    persons.MarcoPauloRolla, //((PrêmioAquisição)
+    persons.NydiaNegromonte,
+    persons.PauloHumbertoDeAlmeida,
+    persons.VeraMartins, //((PrêmioAquisição)
   ],
   Patrocinios: undefined,
   Curadores: undefined,
   Juri: [
-    pessoas.AnnaLetycia,
-    pessoas.BeatrizMilhazes,
-    pessoas.FerreiraGullar,
-    pessoas.LauroCavalcanti,
-    pessoas.MariaAliceMilliet,
+    persons.AnnaLetycia,
+    persons.BeatrizMilhazes,
+    persons.FerreiraGullar,
+    persons.LauroCavalcanti,
+    persons.MariaAliceMilliet,
   ],
   Montadores: undefined,
 };
@@ -1259,9 +1259,9 @@ export const InfinitasImagensnoTempo: Exposicao = {
   Local: 'Paço Imperial',
   DataInicio: '1995',
   DataFim: undefined,
-  Expositores: [pessoas.LuizAlphonsus],
+  Expositores: [persons.LuizAlphonsus],
   Patrocinios: undefined,
-  Curadores: [pessoas.LauroCavalcanti],
+  Curadores: [persons.LauroCavalcanti],
   Juri: undefined,
   Montadores: undefined,
 };
@@ -1277,212 +1277,212 @@ export const SalãoNacionaldeArtesPlásticas: Exposicao = {
   DataInicio: '13/12/1985',
   DataFim: '02/02/1986',
   Expositores: [
-    pessoas.AdirBotelho,
-    pessoas.AdirSodre,
-    pessoas.Ahmes,
-    pessoas.AlcidesDaRochaMiranda,
-    pessoas.AldemirMartins,
-    pessoas.AlfredoVolpi,
-    pessoas.AliceSoares,
-    pessoas.AliceVinagre,
-    pessoas.AlmirGadelha,
-    pessoas.AluisioCarvao,
-    pessoas.AmeliaToledo,
-    pessoas.AmilcarDeCastro,
-    pessoas.AnaAlegria,
-    pessoas.AnaluCunha,
-    pessoas.AngeloVenosa,
-    pessoas.AnisioMedeiros,
-    pessoas.AnnaLetycia,
-    pessoas.AntonioBandeira,
-    pessoas.AntonioDias,
-    pessoas.AntonioPradoNetto,
-    pessoas.ArmandoBalloni,
-    pessoas.ArnaldoPedrosoDHorta,
-    pessoas.ArturBarrio,
-    pessoas.Barrao,
-    pessoas.BeatrizMilhazes,
-    pessoas.BeatrizPages,
-    pessoas.BeneFonteles,
-    pessoas.BenjaminSilva,
-    pessoas.BerthaBonart,
-    pessoas.Bianco,
-    pessoas.Bonadei,
-    pessoas.BrunoGiorgi,
-    pessoas.BustamanteSa,
-    pessoas.CandidoPortinari,
-    pessoas.CarlitoCarvalhosa,
-    pessoas.CarlosBastos,
-    pessoas.CarlosFajardo,
-    pessoas.CarlosScliar,
-    pessoas.CássioMBoy,
-    pessoas.ChicoCunha,
-    pessoas.CristinaCanale,
-    pessoas.CynthiaVasconcelos,
-    pessoas.DanubioGoncalves,
-    pessoas.DarcyPenteado,
-    pessoas.Darel,
-    pessoas.DavidLargman,
-    pessoas.DecioVieira,
-    pessoas.DelsonUchoa,
-    pessoas.DeniseWeller,
-    pessoas.Djanira,
-    pessoas.DoraLongoBahia,
-    pessoas.EduardoAquino,
-    pessoas.EduardoAraujo,
-    pessoas.EduardoBarreto,
-    pessoas.EduardoEloy,
-    pessoas.EduardoFerraz,
-    pessoas.EduardoKac,
-    pessoas.ErnaniVasconcellos,
-    pessoas.ErnestoLacerdaDeAlmeida,
-    pessoas.EssilaParaiso,
-    pessoas.EsterGrinspum,
-    pessoas.FabioCardoso,
-    pessoas.FabioMiguez, //(PrêmioAquisição),
-    pessoas.FaygaOstrower,
-    pessoas.FeliciaLeirner,
-    pessoas.FernandoFam,
-    pessoas.FernandoPamplona,
-    pessoas.FernandoRomani,
-    pessoas.FernandoStickel,
-    pessoas.FlaviaRibeiro,
-    pessoas.Fortunato,
-    pessoas.FranceDupaty,
-    pessoas.FranciscoRebolo,
-    pessoas.FranciscoStockinger,
-    pessoas.FrankSchaeffer,
-    pessoas.FransKrajcberg,
-    pessoas.FrantaReyl,
-    pessoas.Frantz,
-    pessoas.FulvioPennacchi,
-    pessoas.GeOrthof,
-    pessoas.GeorginaDeAlbuquerque,
-    pessoas.GerardoVilaseca,
-    pessoas.GezaHeller,
-    pessoas.GildaMattar,
-    pessoas.Glauco,
-    pessoas.GlaucoRodrigues,
-    pessoas.GlauraPereira,
-    pessoas.GlenioBianchetti,
-    pessoas.Goulart,
-    pessoas.HamiltonGalvao,
-    pessoas.HansenBahia,
-    pessoas.HaydeaSantiago,
-    pessoas.HelioMelo,
-    pessoas.HelioOiticica,
-    pessoas.HildaCampofiorito,
-    pessoas.HildaGoltz,
-    pessoas.HonorioPecanha,
-    pessoas.HugoAdami,
-    pessoas.HugoDenizart,
-    pessoas.HumbertoCozzo,
-    pessoas.IbereCamargo,
-    pessoas.IoneSaldanha,
-    pessoas.IsabelPons,
-    pessoas.IvanLima,
-    pessoas.IzraelSzajnbrum,
-    pessoas.JacinthoMoraes,
-    pessoas.Jacqmont,
-    pessoas.JadirAntonioDaSilva,
-    pessoas.JairGlass,
-    pessoas.JeaneteMusatti,
-    pessoas.JoaoMode, //(ReferênciaEspecialdoJúri),
-    pessoas.JoaquimPaiva,
-    pessoas.JorgeEiro,
-    pessoas.JorgeGuinle, //(PrêmioViagemaoExterior),
-    pessoas.JosePatricio,
-    pessoas.JosePedrosa,
-    pessoas.JoseResende,
-    pessoas.JoseSilveiraDAvila,
-    pessoas.KarinLambrecht,
-    pessoas.KonstantinChristoff,
-    pessoas.LiaMennaBarreto,
-    pessoas.LivioAbramo,
-    pessoas.LucetteLaribe,
-    pessoas.Luciano,
-    pessoas.LucianoPinheiro,
-    pessoas.LuisaMeyer,
-    pessoas.LuizBraga,
-    pessoas.LuizSolha,
-    pessoas.LuizZerbini,
-    pessoas.LygiaClark,
-    pessoas.MCavalcante,
-    pessoas.ManfredoDeSouzanetto,
-    pessoas.ManoelSantiago,
-    pessoas.MarceloCipis,
-    pessoas.MarcoTulioResende,
-    pessoas.MargaretSpence,
-    pessoas.MariaHeloisaFenelonCosta,
-    pessoas.MariaLeontina,
-    pessoas.MariaLuciaCattani,
-    pessoas.MariaLuciaLuz,
-    pessoas.MariaTomaselli,
-    pessoas.MarioAgostinelli,
-    pessoas.MarioCravoNeto,
-    pessoas.MárioRohnelt,
-    pessoas.MartinStreibel,
-    pessoas.MauricioBentes,
-    pessoas.MauricioSilva,
-    pessoas.MauroBellagamba,
-    pessoas.MaxGrossmann,
-    pessoas.MiltonGoldring,
-    pessoas.MiltonMachado,
-    pessoas.MiltonRibeiro,
-    pessoas.MiraSchendel,
-    pessoas.MisabelPedrosa,
-    pessoas.MonicaNador,
-    pessoas.MonicaSartori,
-    pessoas.NelsonFelix,
-    pessoas.NewtonRezende,
-    pessoas.Niculitcheff,
-    pessoas.NilsonPimenta,
-    pessoas.NoemiaGuerra,
-    pessoas.OctavioAraujo,
-    pessoas.OllyReinheimer,
-    pessoas.OrlandoCastano,
-    pessoas.OswaldoGoeldi,
-    pessoas.OtoniMesquita,
-    pessoas.PaivaBrasil,
-    pessoas.PauloBruscky,
-    pessoas.PauloCampinho,
-    pessoas.PauloHouayek,
-    pessoas.PauloMonteiro,
-    pessoas.PauloPaes,
-    pessoas.PhillippeMaeck,
-    pessoas.Piza,
-    pessoas.PotyLazzarotto,
-    pessoas.QuirinoCampofiorito,
-    pessoas.RalphGehre,
-    pessoas.Rapoport,
-    pessoas.RaymundoNogueira,
-    pessoas.ReninaKatz,
-    pessoas.RicardoLaterza,
-    pessoas.RichardSeewald,
-    pessoas.RochelleCosti,
-    pessoas.RodrigoAndrade,
-    pessoas.RogerioCamacho,
-    pessoas.RogerioNazari,
+    persons.AdirBotelho,
+    persons.AdirSodre,
+    persons.Ahmes,
+    persons.AlcidesDaRochaMiranda,
+    persons.AldemirMartins,
+    persons.AlfredoVolpi,
+    persons.AliceSoares,
+    persons.AliceVinagre,
+    persons.AlmirGadelha,
+    persons.AluisioCarvao,
+    persons.AmeliaToledo,
+    persons.AmilcarDeCastro,
+    persons.AnaAlegria,
+    persons.AnaluCunha,
+    persons.AngeloVenosa,
+    persons.AnisioMedeiros,
+    persons.AnnaLetycia,
+    persons.AntonioBandeira,
+    persons.AntonioDias,
+    persons.AntonioPradoNetto,
+    persons.ArmandoBalloni,
+    persons.ArnaldoPedrosoDHorta,
+    persons.ArturBarrio,
+    persons.Barrao,
+    persons.BeatrizMilhazes,
+    persons.BeatrizPages,
+    persons.BeneFonteles,
+    persons.BenjaminSilva,
+    persons.BerthaBonart,
+    persons.Bianco,
+    persons.Bonadei,
+    persons.BrunoGiorgi,
+    persons.BustamanteSa,
+    persons.CandidoPortinari,
+    persons.CarlitoCarvalhosa,
+    persons.CarlosBastos,
+    persons.CarlosFajardo,
+    persons.CarlosScliar,
+    persons.CássioMBoy,
+    persons.ChicoCunha,
+    persons.CristinaCanale,
+    persons.CynthiaVasconcelos,
+    persons.DanubioGoncalves,
+    persons.DarcyPenteado,
+    persons.Darel,
+    persons.DavidLargman,
+    persons.DecioVieira,
+    persons.DelsonUchoa,
+    persons.DeniseWeller,
+    persons.Djanira,
+    persons.DoraLongoBahia,
+    persons.EduardoAquino,
+    persons.EduardoAraujo,
+    persons.EduardoBarreto,
+    persons.EduardoEloy,
+    persons.EduardoFerraz,
+    persons.EduardoKac,
+    persons.ErnaniVasconcellos,
+    persons.ErnestoLacerdaDeAlmeida,
+    persons.EssilaParaiso,
+    persons.EsterGrinspum,
+    persons.FabioCardoso,
+    persons.FabioMiguez, //(PrêmioAquisição),
+    persons.FaygaOstrower,
+    persons.FeliciaLeirner,
+    persons.FernandoFam,
+    persons.FernandoPamplona,
+    persons.FernandoRomani,
+    persons.FernandoStickel,
+    persons.FlaviaRibeiro,
+    persons.Fortunato,
+    persons.FranceDupaty,
+    persons.FranciscoRebolo,
+    persons.FranciscoStockinger,
+    persons.FrankSchaeffer,
+    persons.FransKrajcberg,
+    persons.FrantaReyl,
+    persons.Frantz,
+    persons.FulvioPennacchi,
+    persons.GeOrthof,
+    persons.GeorginaDeAlbuquerque,
+    persons.GerardoVilaseca,
+    persons.GezaHeller,
+    persons.GildaMattar,
+    persons.Glauco,
+    persons.GlaucoRodrigues,
+    persons.GlauraPereira,
+    persons.GlenioBianchetti,
+    persons.Goulart,
+    persons.HamiltonGalvao,
+    persons.HansenBahia,
+    persons.HaydeaSantiago,
+    persons.HelioMelo,
+    persons.HelioOiticica,
+    persons.HildaCampofiorito,
+    persons.HildaGoltz,
+    persons.HonorioPecanha,
+    persons.HugoAdami,
+    persons.HugoDenizart,
+    persons.HumbertoCozzo,
+    persons.IbereCamargo,
+    persons.IoneSaldanha,
+    persons.IsabelPons,
+    persons.IvanLima,
+    persons.IzraelSzajnbrum,
+    persons.JacinthoMoraes,
+    persons.Jacqmont,
+    persons.JadirAntonioDaSilva,
+    persons.JairGlass,
+    persons.JeaneteMusatti,
+    persons.JoaoMode, //(ReferênciaEspecialdoJúri),
+    persons.JoaquimPaiva,
+    persons.JorgeEiro,
+    persons.JorgeGuinle, //(PrêmioViagemaoExterior),
+    persons.JosePatricio,
+    persons.JosePedrosa,
+    persons.JoseResende,
+    persons.JoseSilveiraDAvila,
+    persons.KarinLambrecht,
+    persons.KonstantinChristoff,
+    persons.LiaMennaBarreto,
+    persons.LivioAbramo,
+    persons.LucetteLaribe,
+    persons.Luciano,
+    persons.LucianoPinheiro,
+    persons.LuisaMeyer,
+    persons.LuizBraga,
+    persons.LuizSolha,
+    persons.LuizZerbini,
+    persons.LygiaClark,
+    persons.MCavalcante,
+    persons.ManfredoDeSouzanetto,
+    persons.ManoelSantiago,
+    persons.MarceloCipis,
+    persons.MarcoTulioResende,
+    persons.MargaretSpence,
+    persons.MariaHeloisaFenelonCosta,
+    persons.MariaLeontina,
+    persons.MariaLuciaCattani,
+    persons.MariaLuciaLuz,
+    persons.MariaTomaselli,
+    persons.MarioAgostinelli,
+    persons.MarioCravoNeto,
+    persons.MárioRohnelt,
+    persons.MartinStreibel,
+    persons.MauricioBentes,
+    persons.MauricioSilva,
+    persons.MauroBellagamba,
+    persons.MaxGrossmann,
+    persons.MiltonGoldring,
+    persons.MiltonMachado,
+    persons.MiltonRibeiro,
+    persons.MiraSchendel,
+    persons.MisabelPedrosa,
+    persons.MonicaNador,
+    persons.MonicaSartori,
+    persons.NelsonFelix,
+    persons.NewtonRezende,
+    persons.Niculitcheff,
+    persons.NilsonPimenta,
+    persons.NoemiaGuerra,
+    persons.OctavioAraujo,
+    persons.OllyReinheimer,
+    persons.OrlandoCastano,
+    persons.OswaldoGoeldi,
+    persons.OtoniMesquita,
+    persons.PaivaBrasil,
+    persons.PauloBruscky,
+    persons.PauloCampinho,
+    persons.PauloHouayek,
+    persons.PauloMonteiro,
+    persons.PauloPaes,
+    persons.PhillippeMaeck,
+    persons.Piza,
+    persons.PotyLazzarotto,
+    persons.QuirinoCampofiorito,
+    persons.RalphGehre,
+    persons.Rapoport,
+    persons.RaymundoNogueira,
+    persons.ReninaKatz,
+    persons.RicardoLaterza,
+    persons.RichardSeewald,
+    persons.RochelleCosti,
+    persons.RodrigoAndrade,
+    persons.RogerioCamacho,
+    persons.RogerioNazari,
   ],
   Patrocinios: undefined,
-  Curadores: [pessoas.PauloRobertoLeal],
+  Curadores: [persons.PauloRobertoLeal],
   Juri: [
-    pessoas.AnnaBellaGeiger,
-    pessoas.CarlosPasquetti,
-    pessoas.HumbertoEspindola,
-    pessoas.JoseClaudio,
-    pessoas.LuizPauloBaravelli,
-    pessoas.MarcusDeLontraCosta,
+    persons.AnnaBellaGeiger,
+    persons.CarlosPasquetti,
+    persons.HumbertoEspindola,
+    persons.JoseClaudio,
+    persons.LuizPauloBaravelli,
+    persons.MarcusDeLontraCosta,
   ],
   Montadores: undefined,
   Organizadores: [
-    pessoas.AlbertoBeuttenmuller,
-    pessoas.AlineFigueiredo,
-    pessoas.CalasansNeto,
-    pessoas.IcleiaCattani,
-    pessoas.JoseClaudio,
-    pessoas.OsmarPinheiro,
-    pessoas.PauloSergioDuarte,
+    persons.AlbertoBeuttenmuller,
+    persons.AlineFigueiredo,
+    persons.CalasansNeto,
+    persons.IcleiaCattani,
+    persons.JoseClaudio,
+    persons.OsmarPinheiro,
+    persons.PauloSergioDuarte,
   ],
 };
 
@@ -1496,176 +1496,176 @@ export const BienalInternacionaldeSãoPaulo_1981: Exposicao = {
   DataInicio: '16/10/1981',
   DataFim: '20/12/1981',
   Expositores: [
-    pessoas.Adelina,
-    pessoas.AdersonMedeiros,
-    pessoas.AlbenNisioFonseca,
-    pessoas.AlbertoHarrigan,
-    pessoas.AlexFlemming,
-    pessoas.AlexVallauri,
-    pessoas.AliceXavier,
-    pessoas.Almandrade,
-    pessoas.AnitaSimkevicius,
-    pessoas.AnnaBellaGeiger,
-    pessoas.AnnaCarretta,
-    pessoas.AntonioClaudioCarvalho,
-    pessoas.AntonioDias,
-    pessoas.AntonioPeticov,
-    pessoas.AntonioPoteiro,
-    pessoas.AntonioSergio,
-    pessoas.ArturBarrio,
-    pessoas.ArturMatuck,
-    pessoas.AuroraCursino,
-    pessoas.AvelinoDeAraujo,
-    pessoas.BeneFonteles,
-    pessoas.BernardoKrasniansky,
-    pessoas.BernardoVilhena,
-    pessoas.Carlos,
-    pessoas.CarlosFajardo,
-    pessoas.CarmelaGross,
-    pessoas.Chacal,
-    pessoas.ChicoDantas,
-    pessoas.ChicoPereira,
-    pessoas.CildoMeireles,
-    pessoas.Claudia,
-    pessoas.ClaudioFerlauto,
-    pessoas.ClaudioGomes,
-    pessoas.ClaudioGoulart,
-    pessoas.CristinaCoelhoRochaMonteiroDias,
-    pessoas.CybeleVarela,
-    pessoas.DaisyBoabaid,
-    pessoas.DanteVelloni,
-    pessoas.DianaDomingues,
-    pessoas.EdsonDeOliveira,
-    pessoas.EdsonMachado,
-    pessoas.EduardoSued,
-    pessoas.EduardoZanatta,
-    pessoas.EliHeil,
-    pessoas.ElianeVelozo,
-    pessoas.EmygdioDeBarros,
-    pessoas.FalvesSilva,
-    pessoas.FaridGeber,
-    pessoas.Fernando,
-    pessoas.FernandoMeireles,
-    pessoas.FredSvendsen,
-    pessoas.GabrielBorba,
-    pessoas.GabrielDosSantos,
-    pessoas.GastaoDeMagalhaes,
-    pessoas.GenilsonSoares,
-    pessoas.GeraldoDeBarros,
-    pessoas.GersonFilho,
-    pessoas.GersonZanini,
-    pessoas.GilmarECardoso,
-    pessoas.Goulart,
-    pessoas.GTO,
-    pessoas.GuilhermeMandaro,
-    pessoas.HelioLete,
-    pessoas.HikaroIckx,
-    pessoas.HudinilsonJunior,
-    pessoas.IoleDeFreitas,
-    pessoas.Isaac,
-    pessoas.IvaldGranato,
-    pessoas.IvanMauricio,
-    pessoas.IvensMachado,
-    pessoas.JMedeiros,
-    pessoas.JanethSoares,
-    pessoas.JoaoBatistaDosSantos,
-    pessoas.JoaoProteti,
-    pessoas.JoaquimBranco,
-    pessoas.JoseWagnerGarcia,
-    pessoas.JoziasBenedicto,
-    pessoas.JulioPlaza,
-    pessoas.KatiaBento,
-    pessoas.LauroMonteiro,
-    pessoas.LeilaSalles,
-    pessoas.LeonhardFrankDuck,
-    pessoas.LeticiaParente,
-    pessoas.LuigiZanotto,
-    pessoas.LuisGlesier,
-    pessoas.LuisGuardiaNeto,
-    pessoas.LuizAntonioLopesDeSouza,
-    pessoas.LuizCarlosCardoso,
-    pessoas.LuizFacanhaFaria,
-    pessoas.MarceloRMachado,
-    pessoas.MarcusDoRio,
-    pessoas.MarcusZacariades,
-    pessoas.MariaIreneRibeiro,
-    pessoas.MariaLuizaLeal,
-    pessoas.MarioDaPiedadeMArruda,
-    pessoas.MarioRamiro,
-    pessoas.MaryDritschel,
-    pessoas.MaynandSobral,
-    pessoas.MiraSchendel,
-    pessoas.MiriamDanowski,
-    pessoas.MiriamPeixoto,
-    pessoas.NeyMarcondes,
-    pessoas.NicolasBehr,
-    pessoas.NinaMoraes,
-    pessoas.OdairMagalhaes,
-    pessoas.OlimpioPinheiro,
-    pessoas.OrlandoPDSilva,
-    pessoas.OtavioDonasci,
-    pessoas.PauloBruscky,
-    pessoas.PauloDeAndrade,
-    pessoas.PauloKlein,
-    pessoas.PauloMiranda,
-    pessoas.PauloMourelli,
-    pessoas.PauloPriori,
-    pessoas.PauloRo,
-    pessoas.PedroJBrancoRiberio,
-    pessoas.PedroOsmar,
-    pessoas.RafaelFranca,
-    pessoas.Raphael,
-    pessoas.RaulCordula,
-    pessoas.ReginaSilveira,
-    pessoas.ReginaVater,
-    pessoas.RenataBarros,
-    pessoas.RitaMoreira,
-    pessoas.RobertoKeppler,
-    pessoas.RobertoSandoval,
-    pessoas.RochaAdonai,
-    pessoas.RonaldoSantos,
-    pessoas.RosaMariaSantos,
-    pessoas.SebastiaoFarias,
-    pessoas.SoniaFontanezi,
-    pessoas.TedJungle,
-    pessoas.Tunga,
-    pessoas.UnhandeijaraLisboa,
-    pessoas.VaniaLucilaValerioBPessoa,
-    pessoas.VeraBonnemasou,
-    pessoas.VivianOrni,
-    pessoas.WaltBlackberry,
+    persons.Adelina,
+    persons.AdersonMedeiros,
+    persons.AlbenNisioFonseca,
+    persons.AlbertoHarrigan,
+    persons.AlexFlemming,
+    persons.AlexVallauri,
+    persons.AliceXavier,
+    persons.Almandrade,
+    persons.AnitaSimkevicius,
+    persons.AnnaBellaGeiger,
+    persons.AnnaCarretta,
+    persons.AntonioClaudioCarvalho,
+    persons.AntonioDias,
+    persons.AntonioPeticov,
+    persons.AntonioPoteiro,
+    persons.AntonioSergio,
+    persons.ArturBarrio,
+    persons.ArturMatuck,
+    persons.AuroraCursino,
+    persons.AvelinoDeAraujo,
+    persons.BeneFonteles,
+    persons.BernardoKrasniansky,
+    persons.BernardoVilhena,
+    persons.Carlos,
+    persons.CarlosFajardo,
+    persons.CarmelaGross,
+    persons.Chacal,
+    persons.ChicoDantas,
+    persons.ChicoPereira,
+    persons.CildoMeireles,
+    persons.Claudia,
+    persons.ClaudioFerlauto,
+    persons.ClaudioGomes,
+    persons.ClaudioGoulart,
+    persons.CristinaCoelhoRochaMonteiroDias,
+    persons.CybeleVarela,
+    persons.DaisyBoabaid,
+    persons.DanteVelloni,
+    persons.DianaDomingues,
+    persons.EdsonDeOliveira,
+    persons.EdsonMachado,
+    persons.EduardoSued,
+    persons.EduardoZanatta,
+    persons.EliHeil,
+    persons.ElianeVelozo,
+    persons.EmygdioDeBarros,
+    persons.FalvesSilva,
+    persons.FaridGeber,
+    persons.Fernando,
+    persons.FernandoMeireles,
+    persons.FredSvendsen,
+    persons.GabrielBorba,
+    persons.GabrielDosSantos,
+    persons.GastaoDeMagalhaes,
+    persons.GenilsonSoares,
+    persons.GeraldoDeBarros,
+    persons.GersonFilho,
+    persons.GersonZanini,
+    persons.GilmarECardoso,
+    persons.Goulart,
+    persons.GTO,
+    persons.GuilhermeMandaro,
+    persons.HelioLete,
+    persons.HikaroIckx,
+    persons.HudinilsonJunior,
+    persons.IoleDeFreitas,
+    persons.Isaac,
+    persons.IvaldGranato,
+    persons.IvanMauricio,
+    persons.IvensMachado,
+    persons.JMedeiros,
+    persons.JanethSoares,
+    persons.JoaoBatistaDosSantos,
+    persons.JoaoProteti,
+    persons.JoaquimBranco,
+    persons.JoseWagnerGarcia,
+    persons.JoziasBenedicto,
+    persons.JulioPlaza,
+    persons.KatiaBento,
+    persons.LauroMonteiro,
+    persons.LeilaSalles,
+    persons.LeonhardFrankDuck,
+    persons.LeticiaParente,
+    persons.LuigiZanotto,
+    persons.LuisGlesier,
+    persons.LuisGuardiaNeto,
+    persons.LuizAntonioLopesDeSouza,
+    persons.LuizCarlosCardoso,
+    persons.LuizFacanhaFaria,
+    persons.MarceloRMachado,
+    persons.MarcusDoRio,
+    persons.MarcusZacariades,
+    persons.MariaIreneRibeiro,
+    persons.MariaLuizaLeal,
+    persons.MarioDaPiedadeMArruda,
+    persons.MarioRamiro,
+    persons.MaryDritschel,
+    persons.MaynandSobral,
+    persons.MiraSchendel,
+    persons.MiriamDanowski,
+    persons.MiriamPeixoto,
+    persons.NeyMarcondes,
+    persons.NicolasBehr,
+    persons.NinaMoraes,
+    persons.OdairMagalhaes,
+    persons.OlimpioPinheiro,
+    persons.OrlandoPDSilva,
+    persons.OtavioDonasci,
+    persons.PauloBruscky,
+    persons.PauloDeAndrade,
+    persons.PauloKlein,
+    persons.PauloMiranda,
+    persons.PauloMourelli,
+    persons.PauloPriori,
+    persons.PauloRo,
+    persons.PedroJBrancoRiberio,
+    persons.PedroOsmar,
+    persons.RafaelFranca,
+    persons.Raphael,
+    persons.RaulCordula,
+    persons.ReginaSilveira,
+    persons.ReginaVater,
+    persons.RenataBarros,
+    persons.RitaMoreira,
+    persons.RobertoKeppler,
+    persons.RobertoSandoval,
+    persons.RochaAdonai,
+    persons.RonaldoSantos,
+    persons.RosaMariaSantos,
+    persons.SebastiaoFarias,
+    persons.SoniaFontanezi,
+    persons.TedJungle,
+    persons.Tunga,
+    persons.UnhandeijaraLisboa,
+    persons.VaniaLucilaValerioBPessoa,
+    persons.VeraBonnemasou,
+    persons.VivianOrni,
+    persons.WaltBlackberry,
   ],
   Patrocinios: undefined,
   Curadores: [
-    pessoas.AgnaldoFarias,
-    pessoas.AnnateresaFabris,
-    pessoas.CacildaTeixeiraDaCosta,
-    pessoas.GabrielaSuzanaWilder,
-    pessoas.JulioPlaza,
-    pessoas.MariliaSaboyaDeAlbuquerque,
-    pessoas.PetronioFranca,
-    pessoas.RenataBarros,
-    pessoas.RobertoSandoval,
-    pessoas.SamuelLeon,
-    pessoas.VictorMusgrave,
-    pessoas.WalterZanini,
+    persons.AgnaldoFarias,
+    persons.AnnateresaFabris,
+    persons.CacildaTeixeiraDaCosta,
+    persons.GabrielaSuzanaWilder,
+    persons.JulioPlaza,
+    persons.MariliaSaboyaDeAlbuquerque,
+    persons.PetronioFranca,
+    persons.RenataBarros,
+    persons.RobertoSandoval,
+    persons.SamuelLeon,
+    persons.VictorMusgrave,
+    persons.WalterZanini,
   ],
   Juri: undefined,
   Organizadores: [
-    pessoas.BrunoMantura,
-    pessoas.CasemiroXavierDeMendonça,
-    pessoas.DonaldGoodall,
-    pessoas.DonatoFerrari,
-    pessoas.EstherEmilioCarlos,
-    pessoas.HelenEscobedo,
-    pessoas.IvelicMilan,
-    pessoas.LuizDiederichsenVillares,
-    pessoas.PauloSergioDuarte,
-    pessoas.ToshiakiNinemura,
-    pessoas.UlpianoBezerraDeMeneses,
+    persons.BrunoMantura,
+    persons.CasemiroXavierDeMendonça,
+    persons.DonaldGoodall,
+    persons.DonatoFerrari,
+    persons.EstherEmilioCarlos,
+    persons.HelenEscobedo,
+    persons.IvelicMilan,
+    persons.LuizDiederichsenVillares,
+    persons.PauloSergioDuarte,
+    persons.ToshiakiNinemura,
+    persons.UlpianoBezerraDeMeneses,
   ],
-  Montadores: [pessoas.CidaGalvao, pessoas.JorgeAristidesDeSousaCarvajal],
-  ArtistasConvidados: [pessoas.KatievanScherpenberg],
+  Montadores: [persons.CidaGalvao, persons.JorgeAristidesDeSousaCarvajal],
+  ArtistasConvidados: [persons.KatievanScherpenberg],
 };
 
 export const SituaçõesTransitivas: Exposicao = {
@@ -1678,14 +1678,14 @@ export const SituaçõesTransitivas: Exposicao = {
   DataInicio: '14/12/1995',
   DataFim: '13/01/1996',
   Expositores: [
-    pessoas.EnricaBernardelli,
-    pessoas.JoseDamasceno,
-    pessoas.LuizCarlosDelCastillo,
-    pessoas.MarciaThompson,
-    pessoas.MauricioRuiz,
+    persons.EnricaBernardelli,
+    persons.JoseDamasceno,
+    persons.LuizCarlosDelCastillo,
+    persons.MarciaThompson,
+    persons.MauricioRuiz,
   ],
   Patrocinios: undefined,
-  Curadores: [pessoas.FernandoCocchiarale],
+  Curadores: [persons.FernandoCocchiarale],
   Juri: undefined,
   Montadores: undefined,
 };
@@ -1700,9 +1700,9 @@ export const UmaVisãoCirculardoMundo30AnosdePintura: Exposicao = {
   Local: 'MNBA',
   DataInicio: '23/08/1995',
   DataFim: '01/10/19956',
-  Expositores: [pessoas.SolangeMagalhaes],
+  Expositores: [persons.SolangeMagalhaes],
   Patrocinios: undefined,
-  Curadores: [pessoas.FernandoCocchiarale],
+  Curadores: [persons.FernandoCocchiarale],
   Juri: undefined,
   Montadores: undefined,
 };
@@ -1718,27 +1718,27 @@ export const EsculturaCarioca: Exposicao = {
   DataInicio: '1994',
   DataFim: undefined,
   Expositores: [
-    pessoas.AndreCosta,
-    pessoas.Barrao,
-    pessoas.CarlaGuagliardi,
-    pessoas.CarlosBevilacqua,
-    pessoas.EduardoCoimbra,
-    pessoas.EnricaBernardelli,
-    pessoas.ErnestoNeto,
-    pessoas.FernandaGomes,
-    pessoas.JoseDamasceno,
-    pessoas.LiviaFlores,
-    pessoas.MarciaThompson,
-    pessoas.MarcosChaves,
-    pessoas.MauricioRuiz,
-    pessoas.RaulMourao,
-    pessoas.RicardoBasbaum,
-    pessoas.RicardoBecker,
-    pessoas.RodrigoCardoso,
-    pessoas.ValeskaSoares,
+    persons.AndreCosta,
+    persons.Barrao,
+    persons.CarlaGuagliardi,
+    persons.CarlosBevilacqua,
+    persons.EduardoCoimbra,
+    persons.EnricaBernardelli,
+    persons.ErnestoNeto,
+    persons.FernandaGomes,
+    persons.JoseDamasceno,
+    persons.LiviaFlores,
+    persons.MarciaThompson,
+    persons.MarcosChaves,
+    persons.MauricioRuiz,
+    persons.RaulMourao,
+    persons.RicardoBasbaum,
+    persons.RicardoBecker,
+    persons.RodrigoCardoso,
+    persons.ValeskaSoares,
   ],
   Patrocinios: undefined,
-  Curadores: [pessoas.FernandoCocchiarale, pessoas.LigiaCanongia],
+  Curadores: [persons.FernandoCocchiarale, persons.LigiaCanongia],
   Juri: undefined,
   Montadores: undefined,
 };
@@ -1754,48 +1754,48 @@ export const VentoSulMostraDeArtesVisuaisIntegraçãoDoConeSul: Exposicao = {
   DataInicio: '05/08/1994',
   DataFim: '10/09/1994',
   Expositores: [
-    pessoas.AntonioCarlosMachado,
-    pessoas.ArturoDuclos,
-    pessoas.CarlosAltamirano,
-    pessoas.CarlosSeveso,
-    pessoas.ClorindoTesta,
-    pessoas.EdilsonViriato,
-    pessoas.ElisaBracher,
-    pessoas.ErnestoVila,
-    pessoas.EstherMariaBragaCortes,
-    pessoas.FabioNoronha,
-    pessoas.FelixToranzos,
-    pessoas.GerardoGoldwasser,
-    pessoas.GonzaloDiaz,
-    pessoas.HelianaGrudzien,
-    pessoas.JoseDamasceno,
-    pessoas.LauroBorges,
-    pessoas.LeilaPugnaloni,
-    pessoas.LeticiaFaria,
-    pessoas.LuciaFetal,
-    pessoas.LuizCarlosBrugnera,
-    pessoas.MarcosBenitez,
-    pessoas.MariannitaLuzzati,
-    pessoas.MazeMendes,
-    pessoas.MiguelaVera,
-    pessoas.MitaiChurí,
-    pessoas.NewtonGoto,
-    pessoas.NuryGonzalez,
-    pessoas.RogerioDias,
-    pessoas.RonyBellinho,
-    pessoas.RosanaFuertes,
-    pessoas.SalvioDare,
-    pessoas.UiaraBartira,
+    persons.AntonioCarlosMachado,
+    persons.ArturoDuclos,
+    persons.CarlosAltamirano,
+    persons.CarlosSeveso,
+    persons.ClorindoTesta,
+    persons.EdilsonViriato,
+    persons.ElisaBracher,
+    persons.ErnestoVila,
+    persons.EstherMariaBragaCortes,
+    persons.FabioNoronha,
+    persons.FelixToranzos,
+    persons.GerardoGoldwasser,
+    persons.GonzaloDiaz,
+    persons.HelianaGrudzien,
+    persons.JoseDamasceno,
+    persons.LauroBorges,
+    persons.LeilaPugnaloni,
+    persons.LeticiaFaria,
+    persons.LuciaFetal,
+    persons.LuizCarlosBrugnera,
+    persons.MarcosBenitez,
+    persons.MariannitaLuzzati,
+    persons.MazeMendes,
+    persons.MiguelaVera,
+    persons.MitaiChurí,
+    persons.NewtonGoto,
+    persons.NuryGonzalez,
+    persons.RogerioDias,
+    persons.RonyBellinho,
+    persons.RosanaFuertes,
+    persons.SalvioDare,
+    persons.UiaraBartira,
   ],
   Patrocinios: undefined,
   Curadores: [
-    pessoas.AdaliceAraujo,
-    pessoas.AliciaHaber,
-    pessoas.FernandoCocchiarale,
-    pessoas.LauraBuccellato,
-    pessoas.NellyRichard,
-    pessoas.OsvaldoSalerno,
-    pessoas.TicioEscobar,
+    persons.AdaliceAraujo,
+    persons.AliciaHaber,
+    persons.FernandoCocchiarale,
+    persons.LauraBuccellato,
+    persons.NellyRichard,
+    persons.OsvaldoSalerno,
+    persons.TicioEscobar,
   ],
   Juri: undefined,
   Montadores: undefined,
@@ -1812,209 +1812,209 @@ export const BienalBrasilSéculoXX: Exposicao = {
   DataInicio: '24/04/1994',
   DataFim: '29/05/1994',
   Expositores: [
-    pessoas.AbrahamPalatnik,
-    pessoas.AdoMalagoli,
-    pessoas.AdrianoDeAquino,
-    pessoas.AlbertoTeixeira,
-    pessoas.AldemirMartins,
-    pessoas.AlexCerveny,
-    pessoas.AlexFlemming,
-    pessoas.AlexVallauri,
-    pessoas.AlexandreWollner,
-    pessoas.AlfredoAndersen,
-    pessoas.AlfredoVolpi,
-    pessoas.AlmirMavignier,
-    pessoas.AluisioCarvao,
-    pessoas.AlvimCorrea,
-    pessoas.AmeliaToledo,
-    pessoas.AmilcarDeCastro,
-    pessoas.AnaMariaTavares,
-    pessoas.AnaliviaCordeiro,
-    pessoas.AnatolWladyslaw,
-    pessoas.AndreParente,
-    pessoas.AnesiaPachecoEChaves,
-    pessoas.AngeloDeAquino,
-    pessoas.AngeloVenosa,
-    pessoas.AnitaMalfatti,
-    pessoas.AnnaBellaGeiger,
-    pessoas.AnnaBellaGeiger,
-    pessoas.AnnaLetycia,
-    pessoas.AnnaMariaMaiolino,
-    pessoas.AnnaMariani,
-    pessoas.AntonioBandeira,
-    pessoas.AntonioCelsoSparapan,
-    pessoas.AntonioDias,
-    pessoas.AntonioGomide,
-    pessoas.AntonioHenriqueAmaral,
-    pessoas.AntonioLizarraga,
-    pessoas.AntonioMaluf,
-    pessoas.AntonioManuel,
-    pessoas.AntonioPaimVieira,
-    pessoas.AntonioParreiras,
-    pessoas.ArcangeloIanelli,
-    pessoas.ArnaldoAntunes,
-    pessoas.ArnaldoFerrari,
-    pessoas.ArnaldoPedrosoDHorta,
-    pessoas.ArthurOmar,
-    pessoas.ArthurTimotheoDaCosta,
-    pessoas.ArturBarrio,
-    pessoas.ArturLescher,
-    pessoas.ArturMatuck,
-    pessoas.AthosBulcao,
-    pessoas.AugustoDeCampos,
-    pessoas.AvatarMoraes,
-    pessoas.Babinski,
-    pessoas.Barrao,
-    pessoas.BelisarioFranca,
-    pessoas.BelmiroDeAlmeida,
-    pessoas.BeneFonteles,
-    pessoas.BeneditoCalixto,
-    pessoas.BernardoCid,
-    pessoas.BernardoKrasniansky,
-    pessoas.BettyLeirner,
-    pessoas.BillMartinez,
-    pessoas.BinKondo,
-    pessoas.Bonadei,
-    pessoas.BrunoGiorgi,
-    pessoas.RobertoBurleMarx,
-    pessoas.CaciporeTorres,
-    pessoas.Caito,
-    pessoas.CandidoPortinari,
-    pessoas.CarlitoCarvalhosa,
-    pessoas.CarlosAthanazio,
-    pessoas.CarlosChambelland,
-    pessoas.CarlosFajardo,
-    pessoas.CarlosMartins,
-    pessoas.CarlosNaef,
-    pessoas.CarlosOswald,
-    pessoas.CarlosPrado,
-    pessoas.CarlosScliar,
-    pessoas.CarlosVergara,
-    pessoas.CarlosZilio,
-    pessoas.CarmelaGross,
-    pessoas.CarmelaGross,
-    pessoas.CassioMichalany,
-    pessoas.CeliaBorattoCarvalho,
-    pessoas.CeliaCatunda,
-    pessoas.CelsoRenato,
-    pessoas.CesarMarranoPiovane,
-    pessoas.CiceroDias,
-    pessoas.CiceroDias,
-    pessoas.CildoMeireles,
-    pessoas.ClaudioFerlauto,
-    pessoas.ClaudioGoulart,
-    pessoas.ClaudioTozzi,
-    pessoas.ClovisGraciano,
-    pessoas.CristinaFonseca,
-    pessoas.DanielSantiago,
-    pessoas.DanielSenise,
-    pessoas.DaniloDiPrete,
-    pessoas.Darel,
-    pessoas.DecioVieira,
-    pessoas.DenisMoses,
-    pessoas.DiCavalcanti,
-    pessoas.DianaDomingues,
-    pessoas.DionisioDelSanto,
-    pessoas.DonatoFerrari,
-    pessoas.DudiMaiaRosa,
-    pessoas.EderSantos,
-    pessoas.EdithBehring,
-    pessoas.EdsonMotta,
-    pessoas.EduardoCastanho,
-    pessoas.EduardoSued,
-    pessoas.ElianeProlik,
-    pessoas.EliseuVisconti,
-    pessoas.EmmanuelNassar,
-    pessoas.ErnestoDeFiori,
-    pessoas.ErnestoNeto,
-    pessoas.EssilaParaiso,
-    pessoas.EsterGrinspum,
-    pessoas.EugenioLatour,
-    pessoas.EulaliaGrau,
-    pessoas.EvandroCarlosJardim,
-    pessoas.FabioMiguez,
-    pessoas.Fahrion,
-    pessoas.FaygaOstrower,
-    pessoas.FeliciaLeirner,
-    pessoas.FernandoBarata,
-    pessoas.FernandoCocchiarale,
-    pessoas.FernandoLemos,
-    pessoas.FernandoOdriozola,
-    pessoas.FerreiraGullar,
-    pessoas.FlaviaRibeiro,
-    pessoas.FlavioDeCarvalho,
-    pessoas.FlavioPons,
-    pessoas.FlavioShiro,
-    pessoas.Flexor,
-    pessoas.FranciscoRebolo,
-    pessoas.FranciscoStockinger,
-    pessoas.FrancoTerranova,
-    pessoas.FranzWeissmann,
-    pessoas.FridaBaranek,
-    pessoas.FulvioPennacchi,
-    pessoas.GabrielBorba,
-    pessoas.GalileoEmendabili,
-    pessoas.GarciaBento,
-    pessoas.GastaoDeMagalhaes,
-    pessoas.GenilsonSoares,
-    pessoas.GeorgeRibeiroNeto,
-    pessoas.GeorginaDeAlbuquerque,
-    pessoas.GeraldoAnhaiaMello,
-    pessoas.GeraldoDeBarros,
-    pessoas.GeraldoDeBarros,
-    pessoas.GersonZanini,
-    pessoas.GilberttoPrado,
-    pessoas.GilvanSamico,
-    pessoas.GlaucoRodrigues,
-    pessoas.GregorioGruber,
-    pessoas.GuidoViaro,
-    pessoas.Guignard,
-    pessoas.GustavoDallAra,
-    pessoas.GuttmannBicho,
-    pessoas.HaroldoDeCampos,
-    pessoas.HeitorMalaguti,
-    pessoas.HelioLeite,
-    pessoas.HelioOiticica,
-    pessoas.HelioRola,
-    pessoas.HeliosSeelinger,
-    pessoas.HenriqueBoese,
-    pessoas.HenriqueCavalleiro,
-    pessoas.HenriqueOswald,
-    pessoas.HerculesBarsotti,
-    pessoas.HermelindoFiaminghi,
-    pessoas.HildeWeber,
-    pessoas.HudinilsonJunior,
-    pessoas.HugoAdami,
-    pessoas.HumbertoEspindola,
-    pessoas.IbereCamargo,
-    pessoas.InimaDePaula,
-    pessoas.IoleDeFreitas,
-    pessoas.IoneSaldanha,
-    pessoas.IreneBuarque,
-    pessoas.IsmaelNery,
-    pessoas.IvaldGranato,
-    pessoas.IvanSerpa,
-    pessoas.IvanSerpa,
-    pessoas.IvensMachado,
-    pessoas.JacLeirner,
-    pessoas.JacksonRibeiro,
-    pessoas.JacquesDouchez,
-    pessoas.JefGolyscheff,
-    pessoas.JoaoCamara,
-    pessoas.JoaoMoreiraSalles,
-    pessoas.JoaquimFigueira,
+    persons.AbrahamPalatnik,
+    persons.AdoMalagoli,
+    persons.AdrianoDeAquino,
+    persons.AlbertoTeixeira,
+    persons.AldemirMartins,
+    persons.AlexCerveny,
+    persons.AlexFlemming,
+    persons.AlexVallauri,
+    persons.AlexandreWollner,
+    persons.AlfredoAndersen,
+    persons.AlfredoVolpi,
+    persons.AlmirMavignier,
+    persons.AluisioCarvao,
+    persons.AlvimCorrea,
+    persons.AmeliaToledo,
+    persons.AmilcarDeCastro,
+    persons.AnaMariaTavares,
+    persons.AnaliviaCordeiro,
+    persons.AnatolWladyslaw,
+    persons.AndreParente,
+    persons.AnesiaPachecoEChaves,
+    persons.AngeloDeAquino,
+    persons.AngeloVenosa,
+    persons.AnitaMalfatti,
+    persons.AnnaBellaGeiger,
+    persons.AnnaBellaGeiger,
+    persons.AnnaLetycia,
+    persons.AnnaMariaMaiolino,
+    persons.AnnaMariani,
+    persons.AntonioBandeira,
+    persons.AntonioCelsoSparapan,
+    persons.AntonioDias,
+    persons.AntonioGomide,
+    persons.AntonioHenriqueAmaral,
+    persons.AntonioLizarraga,
+    persons.AntonioMaluf,
+    persons.AntonioManuel,
+    persons.AntonioPaimVieira,
+    persons.AntonioParreiras,
+    persons.ArcangeloIanelli,
+    persons.ArnaldoAntunes,
+    persons.ArnaldoFerrari,
+    persons.ArnaldoPedrosoDHorta,
+    persons.ArthurOmar,
+    persons.ArthurTimotheoDaCosta,
+    persons.ArturBarrio,
+    persons.ArturLescher,
+    persons.ArturMatuck,
+    persons.AthosBulcao,
+    persons.AugustoDeCampos,
+    persons.AvatarMoraes,
+    persons.Babinski,
+    persons.Barrao,
+    persons.BelisarioFranca,
+    persons.BelmiroDeAlmeida,
+    persons.BeneFonteles,
+    persons.BeneditoCalixto,
+    persons.BernardoCid,
+    persons.BernardoKrasniansky,
+    persons.BettyLeirner,
+    persons.BillMartinez,
+    persons.BinKondo,
+    persons.Bonadei,
+    persons.BrunoGiorgi,
+    persons.RobertoBurleMarx,
+    persons.CaciporeTorres,
+    persons.Caito,
+    persons.CandidoPortinari,
+    persons.CarlitoCarvalhosa,
+    persons.CarlosAthanazio,
+    persons.CarlosChambelland,
+    persons.CarlosFajardo,
+    persons.CarlosMartins,
+    persons.CarlosNaef,
+    persons.CarlosOswald,
+    persons.CarlosPrado,
+    persons.CarlosScliar,
+    persons.CarlosVergara,
+    persons.CarlosZilio,
+    persons.CarmelaGross,
+    persons.CarmelaGross,
+    persons.CassioMichalany,
+    persons.CeliaBorattoCarvalho,
+    persons.CeliaCatunda,
+    persons.CelsoRenato,
+    persons.CesarMarranoPiovane,
+    persons.CiceroDias,
+    persons.CiceroDias,
+    persons.CildoMeireles,
+    persons.ClaudioFerlauto,
+    persons.ClaudioGoulart,
+    persons.ClaudioTozzi,
+    persons.ClovisGraciano,
+    persons.CristinaFonseca,
+    persons.DanielSantiago,
+    persons.DanielSenise,
+    persons.DaniloDiPrete,
+    persons.Darel,
+    persons.DecioVieira,
+    persons.DenisMoses,
+    persons.DiCavalcanti,
+    persons.DianaDomingues,
+    persons.DionisioDelSanto,
+    persons.DonatoFerrari,
+    persons.DudiMaiaRosa,
+    persons.EderSantos,
+    persons.EdithBehring,
+    persons.EdsonMotta,
+    persons.EduardoCastanho,
+    persons.EduardoSued,
+    persons.ElianeProlik,
+    persons.EliseuVisconti,
+    persons.EmmanuelNassar,
+    persons.ErnestoDeFiori,
+    persons.ErnestoNeto,
+    persons.EssilaParaiso,
+    persons.EsterGrinspum,
+    persons.EugenioLatour,
+    persons.EulaliaGrau,
+    persons.EvandroCarlosJardim,
+    persons.FabioMiguez,
+    persons.Fahrion,
+    persons.FaygaOstrower,
+    persons.FeliciaLeirner,
+    persons.FernandoBarata,
+    persons.FernandoCocchiarale,
+    persons.FernandoLemos,
+    persons.FernandoOdriozola,
+    persons.FerreiraGullar,
+    persons.FlaviaRibeiro,
+    persons.FlavioDeCarvalho,
+    persons.FlavioPons,
+    persons.FlavioShiro,
+    persons.Flexor,
+    persons.FranciscoRebolo,
+    persons.FranciscoStockinger,
+    persons.FrancoTerranova,
+    persons.FranzWeissmann,
+    persons.FridaBaranek,
+    persons.FulvioPennacchi,
+    persons.GabrielBorba,
+    persons.GalileoEmendabili,
+    persons.GarciaBento,
+    persons.GastaoDeMagalhaes,
+    persons.GenilsonSoares,
+    persons.GeorgeRibeiroNeto,
+    persons.GeorginaDeAlbuquerque,
+    persons.GeraldoAnhaiaMello,
+    persons.GeraldoDeBarros,
+    persons.GeraldoDeBarros,
+    persons.GersonZanini,
+    persons.GilberttoPrado,
+    persons.GilvanSamico,
+    persons.GlaucoRodrigues,
+    persons.GregorioGruber,
+    persons.GuidoViaro,
+    persons.Guignard,
+    persons.GustavoDallAra,
+    persons.GuttmannBicho,
+    persons.HaroldoDeCampos,
+    persons.HeitorMalaguti,
+    persons.HelioLeite,
+    persons.HelioOiticica,
+    persons.HelioRola,
+    persons.HeliosSeelinger,
+    persons.HenriqueBoese,
+    persons.HenriqueCavalleiro,
+    persons.HenriqueOswald,
+    persons.HerculesBarsotti,
+    persons.HermelindoFiaminghi,
+    persons.HildeWeber,
+    persons.HudinilsonJunior,
+    persons.HugoAdami,
+    persons.HumbertoEspindola,
+    persons.IbereCamargo,
+    persons.InimaDePaula,
+    persons.IoleDeFreitas,
+    persons.IoneSaldanha,
+    persons.IreneBuarque,
+    persons.IsmaelNery,
+    persons.IvaldGranato,
+    persons.IvanSerpa,
+    persons.IvanSerpa,
+    persons.IvensMachado,
+    persons.JacLeirner,
+    persons.JacksonRibeiro,
+    persons.JacquesDouchez,
+    persons.JefGolyscheff,
+    persons.JoaoCamara,
+    persons.JoaoMoreiraSalles,
+    persons.JoaquimFigueira,
   ],
   Patrocinios: undefined,
   Curadores: [
-    pessoas.AgnaldoFarias,
-    pessoas.AnnateresaFabris,
-    pessoas.CacildaTeixeiraDaCosta,
-    pessoas.JoseRobertoTeixeiraLeite,
-    pessoas.MariaAliceMilliet,
-    pessoas.MariliaSaboyaDeAlbuquerque,
-    pessoas.NelsonAguilar,
-    pessoas.TadeuChiarelli,
-    pessoas.WalterZanini,
+    persons.AgnaldoFarias,
+    persons.AnnateresaFabris,
+    persons.CacildaTeixeiraDaCosta,
+    persons.JoseRobertoTeixeiraLeite,
+    persons.MariaAliceMilliet,
+    persons.MariliaSaboyaDeAlbuquerque,
+    persons.NelsonAguilar,
+    persons.TadeuChiarelli,
+    persons.WalterZanini,
   ],
   Juri: undefined,
   Montadores: undefined,
@@ -2031,16 +2031,16 @@ export const Pinturas: Exposicao = {
   DataInicio: '09/1991',
   DataFim: '11/10/1991',
   Expositores: [
-    pessoas.AdrianoDeAquino,
-    pessoas.AnnaBellaGeiger,
-    pessoas.AntonioManuel,
-    pessoas.CarlosVergara,
-    pessoas.CarlosZilio,
-    pessoas.EduardoSued,
-    pessoas.KatievanScherpenberg,
+    persons.AdrianoDeAquino,
+    persons.AnnaBellaGeiger,
+    persons.AntonioManuel,
+    persons.CarlosVergara,
+    persons.CarlosZilio,
+    persons.EduardoSued,
+    persons.KatievanScherpenberg,
   ],
   Patrocinios: undefined,
-  Curadores: [pessoas.FernandoCocchiarale],
+  Curadores: [persons.FernandoCocchiarale],
   Juri: undefined,
   Montadores: undefined,
 };
@@ -2057,14 +2057,14 @@ export const CristinaCanaleCláudioFonsecaBeatrizMilhazesLuizPizarroLuizZerbini:
     DataInicio: '18/01/1989',
     DataFim: '09/02/1989',
     Expositores: [
-      pessoas.BeatrizMilhazes,
-      pessoas.CláudioFonseca,
-      pessoas.CristinaCanale,
-      pessoas.LuizPizarro,
-      pessoas.LuizZerbini,
+      persons.BeatrizMilhazes,
+      persons.CláudioFonseca,
+      persons.CristinaCanale,
+      persons.LuizPizarro,
+      persons.LuizZerbini,
     ],
     Patrocinios: undefined,
-    Curadores: [pessoas.FernandoCocchiarale],
+    Curadores: [persons.FernandoCocchiarale],
     Juri: undefined,
     Montadores: undefined,
   };
@@ -2080,57 +2080,57 @@ export const DecimoSalãoNacionaldeArtesPlásticas: Exposicao = {
   DataInicio: '25/03/1988',
   DataFim: '28/04/1988',
   Expositores: [
-    pessoas.AngeloVenosa,
-    pessoas.ArmandoMattos,
-    pessoas.BeatrizMilhazes,
-    pessoas.CarlosAsp,
-    pessoas.ChicoCunha,
-    pessoas.ElianeProlik,
-    pessoas.ErnestoNeto,
-    pessoas.EvandroSalles,
-    pessoas.FabioMiguez, //(PrêmioAquisição),
-    pessoas.FernandoLindote,
-    pessoas.FlaviaRibeiro,
-    pessoas.FridaBaranek,
-    pessoas.GiovannaMartins,
-    pessoas.HamiltonGalvao,
-    pessoas.IsauraPena,
-    pessoas.JacLeirner,
-    pessoas.JailtonMoreira,
-    pessoas.JimmyLeroy,
-    pessoas.JoaoMode, //(Prêmioaquisição),
-    pessoas.LiaMennaBarreto,
-    pessoas.MarcoGiannotti,
-    pessoas.MarcoTulioResende,
-    pessoas.MariaLuciaCattani,
-    pessoas.MarioAzevedo,
-    pessoas.MauricioBentes,
-    pessoas.MonicaSartori,
-    pessoas.Niculitcheff,
-    pessoas.OrlandoCastano,
-    pessoas.Paolo,
-    pessoas.PauloAmaral,
-    pessoas.PauloCampinho,
-    pessoas.PauloPortella,
-    pessoas.PauloRobertoLeal, //(PrêmioAquisição),
-    pessoas.PauloSchmidt,
-    pessoas.RenatoHeuser,
-    pessoas.RicardoHomen,
-    pessoas.RodolfoAthayde,
-    pessoas.RubensOestroem,
-    pessoas.SaraMalenchini,
-    pessoas.Schwanke,
-    pessoas.SolangeOliveira,
-    pessoas.SuzanaQueiroga,
-    pessoas.ValerioRodrigues,
+    persons.AngeloVenosa,
+    persons.ArmandoMattos,
+    persons.BeatrizMilhazes,
+    persons.CarlosAsp,
+    persons.ChicoCunha,
+    persons.ElianeProlik,
+    persons.ErnestoNeto,
+    persons.EvandroSalles,
+    persons.FabioMiguez, //(PrêmioAquisição),
+    persons.FernandoLindote,
+    persons.FlaviaRibeiro,
+    persons.FridaBaranek,
+    persons.GiovannaMartins,
+    persons.HamiltonGalvao,
+    persons.IsauraPena,
+    persons.JacLeirner,
+    persons.JailtonMoreira,
+    persons.JimmyLeroy,
+    persons.JoaoMode, //(Prêmioaquisição),
+    persons.LiaMennaBarreto,
+    persons.MarcoGiannotti,
+    persons.MarcoTulioResende,
+    persons.MariaLuciaCattani,
+    persons.MarioAzevedo,
+    persons.MauricioBentes,
+    persons.MonicaSartori,
+    persons.Niculitcheff,
+    persons.OrlandoCastano,
+    persons.Paolo,
+    persons.PauloAmaral,
+    persons.PauloCampinho,
+    persons.PauloPortella,
+    persons.PauloRobertoLeal, //(PrêmioAquisição),
+    persons.PauloSchmidt,
+    persons.RenatoHeuser,
+    persons.RicardoHomen,
+    persons.RodolfoAthayde,
+    persons.RubensOestroem,
+    persons.SaraMalenchini,
+    persons.Schwanke,
+    persons.SolangeOliveira,
+    persons.SuzanaQueiroga,
+    persons.ValerioRodrigues,
   ],
   Patrocinios: undefined,
   ComissaoDeSelecao: [
-    pessoas.FernandoCocchiarale,
-    pessoas.IvoMesquita,
-    pessoas.JoseAlbertoNemer,
-    pessoas.MarcelloNitsche,
-    pessoas.MarcusDeLontraCosta,
+    persons.FernandoCocchiarale,
+    persons.IvoMesquita,
+    persons.JoseAlbertoNemer,
+    persons.MarcelloNitsche,
+    persons.MarcusDeLontraCosta,
   ],
   Juri: undefined,
   Montadores: undefined,
@@ -2148,42 +2148,42 @@ export const DoModernoaoContemporâneoColeçãoGilbertoChateaubriandMAM: Exposic
     DataInicio: '21/05/1981',
     DataFim: ' 19/07/1981',
     Expositores: [
-      pessoas.AlfredoVolpi,
-      pessoas.AluisioCarvao,
-      pessoas.AngeloDeAquino,
-      pessoas.AntonioHenriqueAmaral,
-      pessoas.AscanioMMM,
-      pessoas.CarlosVergara,
-      pessoas.CarlosZilio,
-      pessoas.CildoMeireles,
-      pessoas.EmericMarcier,
-      pessoas.FranciscoBrennand,
-      pessoas.GlaucoRodrigues,
-      pessoas.Guignard,
-      pessoas.HugoDenizart,
-      pessoas.IoneSaldanha,
-      pessoas.IvaldGranato,
-      pessoas.JoaoCarlosGalvao,
-      pessoas.LuizAlphonsus,
-      pessoas.MarciaBarrosoDoAmaral,
-      pessoas.MariaDoCarmoSecco,
-      pessoas.MauroKleiman,
-      pessoas.MiltonMachado,
-      pessoas.MiraSchendel,
-      pessoas.NelsonFelix,
-      pessoas.OsmarDillon,
-      pessoas.PaivaBrasil,
-      pessoas.RaymundoColares,
-      pessoas.RobertoFeitosa,
-      pessoas.SergioCamargo,
-      pessoas.TarsilaDoAmaral,
-      pessoas.Tunga,
-      pessoas.VicenteDoRegoMonteiro,
-      pessoas.WaltercioCaldas,
-      pessoas.WesleyDukeLee,
+      persons.AlfredoVolpi,
+      persons.AluisioCarvao,
+      persons.AngeloDeAquino,
+      persons.AntonioHenriqueAmaral,
+      persons.AscanioMMM,
+      persons.CarlosVergara,
+      persons.CarlosZilio,
+      persons.CildoMeireles,
+      persons.EmericMarcier,
+      persons.FranciscoBrennand,
+      persons.GlaucoRodrigues,
+      persons.Guignard,
+      persons.HugoDenizart,
+      persons.IoneSaldanha,
+      persons.IvaldGranato,
+      persons.JoaoCarlosGalvao,
+      persons.LuizAlphonsus,
+      persons.MarciaBarrosoDoAmaral,
+      persons.MariaDoCarmoSecco,
+      persons.MauroKleiman,
+      persons.MiltonMachado,
+      persons.MiraSchendel,
+      persons.NelsonFelix,
+      persons.OsmarDillon,
+      persons.PaivaBrasil,
+      persons.RaymundoColares,
+      persons.RobertoFeitosa,
+      persons.SergioCamargo,
+      persons.TarsilaDoAmaral,
+      persons.Tunga,
+      persons.VicenteDoRegoMonteiro,
+      persons.WaltercioCaldas,
+      persons.WesleyDukeLee,
     ],
     Patrocinios: undefined,
-    ComissaoDeSelecao: [pessoas.FernandoCocchiarale, pessoas.WilsonCoutinho],
+    ComissaoDeSelecao: [persons.FernandoCocchiarale, persons.WilsonCoutinho],
     Juri: undefined,
     Montadores: undefined,
   };
@@ -2200,41 +2200,41 @@ export const DoModernoaoContemporâneoColeçãoGilbertoChateaubriandLisboa: Expo
     DataInicio: '1982',
     DataFim: undefined,
     Expositores: [
-      pessoas.AlfredoVolpi,
-      pessoas.AluisioCarvao,
-      pessoas.AngeloDeAquino,
-      pessoas.AntonioHenriqueAmaral,
-      pessoas.AscanioMMM,
-      pessoas.CarlosVergara,
-      pessoas.CarlosZilio,
-      pessoas.CildoMeireles,
-      pessoas.EmericMarcier,
-      pessoas.GlaucoRodrigues,
-      pessoas.Guignard,
-      pessoas.IoneSaldanha,
-      pessoas.IvaldGranato,
-      pessoas.JoaoCarlosGalvao,
-      pessoas.KatievanScherpenberg,
-      pessoas.LuizAlphonsus,
-      pessoas.MarciaBarrosoDoAmaral,
-      pessoas.MariaDoCarmoSecco,
-      pessoas.MauroKleiman,
-      pessoas.MiltonMachado,
-      pessoas.MiraSchendel,
-      pessoas.NelsonFelix,
-      pessoas.OsmarDillon,
-      pessoas.PaivaBrasil,
-      pessoas.RaymundoColares,
-      pessoas.RobertoFeitosa,
-      pessoas.SergioCamargo,
-      pessoas.TarsilaDoAmaral,
-      pessoas.Tunga,
-      pessoas.VicenteDoRegoMonteiro,
-      pessoas.WaltercioCaldas,
-      pessoas.WesleyDukeLee,
+      persons.AlfredoVolpi,
+      persons.AluisioCarvao,
+      persons.AngeloDeAquino,
+      persons.AntonioHenriqueAmaral,
+      persons.AscanioMMM,
+      persons.CarlosVergara,
+      persons.CarlosZilio,
+      persons.CildoMeireles,
+      persons.EmericMarcier,
+      persons.GlaucoRodrigues,
+      persons.Guignard,
+      persons.IoneSaldanha,
+      persons.IvaldGranato,
+      persons.JoaoCarlosGalvao,
+      persons.KatievanScherpenberg,
+      persons.LuizAlphonsus,
+      persons.MarciaBarrosoDoAmaral,
+      persons.MariaDoCarmoSecco,
+      persons.MauroKleiman,
+      persons.MiltonMachado,
+      persons.MiraSchendel,
+      persons.NelsonFelix,
+      persons.OsmarDillon,
+      persons.PaivaBrasil,
+      persons.RaymundoColares,
+      persons.RobertoFeitosa,
+      persons.SergioCamargo,
+      persons.TarsilaDoAmaral,
+      persons.Tunga,
+      persons.VicenteDoRegoMonteiro,
+      persons.WaltercioCaldas,
+      persons.WesleyDukeLee,
     ],
     Patrocinios: undefined,
-    ComissaoDeSelecao: [pessoas.FernandoCocchiarale, pessoas.WilsonCoutinho],
+    ComissaoDeSelecao: [persons.FernandoCocchiarale, persons.WilsonCoutinho],
     Juri: undefined,
     Montadores: undefined,
   };
@@ -2250,63 +2250,63 @@ export const BienaldeArtesdeGoiás: Exposicao = {
   DataInicio: '11/05/1993',
   DataFim: '04/07/1993',
   Expositores: [
-    pessoas.ALoiola,
-    pessoas.AguinaldoCoelho,
-    pessoas.Alfio,
-    pessoas.AlmiraReuter,
-    pessoas.AnselmoArlota,
-    pessoas.AntonioElias,
-    pessoas.ArlindoCastro,
-    pessoas.BereniceGonçalves,
-    pessoas.CarlosSena,
-    pessoas.CarmemFreitas,
-    pessoas.ChicoFernandes,
-    pessoas.DeniseRocha,
-    pessoas.Dijodio, //(PrêmioD.J.Oliveira),
-    pessoas.EdneyAntunes,
-    pessoas.EduardoVararelli,
-    pessoas.Enauro,
-    pessoas.FabioNoronha, //(PrêmioXapuri-Revelação/93),
-    pessoas.IvacyDeSousa,
-    pessoas.JoaoBraz,
-    pessoas.JorgeWilson,
-    pessoas.LidiaSemerene,
-    pessoas.LiviaRizzo,
-    pessoas.LucioBarreto,
-    pessoas.LuizMauro, //(PrêmioGaleriaAberta),
-    pessoas.MANasserLeone,
-    pessoas.MarceloSola, //(PrêmioAliançaFrancesa),
-    pessoas.MarcosRodrigues,
-    pessoas.MarildaPassos,
-    pessoas.MarildaSousa,
-    pessoas.MartaPenner,
-    pessoas.MiguelSimao,
-    pessoas.NelmaGuimarães, //(ReferênciaEspecialdoJúri),
-    pessoas.PatriciaFaria,
-    pessoas.RobertaFalcone,
-    pessoas.SelmaParreira,
-    pessoas.Sobral,
-    pessoas.SuelitaCosta, //(ReferênciaEspecialdoJúri),
-    pessoas.Tai,
-    pessoas.ThomasRitter,
-    pessoas.VitoriaBasaia,
-    pessoas.WalterMenon,
-    pessoas.Yaphy,
+    persons.ALoiola,
+    persons.AguinaldoCoelho,
+    persons.Alfio,
+    persons.AlmiraReuter,
+    persons.AnselmoArlota,
+    persons.AntonioElias,
+    persons.ArlindoCastro,
+    persons.BereniceGonçalves,
+    persons.CarlosSena,
+    persons.CarmemFreitas,
+    persons.ChicoFernandes,
+    persons.DeniseRocha,
+    persons.Dijodio, //(PrêmioD.J.Oliveira),
+    persons.EdneyAntunes,
+    persons.EduardoVararelli,
+    persons.Enauro,
+    persons.FabioNoronha, //(PrêmioXapuri-Revelação/93),
+    persons.IvacyDeSousa,
+    persons.JoaoBraz,
+    persons.JorgeWilson,
+    persons.LidiaSemerene,
+    persons.LiviaRizzo,
+    persons.LucioBarreto,
+    persons.LuizMauro, //(PrêmioGaleriaAberta),
+    persons.MANasserLeone,
+    persons.MarceloSola, //(PrêmioAliançaFrancesa),
+    persons.MarcosRodrigues,
+    persons.MarildaPassos,
+    persons.MarildaSousa,
+    persons.MartaPenner,
+    persons.MiguelSimao,
+    persons.NelmaGuimarães, //(ReferênciaEspecialdoJúri),
+    persons.PatriciaFaria,
+    persons.RobertaFalcone,
+    persons.SelmaParreira,
+    persons.Sobral,
+    persons.SuelitaCosta, //(ReferênciaEspecialdoJúri),
+    persons.Tai,
+    persons.ThomasRitter,
+    persons.VitoriaBasaia,
+    persons.WalterMenon,
+    persons.Yaphy,
   ],
   Patrocinios: undefined,
   Curadores: undefined,
   Juri: [
-    pessoas.CarlosFernandoMagalhaes,
-    pessoas.FernandoCocchiarale,
-    pessoas.GraceMariaMachadoDeFreitas,
-    pessoas.MiguelJorge,
+    persons.CarlosFernandoMagalhaes,
+    persons.FernandoCocchiarale,
+    persons.GraceMariaMachadoDeFreitas,
+    persons.MiguelJorge,
   ],
   Montadores: undefined,
   Organizadores: [
-    pessoas.AmauryMenezes,
-    pessoas.FernandoCostaFilho,
-    pessoas.ReinaldoBarbalho,
-    pessoas.VirgíniaRGuimarães,
+    persons.AmauryMenezes,
+    persons.FernandoCostaFilho,
+    persons.ReinaldoBarbalho,
+    persons.VirgíniaRGuimarães,
   ],
 };
 
@@ -2320,10 +2320,10 @@ export const SalãodeAbril1994: Exposicao = {
   Local: 'Museu de Arte da UFC',
   DataInicio: '13/04/1994',
   DataFim: '31/05/1994',
-  Expositores: [pessoas.SinhaDAmora],
+  Expositores: [persons.SinhaDAmora],
   Patrocinios: undefined,
   Curadores: undefined,
-  Juri: [pessoas.CarlosFajardo, pessoas.Estrigas, pessoas.PauloHerkenhoff],
+  Juri: [persons.CarlosFajardo, persons.Estrigas, persons.PauloHerkenhoff],
   Montadores: undefined,
 };
 
@@ -2338,19 +2338,19 @@ export const OClássiconoContemporâneo: Exposicao = {
   DataInicio: '27/10/1991',
   DataFim: '17/11/1991',
   Expositores: [
-    pessoas.AnnaMariaMaiolino,
-    pessoas.CildoMeireles,
-    pessoas.ErnestoNeto,
-    pessoas.EsterGrinspum,
-    pessoas.IoleDeFreitas,
-    pessoas.KatievanScherpenberg,
-    pessoas.SergioCamargo,
-    pessoas.SoniaLabouriau,
-    pessoas.WaltercioCaldas,
+    persons.AnnaMariaMaiolino,
+    persons.CildoMeireles,
+    persons.ErnestoNeto,
+    persons.EsterGrinspum,
+    persons.IoleDeFreitas,
+    persons.KatievanScherpenberg,
+    persons.SergioCamargo,
+    persons.SoniaLabouriau,
+    persons.WaltercioCaldas,
   ],
   Patrocinios: undefined,
   Juri: undefined,
-  Curadores: [pessoas.PauloHerkenhoff],
+  Curadores: [persons.PauloHerkenhoff],
   Montadores: undefined,
 };
 
@@ -2365,16 +2365,16 @@ export const SalãodeAbril1991: Exposicao = {
   DataInicio: '09/04/1991',
   DataFim: '15/05/1991',
   Expositores: [
-    pessoas.AlanoFreitas, // (Prêmio Desenho)
-    pessoas.CelsoOliveira, // (Prêmio Fotografia)
-    pessoas.HelioRola, // (Prêmio Pintura)
-    pessoas.Joelson, // (Prêmio Pintura)
-    pessoas.MarcusFrancisco, //
-    pessoas.ServuloEsmeraldo, // (Prêmio Escultura)
+    persons.AlanoFreitas, // (Prêmio Desenho)
+    persons.CelsoOliveira, // (Prêmio Fotografia)
+    persons.HelioRola, // (Prêmio Pintura)
+    persons.Joelson, // (Prêmio Pintura)
+    persons.MarcusFrancisco, //
+    persons.ServuloEsmeraldo, // (Prêmio Escultura)
   ],
   Patrocinios: undefined,
   Curadores: undefined,
-  Juri: [pessoas.PauloHerkenhoff, pessoas.PedroEymar, pessoas.SoniaSalzstein],
+  Juri: [persons.PauloHerkenhoff, persons.PedroEymar, persons.SoniaSalzstein],
   Montadores: undefined,
 };
 
@@ -2389,59 +2389,59 @@ export const RioHoje: Exposicao = {
   DataInicio: '25/10/1989',
   DataFim: '26/11/1989',
   Expositores: [
-    pessoas.AdrianaVarejao,
-    pessoas.AdrianoDeAquino,
-    pessoas.AluisioCarvao,
-    pessoas.AmilcarDeCastro,
-    pessoas.AngeloVenosa,
-    pessoas.AnnaMariaMaiolino,
-    pessoas.AntonioManuel,
-    pessoas.ArturBarrio,
-    pessoas.Barrao,
-    pessoas.BeatrizMilhazes,
-    pessoas.CarlosBevilacqua,
-    pessoas.CarlosZilio,
-    pessoas.CildoMeireles,
-    pessoas.DanielSenise,
-    pessoas.DionisioDelSanto,
-    pessoas.EduardoFrota,
-    pessoas.EduardoSued,
-    pessoas.ElizabethJobim,
-    pessoas.ErnestoNeto,
-    pessoas.EvanyFanzeres,
-    pessoas.FernandaGomes,
-    pessoas.FlavioShiro,
-    pessoas.FranzWeissmann,
-    pessoas.HiltonBerredo,
-    pessoas.IbereCamargo,
-    pessoas.IoleDeFreitas,
-    pessoas.IoneSaldanha,
-    pessoas.IvensMachado,
-    pessoas.JoaoGrijo,
-    pessoas.JorgeDuarte,
-    pessoas.KatievanScherpenberg,
-    pessoas.LucianoFigueiredo,
-    pessoas.LygiaPape,
-    pessoas.ManfredoDeSouzanetto,
-    pessoas.MauricioBentes,
-    pessoas.MauricioRuiz,
-    pessoas.MiguelRioBranco,
-    pessoas.MiltonMachado,
-    pessoas.NelsonFelix,
-    pessoas.PauloRobertoLeal,
-    pessoas.RonaldoMacedo,
-    pessoas.RubensGerchman,
-    pessoas.SergioCamargo,
-    pessoas.Tunga,
-    pessoas.VictorArruda,
-    pessoas.WaltercioCaldas,
+    persons.AdrianaVarejao,
+    persons.AdrianoDeAquino,
+    persons.AluisioCarvao,
+    persons.AmilcarDeCastro,
+    persons.AngeloVenosa,
+    persons.AnnaMariaMaiolino,
+    persons.AntonioManuel,
+    persons.ArturBarrio,
+    persons.Barrao,
+    persons.BeatrizMilhazes,
+    persons.CarlosBevilacqua,
+    persons.CarlosZilio,
+    persons.CildoMeireles,
+    persons.DanielSenise,
+    persons.DionisioDelSanto,
+    persons.EduardoFrota,
+    persons.EduardoSued,
+    persons.ElizabethJobim,
+    persons.ErnestoNeto,
+    persons.EvanyFanzeres,
+    persons.FernandaGomes,
+    persons.FlavioShiro,
+    persons.FranzWeissmann,
+    persons.HiltonBerredo,
+    persons.IbereCamargo,
+    persons.IoleDeFreitas,
+    persons.IoneSaldanha,
+    persons.IvensMachado,
+    persons.JoaoGrijo,
+    persons.JorgeDuarte,
+    persons.KatievanScherpenberg,
+    persons.LucianoFigueiredo,
+    persons.LygiaPape,
+    persons.ManfredoDeSouzanetto,
+    persons.MauricioBentes,
+    persons.MauricioRuiz,
+    persons.MiguelRioBranco,
+    persons.MiltonMachado,
+    persons.NelsonFelix,
+    persons.PauloRobertoLeal,
+    persons.RonaldoMacedo,
+    persons.RubensGerchman,
+    persons.SergioCamargo,
+    persons.Tunga,
+    persons.VictorArruda,
+    persons.WaltercioCaldas,
   ],
   Patrocinios: undefined,
   Curadores: [
-    pessoas.LigiaCanongia,
-    pessoas.PauloHerkenhoff,
-    pessoas.ReynaldoRoels,
-    pessoas.VivianeMatesco,
+    persons.LigiaCanongia,
+    persons.PauloHerkenhoff,
+    persons.ReynaldoRoels,
+    persons.VivianeMatesco,
   ],
   Juri: undefined,
   Montadores: undefined,
@@ -2457,181 +2457,181 @@ export const BienalInternacionaldeSãoPaulo_1989: Exposicao = {
   DataInicio: '14/10/1989',
   DataFim: '10/12/1989',
   Expositores: [
-    pessoas.Adalberto,
-    pessoas.AlexFlemming,
-    pessoas.AmilcarDeCastro,
-    pessoas.AnaAndre,
-    pessoas.AnaMichaelis,
-    pessoas.AnatolWladyslaw,
-    pessoas.AnesiaPachecoEChaves,
-    pessoas.AngelaSantos,
-    pessoas.AngeloMilani,
-    pessoas.AnnaBellaGeiger,
-    pessoas.AntonioBandeira,
-    pessoas.AntonioPeticov,
-    pessoas.ArcangeloIanelli,
-    pessoas.ArnaldoBattaglini,
-    pessoas.ArrietChahin,
-    pessoas.ArturMatuck,
-    pessoas.BeraldaAltenfelder,
-    pessoas.BernardoKrasniansky,
-    pessoas.Caito,
-    pessoas.CarlosBarmak,
-    pessoas.CarlosDelfino,
-    pessoas.CarlosVergara,
-    pessoas.CarmelaGross,
-    pessoas.CeliaCymbalista,
-    pessoas.CelsoRenato,
-    pessoas.CicaAbsAndre,
-    pessoas.CildoMeireles,
-    pessoas.ClaraCastello,
-    pessoas.ClaudioTozzi,
-    pessoas.CleberMachado,
-    pessoas.DanielSenise,
-    pessoas.DanielaThomas,
-    pessoas.DaniloDiPrete,
-    pessoas.DeniseMilan,
-    pessoas.DomingosSeno,
-    pessoas.DudiMaiaRosa,
-    pessoas.EduardoSued,
-    pessoas.EduardoVerenguel,
-    pessoas.EideFeldon,
-    pessoas.EmmanuelNassar,
-    pessoas.ErnestinaKarman,
-    pessoas.EsterGrinspum,
-    pessoas.EveliPrvupiorka,
-    pessoas.FabianaDeBarros,
-    pessoas.FabioLopes,
-    pessoas.FabioMiguez,
-    pessoas.FernandoStickel,
-    pessoas.FlaviaFernandes,
-    pessoas.FlaviaRibeiro,
-    pessoas.FlavioDeCarvalho,
-    pessoas.FlavioImperio,
-    pessoas.FlavioShiro,
-    pessoas.Flexor,
-    pessoas.FranciscoBrennand,
-    pessoas.FransKrajcberg,
-    pessoas.FridaBaranek,
-    pessoas.GenilsonSoares,
-    pessoas.GeraldoDeSouza,
-    pessoas.GeraldoParanhos,
-    pessoas.GlauciaAmaralDeSouza,
-    pessoas.GlaucoRodrigues,
-    pessoas.HelioVinci,
-    pessoas.HenriqueBoese,
-    pessoas.HerculesBarsotti,
-    pessoas.HildeWeber,
-    pessoas.HiltonBerredo,
-    pessoas.IbereCamargo,
-    pessoas.IoleDiNatale,
-    pessoas.IvaldGranato,
-    pessoas.IvanSerpa,
-    pessoas.JCSerroni,
-    pessoas.JacLeirner,
-    pessoas.JacquesJesion,
-    pessoas.JaimePrades,
-    pessoas.JorgeGuinle,
-    pessoas.JoseAntonioDaSilva,
-    pessoas.JoseCarratu,
-    pessoas.JoseResende,
-    pessoas.JuCorteReal,
-    pessoas.JulioMinervino,
-    pessoas.KarenSilveira,
-    pessoas.KatievanScherpenberg,
-    pessoas.LasarSegall,
-    pessoas.LaszloMeitner,
-    pessoas.LauritaSalles,
-    pessoas.LevinHans,
-    pessoas.LoioPersio,
-    pessoas.LuizAquila,
-    pessoas.LuizMonforte,
-    pessoas.LuizPauloBaravelli,
-    pessoas.LuizSolha,
-    pessoas.LygiaPape,
-    pessoas.MadalenaHashimoto,
-    pessoas.ManabuMabe,
-    pessoas.MarceloCipis,
-    pessoas.MarcioAntonon,
-    pessoas.MarcodoValle,
-    pessoas.MarcosCoelhoBenjamim,
-    pessoas.MariaBonomi,
-    pessoas.MariaHelenaAndres,
-    pessoas.MariaLeontina,
-    pessoas.MariaTerezaLouro,
-    pessoas.MariannitaLuzzati,
-    pessoas.MarinaSaleme,
-    pessoas.MarioFiore,
-    pessoas.MarioIshikawa,
-    pessoas.MarioRamiro,
-    pessoas.MartaOliveira,
-    pessoas.MaureenBisilliat,
-    pessoas.MaySuplicy,
-    pessoas.MiraSchendel,
-    pessoas.MonicaBarth,
-    pessoas.MonicaSartori,
-    pessoas.NaumAlvesDeSouza,
-    pessoas.NazarethPacheco,
-    pessoas.NelsonLeirner,
-    pessoas.Niculitcheff,
-    pessoas.NinaMoraes,
-    pessoas.NunoRamos,
-    pessoas.OctavioPereira,
-    pessoas.PatriciaFurlong,
-    pessoas.PaulaAhzugaray,
-    pessoas.PauloBruscky,
-    pessoas.PauloMendesDaRocha,
-    pessoas.PauloWhitaker,
-    pessoas.PedroLopes,
-    pessoas.Piza,
-    pessoas.RenataBarros,
-    pessoas.ReninaKatz,
-    pessoas.RobertoKeppler,
-    pessoas.RobertoMicoli,
-    pessoas.RomerodeAndraDeLima,
-    pessoas.SandraTucci,
-    pessoas.SantaRosa,
-    pessoas.SelmaDaffre,
-    pessoas.SergioCamargo,
-    pessoas.SergioGuerini,
-    pessoas.SheilaBrannigan,
-    pessoas.SironFranco,
-    pessoas.TeresaBerlinck,
-    pessoas.TomieOhtake,
-    pessoas.VeraBarros,
-    pessoas.VeraChavesBarcellos,
-    pessoas.VeraRodrigues,
-    pessoas.VicenteKutka,
-    pessoas.VictorBrecheret,
-    pessoas.VieiraDaSilva,
-    pessoas.VilanovaArtigas,
-    pessoas.VivianOstrowsky,
-    pessoas.WaltercioCaldas,
-    pessoas.WegaNery,
-    pessoas.WesleyDukeLee,
-    pessoas.YolandaMohalyi,
-    pessoas.YutakaToyota,
-    pessoas.ZeCassio,
+    persons.Adalberto,
+    persons.AlexFlemming,
+    persons.AmilcarDeCastro,
+    persons.AnaAndre,
+    persons.AnaMichaelis,
+    persons.AnatolWladyslaw,
+    persons.AnesiaPachecoEChaves,
+    persons.AngelaSantos,
+    persons.AngeloMilani,
+    persons.AnnaBellaGeiger,
+    persons.AntonioBandeira,
+    persons.AntonioPeticov,
+    persons.ArcangeloIanelli,
+    persons.ArnaldoBattaglini,
+    persons.ArrietChahin,
+    persons.ArturMatuck,
+    persons.BeraldaAltenfelder,
+    persons.BernardoKrasniansky,
+    persons.Caito,
+    persons.CarlosBarmak,
+    persons.CarlosDelfino,
+    persons.CarlosVergara,
+    persons.CarmelaGross,
+    persons.CeliaCymbalista,
+    persons.CelsoRenato,
+    persons.CicaAbsAndre,
+    persons.CildoMeireles,
+    persons.ClaraCastello,
+    persons.ClaudioTozzi,
+    persons.CleberMachado,
+    persons.DanielSenise,
+    persons.DanielaThomas,
+    persons.DaniloDiPrete,
+    persons.DeniseMilan,
+    persons.DomingosSeno,
+    persons.DudiMaiaRosa,
+    persons.EduardoSued,
+    persons.EduardoVerenguel,
+    persons.EideFeldon,
+    persons.EmmanuelNassar,
+    persons.ErnestinaKarman,
+    persons.EsterGrinspum,
+    persons.EveliPrvupiorka,
+    persons.FabianaDeBarros,
+    persons.FabioLopes,
+    persons.FabioMiguez,
+    persons.FernandoStickel,
+    persons.FlaviaFernandes,
+    persons.FlaviaRibeiro,
+    persons.FlavioDeCarvalho,
+    persons.FlavioImperio,
+    persons.FlavioShiro,
+    persons.Flexor,
+    persons.FranciscoBrennand,
+    persons.FransKrajcberg,
+    persons.FridaBaranek,
+    persons.GenilsonSoares,
+    persons.GeraldoDeSouza,
+    persons.GeraldoParanhos,
+    persons.GlauciaAmaralDeSouza,
+    persons.GlaucoRodrigues,
+    persons.HelioVinci,
+    persons.HenriqueBoese,
+    persons.HerculesBarsotti,
+    persons.HildeWeber,
+    persons.HiltonBerredo,
+    persons.IbereCamargo,
+    persons.IoleDiNatale,
+    persons.IvaldGranato,
+    persons.IvanSerpa,
+    persons.JCSerroni,
+    persons.JacLeirner,
+    persons.JacquesJesion,
+    persons.JaimePrades,
+    persons.JorgeGuinle,
+    persons.JoseAntonioDaSilva,
+    persons.JoseCarratu,
+    persons.JoseResende,
+    persons.JuCorteReal,
+    persons.JulioMinervino,
+    persons.KarenSilveira,
+    persons.KatievanScherpenberg,
+    persons.LasarSegall,
+    persons.LaszloMeitner,
+    persons.LauritaSalles,
+    persons.LevinHans,
+    persons.LoioPersio,
+    persons.LuizAquila,
+    persons.LuizMonforte,
+    persons.LuizPauloBaravelli,
+    persons.LuizSolha,
+    persons.LygiaPape,
+    persons.MadalenaHashimoto,
+    persons.ManabuMabe,
+    persons.MarceloCipis,
+    persons.MarcioAntonon,
+    persons.MarcodoValle,
+    persons.MarcosCoelhoBenjamim,
+    persons.MariaBonomi,
+    persons.MariaHelenaAndres,
+    persons.MariaLeontina,
+    persons.MariaTerezaLouro,
+    persons.MariannitaLuzzati,
+    persons.MarinaSaleme,
+    persons.MarioFiore,
+    persons.MarioIshikawa,
+    persons.MarioRamiro,
+    persons.MartaOliveira,
+    persons.MaureenBisilliat,
+    persons.MaySuplicy,
+    persons.MiraSchendel,
+    persons.MonicaBarth,
+    persons.MonicaSartori,
+    persons.NaumAlvesDeSouza,
+    persons.NazarethPacheco,
+    persons.NelsonLeirner,
+    persons.Niculitcheff,
+    persons.NinaMoraes,
+    persons.NunoRamos,
+    persons.OctavioPereira,
+    persons.PatriciaFurlong,
+    persons.PaulaAhzugaray,
+    persons.PauloBruscky,
+    persons.PauloMendesDaRocha,
+    persons.PauloWhitaker,
+    persons.PedroLopes,
+    persons.Piza,
+    persons.RenataBarros,
+    persons.ReninaKatz,
+    persons.RobertoKeppler,
+    persons.RobertoMicoli,
+    persons.RomerodeAndraDeLima,
+    persons.SandraTucci,
+    persons.SantaRosa,
+    persons.SelmaDaffre,
+    persons.SergioCamargo,
+    persons.SergioGuerini,
+    persons.SheilaBrannigan,
+    persons.SironFranco,
+    persons.TeresaBerlinck,
+    persons.TomieOhtake,
+    persons.VeraBarros,
+    persons.VeraChavesBarcellos,
+    persons.VeraRodrigues,
+    persons.VicenteKutka,
+    persons.VictorBrecheret,
+    persons.VieiraDaSilva,
+    persons.VilanovaArtigas,
+    persons.VivianOstrowsky,
+    persons.WaltercioCaldas,
+    persons.WegaNery,
+    persons.WesleyDukeLee,
+    persons.YolandaMohalyi,
+    persons.YutakaToyota,
+    persons.ZeCassio,
   ],
   Patrocinios: undefined,
   Curadores: [
-    pessoas.CarlosVonSchmidt,
-    pessoas.CasemiroXavierDeMendonça,
-    pessoas.CesarLuisPiresDeMelloo,
-    pessoas.GabrielBorba,
-    pessoas.JoaoCandidoGalvao,
-    pessoas.LuizPauloBaravelli,
-    pessoas.StellaTeixeiraDeBarros,
+    persons.CarlosVonSchmidt,
+    persons.CasemiroXavierDeMendonça,
+    persons.CesarLuisPiresDeMelloo,
+    persons.GabrielBorba,
+    persons.JoaoCandidoGalvao,
+    persons.LuizPauloBaravelli,
+    persons.StellaTeixeiraDeBarros,
   ],
   ComissaoDeSelecao: [
-    pessoas.GilbertoChateaubriand,
-    pessoas.JoseAlbertoNemer,
-    pessoas.MarceloGrassmann,
-    pessoas.MarcusDeLontraCosta,
-    pessoas.PauloHerkenhoff,
+    persons.GilbertoChateaubriand,
+    persons.JoseAlbertoNemer,
+    persons.MarceloGrassmann,
+    persons.MarcusDeLontraCosta,
+    persons.PauloHerkenhoff,
   ],
   Juri: undefined,
-  Montadores: [pessoas.GuimarMorelo],
+  Montadores: [persons.GuimarMorelo],
 };
 
 export const CaminhosdoDesenhoBrasileiro: Exposicao = {
@@ -2645,68 +2645,68 @@ export const CaminhosdoDesenhoBrasileiro: Exposicao = {
   DataInicio: '12/11/1986',
   DataFim: '06/12/1986',
   Expositores: [
-    pessoas.AnaMariaTavares,
-    pessoas.AngeloMarzano,
-    pessoas.BelmiroDeAlmeida,
-    pessoas.BeraldaAltenfelder,
-    pessoas.BernardoKrasniansky,
-    pessoas.CarlosPasquetti,
-    pessoas.CarlosWladimirsky,
-    pessoas.ChicoCunha,
-    pessoas.ChristinaParisi,
-    pessoas.DanielSenise, //(SegundoPrêmiodoDesenhoBrasileiro),
-    pessoas.Darel,
-    pessoas.DiCavalcanti,
-    pessoas.EdithDerdyk,
-    pessoas.EsterGrinspum,
-    pessoas.EvandroSalles,
-    pessoas.FlavioFerraz,
-    pessoas.Guignard,
-    pessoas.GustavoRezende,
-    pessoas.IgorMarques, //(PrimeiroPrêmiodoDesenhoBrasileiro),
-    pessoas.IsauraPena,
-    pessoas.JadirFreire,
-    pessoas.JairGlass,
-    pessoas.JulioPlaza,
-    pessoas.LasarSegall,
-    pessoas.Leonilson,
-    pessoas.MarcosRuck,
-    pessoas.MariaTomaselli,
-    pessoas.MárioRohnelt,
-    pessoas.MarujaCachay,
-    pessoas.MauroClaro,
-    pessoas.MillorFernandes,
-    pessoas.MiltonKurtz, //(TerceiroPrêmiodoDesenhoBrasileiro),
-    pessoas.MiraSchendel,
-    pessoas.MonicaSartori,
-    pessoas.NelsonFelix,
-    pessoas.OrlandoCastano,
-    pessoas.OswaldoGoeldi,
-    pessoas.PauloGarcez,
-    pessoas.PauloHouayek,
-    pessoas.PauloPortella,
-    pessoas.PauloRobertoLeal,
-    pessoas.PedroNava,
-    pessoas.RaulCordula,
-    pessoas.RuthSchneider,
-    pessoas.Schwanke,
-    pessoas.TarsilaDoAmaral,
-    pessoas.Tunga, //(PrêmioGovernodoEstadoORioGrandedoSul/DestaquedoDesenhoBrasileiro),
-    pessoas.VicenteDoRegoMonteiro,
-    pessoas.VictorBrecheret,
-    pessoas.ZicaBergami,
+    persons.AnaMariaTavares,
+    persons.AngeloMarzano,
+    persons.BelmiroDeAlmeida,
+    persons.BeraldaAltenfelder,
+    persons.BernardoKrasniansky,
+    persons.CarlosPasquetti,
+    persons.CarlosWladimirsky,
+    persons.ChicoCunha,
+    persons.ChristinaParisi,
+    persons.DanielSenise, //(SegundoPrêmiodoDesenhoBrasileiro),
+    persons.Darel,
+    persons.DiCavalcanti,
+    persons.EdithDerdyk,
+    persons.EsterGrinspum,
+    persons.EvandroSalles,
+    persons.FlavioFerraz,
+    persons.Guignard,
+    persons.GustavoRezende,
+    persons.IgorMarques, //(PrimeiroPrêmiodoDesenhoBrasileiro),
+    persons.IsauraPena,
+    persons.JadirFreire,
+    persons.JairGlass,
+    persons.JulioPlaza,
+    persons.LasarSegall,
+    persons.Leonilson,
+    persons.MarcosRuck,
+    persons.MariaTomaselli,
+    persons.MárioRohnelt,
+    persons.MarujaCachay,
+    persons.MauroClaro,
+    persons.MillorFernandes,
+    persons.MiltonKurtz, //(TerceiroPrêmiodoDesenhoBrasileiro),
+    persons.MiraSchendel,
+    persons.MonicaSartori,
+    persons.NelsonFelix,
+    persons.OrlandoCastano,
+    persons.OswaldoGoeldi,
+    persons.PauloGarcez,
+    persons.PauloHouayek,
+    persons.PauloPortella,
+    persons.PauloRobertoLeal,
+    persons.PedroNava,
+    persons.RaulCordula,
+    persons.RuthSchneider,
+    persons.Schwanke,
+    persons.TarsilaDoAmaral,
+    persons.Tunga, //(PrêmioGovernodoEstadoORioGrandedoSul/DestaquedoDesenhoBrasileiro),
+    persons.VicenteDoRegoMonteiro,
+    persons.VictorBrecheret,
+    persons.ZicaBergami,
   ],
   Patrocinios: undefined,
-  Curadores: [pessoas.EvelynBergIochpe, pessoas.PauloHerkenhoff],
+  Curadores: [persons.EvelynBergIochpe, persons.PauloHerkenhoff],
   ComissaoDeSelecao: [
-    pessoas.AmilcarDeCastro,
-    pessoas.AngelicaDeMoraes,
-    pessoas.CasemiroXavierDeMendonça,
-    pessoas.EvelynBergIochpe,
-    pessoas.FredericoMoraes,
-    pessoas.MarcioSampaio,
-    pessoas.PauloHerkenhoff,
-    pessoas.ReginaSilveira,
+    persons.AmilcarDeCastro,
+    persons.AngelicaDeMoraes,
+    persons.CasemiroXavierDeMendonça,
+    persons.EvelynBergIochpe,
+    persons.FredericoMoraes,
+    persons.MarcioSampaio,
+    persons.PauloHerkenhoff,
+    persons.ReginaSilveira,
   ],
   Montadores: undefined,
 };

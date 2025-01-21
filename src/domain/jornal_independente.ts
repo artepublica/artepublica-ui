@@ -1,4 +1,4 @@
-import Pessoa from './pessoa';
+import Person from './person';
 
 type JornalIndependente = {
   ID?: number;
@@ -6,7 +6,7 @@ type JornalIndependente = {
   Cidade?: string;
   Estado?: string;
   Pais?: string;
-  Participantes?: Pessoa[];
+  Participantes?: Person[];
   DataInicio?: string;
   DataFim?: string;
 };

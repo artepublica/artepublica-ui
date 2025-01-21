@@ -3,7 +3,7 @@ import onlyUniqueNotUndefinedString from '@utils/list/unique-not-undefined-strin
 
 function artistasConvidados(exposicao: Exposicao): string[] {
   return exposicao.ArtistasConvidados != null
-    ? exposicao.ArtistasConvidados.map((pessoa) => pessoa.Nome).filter(
+    ? exposicao.ArtistasConvidados.map((person) => person.Name).filter(
         onlyUniqueNotUndefinedString,
       )
     : [];

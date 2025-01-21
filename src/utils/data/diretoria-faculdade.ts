@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import DiretorFaculade from '../../domain/diretor_faculdade';
 
 export const LuizPauloFernandezConde: DiretorFaculade = {
-  Pessoa: pessoas.LuizPauloFernandezConde,
+  Person: persons.LuizPauloFernandezConde,
   Mandatos: [
     {
       Faculdade: 'Universidade Federal do Rio de Janeiro',

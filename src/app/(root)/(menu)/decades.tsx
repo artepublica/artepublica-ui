@@ -3,7 +3,7 @@ import React from 'react';
 import Head from 'expo-router/head';
 import { StyleSheet, View } from 'react-native';
 
-import { Decade } from '@pages';
+import { Decades as DecadesPage } from '@pages';
 
 function Decades(): JSX.Element {
   return (
@@ -12,7 +12,7 @@ function Decades(): JSX.Element {
         <title>Arte Pública - Décadas</title>
       </Head>
       <View style={styles.container}>
-        <Decade />
+        <DecadesPage />
       </View>
     </>
   );

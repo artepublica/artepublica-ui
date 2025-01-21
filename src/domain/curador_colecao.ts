@@ -1,9 +1,9 @@
 import MandatoCuradorColecao from './mandato_curador_colecao';
-import Pessoa from './pessoa';
+import Person from './person';
 
 type CuradorColecao = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
   Mandatos?: MandatoCuradorColecao[];
 };
 

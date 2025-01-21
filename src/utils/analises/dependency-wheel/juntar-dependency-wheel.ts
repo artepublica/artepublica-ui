@@ -1,7 +1,7 @@
 import { DependencyWheel } from '@domain';
 
 function compararNoData(o1: DependencyWheel, o2: DependencyWheel): boolean {
-  return o1.from === o2.from && o1.to === o2.to; // || (o1.pessoa1 === o2.pessoa2 && o1.pessoa2 === o2.pessoa1);
+  return o1.from === o2.from && o1.to === o2.to; // || (o1.person1 === o2.person2 && o1.person2 === o2.person1);
 }
 
 function juntarDependencyWheel(

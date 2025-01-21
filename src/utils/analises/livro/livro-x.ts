@@ -9,7 +9,7 @@ function livroX(
   livro: Livro,
   politicaPublica: PoliticaPublica,
 ): TrocaCapital[] {
-  const autores = [livro.Autor?.Nome].filter(onlyUniqueNotUndefinedString);
+  const autores = [livro.Autor?.Name].filter(onlyUniqueNotUndefinedString);
   const citados = citadosLivro(livro);
 
   const autorXautor = trocaCapital(

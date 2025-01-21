@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import DiretorMuseu from '../../domain/diretor_museu';
 
 export const HelenaMariaPortoSeveroDaCosta_MuseuDaRepublica: DiretorMuseu = {
-  Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
+  Person: persons.HelenaMariaPortoSeveroDaCosta,
   Mandatos: [
     {
       NomeMuseu: 'Museu da República',
@@ -17,7 +17,7 @@ export const HelenaMariaPortoSeveroDaCosta_MuseuDaRepublica: DiretorMuseu = {
 };
 
 export const HelenaMariaPortoSeveroDaCosta_CasaFrancaBrasil: DiretorMuseu = {
-  Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
+  Person: persons.HelenaMariaPortoSeveroDaCosta,
   Mandatos: [
     {
       NomeMuseu: 'Casa França-Brasil',
@@ -32,7 +32,7 @@ export const HelenaMariaPortoSeveroDaCosta_CasaFrancaBrasil: DiretorMuseu = {
 };
 
 export const EverardoMiranda: DiretorMuseu = {
-  Pessoa: pessoas.EverardoMiranda,
+  Person: persons.EverardoMiranda,
   Mandatos: [
     {
       NomeMuseu: 'Museu Histórico da Cidade',
@@ -56,7 +56,7 @@ export const EverardoMiranda: DiretorMuseu = {
 };
 
 export const LauroCavalcanti: DiretorMuseu = {
-  Pessoa: pessoas.LauroCavalcanti,
+  Person: persons.LauroCavalcanti,
   Mandatos: [
     {
       NomeMuseu: 'Paço Imperial',
@@ -71,7 +71,7 @@ export const LauroCavalcanti: DiretorMuseu = {
 };
 
 export const PauloHerkenhoff_MAM: DiretorMuseu = {
-  Pessoa: pessoas.PauloHerkenhoff,
+  Person: persons.PauloHerkenhoff,
   Mandatos: [
     {
       NomeMuseu: 'Museu de Arte Moderna do Rio de Janeiro',
@@ -86,7 +86,7 @@ export const PauloHerkenhoff_MAM: DiretorMuseu = {
 };
 
 export const PauloHerkenhoff_MAR: DiretorMuseu = {
-  Pessoa: pessoas.PauloHerkenhoff,
+  Person: persons.PauloHerkenhoff,
   Mandatos: [
     {
       NomeMuseu: 'Museu de Arte do Rio',
@@ -102,7 +102,7 @@ export const PauloHerkenhoff_MAR: DiretorMuseu = {
 };
 
 export const PauloSergioDuarte: DiretorMuseu = {
-  Pessoa: pessoas.PauloSergioDuarte,
+  Person: persons.PauloSergioDuarte,
   Mandatos: [
     {
       NomeMuseu: 'Paço Imperial',

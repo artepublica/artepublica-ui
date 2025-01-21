@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import CoordenadorFundacao from '../../domain/coordenador-fundacao';
 
 export const FernandoCocchiarale: CoordenadorFundacao = {
-  Pessoa: pessoas.FernandoCocchiarale,
+  Person: persons.FernandoCocchiarale,
   Mandatos: [
     {
       NomeFundacao: 'Fundação Nacional de Arte',

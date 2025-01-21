@@ -2,17 +2,17 @@ import { PoliticaPublica } from '@domain';
 
 function agenteDaPolitica(
   politicaPublica: PoliticaPublica,
-  pessoa: string,
+  person: string,
 ): boolean {
   return (
     politicaPublica.Idealizadores?.find(
-      (idealizador) => idealizador.Nome === pessoa,
+      (idealizador) => idealizador.Name === person,
     ) != null ||
     politicaPublica.Coordenadores?.find(
-      (coordenador) => coordenador.Nome === pessoa,
+      (coordenador) => coordenador.Name === person,
     ) != null ||
     politicaPublica.ComissaoDeSelecao?.find(
-      (seletor) => seletor.Nome === pessoa,
+      (seletor) => seletor.Name === person,
     ) != null
   );
 }

@@ -1,9 +1,9 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import DiretorCurso from '../../domain/diretor_curso';
 
 export const ReynaldoRoels: DiretorCurso = {
   // TODO: n seria reitor??
-  Pessoa: pessoas.ReynaldoRoels,
+  Person: persons.ReynaldoRoels,
   Mandatos: [
     {
       Instituicao: 'Escola de Artes Visuais do Parque Laje',
@@ -20,7 +20,7 @@ export const ReynaldoRoels: DiretorCurso = {
 
 export const AmilcarDeCastro: DiretorCurso = {
   // TODO: n seria reitor??
-  Pessoa: pessoas.AmilcarDeCastro,
+  Person: persons.AmilcarDeCastro,
   Mandatos: [
     {
       Instituicao: 'Escola Guinard',

@@ -1,6 +1,8 @@
+import Person from './person';
+
 type Comite = {
   ID?: number;
-  IDPessoa?: number;
+  Person?: Person;
 };
 
 export default Comite;

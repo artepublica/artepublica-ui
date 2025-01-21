@@ -1,6 +1,6 @@
 import { Fabricante } from '@domain';
 
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 
 export const FundicaoValDOsne: Fabricante = {
   ID: undefined,
@@ -11,48 +11,48 @@ export const FundicaoValDOsne: Fabricante = {
   Descriçao: 'Fabrica direcionada fundição artística.',
   Fatos: [
     {
-      DataInicio: '05/04/1836',
-      DataFim: undefined,
-      Tipo: 'Autorização',
-      Descrição:
+      StartDate: '05/04/1836',
+      EndDate: undefined,
+      Type: 'Autorização',
+      Description:
         'Recebeu autorizaçao para construir um alto-forno no Val DOsne',
-      Pessoas: [pessoas.PierreVictorAndre],
-      Cidade: 'Rio de Janeiro',
+      Persons: [persons.PierreVictorAndre],
+      City: 'Rio de Janeiro',
     },
     {
-      DataInicio: '1870',
-      DataFim: '1892',
-      Tipo: 'Autorização',
-      Descrição: 'Societé Anonyme des Fonderies dart du Val dOsne',
-      Pessoas: undefined,
-      Cidade: 'Haute-Marne',
+      StartDate: '1870',
+      EndDate: '1892',
+      Type: 'Autorização',
+      Description: 'Societé Anonyme des Fonderies dart du Val dOsne',
+      Persons: undefined,
+      City: 'Haute-Marne',
     },
     {
-      DataInicio: undefined,
-      DataFim: undefined,
-      Tipo: 'Fundição artística',
-      Descrição: undefined,
-      Pessoas: [
-        pessoas.MathurinMoreau,
-        pessoas.LouisSauvageau,
-        pessoas.AugusteMartin,
-        pessoas.HenriFredericIselin,
+      StartDate: undefined,
+      EndDate: undefined,
+      Type: 'Fundição artística',
+      Description: undefined,
+      Persons: [
+        persons.MathurinMoreau,
+        persons.LouisSauvageau,
+        persons.AugusteMartin,
+        persons.HenriFredericIselin,
       ],
-      Cidade: 'Haute-Marne',
+      City: 'Haute-Marne',
     },
     {
-      DataInicio: undefined,
-      DataFim: undefined,
-      Tipo: undefined,
-      Descrição:
+      StartDate: undefined,
+      EndDate: undefined,
+      Type: undefined,
+      Description:
         'Existem no Brasil cerca de 130 obras, entre estátuas, fontes, e peças de mobiliário urbano',
-      Pessoas: [
-        pessoas.MathurinMoreau,
-        pessoas.LouisSauvageau,
-        pessoas.AugusteMartin,
-        pessoas.HenriFredericIselin,
+      Persons: [
+        persons.MathurinMoreau,
+        persons.LouisSauvageau,
+        persons.AugusteMartin,
+        persons.HenriFredericIselin,
       ],
-      Cidade: 'Rio de Janeiro',
+      City: 'Rio de Janeiro',
     },
   ],
 };

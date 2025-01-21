@@ -1,5 +1,5 @@
 import * as obras from './obra_artepublica';
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import PoliticaPublica from '../../domain/politicapublica';
 
 export const EsculturasUrbanas: PoliticaPublica = {
@@ -15,16 +15,16 @@ export const EsculturasUrbanas: PoliticaPublica = {
   Pais: 'Brasil',
   Tipo: 'Municipal',
   Secretaria: 'Secretaria Municipal de Cultura',
-  Coordenadores: [pessoas.ReynaldoRoels],
+  Coordenadores: [persons.ReynaldoRoels],
   Idealizadores: [
-    pessoas.HelenaMariaPortoSeveroDaCosta,
-    pessoas.EverardoMiranda,
+    persons.HelenaMariaPortoSeveroDaCosta,
+    persons.EverardoMiranda,
   ],
   ComissaoDeSelecao: [
-    pessoas.RonaldoBrito,
-    pessoas.PauloVenancioFilho,
-    pessoas.LauroCavalcanti,
-    pessoas.FernandoCocchiarale,
+    persons.RonaldoBrito,
+    persons.PauloVenancioFilho,
+    persons.LauroCavalcanti,
+    persons.FernandoCocchiarale,
   ],
   Obras: [
     obras.OPassante_JoseResende,

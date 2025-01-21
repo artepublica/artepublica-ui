@@ -1,9 +1,9 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Secretario from '../../domain/secretario';
 
 export const VaniaDrumondBonelli: Secretario = {
   ID: undefined,
-  Pessoa: pessoas.VaniaDrumondBonelli,
+  Person: persons.VaniaDrumondBonelli,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Cultura',

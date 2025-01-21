@@ -1,8 +1,8 @@
 import Artista from './artista';
 import Data from './data';
 import Fabricante from './fabricante';
-import Fato from './fato';
-import Pessoa from './pessoa';
+import Fato from './fact';
+import Person from './person';
 
 type Obra = {
   ID?: number;
@@ -67,7 +67,7 @@ type Obra = {
     Esfera: string;
     Data?: string;
   }[];
-  Homenageados?: Pessoa[];
+  Homenageados?: Person[];
   Fabricantes?: Fabricante[];
   Promocao?: string;
   Revestimento?: string;

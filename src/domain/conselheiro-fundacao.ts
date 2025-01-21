@@ -1,9 +1,9 @@
 import MandatoFundacao from './mandato_fundacao';
-import Pessoa from './pessoa';
+import Person from './person';
 
 type ConselheiroFundacao = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
   Mandatos?: MandatoFundacao[];
 };
 

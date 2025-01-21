@@ -1,7 +1,6 @@
+import { Data, Fact, Obra } from '@domain';
+
 import * as artistas from './artista';
-import Data from '../../domain/data';
-import Fato from '../../domain/fato';
-import Obra from '../../domain/obra';
 
 export const AGuignard_FranzWeissmann: Obra = {
   ID: 98,
@@ -34,7 +33,7 @@ export const AGuignard_FranzWeissmann: Obra = {
     pintor Guignard. No dia 10 de julho de 2009, foi inaugurada a Praça João Calvino, substituindo o nome do local, o Espaço
     Guinard. A alteração foi decorrente da parceria público-privada entre a prefeitura da cidade e a Igreja Presbiteriana do
     Rio de Janeiro, que idealizou o novo espaço público.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -74,7 +73,7 @@ export const ChafarizDaGloria_JoseCustodioDeSaEFaria: Obra = {
     sua parte superior, sem prejudicar o monumento original. Mais antigo Chafariz do Rio de Janeiro.
     Esse Chafariz pertence a Companhia Estadual de Águas e Esgotos e está em cessão de uso com a Gerencia
     de Monumentos e Chafarizes.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -110,7 +109,7 @@ export const ChafarizdeLaminasVerticais_RobertoBurleMarx: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Inaugurado no final anos de 1960. O Chafariz é formado com três grande chapas verticais curvas em alturas diferentes, de cuja base sai o jorro vertical de água.
     Desativado no ano de 2008.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -146,7 +145,7 @@ export const ChafarizI_FranciscoBologna: Obra = {
   Status: 'Removida do espaço público',
   Descricao: `Foi retirado da Avenida Brigadeiro Trompowski e transferido para o deposito em agosto
     de 2012 devido à obra para a construção do elevado da Transcarioca que corta a Avenida Brasil.`,
-  Fatos: [new Fato('', '2002', 'transferencia', 'depósito', [], '')],
+  Fatos: [new Fact('', '2002', 'transferencia', 'depósito', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -181,7 +180,7 @@ export const Chafariz_EscritorioPontualAssociados: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -216,7 +215,7 @@ export const Chafariz_LouisSauvageau: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece em espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -259,7 +258,7 @@ export const ChafarizdaPiramide_MestreValentim: Obra = {
     que as outras três faces estão presentes conchoides, de onde escorria a água para distribuir a
     população. O Chafariz foi construído com cantaria de gnaisse, com vários elementos decorativos
     característicos do período barroco. Desativado em data desconhecida.`,
-  Fatos: [new Fato('', '', 'Bem tombado federal', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Bem tombado federal', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -304,7 +303,7 @@ export const OratorioNossaSenhoraAparecida_Desconhecida: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato(
+    new Fact(
       '2004',
       '2004',
       'Inauguração',
@@ -312,7 +311,7 @@ export const OratorioNossaSenhoraAparecida_Desconhecida: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenageado',
@@ -359,7 +358,7 @@ export const CemAnosDeRamos_Desconhecida: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato(
+    new Fact(
       '10/1986',
       '10/1986',
       'Promotor',
@@ -396,7 +395,7 @@ export const Escultura_Desconhecida: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'undefined',
   Funcao: 'Referêncial',
@@ -528,7 +527,7 @@ export const EscadariadeSelaron_JorgeSelaron: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato(
+    new Fact(
       '1994',
       '2004',
       'Execução',
@@ -828,7 +827,7 @@ export const Galo_MariaMartins: Obra = {
   Status: 'Permanece no espaço público',
   Descricao:
     'está localizada na parede da Maison de FRance, não é espaço público',
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -1051,7 +1050,7 @@ export const SemTitulo_JorgeMarioJauregui: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: `Peças representando animais recortados fixadas ao longo de um mural. Foi instalado no Projeto Rio Cidade na área de lazer infantil.`,
-  Fatos: [new Fato('', '', 'l', '', [], '')],
+  Fatos: [new Fact('', '', 'l', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -1086,7 +1085,7 @@ export const SemTitulo_AluisioCarvao: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: `Painel em policromia numa composição de cores e formas geométricas onde a alternancia de cores, desenhos e dimensões permitem sensações de alegria e leveza.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -1121,7 +1120,7 @@ export const SemTitulo_GlaucoRodrigues: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -1157,7 +1156,7 @@ export const DireitosHumanos_FrancoiseSchein: Obra = {
   Status: 'Permanece no espaço público',
   Descricao: `O trabalho apresenta o mapa da comunidade do Vidigal, havendo em destaque texto do
     poeta Vinícius de Morais, Manoel de Barros e frases de filósofos e escritores.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -1193,8 +1192,8 @@ export const SemTitulo_AnisioMedeiros: Obra = {
   Status: 'Permanece no espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
@@ -1231,7 +1230,7 @@ export const Frescobol_MillorFernandes: Obra = {
   Status: 'Permanece no espaço público',
   Descricao: `Painel de azulejo é uma homenagemao frescobol, na parede frontal da praça, com pinturas nas cores areia, azulão, verde e azul claro. O areia refere-se a areia da praia. O azulão o mar e claro o céu e o verde as montanhas. Na cor laranja formando figuras abstratas. A figura de um jogador e a praia de Copacabana ao fundo dão a dica de onde o esporte nasceu.
     O painel existente na prça não se consituti bem tombado mas o Frescobol é um Bem de Natureza Imateral pelo Decreto de numero 39 758 de 06 de fevereiro de 2015, cujo painel representativo, deve ser protegido na sua integridade.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -1266,7 +1265,7 @@ export const Revoada_HelioPelegrino: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: `Em 1 de julho de 2002 foi criado o Galpão das ArtesHelio G. Pellegrino,patrono do galpão, onde utilizou materiais reclicados chamado "Vida". Em 2012 devido ao desgaste dos materiais esse teve grande grande da obra. Em 2015, no 13º aniversario do Galpão o artista refez a obra criando esse mural "Revoada" no mesmo espaço.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -1449,7 +1448,7 @@ export const MemorialasVitimasdoVooAF447_RicardoVillar: Obra = {
   MaterialBase: 'Concreto',
   Status: 'Permanece no espaço público',
   Descricao: `Marco confeccionado com uma placa de vidro fixada sobre uma base de concreto. Na placa estão os nomes de todas as vítimas do acidente aéreo. O local foi escolhido pela companhia Air France para homenagear as vítimas da queda do avião do vôo AF-447 em 2009.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Narrativa',
   Funcao: 'Referencial',
@@ -1484,7 +1483,7 @@ export const SemTitulo_ChicaGranchi: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: `Painel de Cerâmica instalada numa murada de contenção da avenida.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -1824,7 +1823,7 @@ export const PainelGentileza1_ProfetaGentileza: Obra = {
   SuporteEspacial: undefined,
   Status: 'permanence no espaço publico',
   Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecido José Datrino, executou 56 painéis, durante os anos de 1980.`,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
   Temporalidade: 'efemero',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -1858,7 +1857,7 @@ export const PainelGentilez2_ProfetaGentileza: Obra = {
   SuporteEspacial: undefined,
   Status: 'permanence no espaço publico',
   Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecido José Datrino, executou 56 painéis, durante os anos de 1980.`,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
   Temporalidade: 'efemero',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -1951,7 +1950,7 @@ export const Brasil_DanielBellionGomesPinto: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato(
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -1959,7 +1958,7 @@ export const Brasil_DanielBellionGomesPinto: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Doação',
@@ -1967,8 +1966,8 @@ export const Brasil_DanielBellionGomesPinto: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Vencedora',
@@ -2312,7 +2311,7 @@ export const PeaPe_OtavioAvancini: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const PaineldoEdificioAndorinha_BelmiroDeAlmeida: Obra = {
@@ -3039,7 +3038,7 @@ export const SemTitulo_Desconhecido: Obra = {
   Base: undefined,
   Status: 'permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -3189,7 +3188,7 @@ export const Mural_IvanFreitas: Obra = {
   MaterialBase: undefined,
   Status: 'permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'temporario',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -3599,7 +3598,7 @@ export const AquiEstao_AnnaMariaMaiolino: Obra = {
   MaterialBase: undefined,
   Status: undefined,
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -3634,7 +3633,7 @@ export const DoraMaar_IoleDeFreitas: Obra = {
   MaterialBase: undefined,
   Status: undefined,
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -3669,7 +3668,7 @@ export const PenetravelMagicSquareN5_HelioOiticica: Obra = {
   MaterialBase: undefined,
   Status: undefined,
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -3704,7 +3703,7 @@ export const GarotadeIpanema_PiotrUklanski: Obra = {
   MaterialBase: undefined,
   Status: undefined,
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -3739,7 +3738,7 @@ export const SemTitulo_JoseResende: Obra = {
   MaterialBase: undefined,
   Status: undefined,
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -3774,7 +3773,7 @@ export const SemTitulo_LygiaClark: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -3809,7 +3808,7 @@ export const NewHouse_LygiaPape: Obra = {
   MaterialBase: undefined,
   Status: undefined,
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -3844,7 +3843,7 @@ export const Calado_NunoRamos: Obra = {
   MaterialBase: undefined,
   Status: undefined,
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -3879,7 +3878,7 @@ export const Passarela_EduardoCoimbra: Obra = {
   MaterialBase: undefined,
   Status: undefined,
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -4023,7 +4022,7 @@ export const SemTitulo_ElisaBracher: Obra = {
   SuporteEspacial: undefined,
   Status: 'permanence no espaço publico',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -4101,7 +4100,7 @@ export const ChafarizdoRiachuelo_JoaoCoelhoMarinho: Obra = {
     construído pelo Intendente Paulo Fernandes Viana. tem a característica rara a inscrição, em
     português e letras de bronze, ter sido implantada diretamente na pedra, com os dizeres "O Rei
     por bem do seu povo m. f. e. o. mandou fazer esta obra pela Polícia.`,
-  Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado federal', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'plasticidade',
   Funcao: 'utilitária',
@@ -4284,7 +4283,7 @@ export const LaminaLargaemTorcaonoEspaco_FranzWeissmann: Obra = {
   MaterialBase: undefined,
   Status: 'removido do espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -4393,7 +4392,7 @@ export const RuiBarbosa_RodolfoPintodoCouto: Obra = {
   MaterialBase: undefined,
   Status: 'permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'narratividade',
   Funcao: 'referencial',
@@ -4699,7 +4698,7 @@ export const MarechalRamonCastilho_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const SiqueiraCamposnoFortedeCopacabana_HBertazzoni: Obra = {
@@ -5860,7 +5859,7 @@ export const AfranioDeMeloFranco_BrunoGiorgi: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AloysioMariaTeixeira_RobertoSa_ClaraSa: Obra = {
@@ -6051,8 +6050,8 @@ export const Chanuka_Desconhecida: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Doação',
@@ -6149,7 +6148,7 @@ export const MarcodaInauguracaodoCanaldoJardimdeAla_Desconhecida: Obra = {
   Categoria: 'plasticidade',
   Tipologia: `Marco`,
   Material: `Bloco de gnaisse`,
-  Descricao: `Bloco de pedra instada junto a escada de acesso, próximo à Avenida Vieira Souto, onde estão registrados os nomes doPresidente Epitácio Pessoa,do Prefeito<Carlos Sampaio e do engenheiro<Saturnino de Brito.
+  Descricao: `Bloco de pedra instada junto a escada de acesso, próximo à Avenida Vieira Souto, onde estão registrados os nomes doPresidente Epitácio Person,do Prefeito<Carlos Sampaio e do engenheiro<Saturnino de Brito.
 Monumento fechado na praça desde o ano de 2013 devido as obras do Metrô.`,
   Altura: undefined,
   Largura: undefined,
@@ -6403,9 +6402,9 @@ export const Grifo_Desconhecida: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato('', '', 'Fundição/Atelier', "Val d'Osne", [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Fundição/Atelier', "Val d'Osne", [], 'Rio de Janeiro'),
+    new Fact(
       '2000',
       '2000',
       'Tombamento',
@@ -6452,7 +6451,7 @@ export const Esfinge_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const VasodoParqueGuinle_EmilioGiannelli: Obra = {
@@ -6630,7 +6629,7 @@ export const SemTitulo_PauloWerneck: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -6665,7 +6664,7 @@ export const SemTituloI_PauloWerneck: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -6700,7 +6699,7 @@ export const SemTituloII_PauloWerneck: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -6735,7 +6734,7 @@ export const SemTituloIII_PauloWerneck: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', 'bem tombado municipal', '', [], '')],
+  Fatos: [new Fact('', '', 'bem tombado municipal', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Sublimidade',
   Funcao: 'Ornamental',
@@ -6926,7 +6925,7 @@ export const Chafariz_FranciscoBologna: Obra = {
     sobrepostas, onde de cada extremidade jorra a água para o espelho d&rsquo;água. Foi retirado
     da praça e transferido para o depósito em maio de 2013, devido à obra na praça para a
     construção de um reservatório de aguas pluviais subterrâneo. Desativado desde o ano de 2010.`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
@@ -7204,8 +7203,8 @@ export const SaoFranciscoDeAssis_HumbertoCozzo: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Doação',
@@ -7227,7 +7226,7 @@ export const OratorioDeSantaBarbara_Desconhecida: Obra = {
   Categoria: 'plasticidade',
   Tipologia: `Oratório`,
   Material: `Peça em resina`,
-  Descricao: `A imagem de Sta. Bárbara existente na entrada do tunel foi doada pelas Irmãs doColégio da Providência (já fechado), Rua Pereira da Silva,Laranjeiras.Irmã Superiora na época se chamava Hemmerlé (já falecida) era francesa. A Irmã Neil, contou que quando estavam construindo o túnel,aconteciam muitos acidentes, explosões com dinamites para a construçãoe eles (funcionários e responsáveis) todos os dias pediam paraCelebrar Missa na Capela do Colégio para as vítimas desses acidentes.Então as Irmãs do Colégio decidiram, doar a imagem de Sta. Bárbara é "Padroeira dos artilheiros, dos mineradores e das pessoas trabalham com fogo", para proteção dos trabalhadores.`,
+  Descricao: `A imagem de Sta. Bárbara existente na entrada do tunel foi doada pelas Irmãs doColégio da Providência (já fechado), Rua Pereira da Silva,Laranjeiras.Irmã Superiora na época se chamava Hemmerlé (já falecida) era francesa. A Irmã Neil, contou que quando estavam construindo o túnel,aconteciam muitos acidentes, explosões com dinamites para a construçãoe eles (funcionários e responsáveis) todos os dias pediam paraCelebrar Missa na Capela do Colégio para as vítimas desses acidentes.Então as Irmãs do Colégio decidiram, doar a imagem de Sta. Bárbara é "Padroeira dos artilheiros, dos mineradores e das persons trabalham com fogo", para proteção dos trabalhadores.`,
   Altura: undefined,
   Largura: undefined,
   Profundidade: undefined,
@@ -7851,8 +7850,8 @@ export const Leao_Desconhecida: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '1965',
       '1965',
       'Tombamento',
@@ -8086,8 +8085,8 @@ Chacrinha fez sua carreira de sucesso.`,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -8246,7 +8245,7 @@ export const MarcodaRevolucaode1964_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AmuradadaRuaGeneralUrquisa_Desconhecida: Obra = {
@@ -11987,7 +11986,7 @@ export const MemorialGetulioVargas_HenockDeAlmeida: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: `O marco do memorial foi erguido sob um espelho dágua. No centro do lago duas colunas se entrelaçam dando volume a construção. O Memorial situado no subsolo é constituído de um acervo sobre a vida pessoal de Getulio Vargas.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Memorial',
@@ -12023,8 +12022,8 @@ export const EstacioDeSa_LucioCosta: Obra = {
   Status: 'Permanece no espaço público',
   Descricao: undefined,
   Fatos: [
-    new Fato('', '', 'bem tombado federal', '', [], ''),
-    new Fato('', '', 'bem tombado municipal', '', [], ''),
+    new Fact('', '', 'bem tombado federal', '', [], ''),
+    new Fact('', '', 'bem tombado municipal', '', [], ''),
   ],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
@@ -12065,7 +12064,7 @@ export const ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra: Obra = {
   Descricao: `4 estruturas com a parte superior fixadas chapas no sentido horizontal finalizada
     por uma esfera pintada na cor da laranja. O marco é uma referência as antigas palmeiras das
     fazendas que existiram na região. As peças (3 arcos) desapareceram em 2017, constatado em vistoria em novembro de 2017`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'Ornamental',
@@ -12185,7 +12184,7 @@ export const PadreCicero_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const Africa_Desconhecida: Obra = {
@@ -13291,8 +13290,8 @@ export const DianaaCacadora_Leocares: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Réplica',
@@ -13338,7 +13337,7 @@ export const SaoFranciscoDeAssis_FreiGeraldoRoberfeld: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const ColunadePersepolis_Desconhecida: Obra = {
@@ -14001,8 +14000,8 @@ export const IsmaelSilva_OttoDumovich: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -14050,7 +14049,7 @@ A menina e o menino estão no depósito desde maio de 2016 devido a uma tentativ
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const Guarda_corpodaAvenidaMaracanaI_TorresDeOliveira: Obra = {
@@ -14275,7 +14274,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const ABaleiaeFilhote_PauloDeTarso: Obra = {
@@ -14315,7 +14314,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OBeijaFlor_PauloDeTarso: Obra = {
@@ -14355,7 +14354,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OBumbaMeuBoi_PauloDeTarso: Obra = {
@@ -14395,7 +14394,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OBurrinho_PauloDeTarso: Obra = {
@@ -14435,7 +14434,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OCaju_PauloDeTarso: Obra = {
@@ -14475,7 +14474,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OCanguru_PauloDeTarso: Obra = {
@@ -14515,7 +14514,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OCamelo_PauloDeTarso: Obra = {
@@ -14554,7 +14553,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OCaocomBola_PauloDeTarso: Obra = {
@@ -14594,7 +14593,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OCaoChines_PauloDeTarso: Obra = {
@@ -14634,7 +14633,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OCaoMantoNegro_PauloDeTarso: Obra = {
@@ -14674,7 +14673,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OCaoPintado_PauloDeTarso: Obra = {
@@ -14713,7 +14712,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OCavaloBranco_PauloDeTarso: Obra = {
@@ -14752,7 +14751,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const ACobraeoPorco_PauloDeTarso: Obra = {
@@ -14791,7 +14790,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const ACobraeoSapo_PauloDeTarso: Obra = {
@@ -14830,7 +14829,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OMacaco_PauloDeTarso: Obra = {
@@ -14869,7 +14868,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const ODuende_PauloDeTarso: Obra = {
@@ -14908,7 +14907,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const ODuendecomAcordeon_PauloDeTarso: Obra = {
@@ -14947,7 +14946,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OElefante_PauloDeTarso: Obra = {
@@ -14986,7 +14985,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const EsculturaNaif_OElefante_PauloDeTarso: Obra = {
@@ -15063,7 +15062,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AEmilia_PauloDeTarso: Obra = {
@@ -15102,7 +15101,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OEsquilo_PauloDeTarso: Obra = {
@@ -15141,7 +15140,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AFoca_PauloDeTarso: Obra = {
@@ -15180,7 +15179,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AGalinha_PauloDeTarso: Obra = {
@@ -15219,7 +15218,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000`
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OGalo_PauloDeTarso: Obra = {
@@ -15258,7 +15257,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OGanso_PauloDeTarso: Obra = {
@@ -15297,7 +15296,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OGato_PauloDeTarso: Obra = {
@@ -15336,7 +15335,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AGirafa_PauloDeTarso: Obra = {
@@ -15375,7 +15374,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OHipopotamo_PauloDeTarso: Obra = {
@@ -15414,7 +15413,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OIndio_PauloDeTarso: Obra = {
@@ -15453,7 +15452,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OJacareI_PauloDeTarso: Obra = {
@@ -15492,7 +15491,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const JacareII_PauloDeTarso: Obra = {
@@ -15531,7 +15530,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OJogadorBrasileiro_PauloDeTarso: Obra = {
@@ -15570,7 +15569,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OLeao_PauloDeTarso: Obra = {
@@ -15609,7 +15608,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const Lontra_PauloDeTarso: Obra = {
@@ -15648,7 +15647,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const MaeeFilhoteDinossauro_PauloDeTarso: Obra = {
@@ -15687,7 +15686,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OPapagaio_PauloDeTarso: Obra = {
@@ -15726,7 +15725,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OsPatinhos_PauloDeTarso: Obra = {
@@ -15765,7 +15764,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OPavao_PauloDeTarso: Obra = {
@@ -15804,7 +15803,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OPinguim_PauloDeTarso: Obra = {
@@ -15843,7 +15842,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const APiramide_PauloDeTarso: Obra = {
@@ -15882,7 +15881,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OPolvo_PauloDeTarso: Obra = {
@@ -15921,7 +15920,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OTamandua_PauloDeTarso: Obra = {
@@ -15961,7 +15960,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const ORinoceronte_PauloDeTarso: Obra = {
@@ -16001,7 +16000,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OSaciPerere_PauloDeTarso: Obra = {
@@ -16041,7 +16040,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const ASereia_PauloDeTarso: Obra = {
@@ -16080,7 +16079,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AsTartarugas_PauloDeTarso: Obra = {
@@ -16119,7 +16118,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const ATartarugaGigante_PauloDeTarso: Obra = {
@@ -16159,7 +16158,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OUrso_PauloDeTarso: Obra = {
@@ -16199,7 +16198,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AVaca_PauloDeTarso: Obra = {
@@ -16239,7 +16238,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AViscondeDeSabugosa_PauloDeTarso: Obra = {
@@ -16279,7 +16278,7 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AZebra_PauloDeTarso: Obra = {
@@ -16318,7 +16317,7 @@ export const AZebra_PauloDeTarso: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const MarcodaInauguracaodaAvenidaPauloDeFrontin_Desconhecida: Obra = {
@@ -17885,8 +17884,8 @@ Doação à cidade pelo Clube de Regatas Botafogo em frente ao seu estádio do E
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -17934,8 +17933,8 @@ export const Jairzinho_EdgarDuvivier: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -18383,7 +18382,7 @@ export const RequiemParaAFloresta_GevasioTeixeira: Obra = {
   MaterialBase: undefined,
   Status: 'permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'temporario',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -18763,7 +18762,7 @@ export const GloriadoPalacioTiradentes_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const BancodeBurleMarxPraiadeBotofogo_RobertoBurleMarx: Obra = {
@@ -19210,7 +19209,7 @@ export const AryBarroso_LeoSantana: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const CoretodoJardimdoMeier_PedroFernandesVianaDaSilva: Obra = {
@@ -19471,7 +19470,7 @@ export const LeaodoMeier_NivaldoRodrigues: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OratorioaSaoJorgedoCachambiI_Desconhecida: Obra = {
@@ -19964,7 +19963,7 @@ A homenagem foi uma iniciativa dos moradores da Leopoldina aos soldados do 16º 
   LatitudeRealocacao: '-22.8421743',
   LongitudeRealocacao: '-43.2778422',
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const PorticoMonumentaldoSantuariodaPenha_Desconhecida: Obra = {
@@ -20150,7 +20149,7 @@ export const MonsenhorAlvesDaRocha_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
 };
 
 export const QuintinoBocaiuvanobairrodeQuintino_JoseBranquinho: Obra = {
@@ -21086,7 +21085,7 @@ export const Miscigenacao_RaphCyriloDias: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const DomHelderCamara_OttoDumovich: Obra = {
@@ -21237,7 +21236,7 @@ export const NossaSenhoradaApresentacao_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const OratoriodeNossaSenhoraAparecidadeIraja_Desconhecida: Obra = {
@@ -21645,7 +21644,7 @@ export const CarlosAlbertodaCruzWenceslau_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const DomingosdaGuia_ClecioRegis: Obra = {
@@ -21686,8 +21685,8 @@ Na placa original rende homenagem "Ao Divino Mestre, a Prefeitura e aos moraoore
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -22225,7 +22224,7 @@ export const AtenadeCampoGrande_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const Mae_RuiLeal: Obra = {
@@ -22254,7 +22253,7 @@ export const Mae_RuiLeal: Obra = {
   MaterialBase: undefined,
   Status: 'permanece no espaço público',
   Descricao: `Homenagem doada à Cidade pela Associação Comercial de Madureira que custeou a obra. O monumento é uma homenagem a D. Joana Teresa Vieira de Lima, benemerita que dedicou sua vida à proteção da mãe na região.`,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -22522,7 +22521,7 @@ export const CruzeiroDeSantaCruz_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const PainelaosExpedicionariosDeSantaCruz_Desconhecida: Obra = {
@@ -23052,7 +23051,7 @@ export const JoseAntonioCiraudo_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
 };
 
 export const CesarioDeMelo_CLinel: Obra = {
@@ -23165,7 +23164,7 @@ export const MarechalDuquedeCaxias_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const CoronelVillagranCabrita_Desconhecida: Obra = {
@@ -23204,8 +23203,8 @@ export const CoronelVillagranCabrita_Desconhecida: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -23481,7 +23480,7 @@ export const MarechalRondonVilaMilitar_NewtonSa: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const CoretodaPracaMarechalHermes_Desconhecida: Obra = {
@@ -23706,8 +23705,8 @@ export const ZumbidosPalmares_ClecioRegis: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Fundição/Atelier',
@@ -24242,7 +24241,7 @@ export const CeresdeRochaMiranda_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const CoronelCorreaLima_Desconhecida: Obra = {
@@ -24320,9 +24319,9 @@ export const AlvaroCostaMelo_Desconhecida: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato('', '', 'Fundição/Atelier', 'Laborate', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact('', '', 'Fundição/Atelier', 'Laborate', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '01/05/1993',
       'Homenageado',
@@ -24330,7 +24329,7 @@ export const AlvaroCostaMelo_Desconhecida: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '07/05/1993',
       '07/05/1993',
       'Missa de 7 dia',
@@ -24338,7 +24337,7 @@ export const AlvaroCostaMelo_Desconhecida: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '',
       'Homenagem',
@@ -24384,7 +24383,7 @@ export const AAugustoMotta_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const IsmaelRibeiro_EdgarDuvivier: Obra = {
@@ -24799,7 +24798,7 @@ export const SaoJorge_RicoReis: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const ChafarizdaPracaBaraodaTaquara_Desconhecida: Obra = {
@@ -25024,7 +25023,7 @@ export const ÂncoradaBarra_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
 };
 
 export const PaineldoBosquedaBarra_PauloFreire: Obra = {
@@ -25136,7 +25135,7 @@ export const PedraTalhada_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const Capivaras_PauloDeTarso: Obra = {
@@ -25249,7 +25248,7 @@ export const MariaAugusta_MarliMazeredo: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const ChicoMendes_SimoneGiacobbo: Obra = {
@@ -25288,7 +25287,7 @@ export const ChicoMendes_SimoneGiacobbo: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const DraultErnanny_Desconhecida: Obra = {
@@ -25329,7 +25328,7 @@ pela Associação dos Moradores do Recreio. Com 95 anos o homenageado esteve pre
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const JoseBaltazar_Desconhecida: Obra = {
@@ -25594,7 +25593,7 @@ export const Bailarina_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const BancodaEstradadoJoa_Desconhecida: Obra = {
@@ -26241,7 +26240,7 @@ no pedestal anteriormente construido.`,
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const PedestalVazio_UgoTaddei: Obra = {
@@ -27517,7 +27516,7 @@ export const PaulodaPortela_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const MarcodaInauguracaodoViadutodeCascadura_Desconhecida: Obra = {
@@ -27704,8 +27703,8 @@ export const AoDoutorAristao_PedroBruno: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '1999',
       '1999',
       'Tombamento',
@@ -27751,7 +27750,7 @@ export const AAugustoSilva_Helmano: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AHermesFontes_PedroBruno: Obra = {
@@ -27907,7 +27906,7 @@ export const AdelinoMoreira_MestreSaul: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const Marco7daFazendaImperialDeSantaCruz_Desconhecida: Obra = {
@@ -28356,7 +28355,7 @@ Imagem de Iemanjá numa pequena capelinha de concreto. erguida sobre uma pedra d
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const ProntidaodaEscoladoComandoMaiordoExercito_PauloPires_PauloSantos: Obra =
@@ -29276,7 +29275,7 @@ São peças esculpidas em bloco maciço.`,
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const MesadoImperador_Desconhecida: Obra = {
@@ -30159,8 +30158,8 @@ do portão.`,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '05/10/2000',
       '',
       'Tombamento',
@@ -30373,7 +30372,7 @@ export const EscadariadoMiranteExcelsior_Desconhecida: Obra = {
   Tipologia: `Escada`,
   Material: `Bloco de granito esculpido`,
   Descricao: `Degraus escavados na rocha, ladeados por corrimão constituído por grossas correntes de ferro, para a visita do Rei Alberto da Bélgica ao Pico da Tijuca, quando de sua famosa viagem ao Brasil.
-Este pico é o ponto mais alto do Parque Nacional da Tijuca, com 1022 metros de altitude. A primeira picada até o cimo deste morro, foi aberta em 1853. Em 1885, o Barão d'Escragnolle, sinalizou esta, já então trilha, para auxiliar os excursionistas. José de Alencar em Sonhos d'Ouro, nos conta que, em 1872, esta trilha já era percorrida a pé e a cavalo. Em 1920, o Presidente Epitácio Pessoa reformou a trilha e mandou que se escavassem na rocha, localizada no topo do pico, degraus ladeados por corrimão constituído por grossas correntes de ferro.`,
+Este pico é o ponto mais alto do Parque Nacional da Tijuca, com 1022 metros de altitude. A primeira picada até o cimo deste morro, foi aberta em 1853. Em 1885, o Barão d'Escragnolle, sinalizou esta, já então trilha, para auxiliar os excursionistas. José de Alencar em Sonhos d'Ouro, nos conta que, em 1872, esta trilha já era percorrida a pé e a cavalo. Em 1920, o Presidente Epitácio Person reformou a trilha e mandou que se escavassem na rocha, localizada no topo do pico, degraus ladeados por corrimão constituído por grossas correntes de ferro.`,
   Altura: undefined,
   Largura: undefined,
   Profundidade: undefined,
@@ -30579,7 +30578,7 @@ export const Modulo13_AscanioMMM: Obra = {
   MaterialBase: undefined,
   Status: 'permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', '', '', [], 'Rio de Janeiro')],
   Temporalidade: 'permanente',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -31613,7 +31612,7 @@ export const BicadoCazuza_Desconhecida: Obra = {
   Tipologia: `Fonte`,
   Material: `Peça em ferro pintado`,
   Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
-Ducha natural onde foram instalados barras para o uso e rampas para o uso de pessoas deficientes.`,
+Ducha natural onde foram instalados barras para o uso e rampas para o uso de persons deficientes.`,
   Altura: undefined,
   Largura: undefined,
   Profundidade: undefined,
@@ -33043,7 +33042,7 @@ A peça esta em cessão de uso em área da Prefeitura.`,
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const JardimdePedrasdoMuseudeArteModerna_RobertoBurleMarx: Obra = {
@@ -34021,7 +34020,7 @@ export const MartinsFontes_Ariel: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AlmiranteeViscondedeInhauma_deposito_Desconhecida: Obra = {
@@ -34171,7 +34170,7 @@ export const Esculapio_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const VasodoParqueNoronhaSantos_EmilioGiannelli: Obra = {
@@ -34350,7 +34349,7 @@ export const ChafarizNetuno_GabrielDubray: Obra = {
   MaterialBase: undefined,
   Status: 'Permanece no espaço público',
   Descricao: `Val d'Osne`,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
   Temporalidade: 'Permanente',
   Categoria: 'Plasticidade',
   Funcao: 'utilitaria',
@@ -34662,8 +34661,8 @@ export const Quorus_HelenaTownsend: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Doação',
@@ -34671,7 +34670,7 @@ export const Quorus_HelenaTownsend: Obra = {
       [],
       'Rio de Janeiro',
     ),
-    new Fato(
+    new Fact(
       '',
       '1973',
       'Criação',
@@ -34746,7 +34745,7 @@ export const Passaros_RobertoMagalhaes: Obra = {
   MaterialBase: undefined,
   Status: 'permanece no espaço público',
   Descricao: undefined,
-  Fatos: [new Fato('', '', '', '', [], '')],
+  Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'temporario',
   Categoria: 'sublimidade',
   Funcao: 'ornamental',
@@ -34792,8 +34791,8 @@ export const Verticalidade_RobertoMoriconi: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Doação',
@@ -34949,7 +34948,7 @@ export const DelPrete_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const BustoNaoIdentificadoI_deposito_CGibson: Obra = {
@@ -35820,7 +35819,7 @@ export const Cazuza_ChristinaMotta_HelioPelegrino: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const PisodeParalelepipedodaRuaRibeiraDeAlmeida_Desconhecida: Obra = {
@@ -36121,7 +36120,7 @@ export const MarechalHermes_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+  Fatos: [new Fact('data', 'data', 'fato', 'descrição', [], 'cidade')],
 };
 
 export const BentoRibeiro_ChristinaMotta: Obra = {
@@ -36233,7 +36232,7 @@ export const ArturRios_Desconhecida: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AMariaDoCarmoNabuco_Desconhecida: Obra = {
@@ -36534,7 +36533,7 @@ export const ReflexaoRio_MariaCouto: Obra = {
   LatitudeRealocacao: undefined,
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
-  Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
+  Fatos: [new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const Pincas_FranzWeissmann: Obra = {
@@ -36573,8 +36572,8 @@ export const Pincas_FranzWeissmann: Obra = {
   LongitudeRealocacao: undefined,
   LugarRealocacao: undefined,
   Fatos: [
-    new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    new Fato(
+    new Fact('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
+    new Fact(
       '',
       '',
       'Reprodução',
@@ -36759,7 +36758,7 @@ export const OratoriodeNossaSenhoraAparecida_Desconhecida: Obra = {
   Categoria: 'plasticidade',
   Tipologia: `Oratório`,
   Material: `Tijolo com argamassa`,
-  Descricao: `O oratorio foi iniciativa da paróquia dos Santos Anjos, para realização de orações na praça ,em comemoração aos 300 anos da aparição da imagem nas águas do Rio Paraíba do Sul.O pároco, padre Thiago Azevedo, explicou que a 11 anos, um grupo de pessoas se reúne ali para rezar o rosário, sempre às quartas-feiras e que por iniciativa popular ergueram o oratório.`,
+  Descricao: `O oratorio foi iniciativa da paróquia dos Santos Anjos, para realização de orações na praça ,em comemoração aos 300 anos da aparição da imagem nas águas do Rio Paraíba do Sul.O pároco, padre Thiago Azevedo, explicou que a 11 anos, um grupo de persons se reúne ali para rezar o rosário, sempre às quartas-feiras e que por iniciativa popular ergueram o oratório.`,
   Altura: undefined,
   Largura: undefined,
   Profundidade: undefined,

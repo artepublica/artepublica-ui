@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Concursado from '../../domain/consursado';
 
 export const LauroCavalcanti: Concursado = {
-  Pessoa: pessoas.LauroCavalcanti,
+  Person: persons.LauroCavalcanti,
   Cargo: 'Técnico em Preservação Cultural',
   Orgao: 'Instituto do Patrimônio Histórico e Artístico Nacional',
   AbreviacaoOrgao: 'IPHAN',

@@ -1,6 +1,6 @@
 import Exposicao from './exposicao';
 import Obra from './obra';
-import Pessoa from './pessoa';
+import Person from './person';
 
 type Premio = {
   ID?: number;
@@ -12,7 +12,7 @@ type Premio = {
   Pais?: string;
   Local?: string;
   Data?: string;
-  Pessoas?: Pessoa[];
+  Persons?: Person[];
   Descricao?: string;
   Obra?: Obra;
 };

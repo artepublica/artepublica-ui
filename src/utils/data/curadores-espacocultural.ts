@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import CuradorEspacoCultural from '../../domain/curador_espaco_cultural';
 
 export const EverardoMiranda: CuradorEspacoCultural = {
-  Pessoa: pessoas.EverardoMiranda,
+  Person: persons.EverardoMiranda,
   Mandatos: [
     {
       NomeEspacoCultural: 'Espaço Cultural Sérgio Porto',

@@ -1,4 +1,4 @@
-import Pessoa from './pessoa';
+import Person from './person';
 
 type Exposicao = {
   ID?: number;
@@ -11,17 +11,17 @@ type Exposicao = {
   Local?: string;
   DataInicio?: string;
   DataFim?: string;
-  Curadores?: Pessoa[];
-  Expositores?: Pessoa[];
+  Curadores?: Person[];
+  Expositores?: Person[];
   Patrocinios?: string[];
-  CatalogoEscritoPor?: Pessoa[];
-  Juri?: Pessoa[];
-  JuriDeSelecao?: Pessoa[];
-  Montadores?: Pessoa[];
-  Organizadores?: Pessoa[];
-  ComissaoDePremiacao?: Pessoa[];
-  ComissaoDeSelecao?: Pessoa[];
-  ArtistasConvidados?: Pessoa[];
+  CatalogoEscritoPor?: Person[];
+  Juri?: Person[];
+  JuriDeSelecao?: Person[];
+  Montadores?: Person[];
+  Organizadores?: Person[];
+  ComissaoDePremiacao?: Person[];
+  ComissaoDeSelecao?: Person[];
+  ArtistasConvidados?: Person[];
 };
 
 export default Exposicao;

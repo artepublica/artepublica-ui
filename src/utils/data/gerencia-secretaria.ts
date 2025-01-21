@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import GenenteSecretaria from '../../domain/gerente_secretaria';
 
 export const EverardoMiranda: GenenteSecretaria = {
-  Pessoa: pessoas.EverardoMiranda,
+  Person: persons.EverardoMiranda,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Cultura',
@@ -17,7 +17,7 @@ export const EverardoMiranda: GenenteSecretaria = {
 };
 
 export const MauroMonizFreire: GenenteSecretaria = {
-  Pessoa: pessoas.MauroMonizFreire,
+  Person: persons.MauroMonizFreire,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Obras', //TODO

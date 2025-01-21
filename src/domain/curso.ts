@@ -1,8 +1,8 @@
-import Pessoa from './pessoa';
+import Person from './person';
 
 type Curso = {
   ID?: number;
-  Pessoa?: Pessoa;
+  Person?: Person;
   Instituicao?: string;
   AbreviacaoInstituicao?: string;
   Cidade?: string;

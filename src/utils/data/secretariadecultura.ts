@@ -1,10 +1,9 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Secretario from '../../domain/secretario';
 
 export const RobertoFerraretoDAvila: Secretario = {
   ID: undefined,
-  Pessoa: pessoas.RobertoFerraretoDAvila,
-  Profissao: undefined,
+  Person: persons.RobertoFerraretoDAvila,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Cultura, Turismo e Esportes',
@@ -19,7 +18,7 @@ export const RobertoFerraretoDAvila: Secretario = {
 
 export const GerardoMagellaMelloMourao: Secretario = {
   ID: undefined,
-  Pessoa: pessoas.GerardoMagellaMelloMourao,
+  Person: persons.GerardoMagellaMelloMourao,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Cultura, Turismo e Esportes',
@@ -34,7 +33,7 @@ export const GerardoMagellaMelloMourao: Secretario = {
 
 export const CarlosEduardoAgostiniNovaes: Secretario = {
   ID: undefined,
-  Pessoa: pessoas.CarlosEduardoAgostiniNovaes,
+  Person: persons.CarlosEduardoAgostiniNovaes,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Cultura, Turismo e Esportes',
@@ -49,7 +48,7 @@ export const CarlosEduardoAgostiniNovaes: Secretario = {
 
 export const HelenaMariaPortoSeveroDaCosta: Secretario = {
   ID: undefined,
-  Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
+  Person: persons.HelenaMariaPortoSeveroDaCosta,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Cultura, Turismo e Esportes',
@@ -72,7 +71,7 @@ export const HelenaMariaPortoSeveroDaCosta: Secretario = {
 
 export const VaniaDrumondBonelli: Secretario = {
   ID: undefined,
-  Pessoa: pessoas.VaniaDrumondBonelli,
+  Person: persons.VaniaDrumondBonelli,
   Mandatos: [
     {
       NomeSecretaria: 'Secretaria Municipal de Cultura',

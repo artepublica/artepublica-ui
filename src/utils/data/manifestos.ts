@@ -1,4 +1,4 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import Manifesto from '../../domain/manifesto';
 
 export const ManisfestoNeoconcreto1959: Manifesto = {
@@ -9,13 +9,13 @@ export const ManisfestoNeoconcreto1959: Manifesto = {
   Pais: 'Brasil',
   Local: undefined,
   Data: '1959',
-  Escritores: [pessoas.FerreiraGullar],
+  Escritores: [persons.FerreiraGullar],
   Assinantes: [
-    pessoas.AmilcarDeCastro,
-    pessoas.FranzWeissmann,
-    pessoas.LygiaClark,
-    pessoas.LygiaPape,
-    pessoas.ReynaldoJardim,
-    pessoas.TheonSpanudis,
+    persons.AmilcarDeCastro,
+    persons.FranzWeissmann,
+    persons.LygiaClark,
+    persons.LygiaPape,
+    persons.ReynaldoJardim,
+    persons.TheonSpanudis,
   ],
 };

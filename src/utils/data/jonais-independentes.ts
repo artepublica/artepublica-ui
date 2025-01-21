@@ -1,4 +1,4 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import JornalIndependente from '../../domain/jornal_independente';
 
 export const AParteDoFogo: JornalIndependente = {
@@ -7,15 +7,15 @@ export const AParteDoFogo: JornalIndependente = {
   Estado: undefined,
   Pais: undefined,
   Participantes: [
-    pessoas.RonaldoBrito,
-    pessoas.JoseResende,
-    pessoas.WaltercioCaldas, //TODO n aparece na citacao 272 mas aparece na biografia dele e na 252
-    pessoas.PauloVenancioFilho,
-    //pessoas.CildoMeireles
-    //pessoas.JoaoMouraJunior
-    pessoas.PauloSergioDuarte,
-    //pessoas.RodrigoNeves
-    pessoas.Tunga,
+    persons.RonaldoBrito,
+    persons.JoseResende,
+    persons.WaltercioCaldas, //TODO n aparece na citacao 272 mas aparece na biografia dele e na 252
+    persons.PauloVenancioFilho,
+    //persons.CildoMeireles
+    //persons.JoaoMouraJunior
+    persons.PauloSergioDuarte,
+    //persons.RodrigoNeves
+    persons.Tunga,
   ],
   DataInicio: undefined,
   DataFim: undefined,

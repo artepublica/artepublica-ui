@@ -1,8 +1,8 @@
-import * as pessoas from './pessoa';
+import * as persons from './persons';
 import DiretorInstituto from '../../domain/diretor_instituto';
 
 export const HelenaMariaPortoSeveroDaCosta: DiretorInstituto = {
-  Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
+  Person: persons.HelenaMariaPortoSeveroDaCosta,
   Mandatos: [
     {
       NomeInstituto: 'Instituto Brasileiro de Patrimônio Cultural',
