@@ -1,4 +1,4 @@
-export type FontWeight = '400' | '500';
+export type FontWeight = '400' | '500' | '600' | '700';
 
 type Font = {
   fontFamily: string;
@@ -8,6 +8,8 @@ type Font = {
 type Fonts = {
   regular: Font;
   medium: Font;
+  bold: Font;
+  heavy: Font;
 };
 
 export default Fonts;

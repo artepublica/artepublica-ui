@@ -163,8 +163,8 @@ function GraficoRedeTipoTipologiaObra({
   return (
     <ScrollView style={style.container}>
       <Dropdown
-        valor={valorDropdown}
-        setarValor={setarDropdown}
+        value={valorDropdown}
+        setValue={setarDropdown}
         items={autores.map((autor) => ({ label: autor, value: autor }))}
         zIndex={3}
       />

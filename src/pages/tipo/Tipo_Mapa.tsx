@@ -14,9 +14,9 @@ function Mapa({ tipo, tipos }: MapaProps): JSX.Element {
     (result, tipoReduce, index) => {
       result[tipoReduce.nome] =
         tipo === 'Tipologia'
-          ? theme.tipologia[
+          ? (theme.tipologia[
               tipoReduce.nome.toLowerCase() as keyof TipologiaTheme
-            ] ?? theme.tipologia.desconhecida
+            ] ?? theme.tipologia.desconhecida)
           : theme.coresGrafico[index];
       return result;
     },

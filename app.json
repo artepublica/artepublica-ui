@@ -4,43 +4,51 @@
     "name": "arte-publica-permanente",
     "slug": "arte-publica-permanente",
     "scheme": "arte-publica-permanente.app",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#D32D7D"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0,
-      "url": "https://u.expo.dev/f1b5fa04-266b-4978-88ee-d55779bc71ff"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.theobassan.artepublicapermanente"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.theobassan.artepublicapermanente",
-      "versionCode": 8
+      "versionCode": 9
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 738,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
     },
     "extra": {
       "eas": {
         "projectId": "f1b5fa04-266b-4978-88ee-d55779bc71ff"
       }
     },
-    "runtimeVersion": "exposdk:51.0.0",
-    "sdkVersion": "51.0.0"
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/f1b5fa04-266b-4978-88ee-d55779bc71ff"
+    }
   }
 }

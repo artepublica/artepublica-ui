@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import Artista from './artista';
 import Data from './data';
 import Fabricante from './fabricante';

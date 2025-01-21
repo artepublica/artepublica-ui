@@ -1,6 +1,5 @@
-import { Exposicao, Pessoa } from '@domain';
+import { CoordenadorFundacao, Exposicao, Pessoa } from '@domain';
 import * as coordenadoresFundacao from '@utils/data/coordenador-fundacao';
-import CoordenadorFundacao from 'src/domain/coordenador-fundacao';
 
 import { entre } from './dataUtils';
 

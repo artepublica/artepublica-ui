@@ -1,21 +1,20 @@
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
-import Highcharts from 'highcharts';
-import HighchartsDependecyWheel from 'highcharts/modules/dependency-wheel';
-import HighchartsNetworkGraph from 'highcharts/modules/networkgraph';
-import HighchartsSankey from 'highcharts/modules/sankey';
-import HighchartsSeriesLabel from 'highcharts/modules/series-label';
-import HighchartsStreamgraph from 'highcharts/modules/streamgraph';
-import Theme from 'highcharts/themes/brand-dark';
+import * as Highcharts from 'highcharts';
 import { HighchartsReact } from 'highcharts-react-official';
 
 import { useTheme } from '@utils';
 
-HighchartsSeriesLabel(Highcharts);
-HighchartsNetworkGraph(Highcharts);
-HighchartsSankey(Highcharts);
-HighchartsDependecyWheel(Highcharts);
-HighchartsStreamgraph(Highcharts);
+const loadHighchartsModules = async (callback: () => void) => {
+  Promise.all([
+    //import('highcharts/modules/dependency-wheel'),
+    import('highcharts/modules/networkgraph'),
+    import('highcharts/modules/sankey'),
+    import('highcharts/modules/series-label'),
+    import('highcharts/modules/streamgraph'),
+    import('highcharts/themes/brand-dark'),
+  ]).then(callback);
+};
 
 type ChartDarkProps = {
   options: Highcharts.Options;
@@ -25,7 +24,17 @@ function ChartDark({ options }: ChartDarkProps): JSX.Element {
   const { theme } = useTheme();
   const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
 
-  Theme(Highcharts);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    loadHighchartsModules(async () => {
+      setLoading(false);
+    });
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <HighchartsReact

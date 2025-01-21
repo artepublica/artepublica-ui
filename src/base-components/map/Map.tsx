@@ -1,10 +1,9 @@
 import { useHeaderHeight } from '@react-navigation/elements';
-import { NavigationProp, useNavigation } from '@react-navigation/native';
+import { useRouter } from 'expo-router';
 import { useWindowDimensions } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 
 import { Obra } from '@domain';
-import { RootNavigatorParamList } from 'src/app/navigation/RootNavigator';
 
 type MapWrapperProps = {
   markers?: {
@@ -15,7 +14,7 @@ type MapWrapperProps = {
 };
 
 function Map({ markers }: MapWrapperProps): JSX.Element {
-  const navigation = useNavigation<NavigationProp<RootNavigatorParamList>>();
+  const router = useRouter();
   const { height } = useWindowDimensions();
   const headerHeight = useHeaderHeight();
   const center = {
@@ -68,7 +67,12 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
               latitude: parseFloat(marker.position.latitude),
               longitude: parseFloat(marker.position.longitude),
             }}
-            onPress={() => navigation.navigate('Obra', { obra: marker.obra })}
+            onPress={() =>
+              router.push({
+                pathname: '/obra',
+                params: { obra: marker.obra.ID },
+              })
+            }
           />
         ))}
     </MapView>

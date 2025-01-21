@@ -9,9 +9,7 @@ import { Artista, Obra } from '@domain';
 import { useTheme } from '@utils';
 import * as analisys_list_utils from '@utils/data/analisys_list_utils';
 
-function Decade(): JSX.Element | null {
-  const { theme } = useTheme();
-
+function Decade(): JSX.Element {
   const allYears: { label: string; value: string }[] = [
     { label: 'Desconhecida', value: 'Null' },
   ];
@@ -22,6 +20,7 @@ function Decade(): JSX.Element | null {
   const [open, setOpen] = useState(false);
   const [year, setValue] = useState('1990');
   const [items, setItems] = useState(allYears);
+  const { theme } = useTheme();
 
   const typed_analisys_list_utils: Record<string, Obra[]> = analisys_list_utils;
 
@@ -299,6 +298,7 @@ function Decade(): JSX.Element | null {
         //iconContainerStyle={{ borderColor: '#CC1964 !important' }}
         showTickIcon={false}
       />
+      <View style={{ height: 12 }} />
       <Text>Sem dados sobre o período</Text>
     </ScrollView>
   );

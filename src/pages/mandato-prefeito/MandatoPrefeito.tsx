@@ -497,18 +497,13 @@ function MandatoPrefeito({ obras }: { obras: Obra[] }): JSX.Element {
       prefeito: prefeito.Pessoa?.Nome ?? 'Desconhecida',
       anos: anosIntern,
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [valorDropdown]);
 
   return (
     <ScrollView
       style={{ width: '100%', paddingTop: 12, paddingHorizontal: 12 }}
     >
-      <Dropdown
-        valor={valorDropdown}
-        setarValor={setarDropdown}
-        items={items}
-      />
+      <Dropdown value={valorDropdown} setValue={setarDropdown} items={items} />
       <View>
         <Block obras={obras} anos={anos.anos} />
       </View>

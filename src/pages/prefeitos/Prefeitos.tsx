@@ -248,8 +248,8 @@ function Prefeitos({ obras }: { obras: Obra[] }): JSX.Element {
   return (
     <ScrollView style={style.container}>
       <Dropdown
-        valor={valorDropdown}
-        setarValor={setarDropdown}
+        value={valorDropdown}
+        setValue={setarDropdown}
         items={items}
         multiple
       />

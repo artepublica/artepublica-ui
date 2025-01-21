@@ -6,26 +6,26 @@ import DropDownPicker from 'react-native-dropdown-picker';
 import { useTheme } from '@utils';
 
 function Dropdown({
-  valor,
-  setarValor,
+  value,
+  setValue,
   items,
   zIndex,
   multiple,
 }: {
-  valor: any;
-  setarValor: Dispatch<SetStateAction<any>>;
+  value: any;
+  setValue: Dispatch<SetStateAction<any>>;
   items: { label: string; value: any; parent?: any }[];
   zIndex?: number;
   multiple?: boolean;
 }): JSX.Element {
   const { theme } = useTheme();
 
-  const [dropdownAberto, tornarDropdownAberto] = useState(false);
-  const [itemsDropdown, setarItemsDropown] = useState(items);
+  const [open, setOpen] = useState(false);
+  const [itemsDropdown, setIDropdownItems] = useState(items);
 
-  function setarValorDropdown(valorNovo: SetStateAction<string>): void {
-    if (valor !== valorNovo) {
-      setarValor(valorNovo);
+  function setDropdownValue(valorNovo: SetStateAction<string>): void {
+    if (value !== valorNovo) {
+      setValue(valorNovo);
     }
   }
 
@@ -33,12 +33,12 @@ function Dropdown({
     <DropDownPicker
       multiple={multiple}
       theme={theme.dark ? 'DARK' : 'LIGHT'}
-      open={dropdownAberto}
-      value={valor}
+      open={open}
+      value={value}
       items={itemsDropdown}
-      setOpen={tornarDropdownAberto}
-      setValue={setarValorDropdown}
-      setItems={setarItemsDropown}
+      setOpen={setOpen}
+      setValue={setDropdownValue}
+      setItems={setIDropdownItems}
       listMode='SCROLLVIEW'
       scrollViewProps={{
         nestedScrollEnabled: true,

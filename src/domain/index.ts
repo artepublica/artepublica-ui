@@ -14,3 +14,8 @@ export type { default as DependencyWheel } from './dependency-wheel';
 export type { default as Livro } from './livro';
 export type { default as Prefeito } from './prefeito';
 export type { default as Fabricante } from './fabricante';
+export type { default as CuradorColecao } from './curador_colecao';
+export type { default as MandatoCuradorColecao } from './mandato_curador_colecao';
+export type { default as CoordenadorNucleoMuseu } from './coordenador_nucleo_museu';
+export type { default as CoordenadorFundacao } from './coordenador-fundacao';
+export type { default as ConselheiroCasa } from './conselheiro-casa';

@@ -1,17 +1,16 @@
-import { RouteProp, useRoute } from '@react-navigation/native';
+import { useLocalSearchParams } from 'expo-router';
 import { Platform, View } from 'react-native';
 
 import { Image, Text } from '@base-components';
 import { TipologiaTheme, useTheme } from '@utils';
+import obrasRecorte from '@utils/analises/obrasRecorte';
 import { getYear } from '@utils/data/analisys_utils';
-
-import { RootNavigatorParamList } from '../../app/navigation/RootNavigator';
 
 function ObraView(): JSX.Element {
   const { theme } = useTheme();
+  const { obra: id } = useLocalSearchParams<{ obra: string }>();
 
-  const route = useRoute<RouteProp<RootNavigatorParamList, 'Obra'>>();
-  const { obra } = route.params;
+  const obra = obrasRecorte.find((obra) => obra.ID?.toString() === id);
 
   return (
     <View
@@ -21,7 +20,7 @@ function ObraView(): JSX.Element {
         padding: 8,
         backgroundColor:
           theme.tipologia[
-            obra.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme
+            obra?.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme
           ] ?? theme.tipologia.desconhecida,
         height: '100%',
       }}
@@ -41,12 +40,12 @@ function ObraView(): JSX.Element {
             style={{
               height: 136,
               width: 136,
-              borderWidth: obra.Imagem != null && obra.Imagem !== '' ? 0 : 1,
+              borderWidth: obra?.Imagem != null && obra.Imagem !== '' ? 0 : 1,
               borderColor: '#FFFFFF',
-              marginBottom: obra.Imagem != null && obra.Imagem !== '' ? 0 : 4,
+              marginBottom: obra?.Imagem != null && obra.Imagem !== '' ? 0 : 4,
             }}
           >
-            <Image source={obra.Imagem} height={136} width={136} />
+            <Image source={obra?.Imagem} height={136} width={136} />
           </View>
         </View>
         <View style={{ padding: 8 }}>
@@ -58,7 +57,7 @@ function ObraView(): JSX.Element {
               fontWeight: '700',
             }}
           >
-            {`${obra.Titulo ?? 'Desconhecida'}${obra.DataInauguracao ? `, ${getYear(obra.DataInauguracao)}` : ', s.d.'}${
+            {`${obra?.Titulo ?? 'Desconhecida'}${obra?.DataInauguracao ? `, ${getYear(obra.DataInauguracao)}` : ', s.d.'}${
               Platform.OS === 'web' ? '\n\n' : '\n'
             }`}
           </Text>
@@ -71,7 +70,7 @@ function ObraView(): JSX.Element {
               lineHeight: 18,
             }}
           >
-            {obra.Autores?.map((autor) => autor.Pessoa?.Nome).join(', ') ??
+            {obra?.Autores?.map((autor) => autor.Pessoa?.Nome).join(', ') ??
               'Desconhecida'}
           </Text>
           <Text
@@ -83,7 +82,7 @@ function ObraView(): JSX.Element {
               lineHeight: 18,
             }}
           >
-            {`${obra.Material ?? 'Desconhecida'}${obra.MaterialBase ? `; ${obra.MaterialBase}` : ''}`}
+            {`${obra?.Material ?? 'Desconhecida'}${obra?.MaterialBase ? `; ${obra.MaterialBase}` : ''}`}
           </Text>
           {/* <Text
                         style={{

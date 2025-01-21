@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 
 import { Wrapper } from '@googlemaps/react-wrapper';
-import { NavigationProp, useNavigation } from '@react-navigation/native';
 import { default as Constants } from 'expo-constants';
+import { useRouter } from 'expo-router';
 
 import { Obra } from '@domain';
 import { magenta } from '@utils/theme-provider/themes/cores';
-import { RootNavigatorParamList } from 'src/app/navigation/RootNavigator';
 
 type MapWrapperProps = {
   markers?: {
@@ -40,7 +39,7 @@ function MyMapComponent({
     obra: Obra;
   }[];
 }) {
-  const navigation = useNavigation<NavigationProp<RootNavigatorParamList>>();
+  const router = useRouter();
   const ref = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<google.maps.Map>();
   const [mapMarkers, serMapMarkers] = useState<google.maps.Marker[]>([]);
@@ -79,6 +78,16 @@ function MyMapComponent({
     if (map && markers) {
       mapMarkers.forEach((marker) => marker.setMap(null));
 
+      /*
+
+        const iconContent = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0"
+                  fill="${marker.color ?? magenta}" fill-opacity="1" stroke="#000" stroke-width="2" />
+          </svg>
+        `;
+        */
+
       const markersI = markers.map((marker) => {
         const gMarker = new google.maps.Marker({
           position: {
@@ -98,7 +107,7 @@ function MyMapComponent({
         });
 
         gMarker.addListener('click', () => {
-          navigation.navigate('Obra', { obra: marker.obra });
+          router.push({ pathname: '/obra', params: { obra: marker.obra.ID } });
         });
         gMarker.setMap(map);
         return gMarker;

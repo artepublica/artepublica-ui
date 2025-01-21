@@ -40,7 +40,7 @@ const imgs: string[] = Object.keys(obras).reduce<string[]>((resultado, key) => {
 })();
 
 async function readFile(file: string): Promise<void> {
-  const local = `/Users/stefanobassan/Projects/artepublica-ui/assets/obras/${file}`;
+  const local = `/Users/stefanobassan/Projects/artepublica-ui/assets/heritage/${file}`;
 
   const img = sharp(local);
 

@@ -66,8 +66,8 @@ function GraficoPoliticaPublica(): JSX.Element {
           showTickIcon={false}
         />
         <Dropdown
-          valor={valorDropdown3}
-          setarValor={setarDropdown3}
+          value={valorDropdown3}
+          setValue={setarDropdown3}
           items={[
             { label: '0', value: 0 },
             { label: '4', value: 4 },
@@ -79,8 +79,8 @@ function GraficoPoliticaPublica(): JSX.Element {
           zIndex={3}
         />
         <Dropdown
-          valor={valorDropdown2}
-          setarValor={setarDropdown2}
+          value={valorDropdown2}
+          setValue={setarDropdown2}
           items={[
             { label: 'Sem Nome', value: 0 },
             { label: 'Com Nome', value: 1 },
@@ -89,8 +89,8 @@ function GraficoPoliticaPublica(): JSX.Element {
           zIndex={2}
         />
         <Dropdown
-          valor={valorDropdown4}
-          setarValor={setarDropdown4}
+          value={valorDropdown4}
+          setValue={setarDropdown4}
           items={[
             { label: 'Nome Normal', value: false },
             { label: 'Nome Por Cima', value: true },

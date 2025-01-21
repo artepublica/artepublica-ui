@@ -1,18 +1,36 @@
+# dependencies
 node_modules/
+
+# Expo
 .expo/
 dist/
-npm-debug.*
+web-build/
+expo-env.d.ts
+
+# Native
+*.orig.*
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
-*.orig.*
-web-build/
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
 
 # macOS
 .DS_Store
+*.pem
 
-.vscode/
-.coverage/
-.env
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+app-example

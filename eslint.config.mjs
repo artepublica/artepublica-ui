@@ -1,6 +1,5 @@
 import eslint from '@eslint/js';
 import imports from 'eslint-plugin-import';
-import jest from 'eslint-plugin-jest';
 import prettierRecommended from 'eslint-plugin-prettier/recommended';
 import reactRecommended from 'eslint-plugin-react/configs/recommended.js';
 import reactHooks from 'eslint-plugin-react-hooks';
@@ -12,10 +11,6 @@ const config = tseslint.config(
   ...tseslint.configs.recommended,
   reactRecommended,
   prettierRecommended,
-  {
-    files: ['test/**'],
-    ...jest.configs['flat/recommended'],
-  },
   {
     ignores: [
       '**/.vscode/',

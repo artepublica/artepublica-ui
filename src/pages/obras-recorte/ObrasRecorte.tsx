@@ -1,4 +1,4 @@
-import { NavigationProp, useNavigation } from '@react-navigation/native';
+import { useRouter } from 'expo-router';
 import { FlatList, Platform, useWindowDimensions, View } from 'react-native';
 import { Col, Grid, Row } from 'react-native-easy-grid';
 
@@ -7,14 +7,13 @@ import { Obra } from '@domain';
 import { TipologiaTheme, useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
-import { RootNavigatorParamList } from 'src/app/navigation/RootNavigator';
 
 import styles from './styles';
 
 function Obras(): JSX.Element {
   const { width } = useWindowDimensions();
   const { theme } = useTheme();
-  const navigation = useNavigation<NavigationProp<RootNavigatorParamList>>();
+  const router = useRouter();
   const style = styles();
   const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
@@ -102,7 +101,11 @@ function Obras(): JSX.Element {
                       key={colIndex}
                       onPress={
                         obra != null
-                          ? () => navigation.navigate('Obra', { obra })
+                          ? () =>
+                              router.push({
+                                pathname: '/obra',
+                                params: { obra: obra.ID },
+                              })
                           : undefined
                       }
                     >
