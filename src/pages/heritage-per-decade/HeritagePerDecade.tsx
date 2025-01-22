@@ -31,10 +31,10 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
 
   const all: Record<string, Obra[]> = decades.all;
 
-  function MapAutor(key: string): string[] {
+  function MapAuthor(key: string): string[] {
     return all[key]
       .map(
-        (heritage) => heritage.Autores ?? [{ Name: { Name: 'Desconhecida' } }],
+        (heritage) => heritage.Authors ?? [{ Name: { Name: 'Desconhecida' } }],
       )
       .reduce<string[]>((r, l) => {
         Array.prototype.push.apply(r, l);
@@ -45,8 +45,8 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
   const types = Object.keys(all)
     .filter((key) => key !== 'null' && all[key].length > 0)
     .map((key) =>
-      type === 'Autores'
-        ? MapAutor(key)
+      type === 'Authors'
+        ? MapAuthor(key)
         : all[key].map((heritage) => heritage[type] ?? 'Desconhecida'),
     )
     .reduce<string[]>((r, l) => {

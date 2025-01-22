@@ -1,6 +1,6 @@
 import { Obra } from '@domain';
 
-import obras from './obras';
+import obras from './heritages';
 
 const nomesTipologias: string[] = obras
   .map((obra) => obra.Tipologia ?? 'Desconhecida')

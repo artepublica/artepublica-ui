@@ -1,13 +1,12 @@
-import Artista from './artista';
+import Author from './author';
 import Data from './data';
-import Fabricante from './fabricante';
 import Fato from './fact';
 import Person from './person';
 
 type Obra = {
   ID?: number;
   Imagem?: string;
-  Autores?: Artista[] | undefined;
+  Authors?: Author[] | undefined;
   Titulo?: string;
   Material?: string;
   Altura?: string;
@@ -68,7 +67,6 @@ type Obra = {
     Data?: string;
   }[];
   Homenageados?: Person[];
-  Fabricantes?: Fabricante[];
   Promocao?: string;
   Revestimento?: string;
 };

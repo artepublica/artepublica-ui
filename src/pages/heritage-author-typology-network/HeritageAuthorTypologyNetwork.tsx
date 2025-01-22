@@ -30,17 +30,17 @@ function HeritageAuthorTypologyNetwork({
     .map((type) => type.name ?? 'Desconhecida')
     .sort((a, b) => a.localeCompare(b));
 
-  const tiposOrdenadoPorTotal = [...types]
-    .filter((autor) => autor.name !== 'Desconhecida')
+  const typesSortedByTotal = [...types]
+    .filter((type) => type.name !== 'Desconhecida')
     .sort((a, b) => (a.heritages.length < b.heritages.length ? 1 : -1));
-  const maiorAutor = tiposOrdenadoPorTotal[0].name ?? 'Desconhecida';
+  const authorWithMostHeritage = typesSortedByTotal[0].name ?? 'Desconhecida';
 
-  const [valorDropdown, setarDropdown] = useState(maiorAutor);
+  const [dropdownValue, setDropdown] = useState(authorWithMostHeritage);
 
   const style = styles();
 
   const selected = types.filter(
-    (autor) => (autor.name ?? 'v') === valorDropdown,
+    (type) => (type.name ?? 'v') === dropdownValue,
   )[0];
 
   const typologies = selected.heritages
@@ -86,10 +86,10 @@ function HeritageAuthorTypologyNetwork({
       .map((typology) => {
         const typology_titles = selected.heritages
           .filter((heritage) =>
-            type !== 'Autores'
+            type !== 'Authors'
               ? heritage[type] === selected.name
-              : heritage.Autores?.find(
-                  (artista) => artista.Person?.Name === selected.name,
+              : heritage.Authors?.find(
+                  (author) => author.Person?.Name === selected.name,
                 ) != null,
           )
           .filter(
@@ -163,8 +163,8 @@ function HeritageAuthorTypologyNetwork({
   return (
     <ScrollView style={style.container}>
       <Dropdown
-        value={valorDropdown}
-        setValue={setarDropdown}
+        value={dropdownValue}
+        setValue={setDropdown}
         items={names.map((name) => ({ label: name, value: name }))}
         zIndex={3}
       />

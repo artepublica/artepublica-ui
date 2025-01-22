@@ -4,7 +4,7 @@ import Head from 'expo-router/head';
 import { StyleSheet, View } from 'react-native';
 
 import { MayorTerm } from '@pages';
-import { obrasRecorte } from '@utils';
+import { thesisHeritages } from '@utils';
 
 function Terms(): JSX.Element {
   return (
@@ -13,7 +13,7 @@ function Terms(): JSX.Element {
         <title>Arte Pública - Mandatos</title>
       </Head>
       <View style={styles.container}>
-        <MayorTerm obras={obrasRecorte} />
+        <MayorTerm heritages={thesisHeritages} />
       </View>
     </>
   );

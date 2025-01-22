@@ -778,7 +778,6 @@ export const MarioAgostinelli: Person = {
       EndDate: '1953',
       Type: 'Fundador',
       Description: 'Foi fundador da Petit Galerie',
-      Persons: undefined,
       City: 'Rio de Janeiro',
     },
   ],
@@ -880,7 +879,6 @@ export const JorgeSelaron: Person = {
       EndDate: '1983',
       Type: 'Mudança',
       Description: 'O artista chileno muda-se para o Rio de Janeiro.',
-      Persons: undefined,
       City: 'Rio de Janeiro',
     },
   ],
@@ -958,7 +956,6 @@ export const FundicaoValDOsne: Person = {
   Facts: [
     {
       StartDate: '05/04/1836',
-      EndDate: undefined,
       Type: 'Autorização',
       Description:
         'Recebeu autorizaçao para construir um alto-forno no Val DOsne',
@@ -970,14 +967,10 @@ export const FundicaoValDOsne: Person = {
       EndDate: '1892',
       Type: 'Autorização',
       Description: 'Societé Anonyme des Fonderies dart du Val dOsne',
-      Persons: undefined,
       City: 'Haute-Marne',
     },
     {
-      StartDate: undefined,
-      EndDate: undefined,
       Type: 'Fundição artística',
-      Description: undefined,
       Persons: [
         persons.MathurinMoreau,
         persons.LouisSauvageau,
@@ -987,9 +980,6 @@ export const FundicaoValDOsne: Person = {
       City: 'Haute-Marne',
     },
     {
-      StartDate: undefined,
-      EndDate: undefined,
-      Type: undefined,
       Description:
         'Existem no Brasil cerca de 130 obras, entre estátuas, fontes, e peças de mobiliário urbano',
       Persons: [
@@ -1022,15 +1012,12 @@ export const FranzWeissmann: Person = {
       EndDate: '1924',
       Type: 'Mudança',
       Description: 'Mudou-se para o Brasil, foi morar no interior de São Paulo',
-      Persons: undefined,
-      City: undefined,
     },
     {
       StartDate: '1927',
       EndDate: '1927',
       Type: 'Mudança',
       Description: 'Mudou-se para a capital do estado',
-      Persons: undefined,
       City: 'São Paulo',
     },
     {
@@ -1038,7 +1025,6 @@ export const FranzWeissmann: Person = {
       EndDate: '1929',
       Type: 'Mudança',
       Description: 'Mudou-se para o Rio de Janeiro',
-      Persons: undefined,
       City: 'Rio de Janeiro',
     },
     {
@@ -1046,33 +1032,20 @@ export const FranzWeissmann: Person = {
       EndDate: '1946',
       Type: 'Mudança',
       Description: 'Período de grande relevancia na sua formação artística',
-      Persons: undefined,
       City: 'Belo Horizonte',
     },
     {
-      StartDate: undefined,
-      EndDate: undefined,
       Type: 'Tradição',
       Description:
         'Foi um dos precursores do construtivismo no Brasil, sua obra caracteriza-se pelo uso das formas geométricas e espaços vazados.',
-      Persons: undefined,
-      City: undefined,
     },
     {
-      StartDate: undefined,
-      EndDate: undefined,
       Type: 'Mudança',
       Description: 'Mora na França',
-      Persons: undefined,
-      City: undefined,
     },
     {
-      StartDate: undefined,
-      EndDate: undefined,
       Type: 'Mudança',
       Description: 'Mora na Espanha',
-      Persons: undefined,
-      City: undefined,
     },
   ],
 };
@@ -1121,7 +1094,6 @@ export const FernandoCocchiarale: Person = {
       Type: 'Livro',
       Description:
         'Quem tem medo de Arte Contemporanea, Recife, Fundação Joaquim Nabuco, Editora MAssangana',
-      Persons: undefined,
       City: 'Rio de Janeiro',
     },
   ],
@@ -1324,20 +1296,13 @@ export const SironFranco: Person = {
   Specialties: [Pintor, Escultor],
   Facts: [
     {
-      StartDate: undefined,
-      EndDate: undefined,
-      Type: undefined,
       Description: 'É um dos artistas brasileiros mais conhecidos no exterior.',
-      Persons: undefined,
-      City: undefined,
     },
     {
       StartDate: '1991',
-      EndDate: undefined,
       Type: 'I Exposição Internacional de Esculturas Efemeras',
       Description:
         'Exposição que levou a ser convidado para a exposição do SESC 1996. A obra do artista são duas cobras coloridas que brotam do solo',
-      Persons: undefined,
       City: 'Fortaleza',
     },
   ],
@@ -2002,19 +1967,13 @@ export const AmilcarDeCastro: Person = {
   Professions: [Artista],
   Facts: [
     {
-      StartDate: undefined,
-      EndDate: undefined,
       Type: 'Tradição',
       Description: 'Tradição construtiva',
-      Persons: undefined,
-      City: undefined,
     },
     {
       StartDate: '1959',
-      EndDate: undefined,
       Type: 'Designer',
       Description: 'Fez a reforma gráfica do Jornal do Brasil',
-      Persons: undefined,
       City: 'Rio de Janeiro',
     },
   ],
@@ -2543,11 +2502,8 @@ export const NiltonMontarroyos: Person = {
   Name: `Nilton Cavalcante Motarroyos`,
   Facts: [
     {
-      StartDate: undefined,
-      EndDate: undefined,
       Type: 'Arquiteto',
       Description: 'Urbanização do bairro de Campo Grande',
-      Persons: undefined,
       City: 'Rio de Janeiro',
     },
   ],
@@ -2893,7 +2849,6 @@ export const FlavioDeOliveiraFerreira: Person = {
       EndDate: '30/12/1988',
       Type: 'Secretário',
       Description: 'Secretário Municipal de Desenvolvimento Urbano', //TODO cria secretaria
-      Persons: undefined,
       City: 'Rio de Janeiro',
     },
   ],

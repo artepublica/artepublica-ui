@@ -5,7 +5,7 @@ import DropDownPicker from 'react-native-dropdown-picker';
 import { ScrollView } from 'react-native-gesture-handler';
 
 import { Table, Text } from '@base-components';
-import { Artista, Obra } from '@domain';
+import { Author, Obra } from '@domain';
 import { useTheme } from '@utils';
 import * as analisys_list_utils from '@utils/data/analisys_list_utils';
 
@@ -42,12 +42,12 @@ function Decades(): JSX.Element {
     const autores_obras_decada: string[] = obras_decada
       .map(
         (obra) =>
-          obra.Autores ?? [{ Person: { Name: 'Desconhecida' } } as Artista],
+          obra.Authors ?? [{ Person: { Name: 'Desconhecida' } } as Author],
       )
       .reduce<string[]>((r, l) => {
         Array.prototype.push.apply(
           r,
-          l.map<string>((artista) => artista.Person?.Name ?? 'Desconhecida'),
+          l.map<string>((author) => author.Person?.Name ?? 'Desconhecida'),
         );
         return r;
       }, []);
@@ -143,7 +143,7 @@ function Decades(): JSX.Element {
       }, [])
       .sort((a, b) => a.nome.localeCompare(b.nome));
 
-    const artistas_total_obras: {
+    const authorsHeritageTotal: {
       nome: string;
       total: number;
       obras: string[];
@@ -157,10 +157,10 @@ function Decades(): JSX.Element {
           const obras: string[] = obras_decada
             .filter(
               (obra) =>
-                (obra.Autores != null &&
-                  obra.Autores?.find((artista) => artista.Person?.Name === a) !=
+                (obra.Authors != null &&
+                  obra.Authors?.find((author) => author.Person?.Name === a) !=
                     null) ||
-                (a === 'Desconhecida' && obra.Autores == null),
+                (a === 'Desconhecida' && obra.Authors == null),
             )
             .map((obra) => obra.Titulo ?? 'Desconhecida');
 
@@ -260,10 +260,10 @@ function Decades(): JSX.Element {
         <Table
           headers={[
             'Artista',
-            `Total: ${artistas_total_obras.length}`,
+            `Total: ${authorsHeritageTotal.length}`,
             'Obras',
           ]}
-          rows={artistas_total_obras.map((top) => [
+          rows={authorsHeritageTotal.map((top) => [
             top.nome,
             top.total.toString(),
             top.obras.join(', '),

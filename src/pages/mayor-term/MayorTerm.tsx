@@ -6,7 +6,7 @@ import { ScrollView, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart, Dropdown } from '@base-components';
-import { Artista, Mayor, Obra } from '@domain';
+import { Author, Mayor, Obra } from '@domain';
 import { TipologiaTheme, useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
 import * as mayorsTerms from '@utils/data/mayors';
@@ -14,29 +14,31 @@ import reduceListOfList from '@utils/list/reduce-list-of-list';
 import { magenta } from '@utils/theme-provider/themes/cores';
 
 function Block({
-  obras,
-  anos,
+  heritages,
+  years,
 }: {
-  obras: Obra[];
-  anos: number[];
+  heritages: Obra[];
+  years: number[];
 }): JSX.Element {
   const { theme } = useTheme();
   const { width, height } = useWindowDimensions();
   const headerHeight = useHeaderHeight();
   const insets = useSafeAreaInsets();
 
-  const obras_por_ano = obras
-    .reduce<{ year: number; obras: Obra[] }[]>((result, obra) => {
-      const year = getYear(obra.DataInauguracao);
-      if (year != null && anos.includes(year)) {
+  const heritagePerYear = heritages
+    .reduce<{ year: number; heritages: Obra[] }[]>((result, heritage) => {
+      const year = getYear(heritage.DataInauguracao);
+      if (year != null && years.includes(year)) {
         const y = result.find((t) => t.year === year);
 
         if (y == null) {
           result.push({
             year,
-            obras: obras
-              .filter((obraInt) => getYear(obraInt.DataInauguracao) === year)
-              .map((obraInt) => obraInt),
+            heritages: heritages
+              .filter(
+                (heritageInt) => getYear(heritageInt.DataInauguracao) === year,
+              )
+              .map((heritageInt) => heritageInt),
           });
         }
       }
@@ -45,9 +47,9 @@ function Block({
     }, [])
     .sort((a, b) => (a.year > b.year ? 1 : -1));
 
-  const tipologias = obras_por_ano
-    .map((obra_ano) =>
-      obra_ano.obras.map((obra) => obra.Tipologia ?? 'Desconhecida'),
+  const typologies = heritagePerYear
+    .map((year) =>
+      year.heritages.map((heritage) => heritage.Tipologia ?? 'Desconhecida'),
     )
     .reduce<string[]>((r, l) => {
       Array.prototype.push.apply(r, l);
@@ -61,12 +63,12 @@ function Block({
     }, [])
     .sort((a, b) => a.localeCompare(b));
 
-  const total_tipologias = tipologias.reduce<
+  const typologyTotal = typologies.reduce<
     { type: string; name: string; data: (number | null)[] }[]
   >((series, tipologia) => {
-    const total_tipologia = obras_por_ano.map((obra_ano) => {
-      const total = obra_ano.obras.filter(
-        (obra) => obra.Tipologia === tipologia,
+    const total_tipologia = heritagePerYear.map((year) => {
+      const total = year.heritages.filter(
+        (heritage) => heritage.Tipologia === tipologia,
       ).length;
       return total > 0 ? total : null;
     });
@@ -110,7 +112,7 @@ function Block({
       },
     },
     xAxis: {
-      categories: anos.map((ano) => ano.toString()),
+      categories: years.map((ano) => ano.toString()),
       labels: {
         style: { color: theme.text.textColor },
       },
@@ -134,52 +136,52 @@ function Block({
         },
       },
     },
-    series: total_tipologias,
+    series: typologyTotal,
   };
 
   return <Chart options={lineOptions} />;
 }
 
 function Network({
-  obras,
-  anos,
-  prefeito,
+  heritages,
+  years,
+  mayor,
 }: {
-  obras: Obra[];
-  prefeito: string;
-  anos: number[];
+  heritages: Obra[];
+  mayor: string;
+  years: number[];
 }): JSX.Element {
   const { theme } = useTheme();
   const { width, height } = useWindowDimensions();
   const headerHeight = useHeaderHeight();
   const insets = useSafeAreaInsets();
 
-  const obras_do_mandato = obras.reduce<Obra[]>((result, obra) => {
-    const year = getYear(obra.DataInauguracao);
-    if (year != null && anos.includes(year)) {
-      result.push(obra);
+  const termHeritages = heritages.reduce<Obra[]>((result, heritage) => {
+    const year = getYear(heritage.DataInauguracao);
+    if (year != null && years.includes(year)) {
+      result.push(heritage);
     }
 
     return result;
   }, []);
 
-  const autores = obras_do_mandato
+  const authors = termHeritages
     .map(
-      (obra) =>
-        obra.Autores ?? [{ Person: { Name: 'Desconhecida' } } as Artista],
+      (heritage) =>
+        heritage.Authors ?? [{ Person: { Name: 'Desconhecida' } } as Author],
     )
     .reduce<string[]>((r, l) => {
       Array.prototype.push.apply(
         r,
-        l.map<string>((artista) => artista.Person?.Name ?? 'Desconhecida'),
+        l.map<string>((author) => author.Person?.Name ?? 'Desconhecida'),
       );
       return r;
     }, [])
     .reduce<{ id: string; marker: { radius: number }; color: string }[]>(
-      (r, autor) => {
-        if (r.find((node) => node.id === autor) == null) {
+      (r, author) => {
+        if (r.find((node) => node.id === author) == null) {
           r.push({
-            id: autor ?? 'Deconhecida',
+            id: author ?? 'Deconhecida',
             marker: { radius: 10 },
             color: '',
           });
@@ -191,39 +193,39 @@ function Network({
     .sort((a, b) => a.id.localeCompare(b.id))
     .map((a, index) => ({ ...a, color: theme.coresGrafico[index + 1] }));
 
-  const titulos = obras_do_mandato.map((obra) => ({
-    id: obra.Titulo ?? 'Deconhecida',
+  const titles = termHeritages.map((heritage) => ({
+    id: heritage.Titulo ?? 'Deconhecida',
     marker: { radius: 5 },
-    color: `${autores.filter((autor) => obra.Autores?.map((autorObra) => autorObra.Person?.Name).includes(autor.id))[0].color}80`,
+    color: `${authors.filter((author) => heritage.Authors?.map((_author) => _author.Person?.Name).includes(author.id))[0].color}80`,
   }));
 
-  const nodes = [{ id: prefeito, marker: { radius: 15 }, color: magenta }];
-  Array.prototype.push.apply(nodes, titulos);
-  Array.prototype.push.apply(nodes, autores);
+  const nodes = [{ id: mayor, marker: { radius: 15 }, color: magenta }];
+  Array.prototype.push.apply(nodes, titles);
+  Array.prototype.push.apply(nodes, authors);
 
-  const data = autores.map((autor) => ({
-    from: prefeito,
-    to: autor.id,
+  const data = authors.map((author) => ({
+    from: mayor,
+    to: author.id,
   }));
 
   Array.prototype.push.apply(
     data,
-    autores
-      .map((autor) => {
-        const titulos_autor = obras_do_mandato
+    authors
+      .map((author) => {
+        const authorTitles = termHeritages
           .filter(
-            (obra) =>
-              (obra.Autores != null &&
-                obra.Autores?.find(
-                  (artista) => artista.Person?.Name === autor.id,
+            (heritage) =>
+              (heritage.Authors != null &&
+                heritage.Authors?.find(
+                  (_author) => _author.Person?.Name === author.id,
                 ) != null) ||
-              (autor.id === 'Desconhecida' && obra.Autores == null),
+              (author.id === 'Desconhecida' && heritage.Authors == null),
           )
-          .map((obra) => obra.Titulo);
+          .map((heritage) => heritage.Titulo);
 
-        return titulos_autor.map((titulo) => ({
-          from: autor.id,
-          to: titulo,
+        return authorTitles.map((title) => ({
+          from: author.id,
+          to: title,
         }));
       })
       .reduce((r, l) => {
@@ -283,44 +285,44 @@ function Network({
 }
 
 function Sankey({
-  obras,
-  anos,
-  prefeito,
+  heritages,
+  years,
+  mayor,
 }: {
-  obras: Obra[];
-  prefeito: string;
-  anos: number[];
+  heritages: Obra[];
+  mayor: string;
+  years: number[];
 }): JSX.Element {
   const { theme } = useTheme();
   const { width, height } = useWindowDimensions();
   const headerHeight = useHeaderHeight();
   const insets = useSafeAreaInsets();
 
-  const obras_do_mandato = obras.reduce<Obra[]>((result, obra) => {
-    const year = getYear(obra.DataInauguracao);
-    if (year != null && anos.includes(year)) {
-      result.push(obra);
+  const termHeritages = heritages.reduce<Obra[]>((result, heritage) => {
+    const year = getYear(heritage.DataInauguracao);
+    if (year != null && years.includes(year)) {
+      result.push(heritage);
     }
 
     return result;
   }, []);
-  const autores = obras_do_mandato
+  const authors = termHeritages
     .map(
-      (obra) =>
-        obra.Autores ?? [{ Person: { Nome: 'Desconhecida' } } as Artista],
+      (heritage) =>
+        heritage.Authors ?? [{ Person: { Nome: 'Desconhecida' } } as Author],
     )
     .reduce<string[]>((r, l) => {
       Array.prototype.push.apply(
         r,
-        l.map<string>((artista) => artista.Person?.Name ?? 'Desconhecida'),
+        l.map<string>((author) => author.Person?.Name ?? 'Desconhecida'),
       );
       return r;
     }, [])
     .reduce<{ id: string; marker: { radius: number }; color: string }[]>(
-      (r, autor) => {
-        if (r.find((node) => node.id === autor) == null) {
+      (r, author) => {
+        if (r.find((node) => node.id === author) == null) {
           r.push({
-            id: autor ?? 'Deconhecida',
+            id: author ?? 'Deconhecida',
             marker: { radius: 30 },
             color: '',
           });
@@ -332,40 +334,40 @@ function Sankey({
     .sort((a, b) => a.id.localeCompare(b.id))
     .map((a, index) => ({ ...a, color: theme.coresGrafico[index + 1] }));
 
-  const titulos = obras_do_mandato.map((obra) => ({
-    id: obra.Titulo ?? 'Deconhecida',
+  const titles = termHeritages.map((heritage) => ({
+    id: heritage.Titulo ?? 'Deconhecida',
     marker: { radius: 15 },
-    color: `${autores.filter((autor) => obra.Autores?.map((autorObra) => autorObra.Person?.Name).includes(autor.id))[0].color}80`,
+    color: `${authors.filter((author) => heritage.Authors?.map((_author) => _author.Person?.Name).includes(author.id))[0].color}80`,
   }));
 
-  const nodes = [{ id: prefeito, marker: { radius: 50 }, color: magenta }];
-  Array.prototype.push.apply(nodes, titulos);
-  Array.prototype.push.apply(nodes, autores);
+  const nodes = [{ id: mayor, marker: { radius: 50 }, color: magenta }];
+  Array.prototype.push.apply(nodes, titles);
+  Array.prototype.push.apply(nodes, authors);
 
-  const data = autores.map((autor) => ({
-    from: prefeito,
-    to: autor.id,
+  const data = authors.map((author) => ({
+    from: mayor,
+    to: author.id,
     weight: 1,
   }));
 
   Array.prototype.push.apply(
     data,
-    autores
-      .map((autor) => {
-        const titulos_autor = obras_do_mandato
+    authors
+      .map((author) => {
+        const authorTitles = termHeritages
           .filter(
-            (obra) =>
-              (obra.Autores != null &&
-                obra.Autores?.find(
-                  (artista) => artista.Person?.Name === autor.id,
+            (heritage) =>
+              (heritage.Authors != null &&
+                heritage.Authors?.find(
+                  (_author) => _author.Person?.Name === author.id,
                 ) != null) ||
-              (autor.id === 'Desconhecida' && obra.Autores == null),
+              (author.id === 'Desconhecida' && heritage.Authors == null),
           )
-          .map((obra) => obra.Titulo);
+          .map((heritage) => heritage.Titulo);
 
-        return titulos_autor.map((titulo) => ({
-          from: autor.id,
-          to: titulo,
+        return authorTitles.map((title) => ({
+          from: author.id,
+          to: title,
           weight: 1,
         }));
       })
@@ -419,97 +421,101 @@ function Sankey({
   return <Chart options={networkOptions as Highcharts.Options} />;
 }
 
-function MayorTerm({ obras }: { obras: Obra[] }): JSX.Element {
+function MayorTerm({ heritages }: { heritages: Obra[] }): JSX.Element {
   const typedMayors: Record<string, Mayor> = mayorsTerms;
 
   const items = Object.keys(typedMayors)
     .map((key) => typedMayors[key])
     .sort((a, b) => {
-      const aPrimeiroMantado = a.Mandatos?.sort((aM, bM) =>
+      const aFirstTerm = a.Terms?.sort((aM, bM) =>
         (getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
       )[0];
-      const bPrimeiroMantado = b.Mandatos?.sort((aM, bM) =>
+      const bFirstTerm = b.Terms?.sort((aM, bM) =>
         (getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
       )[0];
 
-      return (getYear(aPrimeiroMantado?.DataInicio) ?? 0) <
-        (getYear(bPrimeiroMantado?.DataInicio) ?? 0)
+      return (getYear(aFirstTerm?.DataInicio) ?? 0) <
+        (getYear(bFirstTerm?.DataInicio) ?? 0)
         ? 1
         : -1;
     })
-    .map((prefeito) => {
-      const mandatos = prefeito.Mandatos?.sort((aM, bM) =>
+    .map((mayor) => {
+      const terms = mayor.Terms?.sort((aM, bM) =>
         (getYear(aM.DataInicio) ?? 0) > (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
-      ).map((mandato) => ({
-        label: `${mandato.DataInicio} - ${mandato.DataFim}`,
-        value: `${prefeito.Person?.Name ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})`,
-        parent: prefeito.Person?.Name ?? 'Desconhecida',
+      ).map((term) => ({
+        label: `${term.DataInicio} - ${term.DataFim}`,
+        value: `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})`,
+        parent: mayor.Person?.Name ?? 'Desconhecida',
       }));
 
       return [
         {
-          label: prefeito.Person?.Name ?? 'Desconhecida',
-          value: prefeito.Person?.Name ?? 'Desconhecida',
+          label: mayor.Person?.Name ?? 'Desconhecida',
+          value: mayor.Person?.Name ?? 'Desconhecida',
           selectable: false,
         },
-        ...(mandatos ?? []),
+        ...(terms ?? []),
       ];
     })
     .reduce(reduceListOfList);
 
-  const [valorDropdown, setarDropdown] = useState(
+  const [dropdownValue, setDropdown] = useState(
     'Cesar Epitácio Maia (1993 - 1996)',
   );
 
   const mayors = Object.keys(typedMayors).map((key) => typedMayors[key]);
 
-  const [anos, setarAnos] = useState<{ prefeito: string; anos: number[] }>({
-    prefeito: '',
-    anos: [],
+  const [years, setYears] = useState<{ mayor: string; years: number[] }>({
+    mayor: '',
+    years: [],
   });
 
   useEffect(() => {
-    const prefeito = mayors.filter((prefeito) => {
-      const mandatos = prefeito.Mandatos?.filter(
-        (mandato) =>
-          `${prefeito.Person?.Name ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})` ===
-          valorDropdown,
+    const mayor = mayors.filter((mayor) => {
+      const terms = mayor.Terms?.filter(
+        (term) =>
+          `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})` ===
+          dropdownValue,
       );
-      return mandatos != null && mandatos.length > 0;
+      return terms != null && terms.length > 0;
     })[0];
 
-    const mandato = prefeito.Mandatos?.filter(
-      (mandato) =>
-        `${prefeito.Person?.Name ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})` ===
-        valorDropdown,
+    const term = mayor.Terms?.filter(
+      (term) =>
+        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})` ===
+        dropdownValue,
     )[0];
 
-    const anoInicio = getYear(mandato?.DataInicio);
-    const anoFim = getYear(mandato?.DataFim);
+    const anoInicio = getYear(term?.DataInicio);
+    const anoFim = getYear(term?.DataFim);
 
     const anosIntern: number[] = [];
     for (let i = anoInicio as number; i <= (anoFim as number); i++) {
       anosIntern.push(i);
     }
-    setarAnos({
-      prefeito: prefeito.Person?.Name ?? 'Desconhecida',
-      anos: anosIntern,
+    setYears({
+      mayor: mayor.Person?.Name ?? 'Desconhecida',
+      years: anosIntern,
     });
-  }, [valorDropdown]);
+  }, [dropdownValue]);
 
   return (
     <ScrollView
       style={{ width: '100%', paddingTop: 12, paddingHorizontal: 12 }}
     >
-      <Dropdown value={valorDropdown} setValue={setarDropdown} items={items} />
+      <Dropdown value={dropdownValue} setValue={setDropdown} items={items} />
       <View>
-        <Block obras={obras} anos={anos.anos} />
+        <Block heritages={heritages} years={years.years} />
       </View>
       <View style={{ paddingTop: 12 }}>
-        <Network obras={obras} anos={anos.anos} prefeito={anos.prefeito} />
+        <Network
+          heritages={heritages}
+          years={years.years}
+          mayor={years.mayor}
+        />
       </View>
       <View style={{ paddingTop: 12 }}>
-        <Sankey obras={obras} anos={anos.anos} prefeito={anos.prefeito} />
+        <Sankey heritages={heritages} years={years.years} mayor={years.mayor} />
       </View>
     </ScrollView>
   );

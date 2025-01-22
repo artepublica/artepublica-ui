@@ -2,15 +2,14 @@ import { useLocalSearchParams } from 'expo-router';
 import { Platform, View } from 'react-native';
 
 import { Image, Text } from '@base-components';
-import { TipologiaTheme, useTheme } from '@utils';
-import obrasRecorte from '@utils/analises/obrasRecorte';
+import { thesisHeritages, TipologiaTheme, useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
 
 function HeritageDetail(): JSX.Element {
   const { theme } = useTheme();
   const { heritage: id } = useLocalSearchParams<{ heritage: string }>();
 
-  const heritage = obrasRecorte.find(
+  const heritage = thesisHeritages.find(
     (heritage) => heritage.ID?.toString() === id,
   );
 
@@ -74,8 +73,9 @@ function HeritageDetail(): JSX.Element {
               lineHeight: 18,
             }}
           >
-            {heritage?.Autores?.map((autor) => autor.Person?.Name).join(', ') ??
-              'Desconhecida'}
+            {heritage?.Authors?.map((author) => author.Person?.Name).join(
+              ', ',
+            ) ?? 'Desconhecida'}
           </Text>
           <Text
             style={{

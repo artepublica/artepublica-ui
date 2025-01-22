@@ -4,7 +4,7 @@ import Person from './person';
 type Mayor = {
   ID?: number;
   Person?: Person;
-  Mandatos?: MayorTerm[];
+  Terms?: MayorTerm[];
 };
 
 export default Mayor;

@@ -3,7 +3,7 @@ import Mayor from '../../domain/mayor';
 
 export const MarceloCrivella: Mayor = {
   Person: persons.MarceloCrivella,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'PMDB- Partido do Movimento Democrático Brasileiro',
@@ -15,7 +15,7 @@ export const MarceloCrivella: Mayor = {
 
 export const EduardoPaes: Mayor = {
   Person: persons.EduardoPaes,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'PMDB- Partido do Movimento Democrático Brasileiro',
@@ -33,7 +33,7 @@ export const EduardoPaes: Mayor = {
 
 export const LuizPauloConde: Mayor = {
   Person: persons.LuizPauloFernandezConde,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'PFL- Partido da Frente Liberal',
@@ -45,7 +45,7 @@ export const LuizPauloConde: Mayor = {
 
 export const CesarEpitacioMaia: Mayor = {
   Person: persons.CesarEpitacioMaia,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'PMDB - Partido do Movimento Democrático Brasileiro',
@@ -69,7 +69,7 @@ export const CesarEpitacioMaia: Mayor = {
 
 export const RobertoSaturninoBraga: Mayor = {
   Person: persons.RobertoSaturninoBraga,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'PDT- Partido Democrático Trabalhista',
@@ -81,7 +81,7 @@ export const RobertoSaturninoBraga: Mayor = {
 
 export const MarceloNunesDeAllencar: Mayor = {
   Person: persons.MarceloNunesDeAllencar,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'PDT- Partido Democrático Trabalhista',
@@ -99,7 +99,7 @@ export const MarceloNunesDeAllencar: Mayor = {
 
 export const JamilHaddad: Mayor = {
   Person: persons.JamilHaddad,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'PDT- Partido Democrático Trabalhista',
@@ -111,7 +111,7 @@ export const JamilHaddad: Mayor = {
 
 export const JulioDeMoraesCoutinho: Mayor = {
   Person: persons.JulioDeMoraesCoutinho,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'PMDB- Partido do Movimento Democrático Brasileiro',
@@ -123,7 +123,7 @@ export const JulioDeMoraesCoutinho: Mayor = {
 
 export const IsraelKlabin: Mayor = {
   Person: persons.IsraelKlabin,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'MDB- Movimento Democrático Brasileiro',
@@ -135,7 +135,7 @@ export const IsraelKlabin: Mayor = {
 
 export const MarcosTamoyo: Mayor = {
   Person: persons.MarcosTamoyo,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'ARENA- Aliança Renovadora Nacional',
@@ -147,7 +147,7 @@ export const MarcosTamoyo: Mayor = {
 
 export const AntonioChagasFreitas: Mayor = {
   Person: persons.AntonioChagasFreitas,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'MDB- Movimento Democrático Brasileiro',
@@ -159,7 +159,7 @@ export const AntonioChagasFreitas: Mayor = {
 
 export const RaphaelMagalhaes: Mayor = {
   Person: persons.RaphaelMagalhaes,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'UDN- União Democrática Nacional',
@@ -171,7 +171,7 @@ export const RaphaelMagalhaes: Mayor = {
 
 export const CarlosLacerda: Mayor = {
   Person: persons.CarlosLacerda,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'UDN- União Democrática Nacional',
@@ -183,7 +183,7 @@ export const CarlosLacerda: Mayor = {
 
 export const JoseSetteCamaraFilho: Mayor = {
   Person: persons.JoseSetteCamaraFilho,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
       Partido: 'PSD- Partido Social Democratico',
@@ -195,10 +195,9 @@ export const JoseSetteCamaraFilho: Mayor = {
 
 export const JoseJoaquimDeSaFreireAlvim: Mayor = {
   Person: persons.JoseJoaquimDeSaFreireAlvim,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1958`,
       DataFim: `1960`,
     },
@@ -207,10 +206,9 @@ export const JoseJoaquimDeSaFreireAlvim: Mayor = {
 
 export const FranciscoNegraoDeLima: Mayor = {
   Person: persons.FranciscoNegraoDeLima,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1956`,
       DataFim: `1958`,
     },
@@ -225,10 +223,9 @@ export const FranciscoNegraoDeLima: Mayor = {
 
 export const FranciscoDeSaLessa: Mayor = {
   Person: persons.FranciscoDeSaLessa,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1955`,
       DataFim: `1956`,
     },
@@ -237,10 +234,9 @@ export const FranciscoDeSaLessa: Mayor = {
 
 export const EitelDeOliveiraLima: Mayor = {
   Person: persons.EitelDeOliveiraLima,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1955`,
       DataFim: `1955`,
     },
@@ -249,10 +245,9 @@ export const EitelDeOliveiraLima: Mayor = {
 
 export const AlimPedro: Mayor = {
   Person: persons.AlimPedro,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1954`,
       DataFim: `1955`,
     },
@@ -261,10 +256,9 @@ export const AlimPedro: Mayor = {
 
 export const DulcidioDoEspiritoSantoCardoso: Mayor = {
   Person: persons.DulcidioDoEspiritoSantoCardoso,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1952`,
       DataFim: `1954`,
     },
@@ -273,10 +267,9 @@ export const DulcidioDoEspiritoSantoCardoso: Mayor = {
 
 export const JoaoCarlosVital: Mayor = {
   Person: persons.JoaoCarlosVital,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1951`,
       DataFim: `1952`,
     },
@@ -285,10 +278,9 @@ export const JoaoCarlosVital: Mayor = {
 
 export const AngeloMendesDeMorais: Mayor = {
   Person: persons.AngeloMendesDeMorais,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1947`,
       DataFim: `1951`,
     },
@@ -297,10 +289,9 @@ export const AngeloMendesDeMorais: Mayor = {
 
 export const HildebrandoDeAraujoGois: Mayor = {
   Person: persons.HildebrandoDeAraujoGois,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1946`,
       DataFim: `1947`,
     },
@@ -309,10 +300,9 @@ export const HildebrandoDeAraujoGois: Mayor = {
 
 export const JoseFiladelfoDeBarrosAzevedo: Mayor = {
   Person: persons.JoseFiladelfoDeBarrosAzevedo,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1945`,
       DataFim: `1946`,
     },
@@ -321,10 +311,9 @@ export const JoseFiladelfoDeBarrosAzevedo: Mayor = {
 
 export const HenriqueDodsworth: Mayor = {
   Person: persons.HenriqueDodsworth,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1937`,
       DataFim: `1945`,
     },
@@ -333,10 +322,9 @@ export const HenriqueDodsworth: Mayor = {
 
 export const OlimpioDeMelo: Mayor = {
   Person: persons.OlimpioDeMelo,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1936`,
       DataFim: `1937`,
     },
@@ -345,10 +333,9 @@ export const OlimpioDeMelo: Mayor = {
 
 export const AugustoDoAmaralPeixoto: Mayor = {
   Person: persons.AugustoDoAmaralPeixoto,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1934`,
       DataFim: `1935`,
     },
@@ -357,16 +344,14 @@ export const AugustoDoAmaralPeixoto: Mayor = {
 
 export const PedroErnestoBaptista: Mayor = {
   Person: persons.PedroErnestoBaptista,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1931`,
       DataFim: `1934`,
     },
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1935`,
       DataFim: `1936`,
     },
@@ -375,10 +360,9 @@ export const PedroErnestoBaptista: Mayor = {
 
 export const JuliaoEsteves: Mayor = {
   Person: persons.JuliaoEsteves,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1931`,
       DataFim: `1931`,
     },
@@ -387,10 +371,9 @@ export const JuliaoEsteves: Mayor = {
 
 export const AdolfoBergamini: Mayor = {
   Person: persons.AdolfoBergamini,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1930`,
       DataFim: `1931`,
     },
@@ -399,10 +382,9 @@ export const AdolfoBergamini: Mayor = {
 
 export const AntonioDaSilvaPradoJunior: Mayor = {
   Person: persons.AntonioDaSilvaPradoJunior,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1926`,
       DataFim: `1930`,
     },
@@ -411,10 +393,9 @@ export const AntonioDaSilvaPradoJunior: Mayor = {
 
 export const AlaorPrata: Mayor = {
   Person: persons.AlaorPrata,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1922`,
       DataFim: `1926`,
     },
@@ -423,10 +404,9 @@ export const AlaorPrata: Mayor = {
 
 export const CarlosSampaio: Mayor = {
   Person: persons.CarlosSampaio,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1920`,
       DataFim: `1922`,
     },
@@ -435,10 +415,9 @@ export const CarlosSampaio: Mayor = {
 
 export const MilciadesMariaDeSaFreire: Mayor = {
   Person: persons.MilciadesMariaDeSaFreire,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1919`,
       DataFim: `1920`,
     },
@@ -447,10 +426,9 @@ export const MilciadesMariaDeSaFreire: Mayor = {
 
 export const PauloDeFrontin: Mayor = {
   Person: persons.PauloDeFrontin,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1919`,
       DataFim: `1919`,
     },
@@ -459,10 +437,9 @@ export const PauloDeFrontin: Mayor = {
 
 export const PeregrinoDaSilva: Mayor = {
   Person: persons.PeregrinoDaSilva,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1918`,
       DataFim: `1919`,
     },
@@ -471,10 +448,9 @@ export const PeregrinoDaSilva: Mayor = {
 
 export const AmaroCavalcanti: Mayor = {
   Person: persons.AmaroCavalcanti,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1917`,
       DataFim: `1918`,
     },
@@ -483,10 +459,9 @@ export const AmaroCavalcanti: Mayor = {
 
 export const AntonioAugustoDeAzevedoSodre: Mayor = {
   Person: persons.AntonioAugustoDeAzevedoSodre,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1916`,
       DataFim: `1917`,
     },
@@ -495,10 +470,9 @@ export const AntonioAugustoDeAzevedoSodre: Mayor = {
 
 export const RivadaviaDaCunhaCorreia: Mayor = {
   Person: persons.RivadaviaDaCunhaCorreia,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1914`,
       DataFim: `1916`,
     },
@@ -507,10 +481,9 @@ export const RivadaviaDaCunhaCorreia: Mayor = {
 
 export const BentoRibeiro: Mayor = {
   Person: persons.BentoRibeiro,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1910`,
       DataFim: `1914`,
     },
@@ -519,10 +492,9 @@ export const BentoRibeiro: Mayor = {
 
 export const SerzedeloCorreia: Mayor = {
   Person: persons.SerzedeloCorreia,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1906`,
       DataFim: `1909`,
     },
@@ -531,10 +503,9 @@ export const SerzedeloCorreia: Mayor = {
 
 export const FranciscoMarcelinoDeSousaAguiar: Mayor = {
   Person: persons.FranciscoMarcelinoDeSousaAguiar,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1906`,
       DataFim: `1909`,
     },
@@ -543,10 +514,9 @@ export const FranciscoMarcelinoDeSousaAguiar: Mayor = {
 
 export const FranciscoPereiraPassos: Mayor = {
   Person: persons.FranciscoPereiraPassos,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1902`,
       DataFim: `1906`,
     },
@@ -555,10 +525,9 @@ export const FranciscoPereiraPassos: Mayor = {
 
 export const CarlosLeiteRibeiro: Mayor = {
   Person: persons.CarlosLeiteRibeiro,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1902`,
       DataFim: `1902`,
     },
@@ -567,10 +536,9 @@ export const CarlosLeiteRibeiro: Mayor = {
 
 export const JoaquimXavierDaSilveiraJunior: Mayor = {
   Person: persons.JoaquimXavierDaSilveiraJunior,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1901`,
       DataFim: `1902`,
     },
@@ -579,10 +547,9 @@ export const JoaquimXavierDaSilveiraJunior: Mayor = {
 
 export const JoaoFilipePereira: Mayor = {
   Person: persons.JoaoFilipePereira,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1900`,
       DataFim: `1901`,
     },
@@ -591,10 +558,9 @@ export const JoaoFilipePereira: Mayor = {
 
 export const AntonioCoelhoRodrigues: Mayor = {
   Person: persons.AntonioCoelhoRodrigues,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1900`,
       DataFim: `1900`,
     },
@@ -603,10 +569,9 @@ export const AntonioCoelhoRodrigues: Mayor = {
 
 export const HonorioGurgel: Mayor = {
   Person: persons.HonorioGurgel,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1899`,
       DataFim: `1900`,
     },
@@ -615,10 +580,9 @@ export const HonorioGurgel: Mayor = {
 
 export const CesarioAlvim: Mayor = {
   Person: persons.CesarioAlvim,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1898`,
       DataFim: `1899`,
     },
@@ -627,10 +591,9 @@ export const CesarioAlvim: Mayor = {
 
 export const LuisVanErven: Mayor = {
   Person: persons.LuisVanErven,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1898`,
       DataFim: `1898`,
     },
@@ -639,10 +602,9 @@ export const LuisVanErven: Mayor = {
 
 export const JoseJoaquimDaRosa: Mayor = {
   Person: persons.JoseJoaquimDaRosa,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1897`,
       DataFim: `1897`,
     },
@@ -651,10 +613,9 @@ export const JoseJoaquimDaRosa: Mayor = {
 
 export const FranciscoFurquimWerneckDeAlmeida: Mayor = {
   Person: persons.FranciscoFurquimWerneckDeAlmeida,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1895`,
       DataFim: `1897`,
     },
@@ -663,10 +624,9 @@ export const FranciscoFurquimWerneckDeAlmeida: Mayor = {
 
 export const HenriqueValadares: Mayor = {
   Person: persons.HenriqueValadares,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1893`,
       DataFim: `1895`,
     },
@@ -675,10 +635,9 @@ export const HenriqueValadares: Mayor = {
 
 export const AntonioDiasFerreira: Mayor = {
   Person: persons.AntonioDiasFerreira,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1893`,
       DataFim: `1893`,
     },
@@ -687,10 +646,9 @@ export const AntonioDiasFerreira: Mayor = {
 
 export const BarataRibeiro: Mayor = {
   Person: persons.BarataRibeiro,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1892`,
       DataFim: `1893`,
     },
@@ -699,10 +657,9 @@ export const BarataRibeiro: Mayor = {
 
 export const AlfredoAugustoVieiraBarcelos: Mayor = {
   Person: persons.AlfredoAugustoVieiraBarcelos,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1892`,
       DataFim: `1892`,
     },
@@ -711,10 +668,9 @@ export const AlfredoAugustoVieiraBarcelos: Mayor = {
 
 export const NicolauJoaquimMoreira: Mayor = {
   Person: persons.NicolauJoaquimMoreira,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1891`,
       DataFim: `1892`,
     },
@@ -723,10 +679,9 @@ export const NicolauJoaquimMoreira: Mayor = {
 
 export const CarneiroDeFontoura: Mayor = {
   Person: persons.CarneiroDeFontoura,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1891`,
       DataFim: `1891`,
     },
@@ -735,10 +690,9 @@ export const CarneiroDeFontoura: Mayor = {
 
 export const JoseFelixDaCunhaMeneses: Mayor = {
   Person: persons.JoseFelixDaCunhaMeneses,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1890`,
       DataFim: `1891`,
     },
@@ -747,16 +701,14 @@ export const JoseFelixDaCunhaMeneses: Mayor = {
 
 export const UbaldinoDoAmaral: Mayor = {
   Person: persons.UbaldinoDoAmaral,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1890`,
       DataFim: `1890`,
     },
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1897`,
       DataFim: `1898`,
     },
@@ -765,10 +717,9 @@ export const UbaldinoDoAmaral: Mayor = {
 
 export const FranciscoAntonioPessoaDeBarros: Mayor = {
   Person: persons.FranciscoAntonioPessoaDeBarros,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1889`,
       DataFim: `1890`,
     },
@@ -777,10 +728,9 @@ export const FranciscoAntonioPessoaDeBarros: Mayor = {
 
 export const JoaoManuelDaSilvaVeiga: Mayor = {
   Person: persons.JoaoManuelDaSilvaVeiga,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1888`,
       DataFim: `1889`,
     },
@@ -789,10 +739,9 @@ export const JoaoManuelDaSilvaVeiga: Mayor = {
 
 export const AugustoNunesDeLima: Mayor = {
   Person: persons.AugustoNunesDeLima,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1887`,
       DataFim: `1888`,
     },
@@ -801,10 +750,9 @@ export const AugustoNunesDeLima: Mayor = {
 
 export const JoaoPereiraLopes: Mayor = {
   Person: persons.JoaoPereiraLopes,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1887`,
       DataFim: `1887`,
     },
@@ -813,10 +761,9 @@ export const JoaoPereiraLopes: Mayor = {
 
 export const JoaoPedroDeMiranda: Mayor = {
   Person: persons.JoaoPedroDeMiranda,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1884`,
       DataFim: `1887`,
     },
@@ -825,16 +772,14 @@ export const JoaoPedroDeMiranda: Mayor = {
 
 export const JoseFerreiraNobre: Mayor = {
   Person: persons.JoseFerreiraNobre,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1881`,
       DataFim: `1884`,
     },
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1889`,
       DataFim: `1889`,
     },
@@ -843,10 +788,9 @@ export const JoseFerreiraNobre: Mayor = {
 
 export const AntonioBarrosoPereira: Mayor = {
   Person: persons.AntonioBarrosoPereira,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1873`,
       DataFim: `1877`,
     },
@@ -855,10 +799,9 @@ export const AntonioBarrosoPereira: Mayor = {
 
 export const AntonioFerreiraViana: Mayor = {
   Person: persons.AntonioFerreiraViana,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1869`,
       DataFim: `1873`,
     },
@@ -867,16 +810,14 @@ export const AntonioFerreiraViana: Mayor = {
 
 export const AdolfoBezerraDeMenezes: Mayor = {
   Person: persons.AdolfoBezerraDeMenezes,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1868`,
       DataFim: `1869`,
     },
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1877`,
       DataFim: `1881`,
     },
@@ -885,10 +826,9 @@ export const AdolfoBezerraDeMenezes: Mayor = {
 
 export const JoaoBatistaDosSantos: Mayor = {
   Person: persons.JoaoBatistaDosSantos,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1865`,
       DataFim: `1868`,
     },
@@ -897,10 +837,9 @@ export const JoaoBatistaDosSantos: Mayor = {
 
 export const JoaoJoseDaCunhaTeles: Mayor = {
   Person: persons.JoaoJoseDaCunhaTeles,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1861`,
       DataFim: `1865`,
     },
@@ -909,10 +848,9 @@ export const JoaoJoseDaCunhaTeles: Mayor = {
 
 export const JoãoDeOliveiraFausto: Mayor = {
   Person: persons.JoãoDeOliveiraFausto,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1857`,
       DataFim: `1860`,
     },
@@ -921,10 +859,9 @@ export const JoãoDeOliveiraFausto: Mayor = {
 
 export const MiguelDeFriasEVasconcelos: Mayor = {
   Person: persons.MiguelDeFriasEVasconcelos,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1853`,
       DataFim: `1856`,
     },
@@ -933,10 +870,9 @@ export const MiguelDeFriasEVasconcelos: Mayor = {
 
 export const CandidoBorges: Mayor = {
   Person: persons.CandidoBorges,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1851`,
       DataFim: `1852`,
     },
@@ -945,10 +881,9 @@ export const CandidoBorges: Mayor = {
 
 export const GabrielGetúlioMonteiroDeMendonça: Mayor = {
   Person: persons.GabrielGetúlioMonteiroDeMendonça,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1849`,
       DataFim: `1850`,
     },
@@ -957,10 +892,9 @@ export const GabrielGetúlioMonteiroDeMendonça: Mayor = {
 
 export const JoãoSilveiraDePilar: Mayor = {
   Person: persons.JoãoSilveiraDePilar,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1845`,
       DataFim: `1848`,
     },
@@ -969,10 +903,9 @@ export const JoãoSilveiraDePilar: Mayor = {
 
 export const LuisDeMenezesVasconcelosDeDrummond: Mayor = {
   Person: persons.LuisDeMenezesVasconcelosDeDrummond,
-  Mandatos: [
+  Terms: [
     {
       Cidade: `Rio de Janeiro`,
-      Partido: undefined,
       DataInicio: `1840`,
       DataFim: `1844`,
     },

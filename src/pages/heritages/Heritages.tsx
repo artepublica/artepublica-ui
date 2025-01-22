@@ -6,7 +6,7 @@ import { Image, Text } from '@base-components';
 import { Obra } from '@domain';
 import { TipologiaTheme, useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
-import * as obra_artepublica from '@utils/data/obra_artepublica';
+import * as obra_artepublica from '@utils/data/thesisHeritages';
 
 import styles from './styles';
 
@@ -281,8 +281,8 @@ function Heritages(): JSX.Element {
                                 lineHeight: 13,
                               }}
                             >
-                              {heritage.Autores?.map(
-                                (autor) => autor.Person?.Name,
+                              {heritage.Authors?.map(
+                                (author) => author.Person?.Name,
                               ).join(', ') ?? 'Desconhecida'}
                             </Text>
                             <Text

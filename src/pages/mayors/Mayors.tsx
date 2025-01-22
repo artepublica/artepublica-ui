@@ -14,11 +14,11 @@ import reduceListOfList from '@utils/list/reduce-list-of-list';
 
 import styles from './styles';
 function Block({
-  obras,
-  mandatos,
+  heritages,
+  terms,
 }: {
-  obras: Obra[];
-  mandatos: string[];
+  heritages: Obra[];
+  terms: string[];
 }): JSX.Element {
   const { theme } = useTheme();
   const { width, height } = useWindowDimensions();
@@ -27,61 +27,63 @@ function Block({
   const typedMayors: Record<string, Mayor> = mayorsTerms;
 
   const mayors = Object.keys(typedMayors).map((key) => typedMayors[key]);
-  const selectedMayors = mayors.filter((prefeito) => {
-    const mandatosIntern = prefeito.Mandatos?.filter((mandato) =>
-      mandatos.includes(
-        `${prefeito.Person?.Name ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})`,
+  const selectedMayors = mayors.filter((mayor) => {
+    const termsIntern = mayor.Terms?.filter((term) =>
+      terms.includes(
+        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})`,
       ),
     );
-    return mandatosIntern != null && mandatosIntern.length > 0;
+    return termsIntern != null && termsIntern.length > 0;
   });
 
   const selectedTermsYears: number[] = [];
-  selectedMayors.forEach((prefeito) => {
-    const mandatosSelecionados = prefeito.Mandatos?.filter((mandato) =>
-      mandatos.includes(
-        `${prefeito.Person?.Name ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})`,
+  selectedMayors.forEach((mayor) => {
+    const selectedTerms = mayor.Terms?.filter((term) =>
+      terms.includes(
+        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})`,
       ),
     );
 
-    mandatosSelecionados?.forEach((mandato) => {
-      const anoInicio = getYear(mandato?.DataInicio);
-      const anoFim = getYear(mandato?.DataFim);
+    selectedTerms?.forEach((term) => {
+      const startYear = getYear(term?.DataInicio);
+      const endYear = getYear(term?.DataFim);
 
-      for (let i = anoInicio as number; i <= (anoFim as number); i++) {
+      for (let i = startYear as number; i <= (endYear as number); i++) {
         selectedTermsYears.push(i);
       }
     });
   });
-  const anosSelecionados = selectedTermsYears
+  const selectedYears = selectedTermsYears
     .sort((a, b) => (a > b ? 1 : -1))
-    .reduce<number[]>((resultado, anoSelecionado, index) => {
+    .reduce<number[]>((result, selectedYear, index) => {
       if (
         index === 0 ||
         index === selectedTermsYears.length - 1 ||
-        selectedTermsYears[index + 1] === anoSelecionado + 1
+        selectedTermsYears[index + 1] === selectedYear + 1
       ) {
-        resultado.push(anoSelecionado);
+        result.push(selectedYear);
       } else {
-        for (let i = anoSelecionado; i < selectedTermsYears[index + 1]; i++) {
-          resultado.push(i);
+        for (let i = selectedYear; i < selectedTermsYears[index + 1]; i++) {
+          result.push(i);
         }
       }
-      return resultado;
+      return result;
     }, []);
 
-  const obras_por_ano = obras
-    .reduce<{ year: number; obras: Obra[] }[]>((result, obra) => {
-      const year = getYear(obra.DataInauguracao);
-      if (year != null && anosSelecionados.includes(year)) {
+  const heritagePerYear = heritages
+    .reduce<{ year: number; heritages: Obra[] }[]>((result, heritage) => {
+      const year = getYear(heritage.DataInauguracao);
+      if (year != null && selectedYears.includes(year)) {
         const y = result.find((t) => t.year === year);
 
         if (y == null) {
           result.push({
             year,
-            obras: obras
-              .filter((obraInt) => getYear(obraInt.DataInauguracao) === year)
-              .map((obraInt) => obraInt),
+            heritages: heritages
+              .filter(
+                (_heritage) => getYear(_heritage.DataInauguracao) === year,
+              )
+              .map((_heritage) => _heritage),
           });
         }
       }
@@ -92,45 +94,44 @@ function Block({
 
   const totalMayors = selectedMayors.reduce<
     { type: string; name: string; data: (number | null)[]; color?: string }[]
-  >((series, prefeito, index) => {
-    const mandatosSelecionados = prefeito.Mandatos?.filter((mandato) =>
-      mandatos.includes(
-        `${prefeito.Person?.Name ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})`,
+  >((series, mayor, index) => {
+    const selectedTerms = mayor.Terms?.filter((term) =>
+      terms.includes(
+        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})`,
       ),
     );
 
-    const total_prefeito: (number | null)[] = [];
+    const mayorTotal: (number | null)[] = [];
 
-    anosSelecionados.forEach((anoSelecionado) => {
-      let anoAchado = false;
-      mandatosSelecionados?.forEach((mandato) => {
-        const anoInicio = getYear(mandato?.DataInicio);
-        const anoFim = getYear(mandato?.DataFim);
+    selectedYears.forEach((selectedYear) => {
+      let foundYear = false;
+      selectedTerms?.forEach((term) => {
+        const startYear = getYear(term?.DataInicio);
+        const endYear = getYear(term?.DataFim);
 
         if (
-          (anoInicio ?? 0) <= anoSelecionado &&
-          (anoFim ?? 0) >= anoSelecionado
+          (startYear ?? 0) <= selectedYear &&
+          (endYear ?? 0) >= selectedYear
         ) {
-          //TODO possivel aqui
-          const obrasAno = obras_por_ano.filter((obra_ano) => {
-            return obra_ano.year === anoSelecionado;
+          const yearHeritages = heritagePerYear.filter((yearHeritages) => {
+            return yearHeritages.year === selectedYear;
           });
-          total_prefeito.push(
-            obrasAno.length > 0 ? obrasAno[0].obras.length : null,
+          mayorTotal.push(
+            yearHeritages.length > 0 ? yearHeritages[0].heritages.length : null,
           );
-          anoAchado = true;
+          foundYear = true;
         }
       });
 
-      if (!anoAchado) {
-        total_prefeito.push(null);
+      if (!foundYear) {
+        mayorTotal.push(null);
       }
     });
 
     series.push({
       type: 'column',
-      name: prefeito.Person?.Name ?? 'Desconhecida',
-      data: total_prefeito,
+      name: mayor.Person?.Name ?? 'Desconhecida',
+      data: mayorTotal,
       color: theme.coresGrafico[index],
     });
 
@@ -164,7 +165,7 @@ function Block({
       },
     },
     xAxis: {
-      categories: anosSelecionados.map((ano) => ano.toString()),
+      categories: selectedYears.map((ano) => ano.toString()),
       labels: {
         style: { color: theme.text.textColor },
       },
@@ -194,46 +195,46 @@ function Block({
   return <Chart options={lineOptions} />;
 }
 
-function Mayors({ obras }: { obras: Obra[] }): JSX.Element {
+function Mayors({ heritages }: { heritages: Obra[] }): JSX.Element {
   const style = styles();
   const typedMayors: Record<string, Mayor> = mayorsTerms;
 
   const items = Object.keys(typedMayors)
     .map((key) => typedMayors[key])
     .sort((a, b) => {
-      const aPrimeiroMantado = a.Mandatos?.sort((aM, bM) =>
+      const aFirstTerm = a.Terms?.sort((aM, bM) =>
         (getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
       )[0];
-      const bPrimeiroMantado = b.Mandatos?.sort((aM, bM) =>
+      const bFirstTerm = b.Terms?.sort((aM, bM) =>
         (getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
       )[0];
 
-      return (getYear(aPrimeiroMantado?.DataInicio) ?? 0) <
-        (getYear(bPrimeiroMantado?.DataInicio) ?? 0)
+      return (getYear(aFirstTerm?.DataInicio) ?? 0) <
+        (getYear(bFirstTerm?.DataInicio) ?? 0)
         ? 1
         : -1;
     })
-    .map((prefeito) => {
-      const mandatos = prefeito.Mandatos?.sort((aM, bM) =>
+    .map((mayor) => {
+      const terms = mayor.Terms?.sort((aM, bM) =>
         (getYear(aM.DataInicio) ?? 0) > (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
-      ).map((mandato) => ({
-        label: `${mandato.DataInicio} - ${mandato.DataFim}`,
-        value: `${prefeito.Person?.Name ?? 'Desconhecida'} (${getYear(mandato.DataInicio)} - ${getYear(mandato.DataFim)})`,
-        parent: prefeito.Person?.Name ?? 'Desconhecida',
+      ).map((term) => ({
+        label: `${term.DataInicio} - ${term.DataFim}`,
+        value: `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})`,
+        parent: mayor.Person?.Name ?? 'Desconhecida',
       }));
 
       return [
         {
-          label: prefeito.Person?.Name ?? 'Desconhecida',
-          value: prefeito.Person?.Name ?? 'Desconhecida',
+          label: mayor.Person?.Name ?? 'Desconhecida',
+          value: mayor.Person?.Name ?? 'Desconhecida',
           selectable: false,
         },
-        ...(mandatos ?? []),
+        ...(terms ?? []),
       ];
     })
     .reduce(reduceListOfList);
 
-  const [valorDropdown, setarDropdown] = useState([
+  const [dropdownValue, setDropdown] = useState([
     'Cesar Epitácio Maia (1993 - 1996)',
     'Luiz Paulo Fernandez Conde (1997 - 2000)',
     'Marcelo Nunes de Allencar (1989 - 1992)',
@@ -242,13 +243,13 @@ function Mayors({ obras }: { obras: Obra[] }): JSX.Element {
   return (
     <ScrollView style={style.container}>
       <Dropdown
-        value={valorDropdown}
-        setValue={setarDropdown}
+        value={dropdownValue}
+        setValue={setDropdown}
         items={items}
         multiple
       />
       <View>
-        <Block obras={obras} mandatos={valorDropdown} />
+        <Block heritages={heritages} terms={dropdownValue} />
       </View>
     </ScrollView>
   );

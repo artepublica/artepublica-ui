@@ -14,7 +14,7 @@ function HeritageAuthorTypologyNetwork(): JSX.Element {
       </Head>
       <View style={styles.container}>
         <HeritageAuthorTypologyNetworkPage
-          type='Autores'
+          type='Authors'
           types={autoresRecorte}
         />
       </View>

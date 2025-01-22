@@ -1,8 +1,8 @@
 import { Obra } from '@domain';
 
-import obrasRecorte from './obrasRecorte';
+import thesisHeritages from './thesisHeritages';
 
-const nomesTipologiasRecorte: string[] = obrasRecorte
+const nomesTipologiasRecorte: string[] = thesisHeritages
   .map((obra) => obra.Tipologia ?? 'Desconhecida')
   .reduce<string[]>((tipologias, tipologia) => {
     if (!tipologias.includes(tipologia)) {
@@ -16,7 +16,7 @@ const tipologiasRecorte: { name: string; heritages: Obra[] }[] =
     function (total, tipologia) {
       total.push({
         name: tipologia,
-        heritages: obrasRecorte.filter(
+        heritages: thesisHeritages.filter(
           (obra) =>
             obra.Tipologia === tipologia ||
             (obra.Tipologia == null && tipologia === 'Desconhecida'),
