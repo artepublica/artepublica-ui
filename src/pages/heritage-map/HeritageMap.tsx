@@ -1,10 +1,10 @@
 import { Map } from '@base-components';
-import { Obra } from '@domain';
+import { Heritage } from '@domain';
 import { TypologyTheme, useTheme } from '@utils';
 
 type HeritageMapProps = {
   type: string;
-  types: { name: string; heritages: Obra[] }[];
+  types: { name: string; heritages: Heritage[] }[];
 };
 
 function HeritageMap({ type, types }: HeritageMapProps): JSX.Element {

@@ -5,7 +5,7 @@ import DropDownPicker from 'react-native-dropdown-picker';
 import { ScrollView } from 'react-native-gesture-handler';
 
 import { Table, Text } from '@base-components';
-import { Author, Obra } from '@domain';
+import { Author, Heritage } from '@domain';
 import { useTheme } from '@utils';
 
 import * as heritagePerDecade from './heritagePerDecade';
@@ -23,27 +23,28 @@ function Decades(): JSX.Element {
   const [items, setItems] = useState(allYears);
   const { theme } = useTheme();
 
-  const typed_analysis_list_utils: Record<string, Obra[]> = heritagePerDecade;
+  const typed_analysis_list_utils: Record<string, Heritage[]> =
+    heritagePerDecade;
 
   const selectedDecadeHeritages = typed_analysis_list_utils[`all${year}`];
 
   if (selectedDecadeHeritages.length > 0) {
     const selectedDecadeTypologies: string[] = selectedDecadeHeritages.map(
-      (obra) => obra.Typology ?? 'Desconhecida',
+      (heritage) => heritage.Typology ?? 'Desconhecida',
     );
     const selectedDecadeNatures: string[] = selectedDecadeHeritages.map(
-      (obra) => obra.Natureza ?? 'Desconhecida',
+      (heritage) => heritage.Nature ?? 'Desconhecida',
     );
-    const selectedDecadeZones: string[] = selectedDecadeHeritages.map(
-      (obra) => obra.Zona ?? 'Desconhecida',
+    const selectedDecadeAreas: string[] = selectedDecadeHeritages.map(
+      (heritage) => heritage.Area ?? 'Desconhecida',
     );
     const selectedDecadeStatus: string[] = selectedDecadeHeritages.map(
-      (obra) => obra.Status ?? 'Desconhecida',
+      (heritage) => heritage.Status ?? 'Desconhecida',
     );
     const selectedDecadeAuthors: string[] = selectedDecadeHeritages
       .map(
-        (obra) =>
-          obra.Authors ?? [{ Person: { Name: 'Desconhecida' } } as Author],
+        (heritage) =>
+          heritage.Authors ?? [{ Person: { Name: 'Desconhecida' } } as Author],
       )
       .reduce<string[]>((r, l) => {
         Array.prototype.push.apply(
@@ -53,127 +54,130 @@ function Decades(): JSX.Element {
         return r;
       }, []);
 
-    const selectedDecadeTypologyTotal: { nome: string; obras: Obra[] }[] =
-      selectedDecadeTypologies
-        .reduce<{ nome: string; obras: Obra[] }[]>(function (r, a) {
-          const r_top = r.find((top) => top.nome === a);
-          if (!r_top) {
-            r.push({
-              nome: a,
-              obras: selectedDecadeHeritages.filter(
-                (obra) =>
-                  obra.Typology === a ||
-                  (obra.Typology == null && a === 'Desconhecida'),
-              ),
-            });
-          }
-          return r;
-        }, [])
-        .sort((a, b) => a.nome.localeCompare(b.nome));
+    const selectedDecadeTypologyTotal: {
+      name: string;
+      heritages: Heritage[];
+    }[] = selectedDecadeTypologies
+      .reduce<{ name: string; heritages: Heritage[] }[]>(function (r, a) {
+        const r_top = r.find((top) => top.name === a);
+        if (!r_top) {
+          r.push({
+            name: a,
+            heritages: selectedDecadeHeritages.filter(
+              (heritage) =>
+                heritage.Typology === a ||
+                (heritage.Typology == null && a === 'Desconhecida'),
+            ),
+          });
+        }
+        return r;
+      }, [])
+      .sort((a, b) => a.name.localeCompare(b.name));
 
-    const selectedDecadeNatureTotal: { nome: string; total: number }[] =
+    const selectedDecadeNatureTotal: { name: string; total: number }[] =
       selectedDecadeNatures
-        .reduce<{ nome: string; total: number }[]>(function (r, a) {
-          const r_top = r.find((top) => top.nome === a);
+        .reduce<{ name: string; total: number }[]>(function (r, a) {
+          const r_top = r.find((top) => top.name === a);
           if (!r_top) {
             r.push({
-              nome: a,
+              name: a,
               total: selectedDecadeNatures.filter((top) => top === a).length,
             });
           }
           return r;
         }, [])
-        .sort((a, b) => a.nome.localeCompare(b.nome));
+        .sort((a, b) => a.name.localeCompare(b.name));
 
-    const selectedDecadeZoneTotal: { nome: string; total: number }[] =
-      selectedDecadeZones
-        .reduce<{ nome: string; total: number }[]>(function (r, a) {
-          const r_top = r.find((top) => top.nome === a);
+    const selectedDecadeAreaTotal: { name: string; total: number }[] =
+      selectedDecadeAreas
+        .reduce<{ name: string; total: number }[]>(function (r, a) {
+          const r_top = r.find((top) => top.name === a);
           if (!r_top) {
             r.push({
-              nome: a,
-              total: selectedDecadeZones.filter((top) => top === a).length,
+              name: a,
+              total: selectedDecadeAreas.filter((top) => top === a).length,
             });
           }
           return r;
         }, [])
-        .sort((a, b) => a.nome.localeCompare(b.nome));
+        .sort((a, b) => a.name.localeCompare(b.name));
 
     const selectedDecadeStatusTotal: {
-      nome: string;
+      name: string;
       total: number;
-      typologies: { nome: string; total: number }[];
+      typologies: { name: string; total: number }[];
     }[] = selectedDecadeStatus
       .reduce<
         {
-          nome: string;
+          name: string;
           total: number;
-          typologies: { nome: string; total: number }[];
+          typologies: { name: string; total: number }[];
         }[]
       >(function (r, a) {
-        const r_top = r.find((top) => top.nome === a);
+        const r_top = r.find((top) => top.name === a);
         if (!r_top) {
           const typologies = selectedDecadeHeritages
             .filter(
-              (obra) =>
-                obra.Status === a ||
-                (a === 'Desconhecida' && obra.Status == null),
+              (heritage) =>
+                heritage.Status === a ||
+                (a === 'Desconhecida' && heritage.Status == null),
             )
-            .map((obra) => obra.Typology ?? 'Desconhecida');
+            .map((heritage) => heritage.Typology ?? 'Desconhecida');
 
-          const typologyTotal: { nome: string; total: number }[] = typologies
-            .reduce<{ nome: string; total: number }[]>(function (r, a) {
-              const r_top = r.find((top) => top.nome === a);
+          const typologyTotal: { name: string; total: number }[] = typologies
+            .reduce<{ name: string; total: number }[]>(function (r, a) {
+              const r_top = r.find((top) => top.name === a);
               if (!r_top) {
                 r.push({
-                  nome: a,
+                  name: a,
                   total: typologies.filter((top) => top === a).length,
                 });
               }
               return r;
             }, [])
-            .sort((a, b) => a.nome.localeCompare(b.nome));
+            .sort((a, b) => a.name.localeCompare(b.name));
 
           r.push({
-            nome: a,
+            name: a,
             total: selectedDecadeStatus.filter((top) => top === a).length,
             typologies: typologyTotal,
           });
         }
         return r;
       }, [])
-      .sort((a, b) => a.nome.localeCompare(b.nome));
+      .sort((a, b) => a.name.localeCompare(b.name));
 
     const selectedDecadeAuthorTotal: {
-      nome: string;
+      name: string;
       total: number;
-      obras: string[];
+      heritages: string[];
     }[] = selectedDecadeAuthors
-      .reduce<{ nome: string; total: number; obras: string[] }[]>(function (
+      .reduce<{ name: string; total: number; heritages: string[] }[]>(function (
         r,
         a,
       ) {
-        const r_top = r.find((top) => top.nome === a);
+        const r_top = r.find((top) => top.name === a);
         if (!r_top) {
-          const obras: string[] = selectedDecadeHeritages
+          const heritages: string[] = selectedDecadeHeritages
             .filter(
-              (obra) =>
-                (obra.Authors != null &&
-                  obra.Authors?.find((author) => author.Person?.Name === a) !=
-                    null) ||
-                (a === 'Desconhecida' && obra.Authors == null),
+              (heritage) =>
+                (heritage.Authors != null &&
+                  heritage.Authors?.find(
+                    (author) => author.Person?.Name === a,
+                  ) != null) ||
+                (a === 'Desconhecida' && heritage.Authors == null),
             )
-            .map((obra) => obra.Titulo ?? 'Desconhecida');
+            .map((heritage) => heritage.Title ?? 'Desconhecida');
 
           r.push({
-            nome: a,
-            total: obras.length,
-            obras,
+            name: a,
+            total: heritages.length,
+            heritages,
           });
         }
         return r;
       }, [])
-      .sort((a, b) => a.nome.localeCompare(b.nome));
+      .sort((a, b) => a.name.localeCompare(b.name));
 
     return (
       <ScrollView
@@ -214,9 +218,11 @@ function Decades(): JSX.Element {
             'Obras',
           ]}
           rows={selectedDecadeTypologyTotal.map((top) => [
-            top.nome,
-            top.obras.length.toString(),
-            top.obras.map((obra) => obra.Titulo ?? 'Desconhecida').join(', '),
+            top.name,
+            top.heritages.length.toString(),
+            top.heritages
+              .map((heritage) => heritage.Title ?? 'Desconhecida')
+              .join(', '),
           ])}
         />
         <View style={{ height: 12 }} />
@@ -224,16 +230,16 @@ function Decades(): JSX.Element {
         <Table
           headers={['Natureza', `Total: ${selectedDecadeNatureTotal.length}`]}
           rows={selectedDecadeNatureTotal.map((top) => [
-            top.nome,
+            top.name,
             top.total.toString(),
           ])}
         />
         <View style={{ height: 12 }} />
 
         <Table
-          headers={['Zona', `Total: ${selectedDecadeZoneTotal.length}`]}
-          rows={selectedDecadeZoneTotal.map((top) => [
-            top.nome,
+          headers={['Area', `Total: ${selectedDecadeAreaTotal.length}`]}
+          rows={selectedDecadeAreaTotal.map((top) => [
+            top.name,
             top.total.toString(),
           ])}
         />
@@ -246,10 +252,10 @@ function Decades(): JSX.Element {
             'Tipologias',
           ]}
           rows={selectedDecadeStatusTotal.map((top) => [
-            top.nome,
+            top.name,
             top.total.toString(),
             top.typologies
-              .map((top) => `${top.nome} (${top.total})`)
+              .map((top) => `${top.name} (${top.total})`)
               .join(', '),
           ])}
         />
@@ -262,9 +268,9 @@ function Decades(): JSX.Element {
             'Obras',
           ]}
           rows={selectedDecadeAuthorTotal.map((top) => [
-            top.nome,
+            top.name,
             top.total.toString(),
-            top.obras.join(', '),
+            top.heritages.join(', '),
           ])}
         />
       </ScrollView>

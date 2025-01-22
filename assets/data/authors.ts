@@ -1,4 +1,4 @@
-import { Obra } from '@domain';
+import { Heritage } from '@domain';
 
 import heritages from './heritages';
 
@@ -18,8 +18,8 @@ const authorNames: string[] = heritages
     return authors;
   }, []);
 
-const authors: { name: string; heritages: Obra[] }[] = authorNames.reduce<
-  { name: string; heritages: Obra[] }[]
+const authors: { name: string; heritages: Heritage[] }[] = authorNames.reduce<
+  { name: string; heritages: Heritage[] }[]
 >(function (total, authorName) {
   total.push({
     name: authorName,

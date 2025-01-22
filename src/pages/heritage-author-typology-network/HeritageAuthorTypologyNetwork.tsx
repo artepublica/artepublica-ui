@@ -5,14 +5,14 @@ import { ScrollView, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart, Dropdown } from '@base-components';
-import { Obra } from '@domain';
+import { Heritage } from '@domain';
 import { getYear, TypologyTheme, useTheme, vinho } from '@utils';
 
 import styles from './styles';
 
 type HeritageAuthorTypologyNetworkProps = {
-  type: keyof Obra;
-  types: { name: string; heritages: Obra[] }[];
+  type: keyof Heritage;
+  types: { name: string; heritages: Heritage[] }[];
 };
 
 function HeritageAuthorTypologyNetwork({
@@ -64,7 +64,7 @@ function HeritageAuthorTypologyNetwork({
     );
 
   const titles = selected.heritages.map((heritage) => ({
-    id: `${heritage.Titulo ?? 'Deconhecida'} (${getYear(heritage.DataInauguracao) ?? 's.d.'})`,
+    id: `${heritage.Title ?? 'Deconhecida'} (${getYear(heritage.OpeningDate) ?? 's.d.'})`,
     marker: { radius: 10 },
     color: `${typologies.find((typology) => typology.id === (heritage.Typology ?? 'Desconhecida'))?.color}80`,
   }));
@@ -98,7 +98,7 @@ function HeritageAuthorTypologyNetwork({
           )
           .map(
             (heritage) =>
-              `${heritage.Titulo ?? 'Deconhecida'} (${getYear(heritage.DataInauguracao) ?? 's.d.'})`,
+              `${heritage.Title ?? 'Deconhecida'} (${getYear(heritage.OpeningDate) ?? 's.d.'})`,
           );
 
         return typology_titles.map((title) => ({

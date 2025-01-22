@@ -4,14 +4,14 @@ import { Wrapper } from '@googlemaps/react-wrapper';
 import { default as Constants } from 'expo-constants';
 import { useRouter } from 'expo-router';
 
-import { Obra } from '@domain';
+import { Heritage } from '@domain';
 import { magenta } from '@utils';
 
 type MapWrapperProps = {
   markers?: {
     position: { latitude: string; longitude: string };
     color?: string;
-    heritage: Obra;
+    heritage: Heritage;
   }[];
 };
 
@@ -36,7 +36,7 @@ function MyMapComponent({
   markers?: {
     position: { latitude: string; longitude: string };
     color?: string;
-    heritage: Obra;
+    heritage: Heritage;
   }[];
 }) {
   const router = useRouter();

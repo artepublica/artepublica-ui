@@ -5,16 +5,16 @@ import { aline, stefano } from '@contributors';
 
 import styles from './styles';
 
-const tamanhoImagem = 240;
+const imageWidth = 240;
 
 function About(): JSX.Element {
   const { width } = useWindowDimensions();
   const style = styles();
 
-  const tamanhoGrid = tamanhoImagem * 2 + 64 + 64;
+  const tamanhoGrid = imageWidth * 2 + 64 + 64;
 
-  const colunas = width > tamanhoGrid ? 2 : 1;
-  const restante = width - (tamanhoImagem * colunas + 64 + 64);
+  const columns = width > tamanhoGrid ? 2 : 1;
+  const rest = width - (imageWidth * columns + 64 + 64);
 
   return (
     <ScrollView contentContainerStyle={style.container}>
@@ -60,20 +60,20 @@ function About(): JSX.Element {
         </Text>
       </View>
       <View style={{ backgroundColor: '#CC1964', width: '100%', padding: 32 }}>
-        {colunas === 2 && (
+        {columns === 2 && (
           <View
             style={{
               flexDirection: 'row',
-              paddingLeft: width - tamanhoGrid - restante / 2,
+              paddingLeft: width - tamanhoGrid - rest / 2,
             }}
           >
             <View key={1} style={{ alignItems: 'center' }}>
               <Image
                 source={aline}
                 style={{
-                  width: tamanhoImagem,
-                  height: tamanhoImagem,
-                  borderRadius: tamanhoImagem / 2,
+                  width: imageWidth,
+                  height: imageWidth,
+                  borderRadius: imageWidth / 2,
                 }}
               />
               <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>
@@ -84,9 +84,9 @@ function About(): JSX.Element {
               <Image
                 source={stefano}
                 style={{
-                  width: tamanhoImagem,
-                  height: tamanhoImagem,
-                  borderRadius: tamanhoImagem / 2,
+                  width: imageWidth,
+                  height: imageWidth,
+                  borderRadius: imageWidth / 2,
                 }}
               />
               <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>
@@ -95,15 +95,15 @@ function About(): JSX.Element {
             </View>
           </View>
         )}
-        {colunas === 1 && (
+        {columns === 1 && (
           <View style={{ flexDirection: 'column' }}>
             <View key={1} style={{ alignItems: 'center' }}>
               <Image
                 source={aline}
                 style={{
-                  width: tamanhoImagem,
-                  height: tamanhoImagem,
-                  borderRadius: tamanhoImagem / 2,
+                  width: imageWidth,
+                  height: imageWidth,
+                  borderRadius: imageWidth / 2,
                 }}
               />
               <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>
@@ -114,9 +114,9 @@ function About(): JSX.Element {
               <Image
                 source={stefano}
                 style={{
-                  width: tamanhoImagem,
-                  height: tamanhoImagem,
-                  borderRadius: tamanhoImagem / 2,
+                  width: imageWidth,
+                  height: imageWidth,
+                  borderRadius: imageWidth / 2,
                 }}
               />
               <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>

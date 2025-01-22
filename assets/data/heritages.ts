@@ -1,10 +1,10 @@
-import { Obra } from '@domain';
+import { Heritage } from '@domain';
 
 import * as heritageMap from './raw/heritages';
 
-const typedHeritageMap: Record<string, Obra> = heritageMap;
+const typedHeritageMap: Record<string, Heritage> = heritageMap;
 
-const heritages: Obra[] = Object.keys(typedHeritageMap).map(
+const heritages: Heritage[] = Object.keys(typedHeritageMap).map(
   (key) => typedHeritageMap[key],
 );
 

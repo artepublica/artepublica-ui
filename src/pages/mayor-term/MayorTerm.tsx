@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart, Dropdown } from '@base-components';
 import { mayors } from '@data';
-import { Author, Obra } from '@domain';
+import { Author, Heritage } from '@domain';
 import {
   getYear,
   magenta,
@@ -20,7 +20,7 @@ function Block({
   heritages,
   years,
 }: {
-  heritages: Obra[];
+  heritages: Heritage[];
   years: number[];
 }): JSX.Element {
   const { theme } = useTheme();
@@ -29,8 +29,8 @@ function Block({
   const insets = useSafeAreaInsets();
 
   const heritagePerYear = heritages
-    .reduce<{ year: number; heritages: Obra[] }[]>((result, heritage) => {
-      const year = getYear(heritage.DataInauguracao);
+    .reduce<{ year: number; heritages: Heritage[] }[]>((result, heritage) => {
+      const year = getYear(heritage.OpeningDate);
       if (year != null && years.includes(year)) {
         const y = result.find((t) => t.year === year);
 
@@ -39,7 +39,7 @@ function Block({
             year,
             heritages: heritages
               .filter(
-                (heritageInt) => getYear(heritageInt.DataInauguracao) === year,
+                (heritageInt) => getYear(heritageInt.OpeningDate) === year,
               )
               .map((heritageInt) => heritageInt),
           });
@@ -150,7 +150,7 @@ function Network({
   years,
   mayor,
 }: {
-  heritages: Obra[];
+  heritages: Heritage[];
   mayor: string;
   years: number[];
 }): JSX.Element {
@@ -159,8 +159,8 @@ function Network({
   const headerHeight = useHeaderHeight();
   const insets = useSafeAreaInsets();
 
-  const termHeritages = heritages.reduce<Obra[]>((result, heritage) => {
-    const year = getYear(heritage.DataInauguracao);
+  const termHeritages = heritages.reduce<Heritage[]>((result, heritage) => {
+    const year = getYear(heritage.OpeningDate);
     if (year != null && years.includes(year)) {
       result.push(heritage);
     }
@@ -197,7 +197,7 @@ function Network({
     .map((a, index) => ({ ...a, color: theme.coresGrafico[index + 1] }));
 
   const titles = termHeritages.map((heritage) => ({
-    id: heritage.Titulo ?? 'Deconhecida',
+    id: heritage.Title ?? 'Deconhecida',
     marker: { radius: 5 },
     color: `${authors.filter((author) => heritage.Authors?.map((_author) => _author.Person?.Name).includes(author.id))[0].color}80`,
   }));
@@ -224,7 +224,7 @@ function Network({
                 ) != null) ||
               (author.id === 'Desconhecida' && heritage.Authors == null),
           )
-          .map((heritage) => heritage.Titulo);
+          .map((heritage) => heritage.Title);
 
         return authorTitles.map((title) => ({
           from: author.id,
@@ -292,7 +292,7 @@ function Sankey({
   years,
   mayor,
 }: {
-  heritages: Obra[];
+  heritages: Heritage[];
   mayor: string;
   years: number[];
 }): JSX.Element {
@@ -301,8 +301,8 @@ function Sankey({
   const headerHeight = useHeaderHeight();
   const insets = useSafeAreaInsets();
 
-  const termHeritages = heritages.reduce<Obra[]>((result, heritage) => {
-    const year = getYear(heritage.DataInauguracao);
+  const termHeritages = heritages.reduce<Heritage[]>((result, heritage) => {
+    const year = getYear(heritage.OpeningDate);
     if (year != null && years.includes(year)) {
       result.push(heritage);
     }
@@ -338,7 +338,7 @@ function Sankey({
     .map((a, index) => ({ ...a, color: theme.coresGrafico[index + 1] }));
 
   const titles = termHeritages.map((heritage) => ({
-    id: heritage.Titulo ?? 'Deconhecida',
+    id: heritage.Title ?? 'Deconhecida',
     marker: { radius: 15 },
     color: `${authors.filter((author) => heritage.Authors?.map((_author) => _author.Person?.Name).includes(author.id))[0].color}80`,
   }));
@@ -366,7 +366,7 @@ function Sankey({
                 ) != null) ||
               (author.id === 'Desconhecida' && heritage.Authors == null),
           )
-          .map((heritage) => heritage.Titulo);
+          .map((heritage) => heritage.Title);
 
         return authorTitles.map((title) => ({
           from: author.id,
@@ -424,7 +424,7 @@ function Sankey({
   return <Chart options={networkOptions as Highcharts.Options} />;
 }
 
-function MayorTerm({ heritages }: { heritages: Obra[] }): JSX.Element {
+function MayorTerm({ heritages }: { heritages: Heritage[] }): JSX.Element {
   const items = mayors
     .sort((a, b) => {
       const aFirstTerm = a.Terms?.sort((aM, bM) =>

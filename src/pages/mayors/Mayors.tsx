@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart, Dropdown } from '@base-components';
 import { mayors } from '@data';
-import { Obra } from '@domain';
+import { Heritage } from '@domain';
 import { getYear, reduceListOfList, useTheme } from '@utils';
 
 import styles from './styles';
@@ -15,7 +15,7 @@ function Block({
   heritages,
   terms,
 }: {
-  heritages: Obra[];
+  heritages: Heritage[];
   terms: string[];
 }): JSX.Element {
   const { theme } = useTheme();
@@ -67,8 +67,8 @@ function Block({
     }, []);
 
   const heritagePerYear = heritages
-    .reduce<{ year: number; heritages: Obra[] }[]>((result, heritage) => {
-      const year = getYear(heritage.DataInauguracao);
+    .reduce<{ year: number; heritages: Heritage[] }[]>((result, heritage) => {
+      const year = getYear(heritage.OpeningDate);
       if (year != null && selectedYears.includes(year)) {
         const y = result.find((t) => t.year === year);
 
@@ -76,9 +76,7 @@ function Block({
           result.push({
             year,
             heritages: heritages
-              .filter(
-                (_heritage) => getYear(_heritage.DataInauguracao) === year,
-              )
+              .filter((_heritage) => getYear(_heritage.OpeningDate) === year)
               .map((_heritage) => _heritage),
           });
         }
@@ -191,7 +189,7 @@ function Block({
   return <Chart options={lineOptions} />;
 }
 
-function Mayors({ heritages }: { heritages: Obra[] }): JSX.Element {
+function Mayors({ heritages }: { heritages: Heritage[] }): JSX.Element {
   const style = styles();
 
   const items = mayors

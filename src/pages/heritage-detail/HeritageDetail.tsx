@@ -40,13 +40,13 @@ function HeritageDetail(): JSX.Element {
               height: 136,
               width: 136,
               borderWidth:
-                heritage?.Imagem != null && heritage.Imagem !== '' ? 0 : 1,
+                heritage?.Image != null && heritage.Image !== '' ? 0 : 1,
               borderColor: '#FFFFFF',
               marginBottom:
-                heritage?.Imagem != null && heritage.Imagem !== '' ? 0 : 4,
+                heritage?.Image != null && heritage.Image !== '' ? 0 : 4,
             }}
           >
-            <Image source={heritage?.Imagem} height={136} width={136} />
+            <Image source={heritage?.Image} height={136} width={136} />
           </View>
         </View>
         <View style={{ padding: 8 }}>
@@ -58,7 +58,7 @@ function HeritageDetail(): JSX.Element {
               fontWeight: '700',
             }}
           >
-            {`${heritage?.Titulo ?? 'Desconhecida'}${heritage?.DataInauguracao ? `, ${getYear(heritage.DataInauguracao)}` : ', s.d.'}${
+            {`${heritage?.Title ?? 'Desconhecida'}${heritage?.OpeningDate ? `, ${getYear(heritage.OpeningDate)}` : ', s.d.'}${
               Platform.OS === 'web' ? '\n\n' : '\n'
             }`}
           </Text>
@@ -84,7 +84,7 @@ function HeritageDetail(): JSX.Element {
               lineHeight: 18,
             }}
           >
-            {`${heritage?.Material ?? 'Desconhecida'}${heritage?.MaterialBase ? `; ${heritage.MaterialBase}` : ''}`}
+            {`${heritage?.Material ?? 'Desconhecida'}${heritage?.BaseMaterial ? `; ${heritage.BaseMaterial}` : ''}`}
           </Text>
           {/* <Text
                         style={{
@@ -95,7 +95,7 @@ function HeritageDetail(): JSX.Element {
                             lineHeight: 18,
                         }}
                     >
-                        {heritage.Endereco ?? ''}
+                        {heritage.Address ?? ''}
                     </Text>
                     <Text
                         style={{
@@ -106,7 +106,7 @@ function HeritageDetail(): JSX.Element {
                             lineHeight: 18,
                         }}
                     >
-                        {heritage.Bairro ?? ''}
+                        {heritage.Neighborhood ?? ''}
                     </Text>
                     <Text
                         style={{

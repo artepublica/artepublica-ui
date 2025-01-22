@@ -16,13 +16,13 @@ function Heritages(): JSX.Element {
 
   const heritagesSorted = heritages
     .sort((heritageA, heritageB) => {
-      return (heritageA.Titulo ?? 'Desconhecida').localeCompare(
-        heritageB.Titulo ?? 'Desconhecida',
+      return (heritageA.Title ?? 'Desconhecida').localeCompare(
+        heritageB.Title ?? 'Desconhecida',
       );
     })
     .sort((heritageA, heritageB) => {
-      return (getYear(heritageA.DataInauguracao) ?? 0) <
-        (getYear(heritageB.DataInauguracao) ?? 0)
+      return (getYear(heritageA.OpeningDate) ?? 0) <
+        (getYear(heritageB.OpeningDate) ?? 0)
         ? -1
         : 1;
     })
@@ -43,11 +43,11 @@ function Heritages(): JSX.Element {
       if (index === 0) {
         return [heritage.Typology ?? 'Desconhecida', heritage.ID.toString()];
       } else {
-        const obraAnterior = heritagesSorted[index - 1];
+        const previousHeritage = heritagesSorted[index - 1];
 
         if (
           (heritage.Typology ?? 'Desconhecida') !==
-          (obraAnterior.Typology ?? 'Desconhecida')
+          (previousHeritage.Typology ?? 'Desconhecida')
         ) {
           return [
             ...result,
@@ -220,14 +220,14 @@ function Heritages(): JSX.Element {
                               style={{
                                 backgroundColor: '#FFFFFF',
                                 height:
-                                  heritage.Imagem != null &&
-                                  heritage.Imagem !== ''
+                                  heritage.Image != null &&
+                                  heritage.Image !== ''
                                     ? 140
                                     : 136,
                                 width: 136,
                                 borderWidth:
-                                  heritage.Imagem != null &&
-                                  heritage.Imagem !== ''
+                                  heritage.Image != null &&
+                                  heritage.Image !== ''
                                     ? 0
                                     : 1,
                                 borderColor:
@@ -235,14 +235,14 @@ function Heritages(): JSX.Element {
                                     heritage.Typology?.toLocaleLowerCase() as keyof TypologyTheme
                                   ] ?? theme.typology.desconhecida,
                                 marginBottom:
-                                  heritage.Imagem != null &&
-                                  heritage.Imagem !== ''
+                                  heritage.Image != null &&
+                                  heritage.Image !== ''
                                     ? 0
                                     : 4,
                               }}
                             >
                               <Image
-                                source={heritage.Imagem}
+                                source={heritage.Image}
                                 height={136}
                                 width={136}
                               />
@@ -257,9 +257,9 @@ function Heritages(): JSX.Element {
                                 fontWeight: '700',
                               }}
                             >
-                              {`${heritage.Titulo ?? 'Desconhecida'}${
-                                heritage.DataInauguracao
-                                  ? `, ${getYear(heritage.DataInauguracao)}`
+                              {`${heritage.Title ?? 'Desconhecida'}${
+                                heritage.OpeningDate
+                                  ? `, ${getYear(heritage.OpeningDate)}`
                                   : ', s.d.'
                               }${Platform.OS === 'web' ? '\n\n' : '\n'}`}
                             </Text>
@@ -285,7 +285,7 @@ function Heritages(): JSX.Element {
                                 lineHeight: 13,
                               }}
                             >
-                              {`${heritage.Material ?? 'Desconhecida'}${heritage.MaterialBase ? `; ${heritage.MaterialBase}` : ''}`}
+                              {`${heritage.Material ?? 'Desconhecida'}${heritage.BaseMaterial ? `; ${heritage.BaseMaterial}` : ''}`}
                             </Text>
                             <Text
                               style={{
@@ -296,7 +296,7 @@ function Heritages(): JSX.Element {
                                 lineHeight: 13,
                               }}
                             >
-                              {heritage.Endereco ?? ''}
+                              {heritage.Address ?? ''}
                             </Text>
                             <Text
                               style={{
@@ -307,7 +307,7 @@ function Heritages(): JSX.Element {
                                 lineHeight: 13,
                               }}
                             >
-                              {heritage.Bairro ?? ''}
+                              {heritage.Neighborhood ?? ''}
                             </Text>
                             <Text
                               style={{

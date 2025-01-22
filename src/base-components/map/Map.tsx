@@ -3,13 +3,13 @@ import { useRouter } from 'expo-router';
 import { useWindowDimensions } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 
-import { Obra } from '@domain';
+import { Heritage } from '@domain';
 
 type MapWrapperProps = {
   markers?: {
     position: { latitude: string; longitude: string };
     color?: string;
-    heritage: Obra;
+    heritage: Heritage;
   }[];
 };
 

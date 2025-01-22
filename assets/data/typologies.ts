@@ -1,9 +1,9 @@
-import { Obra } from '@domain';
+import { Heritage } from '@domain';
 
 import heritages from './heritages';
 
 const typologyNames: string[] = heritages
-  .map((obra) => obra.Typology ?? 'Desconhecida')
+  .map((heritage) => heritage.Typology ?? 'Desconhecida')
   .reduce<string[]>((typologies, typology) => {
     if (!typologies.includes(typology)) {
       typologies.push(typology);
@@ -11,18 +11,20 @@ const typologyNames: string[] = heritages
     return typologies;
   }, []);
 
-const typologies: { name: string; heritages: Obra[] }[] = typologyNames.reduce<
-  { name: string; heritages: Obra[] }[]
->(function (total, typology) {
-  total.push({
-    name: typology,
-    heritages: heritages.filter(
-      (obra) =>
-        obra.Typology === typology ||
-        (obra.Typology == null && typology === 'Desconhecida'),
-    ),
-  });
-  return total;
-}, []);
+const typologies: { name: string; heritages: Heritage[] }[] =
+  typologyNames.reduce<{ name: string; heritages: Heritage[] }[]>(function (
+    total,
+    typology,
+  ) {
+    total.push({
+      name: typology,
+      heritages: heritages.filter(
+        (heritage) =>
+          heritage.Typology === typology ||
+          (heritage.Typology == null && typology === 'Desconhecida'),
+      ),
+    });
+    return total;
+  }, []);
 
 export default typologies;
