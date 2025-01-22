@@ -1,6 +1,6 @@
-import * as utils from './analysis_list_utils';
+import * as utils from './heritagePerDecade';
 
-export const all = {
+const all = {
   null: utils.allNull,
   1500: utils.all1500,
   1510: utils.all1510,
@@ -56,3 +56,5 @@ export const all = {
   2010: utils.all2010,
   2020: utils.all2020,
 };
+
+export default all;

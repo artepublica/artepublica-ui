@@ -7,9 +7,8 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart, Dropdown } from '@base-components';
 import { Mayor, Obra } from '@domain';
-import { reduceListOfList, useTheme } from '@utils';
-import { getYear } from '@utils/analysis/analysis_utils';
-import * as mayorsTerms from '@utils/data/mayors'; //TODO: use or create analysis to type
+import { getYear, reduceListOfList, useTheme } from '@utils';
+import * as mayorsTerms from '@utils/data/raw/mayors'; //TODO: use or create analysis to type
 
 import styles from './styles';
 function Block({

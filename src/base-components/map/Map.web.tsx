@@ -5,7 +5,7 @@ import { default as Constants } from 'expo-constants';
 import { useRouter } from 'expo-router';
 
 import { Obra } from '@domain';
-import { magenta } from '@utils/theme-provider/themes/cores';
+import { magenta } from '@utils';
 
 type MapWrapperProps = {
   markers?: {

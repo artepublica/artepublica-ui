@@ -13,8 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart } from '@base-components';
 import { Obra } from '@domain';
-import { TipologiaTheme, useTheme } from '@utils';
-import * as decades from '@utils/analysis/decades';
+import { decades, TipologiaTheme, useTheme } from '@utils';
 
 import styles from './styles';
 
@@ -29,7 +28,7 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
   const insets = useSafeAreaInsets();
   const style = styles();
 
-  const all: Record<string, Obra[]> = decades.all;
+  const all: Record<string, Obra[]> = decades;
 
   function MapAuthor(key: string): string[] {
     return all[key]

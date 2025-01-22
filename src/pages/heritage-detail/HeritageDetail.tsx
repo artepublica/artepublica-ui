@@ -2,8 +2,7 @@ import { useLocalSearchParams } from 'expo-router';
 import { Platform, View } from 'react-native';
 
 import { Image, Text } from '@base-components';
-import { thesisHeritages, TipologiaTheme, useTheme } from '@utils';
-import { getYear } from '@utils/analysis/analysis_utils';
+import { getYear, thesisHeritages, TipologiaTheme, useTheme } from '@utils';
 
 function HeritageDetail(): JSX.Element {
   const { theme } = useTheme();

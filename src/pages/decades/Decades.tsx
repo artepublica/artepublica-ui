@@ -7,7 +7,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { Table, Text } from '@base-components';
 import { Author, Obra } from '@domain';
 import { useTheme } from '@utils';
-import * as analysis_list_utils from '@utils/analysis/analysis_list_utils';
+import * as heritagePerDecade from '@utils/data/heritagePerDecade';
 
 function Decades(): JSX.Element {
   const allYears: { label: string; value: string }[] = [
@@ -22,7 +22,7 @@ function Decades(): JSX.Element {
   const [items, setItems] = useState(allYears);
   const { theme } = useTheme();
 
-  const typed_analysis_list_utils: Record<string, Obra[]> = analysis_list_utils;
+  const typed_analysis_list_utils: Record<string, Obra[]> = heritagePerDecade;
 
   const obras_decada: Obra[] = typed_analysis_list_utils[`all${year}`];
 
