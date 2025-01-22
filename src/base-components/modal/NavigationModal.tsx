@@ -5,7 +5,7 @@ import { useLocalSearchParams, usePathname, useRouter } from 'expo-router';
 import { Platform, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { EdgeInsets } from 'react-native-safe-area-context';
 
-import { thesisHeritages } from '@data';
+import { heritages } from '@data';
 import { TipologiaTheme, useTheme } from '@utils';
 
 import calculateNavigationModalHeight from './calculateNavigationModalHeight.wip';
@@ -33,9 +33,7 @@ function MobileModal({
   const { theme } = useTheme();
   const { heritage: id } = useLocalSearchParams<{ heritage: string }>();
 
-  const heritage = thesisHeritages.find(
-    (heritage) => heritage.ID.toString() === id,
-  );
+  const heritage = heritages.find((heritage) => heritage.ID.toString() === id);
 
   let backgroundColor = theme.background;
   if (pathname === '/heritage') {

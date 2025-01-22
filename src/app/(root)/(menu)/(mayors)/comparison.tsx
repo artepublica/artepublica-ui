@@ -3,7 +3,7 @@ import React from 'react';
 import Head from 'expo-router/head';
 import { StyleSheet, View } from 'react-native';
 
-import { thesisHeritages } from '@data';
+import { heritages } from '@data';
 import { Mayors } from '@pages';
 
 function Comparison(): JSX.Element {
@@ -13,7 +13,7 @@ function Comparison(): JSX.Element {
         <title>Arte Pública - Comparação</title>
       </Head>
       <View style={styles.container}>
-        <Mayors heritages={thesisHeritages} />
+        <Mayors heritages={heritages} />
       </View>
     </>
   );

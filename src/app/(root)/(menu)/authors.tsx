@@ -3,7 +3,7 @@ import React from 'react';
 import Head from 'expo-router/head';
 import { StyleSheet, View } from 'react-native';
 
-import { autoresRecorte } from '@data';
+import { authors } from '@data';
 import { HeritageAuthorTypologyNetwork as HeritageAuthorTypologyNetworkPage } from '@pages';
 
 function HeritageAuthorTypologyNetwork(): JSX.Element {
@@ -13,10 +13,7 @@ function HeritageAuthorTypologyNetwork(): JSX.Element {
         <title>Arte Pública - Autores</title>
       </Head>
       <View style={styles.container}>
-        <HeritageAuthorTypologyNetworkPage
-          type='Authors'
-          types={autoresRecorte}
-        />
+        <HeritageAuthorTypologyNetworkPage type='Authors' types={authors} />
       </View>
     </>
   );

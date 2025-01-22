@@ -3,7 +3,7 @@ import { FlatList, Platform, useWindowDimensions, View } from 'react-native';
 import { Col, Grid, Row } from 'react-native-easy-grid';
 
 import { Image, Text } from '@base-components';
-import { thesisHeritages } from '@data';
+import { heritages } from '@data';
 import { getYear, TipologiaTheme, useTheme } from '@utils';
 
 import styles from './styles';
@@ -14,7 +14,7 @@ function Heritages(): JSX.Element {
   const router = useRouter();
   const style = styles();
 
-  const heritagesSorted = thesisHeritages
+  const heritagesSorted = heritages
     .sort((heritageA, heritageB) => {
       return (heritageA.Titulo ?? 'Desconhecida').localeCompare(
         heritageB.Titulo ?? 'Desconhecida',
