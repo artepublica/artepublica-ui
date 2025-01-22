@@ -37,7 +37,7 @@ type Obra = {
   Temporalidade?: string;
   Funcao?: string;
   Natureza?: string;
-  Tipologia?: string;
+  Typology?: string;
   Execucao?: boolean;
   Classificacao?: string;
   Categoria?: string;

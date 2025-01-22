@@ -3,7 +3,7 @@ import React from 'react';
 import Head from 'expo-router/head';
 import { StyleSheet, View } from 'react-native';
 
-import { tipologiasRecorte } from '@data';
+import { typologies } from '@data';
 import { HeritageMap } from '@pages';
 
 export default function Mapa(): JSX.Element {
@@ -13,7 +13,7 @@ export default function Mapa(): JSX.Element {
         <title>Arte Pública - Mapa</title>
       </Head>
       <View style={styles.container}>
-        <HeritageMap type='Tipologia' types={tipologiasRecorte} />
+        <HeritageMap type='Typology' types={typologies} />
       </View>
     </>
   );

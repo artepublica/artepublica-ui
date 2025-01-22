@@ -1,4 +1,4 @@
-import { Author, Obra } from '@domain';
+import { Obra } from '@domain';
 
 import heritages from './heritages';
 
@@ -6,7 +6,7 @@ const authorNames: string[] = heritages
   .map((heritage) =>
     heritage.Authors && heritage.Authors.length > 0
       ? heritage.Authors
-      : [{ Person: { Name: 'Desconhecida' } } as Author],
+      : [{ Person: { Name: 'Desconhecida' } }],
   )
   .reduce<string[]>((authors, heritageAuthors) => {
     Array.prototype.push.apply(

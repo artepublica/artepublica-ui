@@ -1,6 +1,6 @@
 import { Map } from '@base-components';
 import { Obra } from '@domain';
-import { TipologiaTheme, useTheme } from '@utils';
+import { TypologyTheme, useTheme } from '@utils';
 
 type HeritageMapProps = {
   type: string;
@@ -13,10 +13,10 @@ function HeritageMap({ type, types }: HeritageMapProps): JSX.Element {
   const colors = types.reduce<Record<string, string>>(
     (result, tipoReduce, index) => {
       result[tipoReduce.name] =
-        type === 'Tipologia'
-          ? (theme.tipologia[
-              tipoReduce.name.toLowerCase() as keyof TipologiaTheme
-            ] ?? theme.tipologia.desconhecida)
+        type === 'Typology'
+          ? (theme.typology[
+              tipoReduce.name.toLowerCase() as keyof TypologyTheme
+            ] ?? theme.typology.desconhecida)
           : theme.coresGrafico[index];
       return result;
     },

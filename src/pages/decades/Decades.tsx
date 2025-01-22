@@ -25,22 +25,22 @@ function Decades(): JSX.Element {
 
   const typed_analysis_list_utils: Record<string, Obra[]> = heritagePerDecade;
 
-  const obras_decada: Obra[] = typed_analysis_list_utils[`all${year}`];
+  const selectedDecadeHeritages = typed_analysis_list_utils[`all${year}`];
 
-  if (obras_decada.length > 0) {
-    const tipologias_obras_decada: string[] = obras_decada.map(
-      (obra) => obra.Tipologia ?? 'Desconhecida',
+  if (selectedDecadeHeritages.length > 0) {
+    const selectedDecadeTypologies: string[] = selectedDecadeHeritages.map(
+      (obra) => obra.Typology ?? 'Desconhecida',
     );
-    const naturezas_obras_decada: string[] = obras_decada.map(
+    const selectedDecadeNatures: string[] = selectedDecadeHeritages.map(
       (obra) => obra.Natureza ?? 'Desconhecida',
     );
-    const zonas_obras_decada: string[] = obras_decada.map(
+    const selectedDecadeZones: string[] = selectedDecadeHeritages.map(
       (obra) => obra.Zona ?? 'Desconhecida',
     );
-    const status_obras_decada: string[] = obras_decada.map(
+    const selectedDecadeStatus: string[] = selectedDecadeHeritages.map(
       (obra) => obra.Status ?? 'Desconhecida',
     );
-    const autores_obras_decada: string[] = obras_decada
+    const selectedDecadeAuthors: string[] = selectedDecadeHeritages
       .map(
         (obra) =>
           obra.Authors ?? [{ Person: { Name: 'Desconhecida' } } as Author],
@@ -53,17 +53,17 @@ function Decades(): JSX.Element {
         return r;
       }, []);
 
-    const tipologias_obras_decada_total: { nome: string; obras: Obra[] }[] =
-      tipologias_obras_decada
+    const selectedDecadeTypologyTotal: { nome: string; obras: Obra[] }[] =
+      selectedDecadeTypologies
         .reduce<{ nome: string; obras: Obra[] }[]>(function (r, a) {
           const r_top = r.find((top) => top.nome === a);
           if (!r_top) {
             r.push({
               nome: a,
-              obras: obras_decada.filter(
+              obras: selectedDecadeHeritages.filter(
                 (obra) =>
-                  obra.Tipologia === a ||
-                  (obra.Tipologia == null && a === 'Desconhecida'),
+                  obra.Typology === a ||
+                  (obra.Typology == null && a === 'Desconhecida'),
               ),
             });
           }
@@ -71,63 +71,63 @@ function Decades(): JSX.Element {
         }, [])
         .sort((a, b) => a.nome.localeCompare(b.nome));
 
-    const naturezas_obras_decada_total: { nome: string; total: number }[] =
-      naturezas_obras_decada
+    const selectedDecadeNatureTotal: { nome: string; total: number }[] =
+      selectedDecadeNatures
         .reduce<{ nome: string; total: number }[]>(function (r, a) {
           const r_top = r.find((top) => top.nome === a);
           if (!r_top) {
             r.push({
               nome: a,
-              total: naturezas_obras_decada.filter((top) => top === a).length,
+              total: selectedDecadeNatures.filter((top) => top === a).length,
             });
           }
           return r;
         }, [])
         .sort((a, b) => a.nome.localeCompare(b.nome));
 
-    const zonas_obras_decada_total: { nome: string; total: number }[] =
-      zonas_obras_decada
+    const selectedDecadeZoneTotal: { nome: string; total: number }[] =
+      selectedDecadeZones
         .reduce<{ nome: string; total: number }[]>(function (r, a) {
           const r_top = r.find((top) => top.nome === a);
           if (!r_top) {
             r.push({
               nome: a,
-              total: zonas_obras_decada.filter((top) => top === a).length,
+              total: selectedDecadeZones.filter((top) => top === a).length,
             });
           }
           return r;
         }, [])
         .sort((a, b) => a.nome.localeCompare(b.nome));
 
-    const status_obras_decada_total: {
+    const selectedDecadeStatusTotal: {
       nome: string;
       total: number;
-      tipologias: { nome: string; total: number }[];
-    }[] = status_obras_decada
+      typologies: { nome: string; total: number }[];
+    }[] = selectedDecadeStatus
       .reduce<
         {
           nome: string;
           total: number;
-          tipologias: { nome: string; total: number }[];
+          typologies: { nome: string; total: number }[];
         }[]
       >(function (r, a) {
         const r_top = r.find((top) => top.nome === a);
         if (!r_top) {
-          const tipologias = obras_decada
+          const typologies = selectedDecadeHeritages
             .filter(
               (obra) =>
                 obra.Status === a ||
                 (a === 'Desconhecida' && obra.Status == null),
             )
-            .map((obra) => obra.Tipologia ?? 'Desconhecida');
+            .map((obra) => obra.Typology ?? 'Desconhecida');
 
-          const tipologias_total: { nome: string; total: number }[] = tipologias
+          const typologyTotal: { nome: string; total: number }[] = typologies
             .reduce<{ nome: string; total: number }[]>(function (r, a) {
               const r_top = r.find((top) => top.nome === a);
               if (!r_top) {
                 r.push({
                   nome: a,
-                  total: tipologias.filter((top) => top === a).length,
+                  total: typologies.filter((top) => top === a).length,
                 });
               }
               return r;
@@ -136,26 +136,26 @@ function Decades(): JSX.Element {
 
           r.push({
             nome: a,
-            total: status_obras_decada.filter((top) => top === a).length,
-            tipologias: tipologias_total,
+            total: selectedDecadeStatus.filter((top) => top === a).length,
+            typologies: typologyTotal,
           });
         }
         return r;
       }, [])
       .sort((a, b) => a.nome.localeCompare(b.nome));
 
-    const authorsHeritageTotal: {
+    const selectedDecadeAuthorTotal: {
       nome: string;
       total: number;
       obras: string[];
-    }[] = autores_obras_decada
+    }[] = selectedDecadeAuthors
       .reduce<{ nome: string; total: number; obras: string[] }[]>(function (
         r,
         a,
       ) {
         const r_top = r.find((top) => top.nome === a);
         if (!r_top) {
-          const obras: string[] = obras_decada
+          const obras: string[] = selectedDecadeHeritages
             .filter(
               (obra) =>
                 (obra.Authors != null &&
@@ -203,17 +203,17 @@ function Decades(): JSX.Element {
         <View style={{ height: 12 }} />
 
         <Text>
-          {year}: {obras_decada.length}
+          {year}: {selectedDecadeHeritages.length}
         </Text>
         <View style={{ height: 12 }} />
 
         <Table
           headers={[
             'Tipologia',
-            `Total: ${tipologias_obras_decada_total.length}`,
+            `Total: ${selectedDecadeTypologyTotal.length}`,
             'Obras',
           ]}
-          rows={tipologias_obras_decada_total.map((top) => [
+          rows={selectedDecadeTypologyTotal.map((top) => [
             top.nome,
             top.obras.length.toString(),
             top.obras.map((obra) => obra.Titulo ?? 'Desconhecida').join(', '),
@@ -222,11 +222,8 @@ function Decades(): JSX.Element {
         <View style={{ height: 12 }} />
 
         <Table
-          headers={[
-            'Natureza',
-            `Total: ${naturezas_obras_decada_total.length}`,
-          ]}
-          rows={naturezas_obras_decada_total.map((top) => [
+          headers={['Natureza', `Total: ${selectedDecadeNatureTotal.length}`]}
+          rows={selectedDecadeNatureTotal.map((top) => [
             top.nome,
             top.total.toString(),
           ])}
@@ -234,8 +231,8 @@ function Decades(): JSX.Element {
         <View style={{ height: 12 }} />
 
         <Table
-          headers={['Zona', `Total: ${zonas_obras_decada_total.length}`]}
-          rows={zonas_obras_decada_total.map((top) => [
+          headers={['Zona', `Total: ${selectedDecadeZoneTotal.length}`]}
+          rows={selectedDecadeZoneTotal.map((top) => [
             top.nome,
             top.total.toString(),
           ])}
@@ -245,13 +242,13 @@ function Decades(): JSX.Element {
         <Table
           headers={[
             'Status',
-            `Total: ${status_obras_decada_total.length}`,
+            `Total: ${selectedDecadeStatusTotal.length}`,
             'Tipologias',
           ]}
-          rows={status_obras_decada_total.map((top) => [
+          rows={selectedDecadeStatusTotal.map((top) => [
             top.nome,
             top.total.toString(),
-            top.tipologias
+            top.typologies
               .map((top) => `${top.nome} (${top.total})`)
               .join(', '),
           ])}
@@ -261,10 +258,10 @@ function Decades(): JSX.Element {
         <Table
           headers={[
             'Artista',
-            `Total: ${authorsHeritageTotal.length}`,
+            `Total: ${selectedDecadeAuthorTotal.length}`,
             'Obras',
           ]}
-          rows={authorsHeritageTotal.map((top) => [
+          rows={selectedDecadeAuthorTotal.map((top) => [
             top.nome,
             top.total.toString(),
             top.obras.join(', '),

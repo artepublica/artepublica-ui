@@ -12,7 +12,7 @@ function Typology(): JSX.Element {
         <title>Arte Pública - Tipologias</title>
       </Head>
       <View style={styles.container}>
-        <HeritagePerDecade type='Tipologia' />
+        <HeritagePerDecade type='Typology' />
       </View>
     </>
   );

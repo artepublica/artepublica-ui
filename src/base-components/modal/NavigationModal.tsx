@@ -6,7 +6,7 @@ import { Platform, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { EdgeInsets } from 'react-native-safe-area-context';
 
 import { heritages } from '@data';
-import { TipologiaTheme, useTheme } from '@utils';
+import { TypologyTheme, useTheme } from '@utils';
 
 import calculateNavigationModalHeight from './calculateNavigationModalHeight.wip';
 
@@ -38,9 +38,9 @@ function MobileModal({
   let backgroundColor = theme.background;
   if (pathname === '/heritage') {
     backgroundColor =
-      theme.tipologia[
-        heritage?.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme
-      ] ?? theme.tipologia.desconhecida;
+      theme.typology[
+        heritage?.Typology?.toLocaleLowerCase() as keyof TypologyTheme
+      ] ?? theme.typology.desconhecida;
   }
   function goBack(): void {
     if (router.canGoBack()) {

@@ -4,7 +4,7 @@ import { Col, Grid, Row } from 'react-native-easy-grid';
 
 import { Image, Text } from '@base-components';
 import { heritages } from '@data';
-import { getYear, TipologiaTheme, useTheme } from '@utils';
+import { getYear, TypologyTheme, useTheme } from '@utils';
 
 import styles from './styles';
 
@@ -27,8 +27,8 @@ function Heritages(): JSX.Element {
         : 1;
     })
     .sort((heritageA, heritageB) => {
-      return (heritageA.Tipologia ?? 'Desconhecida').localeCompare(
-        heritageB.Tipologia ?? 'Desconhecida',
+      return (heritageA.Typology ?? 'Desconhecida').localeCompare(
+        heritageB.Typology ?? 'Desconhecida',
       );
     });
 
@@ -41,17 +41,17 @@ function Heritages(): JSX.Element {
   const data = heritagesSorted
     .reduce<string[]>((result, heritage, index) => {
       if (index === 0) {
-        return [heritage.Tipologia ?? 'Desconhecida', heritage.ID.toString()];
+        return [heritage.Typology ?? 'Desconhecida', heritage.ID.toString()];
       } else {
         const obraAnterior = heritagesSorted[index - 1];
 
         if (
-          (heritage.Tipologia ?? 'Desconhecida') !==
-          (obraAnterior.Tipologia ?? 'Desconhecida')
+          (heritage.Typology ?? 'Desconhecida') !==
+          (obraAnterior.Typology ?? 'Desconhecida')
         ) {
           return [
             ...result,
-            heritage.Tipologia ?? 'Desconhecida',
+            heritage.Typology ?? 'Desconhecida',
             heritage.ID.toString(),
           ];
         }
@@ -105,9 +105,9 @@ function Heritages(): JSX.Element {
                           style={{
                             width: 136,
                             backgroundColor:
-                              theme.tipologia[
-                                col.toLowerCase() as keyof TipologiaTheme
-                              ] ?? theme.tipologia.desconhecida,
+                              theme.typology[
+                                col.toLowerCase() as keyof TypologyTheme
+                              ] ?? theme.typology.desconhecida,
                             height: '100%',
                           }}
                         >
@@ -203,9 +203,9 @@ function Heritages(): JSX.Element {
                           style={{
                             width: 136,
                             backgroundColor:
-                              theme.tipologia[
-                                heritage.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme
-                              ] ?? theme.tipologia.desconhecida,
+                              theme.typology[
+                                heritage.Typology?.toLocaleLowerCase() as keyof TypologyTheme
+                              ] ?? theme.typology.desconhecida,
                             height: '100%',
                           }}
                         >
@@ -231,9 +231,9 @@ function Heritages(): JSX.Element {
                                     ? 0
                                     : 1,
                                 borderColor:
-                                  theme.tipologia[
-                                    heritage.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme
-                                  ] ?? theme.tipologia.desconhecida,
+                                  theme.typology[
+                                    heritage.Typology?.toLocaleLowerCase() as keyof TypologyTheme
+                                  ] ?? theme.typology.desconhecida,
                                 marginBottom:
                                   heritage.Imagem != null &&
                                   heritage.Imagem !== ''

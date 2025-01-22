@@ -66,7 +66,7 @@ const LightTheme: Theme = {
   },
   principal: principalLight,
   secundaria: secundariaLight,
-  tipologia: {
+  typology: {
     busto: magenta,
     cabeça: amarelo,
     escultura: azul,

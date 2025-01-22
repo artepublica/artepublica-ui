@@ -14,7 +14,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Chart } from '@base-components';
 import { decades } from '@data';
 import { Obra } from '@domain';
-import { TipologiaTheme, useTheme } from '@utils';
+import { TypologyTheme, useTheme } from '@utils';
 
 import styles from './styles';
 
@@ -64,25 +64,25 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
 
   const totalTypes = types.reduce<
     { type: string; name: string; data: (number | null)[] }[]
-  >((series, _tipo) => {
+  >((series, typology) => {
     const total_tipo = Object.keys(all)
       .filter((key) => key !== 'null' && all[key].length > 0)
       .map((key) => {
         const total = all[key].filter(
           (heritage) =>
-            heritage[type] === _tipo ||
-            (heritage[type] == null && _tipo === 'Desconhecida'),
+            heritage[type] === typology ||
+            (heritage[type] == null && typology === 'Desconhecida'),
         ).length;
         return total > 0 ? total : null;
       });
 
     const serie = {
       type: 'column',
-      name: _tipo,
+      name: typology,
       data: total_tipo,
       color:
-        theme.tipologia[_tipo.toLowerCase() as keyof TipologiaTheme] ??
-        theme.tipologia.desconhecida,
+        theme.typology[typology.toLowerCase() as keyof TypologyTheme] ??
+        theme.typology.desconhecida,
     };
     series.push(serie);
     return series;
@@ -107,8 +107,8 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
       name: _tipo,
       data: total_tipo,
       color:
-        theme.tipologia[_tipo.toLowerCase() as keyof TipologiaTheme] ??
-        theme.tipologia.desconhecida,
+        theme.typology[_tipo.toLowerCase() as keyof TypologyTheme] ??
+        theme.typology.desconhecida,
     };
     series.push(serie);
     return series;

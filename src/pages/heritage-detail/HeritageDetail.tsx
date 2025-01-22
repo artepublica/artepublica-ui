@@ -3,7 +3,7 @@ import { Platform, View } from 'react-native';
 
 import { Image, Text } from '@base-components';
 import { heritages } from '@data';
-import { getYear, TipologiaTheme, useTheme } from '@utils';
+import { getYear, TypologyTheme, useTheme } from '@utils';
 
 function HeritageDetail(): JSX.Element {
   const { theme } = useTheme();
@@ -18,9 +18,9 @@ function HeritageDetail(): JSX.Element {
         justifyContent: 'center',
         padding: 8,
         backgroundColor:
-          theme.tipologia[
-            heritage?.Tipologia?.toLocaleLowerCase() as keyof TipologiaTheme
-          ] ?? theme.tipologia.desconhecida,
+          theme.typology[
+            heritage?.Typology?.toLocaleLowerCase() as keyof TypologyTheme
+          ] ?? theme.typology.desconhecida,
         height: '100%',
       }}
     >

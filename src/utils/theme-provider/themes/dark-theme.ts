@@ -53,7 +53,7 @@ const DarkTheme: Theme = {
   },
   principal: '#FFFFFF',
   secundaria: '#B3B3B3',
-  tipologia: {
+  typology: {
     busto: magenta,
     cabeça: amarelo,
     escultura: azul,

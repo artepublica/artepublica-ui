@@ -12,7 +12,7 @@ import {
   getYear,
   magenta,
   reduceListOfList,
-  TipologiaTheme,
+  TypologyTheme,
   useTheme,
 } from '@utils';
 
@@ -52,7 +52,7 @@ function Block({
 
   const typologies = heritagePerYear
     .map((year) =>
-      year.heritages.map((heritage) => heritage.Tipologia ?? 'Desconhecida'),
+      year.heritages.map((heritage) => heritage.Typology ?? 'Desconhecida'),
     )
     .reduce<string[]>((r, l) => {
       Array.prototype.push.apply(r, l);
@@ -68,21 +68,21 @@ function Block({
 
   const typologyTotal = typologies.reduce<
     { type: string; name: string; data: (number | null)[] }[]
-  >((series, tipologia) => {
-    const total_tipologia = heritagePerYear.map((year) => {
+  >((series, typology) => {
+    const typologyTotal = heritagePerYear.map((year) => {
       const total = year.heritages.filter(
-        (heritage) => heritage.Tipologia === tipologia,
+        (heritage) => heritage.Typology === typology,
       ).length;
       return total > 0 ? total : null;
     });
 
     const serie = {
       type: 'column',
-      name: tipologia,
-      data: total_tipologia,
+      name: typology,
+      data: typologyTotal,
       color:
-        theme.tipologia[tipologia.toLowerCase() as keyof TipologiaTheme] ??
-        theme.tipologia.desconhecida,
+        theme.typology[typology.toLowerCase() as keyof TypologyTheme] ??
+        theme.typology.desconhecida,
     };
     series.push(serie);
     return series;

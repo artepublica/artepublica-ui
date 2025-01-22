@@ -6,7 +6,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart, Dropdown } from '@base-components';
 import { Obra } from '@domain';
-import { getYear, TipologiaTheme, useTheme, vinho } from '@utils';
+import { getYear, TypologyTheme, useTheme, vinho } from '@utils';
 
 import styles from './styles';
 
@@ -43,10 +43,10 @@ function HeritageAuthorTypologyNetwork({
 
   const typologies = selected.heritages
     .map((heritage) => {
-      const typology = heritage.Tipologia ?? 'Deconhecida';
+      const typology = heritage.Typology ?? 'Deconhecida';
       const color =
-        theme.tipologia[typology.toLowerCase() as keyof TipologiaTheme] ??
-        theme.tipologia.desconhecida;
+        theme.typology[typology.toLowerCase() as keyof TypologyTheme] ??
+        theme.typology.desconhecida;
       return {
         id: typology,
         marker: { radius: 20 },
@@ -66,16 +66,16 @@ function HeritageAuthorTypologyNetwork({
   const titles = selected.heritages.map((heritage) => ({
     id: `${heritage.Titulo ?? 'Deconhecida'} (${getYear(heritage.DataInauguracao) ?? 's.d.'})`,
     marker: { radius: 10 },
-    color: `${typologies.find((typology) => typology.id === (heritage.Tipologia ?? 'Desconhecida'))?.color}80`,
+    color: `${typologies.find((typology) => typology.id === (heritage.Typology ?? 'Desconhecida'))?.color}80`,
   }));
 
   const nodes = [{ id: selected.name, marker: { radius: 30 }, color: vinho }];
   Array.prototype.push.apply(nodes, titles);
   Array.prototype.push.apply(nodes, typologies);
 
-  const data = typologies.map((tipologia) => ({
+  const data = typologies.map((typology) => ({
     from: selected.name,
-    to: tipologia.id,
+    to: typology.id,
   }));
 
   Array.prototype.push.apply(
@@ -92,9 +92,9 @@ function HeritageAuthorTypologyNetwork({
           )
           .filter(
             (heritage) =>
-              (heritage.Tipologia != null &&
-                heritage.Tipologia === typology.id) ||
-              (typology.id === 'Desconhecida' && heritage.Tipologia == null),
+              (heritage.Typology != null &&
+                heritage.Typology === typology.id) ||
+              (typology.id === 'Desconhecida' && heritage.Typology == null),
           )
           .map(
             (heritage) =>

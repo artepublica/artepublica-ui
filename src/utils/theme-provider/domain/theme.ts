@@ -42,7 +42,7 @@ type RootMenuTheme = {
   lineHeight: number;
 };
 
-export type TipologiaTheme = {
+export type TypologyTheme = {
   busto: string;
   cabeça: string;
   escultura: string;
@@ -65,6 +65,6 @@ export type Theme = {
   bottomTab: RootMenuTheme;
   principal: string;
   secundaria: string;
-  tipologia: TipologiaTheme;
+  typology: TypologyTheme;
   coresGrafico: string[];
 };

@@ -27,7 +27,7 @@ export const CoronelAssuncao_RuffoFanucchi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Militar',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -51,7 +51,7 @@ export const FonteDaCrianca_HenriFredericIselin: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -76,7 +76,7 @@ export const NossaSenhoradaImaculadaConceicao_Desconhecido: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -169,7 +169,7 @@ export const EsculturaParaORio_WaltercioCaldas: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -200,7 +200,7 @@ export const MarechalMachadoBittencourt_JoseOtavioCorreaLima: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Militar',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -254,7 +254,7 @@ export const TeixeiraDeFreitas_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -294,7 +294,7 @@ export const BuarquedeMacedo_JoseOtavioCorreaLima: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -324,7 +324,7 @@ export const ColunaMediaemCantoneirasDiagonais_FranzWeissmann: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -352,7 +352,7 @@ export const BernardoPereiradeVasconcelos_FloryGama: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -400,7 +400,7 @@ export const Tiradentes_FranciscoAndrade: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -434,7 +434,7 @@ export const FranciscoPereiraPassos_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -473,7 +473,7 @@ export const MachadoDeAssis_HumbertoCozzo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -527,7 +527,7 @@ export const Ritmo_BrunoGiorgi: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -584,7 +584,7 @@ export const ManuelBandeira_OttoDumovich: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -616,7 +616,7 @@ export const GrandeQuadradoVermelho_FranzWeissmann: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -689,7 +689,7 @@ export const OPassante_JoseResende: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -722,7 +722,7 @@ export const JoseBonifacio_LouisRochet: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -748,7 +748,7 @@ export const TresVelas_IvanPaulPaccini: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -781,7 +781,7 @@ export const FontedoMenino_MestreValentim: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -813,7 +813,7 @@ export const FontedodosAmores_MestreValentim: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -887,7 +887,7 @@ export const CarlosGomes_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -920,7 +920,7 @@ export const VicenteCelestino_TitoBernucci: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -959,7 +959,7 @@ export const Sinho_TitoBernucci: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -1010,7 +1010,7 @@ export const BenjaminConstant_DecioVillares_EduardoDeSa_VicenteOrnelas: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -1057,7 +1057,7 @@ export const PauloDeFrontin_UgoTaddey: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -1089,7 +1089,7 @@ export const JuscelinoKubitschek_Zanucchi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -1130,7 +1130,7 @@ export const FranciscoSerrador_ACoutinho: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -1195,7 +1195,7 @@ export const GetulioVargas_LuizSerri: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -1223,7 +1223,7 @@ export const PescadorNapolitano_FrancoisRude: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1254,7 +1254,7 @@ export const FonteJovemEuropa_MathurinMoreau: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -1285,7 +1285,7 @@ export const ASereia_ProvinSerres: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1319,7 +1319,7 @@ export const Primavera_GustaveFredericMichel: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1353,7 +1353,7 @@ export const Outono_GustaveFredericMichel: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1382,7 +1382,7 @@ export const Inverno_PaulJeanBaptisteGasg: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1411,7 +1411,7 @@ export const Verao_PaulJeanBaptisteGasg: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1462,7 +1462,7 @@ export const HeitorVillaLobos_BrunoGiorgi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -1500,7 +1500,7 @@ export const GeneralSantander_FranciscoVictorPalma: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1538,7 +1538,7 @@ export const EvandroLinseSilva_AlfredoCeschiatti: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -1568,7 +1568,7 @@ export const LutaDesigual_LDespresLaupedeCluny: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -1616,7 +1616,7 @@ export const ZumbidosPalmares_RomeuAlves: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -1652,7 +1652,7 @@ export const AUniao_MathurinMoreau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1680,7 +1680,7 @@ export const ALiberdade_MathurinMoreau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1708,7 +1708,7 @@ export const AJustica_MathurinMoreau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1736,7 +1736,7 @@ export const AFidelidade_MathurinMoreau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1776,7 +1776,7 @@ export const JoaoCaetano_FranciscoManuelChavesPinheiro: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1821,7 +1821,7 @@ export const DomPedroI_LouisRochet: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'cívica',
   Natureza: 'Referencial',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1874,7 +1874,7 @@ export const SolarWindsurfer_JesperNeergaard: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -1902,7 +1902,7 @@ export const SantosDumont_AmadeuZani: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -1936,7 +1936,7 @@ export const MulhercomAnfora_HumbertoCozzo: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -1976,7 +1976,7 @@ export const MahatmaGandhi_SankhoChaudhuri: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -2019,7 +2019,7 @@ export const Girardet_JoseOtavioCorreaLima: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -2065,7 +2065,7 @@ export const CatullodaPaixaoCearense_HonorioPecanha: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -2119,7 +2119,7 @@ export const AdolfoBergamini_HildegardoLeaoVelloso: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -2160,7 +2160,7 @@ export const ChafarizdoMonroe_MathurinMoreau: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -2222,7 +2222,7 @@ export const AshbelGreenSimentoneHelen_JoasPereiraDosPassos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -2279,7 +2279,7 @@ export const AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -2333,7 +2333,7 @@ export const BaraodeMaua_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -2359,7 +2359,7 @@ export const PauloDeOliveiraSampaio_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -2397,7 +2397,7 @@ export const AtilioCorreaLima_CPincy: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -2434,7 +2434,7 @@ export const AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -2482,7 +2482,7 @@ export const TeresaCristinaBragancadeBourbon_JoseLuizRibeiro: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -2513,7 +2513,7 @@ export const AmoraLira_EugeneLouisLequesne: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -2555,7 +2555,7 @@ export const DuquedeCaxias_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Militar',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -2633,7 +2633,7 @@ export const BaraodoRioBranco_HildegardoLeaoVelloso: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -2708,7 +2708,7 @@ export const EvaristodeMoraes_LaurindoRamos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -2742,7 +2742,7 @@ export const MarechalDeodorodaFonseca_ModestinoKanto: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -2796,7 +2796,7 @@ export const AnaNeri_LuizFerrer: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -2835,7 +2835,7 @@ export const OlavoBilac_HumbertoCozzo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -2871,7 +2871,7 @@ export const RodolfoBernardelli_JoseOtavioCorreaLima: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -2910,7 +2910,7 @@ export const PedroAmerico_PauloMazzucchelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -2938,7 +2938,7 @@ export const AlbertoNepomuceno_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -2980,7 +2980,7 @@ export const APaz_SironFranco: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -3007,7 +3007,7 @@ export const EdsonLuis_CristinaPozzobon: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -3063,7 +3063,7 @@ export const MarcilioDias_LuisPaesLeme: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3094,7 +3094,7 @@ export const BaraodeLadario_Joceil: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -3122,7 +3122,7 @@ export const CristianoOttoni_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -3149,7 +3149,7 @@ export const SaturninoSoaresMeirelles_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3187,7 +3187,7 @@ export const ChiquinhaGonzaga_HonorioPecanha: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3226,7 +3226,7 @@ export const IrineuMarinho_BenevenutoBerna: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3264,7 +3264,7 @@ export const PlacidoDeCastro_ArmandoSocratesSchnoor: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3290,7 +3290,7 @@ export const FontedoTritao_NicolinaVazDeAssisPintodoCouto: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -3339,7 +3339,7 @@ export const JosePauloSilva_CarlosDelNegro: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3368,7 +3368,7 @@ export const AlmiranteJuliodeNoronha_ABraga: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Militar',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3409,7 +3409,7 @@ export const RaymundoCorrea_HonorioPecanha: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3440,7 +3440,7 @@ export const FranciscoBraga_PauloMazzucchelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3478,7 +3478,7 @@ export const VictorMeirelles_EduardoDeSa: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3511,7 +3511,7 @@ export const MestreValentim_RomeuAlves: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3541,7 +3541,7 @@ export const CastroAlves_EduardoDeSa: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3587,7 +3587,7 @@ export const FerreiraDeAraujo_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3629,7 +3629,7 @@ export const GoncalvesDias_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3662,7 +3662,7 @@ export const Primavera_MathurinMoreau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -3696,7 +3696,7 @@ export const Inverno_GustaveFredericMichel: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -3729,7 +3729,7 @@ export const Outono_MathurinMoreau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -3762,7 +3762,7 @@ export const Verao_GustaveFredericMichel: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -3791,7 +3791,7 @@ export const NelsonMege_HonorioPecanha: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3864,7 +3864,7 @@ export const OMascate_HonorioPecanha: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -3893,7 +3893,7 @@ export const LuisdeCamoes_AntonioTaunay: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -3951,7 +3951,7 @@ export const RetanguloVazado_FranzWeissmann: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -3976,7 +3976,7 @@ export const SiqueiraCampos_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -4000,7 +4000,7 @@ export const AlegoriadaMusica_RodolfoBernardelli: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -4027,7 +4027,7 @@ export const RuiBarbosa_DeoclecianoMartinsDeOliveiraFilho: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -4053,7 +4053,7 @@ export const ElevandoSe_JoseResende: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -4079,7 +4079,7 @@ export const VenusReclinada_JoseResende: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -4104,7 +4104,7 @@ export const FranciscoMignone_BrunoGiorgi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -4137,7 +4137,7 @@ export const Encontro_FranzWeissmann: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -4161,7 +4161,7 @@ export const DSebastiaoLeme_HeitorUsai: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -4189,7 +4189,7 @@ export const MonumentoaJuventude_BrunoGiorgi: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -4215,7 +4215,7 @@ export const AssisChateaubriand_BrunoGiorgi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -4250,7 +4250,7 @@ export const Terra_FranzWeissmann: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -4301,7 +4301,7 @@ export const ModestinoKanto_HonorioPecanha: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -4349,7 +4349,7 @@ export const JoaoCandido_ValterBrito: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -4389,7 +4389,7 @@ export const DomJoaoVI_BarataFeijo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -4429,7 +4429,7 @@ export const GeneralOsorio_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -4467,7 +4467,7 @@ export const PequenoJornaleiro_AnisioOscarMotta: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -4508,7 +4508,7 @@ export const JoaoCalvino_JoasPereiraDosPassos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -4543,7 +4543,7 @@ export const ReverendoMathathiasGomes_JoasPereiraDosPassos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -4599,7 +4599,7 @@ export const SemTitulo_IvensMachado: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -4623,7 +4623,7 @@ export const PrincesaIsabel_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -4698,7 +4698,7 @@ export const SemTitulo_AmilcarDeCastro: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -4747,7 +4747,7 @@ export const Pixinguinha_OttoDumovich: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -4784,7 +4784,7 @@ export const Braguinha_OttoDumovich: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -4812,7 +4812,7 @@ export const SergioCardoso_Marlota: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -4839,7 +4839,7 @@ export const CarlosGomes_UgoTaddey: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -4866,7 +4866,7 @@ export const AndreThevet_CyniraNDantas: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -4893,7 +4893,7 @@ export const BebedouroDosPassarosI_PedroBruno: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -4920,7 +4920,7 @@ export const BebedouroDosPassarosII_PedroBruno: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -4947,7 +4947,7 @@ export const BebedouroDosPassarosIII_PedroBruno: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -4974,7 +4974,7 @@ export const PedroBruno_PauloMazzucchelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -4998,7 +4998,7 @@ export const GetulioVargas_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -5024,7 +5024,7 @@ export const Golfinho_AugustoSilva: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -5068,7 +5068,7 @@ export const Modulo65_AscanioMMM: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -5095,7 +5095,7 @@ export const UlyssesGuimaraes_SironFranco: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -5130,7 +5130,7 @@ export const ChafarizdasTresGracas_RemoBernucci: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -5159,7 +5159,7 @@ export const Chafariz_AugusteMartin: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -5198,7 +5198,7 @@ export const Indio_JulesJeanJulesSalmson: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -5227,7 +5227,7 @@ export const Leao_HippolyteFrancoisAugusteHippolytePeyrol: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -5255,7 +5255,7 @@ export const India_JulesJeanJulesSalmson: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -5296,7 +5296,7 @@ export const CristoRedentor_PaulLandowski: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -5324,7 +5324,7 @@ export const Escravo_MarliMazeredo: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -5353,7 +5353,7 @@ export const FonteWallaceI_CharlesAugusteLebourg: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -5380,7 +5380,7 @@ export const AlmiranteCochrane_Lana: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -5416,7 +5416,7 @@ export const ACleydePradoMaia_EdgarDuvivier: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -5444,7 +5444,7 @@ export const PaulaFreitas_BenevenutoBerna: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -5469,7 +5469,7 @@ export const AfraniodeMeloFranco_BrunoGiorgi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -5496,7 +5496,7 @@ export const FranciscoPaulaMayrink_PinedoParis: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -5523,7 +5523,7 @@ export const Fidelidade_BenevenutoBerna: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -5550,7 +5550,7 @@ export const XavierdeBrito_ElzaCansancaoMedeiros: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Militar',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -5577,7 +5577,7 @@ export const LamartineBabo_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -5604,7 +5604,7 @@ export const LuisGastaoDEscragnolleDoria_CurzioZani: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -5631,7 +5631,7 @@ export const OswaldoDinizMagalhaes_MateusFernandes: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -5663,7 +5663,7 @@ export const BarletJames_RuffoFanucchi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -5692,7 +5692,7 @@ e recolocado em 1996.`,
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -5729,7 +5729,7 @@ export const DomPedroI_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -5756,7 +5756,7 @@ export const SaoCristovao_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -5783,7 +5783,7 @@ export const JoseBonifacio_MarcosAndreSales: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -5810,7 +5810,7 @@ export const NiloPecanha_NicolinaVazDeAssisPintodoCouto: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -5838,7 +5838,7 @@ export const SerpentedoLago_NicolinaVazDeAssisPintodoCouto: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -5864,7 +5864,7 @@ export const CantodasSereias_NicolinaVazDeAssisPintodoCouto: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -5900,7 +5900,7 @@ export const LuizGonzaga_JoasPereiraDosPassos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -5928,7 +5928,7 @@ export const PedroI_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -5964,7 +5964,7 @@ export const Cartola_OttoDumovich: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -5990,7 +5990,7 @@ export const RenatoRusso_Ique: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -6018,7 +6018,7 @@ export const EscravaAnastacia_JaimeSampaio: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6044,7 +6044,7 @@ export const FonteMedusa_Desconhecida: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -6071,7 +6071,7 @@ export const HelenoDaCostaBrandao_HonorioPecanha: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6099,7 +6099,7 @@ export const AosHahnemannianos_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -6127,7 +6127,7 @@ export const NoelRosa_AlfredoHerculanoFreixo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -6166,7 +6166,7 @@ export const NoelRosa_JoasPereiraDosPassos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -6202,7 +6202,7 @@ export const NoelRosa_GilbertoMandarino: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6229,7 +6229,7 @@ export const PedroErnesto_BenevenutoBerna: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6264,7 +6264,7 @@ export const AJuventudeACulturaEAoEsporte_HaroldoBarroso: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -6291,7 +6291,7 @@ export const AosCampeoesdoMundoBellini_MateusFernandes: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -6318,7 +6318,7 @@ export const EdsonPassos_HildegardoLeaoVelloso: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6346,7 +6346,7 @@ export const IrmaoGoncalvesXavier_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6383,7 +6383,7 @@ export const SaoMaron_RomeuAlves: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -6421,7 +6421,7 @@ export const SaoCharbel_RomeuAlves: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -6449,7 +6449,7 @@ export const AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto: Obra =
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Busto',
+    Typology: 'Busto',
     Execucao: true,
   };
 
@@ -6482,7 +6482,7 @@ export const DomPedroII_JeanMagrou_HeitorDaSilvaCosta: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -6525,7 +6525,7 @@ export const ImperatrizLeopoldina_EdgarDuvivierFilho: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6549,7 +6549,7 @@ export const FranciscoDeMeloPalheta_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6561,7 +6561,7 @@ export const Brasil_DanielBellionGomesPinto: Obra = {
   Renomeacao: false,
   Classificacao: 'perene',
   Categoria: 'sublimidade',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Material: `Aço Corten`,
   Descricao: `Escultura em aço cortada apresentando o mapa do Brasil.`,
   Execucao: true,
@@ -6639,7 +6639,7 @@ export const AgripinoGrieco_DanielCrow_CurzioZani: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6662,7 +6662,7 @@ export const AlegoriaAoComercio_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -6687,7 +6687,7 @@ export const AristidesCaire_TitoBernucci: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6717,7 +6717,7 @@ export const BaraodoRioBranco_JoaoTurin: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6754,7 +6754,7 @@ export const NiltonSantos_EdgarDuvivierFilho: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -6781,7 +6781,7 @@ export const OrlandoSilva_MiguelPastor: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -6805,7 +6805,7 @@ export const ChafarizDaExposicaoNacional1908_Desconhecida: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -6831,7 +6831,7 @@ export const MarechalMascarenhasdeMoraes_IrmaosBernardini: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6858,7 +6858,7 @@ export const PaulHarris_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6870,7 +6870,7 @@ export const CarlosAlbertodaCruzWenceslau_Desconhecida: Obra = {
   Renomeacao: false,
   Classificacao: 'perene',
   Categoria: 'personalidades',
-  Tipologia: `Busto`,
+  Typology: `Busto`,
   Material: `Peça em argamassa e pedestal revestido com granito`,
   Descricao: `Homenagem da Universidade Castelo Branco e do Lions Clube de Realengo.`,
   Execucao: true,
@@ -6910,7 +6910,7 @@ export const MaedAgua_NewtonSa: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -6939,7 +6939,7 @@ export const ExudosVentos_MarioCravoNeto: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -6964,7 +6964,7 @@ export const AlexanderFleming_LeonardoLima: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -6999,7 +6999,7 @@ export const LimaBarreto_FranciscoAndrade: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -7026,7 +7026,7 @@ export const CarmenMiranda_MateusFernandes: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -7052,7 +7052,7 @@ export const CastroAlves_ModestinoKanto: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -7083,7 +7083,7 @@ export const Leao_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -7118,7 +7118,7 @@ export const IndiaI_JulesJeanJulesSalmson: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7145,7 +7145,7 @@ export const Mae_RuiLeal: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -7182,7 +7182,7 @@ export const PedroFernandes_EdgarDuvivierFilho: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7209,7 +7209,7 @@ export const SaoCristovao_SergioBertoni: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7235,7 +7235,7 @@ export const VicenteDeCarvalho_RuffoFanucchi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -7261,7 +7261,7 @@ export const FonteWallaceII_CharlesAugusteLebourg: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -7286,7 +7286,7 @@ export const Bastoes_CeleidaTostes: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -7325,7 +7325,7 @@ export const Roda_CeleidaTostes: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -7364,7 +7364,7 @@ export const Mo_CeleidaTostes: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -7408,7 +7408,7 @@ export const Contemplacao_JesperNeewgaard: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -7431,7 +7431,7 @@ export const Indio_CharlesAugusteLebourg: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7470,7 +7470,7 @@ export const SantosDumont_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -7497,7 +7497,7 @@ export const BaraodeItamarati_PauloMazzucchelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -7524,7 +7524,7 @@ export const LineudePaulaMachado_HildegardoLeaoVelloso: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7549,7 +7549,7 @@ export const Arvore_HelioPelegrino: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -7582,7 +7582,7 @@ export const ProtecaooCaoeaCrianca_HippolyteFrancoisAugusteHippolytePeyrol: Obra
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Typology: 'Escultura',
     Execucao: true,
   };
 
@@ -7606,7 +7606,7 @@ export const SemTitulo_MariaLuciaPivetti: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -7635,7 +7635,7 @@ export const QuadradoemTorcaonoEspaco_FranzWeissmann: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -7665,7 +7665,7 @@ export const AlbertoIReidaBelgica_LaurindoRamos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -7694,7 +7694,7 @@ export const Mercurio_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7726,7 +7726,7 @@ export const ClementinoFraga_GiulioStarace: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7752,7 +7752,7 @@ export const MulherComCornucopia_PierreLoison: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7780,7 +7780,7 @@ export const FonteWallaceIII_CharlesAugusteLebourg: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -7805,7 +7805,7 @@ export const TomJobim_ChristinaMotta: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Memorial',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7831,7 +7831,7 @@ export const IsmaelSilva_OttoDumovich: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Memorial',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7856,7 +7856,7 @@ export const PioCorreia_AlicePittaluga: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -7881,7 +7881,7 @@ export const CamposPorto_PauloMazzuchelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -7906,7 +7906,7 @@ export const XochipilliDeusdasFlores_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7931,7 +7931,7 @@ export const Ceres_Merzio: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7956,7 +7956,7 @@ export const Diana_Merzio: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -7981,7 +7981,7 @@ export const ChafarizDasMusas_HerbertWHogg: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -8006,7 +8006,7 @@ export const FreiLeandroDoSacramento_RibeiroDaCosta: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -8031,7 +8031,7 @@ export const DomJoaoVI_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -8056,7 +8056,7 @@ export const JoaoBarbosaRodrigues_AntonioPintodeMattos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -8081,7 +8081,7 @@ export const VonMartius_AntonioPintodeMattos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -8115,7 +8115,7 @@ export const AFonteDeusaThetis_LouisSauvageau: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -8140,7 +8140,7 @@ export const Eco_MestreValentim: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -8179,7 +8179,7 @@ export const OCorneteiro_Ique: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8206,7 +8206,7 @@ export const LouisPasteur_HeitorDaSilvaCosta: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -8232,7 +8232,7 @@ export const Tartaruga_JoseResende: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8276,7 +8276,7 @@ export const MarioPedrosa_RomeuAlves: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -8306,7 +8306,7 @@ export const AMeninadosBaloesEncantados_SandraGuinle: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8331,7 +8331,7 @@ export const Interacao_MarliMazeredo: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8358,7 +8358,7 @@ export const Primavera_LuciaGuerreiro: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8386,7 +8386,7 @@ export const PinheiroMachado_HildegardoLeaoVelloso: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -8421,7 +8421,7 @@ export const MulhereoFelino_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8450,7 +8450,7 @@ export const AlmiranteSaldanhadaGama_AntonioCaringi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -8476,7 +8476,7 @@ export const MarechalEuricoGasparDutra_DSantosLeal: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -8509,7 +8509,7 @@ export const ChafarizdasSaracuras_MestreValentim: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -8555,7 +8555,7 @@ export const GeneralOsorio_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -8581,7 +8581,7 @@ export const CardealJoaquimArcoverde_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 export const Jaguar_JoaoTurin: Obra = {
@@ -8611,7 +8611,7 @@ export const Jaguar_JoaoTurin: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8640,7 +8640,7 @@ export const Acoplamento_MarioCravo: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8675,7 +8675,7 @@ export const Evolucao_MelindaGarcia: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8710,7 +8710,7 @@ export const Maternidade_RomeoAlves: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8745,7 +8745,7 @@ export const PrincipedosBosques_RemoBernucci: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8782,7 +8782,7 @@ export const Iansa_TatiMoreno: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8820,7 +8820,7 @@ export const MarcosTamoio_FloryGama: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -8860,7 +8860,7 @@ export const EstruturaEmDiagonal_FranzWeissmann: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8897,7 +8897,7 @@ export const Compressao_FranciscoStockinger: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8933,7 +8933,7 @@ export const Oxossi_Caribe: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -8972,7 +8972,7 @@ export const Construcao_BrunoGiorgi: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9008,7 +9008,7 @@ export const CosmoI_MariaGuilherminaFernandes: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9044,7 +9044,7 @@ export const HomemSentado_MarioAgostinelli: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9098,7 +9098,7 @@ export const Sofia_SoniaEbling: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9144,7 +9144,7 @@ export const Incerteza_Marmura: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9194,7 +9194,7 @@ export const Prometeu_EvandroCarneiro: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9232,7 +9232,7 @@ export const Encontro_EdgarDuvivier: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9258,7 +9258,7 @@ export const StuartAngel_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -9307,7 +9307,7 @@ export const EvangelistaMateus_AlfredoCeschiatti: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9353,7 +9353,7 @@ export const Estrutura_SergioCamargo: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9383,7 +9383,7 @@ export const IndioLutandocomoFelino_HippolyteFrancoisAugusteHippolytePeyrol: Obr
     Categoria: 'Sublimidade',
     Funcao: 'Decorativa',
     Natureza: 'Artística',
-    Tipologia: 'Escultura',
+    Typology: 'Escultura',
     Execucao: true,
   };
 
@@ -9395,7 +9395,7 @@ export const AoPolicialMilitar_Desconhecida: Obra = {
   Renomeacao: false,
   Classificacao: 'perene',
   Categoria: 'personalidades',
-  Tipologia: `Estátua`,
+  Typology: `Estátua`,
   Material: `Peça em bronze com pedestal revestido de granito`,
   Descricao: `Inaugurado na década de 1990 e reinaugurado em 2006 no calçadão da Penha.
 A homenagem foi uma iniciativa dos moradores da Leopoldina aos soldados do 16º Batalhão da Policia Militar que morreram em combate.`,
@@ -9438,7 +9438,7 @@ export const SanMartin_LouisJosephDaumas: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -9466,7 +9466,7 @@ export const JoaoPessoa_SamuelMartinsRibeiro: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -9497,7 +9497,7 @@ export const LagoaSolidaria_MarliMazeredo: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9543,7 +9543,7 @@ export const Curumim_PedroCorreiaDeAraujo: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9572,7 +9572,7 @@ export const ATomJobimOEstudante_OttoDumovich_OttoDumovich: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -9610,7 +9610,7 @@ export const OttoLaraResende_JoasPereiraDosPassos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Grupo Escultórico',
+  Typology: 'Grupo Escultórico',
   Execucao: true,
 };
 
@@ -9633,7 +9633,7 @@ export const AnjoComPeixe_AndreaVerrocchio: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -9657,7 +9657,7 @@ export const ADanca_AlicePittaluga: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9681,7 +9681,7 @@ export const Ossanha_TatiMoreno: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9706,7 +9706,7 @@ export const Narciso_MestreValentim: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -9731,7 +9731,7 @@ export const SaintHilaire_HumbertoCozzo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -9759,7 +9759,7 @@ export const MedidadoTempo_FransKrajcberg: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9796,7 +9796,7 @@ export const Guardiao_CeleidaTostes: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9826,7 +9826,7 @@ export const FrutodoEspaco_AntonioManuelOliveira: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9851,7 +9851,7 @@ export const Jacare2000_MariaHelenaVasco: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9878,7 +9878,7 @@ export const RaizesAmazonas_FernandoCasas: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9915,7 +9915,7 @@ export const Nijinsky_MarliMazeredo: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9950,7 +9950,7 @@ export const DianaaCacadora_HeloisaDolabella: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -9985,7 +9985,7 @@ export const Lua_JoseRaulAllegretti: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -10023,7 +10023,7 @@ export const Flora_MarioCravo: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -10050,7 +10050,7 @@ export const Atleta_RemoBernucci: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -10075,7 +10075,7 @@ export const AVictorAssisBrasil_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -10104,7 +10104,7 @@ export const RitualdoVento_GabrielFonseca: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -10144,7 +10144,7 @@ export const AVieiraSoutoePauloDeFrontin_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -10174,7 +10174,7 @@ export const JozefPilsudski_Farynkiewicz: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -10201,7 +10201,7 @@ export const RubenDario_DanielCrow_CurzioZani: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -10227,7 +10227,7 @@ export const Trio_JoseCesarBranquinho: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -10277,7 +10277,7 @@ export const FormasnoEspacoI_OscarNiemeyer: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -10327,7 +10327,7 @@ export const FormasnoEspacoII_OscarNiemeyer: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -10376,7 +10376,7 @@ export const Violencia_OscarNiemeyer: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -10425,7 +10425,7 @@ export const Mulher_OscarNiemeyer: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -10455,7 +10455,7 @@ export const OthonXavierdeBrito_RuffoFanucchi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -10491,7 +10491,7 @@ export const MiguelCouto_HeitorUsai: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -10520,7 +10520,7 @@ O monumento foi erguido pela Prefeitura da Cidade por solicitação da família.
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -10553,7 +10553,7 @@ export const JeanSibelius_WainoAaltonem: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -10581,7 +10581,7 @@ export const ZuzuAngel_MarliMazeredo: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -10649,7 +10649,7 @@ export const Ceres_ThomasRegnaudin: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -10679,7 +10679,7 @@ export const Marte_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -10709,7 +10709,7 @@ export const MercurioPalacioCidade_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -10773,7 +10773,7 @@ export const Minerva_Giustiniani: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -10799,7 +10799,7 @@ export const Chafariz_AndrewHandyside: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -10826,7 +10826,7 @@ export const Maternidade_CelsoAntonio: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -10853,7 +10853,7 @@ export const FredericoOzanam_DanteCroce: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -10880,7 +10880,7 @@ export const PedroJuanCaballero_LeonardoLima: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -10909,7 +10909,7 @@ export const JuruenadeMatos_JoaquimMoreiraJunior: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -10936,7 +10936,7 @@ export const FranciscoMoranzan_RomeuAlves: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -10963,7 +10963,7 @@ export const CarvalhodeBrito_RuffoFanucchi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -10993,7 +10993,7 @@ export const SimonBolivar_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11025,7 +11025,7 @@ export const GeneralJoseArtigas_VHabegger: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -11052,7 +11052,7 @@ export const Bocage_JoaquimCorrea: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -11089,7 +11089,7 @@ export const YhitzakRabin_EdgarDuvivierFilho: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -11119,7 +11119,7 @@ export const BartolomeuMitre_LourillandSan: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -11152,7 +11152,7 @@ export const CarlosChagas_HumbertoCozzo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11177,7 +11177,7 @@ export const MarechalCandidoRandon_AntonioPintodeMattos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -11219,7 +11219,7 @@ export const FontedoManequinho_BelmiroDeAlmeida: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11249,7 +11249,7 @@ export const AEcadeQueiroz_RodolfoPintoCouto: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Referencial',
   Natureza: 'Artística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -11283,7 +11283,7 @@ export const FonteIrmaosRamosPinto_AntonioTeixeiraLopes: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -11310,7 +11310,7 @@ export const OswaldoCruz_HumbertoCozzo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11337,7 +11337,7 @@ export const AlmiranteTamandare_HildegardoLeaoVelloso: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11364,7 +11364,7 @@ export const Crepusculo_HenriWeigele: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11394,7 +11394,7 @@ export const PoesiaemRuinas_JeanMagrou: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -11424,7 +11424,7 @@ export const NossaSenhoradaImaculadaConceicao_GiuseppeNavone: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11451,7 +11451,7 @@ export const LorenzoFernandes_AristocherBenjamimMeschessi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -11478,7 +11478,7 @@ export const EmilioDeMenezes_JoaoTurin: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -11505,7 +11505,7 @@ export const AlfredoGomes_PauloMazzucchelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -11532,7 +11532,7 @@ export const ONascimentodeVenus_MathurinMoreau: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -11560,7 +11560,7 @@ export const CristovaoColombo_MathurinMoreau: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11587,7 +11587,7 @@ export const America_MathurinMoreau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11614,7 +11614,7 @@ export const Oceania_MathurinMoreau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11642,7 +11642,7 @@ export const Africa_MathurinMoreau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11669,7 +11669,7 @@ export const Europa_MathurinMoreau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11696,7 +11696,7 @@ export const Asia_MathurinMoreau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11723,7 +11723,7 @@ export const MeninoComPassaro_MathurinMoreau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -11751,7 +11751,7 @@ export const FiguraFemininaI_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -11779,7 +11779,7 @@ export const FiguraFemininaII_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -11813,7 +11813,7 @@ export const TeixeiraSoares_JoseOtavioCorreaLima: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -11843,7 +11843,7 @@ export const ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Ornamental',
   Natureza: 'Urbanística',
-  Tipologia: 'Marco',
+  Typology: 'Marco',
   Execucao: true,
 };
 
@@ -11875,7 +11875,7 @@ export const MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMari
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
     Natureza: 'Cívica',
-    Tipologia: 'Grupo escultórico',
+    Typology: 'Grupo escultórico',
     Execucao: true,
   };
 
@@ -11902,7 +11902,7 @@ export const SemTituloI_AmilcarDeCastro: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -11931,7 +11931,7 @@ export const EspacoCircularEmCuboVirtual_FranzWeissmann: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -11959,7 +11959,7 @@ export const AsTresForcasArmadas_AlfredoCeschiatti: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -11987,7 +11987,7 @@ export const Cuauhtemoc_CarlosObregonSantacilia: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'comemorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12014,7 +12014,7 @@ export const JosedeAlencar_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12047,7 +12047,7 @@ Estátua com a figura do homenageado com uma farda chilena tendo na direita uma 
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12073,7 +12073,7 @@ export const Primavera_JeanBaptistePoultier: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12099,7 +12099,7 @@ export const Verao_PierreLeGros: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12130,7 +12130,7 @@ export const AlfredoAgache_HeitorUsai: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12157,7 +12157,7 @@ export const AfonsoCelso_LaurindoRamos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12184,7 +12184,7 @@ export const CarmemGomes_JoseBarreto: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -12210,7 +12210,7 @@ export const Outono_JacquesHouzeau: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12236,7 +12236,7 @@ export const Inverno_SimonHurtvelle: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12262,7 +12262,7 @@ export const ChafarizdosGolfinhos_AndreRedont: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12301,7 +12301,7 @@ export const CandidoMendes_BenevenutoBerna: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12329,7 +12329,7 @@ export const VeraJanacopulos_AdrianaJanacopolus: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12356,7 +12356,7 @@ export const ClovisBevilaqua_HonorioPecanha: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12385,7 +12385,7 @@ export const TeixeiraMendes_BrunoGiorgi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12412,7 +12412,7 @@ export const PereiraCarneiro_EgistoBertozzi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12440,7 +12440,7 @@ export const GetulioVargas_JoasPereiraDosPassos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12467,7 +12467,7 @@ export const SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12495,7 +12495,7 @@ export const BadenPowell_VincenzoLarocca: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12525,7 +12525,7 @@ export const RodolfoAmoedo_JoseOtavioCorreaLima: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12558,7 +12558,7 @@ export const SaoFranciscoDeAssiseSantaClara_EduardoDeSa: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -12592,7 +12592,7 @@ export const Escoteiro_FernandoThauby: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12619,7 +12619,7 @@ export const SemTitulo_HaroldoBarroso: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -12645,7 +12645,7 @@ export const Harmonia_MarliMazeredo: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'comemorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -12674,7 +12674,7 @@ export const FelinoDeitado_HippolyteFrancoisAugusteHippolytePeyrol: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -12702,7 +12702,7 @@ export const AlmiranteBarroso_JoseOtavioCorreaLima: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12745,7 +12745,7 @@ export const FranciscoAdolfoVarnhagen_JoseOtavioCorreaLima: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12805,7 +12805,7 @@ export const BrigadeiroEduardoGomes_EdgarDuvivier: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Militar',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12832,7 +12832,7 @@ export const CardealArcoverde_HeitorUsai: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12865,7 +12865,7 @@ export const PedroAlvaresCabral_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12904,7 +12904,7 @@ export const EduardoTapajos_GilbertoMandarino: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12931,7 +12931,7 @@ export const AberturadosPortos_EugeneBenet: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -12958,7 +12958,7 @@ export const AlbertoDeOliveira_PetrusVerdier: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -12986,7 +12986,7 @@ export const LasarSegall_LiubaWolf: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -13014,7 +13014,7 @@ export const ClarisseIndiodoBrasil_HCunhaMelo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -13040,7 +13040,7 @@ export const ClariceLispector_EdgarDuvivier: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -13066,7 +13066,7 @@ export const Chacrinha_Ique: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -13097,7 +13097,7 @@ export const Harmonia_JeanJacquesPradier: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Utilitária',
   Natureza: 'Urbanística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -13137,7 +13137,7 @@ export const AbrahamMedina_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -13174,7 +13174,7 @@ export const GetulioVargasBenfica_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -13202,7 +13202,7 @@ export const PadreGuilhermeDecaminada_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -13257,7 +13257,7 @@ export const AlvaroCostaMelo_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -13294,7 +13294,7 @@ export const AlmiranteMiguelGrau_PedroMMartinezCorada: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Militar',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -13322,7 +13322,7 @@ export const ChicoXavier_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -13403,7 +13403,7 @@ export const JoaoPauloII_MarioAgostinelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -13431,7 +13431,7 @@ export const MacacoTiao_GianPietroZanni: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'celebratória',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -13477,7 +13477,7 @@ export const OMascateRiachuelo_HonorioPecanha: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -13512,7 +13512,7 @@ export const DuploTotem_CeleidaTostes: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -13549,7 +13549,7 @@ export const EliasGoraybe_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -13575,7 +13575,7 @@ export const Laranja_GeorgeLopes_GeorgeGuerra: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
   Natureza: 'Urbanística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -13601,7 +13601,7 @@ export const Broca_GeorgeLopes_GeorgeGuerra: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
   Natureza: 'Urbanística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -13628,7 +13628,7 @@ export const ArcoIris_GeorgeLopes_GeorgeGuerra: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
   Natureza: 'Urbanística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -13657,7 +13657,7 @@ export const Laranjais_GeorgeLopes_GeorgeGuerra: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
   Natureza: 'Urbanística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -13683,7 +13683,7 @@ export const Colunatas_GeorgeLopes_GeorgeGuerra: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
   Natureza: 'Urbanística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -13709,7 +13709,7 @@ export const Piramide_GeorgeLopes_GeorgeGuerra: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
   Natureza: 'Urbanística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -13744,7 +13744,7 @@ export const SaoFranciscodePaula_GiovanniBattistaMaini: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -13779,7 +13779,7 @@ export const Carnica_AnaluNabuco: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -13825,7 +13825,7 @@ export const Atena_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -13855,7 +13855,7 @@ export const Menora_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Celebratória',
   Natureza: 'Religiosa',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -13880,7 +13880,7 @@ export const Animais_JorgeMarioJauregui: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Lâmina escultórica',
+  Typology: 'Lâmina escultórica',
   Execucao: true,
 };
 
@@ -13908,7 +13908,7 @@ export const ADiasdaCruz_VicenteDelRio_LuizCarlosToledo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -13936,7 +13936,7 @@ export const AAugustoMotta_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -13976,7 +13976,7 @@ export const FernandoBaptistaGoncalves_EdgarDuvivierFilho: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -14002,7 +14002,7 @@ export const SagradoCoracaodeJesus_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -14029,7 +14029,7 @@ export const JCarlos_HumbertoCozzo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -14056,7 +14056,7 @@ export const ManuelMadruga_FloryGama: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -14084,7 +14084,7 @@ export const QuintinoBocaiuva_HildegardoLeaoVelloso: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -14112,7 +14112,7 @@ export const EusebioDeOliveira_CesarDoria: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -14141,7 +14141,7 @@ export const HeroisdeLagunaeDourados_AntonioPintodeMattos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -14179,7 +14179,7 @@ export const FredericChopin_AugustZamoiski: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -14191,7 +14191,7 @@ export const AdelinoMoreira_MestreSaul: Obra = {
   Renomeacao: false,
   Classificacao: 'perene',
   Categoria: 'plasticidade',
-  Tipologia: `Estátua`,
+  Typology: `Estátua`,
   Material: `Peça em bronze`,
   Descricao: `Estátua ao compositor morador do bairro. Sentado em uma cadeira segurando um violão e apoiando a outra mão
     sobre uma mesa, como se estivesse escrevendo uma composição.`,
@@ -14229,7 +14229,7 @@ export const MarechalCandidoRondon_NewtonSa: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -14265,7 +14265,7 @@ export const IntentonaComunista_HumbertoCozzo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -14292,7 +14292,7 @@ export const Vestal_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -14319,7 +14319,7 @@ export const Ceres_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -14346,7 +14346,7 @@ export const Flora_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -14373,7 +14373,7 @@ export const Pomona_Desconhecida: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 export const SaoPedrodoMar_EdgarDuvivier: Obra = {
@@ -14399,7 +14399,7 @@ export const SaoPedrodoMar_EdgarDuvivier: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -14429,7 +14429,7 @@ export const DelPrete_RobertoSa: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Celebratória',
   Natureza: 'Cívica',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -14465,7 +14465,7 @@ export const EdmundoBittencourt_HildegardoLeaoVelloso: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -14492,7 +14492,7 @@ export const ComendadorPauloFPeixotoDaFonseca_HonorioPecanha: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -14519,7 +14519,7 @@ export const AlbertEinstein_HonorioPecanha: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Cabeça',
+  Typology: 'Cabeça',
   Execucao: true,
 };
 
@@ -14554,7 +14554,7 @@ export const IbrahimSued_MarcosAndreSales: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -14591,7 +14591,7 @@ export const SerenaDamadoMar_LuizFigueiredo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -14618,7 +14618,7 @@ Elizabet, voltado para a cidade e de costas para o mar.//Localizada próximo ao 
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: `Estátua`,
+  Typology: `Estátua`,
   Execucao: true,
 };
 
@@ -14645,7 +14645,7 @@ export const DorivalCaymmi_OttoDumovich: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -14671,7 +14671,7 @@ export const TimMaia_ChristinaMotta: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -14694,7 +14694,7 @@ export const AnaCarolina_MarliMazeredo: Obra = {
   Temporalidade: 'Permanente',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -14722,7 +14722,7 @@ export const TeneteSiqueiraCamposAoLevantedos18doForte_JoseRangel: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Militar',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -14780,7 +14780,7 @@ export const PrincesaIsabel_EdgarDuvivierFilho: Obra = {
   Temporalidade: 'Permanente',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -14810,7 +14810,7 @@ export const CoelhoCintra_LaurindoRamos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -14842,7 +14842,7 @@ export const ViscondedoRioBranco_FelixMauriceCharpentier: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 export const IrmaosBernardelli_HildegardoLeaoVelloso: Obra = {
@@ -14868,7 +14868,7 @@ export const IrmaosBernardelli_HildegardoLeaoVelloso: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -14904,7 +14904,7 @@ export const Vitoria_MarliMazeredo: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -14943,7 +14943,7 @@ export const SarahKubitschek_MarliMazeredo: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -14970,7 +14970,7 @@ export const SerzedeloCorreia_RodolfoBernardelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -15024,7 +15024,7 @@ export const Baleia_AngeloVenosa: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -15057,7 +15057,7 @@ export const MarechalFlorianoPeixoto_EduardoDeSa: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Militar',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -15087,7 +15087,7 @@ export const PauloSampaio_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -15114,7 +15114,7 @@ export const CasteloBranco_DanteCroce: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -15168,7 +15168,7 @@ export const UniaodosPovosAmericanos_MarioAgostinelli: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -15197,7 +15197,7 @@ export const BichosHibridos_VaniaVilela: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -15229,7 +15229,7 @@ export const AoPAN2007_RobertoKenjiFukuda: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -15253,7 +15253,7 @@ export const Surf_MauricioBentes: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -15303,7 +15303,7 @@ export const AyrtonSenna_MarioPitanguy: Obra = {
   Temporalidade: 'Permanente',
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -15347,7 +15347,7 @@ export const JoaquimNabuco_OttoDumovich: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -15399,7 +15399,7 @@ export const CandidoDeOliveira_LaurindoRamos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -15443,7 +15443,7 @@ export const SebastiaoLeme_MariaDaGloriaVianaPatrasso: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -15481,7 +15481,7 @@ export const PierreRichiereGuillaumeChartier_JoasPereiraDosPassos: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Religiosa',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -15508,7 +15508,7 @@ export const CondeCunha_LuisPaesLeme: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -15534,7 +15534,7 @@ export const AntonioJanuzzi_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -15561,7 +15561,7 @@ export const JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -15588,7 +15588,7 @@ export const LimaBarreto_EdgarDuvivier: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -15614,7 +15614,7 @@ export const AMelvinJoneseArmandoFarjado_Ariel: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Relevo',
+  Typology: 'Relevo',
   Execucao: true,
 };
 
@@ -15642,7 +15642,7 @@ export const GabrielHabib_HildegardoLeaoVelloso: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -15670,7 +15670,7 @@ export const GrandjeandeMontiny_NicolinaVazDeAssisPintodoCouto: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -15696,7 +15696,7 @@ export const JuliodeCastilhos_Desconhecida: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -15723,7 +15723,7 @@ export const AryBarroso_LeoSantana: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -15748,7 +15748,7 @@ export const AryBarroso_OttoDumovich: Obra = {
   Categoria: 'Narratividade',
   Funcao: 'Referencial',
   Natureza: 'Cívica',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 export const AoNuncaMais_CristinaPozzobon: Obra = {
@@ -15769,7 +15769,7 @@ export const AoNuncaMais_CristinaPozzobon: Obra = {
   Descricao: `Monumento em homenagem a resistência e a luta pela anistia, doado à Cidade pela Comissão de Anistia do Ministério da Justiça, por ocasião dos 50 anos do Golpe de 1964. As estrelas cravadas no piso são em homenagem aos militares cassados após o golpe de 1964.Escultura com cerca de 3 m de altura, ele tem uma bandeira "desconstruída" com estrelas afixadas no chão.// O monumento “Ao nunca mais” é uma homenagem à resistência brasileira e à luta pela anistia e foi instalado em 2014 patrocinado pela Comissão de Anistia do Ministério da Justiça e doado à Prefeitura em ocasião dos 50 anos do Golpe de 1964. Feito pela artista plástica Cristina Pozzobon, a escultura tem 2,5 metros de altura, em aço córten, representa a bandeira brasileira cortada ao meio com estrelas no chão.`,
   Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -15794,7 +15794,7 @@ export const Pax_MarioMatos: Obra = {
     o Palácio Pedro Ernesto.`,
   Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -15817,7 +15817,7 @@ export const Trabalho_MarioMatos: Obra = {
     corinto no topo. Esse monumento faz par com outro, que representa a Paz, emoldurando o prédio da Câmara dos Vereadores.`,
   Fatos: [new Fact('', '', '', '', [], '')],
   Temporalidade: 'Permanente',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -15845,7 +15845,7 @@ export const CriancasComAConcha_FrançoisLespingola: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -15880,7 +15880,7 @@ export const CriancasComoPassaro_SimonMazieredas: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -15917,7 +15917,7 @@ export const CriancasComATocha_PhilippeGarnier: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -15954,7 +15954,7 @@ export const CriancasComflores_PierreLaviron: Obra = {
   Categoria: 'Sublimidade',
   Funcao: 'Decorativa',
   Natureza: 'Artística',
-  Tipologia: 'Grupo escultórico',
+  Typology: 'Grupo escultórico',
   Execucao: true,
 };
 
@@ -15976,7 +15976,7 @@ export const APepeLopes_VeraTorres: Obra = {
   Descricao: `Escultura em bronze composta por uma prancha e uma asa delta, sobre um pedestal um granito. Foi inaugurado pela
     esposa Ana Carolina e seus filhos Bianca e João Pedro. A homenagem foi contratado por sufistas e patrocinadores.`,
   Temporalidade: 'Permanente',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -16001,7 +16001,7 @@ export const MarechalJoaquimIgnacioBaptistaCardoso_SMartinsRibeiro: Obra = {
     São Cristóvão, em 1967, perto do quartel que comandou. Em 1988, o busto foi transferido para a Barra da Tijuca, na Rua
     General Felicíssimo Cardoso, local que homenagea o irmão do General Ignácio.`,
   Temporalidade: 'Permanente',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -16028,7 +16028,7 @@ export const AmericoVespucio_ArmandoAmaya: Obra = {
   Descricao: `A homenagem foi executada em 1985, e doado à cidade do Rio de Janeiro pelo Kiwanis Club, de Glendade, Califórnia,
     EUA.`,
   Temporalidade: 'Permanente',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -16055,7 +16055,7 @@ export const SemTítulo_RobertoBurleMarx: Obra = {
     a memória de seu ente querido, encomendou uma escultura do renomado artista Roberto Burle Marx, o que caracterizou também
     um presente ao Rio de Janeiro.`,
   Temporalidade: 'Permanente',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -16082,7 +16082,7 @@ export const ChafarizOutono_MathurinMoreau: Obra = {
   Descricao: `O Chafariz em ferro fundido foi doado pelo Barão da Taquara para o embelezamento da localidade e o abastecimento dos animais que por ali passavam. Um pedestal quadrangular, tendo em cada face uma carranca que verte água numa bacia em semicírculo, serve de pedestal a uma graciosa estátua masculina, representando a estação.`,
   Fatos: [new Fact('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro')],
   Temporalidade: 'Permanente',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -16105,7 +16105,7 @@ export const HenriqueDodsworth_HonorioPecanha: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Homenagem ao antigo prefeito da cidade, por iniciativa do moradores do bairro de Jacarepaguá.`,
   Temporalidade: 'Permanente',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -16132,7 +16132,7 @@ export const DianadeGabies_Desconhecida: Obra = {
     new Fact('', '', 'Bem tombado municipal', '', [], 'Rio de Janeiro'),
   ],
   Temporalidade: 'Permanente',
-  Tipologia: 'Estátua',
+  Typology: 'Estátua',
   Execucao: true,
 };
 
@@ -16156,7 +16156,7 @@ export const BaraodeTaquara_BenevenutoBerna: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `O Monumento foi reguido numa homenagem de gratidão dos moradores de Jacarepaguá e por interferência da Irmandade de Nossa Senhora de Paula e pelo Centro Carioca.`,
   Temporalidade: 'Permanente',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -16179,7 +16179,7 @@ export const BrigadeiroAntônioDeSampaio_VictorBrecheret: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Homenagem oferecida pelo Regimento Sampaio e pelo Liceu de Artes de São Paulo.`,
   Temporalidade: 'Permanente',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -16202,7 +16202,7 @@ export const LuisManuelOsorio_Desconhecida: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `A homenagem ao Patrono da Cavalaria Brasileira, esta situadaem frente ao Batalhão da Vila Militar.`,
   Temporalidade: 'Permanente',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -16225,7 +16225,7 @@ export const MarechalHermesdaFonseca_DaviLeal: Obra = {
   Status: 'Permanece em espaço público',
   Descricao: `Homenagem erguida atraves da oferta do filho primogenio do Marechal, o Sr. Mario Hermes. Na inauguração estiveram diversaas autoridades e o discurso inaugural foi do General Gois Monteiro.`,
   Temporalidade: 'Permanente',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -16259,7 +16259,7 @@ export const GeneralJoaoSeverianodaFonseca_Desconhecida: Obra = {
     ),
   ],
   Temporalidade: 'Permanente',
-  Tipologia: 'Busto',
+  Typology: 'Busto',
   Execucao: true,
 };
 
@@ -16297,7 +16297,7 @@ Inaugurado na Praça Mauá, foi transferido em 1937 para o Campo dos Afonsos.`,
     ),
   ],
   Temporalidade: 'Permanente',
-  Tipologia: 'Escultura',
+  Typology: 'Escultura',
   Execucao: true,
 };
 
@@ -16323,7 +16323,7 @@ export const Piramide_MestreValentim: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
 
@@ -16351,7 +16351,7 @@ export const Obelisco_Archi5: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
 
@@ -16379,7 +16379,7 @@ export const Obelisco_EduardoDeSa: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
 
@@ -16404,7 +16404,7 @@ export const ObeliscodoCaisdaImperatriz_Desconhecido: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
 
@@ -16433,7 +16433,7 @@ export const Obelisco_PauloCase: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
 
@@ -16459,7 +16459,7 @@ export const ObeliscodoLargodoBomRetiro_Desconhecida: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
 
@@ -16487,7 +16487,7 @@ export const ObeliscodaAvenidaRioBranco_AZanuzziCia: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
 
@@ -16530,7 +16530,7 @@ export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
 
@@ -16559,7 +16559,7 @@ export const ObeliscodoAlargamentodeCopacabana_Desconhecida: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
 
@@ -16584,7 +16584,7 @@ export const ObeliscodaLinhaAmarela_Desconhecida: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
 
@@ -16611,7 +16611,7 @@ export const AAlimPedro_MiguelPastor: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
 
@@ -16637,7 +16637,7 @@ export const AAugustodeVasconcelos_MiguelPastor: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
 
@@ -16663,6 +16663,6 @@ export const ObeliscodeRochaMiranda_ErnaniFreire: Obra = {
   Categoria: 'Plasticidade',
   Funcao: 'Referencial',
   Natureza: 'Urbanística',
-  Tipologia: 'Obelisco',
+  Typology: 'Obelisco',
   Execucao: true,
 };
