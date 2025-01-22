@@ -62,10 +62,10 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
     }, [])
     .sort((a, b) => a.localeCompare(b));
 
-  const totalTypes = types.reduce<
+  const typesTotal = types.reduce<
     { type: string; name: string; data: (number | null)[] }[]
   >((series, typology) => {
-    const total_tipo = Object.keys(all)
+    const typeTotal = Object.keys(all)
       .filter((key) => key !== 'null' && all[key].length > 0)
       .map((key) => {
         const total = all[key].filter(
@@ -79,7 +79,7 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
     const serie = {
       type: 'column',
       name: typology,
-      data: total_tipo,
+      data: typeTotal,
       color:
         theme.typology[typology.toLowerCase() as keyof TypologyTheme] ??
         theme.typology.desconhecida,
@@ -91,7 +91,7 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
   const streamgraphSeries = types.reduce<
     { type: string; name: string; data: (number | null)[] }[]
   >((series, _tipo) => {
-    const total_tipo = Object.keys(all)
+    const typeTotal = Object.keys(all)
       .filter((key) => key !== 'null' && all[key].length > 0)
       .map((key) => {
         const total = all[key].filter(
@@ -105,7 +105,7 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
     const serie = {
       type: 'streamgraph',
       name: _tipo,
-      data: total_tipo,
+      data: typeTotal,
       color:
         theme.typology[_tipo.toLowerCase() as keyof TypologyTheme] ??
         theme.typology.desconhecida,
@@ -185,7 +185,7 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
         },
       },
     },
-    series: totalTypes,
+    series: typesTotal,
   };
 
   const streamgraphOptions: Highcharts.Options = {

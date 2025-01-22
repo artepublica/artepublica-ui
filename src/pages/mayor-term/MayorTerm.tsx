@@ -66,7 +66,7 @@ function Block({
     }, [])
     .sort((a, b) => a.localeCompare(b));
 
-  const typologyTotal = typologies.reduce<
+  const typologiesTotal = typologies.reduce<
     { type: string; name: string; data: (number | null)[] }[]
   >((series, typology) => {
     const typologyTotal = heritagePerYear.map((year) => {
@@ -115,7 +115,7 @@ function Block({
       },
     },
     xAxis: {
-      categories: years.map((ano) => ano.toString()),
+      categories: years.map((year) => year.toString()),
       labels: {
         style: { color: theme.text.textColor },
       },
@@ -139,7 +139,7 @@ function Block({
         },
       },
     },
-    series: typologyTotal,
+    series: typologiesTotal,
   };
 
   return <Chart options={lineOptions} />;
@@ -309,6 +309,7 @@ function Sankey({
 
     return result;
   }, []);
+
   const authors = termHeritages
     .map(
       (heritage) =>
@@ -484,16 +485,16 @@ function MayorTerm({ heritages }: { heritages: Heritage[] }): JSX.Element {
         dropdownValue,
     )[0];
 
-    const anoInicio = getYear(term?.StartDate);
-    const anoFim = getYear(term?.EndDate);
+    const startYear = getYear(term?.StartDate);
+    const endYear = getYear(term?.EndDate);
 
-    const anosIntern: number[] = [];
-    for (let i = anoInicio as number; i <= (anoFim as number); i++) {
-      anosIntern.push(i);
+    const years: number[] = [];
+    for (let i = startYear as number; i <= (endYear as number); i++) {
+      years.push(i);
     }
     setYears({
       mayor: mayor.Person?.Name ?? 'Desconhecida',
-      years: anosIntern,
+      years: years,
     });
   }, [dropdownValue]);
 

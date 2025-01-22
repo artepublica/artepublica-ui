@@ -159,7 +159,7 @@ function Block({
       },
     },
     xAxis: {
-      categories: selectedYears.map((ano) => ano.toString()),
+      categories: selectedYears.map((year) => year.toString()),
       labels: {
         style: { color: theme.text.textColor },
       },

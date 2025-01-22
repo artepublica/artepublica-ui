@@ -1,5 +1,5 @@
 import Author from './author';
-import Data from './data';
+import DateEvent from './date_event';
 import Fact from './fact';
 import Person from './person';
 
@@ -16,7 +16,7 @@ type Heritage = {
   Weight?: string;
   HeritagePrice?: string;
   OpeningDate?: string;
-  ImportantDates?: Data[];
+  ImportantDates?: DateEvent[];
   Promoter?: string;
   Financing?: string;
   Owner?: string;

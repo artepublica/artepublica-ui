@@ -10,7 +10,7 @@ function Comparison(): JSX.Element {
   return (
     <>
       <Head>
-        <title>Arte Pública - Comparação</title>
+        <title>Arte Pública - Comparação Mabdatos</title>
       </Head>
       <View style={styles.container}>
         <Mayors heritages={heritages} />

@@ -21,7 +21,7 @@ function Dropdown({
   const { theme } = useTheme();
 
   const [open, setOpen] = useState(false);
-  const [itemsDropdown, setIDropdownItems] = useState(items);
+  const [dropdownItems, setDropdownItems] = useState(items);
 
   function setDropdownValue(valorNovo: SetStateAction<string>): void {
     if (value !== valorNovo) {
@@ -35,10 +35,10 @@ function Dropdown({
       theme={theme.dark ? 'DARK' : 'LIGHT'}
       open={open}
       value={value}
-      items={itemsDropdown}
+      items={dropdownItems}
       setOpen={setOpen}
       setValue={setDropdownValue}
-      setItems={setIDropdownItems}
+      setItems={setDropdownItems}
       listMode='SCROLLVIEW'
       scrollViewProps={{
         nestedScrollEnabled: true,

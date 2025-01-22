@@ -11,10 +11,9 @@ function About(): JSX.Element {
   const { width } = useWindowDimensions();
   const style = styles();
 
-  const tamanhoGrid = imageWidth * 2 + 64 + 64;
-
-  const columns = width > tamanhoGrid ? 2 : 1;
-  const rest = width - (imageWidth * columns + 64 + 64);
+  const gridWidth = imageWidth * 2 + 64 + 64;
+  const columns = width > gridWidth ? 2 : 1;
+  const remainingWidth = width - (imageWidth * columns + 64 + 64);
 
   return (
     <ScrollView contentContainerStyle={style.container}>
@@ -64,7 +63,7 @@ function About(): JSX.Element {
           <View
             style={{
               flexDirection: 'row',
-              paddingLeft: width - tamanhoGrid - rest / 2,
+              paddingLeft: width - gridWidth - remainingWidth / 2,
             }}
           >
             <View key={1} style={{ alignItems: 'center' }}>

@@ -23,10 +23,9 @@ function Decades(): JSX.Element {
   const [items, setItems] = useState(allYears);
   const { theme } = useTheme();
 
-  const typed_analysis_list_utils: Record<string, Heritage[]> =
-    heritagePerDecade;
+  const typedHeritagePerDecade: Record<string, Heritage[]> = heritagePerDecade;
 
-  const selectedDecadeHeritages = typed_analysis_list_utils[`all${year}`];
+  const selectedDecadeHeritages = typedHeritagePerDecade[`all${year}`];
 
   if (selectedDecadeHeritages.length > 0) {
     const selectedDecadeTypologies: string[] = selectedDecadeHeritages.map(

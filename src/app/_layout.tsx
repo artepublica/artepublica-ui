@@ -17,7 +17,7 @@ export default function RootLayout(): JSX.Element {
   const { width } = useWindowDimensions();
 
   const defaultM = width / 422;
-  const multiplicador =
+  const multiplier =
     width <= 422 && width > 350
       ? defaultM
       : width <= 350 && width > 310
@@ -59,57 +59,57 @@ export default function RootLayout(): JSX.Element {
             </Text>
             <View
               style={{
-                paddingTop: 12 + (24 - multiplicador * 24) / 2,
+                paddingTop: 12 + (24 - multiplier * 24) / 2,
                 paddingLeft: 8,
               }}
             >
               <Image
                 source={ufrj}
                 style={{
-                  width: multiplicador * 60,
-                  height: multiplicador * 24,
+                  width: multiplier * 60,
+                  height: multiplier * 24,
                 }}
               />
             </View>
             <View
               style={{
-                paddingTop: 12 + (24 - multiplicador * 24) / 2,
+                paddingTop: 12 + (24 - multiplier * 24) / 2,
                 paddingLeft: 8,
               }}
             >
               <Image
                 source={fau}
                 style={{
-                  width: multiplicador * 99,
-                  height: multiplicador * 24,
+                  width: multiplier * 99,
+                  height: multiplier * 24,
                 }}
               />
             </View>
             <View
               style={{
-                paddingTop: 12 + (24 - multiplicador * 24) / 2,
+                paddingTop: 12 + (24 - multiplier * 24) / 2,
                 paddingLeft: 8,
               }}
             >
               <Image
                 source={prourb}
                 style={{
-                  width: multiplicador * 93,
-                  height: multiplicador * 24,
+                  width: multiplier * 93,
+                  height: multiplier * 24,
                 }}
               />
             </View>
             <View
               style={{
-                paddingTop: 12 + (24 - multiplicador * 24) / 2,
+                paddingTop: 12 + (24 - multiplier * 24) / 2,
                 paddingLeft: 8,
               }}
             >
               <Image
                 source={cnpq}
                 style={{
-                  width: multiplicador * 56,
-                  height: multiplicador * 24,
+                  width: multiplier * 56,
+                  height: multiplier * 24,
                 }}
               />
             </View>

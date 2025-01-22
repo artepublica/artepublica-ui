@@ -1,5 +1,5 @@
 export type { default as Author } from './author';
-export { default as Data } from './data';
+export { default as DateEvent } from './date_event';
 export type { default as Specialty } from './specialty';
 export { default as Fact } from './fact';
 export type { default as Heritage } from './heritage';

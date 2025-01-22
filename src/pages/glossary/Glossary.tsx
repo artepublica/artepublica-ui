@@ -17,66 +17,66 @@ function Glossary(): JSX.Element {
   const { width } = useWindowDimensions();
   const style = styles();
 
-  const glossary: { termo: string; descricao: string }[] = [
+  const glossary: { word: string; description: string }[] = [
     {
-      termo: 'Arte Pública',
-      descricao:
+      word: 'Arte Pública',
+      description:
         'O termo faz referência a obras de arte visuais que estão localizadas no espaço público; são de propriedade pública; motivam a participação cívica e política e, por isso, estão envoltas por disputas simbólicas de representação social',
     },
     {
-      termo: 'Busto',
-      descricao:
+      word: 'Busto',
+      description:
         'Identifica a representação da parte superior do corpo humano, podendo incluir uma ou mais cabeças, o pescoço, uma parte variável das costas, dos braços e do peito.',
     },
     {
-      termo: 'Cabeça',
-      descricao:
+      word: 'Cabeça',
+      description:
         'Identifica a escultura que representa a parte correspondente à extremidade superior do corpo humano ou à extremidade anterior do corpo de um animal, incluindo a cabeça e o pescoço. ',
     },
     {
-      termo: 'Escultura',
-      descricao:
+      word: 'Escultura',
+      description:
         'É um objeto artístico tridimensional que ocupa um determinado espaço com seus volumes.',
     },
     {
-      termo: 'Estátua',
-      descricao:
+      word: 'Estátua',
+      description:
         'É toda escultura que representa uma figura completa (homem, animal, híbrido) de pé, sentada, ajoelhada ou deitada, em qualquer matéria. ',
     },
     {
-      termo: 'Grupo escultórico',
-      descricao:
+      word: 'Grupo escultórico',
+      description:
         'Identifica a reunião de duas ou mais figuras sobre o mesmo suporte (soco, embasamento, pedestal...) que participam numa mesma ação ou estão relacionadas por uma situação que lhes é comum. ',
     },
     {
-      termo: 'Lâmina escultórica',
-      descricao:
+      word: 'Lâmina escultórica',
+      description:
         'Executada em metal, pode ser pouco espessa, mas é rígida, apresentando um campo figurativo, uma ornamentação gravada ou uma inscrição, em relevo ou insculpida. Pode ser aplicada a um edifício ou a um monumento.',
     },
     {
-      termo: 'Obelisco',
-      descricao:
+      word: 'Obelisco',
+      description:
         'É uma pirâmide quadrangular, habitualmente monolítica, usada fundamentalmente como marco monumental.',
     },
     {
-      termo: 'Relevo',
-      descricao:
+      word: 'Relevo',
+      description:
         'Identifica qualquer obra esculpida na qual as figuras se projetam a partir de um fundo. Classificam-se pelo grau de projeção do seu volume: baixo-relevo, médio-relevo, alto relevo. ',
     },
   ];
 
   const [glossaryState, setGlossaryState] = useState<
-    { termo: string; open: boolean }[]
-  >(glossary.map((item) => ({ termo: item.termo, open: false })));
+    { word: string; open: boolean }[]
+  >(glossary.map((item) => ({ word: item.word, open: false })));
 
-  const colunas = Math.floor(width / 256);
-  const gridWidth = (colunas - 1) * 256 + 240;
+  const columns = Math.floor(width / 256);
+  const gridWidth = (columns - 1) * 256 + 240;
   const remainingWidth = width - 16 - gridWidth;
 
-  const data = glossary.reduce<{ termo: string; descricao: string }[][]>(
+  const data = glossary.reduce<{ word: string; description: string }[][]>(
     (all, one, i) => {
-      const ch = Math.floor(i / colunas);
-      all[ch] = ([] as { termo: string; descricao: string }[]).concat(
+      const ch = Math.floor(i / columns);
+      all[ch] = ([] as { word: string; description: string }[]).concat(
         all[ch] || [],
         one,
       );
@@ -85,10 +85,10 @@ function Glossary(): JSX.Element {
     [],
   );
 
-  const changeState = (state: { termo: string; open: boolean }) => {
+  const changeState = (state: { word: string; open: boolean }) => {
     const newState = glossaryState.map((item) => {
-      if (item.termo === state.termo) {
-        return { termo: item.termo, open: !state.open };
+      if (item.word === state.word) {
+        return { word: item.word, open: !state.open };
       }
       return item;
     });
@@ -136,23 +136,23 @@ function Glossary(): JSX.Element {
                     <Row style={style.row} key={rowIndex}>
                       {[
                         ...row,
-                        ...Array(colunas - row.length).map(() => ({
-                          termo: 'error',
-                          descricao: 'error',
+                        ...Array(columns - row.length).map(() => ({
+                          word: 'error',
+                          description: 'error',
                         })),
                       ].map((col, colIndex) => {
                         const state = glossaryState.find(
                           (item) =>
                             typeof col != typeof String &&
-                            col?.termo &&
-                            item.termo === col.termo,
+                            col?.word &&
+                            item.word === col.word,
                         );
                         return (
                           <Col
                             style={[
                               style.col,
                               {
-                                marginRight: colIndex !== colunas - 1 ? 16 : 0,
+                                marginRight: colIndex !== columns - 1 ? 16 : 0,
                               },
                             ]}
                             key={colIndex}
@@ -169,7 +169,7 @@ function Glossary(): JSX.Element {
                                         fontWeight: '700',
                                       }}
                                     >
-                                      {col.termo}
+                                      {col.word}
                                     </Text>
                                   </TouchableOpacity>
                                   {state.open && (
@@ -181,7 +181,7 @@ function Glossary(): JSX.Element {
                                         textAlign: 'justify',
                                       }}
                                     >
-                                      {col.descricao}
+                                      {col.description}
                                     </Text>
                                   )}
                                 </>
