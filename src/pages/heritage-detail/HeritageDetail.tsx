@@ -2,14 +2,15 @@ import { useLocalSearchParams } from 'expo-router';
 import { Platform, View } from 'react-native';
 
 import { Image, Text } from '@base-components';
-import { getYear, thesisHeritages, TipologiaTheme, useTheme } from '@utils';
+import { thesisHeritages } from '@data';
+import { getYear, TipologiaTheme, useTheme } from '@utils';
 
 function HeritageDetail(): JSX.Element {
   const { theme } = useTheme();
   const { heritage: id } = useLocalSearchParams<{ heritage: string }>();
 
   const heritage = thesisHeritages.find(
-    (heritage) => heritage.ID?.toString() === id,
+    (heritage) => heritage.ID.toString() === id,
   );
 
   return (

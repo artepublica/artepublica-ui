@@ -6,9 +6,9 @@ import { ScrollView, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart, Dropdown } from '@base-components';
-import { Mayor, Obra } from '@domain';
+import { mayors } from '@data';
+import { Obra } from '@domain';
 import { getYear, reduceListOfList, useTheme } from '@utils';
-import * as mayorsTerms from '@utils/data/raw/mayors'; //TODO: use or create analysis to type
 
 import styles from './styles';
 function Block({
@@ -22,9 +22,7 @@ function Block({
   const { width, height } = useWindowDimensions();
   const headerHeight = useHeaderHeight();
   const insets = useSafeAreaInsets();
-  const typedMayors: Record<string, Mayor> = mayorsTerms;
 
-  const mayors = Object.keys(typedMayors).map((key) => typedMayors[key]);
   const selectedMayors = mayors.filter((mayor) => {
     const termsIntern = mayor.Terms?.filter((term) =>
       terms.includes(
@@ -195,10 +193,8 @@ function Block({
 
 function Mayors({ heritages }: { heritages: Obra[] }): JSX.Element {
   const style = styles();
-  const typedMayors: Record<string, Mayor> = mayorsTerms;
 
-  const items = Object.keys(typedMayors)
-    .map((key) => typedMayors[key])
+  const items = mayors
     .sort((a, b) => {
       const aFirstTerm = a.Terms?.sort((aM, bM) =>
         (getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1,

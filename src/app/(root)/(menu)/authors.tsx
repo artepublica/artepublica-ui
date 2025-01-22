@@ -3,8 +3,8 @@ import React from 'react';
 import Head from 'expo-router/head';
 import { StyleSheet, View } from 'react-native';
 
+import { autoresRecorte } from '@data';
 import { HeritageAuthorTypologyNetwork as HeritageAuthorTypologyNetworkPage } from '@pages';
-import { autoresRecorte } from '@utils';
 
 function HeritageAuthorTypologyNetwork(): JSX.Element {
   return (

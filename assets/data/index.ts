@@ -6,4 +6,5 @@ export { default as tipologias } from './tipologias';
 export { default as tipologiasRecorte } from './tipologiasRecorte';
 export { default as decades } from './decades';
 export { default as images } from './images';
-export * from './heritagePerDecade';
+export { default as mayors } from './mayors';
+export * from '../../src/pages/decades/heritagePerDecade';

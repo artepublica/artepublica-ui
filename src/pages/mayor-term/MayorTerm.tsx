@@ -6,7 +6,8 @@ import { ScrollView, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart, Dropdown } from '@base-components';
-import { Author, Mayor, Obra } from '@domain';
+import { mayors } from '@data';
+import { Author, Obra } from '@domain';
 import {
   getYear,
   magenta,
@@ -14,7 +15,6 @@ import {
   TipologiaTheme,
   useTheme,
 } from '@utils';
-import * as mayorsTerms from '@utils/data/raw/mayors'; //TODO: use or create analysis to type
 
 function Block({
   heritages,
@@ -425,10 +425,7 @@ function Sankey({
 }
 
 function MayorTerm({ heritages }: { heritages: Obra[] }): JSX.Element {
-  const typedMayors: Record<string, Mayor> = mayorsTerms;
-
-  const items = Object.keys(typedMayors)
-    .map((key) => typedMayors[key])
+  const items = mayors
     .sort((a, b) => {
       const aFirstTerm = a.Terms?.sort((aM, bM) =>
         (getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
@@ -465,8 +462,6 @@ function MayorTerm({ heritages }: { heritages: Obra[] }): JSX.Element {
   const [dropdownValue, setDropdown] = useState(
     'Cesar Epitácio Maia (1993 - 1996)',
   );
-
-  const mayors = Object.keys(typedMayors).map((key) => typedMayors[key]);
 
   const [years, setYears] = useState<{ mayor: string; years: number[] }>({
     mayor: '',

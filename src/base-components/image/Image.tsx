@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ImageSourcePropType, Image as NativeImage } from 'react-native';
 
-import { images } from '@utils';
+import { images } from '@data';
 
 type ImageProps = {
   source?: string;

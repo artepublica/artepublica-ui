@@ -1,4 +1,4 @@
-import * as utils from './heritagePerDecade';
+import * as utils from '../../src/pages/decades/heritagePerDecade';
 
 const all = {
   null: utils.allNull,

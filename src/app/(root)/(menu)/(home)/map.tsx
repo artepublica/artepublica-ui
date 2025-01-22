@@ -3,8 +3,8 @@ import React from 'react';
 import Head from 'expo-router/head';
 import { StyleSheet, View } from 'react-native';
 
+import { tipologiasRecorte } from '@data';
 import { HeritageMap } from '@pages';
-import { tipologiasRecorte } from '@utils';
 
 export default function Mapa(): JSX.Element {
   return (

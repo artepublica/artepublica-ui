@@ -12,8 +12,9 @@ import DropDownPicker from 'react-native-dropdown-picker';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart } from '@base-components';
+import { decades } from '@data';
 import { Obra } from '@domain';
-import { decades, TipologiaTheme, useTheme } from '@utils';
+import { TipologiaTheme, useTheme } from '@utils';
 
 import styles from './styles';
 

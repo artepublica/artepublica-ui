@@ -1,15 +1,13 @@
 import 'react-native-reanimated';
 import 'highcharts';
+
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { Image, Text, useWindowDimensions, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import CNPQLogo from '@assets/images/logos/cnpq.png';
-import FAULogo from '@assets/images/logos/fau.png';
-import PROURBLogo from '@assets/images/logos/prourb.png';
-import UFRJLogo from '@assets/images/logos/ufrj.png';
+import { cnpq, fau, prourb, ufrj } from '@logos';
 import { ThemeContextProvider } from '@utils';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -66,7 +64,7 @@ export default function RootLayout(): JSX.Element {
               }}
             >
               <Image
-                source={UFRJLogo}
+                source={ufrj}
                 style={{
                   width: multiplicador * 60,
                   height: multiplicador * 24,
@@ -80,7 +78,7 @@ export default function RootLayout(): JSX.Element {
               }}
             >
               <Image
-                source={FAULogo}
+                source={fau}
                 style={{
                   width: multiplicador * 99,
                   height: multiplicador * 24,
@@ -94,7 +92,7 @@ export default function RootLayout(): JSX.Element {
               }}
             >
               <Image
-                source={PROURBLogo}
+                source={prourb}
                 style={{
                   width: multiplicador * 93,
                   height: multiplicador * 24,
@@ -108,7 +106,7 @@ export default function RootLayout(): JSX.Element {
               }}
             >
               <Image
-                source={CNPQLogo}
+                source={cnpq}
                 style={{
                   width: multiplicador * 56,
                   height: multiplicador * 24,

@@ -1,6 +1,6 @@
 import { Image, Platform, StyleSheet, View } from 'react-native';
 
-import icon from '@assets/images/icon.png';
+import { icon } from '@logos';
 import { Theme, useTheme } from '@utils';
 
 import { Text } from '../text';

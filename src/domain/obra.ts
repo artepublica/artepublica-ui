@@ -4,7 +4,7 @@ import Fato from './fact';
 import Person from './person';
 
 type Obra = {
-  ID?: number;
+  ID: number;
   Imagem?: string;
   Authors?: Author[] | undefined;
   Titulo?: string;

@@ -3,9 +3,8 @@ import { FlatList, Platform, useWindowDimensions, View } from 'react-native';
 import { Col, Grid, Row } from 'react-native-easy-grid';
 
 import { Image, Text } from '@base-components';
-import { Obra } from '@domain';
+import { thesisHeritages } from '@data';
 import { getYear, TipologiaTheme, useTheme } from '@utils';
-import * as obra_artepublica from '@utils/data/raw/thesisHeritages'; //TODO: use or create analysis to type
 
 import styles from './styles';
 
@@ -14,63 +13,54 @@ function Heritages(): JSX.Element {
   const { theme } = useTheme();
   const router = useRouter();
   const style = styles();
-  const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
-  const obrasComImagem = Object.keys(typed_obra_artepublica)
-    .sort((keyA, keyB) => {
-      const heritageA: Obra = typed_obra_artepublica[keyA];
-      const heritageB: Obra = typed_obra_artepublica[keyB];
-
+  const heritagesSorted = thesisHeritages
+    .sort((heritageA, heritageB) => {
       return (heritageA.Titulo ?? 'Desconhecida').localeCompare(
         heritageB.Titulo ?? 'Desconhecida',
       );
     })
-    .sort((keyA, keyB) => {
-      const heritageA: Obra = typed_obra_artepublica[keyA];
-      const heritageB: Obra = typed_obra_artepublica[keyB];
-
+    .sort((heritageA, heritageB) => {
       return (getYear(heritageA.DataInauguracao) ?? 0) <
         (getYear(heritageB.DataInauguracao) ?? 0)
         ? -1
         : 1;
     })
-    .sort((keyA, keyB) => {
-      const heritageA: Obra = typed_obra_artepublica[keyA];
-      const heritageB: Obra = typed_obra_artepublica[keyB];
-
+    .sort((heritageA, heritageB) => {
       return (heritageA.Tipologia ?? 'Desconhecida').localeCompare(
         heritageB.Tipologia ?? 'Desconhecida',
       );
     });
 
   const allowedWidth = width - 24;
-  const colunas = Math.floor(allowedWidth / 144);
-  const minGridWidth = (colunas - 1) * 144 + 136;
+  const columns = Math.floor(allowedWidth / 144);
+  const minGridWidth = (columns - 1) * 144 + 136;
   const remainingWidth = allowedWidth - minGridWidth;
-  const padding = remainingWidth / (colunas + 1);
+  const padding = remainingWidth / (columns + 1);
 
-  const data = obrasComImagem
-    .reduce<string[]>((resultado, key, index) => {
-      const heritage: Obra = typed_obra_artepublica[key];
-
+  const data = heritagesSorted
+    .reduce<string[]>((result, heritage, index) => {
       if (index === 0) {
-        return [heritage.Tipologia ?? 'Desconhecida', key];
+        return [heritage.Tipologia ?? 'Desconhecida', heritage.ID.toString()];
       } else {
-        const obraAnterior: Obra =
-          typed_obra_artepublica[obrasComImagem[index - 1]];
+        const obraAnterior = heritagesSorted[index - 1];
 
         if (
           (heritage.Tipologia ?? 'Desconhecida') !==
           (obraAnterior.Tipologia ?? 'Desconhecida')
         ) {
-          return [...resultado, heritage.Tipologia ?? 'Desconhecida', key];
+          return [
+            ...result,
+            heritage.Tipologia ?? 'Desconhecida',
+            heritage.ID.toString(),
+          ];
         }
       }
 
-      return [...resultado, key];
+      return [...result, heritage.ID.toString()];
     }, [])
     .reduce<string[][]>((all, one, i) => {
-      const ch = Math.floor(i / colunas);
+      const ch = Math.floor(i / columns);
       all[ch] = ([] as string[]).concat(all[ch] || [], one);
       return all;
     }, []);
@@ -87,14 +77,16 @@ function Heritages(): JSX.Element {
             <Grid style={{ paddingLeft: padding + 12 }}>
               <Row style={style.row} key={rowIndex}>
                 {row.map((col, colIndex) => {
-                  const heritage: Obra = typed_obra_artepublica[col];
+                  const heritage = heritagesSorted.find(
+                    (heritage) => heritage.ID.toString() === col,
+                  );
                   return (
                     <Col
                       style={[
                         style.col,
                         {
                           marginRight:
-                            colIndex !== colunas - 1 ? padding + 8 : 0,
+                            colIndex !== columns - 1 ? padding + 8 : 0,
                         },
                       ]}
                       key={colIndex}

@@ -7,7 +7,8 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { Table, Text } from '@base-components';
 import { Author, Obra } from '@domain';
 import { useTheme } from '@utils';
-import * as heritagePerDecade from '@utils/data/heritagePerDecade';
+
+import * as heritagePerDecade from './heritagePerDecade';
 
 function Decades(): JSX.Element {
   const allYears: { label: string; value: string }[] = [

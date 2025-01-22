@@ -1,8 +1,7 @@
 import { Image, ScrollView, useWindowDimensions, View } from 'react-native';
 
-import alineImage from '@assets/images/contributors/aline.jpg';
-import stefanoImage from '@assets/images/contributors/stefano.png';
 import { Text } from '@base-components';
+import { aline, stefano } from '@contributors';
 
 import styles from './styles';
 
@@ -70,7 +69,7 @@ function About(): JSX.Element {
           >
             <View key={1} style={{ alignItems: 'center' }}>
               <Image
-                source={alineImage}
+                source={aline}
                 style={{
                   width: tamanhoImagem,
                   height: tamanhoImagem,
@@ -83,7 +82,7 @@ function About(): JSX.Element {
             </View>
             <View key={2} style={{ alignItems: 'center', paddingLeft: 64 }}>
               <Image
-                source={stefanoImage}
+                source={stefano}
                 style={{
                   width: tamanhoImagem,
                   height: tamanhoImagem,
@@ -100,7 +99,7 @@ function About(): JSX.Element {
           <View style={{ flexDirection: 'column' }}>
             <View key={1} style={{ alignItems: 'center' }}>
               <Image
-                source={alineImage}
+                source={aline}
                 style={{
                   width: tamanhoImagem,
                   height: tamanhoImagem,
@@ -113,7 +112,7 @@ function About(): JSX.Element {
             </View>
             <View key={2} style={{ alignItems: 'center', paddingTop: 32 }}>
               <Image
-                source={stefanoImage}
+                source={stefano}
                 style={{
                   width: tamanhoImagem,
                   height: tamanhoImagem,

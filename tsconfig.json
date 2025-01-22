@@ -4,8 +4,14 @@
     "module": "esnext",
     "strict": true,
     "paths": {
-      "@assets/*": [
-        "./assets/*"
+      "@contributors": [
+        "./assets/contributors"
+      ],
+      "@data": [
+        "./assets/data"
+      ],
+      "@logos": [
+        "./assets/logos"
       ],
       "@base-components": [
         "./src/base-components"
