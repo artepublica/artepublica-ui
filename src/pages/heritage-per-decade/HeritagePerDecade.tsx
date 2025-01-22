@@ -1,12 +1,7 @@
 import { useState } from 'react';
 
 import { useHeaderHeight } from '@react-navigation/elements';
-import Highcharts, {
-  AlignValue,
-  AxisTypeValue,
-  OptionsStackingValue,
-  SeriesOptionsType,
-} from 'highcharts';
+import Highcharts, { AlignValue, AxisTypeValue, OptionsStackingValue, SeriesOptionsType } from 'highcharts';
 import { ScrollView, useWindowDimensions } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -33,9 +28,7 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
 
   function MapAuthor(key: string): string[] {
     return all[key]
-      .map(
-        (heritage) => heritage.Authors ?? [{ Name: { Name: 'Desconhecida' } }],
-      )
+      .map((heritage) => heritage.Authors ?? [{ Name: { Name: 'Desconhecida' } }])
       .reduce<string[]>((r, l) => {
         Array.prototype.push.apply(r, l);
         return r;
@@ -44,11 +37,7 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
 
   const types = Object.keys(all)
     .filter((key) => key !== 'null' && all[key].length > 0)
-    .map((key) =>
-      type === 'Authors'
-        ? MapAuthor(key)
-        : all[key].map((heritage) => heritage[type] ?? 'Desconhecida'),
-    )
+    .map((key) => (type === 'Authors' ? MapAuthor(key) : all[key].map((heritage) => heritage[type] ?? 'Desconhecida')))
     .reduce<string[]>((r, l) => {
       Array.prototype.push.apply(r, l);
       return r;
@@ -62,16 +51,12 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
     }, [])
     .sort((a, b) => a.localeCompare(b));
 
-  const typesTotal = types.reduce<
-    { type: string; name: string; data: (number | null)[] }[]
-  >((series, typology) => {
+  const typesTotal = types.reduce<{ type: string; name: string; data: (number | null)[] }[]>((series, typology) => {
     const typeTotal = Object.keys(all)
       .filter((key) => key !== 'null' && all[key].length > 0)
       .map((key) => {
         const total = all[key].filter(
-          (heritage) =>
-            heritage[type] === typology ||
-            (heritage[type] == null && typology === 'Desconhecida'),
+          (heritage) => heritage[type] === typology || (heritage[type] == null && typology === 'Desconhecida'),
         ).length;
         return total > 0 ? total : null;
       });
@@ -80,24 +65,18 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
       type: 'column',
       name: typology,
       data: typeTotal,
-      color:
-        theme.typology[typology.toLowerCase() as keyof TypologyTheme] ??
-        theme.typology.desconhecida,
+      color: theme.typology[typology.toLowerCase() as keyof TypologyTheme] ?? theme.typology.desconhecida,
     };
     series.push(serie);
     return series;
   }, []) as SeriesOptionsType[];
 
-  const streamgraphSeries = types.reduce<
-    { type: string; name: string; data: (number | null)[] }[]
-  >((series, _tipo) => {
+  const streamgraphSeries = types.reduce<{ type: string; name: string; data: (number | null)[] }[]>((series, _tipo) => {
     const typeTotal = Object.keys(all)
       .filter((key) => key !== 'null' && all[key].length > 0)
       .map((key) => {
         const total = all[key].filter(
-          (heritage) =>
-            heritage[type] === _tipo ||
-            (heritage[type] == null && _tipo === 'Desconhecida'),
+          (heritage) => heritage[type] === _tipo || (heritage[type] == null && _tipo === 'Desconhecida'),
         ).length;
         return total;
       });
@@ -106,9 +85,7 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
       type: 'streamgraph',
       name: _tipo,
       data: typeTotal,
-      color:
-        theme.typology[_tipo.toLowerCase() as keyof TypologyTheme] ??
-        theme.typology.desconhecida,
+      color: theme.typology[_tipo.toLowerCase() as keyof TypologyTheme] ?? theme.typology.desconhecida,
     };
     series.push(serie);
     return series;
@@ -125,9 +102,7 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
       text: '',
     },
     xAxis: {
-      categories: Object.keys(all).filter(
-        (key) => key !== 'null' && all[key].length > 0,
-      ),
+      categories: Object.keys(all).filter((key) => key !== 'null' && all[key].length > 0),
       maxPadding: null as unknown as number,
       type: null as unknown as AxisTypeValue,
       crosshair: null as unknown as boolean,
@@ -213,9 +188,7 @@ function HeritagePerDecade({ type }: HeritagePerDecadeProps): JSX.Element {
       text: '',
     },
     xAxis: {
-      categories: Object.keys(all).filter(
-        (key) => key !== 'null' && all[key].length > 0,
-      ),
+      categories: Object.keys(all).filter((key) => key !== 'null' && all[key].length > 0),
       maxPadding: 0,
       type: 'category',
       crosshair: true,

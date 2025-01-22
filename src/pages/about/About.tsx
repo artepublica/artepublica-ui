@@ -39,23 +39,18 @@ function About(): JSX.Element {
         }}
       >
         <Text style={{ textAlign: 'justify' }}>
-          {'\t'}O Arte Pública é um aplicativo que propõe ampliar o conhecimento
-          sobre a arte pública, disponibilizando dados sobre as obras em um
-          acervo digital e contribuir com novas formas de tratamento de dados
-          empíricos em pesquisas neste campo. Embora o termo arte pública faça
-          referência a diferentes tipos de obras, a primeira etapa deste projeto
-          disponibiliza informações acerca de 489 obras de arte tridimensionais
-          de caráter permanente localizadas na cidade do Rio de Janeiro.
+          {'\t'}O Arte Pública é um aplicativo que propõe ampliar o conhecimento sobre a arte pública, disponibilizando
+          dados sobre as obras em um acervo digital e contribuir com novas formas de tratamento de dados empíricos em
+          pesquisas neste campo. Embora o termo arte pública faça referência a diferentes tipos de obras, a primeira
+          etapa deste projeto disponibiliza informações acerca de 489 obras de arte tridimensionais de caráter
+          permanente localizadas na cidade do Rio de Janeiro.
         </Text>
         <Text style={{ textAlign: 'justify' }}>
-          {'\t'}Este aplicativo foi desenvolvido em parceria com o tecnologista
-          Stéfano D’Ávila Bassan e é um desdobramento da pesquisa de doutorado
-          de Aline Rayane de Souza Oliveira junto ao Grupo de Pesquisa
-          Arquitetura, Cidade e Cultura do Laboratório de Análise Urbana e
-          Representação Digital (LAURD), no Programa de Pós-graduação em
-          Urbanismo (PROURB) da Faculdade de Arquitetura e Urbanismo da
-          Universidade Federal do Rio de Janeiro, com bolsa concedida pelo
-          Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).
+          {'\t'}Este aplicativo foi desenvolvido em parceria com o tecnologista Stéfano D’Ávila Bassan e é um
+          desdobramento da pesquisa de doutorado de Aline Rayane de Souza Oliveira junto ao Grupo de Pesquisa
+          Arquitetura, Cidade e Cultura do Laboratório de Análise Urbana e Representação Digital (LAURD), no Programa de
+          Pós-graduação em Urbanismo (PROURB) da Faculdade de Arquitetura e Urbanismo da Universidade Federal do Rio de
+          Janeiro, com bolsa concedida pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).
         </Text>
       </View>
       <View style={{ backgroundColor: '#CC1964', width: '100%', padding: 32 }}>
@@ -75,9 +70,7 @@ function About(): JSX.Element {
                   borderRadius: imageWidth / 2,
                 }}
               />
-              <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>
-                Aline Oliveira
-              </Text>
+              <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>Aline Oliveira</Text>
             </View>
             <View key={2} style={{ alignItems: 'center', paddingLeft: 64 }}>
               <Image
@@ -88,9 +81,7 @@ function About(): JSX.Element {
                   borderRadius: imageWidth / 2,
                 }}
               />
-              <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>
-                Stéfano Bassan
-              </Text>
+              <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>Stéfano Bassan</Text>
             </View>
           </View>
         )}
@@ -105,9 +96,7 @@ function About(): JSX.Element {
                   borderRadius: imageWidth / 2,
                 }}
               />
-              <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>
-                Aline Oliveira
-              </Text>
+              <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>Aline Oliveira</Text>
             </View>
             <View key={2} style={{ alignItems: 'center', paddingTop: 32 }}>
               <Image
@@ -118,9 +107,7 @@ function About(): JSX.Element {
                   borderRadius: imageWidth / 2,
                 }}
               />
-              <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>
-                Stéfano Bassan
-              </Text>
+              <Text style={{ color: '#fff', fontSize: 16, paddingTop: 16 }}>Stéfano Bassan</Text>
             </View>
           </View>
         )}

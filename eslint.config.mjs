@@ -9,16 +9,13 @@ import tseslint from 'typescript-eslint';
 const config = tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
+  imports.flatConfigs.recommended,
+  imports.flatConfigs['react-native'],
+  imports.flatConfigs.typescript,
   reactRecommended,
   prettierRecommended,
   {
-    ignores: [
-      '**/.vscode/',
-      '**/node_modules/',
-      '**/.coverage/',
-      '**/.expo/',
-      '**/web_build/',
-    ],
+    ignores: ['**/.vscode/', '**/node_modules/', '**/.coverage/', '**/.expo/', '**/web_build/'],
   },
   {
     languageOptions: {
@@ -34,7 +31,6 @@ const config = tseslint.config(
       },
     },
     plugins: {
-      import: imports,
       'unused-imports': unusedImports,
       'react-hooks': reactHooks,
     },
@@ -46,7 +42,7 @@ const config = tseslint.config(
           trailingComma: 'all',
           singleQuote: true,
           jsxSingleQuote: true,
-          printWidth: 80,
+          printWidth: 120,
           tabWidth: 2,
         },
         {
@@ -57,8 +53,6 @@ const config = tseslint.config(
         },
       ],
       ...reactHooks.configs.recommended.rules,
-      ...imports.configs.recommended.rules,
-      ...imports.configs.typescript.rules,
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-react': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'error',
@@ -110,7 +104,7 @@ const config = tseslint.config(
         typescript: true,
         node: true,
       },
-      'import/ignore': ['react-native-easy-grid'],
+      'import/ignore': ['node_modules'],
       react: {
         version: 'detect',
       },

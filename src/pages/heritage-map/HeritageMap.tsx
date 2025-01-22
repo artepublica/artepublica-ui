@@ -10,25 +10,18 @@ type HeritageMapProps = {
 function HeritageMap({ type, types }: HeritageMapProps): JSX.Element {
   const { theme } = useTheme();
 
-  const colors = types.reduce<Record<string, string>>(
-    (result, tipoReduce, index) => {
-      result[tipoReduce.name] =
-        type === 'Typology'
-          ? (theme.typology[
-              tipoReduce.name.toLowerCase() as keyof TypologyTheme
-            ] ?? theme.typology.desconhecida)
-          : theme.coresGrafico[index];
-      return result;
-    },
-    {},
-  );
+  const colors = types.reduce<Record<string, string>>((result, tipoReduce, index) => {
+    result[tipoReduce.name] =
+      type === 'Typology'
+        ? (theme.typology[tipoReduce.name.toLowerCase() as keyof TypologyTheme] ?? theme.typology.desconhecida)
+        : theme.coresGrafico[index];
+    return result;
+  }, {});
 
   const markers = types
     .map((type) => {
       return type.heritages
-        .filter(
-          (heritage) => heritage.Latitude != null && heritage.Longitude != null,
-        )
+        .filter((heritage) => heritage.Latitude != null && heritage.Longitude != null)
         .map((heritage) => ({
           position: {
             latitude: heritage.Latitude ?? '0',

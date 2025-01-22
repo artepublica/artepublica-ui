@@ -11,13 +11,7 @@ import { Heritage } from '@domain';
 import { getYear, reduceListOfList, useTheme } from '@utils';
 
 import styles from './styles';
-function Block({
-  heritages,
-  terms,
-}: {
-  heritages: Heritage[];
-  terms: string[];
-}): JSX.Element {
+function Block({ heritages, terms }: { heritages: Heritage[]; terms: string[] }): JSX.Element {
   const { theme } = useTheme();
   const { width, height } = useWindowDimensions();
   const headerHeight = useHeaderHeight();
@@ -25,9 +19,7 @@ function Block({
 
   const selectedMayors = mayors.filter((mayor) => {
     const termsIntern = mayor.Terms?.filter((term) =>
-      terms.includes(
-        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})`,
-      ),
+      terms.includes(`${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})`),
     );
     return termsIntern != null && termsIntern.length > 0;
   });
@@ -35,9 +27,7 @@ function Block({
   const selectedTermsYears: number[] = [];
   selectedMayors.forEach((mayor) => {
     const selectedTerms = mayor.Terms?.filter((term) =>
-      terms.includes(
-        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})`,
-      ),
+      terms.includes(`${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})`),
     );
 
     selectedTerms?.forEach((term) => {
@@ -86,51 +76,47 @@ function Block({
     }, [])
     .sort((a, b) => (a.year > b.year ? 1 : -1));
 
-  const totalMayors = selectedMayors.reduce<
-    { type: string; name: string; data: (number | null)[]; color?: string }[]
-  >((series, mayor, index) => {
-    const selectedTerms = mayor.Terms?.filter((term) =>
-      terms.includes(
-        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})`,
-      ),
-    );
+  const totalMayors = selectedMayors.reduce<{ type: string; name: string; data: (number | null)[]; color?: string }[]>(
+    (series, mayor, index) => {
+      const selectedTerms = mayor.Terms?.filter((term) =>
+        terms.includes(
+          `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})`,
+        ),
+      );
 
-    const mayorTotal: (number | null)[] = [];
+      const mayorTotal: (number | null)[] = [];
 
-    selectedYears.forEach((selectedYear) => {
-      let foundYear = false;
-      selectedTerms?.forEach((term) => {
-        const startYear = getYear(term?.StartDate);
-        const endYear = getYear(term?.EndDate);
+      selectedYears.forEach((selectedYear) => {
+        let foundYear = false;
+        selectedTerms?.forEach((term) => {
+          const startYear = getYear(term?.StartDate);
+          const endYear = getYear(term?.EndDate);
 
-        if (
-          (startYear ?? 0) <= selectedYear &&
-          (endYear ?? 0) >= selectedYear
-        ) {
-          const yearHeritages = heritagePerYear.filter((yearHeritages) => {
-            return yearHeritages.year === selectedYear;
-          });
-          mayorTotal.push(
-            yearHeritages.length > 0 ? yearHeritages[0].heritages.length : null,
-          );
-          foundYear = true;
+          if ((startYear ?? 0) <= selectedYear && (endYear ?? 0) >= selectedYear) {
+            const yearHeritages = heritagePerYear.filter((yearHeritages) => {
+              return yearHeritages.year === selectedYear;
+            });
+            mayorTotal.push(yearHeritages.length > 0 ? yearHeritages[0].heritages.length : null);
+            foundYear = true;
+          }
+        });
+
+        if (!foundYear) {
+          mayorTotal.push(null);
         }
       });
 
-      if (!foundYear) {
-        mayorTotal.push(null);
-      }
-    });
+      series.push({
+        type: 'column',
+        name: mayor.Person?.Name ?? 'Desconhecida',
+        data: mayorTotal,
+        color: theme.coresGrafico[index],
+      });
 
-    series.push({
-      type: 'column',
-      name: mayor.Person?.Name ?? 'Desconhecida',
-      data: mayorTotal,
-      color: theme.coresGrafico[index],
-    });
-
-    return series;
-  }, []) as SeriesOptionsType[];
+      return series;
+    },
+    [],
+  ) as SeriesOptionsType[];
 
   const lineOptions: Highcharts.Options = {
     chart: {
@@ -201,10 +187,7 @@ function Mayors({ heritages }: { heritages: Heritage[] }): JSX.Element {
         (getYear(aM.StartDate) ?? 0) < (getYear(bM.StartDate) ?? 0) ? 1 : -1,
       )[0];
 
-      return (getYear(aFirstTerm?.StartDate) ?? 0) <
-        (getYear(bFirstTerm?.StartDate) ?? 0)
-        ? 1
-        : -1;
+      return (getYear(aFirstTerm?.StartDate) ?? 0) < (getYear(bFirstTerm?.StartDate) ?? 0) ? 1 : -1;
     })
     .map((mayor) => {
       const terms = mayor.Terms?.sort((aM, bM) =>
@@ -234,12 +217,7 @@ function Mayors({ heritages }: { heritages: Heritage[] }): JSX.Element {
 
   return (
     <ScrollView style={style.container}>
-      <Dropdown
-        value={dropdownValue}
-        setValue={setDropdown}
-        items={items}
-        multiple
-      />
+      <Dropdown value={dropdownValue} setValue={setDropdown} items={items} multiple />
       <View>
         <Block heritages={heritages} terms={dropdownValue} />
       </View>

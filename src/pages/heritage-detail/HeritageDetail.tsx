@@ -18,9 +18,7 @@ function HeritageDetail(): JSX.Element {
         justifyContent: 'center',
         padding: 8,
         backgroundColor:
-          theme.typology[
-            heritage?.Typology?.toLocaleLowerCase() as keyof TypologyTheme
-          ] ?? theme.typology.desconhecida,
+          theme.typology[heritage?.Typology?.toLocaleLowerCase() as keyof TypologyTheme] ?? theme.typology.desconhecida,
         height: '100%',
       }}
     >
@@ -39,11 +37,9 @@ function HeritageDetail(): JSX.Element {
             style={{
               height: 136,
               width: 136,
-              borderWidth:
-                heritage?.Image != null && heritage.Image !== '' ? 0 : 1,
+              borderWidth: heritage?.Image != null && heritage.Image !== '' ? 0 : 1,
               borderColor: '#FFFFFF',
-              marginBottom:
-                heritage?.Image != null && heritage.Image !== '' ? 0 : 4,
+              marginBottom: heritage?.Image != null && heritage.Image !== '' ? 0 : 4,
             }}
           >
             <Image source={heritage?.Image} height={136} width={136} />
@@ -71,9 +67,7 @@ function HeritageDetail(): JSX.Element {
               lineHeight: 18,
             }}
           >
-            {heritage?.Authors?.map((author) => author.Person?.Name).join(
-              ', ',
-            ) ?? 'Desconhecida'}
+            {heritage?.Authors?.map((author) => author.Person?.Name).join(', ') ?? 'Desconhecida'}
           </Text>
           <Text
             style={{

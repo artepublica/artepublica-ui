@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 
-import {
-  FlatList,
-  ScrollView,
-  TouchableOpacity,
-  useWindowDimensions,
-  View,
-} from 'react-native';
+import { FlatList, ScrollView, TouchableOpacity, useWindowDimensions, View } from 'react-native';
 import { Col, Grid, Row } from 'react-native-easy-grid';
 
 import { Text } from '@base-components';
@@ -35,8 +29,7 @@ function Glossary(): JSX.Element {
     },
     {
       word: 'Escultura',
-      description:
-        'É um objeto artístico tridimensional que ocupa um determinado espaço com seus volumes.',
+      description: 'É um objeto artístico tridimensional que ocupa um determinado espaço com seus volumes.',
     },
     {
       word: 'Estátua',
@@ -65,25 +58,19 @@ function Glossary(): JSX.Element {
     },
   ];
 
-  const [glossaryState, setGlossaryState] = useState<
-    { word: string; open: boolean }[]
-  >(glossary.map((item) => ({ word: item.word, open: false })));
+  const [glossaryState, setGlossaryState] = useState<{ word: string; open: boolean }[]>(
+    glossary.map((item) => ({ word: item.word, open: false })),
+  );
 
   const columns = Math.floor(width / 256);
   const gridWidth = (columns - 1) * 256 + 240;
   const remainingWidth = width - 16 - gridWidth;
 
-  const data = glossary.reduce<{ word: string; description: string }[][]>(
-    (all, one, i) => {
-      const ch = Math.floor(i / columns);
-      all[ch] = ([] as { word: string; description: string }[]).concat(
-        all[ch] || [],
-        one,
-      );
-      return all;
-    },
-    [],
-  );
+  const data = glossary.reduce<{ word: string; description: string }[][]>((all, one, i) => {
+    const ch = Math.floor(i / columns);
+    all[ch] = ([] as { word: string; description: string }[]).concat(all[ch] || [], one);
+    return all;
+  }, []);
 
   const changeState = (state: { word: string; open: boolean }) => {
     const newState = glossaryState.map((item) => {
@@ -142,10 +129,7 @@ function Glossary(): JSX.Element {
                         })),
                       ].map((col, colIndex) => {
                         const state = glossaryState.find(
-                          (item) =>
-                            typeof col != typeof String &&
-                            col?.word &&
-                            item.word === col.word,
+                          (item) => typeof col != typeof String && col?.word && item.word === col.word,
                         );
                         return (
                           <Col
@@ -160,9 +144,7 @@ function Glossary(): JSX.Element {
                             <View style={{ width: 240 }}>
                               {state && (
                                 <>
-                                  <TouchableOpacity
-                                    onPress={() => changeState(state)}
-                                  >
+                                  <TouchableOpacity onPress={() => changeState(state)}>
                                     <Text
                                       style={{
                                         fontSize: 20,
@@ -203,14 +185,12 @@ function Glossary(): JSX.Element {
               </View>
               <View style={{ flexDirection: 'column' }}>
                 <Text style={{ textAlign: 'justify', width: width - 88 - 32 }}>
-                  OLIVEIRA, Aline Rayane de Souza. Arte Pública na cidade do Rio
-                  de Janeiro e o programa Esculturas Urbanas. Tese (Doutorado em
-                  Urbanismo), Universidade Federal do Rio de Janeiro, Rio de
-                  Janeiro, 2022.
+                  OLIVEIRA, Aline Rayane de Souza. Arte Pública na cidade do Rio de Janeiro e o programa Esculturas
+                  Urbanas. Tese (Doutorado em Urbanismo), Universidade Federal do Rio de Janeiro, Rio de Janeiro, 2022.
                 </Text>
                 <Text style={{ textAlign: 'justify', width: width - 88 - 32 }}>
-                  CARVALHO, Maria João Vilhena. Normas de inventário: escultura.
-                  Lisboa: Instituto Português de Museus, 2004.
+                  CARVALHO, Maria João Vilhena. Normas de inventário: escultura. Lisboa: Instituto Português de Museus,
+                  2004.
                 </Text>
               </View>
             </View>

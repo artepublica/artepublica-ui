@@ -55,10 +55,7 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
       ]}
     >
       {markers
-        ?.filter(
-          (marker) =>
-            marker.position.latitude !== '' && marker.position.longitude !== '',
-        )
+        ?.filter((marker) => marker.position.latitude !== '' && marker.position.longitude !== '')
         .map((marker, index) => (
           <Marker
             pinColor={marker.color ?? 'red'}

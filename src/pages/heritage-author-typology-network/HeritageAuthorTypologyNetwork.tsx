@@ -15,18 +15,13 @@ type HeritageAuthorTypologyNetworkProps = {
   types: { name: string; heritages: Heritage[] }[];
 };
 
-function HeritageAuthorTypologyNetwork({
-  type,
-  types,
-}: HeritageAuthorTypologyNetworkProps): JSX.Element {
+function HeritageAuthorTypologyNetwork({ type, types }: HeritageAuthorTypologyNetworkProps): JSX.Element {
   const { theme } = useTheme();
   const { width, height } = useWindowDimensions();
   const headerHeight = useHeaderHeight();
   const insets = useSafeAreaInsets();
 
-  const names = [...types]
-    .map((type) => type.name ?? 'Desconhecida')
-    .sort((a, b) => a.localeCompare(b));
+  const names = [...types].map((type) => type.name ?? 'Desconhecida').sort((a, b) => a.localeCompare(b));
 
   const typesSortedByTotal = [...types]
     .filter((type) => type.name !== 'Desconhecida')
@@ -37,31 +32,24 @@ function HeritageAuthorTypologyNetwork({
 
   const style = styles();
 
-  const selected = types.filter(
-    (type) => (type.name ?? 'v') === dropdownValue,
-  )[0];
+  const selected = types.filter((type) => (type.name ?? 'v') === dropdownValue)[0];
 
   const typologies = selected.heritages
     .map((heritage) => {
       const typology = heritage.Typology ?? 'Deconhecida';
-      const color =
-        theme.typology[typology.toLowerCase() as keyof TypologyTheme] ??
-        theme.typology.desconhecida;
+      const color = theme.typology[typology.toLowerCase() as keyof TypologyTheme] ?? theme.typology.desconhecida;
       return {
         id: typology,
         marker: { radius: 20 },
         color,
       };
     })
-    .reduce<{ id: string; marker: { radius: number }; color: string }[]>(
-      (r, e) => {
-        if (r.find((tip) => tip.id === e.id) == null) {
-          r.push(e);
-        }
-        return r;
-      },
-      [],
-    );
+    .reduce<{ id: string; marker: { radius: number }; color: string }[]>((r, e) => {
+      if (r.find((tip) => tip.id === e.id) == null) {
+        r.push(e);
+      }
+      return r;
+    }, []);
 
   const titles = selected.heritages.map((heritage) => ({
     id: `${heritage.Title ?? 'Deconhecida'} (${getYear(heritage.OpeningDate) ?? 's.d.'})`,
@@ -86,20 +74,14 @@ function HeritageAuthorTypologyNetwork({
           .filter((heritage) =>
             type !== 'Authors'
               ? heritage[type] === selected.name
-              : heritage.Authors?.find(
-                  (author) => author.Person?.Name === selected.name,
-                ) != null,
+              : heritage.Authors?.find((author) => author.Person?.Name === selected.name) != null,
           )
           .filter(
             (heritage) =>
-              (heritage.Typology != null &&
-                heritage.Typology === typology.id) ||
+              (heritage.Typology != null && heritage.Typology === typology.id) ||
               (typology.id === 'Desconhecida' && heritage.Typology == null),
           )
-          .map(
-            (heritage) =>
-              `${heritage.Title ?? 'Deconhecida'} (${getYear(heritage.OpeningDate) ?? 's.d.'})`,
-          );
+          .map((heritage) => `${heritage.Title ?? 'Deconhecida'} (${getYear(heritage.OpeningDate) ?? 's.d.'})`);
 
         return typology_titles.map((title) => ({
           from: typology.id,

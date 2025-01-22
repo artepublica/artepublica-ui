@@ -1,9 +1,6 @@
 import { AntDesign } from '@expo/vector-icons';
 import { NavigationProp, StackActions } from '@react-navigation/native';
-import {
-  StackNavigationOptions,
-  TransitionPresets,
-} from '@react-navigation/stack';
+import { StackNavigationOptions, TransitionPresets } from '@react-navigation/stack';
 import { Platform, StyleSheet, TouchableOpacity } from 'react-native';
 import { EdgeInsets } from 'react-native-safe-area-context';
 
@@ -24,17 +21,11 @@ function webOptions<T extends object>(
     headerLeft: () => (
       <TouchableOpacity
         onPress={() =>
-          navigation.canGoBack()
-            ? navigation.goBack()
-            : navigation.dispatch(StackActions.push('(home)'))
+          navigation.canGoBack() ? navigation.goBack() : navigation.dispatch(StackActions.push('(home)'))
         }
         style={{ paddingLeft: 16 }}
       >
-        <AntDesign
-          name='arrowleft'
-          size={24}
-          color={theme.navigation.primary}
-        />
+        <AntDesign name='arrowleft' size={24} color={theme.navigation.primary} />
       </TouchableOpacity>
     ),
   };
@@ -61,12 +52,8 @@ function mobileOptions(
     cardStyleInterpolator: (_ref2) => {
       const cardStyleInterpolator =
         Platform.OS === 'ios'
-          ? TransitionPresets.ModalSlideFromBottomIOS.cardStyleInterpolator(
-              _ref2,
-            )
-          : TransitionPresets.FadeFromBottomAndroid.cardStyleInterpolator(
-              _ref2,
-            );
+          ? TransitionPresets.ModalSlideFromBottomIOS.cardStyleInterpolator(_ref2)
+          : TransitionPresets.FadeFromBottomAndroid.cardStyleInterpolator(_ref2);
       return {
         ...cardStyleInterpolator,
         overlayStyle: {
@@ -81,10 +68,7 @@ function mobileOptions(
     headerShown: false,
     presentation: 'transparentModal',
     gestureResponseDistance:
-      height -
-      calculateNavigationModalHeight(height, insets, modalHeight) -
-      insets.top +
-      insets.bottom,
+      height - calculateNavigationModalHeight(height, insets, modalHeight) - insets.top + insets.bottom,
     animation: 'default',
   };
 }

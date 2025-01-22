@@ -11,9 +11,7 @@ import { useTheme } from '@utils';
 import * as heritagePerDecade from './heritagePerDecade';
 
 function Decades(): JSX.Element {
-  const allYears: { label: string; value: string }[] = [
-    { label: 'Desconhecida', value: 'Null' },
-  ];
+  const allYears: { label: string; value: string }[] = [{ label: 'Desconhecida', value: 'Null' }];
   for (let year = 2020; year > 1500; year = year - 10) {
     allYears.push({ label: year.toString(), value: year.toString() });
   }
@@ -34,17 +32,10 @@ function Decades(): JSX.Element {
     const selectedDecadeNatures: string[] = selectedDecadeHeritages.map(
       (heritage) => heritage.Nature ?? 'Desconhecida',
     );
-    const selectedDecadeAreas: string[] = selectedDecadeHeritages.map(
-      (heritage) => heritage.Area ?? 'Desconhecida',
-    );
-    const selectedDecadeStatus: string[] = selectedDecadeHeritages.map(
-      (heritage) => heritage.Status ?? 'Desconhecida',
-    );
+    const selectedDecadeAreas: string[] = selectedDecadeHeritages.map((heritage) => heritage.Area ?? 'Desconhecida');
+    const selectedDecadeStatus: string[] = selectedDecadeHeritages.map((heritage) => heritage.Status ?? 'Desconhecida');
     const selectedDecadeAuthors: string[] = selectedDecadeHeritages
-      .map(
-        (heritage) =>
-          heritage.Authors ?? [{ Person: { Name: 'Desconhecida' } } as Author],
-      )
+      .map((heritage) => heritage.Authors ?? [{ Person: { Name: 'Desconhecida' } } as Author])
       .reduce<string[]>((r, l) => {
         Array.prototype.push.apply(
           r,
@@ -63,9 +54,7 @@ function Decades(): JSX.Element {
           r.push({
             name: a,
             heritages: selectedDecadeHeritages.filter(
-              (heritage) =>
-                heritage.Typology === a ||
-                (heritage.Typology == null && a === 'Desconhecida'),
+              (heritage) => heritage.Typology === a || (heritage.Typology == null && a === 'Desconhecida'),
             ),
           });
         }
@@ -73,33 +62,31 @@ function Decades(): JSX.Element {
       }, [])
       .sort((a, b) => a.name.localeCompare(b.name));
 
-    const selectedDecadeNatureTotal: { name: string; total: number }[] =
-      selectedDecadeNatures
-        .reduce<{ name: string; total: number }[]>(function (r, a) {
-          const r_top = r.find((top) => top.name === a);
-          if (!r_top) {
-            r.push({
-              name: a,
-              total: selectedDecadeNatures.filter((top) => top === a).length,
-            });
-          }
-          return r;
-        }, [])
-        .sort((a, b) => a.name.localeCompare(b.name));
+    const selectedDecadeNatureTotal: { name: string; total: number }[] = selectedDecadeNatures
+      .reduce<{ name: string; total: number }[]>(function (r, a) {
+        const r_top = r.find((top) => top.name === a);
+        if (!r_top) {
+          r.push({
+            name: a,
+            total: selectedDecadeNatures.filter((top) => top === a).length,
+          });
+        }
+        return r;
+      }, [])
+      .sort((a, b) => a.name.localeCompare(b.name));
 
-    const selectedDecadeAreaTotal: { name: string; total: number }[] =
-      selectedDecadeAreas
-        .reduce<{ name: string; total: number }[]>(function (r, a) {
-          const r_top = r.find((top) => top.name === a);
-          if (!r_top) {
-            r.push({
-              name: a,
-              total: selectedDecadeAreas.filter((top) => top === a).length,
-            });
-          }
-          return r;
-        }, [])
-        .sort((a, b) => a.name.localeCompare(b.name));
+    const selectedDecadeAreaTotal: { name: string; total: number }[] = selectedDecadeAreas
+      .reduce<{ name: string; total: number }[]>(function (r, a) {
+        const r_top = r.find((top) => top.name === a);
+        if (!r_top) {
+          r.push({
+            name: a,
+            total: selectedDecadeAreas.filter((top) => top === a).length,
+          });
+        }
+        return r;
+      }, [])
+      .sort((a, b) => a.name.localeCompare(b.name));
 
     const selectedDecadeStatusTotal: {
       name: string;
@@ -116,11 +103,7 @@ function Decades(): JSX.Element {
         const r_top = r.find((top) => top.name === a);
         if (!r_top) {
           const typologies = selectedDecadeHeritages
-            .filter(
-              (heritage) =>
-                heritage.Status === a ||
-                (a === 'Desconhecida' && heritage.Status == null),
-            )
+            .filter((heritage) => heritage.Status === a || (a === 'Desconhecida' && heritage.Status == null))
             .map((heritage) => heritage.Typology ?? 'Desconhecida');
 
           const typologyTotal: { name: string; total: number }[] = typologies
@@ -151,19 +134,13 @@ function Decades(): JSX.Element {
       total: number;
       heritages: string[];
     }[] = selectedDecadeAuthors
-      .reduce<{ name: string; total: number; heritages: string[] }[]>(function (
-        r,
-        a,
-      ) {
+      .reduce<{ name: string; total: number; heritages: string[] }[]>(function (r, a) {
         const r_top = r.find((top) => top.name === a);
         if (!r_top) {
           const heritages: string[] = selectedDecadeHeritages
             .filter(
               (heritage) =>
-                (heritage.Authors != null &&
-                  heritage.Authors?.find(
-                    (author) => author.Person?.Name === a,
-                  ) != null) ||
+                (heritage.Authors != null && heritage.Authors?.find((author) => author.Person?.Name === a) != null) ||
                 (a === 'Desconhecida' && heritage.Authors == null),
             )
             .map((heritage) => heritage.Title ?? 'Desconhecida');
@@ -179,9 +156,7 @@ function Decades(): JSX.Element {
       .sort((a, b) => a.name.localeCompare(b.name));
 
     return (
-      <ScrollView
-        style={{ width: '100%', paddingTop: 12, paddingHorizontal: 12 }}
-      >
+      <ScrollView style={{ width: '100%', paddingTop: 12, paddingHorizontal: 12 }}>
         <DropDownPicker
           theme={theme.dark ? 'DARK' : 'LIGHT'}
           open={open}
@@ -211,75 +186,47 @@ function Decades(): JSX.Element {
         <View style={{ height: 12 }} />
 
         <Table
-          headers={[
-            'Tipologia',
-            `Total: ${selectedDecadeTypologyTotal.length}`,
-            'Obras',
-          ]}
+          headers={['Tipologia', `Total: ${selectedDecadeTypologyTotal.length}`, 'Obras']}
           rows={selectedDecadeTypologyTotal.map((top) => [
             top.name,
             top.heritages.length.toString(),
-            top.heritages
-              .map((heritage) => heritage.Title ?? 'Desconhecida')
-              .join(', '),
+            top.heritages.map((heritage) => heritage.Title ?? 'Desconhecida').join(', '),
           ])}
         />
         <View style={{ height: 12 }} />
 
         <Table
           headers={['Natureza', `Total: ${selectedDecadeNatureTotal.length}`]}
-          rows={selectedDecadeNatureTotal.map((top) => [
-            top.name,
-            top.total.toString(),
-          ])}
+          rows={selectedDecadeNatureTotal.map((top) => [top.name, top.total.toString()])}
         />
         <View style={{ height: 12 }} />
 
         <Table
           headers={['Area', `Total: ${selectedDecadeAreaTotal.length}`]}
-          rows={selectedDecadeAreaTotal.map((top) => [
-            top.name,
-            top.total.toString(),
-          ])}
+          rows={selectedDecadeAreaTotal.map((top) => [top.name, top.total.toString()])}
         />
         <View style={{ height: 12 }} />
 
         <Table
-          headers={[
-            'Status',
-            `Total: ${selectedDecadeStatusTotal.length}`,
-            'Tipologias',
-          ]}
+          headers={['Status', `Total: ${selectedDecadeStatusTotal.length}`, 'Tipologias']}
           rows={selectedDecadeStatusTotal.map((top) => [
             top.name,
             top.total.toString(),
-            top.typologies
-              .map((top) => `${top.name} (${top.total})`)
-              .join(', '),
+            top.typologies.map((top) => `${top.name} (${top.total})`).join(', '),
           ])}
         />
         <View style={{ height: 12 }} />
 
         <Table
-          headers={[
-            'Artista',
-            `Total: ${selectedDecadeAuthorTotal.length}`,
-            'Obras',
-          ]}
-          rows={selectedDecadeAuthorTotal.map((top) => [
-            top.name,
-            top.total.toString(),
-            top.heritages.join(', '),
-          ])}
+          headers={['Artista', `Total: ${selectedDecadeAuthorTotal.length}`, 'Obras']}
+          rows={selectedDecadeAuthorTotal.map((top) => [top.name, top.total.toString(), top.heritages.join(', ')])}
         />
       </ScrollView>
     );
   }
 
   return (
-    <ScrollView
-      style={{ width: '100%', paddingTop: 12, paddingHorizontal: 12 }}
-    >
+    <ScrollView style={{ width: '100%', paddingTop: 12, paddingHorizontal: 12 }}>
       <DropDownPicker
         theme={theme.dark ? 'DARK' : 'LIGHT'}
         open={open}

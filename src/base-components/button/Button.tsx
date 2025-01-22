@@ -1,9 +1,4 @@
-import {
-  GestureResponderEvent,
-  Pressable,
-  StyleSheet,
-  Text,
-} from 'react-native';
+import { GestureResponderEvent, Pressable, StyleSheet, Text } from 'react-native';
 
 import { Theme, useTheme } from '@utils';
 
@@ -13,11 +8,7 @@ export type ButtonProps = {
   testOnly_pressed?: boolean;
 };
 
-function Button({
-  children,
-  onPress,
-  testOnly_pressed,
-}: ButtonProps): JSX.Element {
+function Button({ children, onPress, testOnly_pressed }: ButtonProps): JSX.Element {
   const { theme } = useTheme();
 
   const style = styles(theme);

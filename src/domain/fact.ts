@@ -1,14 +1,7 @@
 import Person from './person';
 
 export default class Fact {
-  constructor(
-    startDate: string,
-    endDate: string,
-    type: string,
-    description: string,
-    persons: Person[],
-    city: string,
-  ) {
+  constructor(startDate: string, endDate: string, type: string, description: string, persons: Person[], city: string) {
     this.ID = undefined;
     this.StartDate = startDate;
     this.EndDate = endDate;

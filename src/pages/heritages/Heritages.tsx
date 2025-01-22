@@ -16,20 +16,13 @@ function Heritages(): JSX.Element {
 
   const heritagesSorted = heritages
     .sort((heritageA, heritageB) => {
-      return (heritageA.Title ?? 'Desconhecida').localeCompare(
-        heritageB.Title ?? 'Desconhecida',
-      );
+      return (heritageA.Title ?? 'Desconhecida').localeCompare(heritageB.Title ?? 'Desconhecida');
     })
     .sort((heritageA, heritageB) => {
-      return (getYear(heritageA.OpeningDate) ?? 0) <
-        (getYear(heritageB.OpeningDate) ?? 0)
-        ? -1
-        : 1;
+      return (getYear(heritageA.OpeningDate) ?? 0) < (getYear(heritageB.OpeningDate) ?? 0) ? -1 : 1;
     })
     .sort((heritageA, heritageB) => {
-      return (heritageA.Typology ?? 'Desconhecida').localeCompare(
-        heritageB.Typology ?? 'Desconhecida',
-      );
+      return (heritageA.Typology ?? 'Desconhecida').localeCompare(heritageB.Typology ?? 'Desconhecida');
     });
 
   const allowedWidth = width - 24;
@@ -45,15 +38,8 @@ function Heritages(): JSX.Element {
       } else {
         const previousHeritage = heritagesSorted[index - 1];
 
-        if (
-          (heritage.Typology ?? 'Desconhecida') !==
-          (previousHeritage.Typology ?? 'Desconhecida')
-        ) {
-          return [
-            ...result,
-            heritage.Typology ?? 'Desconhecida',
-            heritage.ID.toString(),
-          ];
+        if ((heritage.Typology ?? 'Desconhecida') !== (previousHeritage.Typology ?? 'Desconhecida')) {
+          return [...result, heritage.Typology ?? 'Desconhecida', heritage.ID.toString()];
         }
       }
 
@@ -77,16 +63,13 @@ function Heritages(): JSX.Element {
             <Grid style={{ paddingLeft: padding + 12 }}>
               <Row style={style.row} key={rowIndex}>
                 {row.map((col, colIndex) => {
-                  const heritage = heritagesSorted.find(
-                    (heritage) => heritage.ID.toString() === col,
-                  );
+                  const heritage = heritagesSorted.find((heritage) => heritage.ID.toString() === col);
                   return (
                     <Col
                       style={[
                         style.col,
                         {
-                          marginRight:
-                            colIndex !== columns - 1 ? padding + 8 : 0,
+                          marginRight: colIndex !== columns - 1 ? padding + 8 : 0,
                         },
                       ]}
                       key={colIndex}
@@ -105,9 +88,7 @@ function Heritages(): JSX.Element {
                           style={{
                             width: 136,
                             backgroundColor:
-                              theme.typology[
-                                col.toLowerCase() as keyof TypologyTheme
-                              ] ?? theme.typology.desconhecida,
+                              theme.typology[col.toLowerCase() as keyof TypologyTheme] ?? theme.typology.desconhecida,
                             height: '100%',
                           }}
                         >
@@ -137,9 +118,7 @@ function Heritages(): JSX.Element {
                                 color: '#FFFFFF',
                                 fontWeight: '700',
                               }}
-                            >{`Título, ano${
-                              Platform.OS === 'web' ? '\n\n' : '\n'
-                            }`}</Text>
+                            >{`Título, ano${Platform.OS === 'web' ? '\n\n' : '\n'}`}</Text>
                             <Text
                               style={{
                                 fontFamily: 'Arial',
@@ -203,9 +182,8 @@ function Heritages(): JSX.Element {
                           style={{
                             width: 136,
                             backgroundColor:
-                              theme.typology[
-                                heritage.Typology?.toLocaleLowerCase() as keyof TypologyTheme
-                              ] ?? theme.typology.desconhecida,
+                              theme.typology[heritage.Typology?.toLocaleLowerCase() as keyof TypologyTheme] ??
+                              theme.typology.desconhecida,
                             height: '100%',
                           }}
                         >
@@ -219,33 +197,16 @@ function Heritages(): JSX.Element {
                             <View
                               style={{
                                 backgroundColor: '#FFFFFF',
-                                height:
-                                  heritage.Image != null &&
-                                  heritage.Image !== ''
-                                    ? 140
-                                    : 136,
+                                height: heritage.Image != null && heritage.Image !== '' ? 140 : 136,
                                 width: 136,
-                                borderWidth:
-                                  heritage.Image != null &&
-                                  heritage.Image !== ''
-                                    ? 0
-                                    : 1,
+                                borderWidth: heritage.Image != null && heritage.Image !== '' ? 0 : 1,
                                 borderColor:
-                                  theme.typology[
-                                    heritage.Typology?.toLocaleLowerCase() as keyof TypologyTheme
-                                  ] ?? theme.typology.desconhecida,
-                                marginBottom:
-                                  heritage.Image != null &&
-                                  heritage.Image !== ''
-                                    ? 0
-                                    : 4,
+                                  theme.typology[heritage.Typology?.toLocaleLowerCase() as keyof TypologyTheme] ??
+                                  theme.typology.desconhecida,
+                                marginBottom: heritage.Image != null && heritage.Image !== '' ? 0 : 4,
                               }}
                             >
-                              <Image
-                                source={heritage.Image}
-                                height={136}
-                                width={136}
-                              />
+                              <Image source={heritage.Image} height={136} width={136} />
                             </View>
                           </View>
                           <View style={{ padding: 8 }}>
@@ -258,9 +219,7 @@ function Heritages(): JSX.Element {
                               }}
                             >
                               {`${heritage.Title ?? 'Desconhecida'}${
-                                heritage.OpeningDate
-                                  ? `, ${getYear(heritage.OpeningDate)}`
-                                  : ', s.d.'
+                                heritage.OpeningDate ? `, ${getYear(heritage.OpeningDate)}` : ', s.d.'
                               }${Platform.OS === 'web' ? '\n\n' : '\n'}`}
                             </Text>
                             <Text
@@ -272,9 +231,7 @@ function Heritages(): JSX.Element {
                                 lineHeight: 13,
                               }}
                             >
-                              {heritage.Authors?.map(
-                                (author) => author.Person?.Name,
-                              ).join(', ') ?? 'Desconhecida'}
+                              {heritage.Authors?.map((author) => author.Person?.Name).join(', ') ?? 'Desconhecida'}
                             </Text>
                             <Text
                               style={{

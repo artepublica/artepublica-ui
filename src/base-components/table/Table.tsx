@@ -18,22 +18,13 @@ function Table({ headers, rows, width }: TableProps): JSX.Element {
     <Grid style={style.table}>
       <Row style={style.head}>
         {headers?.map((col, indexCol) => (
-          <Col
-            style={[
-              style.col,
-              indexCol !== headers.length - 1 ? style.headerBorder : undefined,
-            ]}
-            key={indexCol}
-          >
+          <Col style={[style.col, indexCol !== headers.length - 1 ? style.headerBorder : undefined]} key={indexCol}>
             <Text style={style.headText}>{col.toUpperCase()}</Text>
           </Col>
         ))}
       </Row>
       {rows?.map((row, indexRow) => (
-        <Row
-          style={[style.row, indexRow % 2 === 0 ? style.rowEven : undefined]}
-          key={indexRow}
-        >
+        <Row style={[style.row, indexRow % 2 === 0 ? style.rowEven : undefined]} key={indexRow}>
           {row?.map((col, indexCol) => (
             <Col
               style={[

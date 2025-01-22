@@ -6,11 +6,7 @@ import { useTheme } from '@utils';
 
 import { Text } from '../text';
 
-function HeaderLeft<T extends object>({
-  navigation,
-}: {
-  navigation: NavigationProp<T>;
-}): JSX.Element {
+function HeaderLeft<T extends object>({ navigation }: { navigation: NavigationProp<T> }): JSX.Element {
   const { theme } = useTheme();
   const { width } = useWindowDimensions();
   return (

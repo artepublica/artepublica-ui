@@ -7,15 +7,9 @@ export type ThemeContextType = {
   theme: Theme;
 };
 
-export const ThemeContext = createContext<ThemeContextType>(
-  {} as ThemeContextType,
-);
+export const ThemeContext = createContext<ThemeContextType>({} as ThemeContextType);
 
-function ThemeContextProvider({
-  children,
-}: {
-  children?: JSX.Element | JSX.Element[];
-}): JSX.Element {
+function ThemeContextProvider({ children }: { children?: JSX.Element | JSX.Element[] }): JSX.Element {
   /*const colorScheme = useColorScheme();
 
     const [
@@ -31,11 +25,7 @@ function ThemeContextProvider({
         }
     }, [colorScheme]);*/
 
-  return (
-    <ThemeContext.Provider value={{ theme: LightTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  return <ThemeContext.Provider value={{ theme: LightTheme }}>{children}</ThemeContext.Provider>;
 }
 
 type ThemeContextProviderMockProps = {
@@ -43,15 +33,8 @@ type ThemeContextProviderMockProps = {
   value?: ThemeContextType;
 };
 
-export function ThemeContextProviderMock({
-  children,
-  value,
-}: ThemeContextProviderMockProps): JSX.Element {
-  return (
-    <ThemeContext.Provider value={{ theme: value?.theme as Theme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+export function ThemeContextProviderMock({ children, value }: ThemeContextProviderMockProps): JSX.Element {
+  return <ThemeContext.Provider value={{ theme: value?.theme as Theme }}>{children}</ThemeContext.Provider>;
 }
 
 export default ThemeContextProvider;

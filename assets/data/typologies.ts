@@ -11,20 +11,16 @@ const typologyNames: string[] = heritages
     return typologies;
   }, []);
 
-const typologies: { name: string; heritages: Heritage[] }[] =
-  typologyNames.reduce<{ name: string; heritages: Heritage[] }[]>(function (
-    total,
-    typology,
-  ) {
-    total.push({
-      name: typology,
-      heritages: heritages.filter(
-        (heritage) =>
-          heritage.Typology === typology ||
-          (heritage.Typology == null && typology === 'Desconhecida'),
-      ),
-    });
-    return total;
-  }, []);
+const typologies: { name: string; heritages: Heritage[] }[] = typologyNames.reduce<
+  { name: string; heritages: Heritage[] }[]
+>(function (total, typology) {
+  total.push({
+    name: typology,
+    heritages: heritages.filter(
+      (heritage) => heritage.Typology === typology || (heritage.Typology == null && typology === 'Desconhecida'),
+    ),
+  });
+  return total;
+}, []);
 
 export default typologies;

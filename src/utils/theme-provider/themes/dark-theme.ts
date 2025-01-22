@@ -1,16 +1,6 @@
 import { Platform } from 'react-native';
 
-import {
-  amarelo,
-  azul,
-  azul3,
-  coresGraficoLight,
-  laranja,
-  lilas,
-  magenta,
-  verde2,
-  vermelho2,
-} from './cores';
+import { amarelo, azul, azul3, coresGraficoLight, laranja, lilas, magenta, verde2, vermelho2 } from './cores';
 import fonts from './fonts';
 import { Theme } from '../domain';
 

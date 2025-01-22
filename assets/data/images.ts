@@ -486,17 +486,13 @@ const images = {
   'AAugustoMotta_Desconhecida.jpeg': AAugustoMotta_Desconhecida,
   'Baleia_AngeloVenosa.jpeg': Baleia_AngeloVenosa,
   'ACleydePradoMaia_EdgarDuvivier.jpeg': ACleydePradoMaia_EdgarDuvivier,
-  'ADiasdaCruz_VicenteDelRio_LuizCarlosToledo.jpeg':
-    ADiasdaCruz_VicenteDelRio_LuizCarlosToledo,
+  'ADiasdaCruz_VicenteDelRio_LuizCarlosToledo.jpeg': ADiasdaCruz_VicenteDelRio_LuizCarlosToledo,
   'EdsonLuis_CristinaPozzobon.jpeg': EdsonLuis_CristinaPozzobon,
   //'AGuignard_FranzWeissmann.jpeg': AGuignard_FranzWeissmann,
-  'AlmiranteBarroso_JoseOtavioCorreaLima.jpeg':
-    AlmiranteBarroso_JoseOtavioCorreaLima,
-  'AlmiranteMiguelGrau_PedroMMartinezCorada.jpeg':
-    AlmiranteMiguelGrau_PedroMMartinezCorada,
+  'AlmiranteBarroso_JoseOtavioCorreaLima.jpeg': AlmiranteBarroso_JoseOtavioCorreaLima,
+  'AlmiranteMiguelGrau_PedroMMartinezCorada.jpeg': AlmiranteMiguelGrau_PedroMMartinezCorada,
   'AlvaroCostaMelo_Desconhecida.jpeg': AlvaroCostaMelo_Desconhecida,
-  'AMeninadosBaloesEncantados_SandraGuinle.jpeg':
-    AMeninadosBaloesEncantados_SandraGuinle,
+  'AMeninadosBaloesEncantados_SandraGuinle.jpeg': AMeninadosBaloesEncantados_SandraGuinle,
   'AmericoVespucio_ArmandoAmaya.jpeg': AmericoVespucio_ArmandoAmaya,
   'AnaCarolina_MarliMazeredo.jpeg': AnaCarolina_MarliMazeredo,
   'AndreThevet_CyniraNDantas.jpeg': AndreThevet_CyniraNDantas,
@@ -510,8 +506,7 @@ const images = {
   'AVictorAssisBrasil_Desconhecida.jpeg': AVictorAssisBrasil_Desconhecida,
   'AyrtonSenna_MarioPitanguy.jpeg': AyrtonSenna_MarioPitanguy,
   'BichosHibridos_VaniaVilela.jpeg': BichosHibridos_VaniaVilela,
-  'BrigadeiroEduardoGomes_EdgarDuvivier.jpeg':
-    BrigadeiroEduardoGomes_EdgarDuvivier,
+  'BrigadeiroEduardoGomes_EdgarDuvivier.jpeg': BrigadeiroEduardoGomes_EdgarDuvivier,
   'Broca_GeorgeLopes_GeorgeGuerra.jpeg': Broca_GeorgeLopes_GeorgeGuerra,
   'CandidoMendes_BenevenutoBerna.jpeg': CandidoMendes_BenevenutoBerna,
   'Carnica_AnaluNabuco.jpeg': Carnica_AnaluNabuco,
@@ -536,25 +531,19 @@ const images = {
   'Encontro_FranzWeissmann.jpeg': Encontro_FranzWeissmann,
   'EscravaAnastacia_JaimeSampaio.jpeg': EscravaAnastacia_JaimeSampaio,
   'EsculturaParaORio_WaltercioCaldas.jpeg': EsculturaParaORio_WaltercioCaldas,
-  'EspacoCircularEmCuboVirtual_FranzWeissmann.jpeg':
-    EspacoCircularEmCuboVirtual_FranzWeissmann,
+  'EspacoCircularEmCuboVirtual_FranzWeissmann.jpeg': EspacoCircularEmCuboVirtual_FranzWeissmann,
   'EstruturaEmDiagonal_FranzWeissmann.jpeg': EstruturaEmDiagonal_FranzWeissmann,
-  'EvandroLinseSilva_AlfredoCeschiatti.jpeg':
-    EvandroLinseSilva_AlfredoCeschiatti,
+  'EvandroLinseSilva_AlfredoCeschiatti.jpeg': EvandroLinseSilva_AlfredoCeschiatti,
   'ExudosVentos_MarioCravoNeto.jpeg': ExudosVentos_MarioCravoNeto,
-  'FernandoBaptistaGoncalves_EdgarDuvivier.jpeg':
-    FernandoBaptistaGoncalves_EdgarDuvivier,
+  'FernandoBaptistaGoncalves_EdgarDuvivier.jpeg': FernandoBaptistaGoncalves_EdgarDuvivier,
   'Flora_MarioCravo.jpeg': Flora_MarioCravo,
-  'FrutodoEspaco_AntonioManuelOliveira.jpeg':
-    FrutodoEspaco_AntonioManuelOliveira,
+  'FrutodoEspaco_AntonioManuelOliveira.jpeg': FrutodoEspaco_AntonioManuelOliveira,
   'GeneralOsorio_Desconhecida.jpeg': GeneralOsorio_Desconhecida,
-  'GrandeQuadradoVermelho_FranzWeissmann.jpeg':
-    GrandeQuadradoVermelho_FranzWeissmann,
+  'GrandeQuadradoVermelho_FranzWeissmann.jpeg': GrandeQuadradoVermelho_FranzWeissmann,
   'Guardiao_CeleidaTostes.jpeg': Guardiao_CeleidaTostes,
   'Harmonia_MarliMazeredo.jpeg': Harmonia_MarliMazeredo,
   'IbrahimSued_MarcosAndreSales.jpeg': IbrahimSued_MarcosAndreSales,
-  'ImperatrizLeopoldina_EdgarDuvivierFilho.jpeg':
-    ImperatrizLeopoldina_EdgarDuvivierFilho,
+  'ImperatrizLeopoldina_EdgarDuvivierFilho.jpeg': ImperatrizLeopoldina_EdgarDuvivierFilho,
   'Interacao_MarliMazeredo.jpeg': Interacao_MarliMazeredo,
   'Inverno_GustaveFredericMichel.jpeg': Inverno_GustaveFredericMichel,
   'IrmaoGoncalvesXavier_Desconhecida.jpeg': IrmaoGoncalvesXavier_Desconhecida,
@@ -581,10 +570,8 @@ const images = {
   'OMascate_HonorioPecanha.jpeg': OMascate_HonorioPecanha,
   'OMascateRiachuelo_HonorioPecanha.jpeg': OMascateRiachuelo_HonorioPecanha,
   'OPassante_JoseResende.jpeg': OPassante_JoseResende,
-  'OttoLaraResende_JoasPereiraDosPassos.jpeg':
-    OttoLaraResende_JoasPereiraDosPassos,
-  'PadreGuilhermeDecaminada_Desconhecida.jpeg':
-    PadreGuilhermeDecaminada_Desconhecida,
+  'OttoLaraResende_JoasPereiraDosPassos.jpeg': OttoLaraResende_JoasPereiraDosPassos,
+  'PadreGuilhermeDecaminada_Desconhecida.jpeg': PadreGuilhermeDecaminada_Desconhecida,
   'PauloSampaio_Desconhecida.jpeg': PauloSampaio_Desconhecida,
   'PedroFernandes_EdgarDuvivier.jpeg': PedroFernandes_EdgarDuvivier,
   'Piramide_GeorgeLopes_GeorgeGuerra.jpeg': Piramide_GeorgeLopes_GeorgeGuerra,
@@ -593,27 +580,22 @@ const images = {
   'PrincesaIsabel_Desconhecida.jpeg': PrincesaIsabel_Desconhecida,
   'PrincesaIsabel_EdgarDuvivier.jpeg': PrincesaIsabel_EdgarDuvivier,
   'Prometeu_EvandroCarneiro.jpeg': Prometeu_EvandroCarneiro,
-  'QuadradoemTorcaonoEspaco_FranzWeissmann.jpeg':
-    QuadradoemTorcaonoEspaco_FranzWeissmann,
+  'QuadradoemTorcaonoEspaco_FranzWeissmann.jpeg': QuadradoemTorcaonoEspaco_FranzWeissmann,
   'RetanguloVazado_FranzWeissmann.jpeg': RetanguloVazado_FranzWeissmann,
-  'ReverendoMathathiasGomes_JoasPereiraDosPassos.jpeg':
-    ReverendoMathathiasGomes_JoasPereiraDosPassos,
+  'ReverendoMathathiasGomes_JoasPereiraDosPassos.jpeg': ReverendoMathathiasGomes_JoasPereiraDosPassos,
   'Ritmo_BrunoGiorgi.jpeg': Ritmo_BrunoGiorgi,
   'SantosDumont_Desconhecida.jpeg': SantosDumont_Desconhecida,
   'SaoCharbel_RomeuAlves.jpeg': SaoCharbel_RomeuAlves,
-  'SaoFranciscodePaula_GiovanniBattistaMaini.jpeg':
-    SaoFranciscodePaula_GiovanniBattistaMaini,
+  'SaoFranciscodePaula_GiovanniBattistaMaini.jpeg': SaoFranciscodePaula_GiovanniBattistaMaini,
   'SaoMaron_RomeuAlves.jpeg': SaoMaron_RomeuAlves,
   'SarahKubitschek_MarliMazeredo.jpeg': SarahKubitschek_MarliMazeredo,
   'SemTitulo_AmilcardeCastro.jpeg': SemTitulo_AmilcardeCastro,
   'SemTitulo_IvensMachado.jpeg': SemTitulo_IvensMachado,
   'SemTítulo_RobertoBurleMarx.jpeg': SemTítulo_RobertoBurleMarx,
   'SerenaDamadoMar_LuizFigueiredo.jpeg': SerenaDamadoMar_LuizFigueiredo,
-  'SolarWindsurferALevezadaPedra_JesperNeergaard.jpeg':
-    SolarWindsurferALevezadaPedra_JesperNeergaard,
+  'SolarWindsurferALevezadaPedra_JesperNeergaard.jpeg': SolarWindsurferALevezadaPedra_JesperNeergaard,
   'Tartaruga_JoseResende.jpeg': Tartaruga_JoseResende,
-  'TeresaCristinaBragancadeBourbon_JoseLuizRibeiro.jpeg':
-    TeresaCristinaBragancadeBourbon_JoseLuizRibeiro,
+  'TeresaCristinaBragancadeBourbon_JoseLuizRibeiro.jpeg': TeresaCristinaBragancadeBourbon_JoseLuizRibeiro,
   'Terra_FranzWeissmann.jpeg': Terra_FranzWeissmann,
   'Trio_JoseCesarBranquinho.jpeg': Trio_JoseCesarBranquinho,
   'VenusReclinada_JoseResende.jpeg': VenusReclinada_JoseResende,
@@ -627,45 +609,37 @@ const images = {
   'Outono_GustaveFredericMichel.jpeg': Outono_GustaveFredericMichel,
   'Primavera_MathurinMoreau.jpeg': Primavera_MathurinMoreau,
   'Roda_CeleidaTostes.jpeg': Roda_CeleidaTostes,
-  'TeixeiraDeFreitas_RodolfoBernardelli.jpeg':
-    TeixeiraDeFreitas_RodolfoBernardelli,
+  'TeixeiraDeFreitas_RodolfoBernardelli.jpeg': TeixeiraDeFreitas_RodolfoBernardelli,
   'Verao_GustaveFredericMichel.jpeg': Verao_GustaveFredericMichel,
   'CastroAlves_ModestinoKanto.jpeg': CastroAlves_ModestinoKanto,
   'DSebastiaoLeme_HeitorUsai.jpeg': DSebastiaoLeme_HeitorUsai,
   'GetulioVargas_LuizSerri.jpeg': GetulioVargas_LuizSerri,
   'GetulioVargas_Desconhecida.jpeg': GetulioVargas_Desconhecida,
   'LuisDeCamoes_AntonioTaunay.jpeg': LuisDeCamoes_AntonioTaunay,
-  'SaturninoSoaresMeirelles_Desconhecida.jpeg':
-    SaturninoSoaresMeirelles_Desconhecida,
-  'FreiLeandroDoSacramento_RibeiroDaCosta.jpeg':
-    FreiLeandroDoSacramento_RibeiroDaCosta,
-  'MarechalMachadoBittencourt_JoseOtavioCorreaLima.jpeg':
-    MarechalMachadoBittencourt_JoseOtavioCorreaLima,
+  'SaturninoSoaresMeirelles_Desconhecida.jpeg': SaturninoSoaresMeirelles_Desconhecida,
+  'FreiLeandroDoSacramento_RibeiroDaCosta.jpeg': FreiLeandroDoSacramento_RibeiroDaCosta,
+  'MarechalMachadoBittencourt_JoseOtavioCorreaLima.jpeg': MarechalMachadoBittencourt_JoseOtavioCorreaLima,
   'SaintHilaire_HumbertoCozzo.jpeg': SaintHilaire_HumbertoCozzo,
   'GoncalvesDias_RodolfoBernardelli.jpeg': GoncalvesDias_RodolfoBernardelli,
   'FonteJovemEuropa_MathurinMoreau.jpeg': FonteJovemEuropa_MathurinMoreau,
-  'RodolfoBernardelli_JoseOtavioCorreaLima.jpeg':
-    RodolfoBernardelli_JoseOtavioCorreaLima,
+  'RodolfoBernardelli_JoseOtavioCorreaLima.jpeg': RodolfoBernardelli_JoseOtavioCorreaLima,
   'SiqueiraCampos_Desconhecida.jpeg': SiqueiraCampos_Desconhecida,
   'StuartAngel_Desconhecida.jpeg': StuartAngel_Desconhecida,
   'AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto.jpeg':
     AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto,
-  'SerzedeloCorreia_RodolfoBernardelli.jpeg':
-    SerzedeloCorreia_RodolfoBernardelli,
+  'SerzedeloCorreia_RodolfoBernardelli.jpeg': SerzedeloCorreia_RodolfoBernardelli,
   'CandidoDeOliveira_LaurindoRamos.jpeg': CandidoDeOliveira_LaurindoRamos,
   'AryBarroso_OttoDumovich.jpeg': AryBarroso_OttoDumovich,
   'CastroAlves_EduardoDeSa.jpeg': CastroAlves_EduardoDeSa,
   'LouisPasteur_HeitorDaSilvaCosta.jpeg': LouisPasteur_HeitorDaSilvaCosta,
   'VictorMeirelles_EduardoDeSa.jpeg': VictorMeirelles_EduardoDeSa,
   'OlavoBilac_HumbertoCozzo.jpeg': OlavoBilac_HumbertoCozzo,
-  'CardealJoaquimArcoverde_Desconhecida.jpeg':
-    CardealJoaquimArcoverde_Desconhecida,
+  'CardealJoaquimArcoverde_Desconhecida.jpeg': CardealJoaquimArcoverde_Desconhecida,
   'BaraodeTaquara_BenevenutoBerna.jpeg': BaraodeTaquara_BenevenutoBerna,
   'ChiquinhaGonzaga_HonorioPecanha.jpeg': ChiquinhaGonzaga_HonorioPecanha,
   'ClovisBevilaqua_HonorioPecanha.jpeg': ClovisBevilaqua_HonorioPecanha,
   'EmilioDeMenezes_JoaoTurin.jpeg': EmilioDeMenezes_JoaoTurin,
-  'ThomasDelfinoDosSantos_RuffoFanucchi.jpeg':
-    ThomasDelfinoDosSantos_RuffoFanucchi,
+  'ThomasDelfinoDosSantos_RuffoFanucchi.jpeg': ThomasDelfinoDosSantos_RuffoFanucchi,
   'CarvalhodeBrito_RuffoFanucchi.jpeg': CarvalhodeBrito_RuffoFanucchi,
   'CoronelAssuncao_RuffoFanucchi.jpeg': CoronelAssuncao_RuffoFanucchi,
   'BadenPowell_VincenzoLarocca.jpeg': BadenPowell_VincenzoLarocca,
@@ -674,38 +648,30 @@ const images = {
   'PereiraCarneiro_EgistoBertozzi.jpeg': PereiraCarneiro_EgistoBertozzi,
   'AlfredoAgache_HeitorUsai.jpeg': AlfredoAgache_HeitorUsai,
   'ClariceLispector_EdgarDuvivier.jpeg': ClariceLispector_EdgarDuvivier,
-  'FranciscoPereiraPassos_RodolfoBernardelli.jpeg':
-    FranciscoPereiraPassos_RodolfoBernardelli,
+  'FranciscoPereiraPassos_RodolfoBernardelli.jpeg': FranciscoPereiraPassos_RodolfoBernardelli,
   'FranciscoMoranzan_RomeuAlves.jpeg': FranciscoMoranzan_RomeuAlves,
   'GetulioVargas_JoasPereiraDosPassos.jpeg': GetulioVargas_JoasPereiraDosPassos,
   'Chacrinha_Ique.jpeg': Chacrinha_Ique,
   'JozefPilsudski_Farynkiewicz.jpeg': JozefPilsudski_Farynkiewicz,
   'JuscelinoKubitschek_Zanucchi.jpeg': JuscelinoKubitschek_Zanucchi,
   'LasarSegall_LiubaWolf.jpeg': LasarSegall_LiubaWolf,
-  'ColunaMediaemCantoneirasDiagonais_FranzWeissmann.jpeg':
-    ColunaMediaemCantoneirasDiagonais_FranzWeissmann,
-  'NossaSenhoradaImaculadaConceicao_Desconhecido.jpeg':
-    NossaSenhoradaImaculadaConceicao_Desconhecido,
+  'ColunaMediaemCantoneirasDiagonais_FranzWeissmann.jpeg': ColunaMediaemCantoneirasDiagonais_FranzWeissmann,
+  'NossaSenhoradaImaculadaConceicao_Desconhecido.jpeg': NossaSenhoradaImaculadaConceicao_Desconhecido,
   'DomPedroI_LouisRochet.jpeg': DomPedroI_LouisRochet,
   'Africa_MathurinMoreau.jpeg': Africa_MathurinMoreau,
   'JosedeAlencar_RodolfoBernardelli.jpeg': JosedeAlencar_RodolfoBernardelli,
   'DuquedeCaxias_RodolfoBernardelli.jpeg': DuquedeCaxias_RodolfoBernardelli,
-  'ViscondedoRioBranco_FelixMauriceCharpentier.jpeg':
-    ViscondedoRioBranco_FelixMauriceCharpentier,
+  'ViscondedoRioBranco_FelixMauriceCharpentier.jpeg': ViscondedoRioBranco_FelixMauriceCharpentier,
   'Crepusculo_HenriWeigele.jpeg': Crepusculo_HenriWeigele,
   'MachadoDeAssis_HumbertoCozzo.jpeg': MachadoDeAssis_HumbertoCozzo,
   'Tiradentes_FranciscoAndrade.jpeg': Tiradentes_FranciscoAndrade,
-  'BuarquedeMacedo_JoseOtavioCorreaLima.jpeg':
-    BuarquedeMacedo_JoseOtavioCorreaLima,
+  'BuarquedeMacedo_JoseOtavioCorreaLima.jpeg': BuarquedeMacedo_JoseOtavioCorreaLima,
   'CristoRedentor_PaulLandowski.jpeg': CristoRedentor_PaulLandowski,
-  'BernardoPereiradeVasconcelos_FloryGama.jpeg':
-    BernardoPereiradeVasconcelos_FloryGama,
+  'BernardoPereiradeVasconcelos_FloryGama.jpeg': BernardoPereiradeVasconcelos_FloryGama,
   'ZozimoBarrosoDoAmaral_RobertoSa.jpeg': ZozimoBarrosoDoAmaral_RobertoSa,
   'CarlosDrummondDeAndrade_LeoSantana.jpeg': CarlosDrummondDeAndrade_LeoSantana,
-  'PierreRichiereGuillaumeChartier_JoasPereiraDosPassos.jpeg':
-    PierreRichiereGuillaumeChartier_JoasPereiraDosPassos,
-  'AshbelGreenSimentoneHelen_JoasPereiraDosPassos.jpeg':
-    AshbelGreenSimentoneHelen_JoasPereiraDosPassos,
+  'PierreRichiereGuillaumeChartier_JoasPereiraDosPassos.jpeg': PierreRichiereGuillaumeChartier_JoasPereiraDosPassos,
+  'AshbelGreenSimentoneHelen_JoasPereiraDosPassos.jpeg': AshbelGreenSimentoneHelen_JoasPereiraDosPassos,
   'JoaoCalvino_JoasPereiraDosPassos.jpeg': JoaoCalvino_JoasPereiraDosPassos,
   'IsmaelSilva_OttoDumovich.jpeg': IsmaelSilva_OttoDumovich,
   'RenatoRusso_Ique.jpeg': RenatoRusso_Ique,
@@ -729,40 +695,30 @@ const images = {
   'PescadorNapolitano_FrancoisRude.jpeg': PescadorNapolitano_FrancoisRude,
   'ASereia_ProvinSerres.jpeg': ASereia_ProvinSerres,
   'Primavera_GustaveFredericMichel.jpeg': Primavera_GustaveFredericMichel,
-  'GeneralSantander_FranciscoVictorPalma.jpeg':
-    GeneralSantander_FranciscoVictorPalma,
+  'GeneralSantander_FranciscoVictorPalma.jpeg': GeneralSantander_FranciscoVictorPalma,
   'AUniao_MathurinMoreau.jpeg': AUniao_MathurinMoreau,
   'ALiberdade_MathurinMoreau.jpeg': ALiberdade_MathurinMoreau,
   'AJustica_MathurinMoreau.jpeg': AJustica_MathurinMoreau,
   'AFidelidade_MathurinMoreau.jpeg': AFidelidade_MathurinMoreau,
-  'JoaoCaetano_FranciscoManuelChavesPinheiro.jpeg':
-    JoaoCaetano_FranciscoManuelChavesPinheiro,
+  'JoaoCaetano_FranciscoManuelChavesPinheiro.jpeg': JoaoCaetano_FranciscoManuelChavesPinheiro,
   'SantosDumont_AmadeuZani.jpeg': SantosDumont_AmadeuZani,
   'MulhercomAnfora_HumbertoCozzo.jpeg': MulhercomAnfora_HumbertoCozzo,
   'MahatmaGandhi_SankhoChaudhuri.jpeg': MahatmaGandhi_SankhoChaudhuri,
   'Girardet_JoseOtavioCorreaLima.jpeg': Girardet_JoseOtavioCorreaLima,
-  'CatullodaPaixaoCearense_HonorioPecanha.jpeg':
-    CatullodaPaixaoCearense_HonorioPecanha,
-  'AdolfoBergamini_HildegardoLeaoVelloso.jpeg':
-    AdolfoBergamini_HildegardoLeaoVelloso,
+  'CatullodaPaixaoCearense_HonorioPecanha.jpeg': CatullodaPaixaoCearense_HonorioPecanha,
+  'AdolfoBergamini_HildegardoLeaoVelloso.jpeg': AdolfoBergamini_HildegardoLeaoVelloso,
   'ChafarizdoMonroe_MathurinMoreau.jpeg': ChafarizdoMonroe_MathurinMoreau,
-  'AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso.jpeg':
-    AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso,
+  'AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso.jpeg': AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso,
   'BaraodeMaua_RodolfoBernardelli.jpeg': BaraodeMaua_RodolfoBernardelli,
-  'PaulodeOliveiraSampaio_Desconhecida.jpeg':
-    PaulodeOliveiraSampaio_Desconhecida,
-  'AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna.jpeg':
-    AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna,
+  'PaulodeOliveiraSampaio_Desconhecida.jpeg': PaulodeOliveiraSampaio_Desconhecida,
+  'AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna.jpeg': AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna,
   'AmoraLira_EugeneLouisLequesne.jpeg': AmoraLira_EugeneLouisLequesne,
-  'BaraodoRioBranco_HildegardoLeaoVelloso.jpeg':
-    BaraodoRioBranco_HildegardoLeaoVelloso,
+  'BaraodoRioBranco_HildegardoLeaoVelloso.jpeg': BaraodoRioBranco_HildegardoLeaoVelloso,
   'EvaristodeMoraes_LaurindoRamos.jpeg': EvaristodeMoraes_LaurindoRamos,
-  'MarechalDeodorodaFonseca_ModestinoKanto.jpeg':
-    MarechalDeodorodaFonseca_ModestinoKanto,
+  'MarechalDeodorodaFonseca_ModestinoKanto.jpeg': MarechalDeodorodaFonseca_ModestinoKanto,
   'AnaNeri_LuizFerrer.jpeg': AnaNeri_LuizFerrer,
   'PedroAmerico_PauloMazzucchelli.jpeg': PedroAmerico_PauloMazzucchelli,
-  'AlbertoNepomuceno_RodolfoBernardelli.jpeg':
-    AlbertoNepomuceno_RodolfoBernardelli,
+  'AlbertoNepomuceno_RodolfoBernardelli.jpeg': AlbertoNepomuceno_RodolfoBernardelli,
   'MarcilioDias_LuisPaesLeme.jpeg': MarcilioDias_LuisPaesLeme,
   'BaraodeLadario_Joceil.jpeg': BaraodeLadario_Joceil,
   'CristianoOttoni_RodolfoBernardelli.jpeg': CristianoOttoni_RodolfoBernardelli,
@@ -771,24 +727,19 @@ const images = {
   'AfraniodeMeloFranco_BrunoGiorgi.jpeg': AfraniodeMeloFranco_BrunoGiorgi,
   'AlmiranteJuliodeNoronha_ABraga.jpeg': AlmiranteJuliodeNoronha_ABraga,
   'AoPolicialMilitar_Desconhecida.jpeg': AoPolicialMilitar_Desconhecida,
-  'ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra.jpeg':
-    ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra,
+  'ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra.jpeg': ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra,
   'Atena_Desconhecida.jpeg': Atena_Desconhecida,
   'RitualdoVento_GabrielFonseca.jpeg': RitualdoVento_GabrielFonseca,
   'SemTitulo_HaroldoBarroso.jpeg': SemTitulo_HaroldoBarroso,
   'Braguinha_OttoDumovich.jpeg': Braguinha_OttoDumovich,
   'Brasil_DanielBellionGomesPinto.jpeg': Brasil_DanielBellionGomesPinto,
-  'CarlosAlbertodaCruzWenceslau_Desconhecida.jpeg':
-    CarlosAlbertodaCruzWenceslau_Desconhecida,
-  'PlacidoDeCastro_ArmandoSocratesSchnoor.jpeg':
-    PlacidoDeCastro_ArmandoSocratesSchnoor,
-  'FontedoTritao_NicolinaVazDeAssisPintodoCouto.jpeg':
-    FontedoTritao_NicolinaVazDeAssisPintodoCouto,
+  'CarlosAlbertodaCruzWenceslau_Desconhecida.jpeg': CarlosAlbertodaCruzWenceslau_Desconhecida,
+  'PlacidoDeCastro_ArmandoSocratesSchnoor.jpeg': PlacidoDeCastro_ArmandoSocratesSchnoor,
+  'FontedoTritao_NicolinaVazDeAssisPintodoCouto.jpeg': FontedoTritao_NicolinaVazDeAssisPintodoCouto,
   'JosePauloSilva_CarlosDelNigro.jpeg': JosePauloSilva_CarlosDelNigro,
   'RaymundoCorrea_HonorioPecanha.jpeg': RaymundoCorrea_HonorioPecanha,
   'FranciscoBraga_PauloMazzucchelli.jpeg': FranciscoBraga_PauloMazzucchelli,
-  'FerreiraDeAraujo_RodolfoBernardelli.jpeg':
-    FerreiraDeAraujo_RodolfoBernardelli,
+  'FerreiraDeAraujo_RodolfoBernardelli.jpeg': FerreiraDeAraujo_RodolfoBernardelli,
   'Inverno_PaulJeanBaptistaGasg.jpeg': Inverno_PaulJeanBaptistaGasg,
   'Inverno_SimonHurtvelle.jpeg': Inverno_SimonHurtvelle,
   'Outono_MathurinMoreau.jpeg': Outono_MathurinMoreau,
@@ -796,8 +747,7 @@ const images = {
   'Verao_PaulJeanBaptisteGasg.jpeg': Verao_PaulJeanBaptisteGasg,
   'Verao_PierreLeGros.jpeg': Verao_PierreLeGros,
   'NelsonMege_HonorioPecanha.jpeg': NelsonMege_HonorioPecanha,
-  'RuiBarbosa_DeoclecianoMartinsDeOliveiraFilho.jpeg':
-    RuiBarbosa_DeoclecianoMartinsDeOliveiraFilho,
+  'RuiBarbosa_DeoclecianoMartinsDeOliveiraFilho.jpeg': RuiBarbosa_DeoclecianoMartinsDeOliveiraFilho,
   'FranciscoMignone_BrunoGiorgi.jpeg': FranciscoMignone_BrunoGiorgi,
   'AssisChateaubriand_BrunoGiorgi.jpeg': AssisChateaubriand_BrunoGiorgi,
   'ModestinoKanto_HonorioPecanha.jpeg': ModestinoKanto_HonorioPecanha,
@@ -810,48 +760,36 @@ const images = {
   'Golfinho_AugustoSilva.jpeg': Golfinho_AugustoSilva,
   'ChafarizdasTresGracas_RemoBernucci.jpeg': ChafarizdasTresGracas_RemoBernucci,
   'Indio_JulesJeanJulesSalmson.jpeg': Indio_JulesJeanJulesSalmson,
-  'Leao_HippolyteFrancoisAugusteHippolytePeyrol.jpeg':
-    Leao_HippolyteFrancoisAugusteHippolytePeyrol,
+  'Leao_HippolyteFrancoisAugusteHippolytePeyrol.jpeg': Leao_HippolyteFrancoisAugusteHippolytePeyrol,
   'India_JulesJeanJulesSalmson.jpeg': India_JulesJeanJulesSalmson,
   'Escravo_MarliMazeredo.jpeg': Escravo_MarliMazeredo,
   'AlmiranteCochrane_Lana.jpeg': AlmiranteCochrane_Lana,
   'PaulaFreitas_BenevenutoBerna.jpeg': PaulaFreitas_BenevenutoBerna,
   'FranciscoPaulaMayrink_PinedoParis.jpeg': FranciscoPaulaMayrink_PinedoParis,
   'Fidelidade_BenevenutoBerna.jpeg': Fidelidade_BenevenutoBerna,
-  'XavierdeBrito_ElzaCansancaoMedeiros.jpeg':
-    XavierdeBrito_ElzaCansancaoMedeiros,
+  'XavierdeBrito_ElzaCansancaoMedeiros.jpeg': XavierdeBrito_ElzaCansancaoMedeiros,
   'LamartineBabo_Desconhecida.jpeg': LamartineBabo_Desconhecida,
-  'LuisGastaoDEscragnolleDoria_CurzioZani.jpeg':
-    LuisGastaoDEscragnolleDoria_CurzioZani,
-  'OswaldoDinizMagalhaes_MateusFernandes.jpeg':
-    OswaldoDinizMagalhaes_MateusFernandes,
+  'LuisGastaoDEscragnolleDoria_CurzioZani.jpeg': LuisGastaoDEscragnolleDoria_CurzioZani,
+  'OswaldoDinizMagalhaes_MateusFernandes.jpeg': OswaldoDinizMagalhaes_MateusFernandes,
   'BarletJames_RuffoFanucchi.jpeg': BarletJames_RuffoFanucchi,
   'SaoCristovao_Desconhecida.jpeg': SaoCristovao_Desconhecida,
   'JoseBonifacio_MarcosAndreSales.jpeg': JoseBonifacio_MarcosAndreSales,
-  'NiloPecanha_NicolinaVazDeAssisPintodoCouto.jpeg':
-    NiloPecanha_NicolinaVazDeAssisPintodoCouto,
-  'CantodasSereias_NicolinaVazDeAssisPintodoCouto.jpeg':
-    CantodasSereias_NicolinaVazDeAssisPintodoCouto,
+  'NiloPecanha_NicolinaVazDeAssisPintodoCouto.jpeg': NiloPecanha_NicolinaVazDeAssisPintodoCouto,
+  'CantodasSereias_NicolinaVazDeAssisPintodoCouto.jpeg': CantodasSereias_NicolinaVazDeAssisPintodoCouto,
   'PedroI_Desconhecida.jpeg': PedroI_Desconhecida,
   'FonteMedusa_Desconhecida.jpeg': FonteMedusa_Desconhecida,
-  'HelenoDaCostaBrandao_HonorioPecanha.jpeg':
-    HelenoDaCostaBrandao_HonorioPecanha,
+  'HelenoDaCostaBrandao_HonorioPecanha.jpeg': HelenoDaCostaBrandao_HonorioPecanha,
   'AosHahnemannianos_Desconhecida.jpeg': AosHahnemannianos_Desconhecida,
   'NoelRosa_AlfredoHerculanoFreixo.jpeg': NoelRosa_AlfredoHerculanoFreixo,
   'PedroErnesto_BenevenutoBerna.jpeg': PedroErnesto_BenevenutoBerna,
-  'AJuventudeACulturaEAoEsporte_HaroldoBarroso.jpeg':
-    AJuventudeACulturaEAoEsporte_HaroldoBarroso,
-  'AosCampeoesdoMundoBellini_MateusFernandes.jpeg':
-    AosCampeoesdoMundoBellini_MateusFernandes,
+  'AJuventudeACulturaEAoEsporte_HaroldoBarroso.jpeg': AJuventudeACulturaEAoEsporte_HaroldoBarroso,
+  'AosCampeoesdoMundoBellini_MateusFernandes.jpeg': AosCampeoesdoMundoBellini_MateusFernandes,
   'EdsonPassos_HildegardoLeaoVelloso.jpeg': EdsonPassos_HildegardoLeaoVelloso,
-  'DomPedroII_JeanMagrou_HeitorDaSilvaCosta.jpeg':
-    DomPedroII_JeanMagrou_HeitorDaSilvaCosta,
+  'DomPedroII_JeanMagrou_HeitorDaSilvaCosta.jpeg': DomPedroII_JeanMagrou_HeitorDaSilvaCosta,
   'BaraodoRioBranco_JoaoTurin.jpeg': BaraodoRioBranco_JoaoTurin,
   'OrlandoSilva_MiguelPastor.jpeg': OrlandoSilva_MiguelPastor,
-  'MarechalMascarenhasdeMoraes_IrmaosBernardini.jpeg':
-    MarechalMascarenhasdeMoraes_IrmaosBernardini,
-  'ChafarizDaExposicaoNacional1908_Desconhecida.jpeg':
-    ChafarizDaExposicaoNacional1908_Desconhecida,
+  'MarechalMascarenhasdeMoraes_IrmaosBernardini.jpeg': MarechalMascarenhasdeMoraes_IrmaosBernardini,
+  'ChafarizDaExposicaoNacional1908_Desconhecida.jpeg': ChafarizDaExposicaoNacional1908_Desconhecida,
   'PaulHarris_Desconhecida.jpeg': PaulHarris_Desconhecida,
   'MaedAgua_NewtonSa.jpeg': MaedAgua_NewtonSa,
   'Leao_Desconhecida.jpeg': Leao_Desconhecida,
@@ -860,28 +798,22 @@ const images = {
   'AlbertoIReidaBelgica_LaurindoRamos.jpeg': AlbertoIReidaBelgica_LaurindoRamos,
   'SaoCristovao_SergioBertoni.jpeg': SaoCristovao_SergioBertoni,
   'VicenteDeCarvalho_RuffoFanucchi.jpeg': VicenteDeCarvalho_RuffoFanucchi,
-  'FonteWallaceI_CharlesAugusteLebourg.jpeg':
-    FonteWallaceI_CharlesAugusteLebourg,
-  'FonteWallaceII_CharlesAugusteLebourg.jpeg':
-    FonteWallaceII_CharlesAugusteLebourg,
-  'FonteWallaceIII_CharlesAugusteLebourg.jpeg':
-    FonteWallaceIII_CharlesAugusteLebourg,
+  'FonteWallaceI_CharlesAugusteLebourg.jpeg': FonteWallaceI_CharlesAugusteLebourg,
+  'FonteWallaceII_CharlesAugusteLebourg.jpeg': FonteWallaceII_CharlesAugusteLebourg,
+  'FonteWallaceIII_CharlesAugusteLebourg.jpeg': FonteWallaceIII_CharlesAugusteLebourg,
   'Bastoes_CeleidaTostes.jpeg': Bastoes_CeleidaTostes,
   'Mo_CeleidaTostes.jpeg': Mo_CeleidaTostes,
   'BaraodeItamarati_PauloMazzucchelli.jpeg': BaraodeItamarati_PauloMazzucchelli,
-  'LineudePaulaMachado_HildegardoLeaoVelloso.jpeg':
-    LineudePaulaMachado_HildegardoLeaoVelloso,
+  'LineudePaulaMachado_HildegardoLeaoVelloso.jpeg': LineudePaulaMachado_HildegardoLeaoVelloso,
   'ProtecaooCaoeaCrianca_HippolyteFrancoisAugusteHippolytePeyrol.jpeg':
     ProtecaooCaoeaCrianca_HippolyteFrancoisAugusteHippolytePeyrol,
-  'PinheiroMachado_HildegardoLeaoVelloso.jpeg':
-    PinheiroMachado_HildegardoLeaoVelloso,
+  'PinheiroMachado_HildegardoLeaoVelloso.jpeg': PinheiroMachado_HildegardoLeaoVelloso,
   'Jaguar_JoaoTurin.jpeg': Jaguar_JoaoTurin,
   'Mercurio_Desconhecida.jpeg': Mercurio_Desconhecida,
   //'TomJobimOEstudante_VeraTorres.jpeg': TomJobimOEstudante_VeraTorres,
   'AFonteDeusaThetis_LouisSauvageau.jpeg': AFonteDeusaThetis_LouisSauvageau,
   'MulhereoFelino_Desconhecida.jpeg': MulhereoFelino_Desconhecida,
-  'AlmiranteSaldanhadaGama_AntonioCaringi.jpeg':
-    AlmiranteSaldanhadaGama_AntonioCaringi,
+  'AlmiranteSaldanhadaGama_AntonioCaringi.jpeg': AlmiranteSaldanhadaGama_AntonioCaringi,
   'JeanSibelius_WainoAaltonem.jpeg': JeanSibelius_WainoAaltonem,
   'Outono_JacquesHouzeau.jpeg': Outono_JacquesHouzeau,
   'Acoplamento_MarioCravo.jpeg': Acoplamento_MarioCravo,
@@ -895,8 +827,7 @@ const images = {
   'Sofia_SoniaEbling.jpeg': Sofia_SoniaEbling,
   'Incerteza_Marmura.jpeg': Incerteza_Marmura,
   'Encontro_EdgarDuvivier.jpeg': Encontro_EdgarDuvivier,
-  'EvangelistaMateus_AlfredoCeschiatti.jpeg':
-    EvangelistaMateus_AlfredoCeschiatti,
+  'EvangelistaMateus_AlfredoCeschiatti.jpeg': EvangelistaMateus_AlfredoCeschiatti,
   'Estrutura_SergioCamargo.jpeg': Estrutura_SergioCamargo,
   'IndioLutandocomoFelino_HippolyteFrancoisAugusteHippolytePeyrol.jpeg':
     IndioLutandocomoFelino_HippolyteFrancoisAugusteHippolytePeyrol,
@@ -905,8 +836,7 @@ const images = {
   'Curumim_PedroCorreiaDeAraujo.jpeg': Curumim_PedroCorreiaDeAraujo,
   'Jacare2000_MariaHelenaVasco.jpeg': Jacare2000_MariaHelenaVasco,
   'RaizesAmazonas_FernandoCasas.jpeg': RaizesAmazonas_FernandoCasas,
-  'AVieiraSoutoePauloDeFrontin_RodolfoBernardelli.jpeg':
-    AVieiraSoutoePauloDeFrontin_RodolfoBernardelli,
+  'AVieiraSoutoePauloDeFrontin_RodolfoBernardelli.jpeg': AVieiraSoutoePauloDeFrontin_RodolfoBernardelli,
   'RubenDario_DanielCrow_CurzioZani.jpeg': RubenDario_DanielCrow_CurzioZani,
   'FormasnoEspacoII_OscarNiemeyer.jpeg': FormasnoEspacoII_OscarNiemeyer,
   'FormasnoEspacoI_OscarNiemeyer.jpeg': FormasnoEspacoI_OscarNiemeyer,
@@ -918,24 +848,19 @@ const images = {
   'Maternidade_CelsoAntonio.jpeg': Maternidade_CelsoAntonio,
   'FredericoOzanam_DanteCroce.jpeg': FredericoOzanam_DanteCroce,
   'PedroJuanCaballero_LeonardoLima.jpeg': PedroJuanCaballero_LeonardoLima,
-  'JuruenadeMatos_JoaquimMoreiraJunior.jpeg':
-    JuruenadeMatos_JoaquimMoreiraJunior,
+  'JuruenadeMatos_JoaquimMoreiraJunior.jpeg': JuruenadeMatos_JoaquimMoreiraJunior,
   'SimonBolivar_Desconhecida.jpeg': SimonBolivar_Desconhecida,
   'GeneralJoseArtigas_VHabegger.jpeg': GeneralJoseArtigas_VHabegger,
   'Bocage_JoaquimCorrea.jpeg': Bocage_JoaquimCorrea,
   'CarlosChagas_HumbertoCozzo.jpeg': CarlosChagas_HumbertoCozzo,
   'FontedoManequinho_BelmiroDeAlmeida.jpeg': FontedoManequinho_BelmiroDeAlmeida,
   'AEcadeQueiroz_RodolfoPintoCouto.jpeg': AEcadeQueiroz_RodolfoPintoCouto,
-  'FonteIrmaosRamosPinto_AntonioTeixeiraLopes.jpeg':
-    FonteIrmaosRamosPinto_AntonioTeixeiraLopes,
+  'FonteIrmaosRamosPinto_AntonioTeixeiraLopes.jpeg': FonteIrmaosRamosPinto_AntonioTeixeiraLopes,
   'OswaldoCruz_HumbertoCozzo.jpeg': OswaldoCruz_HumbertoCozzo,
-  'AlmiranteTamandare_HildegardoLeaoVelloso.jpeg':
-    AlmiranteTamandare_HildegardoLeaoVelloso,
+  'AlmiranteTamandare_HildegardoLeaoVelloso.jpeg': AlmiranteTamandare_HildegardoLeaoVelloso,
   'PoesiaemRuinas_JeanMagrou.jpeg': PoesiaemRuinas_JeanMagrou,
-  'NossaSenhoradaImaculadaConceicao_GiuseppeNavone.jpeg':
-    NossaSenhoradaImaculadaConceicao_GiuseppeNavone,
-  'LorenzoFernandes_AristocherBenjamimMeschessi.jpeg':
-    LorenzoFernandes_AristocherBenjamimMeschessi,
+  'NossaSenhoradaImaculadaConceicao_GiuseppeNavone.jpeg': NossaSenhoradaImaculadaConceicao_GiuseppeNavone,
+  'LorenzoFernandes_AristocherBenjamimMeschessi.jpeg': LorenzoFernandes_AristocherBenjamimMeschessi,
   'AlfredoGomes_PauloMazzucchelli.jpeg': AlfredoGomes_PauloMazzucchelli,
   'ONascimentodeVenus_MathurinMoreau.jpeg': ONascimentodeVenus_MathurinMoreau,
   'CristovaoColombo_MathurinMoreau.jpeg': CristovaoColombo_MathurinMoreau,
@@ -946,12 +871,10 @@ const images = {
   'MeninoComPassaro_MathurinMoreau.jpeg': MeninoComPassaro_MathurinMoreau,
   'FiguraFemininaI_Desconhecida.jpeg': FiguraFemininaI_Desconhecida,
   'FiguraFemininaII_Desconhecida.jpeg': FiguraFemininaII_Desconhecida,
-  'TeixeiraSoares_JoseOtavioCorreaLima.jpeg':
-    TeixeiraSoares_JoseOtavioCorreaLima,
+  'TeixeiraSoares_JoseOtavioCorreaLima.jpeg': TeixeiraSoares_JoseOtavioCorreaLima,
   'MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMarinho.jpeg':
     MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMarinho,
-  'AsTresForcasArmadas_AlfredoCeschiatti.jpeg':
-    AsTresForcasArmadas_AlfredoCeschiatti,
+  'AsTresForcasArmadas_AlfredoCeschiatti.jpeg': AsTresForcasArmadas_AlfredoCeschiatti,
   'Cuauhtemoc_CarlosObregonSantacilia.jpeg': Cuauhtemoc_CarlosObregonSantacilia,
   'BernardoOHiggins_CaroccabaThor.jpeg': BernardoOHiggins_CaroccabaThor,
   'Primavera_JeanBaptistePoultier.jpeg': Primavera_JeanBaptistePoultier,
@@ -959,17 +882,13 @@ const images = {
   'CarmemGomes_JoseBarreto.jpeg': CarmemGomes_JoseBarreto,
   'ChafarizdosGolfinhos_AndreRedont.jpeg': ChafarizdosGolfinhos_AndreRedont,
   'VeraJanacopulos_AdrianaJanacopolus.jpeg': VeraJanacopulos_AdrianaJanacopolus,
-  'SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo.jpeg':
-    SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo,
+  'SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo.jpeg': SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo,
   'RodolfoAmoedo_JoseOtavioCorreaLima.jpeg': RodolfoAmoedo_JoseOtavioCorreaLima,
-  'SaoFranciscoDeAssiseSantaClara_EduardoDeSa.jpeg':
-    SaoFranciscoDeAssiseSantaClara_EduardoDeSa,
-  'FelinoDeitado_HippolyteFrancoisAugusteHippolytePeyrol.jpeg':
-    FelinoDeitado_HippolyteFrancoisAugusteHippolytePeyrol,
+  'SaoFranciscoDeAssiseSantaClara_EduardoDeSa.jpeg': SaoFranciscoDeAssiseSantaClara_EduardoDeSa,
+  'FelinoDeitado_HippolyteFrancoisAugusteHippolytePeyrol.jpeg': FelinoDeitado_HippolyteFrancoisAugusteHippolytePeyrol,
   'Escoteiro_FernandoThauby.jpeg': Escoteiro_FernandoThauby,
   'CardealArcoverde_HeitorUsai.jpeg': CardealArcoverde_HeitorUsai,
-  'PedroAlvaresCabral_RodolfoBernardelli.jpeg':
-    PedroAlvaresCabral_RodolfoBernardelli,
+  'PedroAlvaresCabral_RodolfoBernardelli.jpeg': PedroAlvaresCabral_RodolfoBernardelli,
   'AberturadosPortos_EugeneBenet.jpeg': AberturadosPortos_EugeneBenet,
   'AlbertoDeOliveira_PetrusVerdier.jpeg': AlbertoDeOliveira_PetrusVerdier,
   'Harmonia_JeanJacquesPradier.jpeg': Harmonia_JeanJacquesPradier,
@@ -979,11 +898,9 @@ const images = {
   'SagradoCoracaodeJesus_Desconhecida.jpeg': SagradoCoracaodeJesus_Desconhecida,
   'JCarlos_HumbertoCozzo.jpeg': JCarlos_HumbertoCozzo,
   'ManuelMadruga_FloryGama.jpeg': ManuelMadruga_FloryGama,
-  'QuintinoBocaiuva_HildegardoLeaoVelloso.jpeg':
-    QuintinoBocaiuva_HildegardoLeaoVelloso,
+  'QuintinoBocaiuva_HildegardoLeaoVelloso.jpeg': QuintinoBocaiuva_HildegardoLeaoVelloso,
   'EusebioDeOliveira_CesarDoria.jpeg': EusebioDeOliveira_CesarDoria,
-  'HeroisdeLagunaeDourados_AntonioPintodeMattos.jpeg':
-    HeroisdeLagunaeDourados_AntonioPintodeMattos,
+  'HeroisdeLagunaeDourados_AntonioPintodeMattos.jpeg': HeroisdeLagunaeDourados_AntonioPintodeMattos,
   'FredericChopin_AugustZamoiski.jpeg': FredericChopin_AugustZamoiski,
   'IntentonaComunista_HumbertoCozzo.jpeg': IntentonaComunista_HumbertoCozzo,
   'Vestal_Desconhecida.jpeg': Vestal_Desconhecida,
@@ -991,95 +908,70 @@ const images = {
   'Flora_Desconhecida.jpeg': Flora_Desconhecida,
   'Pomona_Desconhecida.jpeg': Pomona_Desconhecida,
   'SaoPedrodoMar_EdgarDuvivier.jpeg': SaoPedrodoMar_EdgarDuvivier,
-  'EdmundoBittencourt_HildegardoLeaoVelloso.jpeg':
-    EdmundoBittencourt_HildegardoLeaoVelloso,
-  'ComendadorPauloFPeixotoDaFonseca_HonorioPecanha.jpeg':
-    ComendadorPauloFPeixotoDaFonseca_HonorioPecanha,
+  'EdmundoBittencourt_HildegardoLeaoVelloso.jpeg': EdmundoBittencourt_HildegardoLeaoVelloso,
+  'ComendadorPauloFPeixotoDaFonseca_HonorioPecanha.jpeg': ComendadorPauloFPeixotoDaFonseca_HonorioPecanha,
   'AlbertEinstein_HonorioPecanha.jpeg': AlbertEinstein_HonorioPecanha,
-  'TeneteSiqueiraCamposAoLevantedos18doForte_JoseRangel.jpeg':
-    TeneteSiqueiraCamposAoLevantedos18doForte_JoseRangel,
+  'TeneteSiqueiraCamposAoLevantedos18doForte_JoseRangel.jpeg': TeneteSiqueiraCamposAoLevantedos18doForte_JoseRangel,
   'CoelhoCintra_LaurindoRamos.jpeg': CoelhoCintra_LaurindoRamos,
-  'IrmaosBernardelli_HildegardoLeaoVelloso.jpeg':
-    IrmaosBernardelli_HildegardoLeaoVelloso,
-  'MarechalFlorianoPeixoto_EduardoDeSa.jpeg':
-    MarechalFlorianoPeixoto_EduardoDeSa,
+  'IrmaosBernardelli_HildegardoLeaoVelloso.jpeg': IrmaosBernardelli_HildegardoLeaoVelloso,
+  'MarechalFlorianoPeixoto_EduardoDeSa.jpeg': MarechalFlorianoPeixoto_EduardoDeSa,
   'CasteloBranco_DanteCroce.jpeg': CasteloBranco_DanteCroce,
-  'UniaodosPovosAmericanos_MarioAgostinelli.jpeg':
-    UniaodosPovosAmericanos_MarioAgostinelli,
+  'UniaodosPovosAmericanos_MarioAgostinelli.jpeg': UniaodosPovosAmericanos_MarioAgostinelli,
   'JoaquimNabuco_OttoDumovich.jpeg': JoaquimNabuco_OttoDumovich,
-  'SebastiaoLeme_MariaDaGloriaVianaPatrasso.jpeg':
-    SebastiaoLeme_MariaDaGloriaVianaPatrasso,
+  'SebastiaoLeme_MariaDaGloriaVianaPatrasso.jpeg': SebastiaoLeme_MariaDaGloriaVianaPatrasso,
   'CondeCunha_LuisPaesLeme.jpeg': CondeCunha_LuisPaesLeme,
   'AntonioJanuzzi_Desconhecida.jpeg': AntonioJanuzzi_Desconhecida,
-  'JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi.jpeg':
-    JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi,
+  'JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi.jpeg': JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi,
   'LimaBarreto_EdgarDuvivier.jpeg': LimaBarreto_EdgarDuvivier,
-  'MarechalJoaquimIgnacioBaptistaCardoso_SMartinsRibeiro.jpeg':
-    MarechalJoaquimIgnacioBaptistaCardoso_SMartinsRibeiro,
+  'MarechalJoaquimIgnacioBaptistaCardoso_SMartinsRibeiro.jpeg': MarechalJoaquimIgnacioBaptistaCardoso_SMartinsRibeiro,
   'DianadeGabies_Desconhecida.jpeg': DianadeGabies_Desconhecida,
   'Aviadores_RebecaMatteBello.jpeg': Aviadores_RebecaMatteBello,
   'Piramide_MestreValentim.jpeg': Piramide_MestreValentim,
   'Obelisco_EduardoDeSa.jpeg': Obelisco_EduardoDeSa,
   'Obelisco_PauloCase.jpeg': Obelisco_PauloCase,
-  'ObeliscodoLargodoBomRetiro_Desconhecida.jpeg':
-    ObeliscodoLargodoBomRetiro_Desconhecida,
-  'MonumentoALiberdadeDeExpressao_FranzWeissmann.jpeg':
-    MonumentoALiberdadeDeExpressao_FranzWeissmann,
-  'ObeliscodoAlargamentodeCopacabana_Desconhecida.jpeg':
-    ObeliscodoAlargamentodeCopacabana_Desconhecida,
+  'ObeliscodoLargodoBomRetiro_Desconhecida.jpeg': ObeliscodoLargodoBomRetiro_Desconhecida,
+  'MonumentoALiberdadeDeExpressao_FranzWeissmann.jpeg': MonumentoALiberdadeDeExpressao_FranzWeissmann,
+  'ObeliscodoAlargamentodeCopacabana_Desconhecida.jpeg': ObeliscodoAlargamentodeCopacabana_Desconhecida,
   'DomJoaoVI_BarataFeijo.jpeg': DomJoaoVI_BarataFeijo,
   'UlyssesGuimaraes_SironFranco.jpeg': UlyssesGuimaraes_SironFranco,
-  'SerpentedoLago_NicolinaVazDeAssisPintodoCouto.jpeg':
-    SerpentedoLago_NicolinaVazDeAssisPintodoCouto,
+  'SerpentedoLago_NicolinaVazDeAssisPintodoCouto.jpeg': SerpentedoLago_NicolinaVazDeAssisPintodoCouto,
   'AristidesCaire_TitoBernucci.jpeg': AristidesCaire_TitoBernucci,
   'Arvore_HelioPelegrino.jpeg': Arvore_HelioPelegrino,
   'MulherComCornucopia_PierreLoison.jpeg': MulherComCornucopia_PierreLoison,
   'PioCorreia_AlicePittaluga.jpeg': PioCorreia_AlicePittaluga,
   'CamposPorto_PauloMazzuchelli.jpeg': CamposPorto_PauloMazzuchelli,
-  'XochipilliDeusdasFlores_Desconhecida.jpeg':
-    XochipilliDeusdasFlores_Desconhecida,
+  'XochipilliDeusdasFlores_Desconhecida.jpeg': XochipilliDeusdasFlores_Desconhecida,
   'Ceres_Merzio.jpeg': Ceres_Merzio,
   'Diana_Merzio.jpeg': Diana_Merzio,
   'ChafarizDasMusas_HerbertWHogg.jpeg': ChafarizDasMusas_HerbertWHogg,
   'DomJoaoVI_RodolfoBernardelli.jpeg': DomJoaoVI_RodolfoBernardelli,
-  'JoaoBarbosaRodrigues_AntonioPintodeMattos.jpeg':
-    JoaoBarbosaRodrigues_AntonioPintodeMattos,
+  'JoaoBarbosaRodrigues_AntonioPintodeMattos.jpeg': JoaoBarbosaRodrigues_AntonioPintodeMattos,
   'VonMartius_AntonioPintodeMattos.jpeg': VonMartius_AntonioPintodeMattos,
-  'ChafarizdasSaracuras_MestreValentim.jpeg':
-    ChafarizdasSaracuras_MestreValentim,
+  'ChafarizdasSaracuras_MestreValentim.jpeg': ChafarizdasSaracuras_MestreValentim,
   'ADanca_AlicePittaluga.jpeg': ADanca_AlicePittaluga,
   'Ossanha_TatiMoreno.jpeg': Ossanha_TatiMoreno,
-  'MarechalCandidoRandon_AntonioPintodeMattos.jpeg':
-    MarechalCandidoRandon_AntonioPintodeMattos,
+  'MarechalCandidoRandon_AntonioPintodeMattos.jpeg': MarechalCandidoRandon_AntonioPintodeMattos,
   'Surf_MauricioBentes.jpeg': Surf_MauricioBentes,
   'AoNuncaMais_CristinaPozzobon.jpeg': AoNuncaMais_CristinaPozzobon,
   'Pax_MarioMatos.jpeg': Pax_MarioMatos,
-  'CriancasComAConcha_FrancoisLespingola.jpeg':
-    CriancasComAConcha_FrancoisLespingola,
+  'CriancasComAConcha_FrancoisLespingola.jpeg': CriancasComAConcha_FrancoisLespingola,
   'CriancasComATocha_PhilippeGarnier.jpeg': CriancasComATocha_PhilippeGarnier,
   'CriancasComflores_PierreLaviron.jpeg': CriancasComflores_PierreLaviron,
   'HenriqueDodsworth_HonorioPecanha.jpeg': HenriqueDodsworth_HonorioPecanha,
-  'BrigadeiroAntonioDeSampaio_VictorBrecheret.jpeg':
-    BrigadeiroAntonioDeSampaio_VictorBrecheret,
+  'BrigadeiroAntonioDeSampaio_VictorBrecheret.jpeg': BrigadeiroAntonioDeSampaio_VictorBrecheret,
   'LuisManuelOsorio_Desconhecida.jpeg': LuisManuelOsorio_Desconhecida,
   'MarechalHermesdaFonseca_DaviLeal.jpeg': MarechalHermesdaFonseca_DaviLeal,
-  'GeneralJoaoSeverianodaFonseca_Desconhecida.jpeg':
-    GeneralJoaoSeverianodaFonseca_Desconhecida,
+  'GeneralJoaoSeverianodaFonseca_Desconhecida.jpeg': GeneralJoaoSeverianodaFonseca_Desconhecida,
   'Obelisco_Archi5.jpeg': Obelisco_Archi5,
-  'ObeliscodoCaisdaImperatriz_Desconhecido.jpeg':
-    ObeliscodoCaisdaImperatriz_Desconhecido,
-  'ObeliscodaAvenidaRioBranco_AZanuzziCia.jpeg':
-    ObeliscodaAvenidaRioBranco_AZanuzziCia,
-  'ObeliscodaLinhaAmarela_Desconhecida.jpeg':
-    ObeliscodaLinhaAmarela_Desconhecida,
+  'ObeliscodoCaisdaImperatriz_Desconhecido.jpeg': ObeliscodoCaisdaImperatriz_Desconhecido,
+  'ObeliscodaAvenidaRioBranco_AZanuzziCia.jpeg': ObeliscodaAvenidaRioBranco_AZanuzziCia,
+  'ObeliscodaLinhaAmarela_Desconhecida.jpeg': ObeliscodaLinhaAmarela_Desconhecida,
   'AAlimPedro_MiguelPastor.jpeg': AAlimPedro_MiguelPastor,
   'AAugustodeVasconcelos_MiguelPastor.jpeg': AAugustodeVasconcelos_MiguelPastor,
   'LimaBarreto_FranciscoAndrade.jpeg': LimaBarreto_FranciscoAndrade,
-  'AgripinoGrieco_DanielCrow_CurzioZani.jpeg':
-    AgripinoGrieco_DanielCrow_CurzioZani,
+  'AgripinoGrieco_DanielCrow_CurzioZani.jpeg': AgripinoGrieco_DanielCrow_CurzioZani,
   'AdelinoMoreira_MestreSaul.jpeg': AdelinoMoreira_MestreSaul,
-  'LutaDesigual_LeonDespresLaupedeCluny.jpeg':
-    LutaDesigual_LeonDespresLaupedeCluny,
+  'LutaDesigual_LeonDespresLaupedeCluny.jpeg': LutaDesigual_LeonDespresLaupedeCluny,
   'Chafariz_AugusteMartin.jpeg': Chafariz_AugusteMartin,
 };
 

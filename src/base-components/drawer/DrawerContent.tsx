@@ -1,11 +1,7 @@
 import { useState } from 'react';
 
 import { Entypo } from '@expo/vector-icons';
-import {
-  DrawerContentComponentProps,
-  DrawerContentScrollView,
-  DrawerItem,
-} from '@react-navigation/drawer';
+import { DrawerContentComponentProps, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
 import {
   DrawerDescriptor,
   DrawerDescriptorMap,
@@ -17,14 +13,8 @@ import { useTheme } from '@utils';
 
 import { Text } from '../text';
 
-function evaluateOuterDrawerListItems(
-  routes: { name: string; key: string }[],
-  descriptors: DrawerDescriptorMap,
-) {
-  const drawerItems: Record<
-    string,
-    { label: string; start: number; end: number }
-  > = {};
+function evaluateOuterDrawerListItems(routes: { name: string; key: string }[], descriptors: DrawerDescriptorMap) {
+  const drawerItems: Record<string, { label: string; start: number; end: number }> = {};
   routes.forEach((route, index) => {
     const { name, key } = route;
     const { options } = descriptors[key];
@@ -83,10 +73,7 @@ function DrawerContent(props: DrawerContentComponentProps): JSX.Element {
 
           const focusedRouteDescriptor = descriptors[focusedRoute.key];
           const focusedRouteTitle = focusedRouteDescriptor.options.title!;
-          const focusedRouteName = focusedRouteTitle.substring(
-            0,
-            focusedRouteTitle.indexOf('-'),
-          );
+          const focusedRouteName = focusedRouteTitle.substring(0, focusedRouteTitle.indexOf('-'));
 
           return (
             <DrawerItem
@@ -101,14 +88,7 @@ function DrawerContent(props: DrawerContentComponentProps): JSX.Element {
               }}
               style={{ marginLeft: 0 }}
               labelStyle={{ marginLeft: -12 }}
-              icon={() => (
-                <Entypo
-                  name='arrow-with-circle-right'
-                  size={20}
-                  color='#ffffffAD'
-                  style={styles.icon}
-                />
-              )}
+              icon={() => <Entypo name='arrow-with-circle-right' size={20} color='#ffffffAD' style={styles.icon} />}
             />
           );
         })}
@@ -118,9 +98,7 @@ function DrawerContent(props: DrawerContentComponentProps): JSX.Element {
 
   const index = drawerItems[internState.currentComponent];
   const routes = state.routes.slice(index.start, index.end);
-  const descriptorsReduced = Object.keys(descriptors).reduce<
-    Record<string, DrawerDescriptor>
-  >((result, key) => {
+  const descriptorsReduced = Object.keys(descriptors).reduce<Record<string, DrawerDescriptor>>((result, key) => {
     const route = routes.find((route) => route.key === key);
     if (route) {
       result[key] = descriptors[key];

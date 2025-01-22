@@ -9,23 +9,13 @@ type TextProps = {
   style?: TextStyle | TextStyle[];
 };
 
-function Text({
-  testID,
-  children,
-  numberOfLines,
-  style,
-}: TextProps): JSX.Element {
+function Text({ testID, children, numberOfLines, style }: TextProps): JSX.Element {
   const { theme } = useTheme();
 
   const textStyle = styles(theme);
 
   return (
-    <NativeText
-      testID={testID}
-      numberOfLines={numberOfLines}
-      style={[textStyle.text, style]}
-      selectable
-    >
+    <NativeText testID={testID} numberOfLines={numberOfLines} style={[textStyle.text, style]} selectable>
       {children}
     </NativeText>
   );

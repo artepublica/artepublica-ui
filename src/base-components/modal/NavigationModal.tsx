@@ -22,12 +22,7 @@ function WebModal({ Component }: NavigationModalProps): JSX.Element {
   return <Component />;
 }
 
-function MobileModal({
-  height,
-  insets,
-  Component,
-  modalHeight,
-}: NavigationModalProps): JSX.Element {
+function MobileModal({ height, insets, Component, modalHeight }: NavigationModalProps): JSX.Element {
   const router = useRouter();
   const pathname = usePathname();
   const { theme } = useTheme();
@@ -38,9 +33,7 @@ function MobileModal({
   let backgroundColor = theme.background;
   if (pathname === '/heritage') {
     backgroundColor =
-      theme.typology[
-        heritage?.Typology?.toLocaleLowerCase() as keyof TypologyTheme
-      ] ?? theme.typology.desconhecida;
+      theme.typology[heritage?.Typology?.toLocaleLowerCase() as keyof TypologyTheme] ?? theme.typology.desconhecida;
   }
   function goBack(): void {
     if (router.canGoBack()) {
@@ -74,13 +67,7 @@ function MobileModal({
   );
 }
 
-function NavigationModal({
-  height,
-  insets,
-  Component,
-  modalHeight,
-  forceModal,
-}: NavigationModalProps): JSX.Element {
+function NavigationModal({ height, insets, Component, modalHeight, forceModal }: NavigationModalProps): JSX.Element {
   return Platform.OS !== 'web' || forceModal
     ? MobileModal({ height, insets, Component, modalHeight })
     : WebModal({ height, insets, Component });
