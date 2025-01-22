@@ -7,10 +7,9 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Chart, Dropdown } from '@base-components';
 import { Author, Mayor, Obra } from '@domain';
-import { TipologiaTheme, useTheme } from '@utils';
-import { getYear } from '@utils/data/analisys_utils';
-import * as mayorsTerms from '@utils/data/mayors';
-import reduceListOfList from '@utils/list/reduce-list-of-list';
+import { reduceListOfList, TipologiaTheme, useTheme } from '@utils';
+import { getYear } from '@utils/analysis/analysis_utils';
+import * as mayorsTerms from '@utils/data/mayors'; //TODO: use or create analysis to type
 import { magenta } from '@utils/theme-provider/themes/cores';
 
 function Block({

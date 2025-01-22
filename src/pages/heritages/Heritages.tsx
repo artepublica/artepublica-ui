@@ -5,8 +5,8 @@ import { Col, Grid, Row } from 'react-native-easy-grid';
 import { Image, Text } from '@base-components';
 import { Obra } from '@domain';
 import { TipologiaTheme, useTheme } from '@utils';
-import { getYear } from '@utils/data/analisys_utils';
-import * as obra_artepublica from '@utils/data/thesisHeritages';
+import { getYear } from '@utils/analysis/analysis_utils';
+import * as obra_artepublica from '@utils/data/thesisHeritages'; //TODO: use or create analysis to type
 
 import styles from './styles';
 

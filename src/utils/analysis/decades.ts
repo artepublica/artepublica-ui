@@ -1,4 +1,4 @@
-import * as utils from './analisys_list_utils';
+import * as utils from './analysis_list_utils';
 
 export const all = {
   null: utils.allNull,

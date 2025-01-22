@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Chart, Dropdown } from '@base-components';
 import { Obra } from '@domain';
 import { TipologiaTheme, useTheme } from '@utils';
-import { getYear } from '@utils/data/analisys_utils';
+import { getYear } from '@utils/analysis/analysis_utils';
 import { vinho } from '@utils/theme-provider/themes/cores';
 
 import styles from './styles';

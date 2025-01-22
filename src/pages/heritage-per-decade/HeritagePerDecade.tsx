@@ -14,7 +14,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Chart } from '@base-components';
 import { Obra } from '@domain';
 import { TipologiaTheme, useTheme } from '@utils';
-import * as decades from '@utils/data/decades';
+import * as decades from '@utils/analysis/decades';
 
 import styles from './styles';
 

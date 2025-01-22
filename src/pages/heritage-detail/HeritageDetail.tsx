@@ -3,7 +3,7 @@ import { Platform, View } from 'react-native';
 
 import { Image, Text } from '@base-components';
 import { thesisHeritages, TipologiaTheme, useTheme } from '@utils';
-import { getYear } from '@utils/data/analisys_utils';
+import { getYear } from '@utils/analysis/analysis_utils';
 
 function HeritageDetail(): JSX.Element {
   const { theme } = useTheme();

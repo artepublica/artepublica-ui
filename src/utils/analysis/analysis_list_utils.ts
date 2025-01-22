@@ -1,7 +1,7 @@
 import { Obra } from '@domain';
 
-import * as utils from './analisys_utils';
-import * as obra_artepublica from './thesisHeritages';
+import * as utils from './analysis_utils';
+import * as obra_artepublica from '../data/thesisHeritages';
 
 const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
