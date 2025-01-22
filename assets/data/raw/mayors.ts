@@ -7,9 +7,9 @@ export const MarceloCrivella: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'PMDB- Partido do Movimento Democrático Brasileiro',
-      DataInicio: `2017`,
-      DataFim: '2020',
+      Party: 'PMDB- Partido do Movimento Democrático Brasileiro',
+      StartDate: `2017`,
+      EndDate: '2020',
     },
   ],
 };
@@ -19,15 +19,15 @@ export const EduardoPaes: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'PMDB- Partido do Movimento Democrático Brasileiro',
-      DataInicio: `01/01/2009`,
-      DataFim: `31/12/2012`,
+      Party: 'PMDB- Partido do Movimento Democrático Brasileiro',
+      StartDate: `01/01/2009`,
+      EndDate: `31/12/2012`,
     },
     {
       City: `Rio de Janeiro`,
-      Partido: 'PMDB- Partido do Movimento Democrático Brasileiro',
-      DataInicio: `01/01/2013`,
-      DataFim: `31/12/2016`,
+      Party: 'PMDB- Partido do Movimento Democrático Brasileiro',
+      StartDate: `01/01/2013`,
+      EndDate: `31/12/2016`,
     },
   ],
 };
@@ -37,9 +37,9 @@ export const LuizPauloConde: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'PFL- Partido da Frente Liberal',
-      DataInicio: `01/01/1997`,
-      DataFim: `31/12/2000`,
+      Party: 'PFL- Partido da Frente Liberal',
+      StartDate: `01/01/1997`,
+      EndDate: `31/12/2000`,
     },
   ],
 };
@@ -49,21 +49,21 @@ export const CesarEpitacioMaia: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'PMDB - Partido do Movimento Democrático Brasileiro',
-      DataInicio: '01/01/1993',
-      DataFim: '31/12/1996',
+      Party: 'PMDB - Partido do Movimento Democrático Brasileiro',
+      StartDate: '01/01/1993',
+      EndDate: '31/12/1996',
     },
     {
       City: `Rio de Janeiro`,
-      Partido: 'PTB - Partido Traballhista Brasileiro',
-      DataInicio: '01/01/2001',
-      DataFim: '31/12/2004',
+      Party: 'PTB - Partido Traballhista Brasileiro',
+      StartDate: '01/01/2001',
+      EndDate: '31/12/2004',
     },
     {
       City: `Rio de Janeiro`,
-      Partido: 'PFL - Partido da Frente Liberal',
-      DataInicio: '01/01/2005',
-      DataFim: '31/12/2008',
+      Party: 'PFL - Partido da Frente Liberal',
+      StartDate: '01/01/2005',
+      EndDate: '31/12/2008',
     },
   ],
 };
@@ -73,9 +73,9 @@ export const RobertoSaturninoBraga: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'PDT- Partido Democrático Trabalhista',
-      DataInicio: `15/03/1986`,
-      DataFim: `31/12/1988`,
+      Party: 'PDT- Partido Democrático Trabalhista',
+      StartDate: `15/03/1986`,
+      EndDate: `31/12/1988`,
     },
   ],
 };
@@ -85,15 +85,15 @@ export const MarceloNunesDeAllencar: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'PDT- Partido Democrático Trabalhista',
-      DataInicio: `05/12/1983`,
-      DataFim: `14/03/1985`,
+      Party: 'PDT- Partido Democrático Trabalhista',
+      StartDate: `05/12/1983`,
+      EndDate: `14/03/1985`,
     },
     {
       City: `Rio de Janeiro`,
-      Partido: 'PDT- Partido Democrático Trabalhista',
-      DataInicio: `01/01/1989`,
-      DataFim: `31/12/1992`,
+      Party: 'PDT- Partido Democrático Trabalhista',
+      StartDate: `01/01/1989`,
+      EndDate: `31/12/1992`,
     },
   ],
 };
@@ -103,9 +103,9 @@ export const JamilHaddad: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'PDT- Partido Democrático Trabalhista',
-      DataInicio: `23/03/1983`,
-      DataFim: `04/12/1983`,
+      Party: 'PDT- Partido Democrático Trabalhista',
+      StartDate: `23/03/1983`,
+      EndDate: `04/12/1983`,
     },
   ],
 };
@@ -115,9 +115,9 @@ export const JulioDeMoraesCoutinho: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'PMDB- Partido do Movimento Democrático Brasileiro',
-      DataInicio: `03/06/1980`,
-      DataFim: `15/03/1983`,
+      Party: 'PMDB- Partido do Movimento Democrático Brasileiro',
+      StartDate: `03/06/1980`,
+      EndDate: `15/03/1983`,
     },
   ],
 };
@@ -127,9 +127,9 @@ export const IsraelKlabin: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'MDB- Movimento Democrático Brasileiro',
-      DataInicio: `16/03/1979`,
-      DataFim: `03/06/1980`,
+      Party: 'MDB- Movimento Democrático Brasileiro',
+      StartDate: `16/03/1979`,
+      EndDate: `03/06/1980`,
     },
   ],
 };
@@ -139,9 +139,9 @@ export const MarcosTamoyo: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'ARENA- Aliança Renovadora Nacional',
-      DataInicio: `15/03/1975`,
-      DataFim: `15/03/1979`,
+      Party: 'ARENA- Aliança Renovadora Nacional',
+      StartDate: `15/03/1975`,
+      EndDate: `15/03/1979`,
     },
   ],
 };
@@ -151,9 +151,9 @@ export const AntonioChagasFreitas: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'MDB- Movimento Democrático Brasileiro',
-      DataInicio: `1971`,
-      DataFim: `1975`,
+      Party: 'MDB- Movimento Democrático Brasileiro',
+      StartDate: `1971`,
+      EndDate: `1975`,
     },
   ],
 };
@@ -163,9 +163,9 @@ export const RaphaelMagalhaes: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'UDN- União Democrática Nacional',
-      DataInicio: `1965`,
-      DataFim: `1965`,
+      Party: 'UDN- União Democrática Nacional',
+      StartDate: `1965`,
+      EndDate: `1965`,
     },
   ],
 };
@@ -175,9 +175,9 @@ export const CarlosLacerda: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'UDN- União Democrática Nacional',
-      DataInicio: `1960`,
-      DataFim: `1965`,
+      Party: 'UDN- União Democrática Nacional',
+      StartDate: `1960`,
+      EndDate: `1965`,
     },
   ],
 };
@@ -187,9 +187,9 @@ export const JoseSetteCamaraFilho: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      Partido: 'PSD- Partido Social Democratico',
-      DataInicio: `1960`,
-      DataFim: `1960`,
+      Party: 'PSD- Partido Social Democratico',
+      StartDate: `1960`,
+      EndDate: `1960`,
     },
   ],
 };
@@ -199,8 +199,8 @@ export const JoseJoaquimDeSaFreireAlvim: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1958`,
-      DataFim: `1960`,
+      StartDate: `1958`,
+      EndDate: `1960`,
     },
   ],
 };
@@ -210,14 +210,14 @@ export const FranciscoNegraoDeLima: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1956`,
-      DataFim: `1958`,
+      StartDate: `1956`,
+      EndDate: `1958`,
     },
     {
       City: `Rio de Janeiro`,
-      Partido: 'PSD- Partido Social Democratico',
-      DataInicio: `1965`,
-      DataFim: `1971`,
+      Party: 'PSD- Partido Social Democratico',
+      StartDate: `1965`,
+      EndDate: `1971`,
     },
   ],
 };
@@ -227,8 +227,8 @@ export const FranciscoDeSaLessa: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1955`,
-      DataFim: `1956`,
+      StartDate: `1955`,
+      EndDate: `1956`,
     },
   ],
 };
@@ -238,8 +238,8 @@ export const EitelDeOliveiraLima: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1955`,
-      DataFim: `1955`,
+      StartDate: `1955`,
+      EndDate: `1955`,
     },
   ],
 };
@@ -249,8 +249,8 @@ export const AlimPedro: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1954`,
-      DataFim: `1955`,
+      StartDate: `1954`,
+      EndDate: `1955`,
     },
   ],
 };
@@ -260,8 +260,8 @@ export const DulcidioDoEspiritoSantoCardoso: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1952`,
-      DataFim: `1954`,
+      StartDate: `1952`,
+      EndDate: `1954`,
     },
   ],
 };
@@ -271,8 +271,8 @@ export const JoaoCarlosVital: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1951`,
-      DataFim: `1952`,
+      StartDate: `1951`,
+      EndDate: `1952`,
     },
   ],
 };
@@ -282,8 +282,8 @@ export const AngeloMendesDeMorais: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1947`,
-      DataFim: `1951`,
+      StartDate: `1947`,
+      EndDate: `1951`,
     },
   ],
 };
@@ -293,8 +293,8 @@ export const HildebrandoDeAraujoGois: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1946`,
-      DataFim: `1947`,
+      StartDate: `1946`,
+      EndDate: `1947`,
     },
   ],
 };
@@ -304,8 +304,8 @@ export const JoseFiladelfoDeBarrosAzevedo: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1945`,
-      DataFim: `1946`,
+      StartDate: `1945`,
+      EndDate: `1946`,
     },
   ],
 };
@@ -315,8 +315,8 @@ export const HenriqueDodsworth: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1937`,
-      DataFim: `1945`,
+      StartDate: `1937`,
+      EndDate: `1945`,
     },
   ],
 };
@@ -326,8 +326,8 @@ export const OlimpioDeMelo: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1936`,
-      DataFim: `1937`,
+      StartDate: `1936`,
+      EndDate: `1937`,
     },
   ],
 };
@@ -337,8 +337,8 @@ export const AugustoDoAmaralPeixoto: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1934`,
-      DataFim: `1935`,
+      StartDate: `1934`,
+      EndDate: `1935`,
     },
   ],
 };
@@ -348,13 +348,13 @@ export const PedroErnestoBaptista: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1931`,
-      DataFim: `1934`,
+      StartDate: `1931`,
+      EndDate: `1934`,
     },
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1935`,
-      DataFim: `1936`,
+      StartDate: `1935`,
+      EndDate: `1936`,
     },
   ],
 };
@@ -364,8 +364,8 @@ export const JuliaoEsteves: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1931`,
-      DataFim: `1931`,
+      StartDate: `1931`,
+      EndDate: `1931`,
     },
   ],
 };
@@ -375,8 +375,8 @@ export const AdolfoBergamini: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1930`,
-      DataFim: `1931`,
+      StartDate: `1930`,
+      EndDate: `1931`,
     },
   ],
 };
@@ -386,8 +386,8 @@ export const AntonioDaSilvaPradoJunior: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1926`,
-      DataFim: `1930`,
+      StartDate: `1926`,
+      EndDate: `1930`,
     },
   ],
 };
@@ -397,8 +397,8 @@ export const AlaorPrata: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1922`,
-      DataFim: `1926`,
+      StartDate: `1922`,
+      EndDate: `1926`,
     },
   ],
 };
@@ -408,8 +408,8 @@ export const CarlosSampaio: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1920`,
-      DataFim: `1922`,
+      StartDate: `1920`,
+      EndDate: `1922`,
     },
   ],
 };
@@ -419,8 +419,8 @@ export const MilciadesMariaDeSaFreire: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1919`,
-      DataFim: `1920`,
+      StartDate: `1919`,
+      EndDate: `1920`,
     },
   ],
 };
@@ -430,8 +430,8 @@ export const PauloDeFrontin: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1919`,
-      DataFim: `1919`,
+      StartDate: `1919`,
+      EndDate: `1919`,
     },
   ],
 };
@@ -441,8 +441,8 @@ export const PeregrinoDaSilva: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1918`,
-      DataFim: `1919`,
+      StartDate: `1918`,
+      EndDate: `1919`,
     },
   ],
 };
@@ -452,8 +452,8 @@ export const AmaroCavalcanti: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1917`,
-      DataFim: `1918`,
+      StartDate: `1917`,
+      EndDate: `1918`,
     },
   ],
 };
@@ -463,8 +463,8 @@ export const AntonioAugustoDeAzevedoSodre: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1916`,
-      DataFim: `1917`,
+      StartDate: `1916`,
+      EndDate: `1917`,
     },
   ],
 };
@@ -474,8 +474,8 @@ export const RivadaviaDaCunhaCorreia: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1914`,
-      DataFim: `1916`,
+      StartDate: `1914`,
+      EndDate: `1916`,
     },
   ],
 };
@@ -485,8 +485,8 @@ export const BentoRibeiro: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1910`,
-      DataFim: `1914`,
+      StartDate: `1910`,
+      EndDate: `1914`,
     },
   ],
 };
@@ -496,8 +496,8 @@ export const SerzedeloCorreia: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1906`,
-      DataFim: `1909`,
+      StartDate: `1906`,
+      EndDate: `1909`,
     },
   ],
 };
@@ -507,8 +507,8 @@ export const FranciscoMarcelinoDeSousaAguiar: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1906`,
-      DataFim: `1909`,
+      StartDate: `1906`,
+      EndDate: `1909`,
     },
   ],
 };
@@ -518,8 +518,8 @@ export const FranciscoPereiraPassos: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1902`,
-      DataFim: `1906`,
+      StartDate: `1902`,
+      EndDate: `1906`,
     },
   ],
 };
@@ -529,8 +529,8 @@ export const CarlosLeiteRibeiro: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1902`,
-      DataFim: `1902`,
+      StartDate: `1902`,
+      EndDate: `1902`,
     },
   ],
 };
@@ -540,8 +540,8 @@ export const JoaquimXavierDaSilveiraJunior: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1901`,
-      DataFim: `1902`,
+      StartDate: `1901`,
+      EndDate: `1902`,
     },
   ],
 };
@@ -551,8 +551,8 @@ export const JoaoFilipePereira: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1900`,
-      DataFim: `1901`,
+      StartDate: `1900`,
+      EndDate: `1901`,
     },
   ],
 };
@@ -562,8 +562,8 @@ export const AntonioCoelhoRodrigues: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1900`,
-      DataFim: `1900`,
+      StartDate: `1900`,
+      EndDate: `1900`,
     },
   ],
 };
@@ -573,8 +573,8 @@ export const HonorioGurgel: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1899`,
-      DataFim: `1900`,
+      StartDate: `1899`,
+      EndDate: `1900`,
     },
   ],
 };
@@ -584,8 +584,8 @@ export const CesarioAlvim: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1898`,
-      DataFim: `1899`,
+      StartDate: `1898`,
+      EndDate: `1899`,
     },
   ],
 };
@@ -595,8 +595,8 @@ export const LuisVanErven: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1898`,
-      DataFim: `1898`,
+      StartDate: `1898`,
+      EndDate: `1898`,
     },
   ],
 };
@@ -606,8 +606,8 @@ export const JoseJoaquimDaRosa: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1897`,
-      DataFim: `1897`,
+      StartDate: `1897`,
+      EndDate: `1897`,
     },
   ],
 };
@@ -617,8 +617,8 @@ export const FranciscoFurquimWerneckDeAlmeida: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1895`,
-      DataFim: `1897`,
+      StartDate: `1895`,
+      EndDate: `1897`,
     },
   ],
 };
@@ -628,8 +628,8 @@ export const HenriqueValadares: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1893`,
-      DataFim: `1895`,
+      StartDate: `1893`,
+      EndDate: `1895`,
     },
   ],
 };
@@ -639,8 +639,8 @@ export const AntonioDiasFerreira: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1893`,
-      DataFim: `1893`,
+      StartDate: `1893`,
+      EndDate: `1893`,
     },
   ],
 };
@@ -650,8 +650,8 @@ export const BarataRibeiro: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1892`,
-      DataFim: `1893`,
+      StartDate: `1892`,
+      EndDate: `1893`,
     },
   ],
 };
@@ -661,8 +661,8 @@ export const AlfredoAugustoVieiraBarcelos: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1892`,
-      DataFim: `1892`,
+      StartDate: `1892`,
+      EndDate: `1892`,
     },
   ],
 };
@@ -672,8 +672,8 @@ export const NicolauJoaquimMoreira: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1891`,
-      DataFim: `1892`,
+      StartDate: `1891`,
+      EndDate: `1892`,
     },
   ],
 };
@@ -683,8 +683,8 @@ export const CarneiroDeFontoura: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1891`,
-      DataFim: `1891`,
+      StartDate: `1891`,
+      EndDate: `1891`,
     },
   ],
 };
@@ -694,8 +694,8 @@ export const JoseFelixDaCunhaMeneses: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1890`,
-      DataFim: `1891`,
+      StartDate: `1890`,
+      EndDate: `1891`,
     },
   ],
 };
@@ -705,13 +705,13 @@ export const UbaldinoDoAmaral: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1890`,
-      DataFim: `1890`,
+      StartDate: `1890`,
+      EndDate: `1890`,
     },
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1897`,
-      DataFim: `1898`,
+      StartDate: `1897`,
+      EndDate: `1898`,
     },
   ],
 };
@@ -721,8 +721,8 @@ export const FranciscoAntonioPessoaDeBarros: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1889`,
-      DataFim: `1890`,
+      StartDate: `1889`,
+      EndDate: `1890`,
     },
   ],
 };
@@ -732,8 +732,8 @@ export const JoaoManuelDaSilvaVeiga: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1888`,
-      DataFim: `1889`,
+      StartDate: `1888`,
+      EndDate: `1889`,
     },
   ],
 };
@@ -743,8 +743,8 @@ export const AugustoNunesDeLima: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1887`,
-      DataFim: `1888`,
+      StartDate: `1887`,
+      EndDate: `1888`,
     },
   ],
 };
@@ -754,8 +754,8 @@ export const JoaoPereiraLopes: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1887`,
-      DataFim: `1887`,
+      StartDate: `1887`,
+      EndDate: `1887`,
     },
   ],
 };
@@ -765,8 +765,8 @@ export const JoaoPedroDeMiranda: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1884`,
-      DataFim: `1887`,
+      StartDate: `1884`,
+      EndDate: `1887`,
     },
   ],
 };
@@ -776,13 +776,13 @@ export const JoseFerreiraNobre: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1881`,
-      DataFim: `1884`,
+      StartDate: `1881`,
+      EndDate: `1884`,
     },
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1889`,
-      DataFim: `1889`,
+      StartDate: `1889`,
+      EndDate: `1889`,
     },
   ],
 };
@@ -792,8 +792,8 @@ export const AntonioBarrosoPereira: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1873`,
-      DataFim: `1877`,
+      StartDate: `1873`,
+      EndDate: `1877`,
     },
   ],
 };
@@ -803,8 +803,8 @@ export const AntonioFerreiraViana: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1869`,
-      DataFim: `1873`,
+      StartDate: `1869`,
+      EndDate: `1873`,
     },
   ],
 };
@@ -814,13 +814,13 @@ export const AdolfoBezerraDeMenezes: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1868`,
-      DataFim: `1869`,
+      StartDate: `1868`,
+      EndDate: `1869`,
     },
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1877`,
-      DataFim: `1881`,
+      StartDate: `1877`,
+      EndDate: `1881`,
     },
   ],
 };
@@ -830,8 +830,8 @@ export const JoaoBatistaDosSantos: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1865`,
-      DataFim: `1868`,
+      StartDate: `1865`,
+      EndDate: `1868`,
     },
   ],
 };
@@ -841,8 +841,8 @@ export const JoaoJoseDaCunhaTeles: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1861`,
-      DataFim: `1865`,
+      StartDate: `1861`,
+      EndDate: `1865`,
     },
   ],
 };
@@ -852,8 +852,8 @@ export const JoãoDeOliveiraFausto: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1857`,
-      DataFim: `1860`,
+      StartDate: `1857`,
+      EndDate: `1860`,
     },
   ],
 };
@@ -863,8 +863,8 @@ export const MiguelDeFriasEVasconcelos: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1853`,
-      DataFim: `1856`,
+      StartDate: `1853`,
+      EndDate: `1856`,
     },
   ],
 };
@@ -874,8 +874,8 @@ export const CandidoBorges: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1851`,
-      DataFim: `1852`,
+      StartDate: `1851`,
+      EndDate: `1852`,
     },
   ],
 };
@@ -885,8 +885,8 @@ export const GabrielGetúlioMonteiroDeMendonça: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1849`,
-      DataFim: `1850`,
+      StartDate: `1849`,
+      EndDate: `1850`,
     },
   ],
 };
@@ -896,8 +896,8 @@ export const JoãoSilveiraDePilar: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1845`,
-      DataFim: `1848`,
+      StartDate: `1845`,
+      EndDate: `1848`,
     },
   ],
 };
@@ -907,8 +907,8 @@ export const LuisDeMenezesVasconcelosDeDrummond: Mayor = {
   Terms: [
     {
       City: `Rio de Janeiro`,
-      DataInicio: `1840`,
-      DataFim: `1844`,
+      StartDate: `1840`,
+      EndDate: `1844`,
     },
   ],
 };

@@ -26,7 +26,7 @@ function Block({
   const selectedMayors = mayors.filter((mayor) => {
     const termsIntern = mayor.Terms?.filter((term) =>
       terms.includes(
-        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})`,
+        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})`,
       ),
     );
     return termsIntern != null && termsIntern.length > 0;
@@ -36,13 +36,13 @@ function Block({
   selectedMayors.forEach((mayor) => {
     const selectedTerms = mayor.Terms?.filter((term) =>
       terms.includes(
-        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})`,
+        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})`,
       ),
     );
 
     selectedTerms?.forEach((term) => {
-      const startYear = getYear(term?.DataInicio);
-      const endYear = getYear(term?.DataFim);
+      const startYear = getYear(term?.StartDate);
+      const endYear = getYear(term?.EndDate);
 
       for (let i = startYear as number; i <= (endYear as number); i++) {
         selectedTermsYears.push(i);
@@ -91,7 +91,7 @@ function Block({
   >((series, mayor, index) => {
     const selectedTerms = mayor.Terms?.filter((term) =>
       terms.includes(
-        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})`,
+        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})`,
       ),
     );
 
@@ -100,8 +100,8 @@ function Block({
     selectedYears.forEach((selectedYear) => {
       let foundYear = false;
       selectedTerms?.forEach((term) => {
-        const startYear = getYear(term?.DataInicio);
-        const endYear = getYear(term?.DataFim);
+        const startYear = getYear(term?.StartDate);
+        const endYear = getYear(term?.EndDate);
 
         if (
           (startYear ?? 0) <= selectedYear &&
@@ -195,23 +195,23 @@ function Mayors({ heritages }: { heritages: Heritage[] }): JSX.Element {
   const items = mayors
     .sort((a, b) => {
       const aFirstTerm = a.Terms?.sort((aM, bM) =>
-        (getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
+        (getYear(aM.StartDate) ?? 0) < (getYear(bM.StartDate) ?? 0) ? 1 : -1,
       )[0];
       const bFirstTerm = b.Terms?.sort((aM, bM) =>
-        (getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
+        (getYear(aM.StartDate) ?? 0) < (getYear(bM.StartDate) ?? 0) ? 1 : -1,
       )[0];
 
-      return (getYear(aFirstTerm?.DataInicio) ?? 0) <
-        (getYear(bFirstTerm?.DataInicio) ?? 0)
+      return (getYear(aFirstTerm?.StartDate) ?? 0) <
+        (getYear(bFirstTerm?.StartDate) ?? 0)
         ? 1
         : -1;
     })
     .map((mayor) => {
       const terms = mayor.Terms?.sort((aM, bM) =>
-        (getYear(aM.DataInicio) ?? 0) > (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
+        (getYear(aM.StartDate) ?? 0) > (getYear(bM.StartDate) ?? 0) ? 1 : -1,
       ).map((term) => ({
-        label: `${term.DataInicio} - ${term.DataFim}`,
-        value: `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})`,
+        label: `${term.StartDate} - ${term.EndDate}`,
+        value: `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})`,
         parent: mayor.Person?.Name ?? 'Desconhecida',
       }));
 

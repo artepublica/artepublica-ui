@@ -428,23 +428,23 @@ function MayorTerm({ heritages }: { heritages: Heritage[] }): JSX.Element {
   const items = mayors
     .sort((a, b) => {
       const aFirstTerm = a.Terms?.sort((aM, bM) =>
-        (getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
+        (getYear(aM.StartDate) ?? 0) < (getYear(bM.StartDate) ?? 0) ? 1 : -1,
       )[0];
       const bFirstTerm = b.Terms?.sort((aM, bM) =>
-        (getYear(aM.DataInicio) ?? 0) < (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
+        (getYear(aM.StartDate) ?? 0) < (getYear(bM.StartDate) ?? 0) ? 1 : -1,
       )[0];
 
-      return (getYear(aFirstTerm?.DataInicio) ?? 0) <
-        (getYear(bFirstTerm?.DataInicio) ?? 0)
+      return (getYear(aFirstTerm?.StartDate) ?? 0) <
+        (getYear(bFirstTerm?.StartDate) ?? 0)
         ? 1
         : -1;
     })
     .map((mayor) => {
       const terms = mayor.Terms?.sort((aM, bM) =>
-        (getYear(aM.DataInicio) ?? 0) > (getYear(bM.DataInicio) ?? 0) ? 1 : -1,
+        (getYear(aM.StartDate) ?? 0) > (getYear(bM.StartDate) ?? 0) ? 1 : -1,
       ).map((term) => ({
-        label: `${term.DataInicio} - ${term.DataFim}`,
-        value: `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})`,
+        label: `${term.StartDate} - ${term.EndDate}`,
+        value: `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})`,
         parent: mayor.Person?.Name ?? 'Desconhecida',
       }));
 
@@ -472,7 +472,7 @@ function MayorTerm({ heritages }: { heritages: Heritage[] }): JSX.Element {
     const mayor = mayors.filter((mayor) => {
       const terms = mayor.Terms?.filter(
         (term) =>
-          `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})` ===
+          `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})` ===
           dropdownValue,
       );
       return terms != null && terms.length > 0;
@@ -480,12 +480,12 @@ function MayorTerm({ heritages }: { heritages: Heritage[] }): JSX.Element {
 
     const term = mayor.Terms?.filter(
       (term) =>
-        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.DataInicio)} - ${getYear(term.DataFim)})` ===
+        `${mayor.Person?.Name ?? 'Desconhecida'} (${getYear(term.StartDate)} - ${getYear(term.EndDate)})` ===
         dropdownValue,
     )[0];
 
-    const anoInicio = getYear(term?.DataInicio);
-    const anoFim = getYear(term?.DataFim);
+    const anoInicio = getYear(term?.StartDate);
+    const anoFim = getYear(term?.EndDate);
 
     const anosIntern: number[] = [];
     for (let i = anoInicio as number; i <= (anoFim as number); i++) {

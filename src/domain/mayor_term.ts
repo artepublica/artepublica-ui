@@ -3,9 +3,9 @@ type MayorTerm = {
   City?: string;
   State?: string;
   Country?: string;
-  Partido?: string;
-  DataInicio?: string;
-  DataFim?: string;
+  Party?: string;
+  StartDate?: string;
+  EndDate?: string;
 };
 
 export default MayorTerm;
