@@ -11,7 +11,8 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.theobassan.artepublicapermanente"
+      "bundleIdentifier": "com.theobassan.artepublicapermanente",
+      "config": {}
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +20,10 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.theobassan.artepublicapermanente",
-      "versionCode": 9
+      "versionCode": 9,
+      "config": {
+        "googleMaps": {}
+      }
     },
     "web": {
       "bundler": "metro",
@@ -49,6 +53,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0,
       "url": "https://u.expo.dev/f1b5fa04-266b-4978-88ee-d55779bc71ff"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
