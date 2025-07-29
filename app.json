@@ -4,7 +4,7 @@
     "name": "arte-publica-permanente",
     "slug": "arte-publica-permanente",
     "scheme": "arte-publica-permanente.app",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "orientation": "portrait",
     "icon": "./assets/icons/icon.png",
     "userInterfaceStyle": "automatic",
@@ -12,7 +12,9 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.theobassan.artepublicapermanente",
-      "config": {}
+      "config": {
+        "googleMapsApiKey": "YOUR_GOOGLE_MAPS_IOS_API_KEY"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -20,9 +22,11 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.theobassan.artepublicapermanente",
-      "versionCode": 9,
+      "versionCode": 10,
       "config": {
-        "googleMaps": {}
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+        }
       }
     },
     "web": {

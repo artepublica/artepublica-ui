@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 
 import Head from 'expo-router/head';
 import { StyleSheet, View } from 'react-native';

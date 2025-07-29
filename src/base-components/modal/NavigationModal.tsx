@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, JSX } from 'react';
 
 import { Ionicons } from '@expo/vector-icons';
 import { useLocalSearchParams, usePathname, useRouter } from 'expo-router';

@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import { GestureResponderEvent, Pressable, StyleSheet, Text } from 'react-native';
 
 import { Theme, useTheme } from '@utils';

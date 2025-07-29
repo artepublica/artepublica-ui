@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import { Image, Platform, StyleSheet, View } from 'react-native';
 
 import { icon } from '@logos';

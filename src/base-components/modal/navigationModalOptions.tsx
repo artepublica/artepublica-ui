@@ -48,7 +48,7 @@ function mobileOptions(
 ): StackNavigationOptions {
   return {
     cardOverlayEnabled: true,
-    ...TransitionPresets.ModalSlideFromBottomIOS,
+    ...(Platform.OS === 'ios' ? TransitionPresets.ModalSlideFromBottomIOS : TransitionPresets.FadeFromBottomAndroid),
     cardStyleInterpolator: (_ref2) => {
       const cardStyleInterpolator =
         Platform.OS === 'ios'
@@ -69,7 +69,7 @@ function mobileOptions(
     presentation: 'transparentModal',
     gestureResponseDistance:
       height - calculateNavigationModalHeight(height, insets, modalHeight) - insets.top + insets.bottom,
-    animation: 'default',
+    animation: 'slide_from_bottom',
   };
 }
 

@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import { ThemeProvider } from '@react-navigation/native';
 import { NativeStackNavigationOptions } from '@react-navigation/native-stack';
 import { Stack } from 'expo-router';

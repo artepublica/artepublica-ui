@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { JSX, useState } from 'react';
 
 import { FlatList, ScrollView, TouchableOpacity, useWindowDimensions, View } from 'react-native';
 import { Col, Grid, Row } from 'react-native-easy-grid';

@@ -12,6 +12,7 @@ function styles(): Styles {
     container: {
       flex: 1,
       paddingTop: 12,
+      width: '100%',
     },
     row: {
       backgroundColor: '#FFFFFF',

@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import { useHeaderHeight } from '@react-navigation/elements';
 import { useRouter } from 'expo-router';
 import { useWindowDimensions } from 'react-native';
@@ -31,7 +33,10 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
       zoomTapEnabled
       initialRegion={center}
       testID='mapView'
-      style={{ height: height - headerHeight - 48 }}
+      style={{
+        height: height - headerHeight - 48,
+        width: '100%',
+      }}
       provider={PROVIDER_GOOGLE}
       customMapStyle={[
         {

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { JSX, useEffect, useRef, useState } from 'react';
 
 import { Wrapper } from '@googlemaps/react-wrapper';
 import { default as Constants } from 'expo-constants';

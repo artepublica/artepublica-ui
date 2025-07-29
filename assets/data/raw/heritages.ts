@@ -14777,9 +14777,9 @@ export const AmericoVespucio_ArmandoAmaya: Heritage = {
   Execution: true,
 };
 
-export const SemTítulo_RobertoBurleMarx: Heritage = {
+export const SemTitulo_RobertoBurleMarx: Heritage = {
   ID: 474,
-  Image: 'SemTítulo_RobertoBurleMarx.jpeg',
+  Image: 'SemTitulo_RobertoBurleMarx.jpeg',
   Authors: [authors.RobertoBurleMarx, authors.HaruyoshiOno],
   Title: `Sem Título`,
   Material: `Concreto`,

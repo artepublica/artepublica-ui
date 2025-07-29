@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import { Text as NativeText, StyleSheet, TextStyle } from 'react-native';
 
 import { Theme, useTheme } from '@utils';

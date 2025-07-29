@@ -1,19 +1,17 @@
-import { useState } from 'react';
+import { JSX, useState } from 'react';
 
 import { Entypo } from '@expo/vector-icons';
 import { DrawerContentComponentProps, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
-import {
-  DrawerDescriptor,
-  DrawerDescriptorMap,
-  // eslint-disable-next-line import/no-unresolved
-} from '@react-navigation/drawer/lib/typescript/commonjs/src/types';
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
 
 import { useTheme } from '@utils';
 
 import { Text } from '../text';
 
-function evaluateOuterDrawerListItems(routes: { name: string; key: string }[], descriptors: DrawerDescriptorMap) {
+function evaluateOuterDrawerListItems(
+  routes: { name: string; key: string }[],
+  descriptors: DrawerContentComponentProps['descriptors'],
+) {
   const drawerItems: Record<string, { label: string; start: number; end: number }> = {};
   routes.forEach((route, index) => {
     const { name, key } = route;
@@ -98,7 +96,9 @@ function DrawerContent(props: DrawerContentComponentProps): JSX.Element {
 
   const index = drawerItems[internState.currentComponent];
   const routes = state.routes.slice(index.start, index.end);
-  const descriptorsReduced = Object.keys(descriptors).reduce<Record<string, DrawerDescriptor>>((result, key) => {
+  const descriptorsReduced = Object.keys(descriptors).reduce<
+    Record<string, DrawerContentComponentProps['descriptors'][string]>
+  >((result, key) => {
     const route = routes.find((route) => route.key === key);
     if (route) {
       result[key] = descriptors[key];

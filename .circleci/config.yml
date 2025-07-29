@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - node/install:
-          node-version: '22.12.0'
+          node-version: '24.4.1'
       - run: sudo npm install -g npm@latest
       - node/install-packages:
           pkg-manager: npm
@@ -23,7 +23,7 @@ jobs:
     steps:
       - checkout
       - node/install:
-          node-version: '22.12.0'
+          node-version: '24.4.1'
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel
       - run: sudo npm install -g now
@@ -35,7 +35,7 @@ jobs:
     steps:
       - checkout
       - node/install:
-          node-version: '22.12.0'
+          node-version: '24.4.1'
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel
       - run: sudo npm install -g now
@@ -47,7 +47,7 @@ jobs:
     steps:
       - checkout
       - node/install:
-          node-version: '22.12.0'
+          node-version: '24.4.1'
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel
       - run: sudo npm install -g now

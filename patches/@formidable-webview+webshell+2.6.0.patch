@@ -1,0 +1,23 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const React = __importStar(require("react"));
+const useWebshell_1 = require("./useWebshell");
+const react_major_version = React.version ? parseInt(React.version.split('.')[0], 10) : 0;
+function makeWebshell(WebView) {
+    const WebshellComponent = (props, ref) => {
+        const { onMessage, ...webViewProps } = props;
+        const { webViewRef, handleOnMessage } = useWebshell_1.useWebshell({
+            onMessage,
+            ref: react_major_version >= 19 ? props.ref : ref
+        });
+        return React.createElement(WebView, { ...webViewProps, ref: webViewRef, onMessage: handleOnMessage });
+    };
+    const Webshell = react_major_version >= 19
+        ? WebshellComponent
+        : React.forwardRef(WebshellComponent);
+    Webshell.displayName = 'Webshell';
+    return Webshell;
+}
+exports.makeWebshell = makeWebshell;
+//# sourceMappingURL=makeWebshell.js.map
+

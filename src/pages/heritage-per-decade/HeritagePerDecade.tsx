@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { JSX, useState } from 'react';
 
 import { useHeaderHeight } from '@react-navigation/elements';
 import Highcharts, { AlignValue, AxisTypeValue, OptionsStackingValue, SeriesOptionsType } from 'highcharts';

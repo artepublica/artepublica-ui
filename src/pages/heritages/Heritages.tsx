@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import { useRouter } from 'expo-router';
 import { FlatList, Platform, useWindowDimensions, View } from 'react-native';
 import { Col, Grid, Row } from 'react-native-easy-grid';

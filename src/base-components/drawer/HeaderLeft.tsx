@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import { Entypo } from '@expo/vector-icons';
 import { DrawerActions, NavigationProp } from '@react-navigation/native';
 import { TouchableOpacity, useWindowDimensions, View } from 'react-native';

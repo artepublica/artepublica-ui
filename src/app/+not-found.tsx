@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import { useRouter } from 'expo-router';
 import { StyleSheet, View } from 'react-native';
 

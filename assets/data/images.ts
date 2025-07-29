@@ -436,8 +436,8 @@ import SebastiaoLeme_MariaDaGloriaVianaPatrasso from './images/heritage/Sebastia
 import SemTitulo_AmilcardeCastro from './images/heritage/SemTitulo_AmilcardeCastro.jpeg';
 import SemTitulo_HaroldoBarroso from './images/heritage/SemTitulo_HaroldoBarroso.jpeg';
 import SemTitulo_IvensMachado from './images/heritage/SemTitulo_IvensMachado.jpeg';
+import SemTitulo_RobertoBurleMarx from './images/heritage/SemTitulo_RobertoBurleMarx.jpeg';
 import SemTituloI_AmilcarDeCastro from './images/heritage/SemTituloI_AmilcarDeCastro.jpeg';
-import SemTítulo_RobertoBurleMarx from './images/heritage/SemTítulo_RobertoBurleMarx.jpeg';
 import SerenaDamadoMar_LuizFigueiredo from './images/heritage/SerenaDamadoMar_LuizFigueiredo.jpeg';
 import SergioCardoso_Marlota from './images/heritage/SergioCardoso_Marlota.jpeg';
 import SerpentedoLago_NicolinaVazDeAssisPintodoCouto from './images/heritage/SerpentedoLago_NicolinaVazDeAssisPintodoCouto.jpeg';
@@ -591,7 +591,7 @@ const images = {
   'SarahKubitschek_MarliMazeredo.jpeg': SarahKubitschek_MarliMazeredo,
   'SemTitulo_AmilcardeCastro.jpeg': SemTitulo_AmilcardeCastro,
   'SemTitulo_IvensMachado.jpeg': SemTitulo_IvensMachado,
-  'SemTítulo_RobertoBurleMarx.jpeg': SemTítulo_RobertoBurleMarx,
+  'SemTitulo_RobertoBurleMarx.jpeg': SemTitulo_RobertoBurleMarx,
   'SerenaDamadoMar_LuizFigueiredo.jpeg': SerenaDamadoMar_LuizFigueiredo,
   'SolarWindsurferALevezadaPedra_JesperNeergaard.jpeg': SolarWindsurferALevezadaPedra_JesperNeergaard,
   'Tartaruga_JoseResende.jpeg': Tartaruga_JoseResende,
@@ -644,7 +644,7 @@ const images = {
   'CoronelAssuncao_RuffoFanucchi.jpeg': CoronelAssuncao_RuffoFanucchi,
   'BadenPowell_VincenzoLarocca.jpeg': BadenPowell_VincenzoLarocca,
   'CarmenMiranda_MateusFernandes.jpeg': CarmenMiranda_MateusFernandes,
-  'BartolomeuMitre_LourillandSan.jpeg': BartolomeuMitre_LourillandSan,
+  'BartolomeuMitre_LourillandSan.jpeg': BartolomeuMitre_LourillandSan.jpeg,
   'PereiraCarneiro_EgistoBertozzi.jpeg': PereiraCarneiro_EgistoBertozzi,
   'AlfredoAgache_HeitorUsai.jpeg': AlfredoAgache_HeitorUsai,
   'ClariceLispector_EdgarDuvivier.jpeg': ClariceLispector_EdgarDuvivier,
@@ -956,7 +956,7 @@ const images = {
   'Pax_MarioMatos.jpeg': Pax_MarioMatos,
   'CriancasComAConcha_FrancoisLespingola.jpeg': CriancasComAConcha_FrancoisLespingola,
   'CriancasComATocha_PhilippeGarnier.jpeg': CriancasComATocha_PhilippeGarnier,
-  'CriancasComflores_PierreLaviron.jpeg': CriancasComflores_PierreLaviron,
+  'CriancasComflores_PierreLaviron.jpeg': CriancasComflores_PierreLaviron.jpeg,
   'HenriqueDodsworth_HonorioPecanha.jpeg': HenriqueDodsworth_HonorioPecanha,
   'BrigadeiroAntonioDeSampaio_VictorBrecheret.jpeg': BrigadeiroAntonioDeSampaio_VictorBrecheret,
   'LuisManuelOsorio_Desconhecida.jpeg': LuisManuelOsorio_Desconhecida,

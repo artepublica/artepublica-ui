@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 
 import Head from 'expo-router/head';
 import { StyleSheet, View } from 'react-native';
@@ -6,7 +6,7 @@ import { StyleSheet, View } from 'react-native';
 import { typologies } from '@data';
 import { HeritageMap } from '@pages';
 
-export default function Mapa(): JSX.Element {
+export default function Map(): JSX.Element {
   return (
     <>
       <Head>

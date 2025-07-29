@@ -10,6 +10,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
   android: {
     ...config.android,
+    permissions: ['INTERNET', 'ACCESS_FINE_LOCATION', 'ACCESS_COARSE_LOCATION', 'ACCESS_NETWORK_STATE'],
     config: {
       ...config.android?.config,
       googleMaps: {
@@ -24,4 +25,19 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       googleMapsApiKey: process.env.GOOGLE_MAPS_API_IOS,
     },
   },
+  plugins: [
+    'expo-router',
+    'expo-font',
+    'expo-web-browser',
+    [
+      'expo-build-properties',
+      {
+        android: {
+          defaultConfig: {
+            minSdkVersion: 30,
+          },
+        },
+      },
+    ],
+  ],
 });

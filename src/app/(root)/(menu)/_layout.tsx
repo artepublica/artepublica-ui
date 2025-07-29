@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 
 import { Drawer } from 'expo-router/drawer';
 import { useWindowDimensions } from 'react-native';

@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import { StyleSheet, Text } from 'react-native';
 import { Col, Grid, Row } from 'react-native-easy-grid';
 

@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import { Map } from '@base-components';
 import { Heritage } from '@domain';
 import { TypologyTheme, useTheme } from '@utils';

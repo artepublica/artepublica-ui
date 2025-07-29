@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import Highcharts from 'highcharts';
 
 import { useTheme } from '@utils';

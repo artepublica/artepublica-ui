@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import { Image, ScrollView, useWindowDimensions, View } from 'react-native';
 
 import { Text } from '@base-components';

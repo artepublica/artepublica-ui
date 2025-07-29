@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 import { useLocalSearchParams } from 'expo-router';
 import { Platform, View } from 'react-native';
 
