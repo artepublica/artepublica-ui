@@ -5,6 +5,7 @@
     "slug": "arte-publica-permanente",
     "scheme": "arte-publica-permanente.app",
     "version": "0.0.10",
+    "runtimeVersion": "0.0.10",
     "orientation": "portrait",
     "icon": "./assets/icons/icon.png",
     "userInterfaceStyle": "automatic",
@@ -57,9 +58,6 @@
     "updates": {
       "fallbackToCacheTimeout": 0,
       "url": "https://u.expo.dev/f1b5fa04-266b-4978-88ee-d55779bc71ff"
-    },
-    "runtimeVersion": {
-      "policy": "appVersion"
     }
   }
 }
