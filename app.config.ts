@@ -25,19 +25,4 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       googleMapsApiKey: process.env.GOOGLE_MAPS_API_IOS,
     },
   },
-  plugins: [
-    'expo-router',
-    'expo-font',
-    'expo-web-browser',
-    [
-      'expo-build-properties',
-      {
-        android: {
-          defaultConfig: {
-            minSdkVersion: 30,
-          },
-        },
-      },
-    ],
-  ],
 });
