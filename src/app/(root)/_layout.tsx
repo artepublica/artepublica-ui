@@ -1,8 +1,7 @@
 import { JSX } from 'react';
 
-import { ThemeProvider } from '@react-navigation/native';
-import { NativeStackNavigationOptions } from '@react-navigation/native-stack';
-import { Stack } from 'expo-router';
+import { type NativeStackNavigationOptions, Stack } from 'expo-router';
+import { ThemeProvider } from 'expo-router/react-navigation';
 import { StatusBar } from 'expo-status-bar';
 import { Platform, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -24,7 +23,7 @@ export default function Layout(): JSX.Element {
         backgroundColor: theme.navigation.active,
       }}
     >
-      <StatusBar translucent backgroundColor={theme.navigation.active} />
+      <StatusBar style='light' />
       <View style={{ flex: 1 }}>
         <ThemeProvider
           value={{

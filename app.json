@@ -35,6 +35,12 @@
       "favicon": "./assets/icons/favicon.png"
     },
     "plugins": [
+      [
+        "expo-status-bar",
+        {
+          "style": "light"
+        }
+      ],
       "expo-router",
       "expo-font",
       "expo-web-browser",

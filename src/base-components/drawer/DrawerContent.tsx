@@ -1,7 +1,11 @@
 import { JSX, useState } from 'react';
 
 import { Entypo } from '@expo/vector-icons';
-import { DrawerContentComponentProps, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
+import {
+  DrawerContentComponentProps,
+  DrawerContentScrollView,
+  DrawerItem,
+} from 'expo-router/build/react-navigation/drawer';
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
 
 import { useTheme } from '@utils';

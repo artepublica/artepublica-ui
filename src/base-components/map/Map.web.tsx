@@ -1,3 +1,5 @@
+/// <reference types="google.maps" />
+
 import { JSX, useEffect, useRef, useState } from 'react';
 
 import { Wrapper } from '@googlemaps/react-wrapper';

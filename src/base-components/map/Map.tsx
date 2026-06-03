@@ -1,7 +1,7 @@
 import { JSX } from 'react';
 
-import { useHeaderHeight } from '@react-navigation/elements';
 import { useRouter } from 'expo-router';
+import { useHeaderHeight } from 'expo-router/react-navigation';
 import { useWindowDimensions } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 

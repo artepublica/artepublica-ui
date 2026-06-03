@@ -1,6 +1,6 @@
 import { AntDesign } from '@expo/vector-icons';
-import { NavigationProp, StackActions } from '@react-navigation/native';
-import { StackNavigationOptions, TransitionPresets } from '@react-navigation/stack';
+import { StackNavigationOptions, TransitionPresets } from 'expo-router/build/react-navigation/stack';
+import { NavigationProp, StackActions } from 'expo-router/react-navigation';
 import { Platform, StyleSheet, TouchableOpacity } from 'react-native';
 import { EdgeInsets } from 'react-native-safe-area-context';
 

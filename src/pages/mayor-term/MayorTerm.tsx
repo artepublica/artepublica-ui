@@ -1,6 +1,6 @@
 import { JSX, useEffect, useState } from 'react';
 
-import { useHeaderHeight } from '@react-navigation/elements';
+import { useHeaderHeight } from 'expo-router/react-navigation';
 import Highcharts, { SeriesOptionsType } from 'highcharts';
 import { ScrollView, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';

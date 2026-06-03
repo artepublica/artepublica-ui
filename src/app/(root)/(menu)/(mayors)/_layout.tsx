@@ -1,13 +1,13 @@
 import React, { JSX } from 'react';
 
 import { FontAwesome } from '@expo/vector-icons';
+import { withLayoutContext } from 'expo-router';
 import {
   createMaterialTopTabNavigator,
   MaterialTopTabNavigationEventMap,
   MaterialTopTabNavigationOptions,
-} from '@react-navigation/material-top-tabs';
-import { ParamListBase, TabNavigationState } from '@react-navigation/native';
-import { withLayoutContext } from 'expo-router';
+} from 'expo-router/js-top-tabs';
+import { ParamListBase, TabNavigationState } from 'expo-router/react-navigation';
 import { StyleSheet } from 'react-native';
 
 import { Theme, useTheme } from '@utils';

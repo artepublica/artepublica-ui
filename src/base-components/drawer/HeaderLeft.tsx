@@ -1,7 +1,7 @@
 import { JSX } from 'react';
 
 import { Entypo } from '@expo/vector-icons';
-import { DrawerActions, NavigationProp } from '@react-navigation/native';
+import { DrawerActions, NavigationProp } from 'expo-router/react-navigation';
 import { TouchableOpacity, useWindowDimensions, View } from 'react-native';
 
 import { useTheme } from '@utils';

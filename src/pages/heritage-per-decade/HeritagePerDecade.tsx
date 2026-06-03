@@ -1,6 +1,6 @@
 import { JSX, useState } from 'react';
 
-import { useHeaderHeight } from '@react-navigation/elements';
+import { useHeaderHeight } from 'expo-router/react-navigation';
 import Highcharts, { AlignValue, AxisTypeValue, OptionsStackingValue, SeriesOptionsType } from 'highcharts';
 import { ScrollView, useWindowDimensions } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
