@@ -63,28 +63,7 @@ function MyMapComponent({
         new window.google.maps.Map(ref.current, {
           center,
           zoom,
-          mapTypeId: 'roadmap',
           mapId: Constants.expoConfig?.extra?.googleMapsMapId,
-          styles: [
-            {
-              featureType: 'poi',
-              elementType: 'all',
-              stylers: [
-                {
-                  visibility: 'off',
-                },
-              ],
-            },
-            {
-              featureType: 'transit',
-              elementType: 'all',
-              stylers: [
-                {
-                  visibility: 'off',
-                },
-              ],
-            },
-          ],
         }),
       );
     }
@@ -103,7 +82,7 @@ function MyMapComponent({
           gmpClickable: true,
         });
 
-        gMarker.addListener('click', () => {
+        gMarker.addListener('gmp-click', () => {
           router.push({
             pathname: '/heritage',
             params: { heritage: marker.heritage.ID },
