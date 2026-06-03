@@ -22,10 +22,21 @@ function MapWrapper({ markers }: MapWrapperProps): JSX.Element {
   const zoom = 12;
 
   return (
-    <Wrapper apiKey={Constants.expoConfig?.extra?.googleMapsAPI}>
+    <Wrapper apiKey={Constants.expoConfig?.extra?.googleMapsAPI} libraries={['marker']}>
       <MyMapComponent center={center} zoom={zoom} markers={markers} />
     </Wrapper>
   );
+}
+
+function createPinContent(color: string): HTMLElement {
+  const container = document.createElement('div');
+  container.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="44" viewBox="-12 -42 24 44">
+      <path d="M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0"
+            fill="${color}" fill-opacity="1" stroke="#000" stroke-width="2" />
+    </svg>
+  `;
+  return container;
 }
 
 function MyMapComponent({
@@ -44,7 +55,7 @@ function MyMapComponent({
   const router = useRouter();
   const ref = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<google.maps.Map>();
-  const [mapMarkers, serMapMarkers] = useState<google.maps.Marker[]>([]);
+  const [mapMarkers, setMapMarkers] = useState<google.maps.marker.AdvancedMarkerElement[]>([]);
 
   useEffect(() => {
     if (ref.current && !map) {
@@ -53,6 +64,7 @@ function MyMapComponent({
           center,
           zoom,
           mapTypeId: 'roadmap',
+          mapId: Constants.expoConfig?.extra?.googleMapsMapId,
           styles: [
             {
               featureType: 'poi',
@@ -78,34 +90,17 @@ function MyMapComponent({
     }
 
     if (map && markers) {
-      mapMarkers.forEach((marker) => marker.setMap(null));
-
-      /*
-
-        const iconContent = `
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0"
-                  fill="${marker.color ?? magenta}" fill-opacity="1" stroke="#000" stroke-width="2" />
-          </svg>
-        `;
-        */
+      mapMarkers.forEach((marker) => (marker.map = null));
 
       const markersI = markers.map((marker) => {
-        const gMarker = new google.maps.Marker({
+        const gMarker = new google.maps.marker.AdvancedMarkerElement({
+          map,
           position: {
             lat: parseFloat(marker.position.latitude),
             lng: parseFloat(marker.position.longitude),
           },
-          icon: {
-            path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
-
-            fillOpacity: 1,
-            strokeColor: '#000',
-            strokeWeight: 2,
-            scale: 1,
-            fillColor: marker.color ?? magenta,
-          },
-          clickable: true,
+          content: createPinContent(marker.color ?? magenta),
+          gmpClickable: true,
         });
 
         gMarker.addListener('click', () => {
@@ -114,11 +109,11 @@ function MyMapComponent({
             params: { heritage: marker.heritage.ID },
           });
         });
-        gMarker.setMap(map);
+
         return gMarker;
       });
 
-      serMapMarkers(markersI);
+      setMapMarkers(markersI);
     }
   }, [ref, map, markers]);
 

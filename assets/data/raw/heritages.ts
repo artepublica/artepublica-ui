@@ -56,7 +56,7 @@ export const FonteDaCrianca_HenriFredericIselin: Heritage = {
 };
 
 export const NossaSenhoradaImaculadaConceicao_Desconhecido: Heritage = {
-  ID: 4,
+  ID: 3,
   Image: 'NossaSenhoradaImaculadaConceicao_Desconhecido.jpeg',
   Authors: [authors.Desconhecida],
   Title: 'Nossa Senhora da Imaculada Conceição',
@@ -81,7 +81,7 @@ export const NossaSenhoradaImaculadaConceicao_Desconhecido: Heritage = {
 };
 
 export const EsculturaParaORio_WaltercioCaldas: Heritage = {
-  ID: 5,
+  ID: 4,
   Image: 'EsculturaParaORio_WaltercioCaldas.jpeg',
   Authors: [authors.WaltercioCaldas],
   Title: 'Escultura para o Rio',
@@ -167,7 +167,7 @@ export const EsculturaParaORio_WaltercioCaldas: Heritage = {
 };
 
 export const MarechalMachadoBittencourt_JoseOtavioCorreaLima: Heritage = {
-  ID: 6,
+  ID: 5,
   Image: 'MarechalMachadoBittencourt_JoseOtavioCorreaLima.jpeg',
   Authors: [authors.JoseOtavioCorreaLima],
   Title: 'Marechal Machado Bittencourt',
@@ -195,7 +195,7 @@ export const MarechalMachadoBittencourt_JoseOtavioCorreaLima: Heritage = {
 };
 
 export const TeixeiraDeFreitas_RodolfoBernardelli: Heritage = {
-  ID: 7,
+  ID: 6,
   Image: 'TeixeiraDeFreitas_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: 'Teixeira de Freitas',
@@ -239,7 +239,7 @@ export const TeixeiraDeFreitas_RodolfoBernardelli: Heritage = {
 };
 
 export const BuarquedeMacedo_JoseOtavioCorreaLima: Heritage = {
-  ID: 8,
+  ID: 7,
   Image: 'BuarquedeMacedo_JoseOtavioCorreaLima.jpeg',
   Authors: [authors.JoseOtavioCorreaLima],
   Title: 'Buarque de Macedo',
@@ -272,7 +272,7 @@ export const BuarquedeMacedo_JoseOtavioCorreaLima: Heritage = {
 };
 
 export const ColunaMediaemCantoneirasDiagonais_FranzWeissmann: Heritage = {
-  ID: 9,
+  ID: 8,
   Image: 'ColunaMediaemCantoneirasDiagonais_FranzWeissmann.jpeg',
   Authors: [authors.FranzWeissmann],
   Title: 'Coluna Media em Cantoneiras Diagonais',
@@ -301,7 +301,7 @@ export const ColunaMediaemCantoneirasDiagonais_FranzWeissmann: Heritage = {
 };
 
 export const BernardoPereiradeVasconcelos_FloryGama: Heritage = {
-  ID: 10,
+  ID: 9,
   Image: 'BernardoPereiradeVasconcelos_FloryGama.jpeg',
   Authors: [authors.FloryGama],
   Title: 'Bernardo Pereira de Vasconcelos',
@@ -329,7 +329,7 @@ export const BernardoPereiradeVasconcelos_FloryGama: Heritage = {
 };
 
 export const Tiradentes_FranciscoAndrade: Heritage = {
-  ID: 11,
+  ID: 10,
   Image: 'Tiradentes_FranciscoAndrade.jpeg',
   Authors: [authors.FranciscoAndrade],
   Title: 'Tiradentes',
@@ -370,7 +370,7 @@ export const Tiradentes_FranciscoAndrade: Heritage = {
 };
 
 export const FranciscoPereiraPassos_RodolfoBernardelli: Heritage = {
-  ID: 12,
+  ID: 11,
   Image: 'FranciscoPereiraPassos_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: 'Francisco Pereira Passos',
@@ -404,7 +404,7 @@ export const FranciscoPereiraPassos_RodolfoBernardelli: Heritage = {
 };
 
 export const MachadoDeAssis_HumbertoCozzo: Heritage = {
-  ID: 13,
+  ID: 12,
   Image: 'MachadoDeAssis_HumbertoCozzo.jpeg',
   Authors: [authors.HumbertoCozzo],
   Title: 'Machado de Assis',
@@ -436,7 +436,7 @@ export const MachadoDeAssis_HumbertoCozzo: Heritage = {
 };
 
 export const Ritmo_BrunoGiorgi: Heritage = {
-  ID: 14,
+  ID: 13,
   Image: 'Ritmo_BrunoGiorgi.jpeg',
   Authors: [authors.BrunoGiorgi],
   Title: 'Ritmo',
@@ -489,7 +489,7 @@ export const Ritmo_BrunoGiorgi: Heritage = {
 };
 
 export const ManuelBandeira_OttoDumovich: Heritage = {
-  ID: 15,
+  ID: 14,
   Image: 'ManuelBandeira_OttoDumovich.jpeg',
   Authors: [authors.OttoDumovich],
   Title: 'Manuel Bandeira',
@@ -539,7 +539,7 @@ export const ManuelBandeira_OttoDumovich: Heritage = {
 };
 
 export const GrandeQuadradoVermelho_FranzWeissmann: Heritage = {
-  ID: 16,
+  ID: 15,
   Image: 'GrandeQuadradoVermelho_FranzWeissmann.jpeg',
   Authors: [authors.FranzWeissmann],
   Title: 'Grande Quadrado Vermelho',
@@ -571,7 +571,7 @@ export const GrandeQuadradoVermelho_FranzWeissmann: Heritage = {
 };
 
 export const OPassante_JoseResende: Heritage = {
-  ID: 18,
+  ID: 16,
   Image: 'OPassante_JoseResende.jpeg',
   Authors: [authors.JoseResende],
   Title: 'O Passante',
@@ -623,7 +623,7 @@ export const OPassante_JoseResende: Heritage = {
 };
 
 export const JoseBonifacio_LouisRochet: Heritage = {
-  ID: 19,
+  ID: 17,
   Image: 'JoseBonifacio_LouisRochet.jpeg',
   Authors: [authors.LouisRochet],
   Title: 'José Bonifácio',
@@ -656,7 +656,7 @@ export const JoseBonifacio_LouisRochet: Heritage = {
 };
 
 export const TresVelas_IvanPaulPaccini: Heritage = {
-  ID: 20,
+  ID: 18,
   Image: 'TresVelas_IvanPaulPaccini.jpeg',
   Authors: [authors.IvanPaulPaccini],
   Title: 'Tres Velas',
@@ -682,7 +682,7 @@ export const TresVelas_IvanPaulPaccini: Heritage = {
 };
 
 export const FontedoMenino_MestreValentim: Heritage = {
-  ID: 21,
+  ID: 19,
   Image: 'FontedoMenino_MestreValentim.jpeg',
   Authors: [authors.MestreValentim],
   Title: 'Fonte do Menino',
@@ -715,7 +715,7 @@ export const FontedoMenino_MestreValentim: Heritage = {
 };
 
 export const FontedodosAmores_MestreValentim: Heritage = {
-  ID: 22,
+  ID: 20,
   Image: 'FontedodosAmores_MestreValentim.jpeg',
   Authors: [authors.MestreValentim],
   Title: 'Fonte dos Amores',
@@ -747,7 +747,7 @@ export const FontedodosAmores_MestreValentim: Heritage = {
 };
 
 export const CarlosGomes_RodolfoBernardelli: Heritage = {
-  ID: 23,
+  ID: 21,
   Image: 'CarlosGomes_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: 'Carlos Gomes',
@@ -813,7 +813,7 @@ export const CarlosGomes_RodolfoBernardelli: Heritage = {
 };
 
 export const VicenteCelestino_TitoBernucci: Heritage = {
-  ID: 24,
+  ID: 22,
   Image: 'VicenteCelestino_TitoBernucci.jpeg',
   Authors: [authors.TitoBernucci],
   Title: 'Vicente Celestino',
@@ -845,7 +845,7 @@ export const VicenteCelestino_TitoBernucci: Heritage = {
 };
 
 export const Sinho_TitoBernucci: Heritage = {
-  ID: 25,
+  ID: 23,
   Image: 'Sinho_TitoBernucci.jpeg',
   Authors: [authors.TitoBernucci],
   Title: 'Sinho',
@@ -876,7 +876,7 @@ export const Sinho_TitoBernucci: Heritage = {
 };
 
 export const BenjaminConstant_DecioVillares_EduardoDeSa_VicenteOrnelas: Heritage = {
-  ID: 26,
+  ID: 24,
   Image: 'BenjaminConstant_DecioVillares_EduardoDeSa_VicenteOrnelas.jpeg',
   Authors: [authors.DecioVilares, authors.EduardoDeSa, authors.VicenteOrnelas],
   Title: 'Benjamin Constant',
@@ -920,7 +920,7 @@ export const BenjaminConstant_DecioVillares_EduardoDeSa_VicenteOrnelas: Heritage
 };
 
 export const PauloDeFrontin_UgoTaddey: Heritage = {
-  ID: 27,
+  ID: 25,
   Image: 'PauloDeFrontin_UgoTaddey.jpeg',
   Authors: [authors.UgoTaddey],
   Title: 'Paulo de Frontin',
@@ -960,7 +960,7 @@ export const PauloDeFrontin_UgoTaddey: Heritage = {
 };
 
 export const JuscelinoKubitschek_Zanucchi: Heritage = {
-  ID: 28,
+  ID: 26,
   Image: 'JuscelinoKubitschek_Zanucchi.jpeg',
   Authors: [authors.Zanucchi],
   Title: 'Juscelino Kubitschek',
@@ -989,7 +989,7 @@ export const JuscelinoKubitschek_Zanucchi: Heritage = {
 };
 
 export const FranciscoSerrador_ACoutinho: Heritage = {
-  ID: 29,
+  ID: 27,
   Image: 'FranciscoSerrador_ACoutinho.jpeg',
   Authors: [authors.ACoutinho],
   Title: 'Francisco Serrador',
@@ -1030,7 +1030,7 @@ export const FranciscoSerrador_ACoutinho: Heritage = {
 };
 
 export const GetulioVargas_LuizSerri: Heritage = {
-  ID: 30,
+  ID: 28,
   Image: 'GetulioVargas_LuizSerri.jpeg',
   Authors: [authors.LuizSerri],
   Title: 'Getulio Vargas',
@@ -1081,7 +1081,7 @@ export const GetulioVargas_LuizSerri: Heritage = {
 };
 
 export const PescadorNapolitano_FrancoisRude: Heritage = {
-  ID: 31,
+  ID: 29,
   Image: 'PescadorNapolitano_FrancoisRude.jpeg',
   Authors: [authors.FrancoisRude],
   Title: 'Pescador Napolitano',
@@ -1109,7 +1109,7 @@ export const PescadorNapolitano_FrancoisRude: Heritage = {
 };
 
 export const FonteJovemEuropa_MathurinMoreau: Heritage = {
-  ID: 32,
+  ID: 30,
   Image: 'FonteJovemEuropa_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: 'Fonte Jovem Europa',
@@ -1137,7 +1137,7 @@ export const FonteJovemEuropa_MathurinMoreau: Heritage = {
 };
 
 export const ASereia_ProvinSerres: Heritage = {
-  ID: 33,
+  ID: 31,
   Image: 'ASereia_ProvinSerres.jpeg',
   Authors: [authors.ProvinSerres],
   Title: 'A Sereia',
@@ -1168,7 +1168,7 @@ export const ASereia_ProvinSerres: Heritage = {
 };
 
 export const Primavera_GustaveFredericMichel: Heritage = {
-  ID: 34,
+  ID: 32,
   Image: 'Primavera_GustaveFredericMichel.jpeg',
   Authors: [authors.GustaveFredericMichel],
   Title: 'Primavera',
@@ -1199,7 +1199,7 @@ export const Primavera_GustaveFredericMichel: Heritage = {
 };
 
 export const Outono_GustaveFredericMichel: Heritage = {
-  ID: 35,
+  ID: 33,
   Image: 'Outono_GustaveFredericMichel.jpeg',
   Authors: [authors.GustaveFredericMichel],
   Title: 'Outono',
@@ -1230,7 +1230,7 @@ export const Outono_GustaveFredericMichel: Heritage = {
 };
 
 export const Inverno_PaulJeanBaptisteGasg: Heritage = {
-  ID: 36,
+  ID: 34,
   Image: 'Inverno_PaulJeanBaptistaGasg.jpeg',
   Authors: [authors.PaulJeanBaptisteGasg],
   Title: 'Inverno',
@@ -1256,7 +1256,7 @@ export const Inverno_PaulJeanBaptisteGasg: Heritage = {
 };
 
 export const Verao_PaulJeanBaptisteGasg: Heritage = {
-  ID: 37,
+  ID: 35,
   Image: 'Verao_PaulJeanBaptisteGasg.jpeg',
   Authors: [authors.PaulJeanBaptisteGasg],
   Title: 'Verao',
@@ -1282,7 +1282,7 @@ export const Verao_PaulJeanBaptisteGasg: Heritage = {
 };
 
 export const HeitorVillaLobos_BrunoGiorgi: Heritage = {
-  ID: 38,
+  ID: 36,
   Image: 'HeitorVillaLobos_BrunoGiorgi.jpeg',
   Authors: [authors.BrunoGiorgi],
   Title: 'Heitor Villa Lobos',
@@ -1319,7 +1319,7 @@ export const HeitorVillaLobos_BrunoGiorgi: Heritage = {
 };
 
 export const GeneralSantander_FranciscoVictorPalma: Heritage = {
-  ID: 39,
+  ID: 37,
   Image: 'GeneralSantander_FranciscoVictorPalma.jpeg',
   Authors: [authors.FranciscoVictorPalma],
   Title: 'General Santander',
@@ -1349,7 +1349,7 @@ export const GeneralSantander_FranciscoVictorPalma: Heritage = {
 };
 
 export const EvandroLinseSilva_AlfredoCeschiatti: Heritage = {
-  ID: 40,
+  ID: 38,
   Image: 'EvandroLinseSilva_AlfredoCeschiatti.jpeg',
   Authors: [authors.AlfredoCeschiatti],
   Title: 'Evandro Lins e Silva',
@@ -1387,7 +1387,7 @@ export const EvandroLinseSilva_AlfredoCeschiatti: Heritage = {
 };
 
 export const LutaDesigual_LDespresLaupedeCluny: Heritage = {
-  ID: 41,
+  ID: 39,
   Image: 'LutaDesigual_LeonDespresLaupedeCluny.jpeg',
   Authors: [authors.LDespresLaupedeCluny],
   Title: 'Luta Desigual',
@@ -1414,7 +1414,7 @@ export const LutaDesigual_LDespresLaupedeCluny: Heritage = {
 };
 
 export const ZumbidosPalmares_RomeuAlves: Heritage = {
-  ID: 43,
+  ID: 40,
   Image: 'ZumbidosPalmares_RomeuAlves.jpeg',
   Authors: [authors.RomeuAlves],
   Title: 'Zumbi dos Palmares',
@@ -1455,7 +1455,7 @@ export const ZumbidosPalmares_RomeuAlves: Heritage = {
 };
 
 export const AUniao_MathurinMoreau: Heritage = {
-  ID: 44,
+  ID: 41,
   Image: 'AUniao_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: 'União',
@@ -1491,7 +1491,7 @@ export const AUniao_MathurinMoreau: Heritage = {
 };
 
 export const ALiberdade_MathurinMoreau: Heritage = {
-  ID: 45,
+  ID: 42,
   Image: 'ALiberdade_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: 'Liberdade',
@@ -1519,7 +1519,7 @@ export const ALiberdade_MathurinMoreau: Heritage = {
 };
 
 export const AJustica_MathurinMoreau: Heritage = {
-  ID: 46,
+  ID: 43,
   Image: 'AJustica_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: 'Justiça',
@@ -1547,7 +1547,7 @@ export const AJustica_MathurinMoreau: Heritage = {
 };
 
 export const AFidelidade_MathurinMoreau: Heritage = {
-  ID: 47,
+  ID: 44,
   Image: 'AFidelidade_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: 'Fidelidade',
@@ -1575,7 +1575,7 @@ export const AFidelidade_MathurinMoreau: Heritage = {
 };
 
 export const JoaoCaetano_FranciscoManuelChavesPinheiro: Heritage = {
-  ID: 48,
+  ID: 45,
   Image: 'JoaoCaetano_FranciscoManuelChavesPinheiro.jpeg',
   Authors: [authors.FranciscoManuelChavesPinheiro],
   Title: 'João Caetano',
@@ -1612,7 +1612,7 @@ export const JoaoCaetano_FranciscoManuelChavesPinheiro: Heritage = {
 };
 
 export const DomPedroI_LouisRochet: Heritage = {
-  ID: 49,
+  ID: 46,
   Image: 'DomPedroI_LouisRochet.jpeg',
   Authors: [authors.LouisRochet],
   Title: 'Dom Pedro I',
@@ -1657,7 +1657,7 @@ export const DomPedroI_LouisRochet: Heritage = {
 };
 
 export const SolarWindsurfer_JesperNeergaard: Heritage = {
-  ID: 50,
+  ID: 47,
   Image: 'SolarWindsurferALevezadaPedra_JesperNeergaard.jpeg',
   Authors: [authors.JesperNeergaard],
   Title: 'Solar Windsurfer',
@@ -1710,7 +1710,7 @@ export const SolarWindsurfer_JesperNeergaard: Heritage = {
 };
 
 export const SantosDumont_AmadeuZani: Heritage = {
-  ID: 51,
+  ID: 48,
   Image: 'SantosDumont_AmadeuZani.jpeg',
   Authors: [authors.AmadeuZani],
   Title: 'Santos Dumont',
@@ -1738,7 +1738,7 @@ export const SantosDumont_AmadeuZani: Heritage = {
 };
 
 export const MulhercomAnfora_HumbertoCozzo: Heritage = {
-  ID: 52,
+  ID: 49,
   Image: 'MulhercomAnfora_HumbertoCozzo.jpeg',
   Authors: [authors.HumbertoCozzo],
   Title: 'Mulher com Ânfora',
@@ -1772,7 +1772,7 @@ export const MulhercomAnfora_HumbertoCozzo: Heritage = {
 };
 
 export const MahatmaGandhi_SankhoChaudhuri: Heritage = {
-  ID: 53,
+  ID: 50,
   Image: 'MahatmaGandhi_SankhoChaudhuri.jpeg',
   Authors: [authors.SankhoChaudhuri],
   Title: 'Mahatma Gandhi',
@@ -1805,7 +1805,7 @@ export const MahatmaGandhi_SankhoChaudhuri: Heritage = {
 };
 
 export const Girardet_JoseOtavioCorreaLima: Heritage = {
-  ID: 54,
+  ID: 51,
   Image: 'Girardet_JoseOtavioCorreaLima.jpeg',
   Authors: [authors.JoseOtavioCorreaLima],
   Title: 'Girardet',
@@ -1845,7 +1845,7 @@ export const Girardet_JoseOtavioCorreaLima: Heritage = {
 };
 
 export const CatullodaPaixaoCearense_HonorioPecanha: Heritage = {
-  ID: 55,
+  ID: 52,
   Image: 'CatullodaPaixaoCearense_HonorioPecanha.jpeg',
   Authors: [authors.HonorioPecanha],
   Title: 'Catulo da Paixão Cearense',
@@ -1884,7 +1884,7 @@ export const CatullodaPaixaoCearense_HonorioPecanha: Heritage = {
 };
 
 export const AdolfoBergamini_HildegardoLeaoVelloso: Heritage = {
-  ID: 56,
+  ID: 53,
   Image: 'AdolfoBergamini_HildegardoLeaoVelloso.jpeg',
   Authors: [authors.HildegardoLeaoVelloso],
   Title: 'Adolfo Bergamini',
@@ -1916,7 +1916,7 @@ export const AdolfoBergamini_HildegardoLeaoVelloso: Heritage = {
 };
 
 export const ChafarizdoMonroe_MathurinMoreau: Heritage = {
-  ID: 57,
+  ID: 54,
   Image: 'ChafarizdoMonroe_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: 'Chafariz do Monroe',
@@ -1957,7 +1957,7 @@ export const ChafarizdoMonroe_MathurinMoreau: Heritage = {
 };
 
 export const AshbelGreenSimentoneHelen_JoasPereiraDosPassos: Heritage = {
-  ID: 58,
+  ID: 55,
   Image: 'AshbelGreenSimentoneHelen_JoasPereiraDosPassos.jpeg',
   Authors: [authors.JoasPereiraDosPassos],
   Title: 'Ashbel Green Simenton e Helen',
@@ -2002,7 +2002,7 @@ export const AshbelGreenSimentoneHelen_JoasPereiraDosPassos: Heritage = {
 };
 
 export const AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso: Heritage = {
-  ID: 59,
+  ID: 56,
   Image: 'AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso.jpeg',
   Authors: [authors.HildegardoLeaoVelloso],
   Title: 'Almirante Pedro Max Frontin',
@@ -2049,7 +2049,7 @@ export const AlmirantePedroMaxdeFrontin_HildegardoLeaoVelloso: Heritage = {
 };
 
 export const BaraodeMaua_RodolfoBernardelli: Heritage = {
-  ID: 60,
+  ID: 57,
   Image: 'BaraodeMaua_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: 'Barão de Mauá',
@@ -2082,7 +2082,7 @@ export const BaraodeMaua_RodolfoBernardelli: Heritage = {
 };
 
 export const PauloDeOliveiraSampaio_Desconhecida: Heritage = {
-  ID: 61,
+  ID: 58,
   Image: 'PaulodeOliveiraSampaio_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: 'Paulo de Oliveira Sampaio',
@@ -2108,7 +2108,7 @@ export const PauloDeOliveiraSampaio_Desconhecida: Heritage = {
 };
 
 export const AtilioCorreaLima_CPincy: Heritage = {
-  ID: 62,
+  ID: 59,
   Image: 'AtilioCorreaLima_CPincy.jpeg',
   Authors: [authors.CPincy],
   Title: 'Atílio Correia Lima',
@@ -2139,7 +2139,7 @@ export const AtilioCorreaLima_CPincy: Heritage = {
 };
 
 export const AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna: Heritage = {
-  ID: 63,
+  ID: 60,
   Image: 'AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna.jpeg',
   Authors: [authors.CharlesKeck, authors.BenevenutoBerna],
   Title: 'Amizade Entre Os Povos',
@@ -2176,7 +2176,7 @@ export const AmizadeEntreOsPovos_CharlesKeck_BenevenutoBerna: Heritage = {
 };
 
 export const TeresaCristinaBragancadeBourbon_JoseLuizRibeiro: Heritage = {
-  ID: 64,
+  ID: 61,
   Image: 'TeresaCristinaBragancadeBourbon_JoseLuizRibeiro.jpeg',
   Authors: [authors.JoseLuizRibeiro],
   Title: 'Imperatriz Teresa Cristina Bragança de Bourbon',
@@ -2214,7 +2214,7 @@ export const TeresaCristinaBragancadeBourbon_JoseLuizRibeiro: Heritage = {
 };
 
 export const AmoraLira_EugeneLouisLequesne: Heritage = {
-  ID: 65,
+  ID: 62,
   Image: 'AmoraLira_EugeneLouisLequesne.jpeg',
   Authors: [authors.EugeneLouisLequesne],
   Title: 'Amor à Lira',
@@ -2245,7 +2245,7 @@ export const AmoraLira_EugeneLouisLequesne: Heritage = {
 };
 
 export const DuquedeCaxias_RodolfoBernardelli: Heritage = {
-  ID: 66,
+  ID: 63,
   Image: 'DuquedeCaxias_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: 'Duque de Caxias',
@@ -2287,7 +2287,7 @@ export const DuquedeCaxias_RodolfoBernardelli: Heritage = {
 };
 
 export const BaraodoRioBranco_HildegardoLeaoVelloso: Heritage = {
-  ID: 67,
+  ID: 64,
   Image: 'BaraodoRioBranco_HildegardoLeaoVelloso.jpeg',
   Authors: [authors.HildegardoLeaoVelloso],
   Title: 'Barão do Rio Branco',
@@ -2330,7 +2330,7 @@ export const BaraodoRioBranco_HildegardoLeaoVelloso: Heritage = {
 };
 
 export const EvaristodeMoraes_LaurindoRamos: Heritage = {
-  ID: 68,
+  ID: 65,
   Image: 'EvaristodeMoraes_LaurindoRamos.jpeg',
   Authors: [authors.LaurindoRamos],
   Title: 'Evaristo de Moraes',
@@ -2397,7 +2397,7 @@ export const EvaristodeMoraes_LaurindoRamos: Heritage = {
 };
 
 export const MarechalDeodorodaFonseca_ModestinoKanto: Heritage = {
-  ID: 69,
+  ID: 66,
   Image: 'MarechalDeodorodaFonseca_ModestinoKanto.jpeg',
   Authors: [authors.ModestinoKanto],
   Title: 'Marechal Deodoro da Fonseca',
@@ -2431,7 +2431,7 @@ export const MarechalDeodorodaFonseca_ModestinoKanto: Heritage = {
 };
 
 export const AnaNeri_LuizFerrer: Heritage = {
-  ID: 70,
+  ID: 67,
   Image: 'AnaNeri_LuizFerrer.jpeg',
   Authors: [authors.LuizFerrer],
   Title: 'Ana Néri',
@@ -2464,7 +2464,7 @@ export const AnaNeri_LuizFerrer: Heritage = {
 };
 
 export const OlavoBilac_HumbertoCozzo: Heritage = {
-  ID: 71,
+  ID: 68,
   Image: 'OlavoBilac_HumbertoCozzo.jpeg',
   Authors: [authors.HumbertoCozzo],
   Title: 'Olavo Bilac',
@@ -2503,7 +2503,7 @@ export const OlavoBilac_HumbertoCozzo: Heritage = {
 };
 
 export const RodolfoBernardelli_JoseOtavioCorreaLima: Heritage = {
-  ID: 103,
+  ID: 69,
   Image: 'RodolfoBernardelli_JoseOtavioCorreaLima.jpeg',
   Authors: [authors.JoseOtavioCorreaLima],
   Title: `Rodolfo Bernardelli`,
@@ -2530,7 +2530,7 @@ export const RodolfoBernardelli_JoseOtavioCorreaLima: Heritage = {
 };
 
 export const PedroAmerico_PauloMazzucchelli: Heritage = {
-  ID: 73,
+  ID: 70,
   Image: 'PedroAmerico_PauloMazzucchelli.jpeg',
   Authors: [authors.PauloMazzucchelli],
   Title: 'Pedro Américo',
@@ -2562,7 +2562,7 @@ export const PedroAmerico_PauloMazzucchelli: Heritage = {
 };
 
 export const AlbertoNepomuceno_RodolfoBernardelli: Heritage = {
-  ID: 74,
+  ID: 71,
   Image: 'AlbertoNepomuceno_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: 'Alberto Nepomuceno',
@@ -2590,7 +2590,7 @@ export const AlbertoNepomuceno_RodolfoBernardelli: Heritage = {
 };
 
 export const APaz_SironFranco: Heritage = {
-  ID: 75,
+  ID: 72,
   Image: 'APazAmpulheta_SironFranco.jpeg',
   Authors: [authors.SironFranco],
   Title: 'A Paz',
@@ -2632,7 +2632,7 @@ export const APaz_SironFranco: Heritage = {
 };
 
 export const EdsonLuis_CristinaPozzobon: Heritage = {
-  ID: 76,
+  ID: 73,
   Image: 'EdsonLuis_CristinaPozzobon.jpeg',
   Authors: [authors.CristinaPozzobon],
   Title: 'Edson Luis',
@@ -2659,7 +2659,7 @@ export const EdsonLuis_CristinaPozzobon: Heritage = {
 };
 
 export const MarcilioDias_LuisPaesLeme: Heritage = {
-  ID: 77,
+  ID: 74,
   Image: 'MarcilioDias_LuisPaesLeme.jpeg',
   Authors: [authors.LuisPaesLeme],
   Title: 'Marcílio Dias',
@@ -2697,7 +2697,7 @@ export const MarcilioDias_LuisPaesLeme: Heritage = {
 };
 
 export const BaraodeLadario_Joceil: Heritage = {
-  ID: 78,
+  ID: 75,
   Image: 'BaraodeLadario_Joceil.jpeg',
   Authors: [authors.Joceil],
   Title: 'Barão de Ladário',
@@ -2728,7 +2728,7 @@ export const BaraodeLadario_Joceil: Heritage = {
 };
 
 export const CristianoOttoni_RodolfoBernardelli: Heritage = {
-  ID: 79,
+  ID: 76,
   Image: 'CristianoOttoni_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: 'Cristiano Ottoni',
@@ -2756,7 +2756,7 @@ export const CristianoOttoni_RodolfoBernardelli: Heritage = {
 };
 
 export const SaturninoSoaresMeirelles_Desconhecida: Heritage = {
-  ID: 80,
+  ID: 77,
   Image: 'SaturninoSoaresMeirelles_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: 'Saturnino Soares Meirelles',
@@ -2782,7 +2782,7 @@ export const SaturninoSoaresMeirelles_Desconhecida: Heritage = {
 };
 
 export const ChiquinhaGonzaga_HonorioPecanha: Heritage = {
-  ID: 81,
+  ID: 78,
   Image: 'ChiquinhaGonzaga_HonorioPecanha.jpeg',
   Authors: [authors.HonorioPecanha],
   Title: 'Chiquinha Gonzaga',
@@ -2820,7 +2820,7 @@ export const ChiquinhaGonzaga_HonorioPecanha: Heritage = {
 };
 
 export const IrineuMarinho_BenevenutoBerna: Heritage = {
-  ID: 82,
+  ID: 79,
   Image: 'IrineuMarinho_BenevenutoBerna.jpeg',
   Authors: [authors.BenevenutoBerna],
   Title: `Irineu Marinho`,
@@ -2852,7 +2852,7 @@ export const IrineuMarinho_BenevenutoBerna: Heritage = {
 };
 
 export const PlacidoDeCastro_ArmandoSocratesSchnoor: Heritage = {
-  ID: 83,
+  ID: 80,
   Image: 'PlacidoDeCastro_ArmandoSocratesSchnoor.jpeg',
   Authors: [authors.ArmandoSocratesSchnoor],
   Title: `Plácido de Castro`,
@@ -2889,7 +2889,7 @@ export const PlacidoDeCastro_ArmandoSocratesSchnoor: Heritage = {
 };
 
 export const FontedoTritao_NicolinaVazDeAssisPintodoCouto: Heritage = {
-  ID: 84,
+  ID: 81,
   Image: 'FontedoTritao_NicolinaVazDeAssisPintodoCouto.jpeg',
   Authors: [authors.NicolinaVazDeAssisPintodoCouto],
   Title: `Fonte do Tritão`,
@@ -2915,7 +2915,7 @@ export const FontedoTritao_NicolinaVazDeAssisPintodoCouto: Heritage = {
 };
 
 export const JosePauloSilva_CarlosDelNegro: Heritage = {
-  ID: 85,
+  ID: 82,
   Image: 'JosePauloSilva_CarlosDelNigro.jpeg',
   Authors: [authors.CarlosDelNigro],
   Title: 'Jose Paulo Silva',
@@ -2954,7 +2954,7 @@ export const JosePauloSilva_CarlosDelNegro: Heritage = {
 };
 
 export const AlmiranteJuliodeNoronha_ABraga: Heritage = {
-  ID: 85,
+  ID: 83,
   Image: 'AlmiranteJuliodeNoronha_ABraga.jpeg',
   Authors: [authors.ABraga],
   Title: 'Almirante Julio d eNoronha',
@@ -2981,7 +2981,7 @@ export const AlmiranteJuliodeNoronha_ABraga: Heritage = {
 };
 
 export const RaymundoCorrea_HonorioPecanha: Heritage = {
-  ID: 86,
+  ID: 84,
   Image: 'RaymundoCorrea_HonorioPecanha.jpeg',
   Authors: [authors.HonorioPecanha],
   Title: `Raymundo Corrêa`,
@@ -3012,7 +3012,7 @@ export const RaymundoCorrea_HonorioPecanha: Heritage = {
 };
 
 export const FranciscoBraga_PauloMazzucchelli: Heritage = {
-  ID: 87,
+  ID: 85,
   Image: 'FranciscoBraga_PauloMazzucchelli.jpeg',
   Authors: [authors.PauloMazzucchelli],
   Title: `Francisco Braga`,
@@ -3043,7 +3043,7 @@ export const FranciscoBraga_PauloMazzucchelli: Heritage = {
 };
 
 export const VictorMeirelles_EduardoDeSa: Heritage = {
-  ID: 88,
+  ID: 86,
   Image: 'VictorMeirelles_EduardoDeSa.jpeg',
   Authors: [authors.EduardoDeSa],
   Title: `Victor Meirelles`,
@@ -3081,7 +3081,7 @@ export const VictorMeirelles_EduardoDeSa: Heritage = {
 };
 
 export const MestreValentim_RomeuAlves: Heritage = {
-  ID: 89,
+  ID: 87,
   Image: 'MestreValentim_RomeuAlves.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Mestre Valentim`,
@@ -3114,7 +3114,7 @@ export const MestreValentim_RomeuAlves: Heritage = {
 };
 
 export const CastroAlves_EduardoDeSa: Heritage = {
-  ID: 90,
+  ID: 88,
   Image: 'CastroAlves_EduardoDeSa.jpeg',
   Authors: [authors.EduardoDeSa],
   Title: `Castro Alves`,
@@ -3144,7 +3144,7 @@ export const CastroAlves_EduardoDeSa: Heritage = {
 };
 
 export const FerreiraDeAraujo_RodolfoBernardelli: Heritage = {
-  ID: 91,
+  ID: 89,
   Image: 'FerreiraDeAraujo_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: `Ferreira de Araújo`,
@@ -3183,7 +3183,7 @@ export const FerreiraDeAraujo_RodolfoBernardelli: Heritage = {
 };
 
 export const GoncalvesDias_RodolfoBernardelli: Heritage = {
-  ID: 92,
+  ID: 90,
   Image: 'GoncalvesDias_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: `Gonçalves Dias`,
@@ -3218,7 +3218,7 @@ export const GoncalvesDias_RodolfoBernardelli: Heritage = {
 };
 
 export const Primavera_MathurinMoreau: Heritage = {
-  ID: 93,
+  ID: 91,
   Image: 'Primavera_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: `Primavera`,
@@ -3248,7 +3248,7 @@ export const Primavera_MathurinMoreau: Heritage = {
 };
 
 export const Inverno_GustaveFredericMichel: Heritage = {
-  ID: 94,
+  ID: 92,
   Image: 'Inverno_GustaveFredericMichel.jpeg',
   Authors: [authors.GustaveFredericMichel],
   Title: `Inverno`,
@@ -3277,7 +3277,7 @@ export const Inverno_GustaveFredericMichel: Heritage = {
 };
 
 export const Outono_MathurinMoreau: Heritage = {
-  ID: 95,
+  ID: 93,
   Image: 'Outono_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: `Outono`,
@@ -3307,7 +3307,7 @@ export const Outono_MathurinMoreau: Heritage = {
 };
 
 export const Verao_GustaveFredericMichel: Heritage = {
-  ID: 96,
+  ID: 94,
   Image: 'Verao_GustaveFredericMichel.jpeg',
   Authors: [authors.GustaveFredericMichel],
   Title: `Verão`,
@@ -3340,7 +3340,7 @@ export const Verao_GustaveFredericMichel: Heritage = {
 };
 
 export const NelsonMege_HonorioPecanha: Heritage = {
-  ID: 99,
+  ID: 95,
   Image: 'NelsonMege_HonorioPecanha.jpeg',
   Authors: [authors.HonorioPecanha],
   Title: `Nelson Megé`,
@@ -3367,7 +3367,7 @@ export const NelsonMege_HonorioPecanha: Heritage = {
 };
 
 export const OMascate_HonorioPecanha: Heritage = {
-  ID: 100,
+  ID: 96,
   Image: 'OMascate_HonorioPecanha.jpeg',
   Authors: [authors.HonorioPecanha],
   Title: `O Mascate`,
@@ -3433,7 +3433,7 @@ export const OMascate_HonorioPecanha: Heritage = {
 };
 
 export const LuisdeCamoes_AntonioTaunay: Heritage = {
-  ID: 101,
+  ID: 97,
   Image: 'LuisDeCamoes_AntonioTaunay.jpeg',
   Authors: [authors.AntonioTaunay],
   Title: `Luis de Camões`,
@@ -3462,7 +3462,7 @@ export const LuisdeCamoes_AntonioTaunay: Heritage = {
 };
 
 export const RetanguloVazado_FranzWeissmann: Heritage = {
-  ID: 102,
+  ID: 98,
   Image: 'RetanguloVazado_FranzWeissmann.jpeg',
   Authors: [authors.FranzWeissmann],
   Title: `Retângulo Vazado`,
@@ -3506,7 +3506,7 @@ export const RetanguloVazado_FranzWeissmann: Heritage = {
 };
 
 export const SiqueiraCampos_Desconhecida: Heritage = {
-  ID: 103,
+  ID: 99,
   Image: 'SiqueiraCampos_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Siqueira Campos`,
@@ -3531,7 +3531,7 @@ export const SiqueiraCampos_Desconhecida: Heritage = {
 };
 
 export const AlegoriadaMusica_RodolfoBernardelli: Heritage = {
-  ID: 104,
+  ID: 100,
   Authors: [authors.RodolfoBernardelli],
   Title: `Alegoria da Musica`,
   Material: 'Bronze',
@@ -3555,7 +3555,7 @@ export const AlegoriadaMusica_RodolfoBernardelli: Heritage = {
 };
 
 export const RuiBarbosa_DeoclecianoMartinsDeOliveiraFilho: Heritage = {
-  ID: 105,
+  ID: 101,
   Image: 'RuiBarbosa_DeoclecianoMartinsDeOliveiraFilho.jpeg',
   Authors: [authors.DeoclecianoMartinsDeOliveiraFilho],
   Title: `Rui Barbosa`,
@@ -3582,7 +3582,7 @@ export const RuiBarbosa_DeoclecianoMartinsDeOliveiraFilho: Heritage = {
 };
 
 export const ElevandoSe_JoseResende: Heritage = {
-  ID: 106,
+  ID: 102,
   Image: 'ElevandoSe_JoseResende.jpeg',
   Authors: [authors.JoseResende],
   Title: `Elevando-se`,
@@ -3608,7 +3608,7 @@ export const ElevandoSe_JoseResende: Heritage = {
 };
 
 export const VenusReclinada_JoseResende: Heritage = {
-  ID: 107,
+  ID: 103,
   Image: 'VenusReclinada_JoseResende.jpeg',
   Authors: [authors.JoseResende],
   Title: 'Venus Reclinada',
@@ -3634,7 +3634,7 @@ export const VenusReclinada_JoseResende: Heritage = {
 };
 
 export const FranciscoMignone_BrunoGiorgi: Heritage = {
-  ID: 108,
+  ID: 104,
   Image: 'FranciscoMignone_BrunoGiorgi.jpeg',
   Authors: [authors.BrunoGiorgi],
   Title: `Francisco Mignone`,
@@ -3659,7 +3659,7 @@ export const FranciscoMignone_BrunoGiorgi: Heritage = {
 };
 
 export const Encontro_FranzWeissmann: Heritage = {
-  ID: 109,
+  ID: 105,
   Image: 'Encontro_FranzWeissmann.jpeg',
   Authors: [authors.FranzWeissmann],
   Title: `Encontro`,
@@ -3692,7 +3692,7 @@ export const Encontro_FranzWeissmann: Heritage = {
 };
 
 export const DSebastiaoLeme_HeitorUsai: Heritage = {
-  ID: 110,
+  ID: 106,
   Image: 'DSebastiaoLeme_HeitorUsai.jpeg',
   Authors: [authors.HeitorUsai],
   Title: `D. Sebastiao Leme`,
@@ -3716,7 +3716,7 @@ export const DSebastiaoLeme_HeitorUsai: Heritage = {
 };
 
 export const MonumentoaJuventude_BrunoGiorgi: Heritage = {
-  ID: 111,
+  ID: 107,
   Image: 'MonumentoaJuventude_BrunoGiorgi.jpeg',
   Authors: [authors.BrunoGiorgi],
   Title: `Monumento à Juventude`,
@@ -3744,7 +3744,7 @@ export const MonumentoaJuventude_BrunoGiorgi: Heritage = {
 };
 
 export const AssisChateaubriand_BrunoGiorgi: Heritage = {
-  ID: 112,
+  ID: 108,
   Image: 'AssisChateaubriand_BrunoGiorgi.jpeg',
   Authors: [authors.HeitorUsai],
   Title: `Assis Chateaubriand`,
@@ -3770,7 +3770,7 @@ export const AssisChateaubriand_BrunoGiorgi: Heritage = {
 };
 
 export const Terra_FranzWeissmann: Heritage = {
-  ID: 113,
+  ID: 109,
   Image: 'Terra_FranzWeissmann.jpeg',
   Authors: [authors.FranzWeissmann],
   Title: `Terra`,
@@ -3796,7 +3796,7 @@ export const Terra_FranzWeissmann: Heritage = {
 };
 
 export const ModestinoKanto_HonorioPecanha: Heritage = {
-  ID: 114,
+  ID: 110,
   Image: 'ModestinoKanto_HonorioPecanha.jpeg',
   Authors: [authors.HonorioPecanha],
   Title: `Modestino Kanto`,
@@ -3840,7 +3840,7 @@ export const ModestinoKanto_HonorioPecanha: Heritage = {
 };
 
 export const JoaoCandido_ValterBrito: Heritage = {
-  ID: 115,
+  ID: 111,
   Image: 'JoaoCandido_ValterBrito.jpeg',
   Authors: [authors.ValterBrito],
   Title: `João Candido- Almirante Negro`,
@@ -3881,7 +3881,7 @@ export const JoaoCandido_ValterBrito: Heritage = {
 };
 
 export const DomJoaoVI_BarataFeijo: Heritage = {
-  ID: 116,
+  ID: 112,
   Image: 'DomJoaoVI_BarataFeijo.jpeg',
   Authors: [authors.BarataFeijo],
   Title: `Dom João VI`,
@@ -3921,7 +3921,7 @@ export const DomJoaoVI_BarataFeijo: Heritage = {
 };
 
 export const GeneralOsorio_RodolfoBernardelli: Heritage = {
-  ID: 117,
+  ID: 113,
   Image: 'GeneralOsorio_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: `General Osório`,
@@ -3961,7 +3961,7 @@ export const GeneralOsorio_RodolfoBernardelli: Heritage = {
 };
 
 export const PequenoJornaleiro_AnisioOscarMotta: Heritage = {
-  ID: 118,
+  ID: 114,
   Image: 'PequenoJornaleiro_AnisioOscarMotta.jpeg',
   Authors: [authors.AnisioOscarMotta],
   Title: `Pequeno Jornaleiro`,
@@ -3999,7 +3999,7 @@ export const PequenoJornaleiro_AnisioOscarMotta: Heritage = {
 };
 
 export const JoaoCalvino_JoasPereiraDosPassos: Heritage = {
-  ID: 119,
+  ID: 115,
   Image: 'JoaoCalvino_JoasPereiraDosPassos.jpeg',
   Authors: [authors.JoasPereiraDosPassos],
   Title: `João Calvino`,
@@ -4028,7 +4028,7 @@ export const JoaoCalvino_JoasPereiraDosPassos: Heritage = {
 };
 
 export const ReverendoMathathiasGomes_JoasPereiraDosPassos: Heritage = {
-  ID: 120,
+  ID: 116,
   Image: 'ReverendoMathathiasGomes_JoasPereiraDosPassos.jpeg',
   Authors: [authors.JoasPereiraDosPassos],
   Title: `Reverando Mathathias Gomes`,
@@ -4054,7 +4054,7 @@ export const ReverendoMathathiasGomes_JoasPereiraDosPassos: Heritage = {
 };
 
 export const SemTitulo_IvensMachado: Heritage = {
-  ID: 121,
+  ID: 117,
   Image: 'SemTitulo_IvensMachado.jpeg',
   Authors: [authors.IvensMachado],
   Title: `Sem Titulo`,
@@ -4089,7 +4089,7 @@ export const SemTitulo_IvensMachado: Heritage = {
 };
 
 export const PrincesaIsabel_Desconhecida: Heritage = {
-  ID: 122,
+  ID: 118,
   Image: 'PrincesaIsabel_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Princesa Isabel`,
@@ -4113,7 +4113,7 @@ export const PrincesaIsabel_Desconhecida: Heritage = {
 };
 
 export const SemTitulo_AmilcarDeCastro: Heritage = {
-  ID: 123,
+  ID: 119,
   Image: 'SemTitulo_AmilcardeCastro.jpeg',
   Authors: [authors.AmilcarDeCastro],
   Title: `Sem Título`,
@@ -4174,7 +4174,7 @@ export const SemTitulo_AmilcarDeCastro: Heritage = {
 };
 
 export const Pixinguinha_OttoDumovich: Heritage = {
-  ID: 124,
+  ID: 120,
   Image: 'Pixinguinha_OttoDumovich.jpeg',
   Authors: [authors.OttoDumovich],
   Title: `Pixinguinha`,
@@ -4216,7 +4216,7 @@ export const Pixinguinha_OttoDumovich: Heritage = {
 };
 
 export const Braguinha_OttoDumovich: Heritage = {
-  ID: 124,
+  ID: 121,
   Image: 'Braguinha_OttoDumovich.jpeg',
   Authors: [authors.OttoDumovich],
   Title: `Braguinha`,
@@ -4244,7 +4244,7 @@ export const Braguinha_OttoDumovich: Heritage = {
 };
 
 export const SergioCardoso_Marlota: Heritage = {
-  ID: 125,
+  ID: 122,
   Image: 'SergioCardoso_Marlota.jpeg',
   Authors: [authors.Marlota],
   Title: `Sérgio Cardoso`,
@@ -4272,7 +4272,7 @@ export const SergioCardoso_Marlota: Heritage = {
 };
 
 export const CarlosGomes_UgoTaddey: Heritage = {
-  ID: 126,
+  ID: 123,
   Image: 'CarlosGomes_UgoTaddey.jpeg',
   Authors: [authors.UgoTaddey],
   Title: `Carlos Gomes`,
@@ -4299,7 +4299,7 @@ export const CarlosGomes_UgoTaddey: Heritage = {
 };
 
 export const AndreThevet_CyniraNDantas: Heritage = {
-  ID: 127,
+  ID: 124,
   Image: 'AndreThevet_CyniraNDantas.jpeg',
   Authors: [authors.CyniraNDantas],
   Title: `Andre Thevet`,
@@ -4326,7 +4326,7 @@ export const AndreThevet_CyniraNDantas: Heritage = {
 };
 
 export const BebedouroDosPassarosI_PedroBruno: Heritage = {
-  ID: 128,
+  ID: 125,
   Image: 'BebedouroDosPassarosI_PedroBruno.jpeg',
   Authors: [authors.PedroBruno],
   Title: `Bebedouro dos Passaros I`,
@@ -4353,7 +4353,7 @@ export const BebedouroDosPassarosI_PedroBruno: Heritage = {
 };
 
 export const BebedouroDosPassarosII_PedroBruno: Heritage = {
-  ID: 129,
+  ID: 126,
   Image: 'BebedouroDosPassarosII_PedroBruno.jpeg',
   Authors: [authors.PedroBruno],
   Title: `Bebedouro dos Pássaros II`,
@@ -4380,7 +4380,7 @@ export const BebedouroDosPassarosII_PedroBruno: Heritage = {
 };
 
 export const BebedouroDosPassarosIII_PedroBruno: Heritage = {
-  ID: 130,
+  ID: 127,
   Image: 'BebedouroDosPassarosIII_PedroBruno.jpeg',
   Authors: [authors.PedroBruno],
   Title: `Bebedouro dos Pássaros III`,
@@ -4407,7 +4407,7 @@ export const BebedouroDosPassarosIII_PedroBruno: Heritage = {
 };
 
 export const PedroBruno_PauloMazzucchelli: Heritage = {
-  ID: 131,
+  ID: 128,
   Image: 'PedroBruno_PauloMazzucchelli.jpeg',
   Authors: [authors.PauloMazzucchelli],
   Title: `Pedro Bruno`,
@@ -4434,7 +4434,7 @@ export const PedroBruno_PauloMazzucchelli: Heritage = {
 };
 
 export const GetulioVargas_Desconhecida: Heritage = {
-  ID: 132,
+  ID: 129,
   Image: 'GetulioVargas_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Getulio Vargas`,
@@ -4458,7 +4458,7 @@ export const GetulioVargas_Desconhecida: Heritage = {
 };
 
 export const Golfinho_AugustoSilva: Heritage = {
-  ID: 133,
+  ID: 130,
   Image: 'Golfinho_AugustoSilva.jpeg',
   Authors: [authors.AugustoSilva],
   Title: `Golfinho`,
@@ -4484,7 +4484,7 @@ export const Golfinho_AugustoSilva: Heritage = {
 };
 
 export const Modulo65_AscanioMMM: Heritage = {
-  ID: 134,
+  ID: 131,
   Image: 'Modulo65_AscanioMMM.jpeg',
   Authors: [authors.AscanioMMM],
   Title: `Modulo 6.5`,
@@ -4521,7 +4521,7 @@ export const Modulo65_AscanioMMM: Heritage = {
 };
 
 export const UlyssesGuimaraes_SironFranco: Heritage = {
-  ID: 135,
+  ID: 132,
   Image: 'UlyssesGuimaraes_SironFranco.jpeg',
   Authors: [authors.SironFranco],
   Title: `Homenagem a Ulysses Guimarães`,
@@ -4548,7 +4548,7 @@ export const UlyssesGuimaraes_SironFranco: Heritage = {
 };
 
 export const ChafarizdasTresGracas_RemoBernucci: Heritage = {
-  ID: 136,
+  ID: 133,
   Image: 'ChafarizdasTresGracas_RemoBernucci.jpeg',
   Authors: [authors.RemoBernucci],
   Title: `Chafariz da Tres Graças`,
@@ -4580,7 +4580,7 @@ export const ChafarizdasTresGracas_RemoBernucci: Heritage = {
 };
 
 export const Chafariz_AugusteMartin: Heritage = {
-  ID: 137,
+  ID: 134,
   Image: 'Chafariz_AugusteMartin.jpeg',
   Authors: [authors.AugusteMartin],
   Title: `Chafariz`,
@@ -4609,7 +4609,7 @@ export const Chafariz_AugusteMartin: Heritage = {
 };
 
 export const Indio_JulesJeanJulesSalmson: Heritage = {
-  ID: 138,
+  ID: 135,
   Image: 'Indio_JulesJeanJulesSalmson.jpeg',
   Authors: [authors.JulesJeanJulesSalmson],
   Title: `Índio`,
@@ -4648,7 +4648,7 @@ export const Indio_JulesJeanJulesSalmson: Heritage = {
 };
 
 export const Leao_HippolyteFrancoisAugusteHippolytePeyrol: Heritage = {
-  ID: 139,
+  ID: 136,
   Image: 'Leao_HippolyteFrancoisAugusteHippolytePeyrol.jpeg',
   Authors: [authors.HippolyteFrancoisAugusteHippolytePeyrol],
   Title: `Leão`,
@@ -4677,7 +4677,7 @@ export const Leao_HippolyteFrancoisAugusteHippolytePeyrol: Heritage = {
 };
 
 export const India_JulesJeanJulesSalmson: Heritage = {
-  ID: 140,
+  ID: 137,
   Image: 'India_JulesJeanJulesSalmson.jpeg',
   Authors: [authors.JulesJeanJulesSalmson],
   Title: `Índia`,
@@ -4702,7 +4702,7 @@ export const India_JulesJeanJulesSalmson: Heritage = {
 };
 
 export const CristoRedentor_PaulLandowski: Heritage = {
-  ID: 141,
+  ID: 138,
   Image: 'CristoRedentor_PaulLandowski.jpeg',
   Authors: [authors.PaulLandowski],
   Title: `Cristo Redentor`,
@@ -4743,7 +4743,7 @@ export const CristoRedentor_PaulLandowski: Heritage = {
 };
 
 export const Escravo_MarliMazeredo: Heritage = {
-  ID: 142,
+  ID: 139,
   Image: 'Escravo_MarliMazeredo.jpeg',
   Authors: [authors.MarliMazeredo],
   Title: `Escravo`,
@@ -4771,7 +4771,7 @@ export const Escravo_MarliMazeredo: Heritage = {
 };
 
 export const FonteWallaceI_CharlesAugusteLebourg: Heritage = {
-  ID: 143,
+  ID: 140,
   Image: 'FonteWallaceI_CharlesAugusteLebourg.jpeg',
   Authors: [authors.CharlesAugusteLebourg],
   Title: `Fonte Wallace`,
@@ -4797,7 +4797,7 @@ export const FonteWallaceI_CharlesAugusteLebourg: Heritage = {
 };
 
 export const AlmiranteCochrane_Lana: Heritage = {
-  ID: 144,
+  ID: 141,
   Image: 'AlmiranteCochrane_Lana.jpeg',
   Authors: [authors.Lana],
   Title: `Almirante Cochrane`,
@@ -4824,7 +4824,7 @@ export const AlmiranteCochrane_Lana: Heritage = {
 };
 
 export const ACleydePradoMaia_EdgarDuvivier: Heritage = {
-  ID: 145,
+  ID: 142,
   Image: 'ACleydePradoMaia_EdgarDuvivier.jpeg',
   Authors: [authors.EdgarDuvivier],
   Title: `A Cleyde Prado Maia`,
@@ -4851,7 +4851,7 @@ export const ACleydePradoMaia_EdgarDuvivier: Heritage = {
 };
 
 export const PaulaFreitas_BenevenutoBerna: Heritage = {
-  ID: 146,
+  ID: 143,
   Image: 'PaulaFreitas_BenevenutoBerna.jpeg',
   Authors: [authors.BenevenutoBerna],
   Title: `Paula Freitas`,
@@ -4879,7 +4879,7 @@ export const PaulaFreitas_BenevenutoBerna: Heritage = {
 };
 
 export const AfraniodeMeloFranco_BrunoGiorgi: Heritage = {
-  ID: 146,
+  ID: 144,
   Image: 'AfraniodeMeloFranco_BrunoGiorgi.jpeg',
   Authors: [authors.BrunoGiorgi],
   Title: `Afrânio de Mello Franco`,
@@ -4904,7 +4904,7 @@ export const AfraniodeMeloFranco_BrunoGiorgi: Heritage = {
 };
 
 export const FranciscoPaulaMayrink_PinedoParis: Heritage = {
-  ID: 147,
+  ID: 145,
   Image: 'FranciscoPaulaMayrink_PinedoParis.jpeg',
   Authors: [authors.PinedoParis],
   Title: `Francisco Paula Mayrink`,
@@ -4931,7 +4931,7 @@ export const FranciscoPaulaMayrink_PinedoParis: Heritage = {
 };
 
 export const Fidelidade_BenevenutoBerna: Heritage = {
-  ID: 148,
+  ID: 146,
   Image: 'Fidelidade_BenevenutoBerna.jpeg',
   Authors: [authors.BenevenutoBerna],
   Title: `Fidelidade`,
@@ -4958,7 +4958,7 @@ export const Fidelidade_BenevenutoBerna: Heritage = {
 };
 
 export const XavierdeBrito_ElzaCansancaoMedeiros: Heritage = {
-  ID: 149,
+  ID: 147,
   Image: 'XavierdeBrito_ElzaCansancaoMedeiros.jpeg',
   Authors: [authors.ElzaCasancaoDeMedeiros],
   Title: `Coronel Xavier de Brito`,
@@ -4985,7 +4985,7 @@ export const XavierdeBrito_ElzaCansancaoMedeiros: Heritage = {
 };
 
 export const LamartineBabo_Desconhecida: Heritage = {
-  ID: 150,
+  ID: 148,
   Image: 'LamartineBabo_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Lamartine Babo`,
@@ -5012,7 +5012,7 @@ export const LamartineBabo_Desconhecida: Heritage = {
 };
 
 export const LuisGastaoDEscragnolleDoria_CurzioZani: Heritage = {
-  ID: 151,
+  ID: 149,
   Image: 'LuisGastaoDEscragnolleDoria_CurzioZani.jpeg',
   Authors: [authors.CurzioZani],
   Title: `Luis Gastão D'Escragnolle Doria`,
@@ -5039,7 +5039,7 @@ export const LuisGastaoDEscragnolleDoria_CurzioZani: Heritage = {
 };
 
 export const OswaldoDinizMagalhaes_MateusFernandes: Heritage = {
-  ID: 152,
+  ID: 150,
   Image: 'OswaldoDinizMagalhaes_MateusFernandes.jpeg',
   Authors: [authors.MateusFernandes],
   Title: `Oswaldo Diniz Magalhães`,
@@ -5066,7 +5066,7 @@ export const OswaldoDinizMagalhaes_MateusFernandes: Heritage = {
 };
 
 export const BarletJames_RuffoFanucchi: Heritage = {
-  ID: 153,
+  ID: 151,
   Image: 'BarletJames_RuffoFanucchi.jpeg',
   Authors: [authors.RuffoFanucchi],
   Title: `Bartlet James`,
@@ -5098,7 +5098,7 @@ export const BarletJames_RuffoFanucchi: Heritage = {
 };
 
 export const ThomasDelfinoDosSantos_RuffoFanucchi: Heritage = {
-  ID: 154,
+  ID: 152,
   Image: 'ThomasDelfinoDosSantos_RuffoFanucchi.jpeg',
   Authors: [authors.RuffoFanucchi],
   Title: `Thomas Delfino dos Santos`,
@@ -5127,7 +5127,7 @@ e recolocado em 1996.`,
 };
 
 export const DomPedroI_Desconhecida: Heritage = {
-  ID: 155,
+  ID: 153,
   Image: 'DomPedroI_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Dom Pedro I`,
@@ -5155,7 +5155,7 @@ export const DomPedroI_Desconhecida: Heritage = {
 };
 
 export const SaoCristovao_Desconhecida: Heritage = {
-  ID: 156,
+  ID: 154,
   Image: 'SaoCristovao_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `São Cristovão`,
@@ -5182,7 +5182,7 @@ export const SaoCristovao_Desconhecida: Heritage = {
 };
 
 export const JoseBonifacio_MarcosAndreSales: Heritage = {
-  ID: 157,
+  ID: 155,
   Image: 'JoseBonifacio_MarcosAndreSales.jpeg',
   Authors: [authors.MarcosAndreSales],
   Title: `José Bonifácio `,
@@ -5209,7 +5209,7 @@ export const JoseBonifacio_MarcosAndreSales: Heritage = {
 };
 
 export const NiloPecanha_NicolinaVazDeAssisPintodoCouto: Heritage = {
-  ID: 158,
+  ID: 156,
   Image: 'NiloPecanha_NicolinaVazDeAssisPintodoCouto.jpeg',
   Authors: [authors.NicolinaVazDeAssisPintodoCouto],
   Title: `Nilo Peçanha`,
@@ -5236,7 +5236,7 @@ export const NiloPecanha_NicolinaVazDeAssisPintodoCouto: Heritage = {
 };
 
 export const SerpentedoLago_NicolinaVazDeAssisPintodoCouto: Heritage = {
-  ID: 159,
+  ID: 157,
   Image: 'SerpentedoLago_NicolinaVazDeAssisPintodoCouto.jpeg',
   Authors: [authors.NicolinaVazDeAssisPintodoCouto],
   Title: `Serpente`,
@@ -5264,7 +5264,7 @@ export const SerpentedoLago_NicolinaVazDeAssisPintodoCouto: Heritage = {
 };
 
 export const CantodasSereias_NicolinaVazDeAssisPintodoCouto: Heritage = {
-  ID: 160,
+  ID: 158,
   Image: 'CantodasSereias_NicolinaVazDeAssisPintodoCouto.jpeg',
   Authors: [authors.NicolinaVazDeAssisPintodoCouto],
   Title: `Canto das Sereias`,
@@ -5290,7 +5290,7 @@ export const CantodasSereias_NicolinaVazDeAssisPintodoCouto: Heritage = {
 };
 
 export const LuizGonzaga_JoasPereiraDosPassos: Heritage = {
-  ID: 162,
+  ID: 159,
   Image: 'LuizGonzaga_JoasPereiraDosPassos.jpeg',
   Authors: [authors.JoasPereiraDosPassos],
   Title: `Luiz Gonzaga`,
@@ -5317,7 +5317,7 @@ export const LuizGonzaga_JoasPereiraDosPassos: Heritage = {
 };
 
 export const PedroI_Desconhecida: Heritage = {
-  ID: 163,
+  ID: 160,
   Image: 'PedroI_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Dom Pedro I`,
@@ -5345,7 +5345,7 @@ export const PedroI_Desconhecida: Heritage = {
 };
 
 export const Cartola_OttoDumovich: Heritage = {
-  ID: 164,
+  ID: 161,
   Image: 'Cartola_OttoDumovich.jpeg',
   Authors: [authors.OttoDumovich],
   Title: `Cartola`,
@@ -5372,7 +5372,7 @@ export const Cartola_OttoDumovich: Heritage = {
 };
 
 export const RenatoRusso_Ique: Heritage = {
-  ID: 164,
+  ID: 162,
   Image: 'RenatoRusso_Ique.jpeg',
   Authors: [authors.Ique],
   Title: `Renato Russo`,
@@ -5398,7 +5398,7 @@ export const RenatoRusso_Ique: Heritage = {
 };
 
 export const EscravaAnastacia_JaimeSampaio: Heritage = {
-  ID: 165,
+  ID: 163,
   Image: 'EscravaAnastacia_JaimeSampaio.jpeg',
   Authors: [authors.JaimeSampaio],
   Title: `Escrava Anastácia`,
@@ -5426,7 +5426,7 @@ export const EscravaAnastacia_JaimeSampaio: Heritage = {
 };
 
 export const FonteMedusa_Desconhecida: Heritage = {
-  ID: 166,
+  ID: 164,
   Image: 'FonteMedusa_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Fonte Medusa`,
@@ -5452,7 +5452,7 @@ export const FonteMedusa_Desconhecida: Heritage = {
 };
 
 export const HelenoDaCostaBrandao_HonorioPecanha: Heritage = {
-  ID: 167,
+  ID: 165,
   Image: 'HelenoDaCostaBrandao_HonorioPecanha.jpeg',
   Authors: [authors.HonorioPecanha],
   Title: `Heleno da Costa Brandão`,
@@ -5479,7 +5479,7 @@ export const HelenoDaCostaBrandao_HonorioPecanha: Heritage = {
 };
 
 export const AosHahnemannianos_Desconhecida: Heritage = {
-  ID: 168,
+  ID: 166,
   Image: 'AosHahnemannianos_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Aos Hahnemannianos- Rodrigues Galhardo, Joaquim Murtinho, Licínio Cardoso, Braga e Costa e Dias da Cruz`,
@@ -5507,7 +5507,7 @@ export const AosHahnemannianos_Desconhecida: Heritage = {
 };
 
 export const NoelRosa_AlfredoHerculanoFreixo: Heritage = {
-  ID: 170,
+  ID: 167,
   Image: 'NoelRosa_AlfredoHerculanoFreixo.jpeg',
   Authors: [authors.AlfredoHerculanoFreixo],
   Title: `Noel Rosa`,
@@ -5535,7 +5535,7 @@ export const NoelRosa_AlfredoHerculanoFreixo: Heritage = {
 };
 
 export const NoelRosa_JoasPereiraDosPassos: Heritage = {
-  ID: 171,
+  ID: 168,
   Image: 'NoelRosa_JoasPereiraDosPassos.jpeg',
   Authors: [authors.JoasPereiraDosPassos],
   Title: `Noel Rosa`,
@@ -5565,7 +5565,7 @@ export const NoelRosa_JoasPereiraDosPassos: Heritage = {
 };
 
 export const NoelRosa_GilbertoMandarino: Heritage = {
-  ID: 172,
+  ID: 169,
   Image: 'NoelRosa_GilbertoMandarino.jpeg',
   Authors: [authors.GilbertoMandarino],
   Title: `Noel Rosa`,
@@ -5592,7 +5592,7 @@ export const NoelRosa_GilbertoMandarino: Heritage = {
 };
 
 export const PedroErnesto_BenevenutoBerna: Heritage = {
-  ID: 173,
+  ID: 170,
   Image: 'PedroErnesto_BenevenutoBerna.jpeg',
   Authors: [authors.BenevenutoBerna],
   Title: `Pedro Ernesto`,
@@ -5619,7 +5619,7 @@ export const PedroErnesto_BenevenutoBerna: Heritage = {
 };
 
 export const AJuventudeACulturaEAoEsporte_HaroldoBarroso: Heritage = {
-  ID: 174,
+  ID: 171,
   Image: 'AJuventudeACulturaEAoEsporte_HaroldoBarroso.jpeg',
   Authors: [authors.HaroldoBarroso],
   Title: `A  Juventude, a Cultura e ao Esporte`,
@@ -5654,7 +5654,7 @@ export const AJuventudeACulturaEAoEsporte_HaroldoBarroso: Heritage = {
 };
 
 export const AosCampeoesdoMundoBellini_MateusFernandes: Heritage = {
-  ID: 175,
+  ID: 172,
   Image: 'AosCampeoesdoMundoBellini_MateusFernandes.jpeg',
   Authors: [authors.MateusFernandes],
   Title: `Aos Campeões do Mundo -  Bellini e outros`,
@@ -5681,7 +5681,7 @@ export const AosCampeoesdoMundoBellini_MateusFernandes: Heritage = {
 };
 
 export const EdsonPassos_HildegardoLeaoVelloso: Heritage = {
-  ID: 176,
+  ID: 173,
   Image: 'EdsonPassos_HildegardoLeaoVelloso.jpeg',
   Authors: [authors.HildegardoLeaoVelloso],
   Title: `Edson Passos`,
@@ -5708,7 +5708,7 @@ export const EdsonPassos_HildegardoLeaoVelloso: Heritage = {
 };
 
 export const IrmaoGoncalvesXavier_Desconhecida: Heritage = {
-  ID: 177,
+  ID: 174,
   Image: 'IrmaoGoncalvesXavier_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Irmão Gonçalves Xavier`,
@@ -5736,7 +5736,7 @@ export const IrmaoGoncalvesXavier_Desconhecida: Heritage = {
 };
 
 export const SaoMaron_RomeuAlves: Heritage = {
-  ID: 179,
+  ID: 175,
   Image: 'SaoMaron_RomeuAlves.jpeg',
   Authors: [authors.RomeuAlves],
   Title: `São Maron`,
@@ -5764,7 +5764,7 @@ export const SaoMaron_RomeuAlves: Heritage = {
 };
 
 export const SaoCharbel_RomeuAlves: Heritage = {
-  ID: 180,
+  ID: 176,
   Image: 'SaoCharbel_RomeuAlves.jpeg',
   Authors: [authors.RomeuAlves],
   Title: `São Charbel`,
@@ -5793,7 +5793,7 @@ export const SaoCharbel_RomeuAlves: Heritage = {
 };
 
 export const AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto: Heritage = {
-  ID: 181,
+  ID: 177,
   Image: 'AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto.jpeg',
   Authors: [authors.NicolinaVazDeAssisPintodoCouto],
   Title: `Auguste François Marie Glaziou`,
@@ -5820,7 +5820,7 @@ export const AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto: Heritag
 };
 
 export const DomPedroII_JeanMagrou_HeitorDaSilvaCosta: Heritage = {
-  ID: 182,
+  ID: 178,
   Image: 'DomPedroII_JeanMagrou_HeitorDaSilvaCosta.jpeg',
   Authors: [authors.JeanMagrou, authors.HeitorDaSilvaCosta],
   Title: `Dom Pedro II`,
@@ -5853,7 +5853,7 @@ export const DomPedroII_JeanMagrou_HeitorDaSilvaCosta: Heritage = {
 };
 
 export const ImperatrizLeopoldina_EdgarDuvivierFilho: Heritage = {
-  ID: 183,
+  ID: 179,
   Image: 'ImperatrizLeopoldina_EdgarDuvivierFilho.jpeg',
   Authors: [authors.EdgarDuvivierFilho],
   Title: `Imperatriz Leopoldina`,
@@ -5887,7 +5887,7 @@ export const ImperatrizLeopoldina_EdgarDuvivierFilho: Heritage = {
 };
 
 export const FranciscoDeMeloPalheta_Desconhecida: Heritage = {
-  ID: 184,
+  ID: 180,
   Authors: [authors.Desconhecida],
   Title: `Francisco de Melo Palheta`,
   Material: 'mármore',
@@ -5911,7 +5911,7 @@ export const FranciscoDeMeloPalheta_Desconhecida: Heritage = {
 };
 
 export const Brasil_DanielBellionGomesPinto: Heritage = {
-  ID: 161,
+  ID: 181,
   Image: 'Brasil_DanielBellionGomesPinto.jpeg',
   Authors: [authors.DanielBellionGomesPinto],
   Title: `Brasil`,
@@ -5942,7 +5942,7 @@ export const Brasil_DanielBellionGomesPinto: Heritage = {
 };
 
 export const AgripinoGrieco_DanielCrow_CurzioZani: Heritage = {
-  ID: 185,
+  ID: 182,
   Image: 'AgripinoGrieco_DanielCrow_CurzioZani.jpeg',
   Authors: [authors.DanielCrow, authors.CurzioZani],
   Title: `Agripino Grieco`,
@@ -5978,7 +5978,7 @@ export const AgripinoGrieco_DanielCrow_CurzioZani: Heritage = {
 };
 
 export const AlegoriaAoComercio_Desconhecida: Heritage = {
-  ID: 186,
+  ID: 183,
   Authors: [authors.Desconhecida],
   Title: `Alegoria ao Comércio`,
   Material: 'mármore',
@@ -6001,7 +6001,7 @@ export const AlegoriaAoComercio_Desconhecida: Heritage = {
 };
 
 export const AristidesCaire_TitoBernucci: Heritage = {
-  ID: 187,
+  ID: 184,
   Image: 'AristidesCaire_TitoBernucci.jpeg',
   Authors: [authors.TitoBernucci],
   Title: `Aristides Caire`,
@@ -6026,7 +6026,7 @@ export const AristidesCaire_TitoBernucci: Heritage = {
 };
 
 export const BaraodoRioBranco_JoaoTurin: Heritage = {
-  ID: 188,
+  ID: 185,
   Image: 'BaraodoRioBranco_JoaoTurin.jpeg',
   Authors: [authors.JoaoTurin],
   Title: `Barão do Rio Branco`,
@@ -6053,7 +6053,7 @@ export const BaraodoRioBranco_JoaoTurin: Heritage = {
 };
 
 export const NiltonSantos_EdgarDuvivierFilho: Heritage = {
-  ID: 189,
+  ID: 186,
   Image: 'NiltonSantos_EdgarDuvivierFilho.jpeg',
   Authors: [authors.EdgarDuvivierFilho],
   Title: `Nilton Santos`,
@@ -6081,7 +6081,7 @@ export const NiltonSantos_EdgarDuvivierFilho: Heritage = {
 };
 
 export const OrlandoSilva_MiguelPastor: Heritage = {
-  ID: 190,
+  ID: 187,
   Image: 'OrlandoSilva_MiguelPastor.jpeg',
   Authors: [authors.MiguelPastor],
   Title: `Orlando Silva`,
@@ -6108,7 +6108,7 @@ export const OrlandoSilva_MiguelPastor: Heritage = {
 };
 
 export const ChafarizDaExposicaoNacional1908_Desconhecida: Heritage = {
-  ID: 191,
+  ID: 188,
   Image: 'ChafarizDaExposicaoNacional1908_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Chafariz da Exposição Nacional de 1908`,
@@ -6132,7 +6132,7 @@ export const ChafarizDaExposicaoNacional1908_Desconhecida: Heritage = {
 };
 
 export const MarechalMascarenhasdeMoraes_IrmaosBernardini: Heritage = {
-  ID: 192,
+  ID: 189,
   Image: 'MarechalMascarenhasdeMoraes_IrmaosBernardini.jpeg',
   Authors: [authors.IrmãosBernardini],
   Title: `Marechal Mascarenhas de Moraes`,
@@ -6158,7 +6158,7 @@ export const MarechalMascarenhasdeMoraes_IrmaosBernardini: Heritage = {
 };
 
 export const PaulHarris_Desconhecida: Heritage = {
-  ID: 193,
+  ID: 190,
   Image: 'PaulHarris_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Paul Harris`,
@@ -6185,7 +6185,7 @@ export const PaulHarris_Desconhecida: Heritage = {
 };
 
 export const CarlosAlbertodaCruzWenceslau_Desconhecida: Heritage = {
-  ID: 952,
+  ID: 191,
   Image: 'CarlosAlbertodaCruzWenceslau_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Carlos Alberto da Cruz Wenceslau`,
@@ -6206,7 +6206,7 @@ export const CarlosAlbertodaCruzWenceslau_Desconhecida: Heritage = {
 };
 
 export const MaedAgua_NewtonSa: Heritage = {
-  ID: 196,
+  ID: 192,
   Image: 'MaedAgua_NewtonSa.jpeg',
   Authors: [authors.NewtonSa],
   Title: `Mãe d’Água`,
@@ -6237,7 +6237,7 @@ export const MaedAgua_NewtonSa: Heritage = {
 };
 
 export const ExudosVentos_MarioCravoNeto: Heritage = {
-  ID: 197,
+  ID: 193,
   Image: 'ExudosVentos_MarioCravoNeto.jpeg',
   Authors: [authors.MarioCravoNeto],
   Title: `Exú dos Ventos`,
@@ -6266,7 +6266,7 @@ export const ExudosVentos_MarioCravoNeto: Heritage = {
 };
 
 export const AlexanderFleming_LeonardoLima: Heritage = {
-  ID: 198,
+  ID: 194,
   Authors: [authors.LeonardoLima],
   Title: `Alexander Fleming`,
   Material: 'Bronze',
@@ -6291,7 +6291,7 @@ export const AlexanderFleming_LeonardoLima: Heritage = {
 };
 
 export const LimaBarreto_FranciscoAndrade: Heritage = {
-  ID: 199,
+  ID: 195,
   Image: 'LimaBarreto_FranciscoAndrade.jpeg',
   Authors: [authors.FranciscoAndrade],
   Title: `Lima Barreto`,
@@ -6326,7 +6326,7 @@ export const LimaBarreto_FranciscoAndrade: Heritage = {
 };
 
 export const CarmenMiranda_MateusFernandes: Heritage = {
-  ID: 200,
+  ID: 196,
   Image: 'CarmenMiranda_MateusFernandes.jpeg',
   Authors: [authors.MateusFernandes],
   Title: `Carmen Miranda`,
@@ -6353,7 +6353,7 @@ export const CarmenMiranda_MateusFernandes: Heritage = {
 };
 
 export const CastroAlves_ModestinoKanto: Heritage = {
-  ID: 201,
+  ID: 197,
   Image: 'CastroAlves_ModestinoKanto.jpeg',
   Authors: [authors.ModestinoKanto],
   Title: `Castro Alves`,
@@ -6379,7 +6379,7 @@ export const CastroAlves_ModestinoKanto: Heritage = {
 };
 
 export const Leao_Desconhecida: Heritage = {
-  ID: 202,
+  ID: 198,
   Image: 'Leao_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Leão`,
@@ -6410,7 +6410,7 @@ export const Leao_Desconhecida: Heritage = {
 };
 
 export const IndiaI_JulesJeanJulesSalmson: Heritage = {
-  ID: 203,
+  ID: 199,
   Image: 'IndiaI_JulesJeanJulesSalmson.jpeg',
   Authors: [authors.JulesJeanJulesSalmson],
   Title: `Índia`,
@@ -6438,7 +6438,7 @@ export const IndiaI_JulesJeanJulesSalmson: Heritage = {
 };
 
 export const Mae_RuiLeal: Heritage = {
-  ID: 204,
+  ID: 200,
   Image: 'Mae_RuiLeal.jpeg',
   Authors: [authors.RuiLeal],
   Title: `Mãe`,
@@ -6465,7 +6465,7 @@ export const Mae_RuiLeal: Heritage = {
 };
 
 export const PedroFernandes_EdgarDuvivierFilho: Heritage = {
-  ID: 205,
+  ID: 201,
   Image: 'PedroFernandes_EdgarDuvivier.jpeg',
   Authors: [authors.EdgarDuvivierFilho],
   Title: `Pedro Fernandes`,
@@ -6493,7 +6493,7 @@ export const PedroFernandes_EdgarDuvivierFilho: Heritage = {
 };
 
 export const SaoCristovao_SergioBertoni: Heritage = {
-  ID: 206,
+  ID: 202,
   Image: 'SaoCristovao_SergioBertoni.jpeg',
   Authors: [authors.SergioBertoni],
   Title: `São Cristóvão`,
@@ -6520,7 +6520,7 @@ export const SaoCristovao_SergioBertoni: Heritage = {
 };
 
 export const VicenteDeCarvalho_RuffoFanucchi: Heritage = {
-  ID: 207,
+  ID: 203,
   Image: 'VicenteDeCarvalho_RuffoFanucchi.jpeg',
   Authors: [authors.RuffoFanucchi],
   Title: `Vicente de Carvalho`,
@@ -6546,7 +6546,7 @@ export const VicenteDeCarvalho_RuffoFanucchi: Heritage = {
 };
 
 export const FonteWallaceII_CharlesAugusteLebourg: Heritage = {
-  ID: 208,
+  ID: 204,
   Image: 'FonteWallaceII_CharlesAugusteLebourg.jpeg',
   Authors: [authors.CharlesAugusteLebourg],
   Title: `Fonte Wallace`,
@@ -6572,7 +6572,7 @@ export const FonteWallaceII_CharlesAugusteLebourg: Heritage = {
 };
 
 export const Bastoes_CeleidaTostes: Heritage = {
-  ID: 209,
+  ID: 205,
   Image: 'Bastoes_CeleidaTostes.jpeg',
   Authors: [authors.CeleidaTostes],
   Title: `Bastões`,
@@ -6597,7 +6597,7 @@ export const Bastoes_CeleidaTostes: Heritage = {
 };
 
 export const Roda_CeleidaTostes: Heritage = {
-  ID: 210,
+  ID: 206,
   Image: 'Roda_CeleidaTostes.jpeg',
   Authors: [authors.CeleidaTostes],
   Title: `Roda`,
@@ -6627,7 +6627,7 @@ export const Roda_CeleidaTostes: Heritage = {
 };
 
 export const Mo_CeleidaTostes: Heritage = {
-  ID: 211,
+  ID: 207,
   Image: 'Mo_CeleidaTostes.jpeg',
   Authors: [authors.CeleidaTostes],
   Title: `Mó`,
@@ -6657,7 +6657,7 @@ export const Mo_CeleidaTostes: Heritage = {
 };
 
 export const Contemplacao_JesperNeewgaard: Heritage = {
-  ID: 212,
+  ID: 208,
   Image: 'Contemplacao_JesperNeewgaard.jpeg',
   Authors: [authors.JesperNeewgaard],
   Title: `Contemplação`,
@@ -6687,7 +6687,7 @@ export const Contemplacao_JesperNeewgaard: Heritage = {
 };
 
 export const Indio_CharlesAugusteLebourg: Heritage = {
-  ID: 213,
+  ID: 209,
   Authors: [authors.CharlesAugusteLebourg],
   Title: `Indio`,
   Material: 'ferro fundido',
@@ -6710,7 +6710,7 @@ export const Indio_CharlesAugusteLebourg: Heritage = {
 };
 
 export const SantosDumont_Desconhecida: Heritage = {
-  ID: 214,
+  ID: 210,
   Image: 'SantosDumont_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Santos Dumont`,
@@ -6740,7 +6740,7 @@ export const SantosDumont_Desconhecida: Heritage = {
 };
 
 export const BaraodeItamarati_PauloMazzucchelli: Heritage = {
-  ID: 215,
+  ID: 211,
   Image: 'BaraodeItamarati_PauloMazzucchelli.jpeg',
   Authors: [authors.PauloMazzucchelli],
   Title: `Rocha Leão, o Barão de Itamarati`,
@@ -6767,7 +6767,7 @@ export const BaraodeItamarati_PauloMazzucchelli: Heritage = {
 };
 
 export const LineudePaulaMachado_HildegardoLeaoVelloso: Heritage = {
-  ID: 216,
+  ID: 212,
   Image: 'LineudePaulaMachado_HildegardoLeaoVelloso.jpeg',
   Authors: [authors.HildegardoLeaoVelloso],
   Title: `Lineu de Paula Machado`,
@@ -6794,7 +6794,7 @@ export const LineudePaulaMachado_HildegardoLeaoVelloso: Heritage = {
 };
 
 export const Arvore_HelioPelegrino: Heritage = {
-  ID: 217,
+  ID: 213,
   Image: 'Arvore_HelioPelegrino.jpeg',
   Authors: [authors.HelioPelegrino],
   Title: `Arvore`,
@@ -6819,7 +6819,7 @@ export const Arvore_HelioPelegrino: Heritage = {
 };
 
 export const ProtecaooCaoeaCrianca_HippolyteFrancoisAugusteHippolytePeyrol: Heritage = {
-  ID: 219,
+  ID: 214,
   Image: 'ProtecaooCaoeaCrianca_HippolyteFrancoisAugusteHippolytePeyrol.jpeg',
   Authors: [authors.MateusFernandes],
   Title: `Proteção, o Cão e a Criança`,
@@ -6850,7 +6850,7 @@ export const ProtecaooCaoeaCrianca_HippolyteFrancoisAugusteHippolytePeyrol: Heri
 };
 
 export const SemTitulo_MariaLuciaPivetti: Heritage = {
-  ID: 220,
+  ID: 215,
   Authors: [authors.MariaLuciaPivetti],
   Title: `Sem título`,
   Material: 'Aço',
@@ -6874,7 +6874,7 @@ export const SemTitulo_MariaLuciaPivetti: Heritage = {
 };
 
 export const QuadradoemTorcaonoEspaco_FranzWeissmann: Heritage = {
-  ID: 221,
+  ID: 216,
   Image: 'QuadradoemTorcaonoEspaco_FranzWeissmann.jpeg',
   Authors: [authors.FranzWeissmann],
   Title: `Quadrado em Torção no Espaço`,
@@ -6903,7 +6903,7 @@ export const QuadradoemTorcaonoEspaco_FranzWeissmann: Heritage = {
 };
 
 export const AlbertoIReidaBelgica_LaurindoRamos: Heritage = {
-  ID: 222,
+  ID: 217,
   Image: 'AlbertoIReidaBelgica_LaurindoRamos.jpeg',
   Authors: [authors.LaurindoRamos],
   Title: `Alberto I Rei da Belgica`,
@@ -6933,7 +6933,7 @@ export const AlbertoIReidaBelgica_LaurindoRamos: Heritage = {
 };
 
 export const Mercurio_Desconhecida: Heritage = {
-  ID: 223,
+  ID: 218,
   Image: 'Mercurio_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Mercúrio`,
@@ -6962,7 +6962,7 @@ export const Mercurio_Desconhecida: Heritage = {
 };
 
 export const ClementinoFraga_GiulioStarace: Heritage = {
-  ID: 224,
+  ID: 219,
   Image: 'ClementinoFraga_GiulioStarace.jpeg',
   Authors: [authors.GiulioStarace],
   Title: `Clementino Fraga`,
@@ -6994,7 +6994,7 @@ export const ClementinoFraga_GiulioStarace: Heritage = {
 };
 
 export const MulherComCornucopia_PierreLoison: Heritage = {
-  ID: 225,
+  ID: 220,
   Image: 'MulherComCornucopia_PierreLoison.jpeg',
   Authors: [authors.PierreLoison],
   Title: `Mulher Com Cornucopia`,
@@ -7017,7 +7017,7 @@ export const MulherComCornucopia_PierreLoison: Heritage = {
 };
 
 export const FonteWallaceIII_CharlesAugusteLebourg: Heritage = {
-  ID: 226,
+  ID: 221,
   Image: 'FonteWallaceIII_CharlesAugusteLebourg.jpeg',
   Authors: [authors.CharlesAugusteLebourg],
   Title: `Fonte Wallace`,
@@ -7045,7 +7045,7 @@ export const FonteWallaceIII_CharlesAugusteLebourg: Heritage = {
 };
 
 export const TomJobim_ChristinaMotta: Heritage = {
-  ID: 227,
+  ID: 222,
   Image: 'TomJobim_ChristinaMotta.jpeg',
   Authors: [authors.ChristinaMotta],
   Title: `Tom Jobim`,
@@ -7070,7 +7070,7 @@ export const TomJobim_ChristinaMotta: Heritage = {
 };
 
 export const IsmaelSilva_OttoDumovich: Heritage = {
-  ID: 227,
+  ID: 223,
   Image: 'IsmaelSilva_OttoDumovich.jpeg',
   Authors: [authors.OttoDumovich],
   Title: `Ismael Silva`,
@@ -7096,7 +7096,7 @@ export const IsmaelSilva_OttoDumovich: Heritage = {
 };
 
 export const PioCorreia_AlicePittaluga: Heritage = {
-  ID: 228,
+  ID: 224,
   Image: 'PioCorreia_AlicePittaluga.jpeg',
   Authors: [authors.AlicePittaluga],
   Title: `Pio Correia`,
@@ -7121,7 +7121,7 @@ export const PioCorreia_AlicePittaluga: Heritage = {
 };
 
 export const CamposPorto_PauloMazzuchelli: Heritage = {
-  ID: 229,
+  ID: 225,
   Image: 'CamposPorto_PauloMazzuchelli.jpeg',
   Authors: [authors.PauloMazzucchelli],
   Title: `Campos Porto`,
@@ -7146,7 +7146,7 @@ export const CamposPorto_PauloMazzuchelli: Heritage = {
 };
 
 export const XochipilliDeusdasFlores_Desconhecida: Heritage = {
-  ID: 230,
+  ID: 226,
   Image: 'XochipilliDeusdasFlores_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Xochipilli Deus das Flores`,
@@ -7171,7 +7171,7 @@ export const XochipilliDeusdasFlores_Desconhecida: Heritage = {
 };
 
 export const Ceres_Merzio: Heritage = {
-  ID: 231,
+  ID: 227,
   Image: 'Ceres_Merzio.jpeg',
   Authors: [authors.Merzio],
   Title: `Ceres`,
@@ -7196,7 +7196,7 @@ export const Ceres_Merzio: Heritage = {
 };
 
 export const Diana_Merzio: Heritage = {
-  ID: 232,
+  ID: 228,
   Image: 'Diana_Merzio.jpeg',
   Authors: [authors.Merzio],
   Title: `Diana`,
@@ -7221,7 +7221,7 @@ export const Diana_Merzio: Heritage = {
 };
 
 export const ChafarizDasMusas_HerbertWHogg: Heritage = {
-  ID: 233,
+  ID: 229,
   Image: 'ChafarizDasMusas_HerbertWHogg.jpeg',
   Authors: [authors.HerbertWHogg],
   Title: `Chafariz Das Musas`,
@@ -7246,7 +7246,7 @@ export const ChafarizDasMusas_HerbertWHogg: Heritage = {
 };
 
 export const FreiLeandroDoSacramento_RibeiroDaCosta: Heritage = {
-  ID: 234,
+  ID: 230,
   Image: 'FreiLeandroDoSacramento_RibeiroDaCosta.jpeg',
   Authors: [authors.RibeiroDaCosta],
   Title: `Frei Leandro Do Sacramento`,
@@ -7271,7 +7271,7 @@ export const FreiLeandroDoSacramento_RibeiroDaCosta: Heritage = {
 };
 
 export const DomJoaoVI_RodolfoBernardelli: Heritage = {
-  ID: 235,
+  ID: 231,
   Image: 'DomJoaoVI_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: `Dom Joao VI`,
@@ -7296,7 +7296,7 @@ export const DomJoaoVI_RodolfoBernardelli: Heritage = {
 };
 
 export const JoaoBarbosaRodrigues_AntonioPintodeMattos: Heritage = {
-  ID: 236,
+  ID: 232,
   Image: 'JoaoBarbosaRodrigues_AntonioPintodeMattos.jpeg',
   Authors: [authors.AntonioPintodeMattos],
   Title: `João Barbosa Rodrgiues`,
@@ -7321,7 +7321,7 @@ export const JoaoBarbosaRodrigues_AntonioPintodeMattos: Heritage = {
 };
 
 export const VonMartius_AntonioPintodeMattos: Heritage = {
-  ID: 237,
+  ID: 233,
   Image: 'VonMartius_AntonioPintodeMattos.jpeg',
   Authors: [authors.AntonioPintodeMattos],
   Title: `Von Martius`,
@@ -7346,7 +7346,7 @@ export const VonMartius_AntonioPintodeMattos: Heritage = {
 };
 
 export const AFonteDeusaThetis_LouisSauvageau: Heritage = {
-  ID: 238,
+  ID: 234,
   Image: 'AFonteDeusaThetis_LouisSauvageau.jpeg',
   Authors: [authors.LouisSauvageau],
   Title: `A Fonte Deusa Thetis`,
@@ -7377,7 +7377,7 @@ export const AFonteDeusaThetis_LouisSauvageau: Heritage = {
 };
 
 export const Eco_MestreValentim: Heritage = {
-  ID: 239,
+  ID: 235,
   Authors: [authors.MestreValentim],
   Title: `Eco`,
   Material: 'chumbo e estanho',
@@ -7402,7 +7402,7 @@ export const Eco_MestreValentim: Heritage = {
 };
 
 export const OCorneteiro_Ique: Heritage = {
-  ID: 240,
+  ID: 236,
   Image: 'OCorneteiro_Ique.jpeg',
   Authors: [authors.Ique],
   Title: `O Corneteiro`,
@@ -7432,7 +7432,7 @@ export const OCorneteiro_Ique: Heritage = {
 };
 
 export const LouisPasteur_HeitorDaSilvaCosta: Heritage = {
-  ID: 241,
+  ID: 237,
   Image: 'LouisPasteur_HeitorDaSilvaCosta.jpeg',
   Authors: [authors.HeitorDaSilvaCosta],
   Title: 'Louis Pasteur',
@@ -7459,7 +7459,7 @@ export const LouisPasteur_HeitorDaSilvaCosta: Heritage = {
 };
 
 export const Tartaruga_JoseResende: Heritage = {
-  ID: 242,
+  ID: 238,
   Image: 'Tartaruga_JoseResende.jpeg',
   Authors: [authors.JoseResende],
   Title: `Tartaruga`,
@@ -7485,7 +7485,7 @@ export const Tartaruga_JoseResende: Heritage = {
 };
 
 export const MarioPedrosa_RomeuAlves: Heritage = {
-  ID: 243,
+  ID: 239,
   Image: 'MarioPedrosa_RomeuAlves.jpeg',
   Authors: [authors.MateusFernandes],
   Title: `Mario Pedrosa`,
@@ -7522,7 +7522,7 @@ export const MarioPedrosa_RomeuAlves: Heritage = {
 };
 
 export const AMeninadosBaloesEncantados_SandraGuinle: Heritage = {
-  ID: 244,
+  ID: 240,
   Image: 'AMeninadosBaloesEncantados_SandraGuinle.jpeg',
   Authors: [authors.SandraGuinle],
   Title: `A Menina dos Balões Encantados`,
@@ -7550,7 +7550,7 @@ export const AMeninadosBaloesEncantados_SandraGuinle: Heritage = {
 };
 
 export const Interacao_MarliMazeredo: Heritage = {
-  ID: 245,
+  ID: 241,
   Image: 'Interacao_MarliMazeredo.jpeg',
   Authors: [authors.MarliMazeredo],
   Title: `Interação`,
@@ -7575,7 +7575,7 @@ export const Interacao_MarliMazeredo: Heritage = {
 };
 
 export const Primavera_LuciaGuerreiro: Heritage = {
-  ID: 246,
+  ID: 242,
   Image: 'Primavera_LuciaGuerreiro.jpeg',
   Authors: [authors.LuciaGuerreiro],
   Title: `Primavera`,
@@ -7602,7 +7602,7 @@ export const Primavera_LuciaGuerreiro: Heritage = {
 };
 
 export const PinheiroMachado_HildegardoLeaoVelloso: Heritage = {
-  ID: 247,
+  ID: 243,
   Image: 'PinheiroMachado_HildegardoLeaoVelloso.jpeg',
   Authors: [authors.HildegardoLeaoVelloso],
   Title: `Pinheiro Machado`,
@@ -7630,7 +7630,7 @@ export const PinheiroMachado_HildegardoLeaoVelloso: Heritage = {
 };
 
 export const MulhereoFelino_Desconhecida: Heritage = {
-  ID: 248,
+  ID: 244,
   Image: 'MulhereoFelino_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Mulher e o Felino`,
@@ -7656,7 +7656,7 @@ export const MulhereoFelino_Desconhecida: Heritage = {
 };
 
 export const AlmiranteSaldanhadaGama_AntonioCaringi: Heritage = {
-  ID: 249,
+  ID: 245,
   Image: 'AlmiranteSaldanhadaGama_AntonioCaringi.jpeg',
   Authors: [authors.AntonioCaringi],
   Title: `Almirante Saldanha da Gama`,
@@ -7685,7 +7685,7 @@ export const AlmiranteSaldanhadaGama_AntonioCaringi: Heritage = {
 };
 
 export const MarechalEuricoGasparDutra_DSantosLeal: Heritage = {
-  ID: 250,
+  ID: 246,
   Authors: [authors.DSantosLeal],
   Title: `Marechal Eurico Gaspar Dutra`,
   Material: 'Bronze',
@@ -7711,7 +7711,7 @@ export const MarechalEuricoGasparDutra_DSantosLeal: Heritage = {
 };
 
 export const ChafarizdasSaracuras_MestreValentim: Heritage = {
-  ID: 251,
+  ID: 247,
   Image: 'ChafarizdasSaracuras_MestreValentim.jpeg',
   Authors: [authors.MestreValentim],
   Title: `Chafariz das Saracuras`,
@@ -7744,7 +7744,7 @@ export const ChafarizdasSaracuras_MestreValentim: Heritage = {
 };
 
 export const GeneralOsorio_Desconhecida: Heritage = {
-  ID: 252,
+  ID: 248,
   Image: 'GeneralOsorio_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `General Osório`,
@@ -7776,7 +7776,7 @@ export const GeneralOsorio_Desconhecida: Heritage = {
 };
 
 export const CardealJoaquimArcoverde_Desconhecida: Heritage = {
-  ID: 252,
+  ID: 249,
   Image: 'CardealJoaquimArcoverde_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Cardeal Joaquim Arcoverde`,
@@ -7801,7 +7801,7 @@ export const CardealJoaquimArcoverde_Desconhecida: Heritage = {
   Execution: true,
 };
 export const Jaguar_JoaoTurin: Heritage = {
-  ID: 253,
+  ID: 250,
   Image: 'Jaguar_JoaoTurin.jpeg',
   Authors: [authors.JoaoTurin],
   Title: `Jaguar`,
@@ -7832,7 +7832,7 @@ export const Jaguar_JoaoTurin: Heritage = {
 };
 
 export const Acoplamento_MarioCravo: Heritage = {
-  ID: 254,
+  ID: 251,
   Image: 'Acoplamento_MarioCravo.jpeg',
   Authors: [authors.MarioCravo],
   Title: `Acoplamento`,
@@ -7861,7 +7861,7 @@ export const Acoplamento_MarioCravo: Heritage = {
 };
 
 export const Evolucao_MelindaGarcia: Heritage = {
-  ID: 255,
+  ID: 252,
   Image: 'Evolucao_MelindaGarcia.jpeg',
   Authors: [authors.MelindaGarcia],
   Title: `Evolução`,
@@ -7896,7 +7896,7 @@ export const Evolucao_MelindaGarcia: Heritage = {
 };
 
 export const Maternidade_RomeoAlves: Heritage = {
-  ID: 256,
+  ID: 253,
   Image: 'Maternidade_RomeoAlves.jpeg',
   Authors: [authors.RomeoAlves],
   Title: `Maternidade`,
@@ -7931,7 +7931,7 @@ export const Maternidade_RomeoAlves: Heritage = {
 };
 
 export const PrincipedosBosques_RemoBernucci: Heritage = {
-  ID: 257,
+  ID: 254,
   Image: 'PrincipedosBosques_RemoBernucci.jpeg',
   Authors: [authors.RemoBernucci],
   Title: `Príncipe dos Bosques`,
@@ -7966,7 +7966,7 @@ export const PrincipedosBosques_RemoBernucci: Heritage = {
 };
 
 export const Iansa_TatiMoreno: Heritage = {
-  ID: 258,
+  ID: 255,
   Image: 'Iansa_TatiMoreno.jpeg',
   Authors: [authors.TatiMoreno],
   Title: `Iansã`,
@@ -8003,7 +8003,7 @@ export const Iansa_TatiMoreno: Heritage = {
 };
 
 export const MarcosTamoio_FloryGama: Heritage = {
-  ID: 259,
+  ID: 256,
   Image: 'MarcosTamoio_FloryGama.jpeg',
   Authors: [authors.FloryGama],
   Title: `Marcos Tamoio`,
@@ -8032,7 +8032,7 @@ export const MarcosTamoio_FloryGama: Heritage = {
 };
 
 export const EstruturaEmDiagonal_FranzWeissmann: Heritage = {
-  ID: 260,
+  ID: 257,
   Image: 'EstruturaEmDiagonal_FranzWeissmann.jpeg',
   Authors: [authors.FranzWeissmann],
   Title: `Estrutura em diagonal`,
@@ -8063,7 +8063,7 @@ export const EstruturaEmDiagonal_FranzWeissmann: Heritage = {
 };
 
 export const Compressao_FranciscoStockinger: Heritage = {
-  ID: 261,
+  ID: 258,
   Image: 'Compressao_FranciscoStockinger.jpeg',
   Authors: [authors.FranciscoStockinger],
   Title: `Compressão`,
@@ -8100,7 +8100,7 @@ export const Compressao_FranciscoStockinger: Heritage = {
 };
 
 export const Oxossi_Caribe: Heritage = {
-  ID: 262,
+  ID: 259,
   Image: 'Oxossi_Caribe.jpeg',
   Authors: [authors.Caribe],
   Title: `Oxossi`,
@@ -8136,7 +8136,7 @@ export const Oxossi_Caribe: Heritage = {
 };
 
 export const Construcao_BrunoGiorgi: Heritage = {
-  ID: 263,
+  ID: 260,
   Image: 'Construcao_BrunoGiorgi.jpeg',
   Authors: [authors.BrunoGiorgi],
   Title: `Construção`,
@@ -8175,7 +8175,7 @@ export const Construcao_BrunoGiorgi: Heritage = {
 };
 
 export const CosmoI_MariaGuilherminaFernandes: Heritage = {
-  ID: 264,
+  ID: 261,
   Image: 'CosmoI_MariaGuilherminaFernandes.jpeg',
   Authors: [authors.MariaGuilherminaFernandes],
   Title: `Cosmo I`,
@@ -8211,7 +8211,7 @@ export const CosmoI_MariaGuilherminaFernandes: Heritage = {
 };
 
 export const HomemSentado_MarioAgostinelli: Heritage = {
-  ID: 265,
+  ID: 262,
   Image: 'HomemSentado_MarioAgostinelli.jpeg',
   Authors: [authors.MarioAgostinelli],
   Title: `Homem Sentado`,
@@ -8238,7 +8238,7 @@ export const HomemSentado_MarioAgostinelli: Heritage = {
 };
 
 export const Sofia_SoniaEbling: Heritage = {
-  ID: 266,
+  ID: 263,
   Image: 'Sofia_SoniaEbling.jpeg',
   Authors: [authors.SoniaEbling],
   Title: `Sofia`,
@@ -8278,7 +8278,7 @@ export const Sofia_SoniaEbling: Heritage = {
 };
 
 export const Incerteza_Marmura: Heritage = {
-  ID: 267,
+  ID: 264,
   Image: 'Incerteza_Marmura.jpeg',
   Authors: [authors.Marmura],
   Title: `Incerteza`,
@@ -8317,7 +8317,7 @@ export const Incerteza_Marmura: Heritage = {
 };
 
 export const Prometeu_EvandroCarneiro: Heritage = {
-  ID: 268,
+  ID: 265,
   Image: 'Prometeu_EvandroCarneiro.jpeg',
   Authors: [authors.EvandroCarneiro],
   Title: `Prometeu`,
@@ -8360,7 +8360,7 @@ export const Prometeu_EvandroCarneiro: Heritage = {
 };
 
 export const Encontro_EdgarDuvivier: Heritage = {
-  ID: 269,
+  ID: 266,
   Image: 'Encontro_EdgarDuvivier.jpeg',
   Authors: [authors.EdgarDuvivier],
   Title: `Encontro`,
@@ -8391,7 +8391,7 @@ export const Encontro_EdgarDuvivier: Heritage = {
 };
 
 export const StuartAngel_Desconhecida: Heritage = {
-  ID: 269,
+  ID: 267,
   Image: 'StuartAngel_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Stuart Angel`,
@@ -8415,7 +8415,7 @@ export const StuartAngel_Desconhecida: Heritage = {
 };
 
 export const EvangelistaMateus_AlfredoCeschiatti: Heritage = {
-  ID: 270,
+  ID: 268,
   Image: 'EvangelistaMateus_AlfredoCeschiatti.jpeg',
   Authors: [authors.AlfredoCeschiatti],
   Title: `Evangelista Mateus`,
@@ -8450,7 +8450,7 @@ export const EvangelistaMateus_AlfredoCeschiatti: Heritage = {
 };
 
 export const Estrutura_SergioCamargo: Heritage = {
-  ID: 271,
+  ID: 269,
   Image: 'Estrutura_SergioCamargo.jpeg',
   Authors: [authors.SergioCamargo],
   Title: `Estrutura`,
@@ -8489,7 +8489,7 @@ export const Estrutura_SergioCamargo: Heritage = {
 };
 
 export const IndioLutandocomoFelino_HippolyteFrancoisAugusteHippolytePeyrol: Heritage = {
-  ID: 272,
+  ID: 270,
   Image: 'IndioLutandocomoFelino_HippolyteFrancoisAugusteHippolytePeyrol.jpeg',
   Authors: [authors.HippolyteFrancoisAugusteHippolytePeyrol],
   Title: `Índio Lutando com o Felino`,
@@ -8517,7 +8517,7 @@ export const IndioLutandocomoFelino_HippolyteFrancoisAugusteHippolytePeyrol: Her
 };
 
 export const AoPolicialMilitar_Desconhecida: Heritage = {
-  ID: 903,
+  ID: 271,
   Image: 'AoPolicialMilitar_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Ao Policial Militar`,
@@ -8544,7 +8544,7 @@ A homenagem foi uma iniciativa dos moradores da Leopoldina aos soldados do 16º 
 };
 
 export const SanMartin_LouisJosephDaumas: Heritage = {
-  ID: 273,
+  ID: 272,
   Image: 'SanMartin_LouisJosephDaumas.jpeg',
   Authors: [authors.LouisJosephDaumas],
   Title: `San Martin`,
@@ -8572,7 +8572,7 @@ export const SanMartin_LouisJosephDaumas: Heritage = {
 };
 
 export const JoaoPessoa_SamuelMartinsRibeiro: Heritage = {
-  ID: 274,
+  ID: 273,
   Image: 'JoaoPessoa_SamuelMartinsRibeiro.jpeg',
   Authors: [authors.SamuelMartinsRibeiro],
   Title: `João Person`,
@@ -8600,7 +8600,7 @@ export const JoaoPessoa_SamuelMartinsRibeiro: Heritage = {
 };
 
 export const LagoaSolidaria_MarliMazeredo: Heritage = {
-  ID: 275,
+  ID: 274,
   Image: 'LagoaSolidaria_MarliMazeredo.jpeg',
   Authors: [authors.MarliMazeredo],
   Title: `Lagoa Solidária`,
@@ -8631,7 +8631,7 @@ export const LagoaSolidaria_MarliMazeredo: Heritage = {
 };
 
 export const Curumim_PedroCorreiaDeAraujo: Heritage = {
-  ID: 276,
+  ID: 275,
   Image: 'Curumim_PedroCorreiaDeAraujo.jpeg',
   Authors: [authors.PedroCorreiaDeAraujo],
   Title: `Curumim`,
@@ -8670,7 +8670,7 @@ export const Curumim_PedroCorreiaDeAraujo: Heritage = {
 };
 
 export const ATomJobimOEstudante_OttoDumovich_OttoDumovich: Heritage = {
-  ID: 277,
+  ID: 276,
   Image: 'ATomJobimOEstudante_OttoDumovich.jpeg',
   Authors: [authors.OttoDumovich],
   Title: `A Tom Jobim O Estudante`,
@@ -8699,7 +8699,7 @@ export const ATomJobimOEstudante_OttoDumovich_OttoDumovich: Heritage = {
 };
 
 export const OttoLaraResende_JoasPereiraDosPassos: Heritage = {
-  ID: 278,
+  ID: 277,
   Image: 'OttoLaraResende_JoasPereiraDosPassos.jpeg',
   Authors: [authors.JoasPereiraDosPassos],
   Title: `Otto Lara Resende`,
@@ -8728,7 +8728,7 @@ export const OttoLaraResende_JoasPereiraDosPassos: Heritage = {
 };
 
 export const AnjoComPeixe_AndreaVerrocchio: Heritage = {
-  ID: 279,
+  ID: 278,
   Authors: [authors.AndreaVerrocchio],
   Title: `Anjo com Peixe`,
   Material: 'ferro fundido',
@@ -8751,7 +8751,7 @@ export const AnjoComPeixe_AndreaVerrocchio: Heritage = {
 };
 
 export const ADanca_AlicePittaluga: Heritage = {
-  ID: 280,
+  ID: 279,
   Image: 'ADanca_AlicePittaluga.jpeg',
   Authors: [authors.AlicePittaluga],
   Title: `A Dança`,
@@ -8775,7 +8775,7 @@ export const ADanca_AlicePittaluga: Heritage = {
 };
 
 export const Ossanha_TatiMoreno: Heritage = {
-  ID: 281,
+  ID: 280,
   Image: 'Ossanha_TatiMoreno.jpeg',
   Authors: [authors.TatiMoreno],
   Title: `Ossanha`,
@@ -8799,7 +8799,7 @@ export const Ossanha_TatiMoreno: Heritage = {
 };
 
 export const Narciso_MestreValentim: Heritage = {
-  ID: 282,
+  ID: 281,
   Authors: [authors.MestreValentim],
   Title: `Narciso`,
   Material: 'chumbo e estanho',
@@ -8824,7 +8824,7 @@ export const Narciso_MestreValentim: Heritage = {
 };
 
 export const SaintHilaire_HumbertoCozzo: Heritage = {
-  ID: 283,
+  ID: 282,
   Image: 'SaintHilaire_HumbertoCozzo.jpeg',
   Authors: [authors.HumbertoCozzo],
   Title: `Saint Hilaire`,
@@ -8849,7 +8849,7 @@ export const SaintHilaire_HumbertoCozzo: Heritage = {
 };
 
 export const MedidadoTempo_FransKrajcberg: Heritage = {
-  ID: 284,
+  ID: 283,
   Image: 'MedidadoTempo_FransKrajcberg.jpeg',
   Authors: [authors.FransKrajcberg],
   Title: `Medida do Tempo`,
@@ -8877,7 +8877,7 @@ export const MedidadoTempo_FransKrajcberg: Heritage = {
 };
 
 export const Guardiao_CeleidaTostes: Heritage = {
-  ID: 285,
+  ID: 284,
   Image: 'Guardiao_CeleidaTostes.jpeg',
   Authors: [authors.CeleidaTostes],
   Title: `Guardião`,
@@ -8914,7 +8914,7 @@ export const Guardiao_CeleidaTostes: Heritage = {
 };
 
 export const FrutodoEspaco_AntonioManuelOliveira: Heritage = {
-  ID: 286,
+  ID: 285,
   Image: 'FrutodoEspaco_AntonioManuelOliveira.jpeg',
   Authors: [authors.AntonioManuelOliveira],
   Title: `Fruto do Espaço`,
@@ -8944,7 +8944,7 @@ export const FrutodoEspaco_AntonioManuelOliveira: Heritage = {
 };
 
 export const Jacare2000_MariaHelenaVasco: Heritage = {
-  ID: 287,
+  ID: 286,
   Image: 'Jacare2000_MariaHelenaVasco.jpeg',
   Authors: [authors.MariaHelenaVasco],
   Title: `Jacare 2000`,
@@ -8969,7 +8969,7 @@ export const Jacare2000_MariaHelenaVasco: Heritage = {
 };
 
 export const RaizesAmazonas_FernandoCasas: Heritage = {
-  ID: 283,
+  ID: 287,
   Image: 'RaizesAmazonas_FernandoCasas.jpeg',
   Authors: [authors.FernandoCasas],
   Title: `Raízes - Amazonas`,
@@ -8996,7 +8996,7 @@ export const RaizesAmazonas_FernandoCasas: Heritage = {
 };
 
 export const Nijinsky_MarliMazeredo: Heritage = {
-  ID: 289,
+  ID: 288,
   Image: 'Nijinsky_MarliMazeredo.jpeg',
   Authors: [authors.MarliMazeredo],
   Title: `Nijinsky`,
@@ -9024,7 +9024,7 @@ export const Nijinsky_MarliMazeredo: Heritage = {
 };
 
 export const DianaaCacadora_HeloisaDolabella: Heritage = {
-  ID: 290,
+  ID: 289,
   Image: 'DianaaCacadora_HeloisaDolabella.jpeg',
   Authors: [authors.HeloisaDolabella],
   Title: `Diana a Caçadora`,
@@ -9052,7 +9052,7 @@ export const DianaaCacadora_HeloisaDolabella: Heritage = {
 };
 
 export const Lua_JoseRaulAllegretti: Heritage = {
-  ID: 291,
+  ID: 290,
   Image: 'Lua_JoseRaulAllegretti.jpeg',
   Authors: [authors.JoseRaulAllegretti],
   Title: `Lua`,
@@ -9078,7 +9078,7 @@ export const Lua_JoseRaulAllegretti: Heritage = {
 };
 
 export const Flora_MarioCravo: Heritage = {
-  ID: 292,
+  ID: 291,
   Image: 'Flora_MarioCravo.jpeg',
   Authors: [authors.MarioCravo],
   Title: `Flora`,
@@ -9114,7 +9114,7 @@ export const Flora_MarioCravo: Heritage = {
 };
 
 export const Atleta_RemoBernucci: Heritage = {
-  ID: 293,
+  ID: 292,
   Image: 'Atleta_RemoBernucci.jpeg',
   Authors: [authors.RemoBernucci],
   Title: `Atleta`,
@@ -9141,7 +9141,7 @@ export const Atleta_RemoBernucci: Heritage = {
 };
 
 export const AVictorAssisBrasil_Desconhecida: Heritage = {
-  ID: 294,
+  ID: 293,
   Image: 'AVictorAssisBrasil_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Victor Assis Brasil`,
@@ -9166,7 +9166,7 @@ export const AVictorAssisBrasil_Desconhecida: Heritage = {
 };
 
 export const RitualdoVento_GabrielFonseca: Heritage = {
-  ID: 295,
+  ID: 294,
   Image: 'RitualdoVento_GabrielFonseca.jpeg',
   Authors: [authors.GabrielFonseca],
   Title: `Ritual do Vento`,
@@ -9193,7 +9193,7 @@ export const RitualdoVento_GabrielFonseca: Heritage = {
 };
 
 export const AVieiraSoutoePauloDeFrontin_RodolfoBernardelli: Heritage = {
-  ID: 296,
+  ID: 295,
   Image: 'AVieiraSoutoePauloDeFrontin_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: `À Vieira Souto e Paulo de Frontin`,
@@ -9224,7 +9224,7 @@ export const AVieiraSoutoePauloDeFrontin_RodolfoBernardelli: Heritage = {
 };
 
 export const JozefPilsudski_Farynkiewicz: Heritage = {
-  ID: 297,
+  ID: 296,
   Image: 'JozefPilsudski_Farynkiewicz.jpeg',
   Authors: [authors.FArynkiewicz],
   Title: `Jozef Pilsudski`,
@@ -9254,7 +9254,7 @@ export const JozefPilsudski_Farynkiewicz: Heritage = {
 };
 
 export const RubenDario_DanielCrow_CurzioZani: Heritage = {
-  ID: 298,
+  ID: 297,
   Image: 'RubenDario_DanielCrow_CurzioZani.jpeg',
   Authors: [authors.DanielCrow, authors.CurzioZani],
   Title: `Rubén Dario`,
@@ -9281,7 +9281,7 @@ export const RubenDario_DanielCrow_CurzioZani: Heritage = {
 };
 
 export const Trio_JoseCesarBranquinho: Heritage = {
-  ID: 299,
+  ID: 298,
   Image: 'Trio_JoseCesarBranquinho.jpeg',
   Authors: [authors.JoseCesarBranquinho],
   Title: `Trio`,
@@ -9307,7 +9307,7 @@ export const Trio_JoseCesarBranquinho: Heritage = {
 };
 
 export const FormasnoEspacoI_OscarNiemeyer: Heritage = {
-  ID: 301,
+  ID: 299,
   Image: 'FormasnoEspacoI_OscarNiemeyer.jpeg',
   Authors: [authors.OscarNiemeyer],
   Title: `Formas no Espaço I`,
@@ -9350,7 +9350,7 @@ export const FormasnoEspacoI_OscarNiemeyer: Heritage = {
 };
 
 export const FormasnoEspacoII_OscarNiemeyer: Heritage = {
-  ID: 302,
+  ID: 300,
   Image: 'FormasnoEspacoII_OscarNiemeyer.jpeg',
   Authors: [authors.OscarNiemeyer],
   Title: `Formas no Espaço II`,
@@ -9393,7 +9393,7 @@ export const FormasnoEspacoII_OscarNiemeyer: Heritage = {
 };
 
 export const Violencia_OscarNiemeyer: Heritage = {
-  ID: 303,
+  ID: 301,
   Authors: [authors.OscarNiemeyer],
   Title: `Violência`,
   Material: 'ferro pintado',
@@ -9435,7 +9435,7 @@ export const Violencia_OscarNiemeyer: Heritage = {
 };
 
 export const Mulher_OscarNiemeyer: Heritage = {
-  ID: 304,
+  ID: 302,
   Authors: [authors.OscarNiemeyer],
   Title: `Mulher`,
   Material: 'ferro pintado',
@@ -9477,7 +9477,7 @@ export const Mulher_OscarNiemeyer: Heritage = {
 };
 
 export const OthonXavierdeBrito_RuffoFanucchi: Heritage = {
-  ID: 305,
+  ID: 303,
   Image: 'OthonXavierdeBrito_RuffoFanucchi.jpeg',
   Authors: [authors.RuffoFanucchi],
   Title: `Othon Xavier de Brito`,
@@ -9507,7 +9507,7 @@ export const OthonXavierdeBrito_RuffoFanucchi: Heritage = {
 };
 
 export const MiguelCouto_HeitorUsai: Heritage = {
-  ID: 306,
+  ID: 304,
   Image: 'MiguelCouto_HeitorUsai.jpeg',
   Authors: [authors.HeitorUsai],
   Title: `Miguel Couto`,
@@ -9543,7 +9543,7 @@ export const MiguelCouto_HeitorUsai: Heritage = {
 };
 
 export const ZozimoBarrosoDoAmaral_RobertoSa: Heritage = {
-  ID: 307,
+  ID: 305,
   Image: 'ZozimoBarrosoDoAmaral_RobertoSa.jpeg',
   Authors: [authors.RobertoSa],
   Title: `Zózimo Barroso do Amaral`,
@@ -9572,7 +9572,7 @@ O monumento foi erguido pela Prefeitura da Cidade por solicitação da família.
 };
 
 export const JeanSibelius_WainoAaltonem: Heritage = {
-  ID: 308,
+  ID: 306,
   Image: 'JeanSibelius_WainoAaltonem.jpeg',
   Authors: [authors.WainoAaltonem],
   Title: `Jean Sibelius`,
@@ -9605,7 +9605,7 @@ export const JeanSibelius_WainoAaltonem: Heritage = {
 };
 
 export const ZuzuAngel_MarliMazeredo: Heritage = {
-  ID: 310,
+  ID: 307,
   Image: 'ZuzuAngel_MarliMazeredo.jpeg',
   Authors: [authors.MarliMazeredo],
   Title: `Zuzu Angel`,
@@ -9633,7 +9633,7 @@ export const ZuzuAngel_MarliMazeredo: Heritage = {
 };
 
 export const Ceres_ThomasRegnaudin: Heritage = {
-  ID: 313,
+  ID: 308,
   Image: 'Ceres_ThomasRegnaudin.jpeg',
   Authors: [authors.ThomasRegnaudin],
   Title: `Ceres`,
@@ -9701,7 +9701,7 @@ export const Ceres_ThomasRegnaudin: Heritage = {
 };
 
 export const Marte_Desconhecida: Heritage = {
-  ID: 314,
+  ID: 309,
   Image: 'Marte_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Marte`,
@@ -9731,7 +9731,7 @@ export const Marte_Desconhecida: Heritage = {
 };
 
 export const MercurioPalacioCidade_Desconhecida: Heritage = {
-  ID: 315,
+  ID: 310,
   Image: 'MercurioPalacioCidade_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Mercúrio`,
@@ -9761,7 +9761,7 @@ export const MercurioPalacioCidade_Desconhecida: Heritage = {
 };
 
 export const Minerva_Giustiniani: Heritage = {
-  ID: 316,
+  ID: 311,
   Image: 'Minerva_Giustiniani.jpeg',
   Authors: [authors.Giustiniani],
   Title: `Minerva`,
@@ -9818,7 +9818,7 @@ export const Minerva_Giustiniani: Heritage = {
 };
 
 export const Chafariz_AndrewHandyside: Heritage = {
-  ID: 317,
+  ID: 312,
   Image: 'Chafariz_AndrewHandyside.jpeg',
   Authors: [authors.AndrewHandyside],
   Title: `Chafariz`,
@@ -9844,7 +9844,7 @@ export const Chafariz_AndrewHandyside: Heritage = {
 };
 
 export const Maternidade_CelsoAntonio: Heritage = {
-  ID: 318,
+  ID: 313,
   Image: 'Maternidade_CelsoAntonio.jpeg',
   Authors: [authors.CelsoAntonio],
   Title: `Maternidade`,
@@ -9871,7 +9871,7 @@ export const Maternidade_CelsoAntonio: Heritage = {
 };
 
 export const FredericoOzanam_DanteCroce: Heritage = {
-  ID: 319,
+  ID: 314,
   Image: 'FredericoOzanam_DanteCroce.jpeg',
   Authors: [authors.DanteCroce],
   Title: `Frederico Ozanam`,
@@ -9898,7 +9898,7 @@ export const FredericoOzanam_DanteCroce: Heritage = {
 };
 
 export const PedroJuanCaballero_LeonardoLima: Heritage = {
-  ID: 320,
+  ID: 315,
   Image: 'PedroJuanCaballero_LeonardoLima.jpeg',
   Authors: [authors.LeonardoLima],
   Title: `Pedro Juan Caballero`,
@@ -9925,7 +9925,7 @@ export const PedroJuanCaballero_LeonardoLima: Heritage = {
 };
 
 export const JuruenadeMatos_JoaquimMoreiraJunior: Heritage = {
-  ID: 321,
+  ID: 316,
   Image: 'JuruenadeMatos_JoaquimMoreiraJunior.jpeg',
   Authors: [authors.JoaquimMoreiraJunior],
   Title: `Juruena de Matos`,
@@ -9954,7 +9954,7 @@ export const JuruenadeMatos_JoaquimMoreiraJunior: Heritage = {
 };
 
 export const FranciscoMoranzan_RomeuAlves: Heritage = {
-  ID: 322,
+  ID: 317,
   Image: 'FranciscoMoranzan_RomeuAlves.jpeg',
   Authors: [authors.RomeuAlves],
   Title: `Francisco Moranzan`,
@@ -9981,7 +9981,7 @@ export const FranciscoMoranzan_RomeuAlves: Heritage = {
 };
 
 export const CarvalhodeBrito_RuffoFanucchi: Heritage = {
-  ID: 323,
+  ID: 318,
   Image: 'CarvalhodeBrito_RuffoFanucchi.jpeg',
   Authors: [authors.RuffoFanucchi],
   Title: `Carvalho de Brito`,
@@ -10008,7 +10008,7 @@ export const CarvalhodeBrito_RuffoFanucchi: Heritage = {
 };
 
 export const SimonBolivar_Desconhecida: Heritage = {
-  ID: 324,
+  ID: 319,
   Image: 'SimonBolivar_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Simón Bolívar`,
@@ -10038,7 +10038,7 @@ export const SimonBolivar_Desconhecida: Heritage = {
 };
 
 export const GeneralJoseArtigas_VHabegger: Heritage = {
-  ID: 325,
+  ID: 320,
   Image: 'GeneralJoseArtigas_VHabegger.jpeg',
   Authors: [authors.VHabegger],
   Title: `General Artigas`,
@@ -10070,7 +10070,7 @@ export const GeneralJoseArtigas_VHabegger: Heritage = {
 };
 
 export const Bocage_JoaquimCorrea: Heritage = {
-  ID: 326,
+  ID: 321,
   Image: 'Bocage_JoaquimCorrea.jpeg',
   Authors: [authors.JoaquimCorrea],
   Title: `Bocage`,
@@ -10097,7 +10097,7 @@ export const Bocage_JoaquimCorrea: Heritage = {
 };
 
 export const YhitzakRabin_EdgarDuvivierFilho: Heritage = {
-  ID: 327,
+  ID: 322,
   Image: 'YhitzakRabin_EdgarDuvivier.jpeg',
   Authors: [authors.EdgarDuvivierFilho],
   Title: `Yhitzak Rabin`,
@@ -10125,7 +10125,7 @@ export const YhitzakRabin_EdgarDuvivierFilho: Heritage = {
 };
 
 export const BartolomeuMitre_LourillandSan: Heritage = {
-  ID: 328,
+  ID: 323,
   Image: 'BartolomeuMitre_LourillandSan.jpeg',
   Authors: [authors.LourillandSan],
   Title: `Bartolomeu Mitre`,
@@ -10155,7 +10155,7 @@ export const BartolomeuMitre_LourillandSan: Heritage = {
 };
 
 export const CarlosChagas_HumbertoCozzo: Heritage = {
-  ID: 329,
+  ID: 324,
   Image: 'CarlosChagas_HumbertoCozzo.jpeg',
   Authors: [authors.HumbertoCozzo],
   Title: `Carlos Chagas`,
@@ -10188,7 +10188,7 @@ export const CarlosChagas_HumbertoCozzo: Heritage = {
 };
 
 export const MarechalCandidoRandon_AntonioPintodeMattos: Heritage = {
-  ID: 330,
+  ID: 325,
   Image: 'MarechalCandidoRandon_AntonioPintodeMattos.jpeg',
   Authors: [authors.AntonioPintodeMattos],
   Title: `Marechal Candido Rondon`,
@@ -10213,7 +10213,7 @@ export const MarechalCandidoRandon_AntonioPintodeMattos: Heritage = {
 };
 
 export const FontedoManequinho_BelmiroDeAlmeida: Heritage = {
-  ID: 331,
+  ID: 326,
   Image: 'FontedoManequinho_BelmiroDeAlmeida.jpeg',
   Authors: [authors.BelmiroDeAlmeida],
   Title: `Fonte do Manequinho`,
@@ -10248,7 +10248,7 @@ export const FontedoManequinho_BelmiroDeAlmeida: Heritage = {
 };
 
 export const AEcadeQueiroz_RodolfoPintoCouto: Heritage = {
-  ID: 332,
+  ID: 327,
   Image: 'AEcadeQueiroz_RodolfoPintoCouto.jpeg',
   Authors: [authors.RodolfoPintoCouto],
   Title: `À Eça de Queiroz`,
@@ -10278,7 +10278,7 @@ export const AEcadeQueiroz_RodolfoPintoCouto: Heritage = {
 };
 
 export const FonteIrmaosRamosPinto_AntonioTeixeiraLopes: Heritage = {
-  ID: 333,
+  ID: 328,
   Image: 'FonteIrmaosRamosPinto_AntonioTeixeiraLopes.jpeg',
   Authors: [authors.AntonioTeixeiraLopes],
   Title: `Fonte Irmaos Ramos Pinto`,
@@ -10312,7 +10312,7 @@ export const FonteIrmaosRamosPinto_AntonioTeixeiraLopes: Heritage = {
 };
 
 export const OswaldoCruz_HumbertoCozzo: Heritage = {
-  ID: 334,
+  ID: 329,
   Image: 'OswaldoCruz_HumbertoCozzo.jpeg',
   Authors: [authors.HumbertoCozzo],
   Title: `Oswaldo Cruz`,
@@ -10339,7 +10339,7 @@ export const OswaldoCruz_HumbertoCozzo: Heritage = {
 };
 
 export const AlmiranteTamandare_HildegardoLeaoVelloso: Heritage = {
-  ID: 335,
+  ID: 330,
   Image: 'AlmiranteTamandare_HildegardoLeaoVelloso.jpeg',
   Authors: [authors.HildegardoLeaoVelloso],
   Title: `Almirante Tamandaré`,
@@ -10366,7 +10366,7 @@ export const AlmiranteTamandare_HildegardoLeaoVelloso: Heritage = {
 };
 
 export const Crepusculo_HenriWeigele: Heritage = {
-  ID: 336,
+  ID: 331,
   Image: 'Crepusculo_HenriWeigele.jpeg',
   Authors: [authors.HenriWeigele],
   Title: `Crepúsculo`,
@@ -10393,7 +10393,7 @@ export const Crepusculo_HenriWeigele: Heritage = {
 };
 
 export const PoesiaemRuinas_JeanMagrou: Heritage = {
-  ID: 337,
+  ID: 332,
   Image: 'PoesiaemRuinas_JeanMagrou.jpeg',
   Authors: [authors.JeanMagrou],
   Title: `Poesia em Ruínas`,
@@ -10423,7 +10423,7 @@ export const PoesiaemRuinas_JeanMagrou: Heritage = {
 };
 
 export const NossaSenhoradaImaculadaConceicao_GiuseppeNavone: Heritage = {
-  ID: 338,
+  ID: 333,
   Image: 'NossaSenhoradaImaculadaConceicao_GiuseppeNavone.jpeg',
   Authors: [authors.GiuseppeNavone],
   Title: `Nossa Senhora da Imaculada Conceição`,
@@ -10453,7 +10453,7 @@ export const NossaSenhoradaImaculadaConceicao_GiuseppeNavone: Heritage = {
 };
 
 export const LorenzoFernandes_AristocherBenjamimMeschessi: Heritage = {
-  ID: 339,
+  ID: 334,
   Image: 'LorenzoFernandes_AristocherBenjamimMeschessi.jpeg',
   Authors: [authors.AristocherBenjamimMeschessi],
   Title: `Lorenzo Fernandes`,
@@ -10480,7 +10480,7 @@ export const LorenzoFernandes_AristocherBenjamimMeschessi: Heritage = {
 };
 
 export const EmilioDeMenezes_JoaoTurin: Heritage = {
-  ID: 340,
+  ID: 335,
   Image: 'EmilioDeMenezes_JoaoTurin.jpeg',
   Authors: [authors.JoaoTurin],
   Title: `Emílio de Menezes`,
@@ -10507,7 +10507,7 @@ export const EmilioDeMenezes_JoaoTurin: Heritage = {
 };
 
 export const AlfredoGomes_PauloMazzucchelli: Heritage = {
-  ID: 341,
+  ID: 336,
   Image: 'AlfredoGomes_PauloMazzucchelli.jpeg',
   Authors: [authors.PauloMazzucchelli],
   Title: `Alfredo Gomes`,
@@ -10534,7 +10534,7 @@ export const AlfredoGomes_PauloMazzucchelli: Heritage = {
 };
 
 export const ONascimentodeVenus_MathurinMoreau: Heritage = {
-  ID: 342,
+  ID: 337,
   Image: 'ONascimentodeVenus_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: `O Nascimento de Venus`,
@@ -10558,7 +10558,7 @@ export const ONascimentodeVenus_MathurinMoreau: Heritage = {
 };
 
 export const CristovaoColombo_MathurinMoreau: Heritage = {
-  ID: 343,
+  ID: 338,
   Image: 'CristovaoColombo_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: `Cristovao Colombo`,
@@ -10583,7 +10583,7 @@ export const CristovaoColombo_MathurinMoreau: Heritage = {
 };
 
 export const America_MathurinMoreau: Heritage = {
-  ID: 344,
+  ID: 339,
   Image: 'America_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: `America`,
@@ -10607,7 +10607,7 @@ export const America_MathurinMoreau: Heritage = {
 };
 
 export const Oceania_MathurinMoreau: Heritage = {
-  ID: 345,
+  ID: 340,
   Image: 'Oceania_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: `Oceania`,
@@ -10631,7 +10631,7 @@ export const Oceania_MathurinMoreau: Heritage = {
 };
 
 export const Africa_MathurinMoreau: Heritage = {
-  ID: 346,
+  ID: 341,
   Image: 'Africa_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: `Africa`,
@@ -10656,7 +10656,7 @@ export const Africa_MathurinMoreau: Heritage = {
 };
 
 export const Europa_MathurinMoreau: Heritage = {
-  ID: 347,
+  ID: 342,
   Image: 'Europa_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: `Europa`,
@@ -10680,7 +10680,7 @@ export const Europa_MathurinMoreau: Heritage = {
 };
 
 export const Asia_MathurinMoreau: Heritage = {
-  ID: 348,
+  ID: 343,
   Image: 'Asia_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: `Asia`,
@@ -10704,7 +10704,7 @@ export const Asia_MathurinMoreau: Heritage = {
 };
 
 export const MeninoComPassaro_MathurinMoreau: Heritage = {
-  ID: 349,
+  ID: 344,
   Image: 'MeninoComPassaro_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: `Menino com pássaro`,
@@ -10728,7 +10728,7 @@ export const MeninoComPassaro_MathurinMoreau: Heritage = {
 };
 
 export const FiguraFemininaI_Desconhecida: Heritage = {
-  ID: 350,
+  ID: 345,
   Image: 'FiguraFemininaI_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Figura Feminina I`,
@@ -10753,7 +10753,7 @@ export const FiguraFemininaI_Desconhecida: Heritage = {
 };
 
 export const FiguraFemininaII_Desconhecida: Heritage = {
-  ID: 351,
+  ID: 346,
   Image: 'FiguraFemininaII_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Figura Feminina II`,
@@ -10778,7 +10778,7 @@ export const FiguraFemininaII_Desconhecida: Heritage = {
 };
 
 export const TeixeiraSoares_JoseOtavioCorreaLima: Heritage = {
-  ID: 352,
+  ID: 347,
   Image: 'TeixeiraSoares_JoseOtavioCorreaLima.jpeg',
   Authors: [authors.JoseOtavioCorreaLima],
   Title: `Teixeira Soares`,
@@ -10812,7 +10812,7 @@ export const TeixeiraSoares_JoseOtavioCorreaLima: Heritage = {
 };
 
 export const ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra: Heritage = {
-  ID: 517,
+  ID: 348,
   Image: 'ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra.jpeg',
   Authors: [authors.GeorgeLopes, authors.GeorgeGuerra],
   Title: `Arcos das Palmeiras`,
@@ -10839,7 +10839,7 @@ export const ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra: Heritage = {
 };
 
 export const MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMarinho: Heritage = {
-  ID: 354,
+  ID: 349,
   Image: 'MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMarinho.jpeg',
   Authors: [authors.MarcosKonderNeto, authors.HelioRibasMarinho],
   Title: `Monumento Aos Mortos da II Guerra Mundial`,
@@ -10866,7 +10866,7 @@ export const MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMari
 };
 
 export const SemTituloI_AmilcarDeCastro: Heritage = {
-  ID: 355,
+  ID: 350,
   Image: 'SemTituloI_AmilcarDeCastro.jpeg',
   Authors: [authors.AmilcarDeCastro],
   Title: `Sem Titulo`,
@@ -10893,7 +10893,7 @@ export const SemTituloI_AmilcarDeCastro: Heritage = {
 };
 
 export const EspacoCircularEmCuboVirtual_FranzWeissmann: Heritage = {
-  ID: 356,
+  ID: 351,
   Image: 'EspacoCircularEmCuboVirtual_FranzWeissmann.jpeg',
   Authors: [authors.FranzWeissmann],
   Title: `Espaço Circular em Cubo Virtual`,
@@ -10922,7 +10922,7 @@ export const EspacoCircularEmCuboVirtual_FranzWeissmann: Heritage = {
 };
 
 export const AsTresForcasArmadas_AlfredoCeschiatti: Heritage = {
-  ID: 359,
+  ID: 352,
   Image: 'AsTresForcasArmadas_AlfredoCeschiatti.jpeg',
   Authors: [authors.AlfredoCeschiatti],
   Title: `As Três Forças Armadas- Monumento aos Mortos da Segunda Guerra`,
@@ -10947,7 +10947,7 @@ export const AsTresForcasArmadas_AlfredoCeschiatti: Heritage = {
 };
 
 export const Cuauhtemoc_CarlosObregonSantacilia: Heritage = {
-  ID: 360,
+  ID: 353,
   Image: 'Cuauhtemoc_CarlosObregonSantacilia.jpeg',
   Authors: [authors.CarlosObregonSantacilia],
   Title: `Cuauhtémoc`,
@@ -10975,7 +10975,7 @@ export const Cuauhtemoc_CarlosObregonSantacilia: Heritage = {
 };
 
 export const JosedeAlencar_RodolfoBernardelli: Heritage = {
-  ID: 361,
+  ID: 354,
   Image: 'JosedeAlencar_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: `José de Alencar`,
@@ -11002,7 +11002,7 @@ export const JosedeAlencar_RodolfoBernardelli: Heritage = {
 };
 
 export const BernardoOHiggins_CaroccabaThor: Heritage = {
-  ID: 362,
+  ID: 355,
   Image: 'BernardoOHiggins_CaroccabaThor.jpeg',
   Authors: [authors.CaroccabaThor],
   Title: `Bernardo O'Higgins`,
@@ -11035,7 +11035,7 @@ Estátua com a figura do homenageado com uma farda chilena tendo na direita uma 
 };
 
 export const Primavera_JeanBaptistePoultier: Heritage = {
-  ID: 366,
+  ID: 356,
   Image: 'Primavera_JeanBaptistePoultier.jpeg',
   Authors: [authors.JeanBaptistePoultier],
   Title: `Primavera`,
@@ -11061,7 +11061,7 @@ export const Primavera_JeanBaptistePoultier: Heritage = {
 };
 
 export const Verao_PierreLeGros: Heritage = {
-  ID: 367,
+  ID: 357,
   Image: 'Verao_PierreLeGros.jpeg',
   Authors: [authors.PierreLeGros],
   Title: `Verão `,
@@ -11087,7 +11087,7 @@ export const Verao_PierreLeGros: Heritage = {
 };
 
 export const AlfredoAgache_HeitorUsai: Heritage = {
-  ID: 368,
+  ID: 358,
   Image: 'AlfredoAgache_HeitorUsai.jpeg',
   Authors: [authors.HeitorUsai],
   Title: `Alfredo Agache`,
@@ -11118,7 +11118,7 @@ export const AlfredoAgache_HeitorUsai: Heritage = {
 };
 
 export const AfonsoCelso_LaurindoRamos: Heritage = {
-  ID: 369,
+  ID: 359,
   Image: 'AfonsoCelso_LaurindoRamos.jpeg',
   Authors: [authors.LaurindoRamos],
   Title: `Afonso Celso`,
@@ -11145,7 +11145,7 @@ export const AfonsoCelso_LaurindoRamos: Heritage = {
 };
 
 export const CarmemGomes_JoseBarreto: Heritage = {
-  ID: 370,
+  ID: 360,
   Image: 'CarmemGomes_JoseBarreto.jpeg',
   Authors: [authors.JoseBarreto],
   Title: `Carmem Gomes`,
@@ -11172,7 +11172,7 @@ export const CarmemGomes_JoseBarreto: Heritage = {
 };
 
 export const Outono_JacquesHouzeau: Heritage = {
-  ID: 372,
+  ID: 361,
   Image: 'Outono_JacquesHouzeau.jpeg',
   Authors: [authors.JacquesHouzeau],
   Title: `Outono`,
@@ -11198,7 +11198,7 @@ export const Outono_JacquesHouzeau: Heritage = {
 };
 
 export const Inverno_SimonHurtvelle: Heritage = {
-  ID: 373,
+  ID: 362,
   Image: 'Inverno_SimonHurtvelle.jpeg',
   Authors: [authors.SimonHurtvelle],
   Title: `Inverno`,
@@ -11224,7 +11224,7 @@ export const Inverno_SimonHurtvelle: Heritage = {
 };
 
 export const ChafarizdosGolfinhos_AndreRedont: Heritage = {
-  ID: 374,
+  ID: 363,
   Image: 'ChafarizdosGolfinhos_AndreRedont.jpeg',
   Authors: [authors.AndreRedont],
   Title: `Chafariz dos Golfinhos`,
@@ -11250,7 +11250,7 @@ export const ChafarizdosGolfinhos_AndreRedont: Heritage = {
 };
 
 export const CandidoMendes_BenevenutoBerna: Heritage = {
-  ID: 375,
+  ID: 364,
   Image: 'CandidoMendes_BenevenutoBerna.jpeg',
   Authors: [authors.BenevenutoBerna],
   Title: `Cândido Mendes`,
@@ -11280,7 +11280,7 @@ export const CandidoMendes_BenevenutoBerna: Heritage = {
 };
 
 export const VeraJanacopulos_AdrianaJanacopolus: Heritage = {
-  ID: 376,
+  ID: 365,
   Image: 'VeraJanacopulos_AdrianaJanacopolus.jpeg',
   Authors: [authors.AdrianaJanacopolus],
   Title: `Vera Janacópulos`,
@@ -11308,7 +11308,7 @@ export const VeraJanacopulos_AdrianaJanacopolus: Heritage = {
 };
 
 export const ClovisBevilaqua_HonorioPecanha: Heritage = {
-  ID: 377,
+  ID: 366,
   Image: 'ClovisBevilaqua_HonorioPecanha.jpeg',
   Authors: [authors.HonorioPecanha],
   Title: `Clóvis Beviláqua`,
@@ -11335,7 +11335,7 @@ export const ClovisBevilaqua_HonorioPecanha: Heritage = {
 };
 
 export const TeixeiraMendes_BrunoGiorgi: Heritage = {
-  ID: 378,
+  ID: 367,
   Image: 'TeixeiraSoares_JoseOtavioCorreaLima.jpeg',
   Authors: [authors.BrunoGiorgi],
   Title: `Teixeira Mendes`,
@@ -11364,7 +11364,7 @@ export const TeixeiraMendes_BrunoGiorgi: Heritage = {
 };
 
 export const PereiraCarneiro_EgistoBertozzi: Heritage = {
-  ID: 379,
+  ID: 368,
   Image: 'PereiraCarneiro_EgistoBertozzi.jpeg',
   Authors: [authors.EgistoBertozzi],
   Title: `Pereira Carneiro`,
@@ -11391,7 +11391,7 @@ export const PereiraCarneiro_EgistoBertozzi: Heritage = {
 };
 
 export const GetulioVargas_JoasPereiraDosPassos: Heritage = {
-  ID: 380,
+  ID: 369,
   Image: 'GetulioVargas_JoasPereiraDosPassos.jpeg',
   Authors: [authors.JoasPereiraDosPassos],
   Title: `Getulio Vargas`,
@@ -11419,7 +11419,7 @@ export const GetulioVargas_JoasPereiraDosPassos: Heritage = {
 };
 
 export const SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo: Heritage = {
-  ID: 382,
+  ID: 370,
   Image: 'SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo.jpeg',
   Authors: [authors.DanteCroce, authors.CurzioZani, authors.ArnaldoValilo],
   Title: `São Sebastião`,
@@ -11446,7 +11446,7 @@ export const SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo: Heritage = {
 };
 
 export const BadenPowell_VincenzoLarocca: Heritage = {
-  ID: 383,
+  ID: 371,
   Image: 'BadenPowell_VincenzoLarocca.jpeg',
   Authors: [authors.VincenzoLarocca],
   Title: `Baden Powell`,
@@ -11474,7 +11474,7 @@ export const BadenPowell_VincenzoLarocca: Heritage = {
 };
 
 export const RodolfoAmoedo_JoseOtavioCorreaLima: Heritage = {
-  ID: 384,
+  ID: 372,
   Image: 'RodolfoAmoedo_JoseOtavioCorreaLima.jpeg',
   Authors: [authors.JoseOtavioCorreaLima],
   Title: `Rodolfo Amoêdo`,
@@ -11504,7 +11504,7 @@ export const RodolfoAmoedo_JoseOtavioCorreaLima: Heritage = {
 };
 
 export const SaoFranciscoDeAssiseSantaClara_EduardoDeSa: Heritage = {
-  ID: 385,
+  ID: 373,
   Image: 'SaoFranciscoDeAssiseSantaClara_EduardoDeSa.jpeg',
   Authors: [authors.EduardoDeSa],
   Title: `São Francisco de Assis e Santa Clara`,
@@ -11537,7 +11537,7 @@ export const SaoFranciscoDeAssiseSantaClara_EduardoDeSa: Heritage = {
 };
 
 export const Escoteiro_FernandoThauby: Heritage = {
-  ID: 386,
+  ID: 374,
   Image: 'Escoteiro_FernandoThauby.jpeg',
   Authors: [authors.FernandoThauby],
   Title: `Escoteiro`,
@@ -11568,7 +11568,7 @@ export const Escoteiro_FernandoThauby: Heritage = {
 };
 
 export const SemTitulo_HaroldoBarroso: Heritage = {
-  ID: 387,
+  ID: 375,
   Image: 'SemTitulo_HaroldoBarroso.jpeg',
   Authors: [authors.HaroldoBarroso],
   Title: `Sem Titulo`,
@@ -11595,7 +11595,7 @@ export const SemTitulo_HaroldoBarroso: Heritage = {
 };
 
 export const Harmonia_MarliMazeredo: Heritage = {
-  ID: 388,
+  ID: 376,
   Image: 'Harmonia_MarliMazeredo.jpeg',
   Authors: [authors.MarliMazeredo],
   Title: `Harmonia`,
@@ -11621,7 +11621,7 @@ export const Harmonia_MarliMazeredo: Heritage = {
 };
 
 export const FelinoDeitado_HippolyteFrancoisAugusteHippolytePeyrol: Heritage = {
-  ID: 389,
+  ID: 377,
   Image: 'FelinoDeitado_HippolyteFrancoisAugusteHippolytePeyrol.jpeg',
   Authors: [authors.HippolyteFrancoisAugusteHippolytePeyrol],
   Title: `Felino`,
@@ -11650,7 +11650,7 @@ export const FelinoDeitado_HippolyteFrancoisAugusteHippolytePeyrol: Heritage = {
 };
 
 export const AlmiranteBarroso_JoseOtavioCorreaLima: Heritage = {
-  ID: 390,
+  ID: 378,
   Image: 'AlmiranteBarroso_JoseOtavioCorreaLima.jpeg',
   Authors: [authors.JoseOtavioCorreaLima],
   Title: `Almirante Barroso`,
@@ -11678,7 +11678,7 @@ export const AlmiranteBarroso_JoseOtavioCorreaLima: Heritage = {
 };
 
 export const FranciscoAdolfoVarnhagen_JoseOtavioCorreaLima: Heritage = {
-  ID: 391,
+  ID: 379,
   Authors: [authors.JoseOtavioCorreaLima],
   Title: `Francisco Adolfo Varnhagen`,
   Material: 'Bronze',
@@ -11721,7 +11721,7 @@ export const FranciscoAdolfoVarnhagen_JoseOtavioCorreaLima: Heritage = {
 };
 
 export const BrigadeiroEduardoGomes_EdgarDuvivier: Heritage = {
-  ID: 392,
+  ID: 380,
   Image: 'BrigadeiroEduardoGomes_EdgarDuvivier.jpeg',
   Authors: [authors.EdgarDuvivier],
   Title: `Brigadeiro Eduardo Gomes`,
@@ -11760,7 +11760,7 @@ export const BrigadeiroEduardoGomes_EdgarDuvivier: Heritage = {
 };
 
 export const CardealArcoverde_HeitorUsai: Heritage = {
-  ID: 393,
+  ID: 381,
   Image: 'CardealArcoverde_HeitorUsai.jpeg',
   Authors: [authors.HeitorUsai],
   Title: `Cardeal Arcoverde`,
@@ -11787,7 +11787,7 @@ export const CardealArcoverde_HeitorUsai: Heritage = {
 };
 
 export const PedroAlvaresCabral_RodolfoBernardelli: Heritage = {
-  ID: 394,
+  ID: 382,
   Image: 'PedroAlvaresCabral_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: `Pedro Àlvares Cabral`,
@@ -11820,7 +11820,7 @@ export const PedroAlvaresCabral_RodolfoBernardelli: Heritage = {
 };
 
 export const EduardoTapajos_GilbertoMandarino: Heritage = {
-  ID: 395,
+  ID: 383,
   Image: 'EduardoTapajos_GilbertoMandarino.jpeg',
   Authors: [authors.GilbertoMandarino],
   Title: `Eduardo Tapajós`,
@@ -11847,7 +11847,7 @@ export const EduardoTapajos_GilbertoMandarino: Heritage = {
 };
 
 export const AberturadosPortos_EugeneBenet: Heritage = {
-  ID: 396,
+  ID: 384,
   Image: 'AberturadosPortos_EugeneBenet.jpeg',
   Authors: [authors.EugeneBenet],
   Title: `Abertura dos Portos`,
@@ -11874,7 +11874,7 @@ export const AberturadosPortos_EugeneBenet: Heritage = {
 };
 
 export const AlbertoDeOliveira_PetrusVerdier: Heritage = {
-  ID: 397,
+  ID: 385,
   Image: 'AlbertoDeOliveira_PetrusVerdier.jpeg',
   Authors: [authors.PetrusVerdier],
   Title: `Alberto de Oliveira`,
@@ -11901,7 +11901,7 @@ export const AlbertoDeOliveira_PetrusVerdier: Heritage = {
 };
 
 export const LasarSegall_LiubaWolf: Heritage = {
-  ID: 398,
+  ID: 386,
   Image: 'LasarSegall_LiubaWolf.jpeg',
   Authors: [authors.LiubaWolf],
   Title: `Lasar Segall`,
@@ -11929,7 +11929,7 @@ export const LasarSegall_LiubaWolf: Heritage = {
 };
 
 export const ClarisseIndiodoBrasil_HCunhaMelo: Heritage = {
-  ID: 399,
+  ID: 387,
   Image: 'ClarisseIndiodoBrasil_HCunhaMelo.jpeg',
   Authors: [authors.HCunhaMelo],
   Title: `Clarisse Índio do Brasil`,
@@ -11957,7 +11957,7 @@ export const ClarisseIndiodoBrasil_HCunhaMelo: Heritage = {
 };
 
 export const ClariceLispector_EdgarDuvivier: Heritage = {
-  ID: 399,
+  ID: 388,
   Image: 'ClariceLispector_EdgarDuvivier.jpeg',
   Authors: [authors.EdgarDuvivier],
   Title: `Clarisse Lispector e seu caompanheiro, o cão Ulisses`,
@@ -11983,7 +11983,7 @@ export const ClariceLispector_EdgarDuvivier: Heritage = {
 };
 
 export const Chacrinha_Ique: Heritage = {
-  ID: 399,
+  ID: 389,
   Image: 'Chacrinha_Ique.jpeg',
   Authors: [authors.Ique],
   Title: `Chacrinha`,
@@ -12009,7 +12009,7 @@ export const Chacrinha_Ique: Heritage = {
 };
 
 export const Harmonia_JeanJacquesPradier: Heritage = {
-  ID: 400,
+  ID: 390,
   Image: 'Harmonia_JeanJacquesPradier.jpeg',
   Authors: [authors.JeanJacquesPradier],
   Title: `Harmonia`,
@@ -12040,7 +12040,7 @@ export const Harmonia_JeanJacquesPradier: Heritage = {
 };
 
 export const AbrahamMedina_Desconhecida: Heritage = {
-  ID: 500,
+  ID: 391,
   Image: 'AbrahamMedina_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Abraham Medina`,
@@ -12073,7 +12073,7 @@ export const AbrahamMedina_Desconhecida: Heritage = {
 };
 
 export const GetulioVargasBenfica_Desconhecida: Heritage = {
-  ID: 501,
+  ID: 392,
   Image: 'GetulioVargasBenfica_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Getulio Vargas`,
@@ -12101,7 +12101,7 @@ export const GetulioVargasBenfica_Desconhecida: Heritage = {
 };
 
 export const PadreGuilhermeDecaminada_Desconhecida: Heritage = {
-  ID: 502,
+  ID: 393,
   Image: 'PadreGuilhermeDecaminada_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Padre Guilherme Decaminada`,
@@ -12129,7 +12129,7 @@ export const PadreGuilhermeDecaminada_Desconhecida: Heritage = {
 };
 
 export const AlvaroCostaMelo_Desconhecida: Heritage = {
-  ID: 503,
+  ID: 394,
   Image: 'AlvaroCostaMelo_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Álvaro Costa Melo`,
@@ -12177,7 +12177,7 @@ export const AlvaroCostaMelo_Desconhecida: Heritage = {
 };
 
 export const AlmiranteMiguelGrau_PedroMMartinezCorada: Heritage = {
-  ID: 504,
+  ID: 395,
   Image: 'AlmiranteMiguelGrau_PedroMMartinezCorada.jpeg',
   Authors: [authors.PedroMMartinezCorada],
   Title: `Almirante Miguel Grau`,
@@ -12205,7 +12205,7 @@ export const AlmiranteMiguelGrau_PedroMMartinezCorada: Heritage = {
 };
 
 export const ChicoXavier_Desconhecida: Heritage = {
-  ID: 505,
+  ID: 396,
   Image: 'ChicoXavier_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Chico Xavier`,
@@ -12232,7 +12232,7 @@ export const ChicoXavier_Desconhecida: Heritage = {
 };
 
 export const JoaoPauloII_MarioAgostinelli: Heritage = {
-  ID: 506,
+  ID: 397,
   Image: 'JoaoPauloII_MarioAgostinelli.jpeg',
   Authors: [authors.MarioAgostinelli],
   Title: `João Paulo II`,
@@ -12298,7 +12298,7 @@ export const JoaoPauloII_MarioAgostinelli: Heritage = {
 };
 
 export const MacacoTiao_GianPietroZanni: Heritage = {
-  ID: 507,
+  ID: 398,
   Image: 'MacacoTiao_GianPietroZanni.jpeg',
   Authors: [authors.GianPietroZanni],
   Title: `Macaco Tião`,
@@ -12326,7 +12326,7 @@ export const MacacoTiao_GianPietroZanni: Heritage = {
 };
 
 export const OMascateRiachuelo_HonorioPecanha: Heritage = {
-  ID: 508,
+  ID: 399,
   Image: 'OMascateRiachuelo_HonorioPecanha.jpeg',
   Authors: [authors.HonorioPecanha],
   Title: `O Mascate `,
@@ -12365,7 +12365,7 @@ export const OMascateRiachuelo_HonorioPecanha: Heritage = {
 };
 
 export const DuploTotem_CeleidaTostes: Heritage = {
-  ID: 509,
+  ID: 400,
   Image: 'DuploTotem_CeleidaTostes.jpeg',
   Authors: [authors.CeleidaTostes],
   Title: `Duplo Totem`,
@@ -12391,7 +12391,7 @@ export const DuploTotem_CeleidaTostes: Heritage = {
 };
 
 export const EliasGoraybe_Desconhecida: Heritage = {
-  ID: 510,
+  ID: 401,
   Image: 'EliasGoraybe_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Elias Goraybe`,
@@ -12419,7 +12419,7 @@ export const EliasGoraybe_Desconhecida: Heritage = {
 };
 
 export const Laranja_GeorgeLopes_GeorgeGuerra: Heritage = {
-  ID: 511,
+  ID: 402,
   Image: 'Laranja_GeorgeLopes_GeorgeGuerra.jpeg',
   Authors: [authors.GeorgeLopes, authors.GeorgeGuerra],
   Title: `Laranja`,
@@ -12445,7 +12445,7 @@ export const Laranja_GeorgeLopes_GeorgeGuerra: Heritage = {
 };
 
 export const Broca_GeorgeLopes_GeorgeGuerra: Heritage = {
-  ID: 512,
+  ID: 403,
   Image: 'Broca_GeorgeLopes_GeorgeGuerra.jpeg',
   Authors: [authors.GeorgeLopes, authors.GeorgeGuerra],
   Title: `Broca`,
@@ -12471,7 +12471,7 @@ export const Broca_GeorgeLopes_GeorgeGuerra: Heritage = {
 };
 
 export const ArcoIris_GeorgeLopes_GeorgeGuerra: Heritage = {
-  ID: 513,
+  ID: 404,
   Image: 'ArcoIris_GeorgeLopes_GeorgeGuerra.jpeg',
   Authors: [authors.GeorgeLopes, authors.GeorgeGuerra],
   Title: `Arco Ìris`,
@@ -12498,7 +12498,7 @@ export const ArcoIris_GeorgeLopes_GeorgeGuerra: Heritage = {
 };
 
 export const Laranjais_GeorgeLopes_GeorgeGuerra: Heritage = {
-  ID: 514,
+  ID: 405,
   Image: 'Laranjais_GeorgeLopes_GeorgeGuerra.jpeg',
   Authors: [authors.GeorgeLopes, authors.GeorgeGuerra],
   Title: `Laranjais`,
@@ -12527,7 +12527,7 @@ export const Laranjais_GeorgeLopes_GeorgeGuerra: Heritage = {
 };
 
 export const Colunatas_GeorgeLopes_GeorgeGuerra: Heritage = {
-  ID: 515,
+  ID: 406,
   Image: 'Colunatas_GeorgeLopes_GeorgeGuerra.jpeg',
   Authors: [authors.GeorgeLopes, authors.GeorgeGuerra],
   Title: `Colunatas`,
@@ -12553,7 +12553,7 @@ export const Colunatas_GeorgeLopes_GeorgeGuerra: Heritage = {
 };
 
 export const Piramide_GeorgeLopes_GeorgeGuerra: Heritage = {
-  ID: 516,
+  ID: 407,
   Image: 'Piramide_GeorgeLopes_GeorgeGuerra.jpeg',
   Authors: [authors.GeorgeLopes, authors.GeorgeGuerra],
   Title: `Pirâmide`,
@@ -12579,7 +12579,7 @@ export const Piramide_GeorgeLopes_GeorgeGuerra: Heritage = {
 };
 
 export const SaoFranciscodePaula_GiovanniBattistaMaini: Heritage = {
-  ID: 518,
+  ID: 408,
   Image: 'SaoFranciscodePaula_GiovanniBattistaMaini.jpeg',
   Authors: [authors.GiovanniBattistaMaini],
   Title: `São Francisco de Paula`,
@@ -12614,7 +12614,7 @@ export const SaoFranciscodePaula_GiovanniBattistaMaini: Heritage = {
 };
 
 export const Carnica_AnaluNabuco: Heritage = {
-  ID: 519,
+  ID: 409,
   Image: 'Carnica_AnaluNabuco.jpeg',
   Authors: [authors.AnaluNabuco],
   Title: `Carniça`,
@@ -12640,7 +12640,7 @@ export const Carnica_AnaluNabuco: Heritage = {
 };
 
 export const Atena_Desconhecida: Heritage = {
-  ID: 520,
+  ID: 410,
   Image: 'Atena_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Atena`,
@@ -12676,7 +12676,7 @@ export const Atena_Desconhecida: Heritage = {
 };
 
 export const Menora_Desconhecida: Heritage = {
-  ID: 521,
+  ID: 411,
   Image: 'Menora_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Menorá`,
@@ -12706,7 +12706,7 @@ export const Menora_Desconhecida: Heritage = {
 };
 
 export const Animais_JorgeMarioJauregui: Heritage = {
-  ID: 523,
+  ID: 412,
   Image: 'Animais_JorgeMarioJauregui.jpeg',
   Authors: [authors.JorgeMarioJauregui],
   Title: `Animais`,
@@ -12731,7 +12731,7 @@ export const Animais_JorgeMarioJauregui: Heritage = {
 };
 
 export const ADiasdaCruz_VicenteDelRio_LuizCarlosToledo: Heritage = {
-  ID: 524,
+  ID: 413,
   Image: 'ADiasdaCruz_VicenteDelRio_LuizCarlosToledo.jpeg',
   Authors: [authors.VicenteDelRio, authors.LuizCarlosToledo],
   Title: `À Dias da Cruz`,
@@ -12759,7 +12759,7 @@ export const ADiasdaCruz_VicenteDelRio_LuizCarlosToledo: Heritage = {
 };
 
 export const AAugustoMotta_Desconhecida: Heritage = {
-  ID: 525,
+  ID: 414,
   Image: 'AAugustoMotta_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `À Augusto Motta`,
@@ -12787,7 +12787,7 @@ export const AAugustoMotta_Desconhecida: Heritage = {
 };
 
 export const FernandoBaptistaGoncalves_EdgarDuvivierFilho: Heritage = {
-  ID: 526,
+  ID: 415,
   Image: 'FernandoBaptistaGoncalves_EdgarDuvivier.jpeg',
   Authors: [authors.EdgarDuvivierFilho],
   Title: `Fernando Baptista Gonçalves`,
@@ -12818,7 +12818,7 @@ export const FernandoBaptistaGoncalves_EdgarDuvivierFilho: Heritage = {
 };
 
 export const SagradoCoracaodeJesus_Desconhecida: Heritage = {
-  ID: 527,
+  ID: 416,
   Image: 'SagradoCoracaodeJesus_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Sagrado Coração de Jesus`,
@@ -12844,7 +12844,7 @@ export const SagradoCoracaodeJesus_Desconhecida: Heritage = {
 };
 
 export const JCarlos_HumbertoCozzo: Heritage = {
-  ID: 528,
+  ID: 417,
   Image: 'JCarlos_HumbertoCozzo.jpeg',
   Authors: [authors.HumbertoCozzo],
   Title: `J.Carlos`,
@@ -12871,7 +12871,7 @@ export const JCarlos_HumbertoCozzo: Heritage = {
 };
 
 export const ManuelMadruga_FloryGama: Heritage = {
-  ID: 529,
+  ID: 418,
   Image: 'ManuelMadruga_FloryGama.jpeg',
   Authors: [authors.FloryGama],
   Title: `Manuel Madruga`,
@@ -12898,7 +12898,7 @@ export const ManuelMadruga_FloryGama: Heritage = {
 };
 
 export const QuintinoBocaiuva_HildegardoLeaoVelloso: Heritage = {
-  ID: 530,
+  ID: 419,
   Image: 'QuintinoBocaiuva_HildegardoLeaoVelloso.jpeg',
   Authors: [authors.HildegardoLeaoVelloso],
   Title: `Quintino Bocaiúva`,
@@ -12926,7 +12926,7 @@ export const QuintinoBocaiuva_HildegardoLeaoVelloso: Heritage = {
 };
 
 export const EusebioDeOliveira_CesarDoria: Heritage = {
-  ID: 531,
+  ID: 420,
   Image: 'EusebioDeOliveira_CesarDoria.jpeg',
   Authors: [authors.CesarDoria],
   Title: `Eusébio de Oliveira`,
@@ -12954,7 +12954,7 @@ export const EusebioDeOliveira_CesarDoria: Heritage = {
 };
 
 export const HeroisdeLagunaeDourados_AntonioPintodeMattos: Heritage = {
-  ID: 532,
+  ID: 421,
   Image: 'HeroisdeLagunaeDourados_AntonioPintodeMattos.jpeg',
   Authors: [authors.AntonioPintodeMattos],
   Title: `Heróis de Laguna e Dourados`,
@@ -12983,7 +12983,7 @@ export const HeroisdeLagunaeDourados_AntonioPintodeMattos: Heritage = {
 };
 
 export const FredericChopin_AugustZamoiski: Heritage = {
-  ID: 533,
+  ID: 422,
   Image: 'FredericChopin_AugustZamoiski.jpeg',
   Authors: [authors.AugustZamoiski],
   Title: `Frédéric Chopin`,
@@ -13021,7 +13021,7 @@ export const FredericChopin_AugustZamoiski: Heritage = {
 };
 
 export const AdelinoMoreira_MestreSaul: Heritage = {
-  ID: 1166,
+  ID: 423,
   Image: 'AdelinoMoreira_MestreSaul.jpeg',
   Authors: [authors.MestreSaul],
   Title: `Adelino Moreira`,
@@ -13043,7 +13043,7 @@ export const AdelinoMoreira_MestreSaul: Heritage = {
 };
 
 export const MarechalCandidoRondon_NewtonSa: Heritage = {
-  ID: 534,
+  ID: 424,
   Image: 'MarechalCandidoRondon_NewtonSa.jpeg',
   Authors: [authors.NewtonSa],
   Title: `Marechal Rondon`,
@@ -13071,7 +13071,7 @@ export const MarechalCandidoRondon_NewtonSa: Heritage = {
 };
 
 export const IntentonaComunista_HumbertoCozzo: Heritage = {
-  ID: 535,
+  ID: 425,
   Image: 'IntentonaComunista_HumbertoCozzo.jpeg',
   Authors: [authors.HumbertoCozzo],
   Title: `Intentona Comunista`,
@@ -13107,7 +13107,7 @@ export const IntentonaComunista_HumbertoCozzo: Heritage = {
 };
 
 export const Vestal_Desconhecida: Heritage = {
-  ID: 536,
+  ID: 426,
   Image: 'Vestal_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Vestal`,
@@ -13134,7 +13134,7 @@ export const Vestal_Desconhecida: Heritage = {
 };
 
 export const Ceres_Desconhecida: Heritage = {
-  ID: 537,
+  ID: 427,
   Image: 'Ceres_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Ceres`,
@@ -13161,7 +13161,7 @@ export const Ceres_Desconhecida: Heritage = {
 };
 
 export const Flora_Desconhecida: Heritage = {
-  ID: 538,
+  ID: 428,
   Image: 'Flora_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Flora na Urca`,
@@ -13188,7 +13188,7 @@ export const Flora_Desconhecida: Heritage = {
 };
 
 export const Pomona_Desconhecida: Heritage = {
-  ID: 539,
+  ID: 429,
   Image: 'Pomona_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Pomona`,
@@ -13214,7 +13214,7 @@ export const Pomona_Desconhecida: Heritage = {
   Execution: true,
 };
 export const SaoPedrodoMar_EdgarDuvivier: Heritage = {
-  ID: 540,
+  ID: 430,
   Image: 'SaoPedrodoMar_EdgarDuvivier.jpeg',
   Authors: [authors.EdgarDuvivier],
   Title: `São Pedro do Mar`,
@@ -13241,7 +13241,7 @@ export const SaoPedrodoMar_EdgarDuvivier: Heritage = {
 };
 
 export const DelPrete_RobertoSa: Heritage = {
-  ID: 581,
+  ID: 431,
   Image: 'DelPrete_RobertoSa.jpeg',
   Authors: [authors.RobertoSa],
   Title: `Del Prete`,
@@ -13271,7 +13271,7 @@ export const DelPrete_RobertoSa: Heritage = {
 };
 
 export const EdmundoBittencourt_HildegardoLeaoVelloso: Heritage = {
-  ID: 582,
+  ID: 432,
   Image: 'EdmundoBittencourt_HildegardoLeaoVelloso.jpeg',
   Authors: [authors.HildegardoLeaoVelloso],
   Title: `Edmundo Bittencourt`,
@@ -13307,7 +13307,7 @@ export const EdmundoBittencourt_HildegardoLeaoVelloso: Heritage = {
 };
 
 export const ComendadorPauloFPeixotoDaFonseca_HonorioPecanha: Heritage = {
-  ID: 582,
+  ID: 433,
   Image: 'ComendadorPauloFPeixotoDaFonseca_HonorioPecanha.jpeg',
   Authors: [authors.HonorioPecanha],
   Title: `Comendador Paulo F. Peixoto da Fonseca`,
@@ -13334,7 +13334,7 @@ export const ComendadorPauloFPeixotoDaFonseca_HonorioPecanha: Heritage = {
 };
 
 export const AlbertEinstein_HonorioPecanha: Heritage = {
-  ID: 582,
+  ID: 434,
   Image: 'AlbertEinstein_HonorioPecanha.jpeg',
   Authors: [authors.HonorioPecanha],
   Title: `Albert Einstein`,
@@ -13361,7 +13361,7 @@ export const AlbertEinstein_HonorioPecanha: Heritage = {
 };
 
 export const IbrahimSued_MarcosAndreSales: Heritage = {
-  ID: 582,
+  ID: 435,
   Image: 'IbrahimSued_MarcosAndreSales.jpeg',
   Authors: [authors.MarcosAndreSales],
   Title: `Ibrahim Sued`,
@@ -13387,7 +13387,7 @@ export const IbrahimSued_MarcosAndreSales: Heritage = {
 };
 
 export const SerenaDamadoMar_LuizFigueiredo: Heritage = {
-  ID: 582,
+  ID: 436,
   Image: 'SerenaDamadoMar_LuizFigueiredo.jpeg',
   Authors: [authors.LuizFigueiredo],
   Title: `Serena, Dama do Mar`,
@@ -13415,7 +13415,7 @@ export const SerenaDamadoMar_LuizFigueiredo: Heritage = {
 };
 
 export const CarlosDrummondDeAndrade_LeoSantana: Heritage = {
-  ID: 582,
+  ID: 437,
   Image: 'CarlosDrummondDeAndrade_LeoSantana.jpeg',
   Authors: [authors.LeoSantana],
   Title: `Carlos Drummond de Andrade`,
@@ -13442,7 +13442,7 @@ Elizabet, voltado para a cidade e de costas para o mar.//Localizada próximo ao 
 };
 
 export const DorivalCaymmi_OttoDumovich: Heritage = {
-  ID: 582,
+  ID: 438,
   Image: 'DorivalCaymmi_OttoDumovich.jpeg',
   Authors: [authors.OttoDumovich],
   Title: `Dorival Caymmi`,
@@ -13469,7 +13469,7 @@ export const DorivalCaymmi_OttoDumovich: Heritage = {
 };
 
 export const TimMaia_ChristinaMotta: Heritage = {
-  ID: 582,
+  ID: 439,
   Image: 'TimMaia_ChristinaMotta.jpeg',
   Authors: [authors.ChristinaMotta],
   Title: `Tim Maia`,
@@ -13495,7 +13495,7 @@ export const TimMaia_ChristinaMotta: Heritage = {
 };
 
 export const AnaCarolina_MarliMazeredo: Heritage = {
-  ID: 582,
+  ID: 440,
   Image: 'AnaCarolina_MarliMazeredo.jpeg',
   Authors: [authors.MarliMazeredo],
   Title: `Ana Carolina`,
@@ -13518,7 +13518,7 @@ export const AnaCarolina_MarliMazeredo: Heritage = {
 };
 
 export const TeneteSiqueiraCamposAoLevantedos18doForte_JoseRangel: Heritage = {
-  ID: 582,
+  ID: 441,
   Image: 'TeneteSiqueiraCamposAoLevantedos18doForte_JoseRangel.jpeg',
   Authors: [authors.JoseRangel],
   Title: `Tenete Siqueira Campos- Ao Levante dos 18 do Forte`,
@@ -13546,7 +13546,7 @@ export const TeneteSiqueiraCamposAoLevantedos18doForte_JoseRangel: Heritage = {
 };
 
 export const PrincesaIsabel_EdgarDuvivierFilho: Heritage = {
-  ID: 582,
+  ID: 442,
   Image: 'PrincesaIsabel_EdgarDuvivier.jpeg',
   Authors: [authors.EdgarDuvivierFilho],
   Title: `Princesa Isabel`,
@@ -13597,7 +13597,7 @@ export const PrincesaIsabel_EdgarDuvivierFilho: Heritage = {
 };
 
 export const CoelhoCintra_LaurindoRamos: Heritage = {
-  ID: 582,
+  ID: 443,
   Image: 'CoelhoCintra_LaurindoRamos.jpeg',
   Authors: [authors.LaurindoRamos],
   Title: `Coelho Cintra`,
@@ -13627,7 +13627,7 @@ export const CoelhoCintra_LaurindoRamos: Heritage = {
 };
 
 export const ViscondedoRioBranco_FelixMauriceCharpentier: Heritage = {
-  ID: 582,
+  ID: 444,
   Image: 'ViscondedoRioBranco_FelixMauriceCharpentier.jpeg',
   Authors: [authors.FelixMauriceCharpentier],
   Title: `Visconde do Rio Branco`,
@@ -13658,7 +13658,7 @@ export const ViscondedoRioBranco_FelixMauriceCharpentier: Heritage = {
   Execution: true,
 };
 export const IrmaosBernardelli_HildegardoLeaoVelloso: Heritage = {
-  ID: 582,
+  ID: 445,
   Image: 'IrmaosBernardelli_HildegardoLeaoVelloso.jpeg',
   Authors: [authors.HildegardoLeaoVelloso],
   Title: `Rodolfo e Henrique, os Irmãos Bernardelli`,
@@ -13685,7 +13685,7 @@ export const IrmaosBernardelli_HildegardoLeaoVelloso: Heritage = {
 };
 
 export const Vitoria_MarliMazeredo: Heritage = {
-  ID: 582,
+  ID: 446,
   Image: 'Vitoria_MarliMazeredo.jpeg',
   Authors: [authors.MarliMazeredo],
   Title: `Vitória`,
@@ -13712,7 +13712,7 @@ export const Vitoria_MarliMazeredo: Heritage = {
 };
 
 export const SarahKubitschek_MarliMazeredo: Heritage = {
-  ID: 582,
+  ID: 447,
   Image: 'SarahKubitschek_MarliMazeredo.jpeg',
   Authors: [authors.MarliMazeredo],
   Title: `Sarah Kubitschek`,
@@ -13742,7 +13742,7 @@ export const SarahKubitschek_MarliMazeredo: Heritage = {
 };
 
 export const SerzedeloCorreia_RodolfoBernardelli: Heritage = {
-  ID: 582,
+  ID: 448,
   Image: 'SerzedeloCorreia_RodolfoBernardelli.jpeg',
   Authors: [authors.RodolfoBernardelli],
   Title: `Serzedelo Correia`,
@@ -13769,7 +13769,7 @@ export const SerzedeloCorreia_RodolfoBernardelli: Heritage = {
 };
 
 export const Baleia_AngeloVenosa: Heritage = {
-  ID: 582,
+  ID: 449,
   Image: 'Baleia_AngeloVenosa.jpeg',
   Authors: [authors.AngeloVenosa],
   Title: `Baleia`,
@@ -13813,7 +13813,7 @@ export const Baleia_AngeloVenosa: Heritage = {
 };
 
 export const MarechalFlorianoPeixoto_EduardoDeSa: Heritage = {
-  ID: 582,
+  ID: 450,
   Image: 'MarechalFlorianoPeixoto_EduardoDeSa.jpeg',
   Authors: [authors.EduardoDeSa],
   Title: `Marechal Floriano Peixoto`,
@@ -13846,7 +13846,7 @@ export const MarechalFlorianoPeixoto_EduardoDeSa: Heritage = {
 };
 
 export const PauloSampaio_Desconhecida: Heritage = {
-  ID: 582,
+  ID: 451,
   Image: 'PauloSampaio_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Paulo Sampaio`,
@@ -13874,7 +13874,7 @@ export const PauloSampaio_Desconhecida: Heritage = {
 };
 
 export const CasteloBranco_DanteCroce: Heritage = {
-  ID: 582,
+  ID: 452,
   Image: 'CasteloBranco_DanteCroce.jpeg',
   Authors: [authors.DanteCroce],
   Title: `Castelo Branco`,
@@ -13901,7 +13901,7 @@ export const CasteloBranco_DanteCroce: Heritage = {
 };
 
 export const UniaodosPovosAmericanos_MarioAgostinelli: Heritage = {
-  ID: 582,
+  ID: 453,
   Image: 'UniaodosPovosAmericanos_MarioAgostinelli.jpeg',
   Authors: [authors.MarioAgostinelli],
   Title: `União dos Povos Americanos`,
@@ -13955,7 +13955,7 @@ export const UniaodosPovosAmericanos_MarioAgostinelli: Heritage = {
 };
 
 export const BichosHibridos_VaniaVilela: Heritage = {
-  ID: 582,
+  ID: 454,
   Image: 'BichosHibridos_VaniaVilela.jpeg',
   Authors: [authors.VaniaVilela],
   Title: `Bichos Hibridos`,
@@ -13984,7 +13984,7 @@ export const BichosHibridos_VaniaVilela: Heritage = {
 };
 
 export const AoPAN2007_RobertoKenjiFukuda: Heritage = {
-  ID: 582,
+  ID: 455,
   Image: 'AoPAN2007_RobertoKenjiFukuda.jpeg',
   Authors: [authors.RobertoKenjiFukuda],
   Title: `Ao  PAN 2007`,
@@ -14016,7 +14016,7 @@ export const AoPAN2007_RobertoKenjiFukuda: Heritage = {
 };
 
 export const Surf_MauricioBentes: Heritage = {
-  ID: 582,
+  ID: 456,
   Image: 'Surf_MauricioBentes.jpeg',
   Authors: [authors.MauricioBentes],
   Title: `Surf`,
@@ -14040,7 +14040,7 @@ export const Surf_MauricioBentes: Heritage = {
 };
 
 export const AyrtonSenna_MarioPitanguy: Heritage = {
-  ID: 582,
+  ID: 457,
   Image: 'AyrtonSenna_MarioPitanguy.jpeg',
   Authors: [authors.MarioPitanguy],
   Title: `Ayrton Senna`,
@@ -14076,7 +14076,7 @@ export const AyrtonSenna_MarioPitanguy: Heritage = {
 };
 
 export const JoaquimNabuco_OttoDumovich: Heritage = {
-  ID: 582,
+  ID: 458,
   Image: 'JoaquimNabuco_OttoDumovich.jpeg',
   Authors: [authors.OttoDumovich],
   Title: `Joaquim Nabuco`,
@@ -14120,7 +14120,7 @@ export const JoaquimNabuco_OttoDumovich: Heritage = {
 };
 
 export const CandidoDeOliveira_LaurindoRamos: Heritage = {
-  ID: 582,
+  ID: 459,
   Image: 'CandidoDeOliveira_LaurindoRamos.jpeg',
   Authors: [authors.LaurindoRamos],
   Title: `Candido de Oliveira`,
@@ -14165,7 +14165,7 @@ export const CandidoDeOliveira_LaurindoRamos: Heritage = {
 };
 
 export const SebastiaoLeme_MariaDaGloriaVianaPatrasso: Heritage = {
-  ID: 582,
+  ID: 460,
   Image: 'SebastiaoLeme_MariaDaGloriaVianaPatrasso.jpeg',
   Authors: [authors.MariaDaGloriaVianaPatrasso],
   Title: `Sebastião Leme`,
@@ -14202,7 +14202,7 @@ export const SebastiaoLeme_MariaDaGloriaVianaPatrasso: Heritage = {
 };
 
 export const PierreRichiereGuillaumeChartier_JoasPereiraDosPassos: Heritage = {
-  ID: 582,
+  ID: 461,
   Image: 'PierreRichiereGuillaumeChartier_JoasPereiraDosPassos.jpeg',
   Authors: [authors.JoasPereiraDosPassos],
   Title: `Pierre Richier e Guillaume Chartier`,
@@ -14231,7 +14231,7 @@ export const PierreRichiereGuillaumeChartier_JoasPereiraDosPassos: Heritage = {
 };
 
 export const CondeCunha_LuisPaesLeme: Heritage = {
-  ID: 582,
+  ID: 462,
   Image: 'CondeCunha_LuisPaesLeme.jpeg',
   Authors: [authors.LuisPaesLeme],
   Title: `Conde Cunha`,
@@ -14258,7 +14258,7 @@ export const CondeCunha_LuisPaesLeme: Heritage = {
 };
 
 export const AntonioJanuzzi_Desconhecida: Heritage = {
-  ID: 582,
+  ID: 463,
   Image: 'AntonioJanuzzi_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Antonio Januzzi`,
@@ -14284,7 +14284,7 @@ export const AntonioJanuzzi_Desconhecida: Heritage = {
 };
 
 export const JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi: Heritage = {
-  ID: 582,
+  ID: 464,
   Image: 'JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi.jpeg',
   Authors: [authors.RodolfoAmoedo, authors.RuffoFanucchi],
   Title: `José do Patrocínio`,
@@ -14311,7 +14311,7 @@ export const JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi: Heritage = {
 };
 
 export const LimaBarreto_EdgarDuvivier: Heritage = {
-  ID: 582,
+  ID: 465,
   Image: 'LimaBarreto_EdgarDuvivier.jpeg',
   Authors: [authors.EdgarDuvivier],
   Title: `Lima Barreto do Centro`,
@@ -14338,7 +14338,7 @@ export const LimaBarreto_EdgarDuvivier: Heritage = {
 };
 
 export const AMelvinJoneseArmandoFarjado_Ariel: Heritage = {
-  ID: 582,
+  ID: 466,
   Authors: [authors.Ariel],
   Title: `À Melvin Jones e Armando Farjado`,
   Material: 'Bronze',
@@ -14364,7 +14364,7 @@ export const AMelvinJoneseArmandoFarjado_Ariel: Heritage = {
 };
 
 export const GabrielHabib_HildegardoLeaoVelloso: Heritage = {
-  ID: 582,
+  ID: 467,
   Authors: [authors.HildegardoLeaoVelloso],
   Title: `Gabriel Habib`,
   Material: 'Bronze',
@@ -14392,7 +14392,7 @@ export const GabrielHabib_HildegardoLeaoVelloso: Heritage = {
 };
 
 export const GrandjeandeMontiny_NicolinaVazDeAssisPintodoCouto: Heritage = {
-  ID: 582,
+  ID: 468,
   Authors: [authors.NicolinaVazDeAssisPintodoCouto],
   Title: `Grandjean de Montiny`,
   Material: 'Bronze',
@@ -14420,7 +14420,7 @@ export const GrandjeandeMontiny_NicolinaVazDeAssisPintodoCouto: Heritage = {
 };
 
 export const JuliodeCastilhos_Desconhecida: Heritage = {
-  ID: 582,
+  ID: 469,
   Authors: [authors.Desconhecida],
   Title: `Julio de Castilhos`,
   Material: 'Bronze',
@@ -14446,7 +14446,7 @@ export const JuliodeCastilhos_Desconhecida: Heritage = {
 };
 
 export const AryBarroso_LeoSantana: Heritage = {
-  ID: 582,
+  ID: 470,
   Image: 'AryBarroso_LeoSantana.jpeg',
   Authors: [authors.LeoSantana],
   Title: `Ary Barroso`,
@@ -14473,7 +14473,7 @@ export const AryBarroso_LeoSantana: Heritage = {
 };
 
 export const AryBarroso_OttoDumovich: Heritage = {
-  ID: 582,
+  ID: 471,
   Image: 'AryBarroso_OttoDumovich.jpeg',
   Authors: [authors.OttoDumovich],
   Title: `Ary Barroso`,
@@ -14497,7 +14497,7 @@ export const AryBarroso_OttoDumovich: Heritage = {
   Execution: true,
 };
 export const AoNuncaMais_CristinaPozzobon: Heritage = {
-  ID: 582,
+  ID: 472,
   Image: 'AoNuncaMais_CristinaPozzobon.jpeg',
   Authors: [authors.CristinaPozzobon],
   Title: `Ao Nunca Mais`,
@@ -14519,7 +14519,7 @@ export const AoNuncaMais_CristinaPozzobon: Heritage = {
 };
 
 export const Pax_MarioMatos: Heritage = {
-  ID: 582,
+  ID: 473,
   Image: 'Pax_MarioMatos.jpeg',
   Authors: [authors.MarioMatos],
   Title: `Pax (Paz)`,
@@ -14544,7 +14544,7 @@ export const Pax_MarioMatos: Heritage = {
 };
 
 export const Trabalho_MarioMatos: Heritage = {
-  ID: 582,
+  ID: 474,
   Authors: [authors.MarioMatos],
   Title: `Trabalho`,
   Material: 'Bronze',
@@ -14567,7 +14567,7 @@ export const Trabalho_MarioMatos: Heritage = {
 };
 
 export const CriancasComAConcha_FrançoisLespingola: Heritage = {
-  ID: 582,
+  ID: 475,
   Image: 'CriancasComAConcha_FrancoisLespingola.jpeg',
   Authors: [authors.FrançoisLespingola],
   Title: `Crianças com a Concha`,
@@ -14595,7 +14595,7 @@ export const CriancasComAConcha_FrançoisLespingola: Heritage = {
 };
 
 export const CriancasComoPassaro_SimonMazieredas: Heritage = {
-  ID: 582,
+  ID: 476,
   Authors: [authors.SimonMazieredas],
   Title: `Crianças com o Pássaro`,
   Material: 'Mármore',
@@ -14630,7 +14630,7 @@ export const CriancasComoPassaro_SimonMazieredas: Heritage = {
 };
 
 export const CriancasComATocha_PhilippeGarnier: Heritage = {
-  ID: 582,
+  ID: 477,
   Image: 'CriancasComATocha_PhilippeGarnier.jpeg',
   Authors: [authors.PhilippeGarnier],
   Title: `Crianças com a Tocha`,
@@ -14667,7 +14667,7 @@ export const CriancasComATocha_PhilippeGarnier: Heritage = {
 };
 
 export const CriancasComflores_PierreLaviron: Heritage = {
-  ID: 474,
+  ID: 478,
   Image: 'CriancasComflores_PierreLaviron.jpeg',
   Authors: [authors.PierreLaviron],
   Title: `Crianças com flores`,
@@ -14704,7 +14704,7 @@ export const CriancasComflores_PierreLaviron: Heritage = {
 };
 
 export const APepeLopes_VeraTorres: Heritage = {
-  ID: 474,
+  ID: 479,
   Image: 'APepeLopes_VeraTorres.jpeg',
   Authors: [authors.VeraTorres],
   Title: `À Pepê Lopes`,
@@ -14726,7 +14726,7 @@ export const APepeLopes_VeraTorres: Heritage = {
 };
 
 export const MarechalJoaquimIgnacioBaptistaCardoso_SMartinsRibeiro: Heritage = {
-  ID: 474,
+  ID: 480,
   Image: 'MarechalJoaquimIgnacioBaptistaCardoso_SMartinsRibeiro.jpeg',
   Authors: [authors.SMartinsRibeiro],
   Title: `Marechal Joaquim Ignácio Baptista Cardoso`,
@@ -14751,7 +14751,7 @@ export const MarechalJoaquimIgnacioBaptistaCardoso_SMartinsRibeiro: Heritage = {
 };
 
 export const AmericoVespucio_ArmandoAmaya: Heritage = {
-  ID: 474,
+  ID: 481,
   Image: 'AmericoVespucio_ArmandoAmaya.jpeg',
   Authors: [authors.ArmandoAmaya],
   Title: `Américo Vespúcio`,
@@ -14778,7 +14778,7 @@ export const AmericoVespucio_ArmandoAmaya: Heritage = {
 };
 
 export const SemTitulo_RobertoBurleMarx: Heritage = {
-  ID: 474,
+  ID: 482,
   Image: 'SemTitulo_RobertoBurleMarx.jpeg',
   Authors: [authors.RobertoBurleMarx, authors.HaruyoshiOno],
   Title: `Sem Título`,
@@ -14805,7 +14805,7 @@ export const SemTitulo_RobertoBurleMarx: Heritage = {
 };
 
 export const ChafarizOutono_MathurinMoreau: Heritage = {
-  ID: 474,
+  ID: 483,
   Image: 'ChafarizOutono_MathurinMoreau.jpeg',
   Authors: [authors.MathurinMoreau],
   Title: `Chafariz Outono`,
@@ -14832,7 +14832,7 @@ export const ChafarizOutono_MathurinMoreau: Heritage = {
 };
 
 export const HenriqueDodsworth_HonorioPecanha: Heritage = {
-  ID: 474,
+  ID: 484,
   Image: 'HenriqueDodsworth_HonorioPecanha.jpeg',
   Authors: [authors.HonorioPecanha],
   Title: `Henrique Dodsworth`,
@@ -14855,7 +14855,7 @@ export const HenriqueDodsworth_HonorioPecanha: Heritage = {
 };
 
 export const DianadeGabies_Desconhecida: Heritage = {
-  ID: 474,
+  ID: 485,
   Image: 'DianadeGabies_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Diana de Gabies`,
@@ -14882,7 +14882,7 @@ export const DianadeGabies_Desconhecida: Heritage = {
 };
 
 export const BaraodeTaquara_BenevenutoBerna: Heritage = {
-  ID: 474,
+  ID: 486,
   Image: 'BaraodeTaquara_BenevenutoBerna.jpeg',
   Authors: [authors.BenevenutoBerna],
   Title: `Barão de Taquara`,
@@ -14906,7 +14906,7 @@ export const BaraodeTaquara_BenevenutoBerna: Heritage = {
 };
 
 export const BrigadeiroAntônioDeSampaio_VictorBrecheret: Heritage = {
-  ID: 474,
+  ID: 487,
   Image: 'BrigadeiroAntonioDeSampaio_VictorBrecheret.jpeg',
   Authors: [authors.VictorBrecheret],
   Title: `Brigadeiro Antônio de Sampaio`,
@@ -14929,7 +14929,7 @@ export const BrigadeiroAntônioDeSampaio_VictorBrecheret: Heritage = {
 };
 
 export const LuisManuelOsorio_Desconhecida: Heritage = {
-  ID: 474,
+  ID: 488,
   Image: 'LuisManuelOsorio_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Luis Manuel Osorio (Duque de Caxias)`,
@@ -14952,7 +14952,7 @@ export const LuisManuelOsorio_Desconhecida: Heritage = {
 };
 
 export const MarechalHermesdaFonseca_DaviLeal: Heritage = {
-  ID: 474,
+  ID: 489,
   Image: 'MarechalHermesdaFonseca_DaviLeal.jpeg',
   Authors: [authors.DaviLeal],
   Title: `Marechal Hermes da Fonseca`,
@@ -14975,7 +14975,7 @@ export const MarechalHermesdaFonseca_DaviLeal: Heritage = {
 };
 
 export const GeneralJoaoSeverianodaFonseca_Desconhecida: Heritage = {
-  ID: 474,
+  ID: 490,
   Image: 'GeneralJoaoSeverianodaFonseca_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `General João Severiano da Fonseca`,
@@ -15000,7 +15000,7 @@ export const GeneralJoaoSeverianodaFonseca_Desconhecida: Heritage = {
 };
 
 export const Aviadores_RebecaMatteBello: Heritage = {
-  ID: 474,
+  ID: 491,
   Image: 'Aviadores_RebecaMatteBello.jpeg',
   Authors: [authors.RebecaMatteBello],
   Title: `Aviadores`,
@@ -15029,7 +15029,7 @@ Inaugurado na Praça Mauá, foi transferido em 1937 para o Campo dos Afonsos.`,
 };
 
 export const Piramide_MestreValentim: Heritage = {
-  ID: 97,
+  ID: 492,
   Image: 'Piramide_MestreValentim.jpeg',
   Authors: [authors.MestreValentim],
   Title: `Pirâmide`,
@@ -15055,7 +15055,7 @@ export const Piramide_MestreValentim: Heritage = {
 };
 
 export const Obelisco_Archi5: Heritage = {
-  ID: 169,
+  ID: 493,
   Image: 'Obelisco_Archi5.jpeg',
   Authors: [authors.Archi5],
   Title: `Obelisco`,
@@ -15083,7 +15083,7 @@ export const Obelisco_Archi5: Heritage = {
 };
 
 export const Obelisco_EduardoDeSa: Heritage = {
-  ID: 17,
+  ID: 494,
   Image: 'Obelisco_EduardoDeSa.jpeg',
   Authors: [authors.EduardoDeSa],
   Title: 'Obelisco',
@@ -15111,7 +15111,7 @@ export const Obelisco_EduardoDeSa: Heritage = {
 };
 
 export const ObeliscodoCaisdaImperatriz_Desconhecido: Heritage = {
-  ID: 3,
+  ID: 495,
   Image: 'ObeliscodoCaisdaImperatriz_Desconhecido.jpeg',
   Authors: [authors.Desconhecida],
   Title: 'Obelisco do Cais da Imperatriz',
@@ -15136,7 +15136,7 @@ export const ObeliscodoCaisdaImperatriz_Desconhecido: Heritage = {
 };
 
 export const Obelisco_PauloCase: Heritage = {
-  ID: 241,
+  ID: 496,
   Image: 'Obelisco_PauloCase.jpeg',
   Authors: [authors.PauloCase],
   Title: `Obelisco de Ipanema`,
@@ -15165,7 +15165,7 @@ export const Obelisco_PauloCase: Heritage = {
 };
 
 export const ObeliscodoLargodoBomRetiro_Desconhecida: Heritage = {
-  ID: 1234,
+  ID: 497,
   Image: 'ObeliscodoLargodoBomRetiro_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Obelisco do Largo do Bom Retiro`,
@@ -15191,7 +15191,7 @@ export const ObeliscodoLargodoBomRetiro_Desconhecida: Heritage = {
 };
 
 export const ObeliscodaAvenidaRioBranco_AZanuzziCia: Heritage = {
-  ID: 132,
+  ID: 498,
   Image: 'ObeliscodaAvenidaRioBranco_AZanuzziCia.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Obelisco da Avenida Rio Branco`,
@@ -15219,7 +15219,7 @@ export const ObeliscodaAvenidaRioBranco_AZanuzziCia: Heritage = {
 };
 
 export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Heritage = {
-  ID: 145,
+  ID: 499,
   Image: 'MonumentoALiberdadeDeExpressao_FranzWeissmann.jpeg',
   Authors: [authors.FranzWeissmann],
   Title: `Monumento A Liberdade De Expressao`,
@@ -15255,7 +15255,7 @@ export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Heritage = {
 };
 
 export const ObeliscodoAlargamentodeCopacabana_Desconhecida: Heritage = {
-  ID: 349,
+  ID: 500,
   Image: 'ObeliscodoAlargamentodeCopacabana_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Obelisco  do Alargamento de Copacabana`,
@@ -15284,7 +15284,7 @@ export const ObeliscodoAlargamentodeCopacabana_Desconhecida: Heritage = {
 };
 
 export const ObeliscodaLinhaAmarela_Desconhecida: Heritage = {
-  ID: 885,
+  ID: 501,
   Image: 'ObeliscodaLinhaAmarela_Desconhecida.jpeg',
   Authors: [authors.Desconhecida],
   Title: `Obelisco da Linha Amarela`,
@@ -15309,7 +15309,7 @@ export const ObeliscodaLinhaAmarela_Desconhecida: Heritage = {
 };
 
 export const AAlimPedro_MiguelPastor: Heritage = {
-  ID: 964,
+  ID: 502,
   Image: 'AAlimPedro_MiguelPastor.jpeg',
   Authors: [authors.MiguelPastor],
   Title: `À Alim Pedro`,
@@ -15336,7 +15336,7 @@ export const AAlimPedro_MiguelPastor: Heritage = {
 };
 
 export const AAugustodeVasconcelos_MiguelPastor: Heritage = {
-  ID: 967,
+  ID: 503,
   Image: 'AAugustodeVasconcelos_MiguelPastor.jpeg',
   Authors: [authors.MiguelPastor],
   Title: `À Augusto de Vasconcelos`,
@@ -15362,7 +15362,7 @@ export const AAugustodeVasconcelos_MiguelPastor: Heritage = {
 };
 
 export const ObeliscodeRochaMiranda_ErnaniFreire: Heritage = {
-  ID: 1037,
+  ID: 504,
   Authors: [authors.ErnaniFreire],
   Title: `Obelisco de Rocha Miranda`,
   Material: `Peça em ferro pintado`,

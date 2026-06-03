@@ -7,6 +7,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   extra: {
     ...config.extra,
     googleMapsAPI: process.env.GOOGLE_MAPS_API_WEB || '',
+    googleMapsMapId: process.env.GOOGLE_MAPS_MAP_ID || 'DEMO_MAP_ID',
   },
   android: {
     ...config.android,

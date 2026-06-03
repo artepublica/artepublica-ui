@@ -33,25 +33,25 @@ function Heritages(): JSX.Element {
   const remainingWidth = allowedWidth - minGridWidth;
   const padding = remainingWidth / (columns + 1);
 
-  const data = heritagesSorted
-    .reduce<string[]>((result, heritage, index) => {
-      if (index === 0) {
-        return [heritage.Typology ?? 'Desconhecida', heritage.ID.toString()];
-      } else {
-        const previousHeritage = heritagesSorted[index - 1];
+  const data1 = heritagesSorted.reduce<string[]>((result, heritage, index) => {
+    if (index === 0) {
+      return [heritage.Typology ?? 'Desconhecida', heritage.ID.toString()];
+    } else {
+      const previousHeritage = heritagesSorted[index - 1];
 
-        if ((heritage.Typology ?? 'Desconhecida') !== (previousHeritage.Typology ?? 'Desconhecida')) {
-          return [...result, heritage.Typology ?? 'Desconhecida', heritage.ID.toString()];
-        }
+      if ((heritage.Typology ?? 'Desconhecida') !== (previousHeritage.Typology ?? 'Desconhecida')) {
+        return [...result, heritage.Typology ?? 'Desconhecida', heritage.ID.toString()];
       }
+    }
 
-      return [...result, heritage.ID.toString()];
-    }, [])
-    .reduce<string[][]>((all, one, i) => {
-      const ch = Math.floor(i / columns);
-      all[ch] = ([] as string[]).concat(all[ch] || [], one);
-      return all;
-    }, []);
+    return [...result, heritage.ID.toString()];
+  }, []);
+
+  const data = data1.reduce<string[][]>((all, one, i) => {
+    const ch = Math.floor(i / columns);
+    all[ch] = ([] as string[]).concat(all[ch] || [], one);
+    return all;
+  }, []);
 
   return (
     <View style={style.container}>
