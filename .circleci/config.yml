@@ -26,9 +26,8 @@ jobs:
           node-version: '26.3.0'
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel@latest
-      - run: sudo npm install -g now@latest
       - run:
-          command: export NOW_PROJECT_ID=$NOW_PROJECT_ID_DEV && export NOW_ORG_ID=$NOW_ORG_ID && now --prod --token $NOW_TOKEN
+          command: export VERCEL_PROJECT_ID=$NOW_PROJECT_ID_DEV && export VERCEL_ORG_ID=$NOW_ORG_ID && vercel --prod --yes --token $NOW_TOKEN
           name: Deploy
   deploy-qa: # this can be any name you choose
     executor: node/default # use the default executor defined within the orb
@@ -38,9 +37,8 @@ jobs:
           node-version: '26.3.0'
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel@latest
-      - run: sudo npm install -g now@latest
       - run:
-          command: export NOW_PROJECT_ID=$NOW_PROJECT_ID_QA && export NOW_ORG_ID=$NOW_ORG_ID && now --prod --token $NOW_TOKEN
+          command: export VERCEL_PROJECT_ID=$NOW_PROJECT_ID_QA && export VERCEL_ORG_ID=$NOW_ORG_ID && vercel --prod --yes --token $NOW_TOKEN
           name: Deploy
   deploy-prod: # this can be any name you choose
     executor: node/default # use the default executor defined within the orb
@@ -50,9 +48,8 @@ jobs:
           node-version: '26.3.0'
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel@latest
-      - run: sudo npm install -g now@latest
       - run:
-          command: export NOW_PROJECT_ID=$NOW_PROJECT_ID_PROD && export NOW_ORG_ID=$NOW_ORG_ID && now --prod --token $NOW_TOKEN
+          command: export VERCEL_PROJECT_ID=$NOW_PROJECT_ID_PROD && export VERCEL_ORG_ID=$NOW_ORG_ID && vercel --prod --yes --token $NOW_TOKEN
           name: Deploy
 
 workflows:
