@@ -18,7 +18,7 @@ jobs:
       - run:
           command: npm run build:web
           name: Build app
-  deploy-dev: # this can be any name you choose
+  deploy: # this can be any name you choose
     executor: node/default # use the default executor defined within the orb
     steps:
       - checkout
@@ -27,9 +27,9 @@ jobs:
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel@latest
       - run:
-          command: export VERCEL_PROJECT_ID=$VERCEL_PROJECT_ID_DEV && export VERCEL_ORG_ID=$VERCEL_ORG_ID && vercel --prod --yes --token $VERCEL_TOKEN
+          command: DEPLOYMENT_URL=$(export VERCEL_PROJECT_ID=$VERCEL_PROJECT_ID_PROD && export VERCEL_ORG_ID=$VERCEL_ORG_ID && vercel --prod --skip-domain --yes --token $VERCEL_TOKEN)
           name: Deploy
-  deploy-qa: # this can be any name you choose
+  promote: # this can be any name you choose
     executor: node/default # use the default executor defined within the orb
     steps:
       - checkout
@@ -38,18 +38,7 @@ jobs:
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel@latest
       - run:
-          command: export VERCEL_PROJECT_ID=$VERCEL_PROJECT_ID_QA && export VERCEL_ORG_ID=$VERCEL_ORG_ID && vercel --prod --yes --token $VERCEL_TOKEN
-          name: Deploy
-  deploy-prod: # this can be any name you choose
-    executor: node/default # use the default executor defined within the orb
-    steps:
-      - checkout
-      - node/install:
-          node-version: '26.3.0'
-      - run: sudo npm install -g npm@latest
-      - run: sudo npm install -g vercel@latest
-      - run:
-          command: export VERCEL_PROJECT_ID=$VERCEL_PROJECT_ID_PROD && export VERCEL_ORG_ID=$VERCEL_ORG_ID && vercel --prod --yes --token $VERCEL_TOKEN
+          command: export VERCEL_PROJECT_ID=$VERCEL_PROJECT_ID_PROD && export VERCEL_ORG_ID=$VERCEL_ORG_ID && vercel promote "$DEPLOYMENT_ID" --yes --token $VERCEL_TOKEN
           name: Deploy
 
 workflows:
@@ -60,37 +49,20 @@ workflows:
             branches:
               only:
                 - main
-      - deploy-dev:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - main
-      - hold-qa:
-          requires:
-            - deploy-dev
-          filters:
-            branches:
-              only:
-                - main
-          type: approval
-      - deploy-qa:
-          requires:
-            - hold-qa
+      - deploy:
           filters:
             branches:
               only:
                 - main
       - hold-prod:
           requires:
-            - deploy-qa
+            - deploy
           filters:
             branches:
               only:
                 - main
           type: approval
-      - deploy-prod:
+      - promote:
           context: admins
           requires:
             - hold-prod
