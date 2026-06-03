@@ -18,7 +18,7 @@ jobs:
       - run:
           command: npm run build:web
           name: Build app
-  deploy: # this can be any name you choose
+  preview: # this can be any name you choose
     executor: node/default # use the default executor defined within the orb
     steps:
       - checkout
@@ -27,9 +27,9 @@ jobs:
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel@latest
       - run:
-          command: DEPLOYMENT_URL=$(export VERCEL_PROJECT_ID=$VERCEL_PROJECT_ID_PROD && export VERCEL_ORG_ID=$VERCEL_ORG_ID && vercel --prod --skip-domain --yes --token $VERCEL_TOKEN)
+          command: export VERCEL_PROJECT_ID=$VERCEL_PROJECT_ID_PROD && export VERCEL_ORG_ID=$VERCEL_ORG_ID && vercel --yes --token $VERCEL_TOKEN
           name: Deploy
-  promote: # this can be any name you choose
+  production: # this can be any name you choose
     executor: node/default # use the default executor defined within the orb
     steps:
       - checkout
@@ -38,7 +38,7 @@ jobs:
       - run: sudo npm install -g npm@latest
       - run: sudo npm install -g vercel@latest
       - run:
-          command: export VERCEL_PROJECT_ID=$VERCEL_PROJECT_ID_PROD && export VERCEL_ORG_ID=$VERCEL_ORG_ID && vercel promote "$DEPLOYMENT_ID" --yes --token $VERCEL_TOKEN
+          command: export VERCEL_PROJECT_ID=$VERCEL_PROJECT_ID_PROD && export VERCEL_ORG_ID=$VERCEL_ORG_ID && vercel --prod --yes --token $VERCEL_TOKEN
           name: Deploy
 
 workflows:
@@ -49,20 +49,22 @@ workflows:
             branches:
               only:
                 - main
-      - deploy:
+      - preview:
+          requires:
+            - build
           filters:
             branches:
               only:
                 - main
       - hold-prod:
           requires:
-            - deploy
+            - preview
           filters:
             branches:
               only:
                 - main
           type: approval
-      - promote:
+      - production:
           context: admins
           requires:
             - hold-prod
