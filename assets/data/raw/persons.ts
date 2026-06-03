@@ -1,8 +1,27 @@
 import { Fact, Person } from '@domain';
 
-import * as persons from './persons';
 import { Artista, CriticoDeArte, Jornalista } from './professions';
 import { Escultor, Pintor } from './specialties';
+
+// These leaf entries are referenced by other entries declared earlier in this
+// module, so they are declared up front, before any usage. Without this, the
+// forward reference is evaluated before initialization and throws a temporal-dead-zone
+// error at runtime (previously it silently yielded `undefined` instead).
+export const LouisSauvageau: Person = {
+  Name: `Louis Sauvageau`,
+};
+
+export const AugusteMartin: Person = {
+  Name: `Auguste Martin`,
+};
+
+export const HenriFredericIselin: Person = {
+  Name: `Henri-Frédéric Iselin`,
+};
+
+export const IvanSerpa: Person = {
+  Name: `Ivan Serpa`,
+};
 
 export const AntonioTaunay: Person = {
   Name: `Antonio Taunay`,
@@ -958,7 +977,7 @@ export const FundicaoValDOsne: Person = {
       StartDate: '05/04/1836',
       Type: 'Autorização',
       Description: 'Recebeu autorizaçao para construir um alto-forno no Val DOsne',
-      Persons: [persons.PierreVictorAndre],
+      Persons: [PierreVictorAndre],
       City: 'Rio de Janeiro',
     },
     {
@@ -970,12 +989,12 @@ export const FundicaoValDOsne: Person = {
     },
     {
       Type: 'Fundição artística',
-      Persons: [persons.MathurinMoreau, persons.LouisSauvageau, persons.AugusteMartin, persons.HenriFredericIselin],
+      Persons: [MathurinMoreau, LouisSauvageau, AugusteMartin, HenriFredericIselin],
       City: 'Haute-Marne',
     },
     {
       Description: 'Existem no Brasil cerca de 130 obras, entre estátuas, fontes, e peças de mobiliário urbano',
-      Persons: [persons.MathurinMoreau, persons.LouisSauvageau, persons.AugusteMartin, persons.HenriFredericIselin],
+      Persons: [MathurinMoreau, LouisSauvageau, AugusteMartin, HenriFredericIselin],
       City: 'Rio de Janeiro',
     },
   ],
@@ -1073,7 +1092,12 @@ export const FernandoCocchiarale: Person = {
       Type: 'Livro',
       Description:
         'Abstracionismo Geométrico e Informal: a vanguarda Brasileira dos anos 50, Rio de Janeiro, MEC/Funarte',
-      Persons: [persons.AnnaBellaGeiger],
+      // AnnaBellaGeiger is declared later and references back to this entry (a mutual
+      // reference), so this side is read lazily via a getter to avoid the temporal
+      // dead zone — by the time it is read, AnnaBellaGeiger is initialized.
+      get Persons(): Person[] {
+        return [AnnaBellaGeiger];
+      },
       City: 'Rio de Janeiro',
     },
     {
@@ -1095,7 +1119,7 @@ export const AnnaBellaGeiger: Person = {
       Type: 'Livro',
       Description:
         'Abstracionismo Geométrico e Informal: a vanguarda Brasileira dos anos 50, Rio de Janeiro, MEC/Funarte',
-      Persons: [persons.FernandoCocchiarale],
+      Persons: [FernandoCocchiarale],
       City: 'Rio de Janeiro',
     },
   ],
@@ -1144,7 +1168,7 @@ export const AluisioCarvao: Person = {
   DeathCountryCity: 'Rio de Janeiro',
   Specialties: [Pintor],
   Facts: [
-    new Fact('', '', 'Museu de Arte Moderna', 'Estudou no museu', [persons.IvanSerpa], 'Rio de Janeiro'),
+    new Fact('', '', 'Museu de Arte Moderna', 'Estudou no museu', [IvanSerpa], 'Rio de Janeiro'),
     new Fact('', '', 'Grupo Frente', 'Integrou o movimento', [], 'Rio de Janeiro'),
     new Fact(
       '1960',
@@ -1159,10 +1183,6 @@ export const AluisioCarvao: Person = {
     new Fact('', '', 'Bienal de México', 'Participante', [], 'México'),
     new Fact('1960', '1960', 'Mostra Internacional de arte concreta', 'Participante', [], 'Zurique'),
   ],
-};
-
-export const IvanSerpa: Person = {
-  Name: `Ivan Serpa`,
 };
 
 export const HerculesBarsotti: Person = {
@@ -1420,10 +1440,6 @@ export const JorgeMarioJauregui: Person = {
 
 export const GiuseppeNavone: Person = {
   Name: `Giuseppe Navone`,
-};
-
-export const LouisSauvageau: Person = {
-  Name: `Louis Sauvageau`,
 };
 
 export const JoaquimMoreiraJunior: Person = {
@@ -1985,10 +2001,6 @@ export const FranciscoJoaquimBethencourtDaSilva: Person = {
   Name: `Francisco Joaquim Bethencourt da Silva`,
 };
 
-export const HenriFredericIselin: Person = {
-  Name: `Henri-Frédéric Iselin`,
-};
-
 export const GiulioStarace: Person = {
   Name: `Giulio Starace`,
 };
@@ -2043,10 +2055,6 @@ export const TorresDeOliveira: Person = {
 
 export const PauloDeTarso: Person = {
   Name: `Paulo de Tarso`,
-};
-
-export const AugusteMartin: Person = {
-  Name: `Auguste Martin`,
 };
 
 export const AugusteHenriVictorGrandjeanDeMontigny: Person = {

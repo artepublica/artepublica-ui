@@ -25,7 +25,7 @@ function webOptions<T extends object>(
         }
         style={{ paddingLeft: 16 }}
       >
-        <AntDesign name='arrowleft' size={24} color={theme.navigation.primary} />
+        <AntDesign name='arrow-left' size={24} color={theme.navigation.primary} />
       </TouchableOpacity>
     ),
   };

@@ -15,7 +15,18 @@ const config = tseslint.config(
   reactRecommended,
   prettierRecommended,
   {
-    ignores: ['**/.vscode/', '**/node_modules/', '**/.coverage/', '**/.expo/', '**/web_build/'],
+    ignores: [
+      '**/.vscode/',
+      '**/node_modules/',
+      '**/.coverage/',
+      '**/.expo/',
+      '**/web-build/',
+      '**/dist/',
+      '**/android/',
+      '**/ios/',
+      'expo-env.d.ts',
+      'metro.config.js',
+    ],
   },
   {
     languageOptions: {
@@ -23,7 +34,7 @@ const config = tseslint.config(
         //ecmaVersion: 2024,
         //sourceType: 'module',
         project: true,
-        tsconfigRootDir: './',
+        tsconfigRootDir: import.meta.dirname,
       },
       globals: {
         browser: true,
